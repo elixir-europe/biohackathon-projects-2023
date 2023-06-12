@@ -1,4 +1,4 @@
-# Project 20: Genome annotation workflows for the tree of life
+# Project 20: Genome annotation and other post-assembly workflows for the tree of life
 
 ## Abstract
 
