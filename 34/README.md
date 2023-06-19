@@ -20,6 +20,6 @@ The project should have a minimum of five people, with content expertise in ELIX
 
 ## Lead(s)
 
-Alexia Cordana, Mihail Anton, Alexander Botzki
+Alexia Cardona, Mihail Anton, Alexander Botzki
 
 
