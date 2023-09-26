@@ -12,7 +12,7 @@ This repository is meant for the participants of the [BioHackathon](https://bioh
 * [Project 7](7): Bioschemas resource index for chem and plants
 * [Project 8](8): Building towards a machine-actionable Software Management Plan
 * [Project 9](9): Cell type-specific and druggable pathway models and maps
-* [Project 10](10): Community-driven continuous benchmarking of single-cell tools
+* [Project 10](10): FAIR Workflow Execution with WfExS and Workflow Run Crate
 * [Project 11](11): Creating lesson plans to advance (life sciences) data steward & researcher FAIR skills
 * [Project 12](12): Creating the ELIXIR Data Stewardship/Management (DS/DM) Handbook - a guide for DS/DM to manage their life sciences RDM efforts
 * [Project 13](13): Discovering Bioinformatics Software in Software Heritage
