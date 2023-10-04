@@ -14,25 +14,28 @@ Here we bring together FAIR Computational Execution practitioners to mature and 
 
 ## More information
 
-Timeline for long and short-term goals:
-Long-term: Common approach for interoperable FAIR workflow execution data by any workflow engine
-Short-term: Richer description of workflow executions, increased community participation
-Focus during the BioHackathon:
-Establishing of FAIR Workflow Execution community
-Sharing workflow definitions and execution in WorkflowHub
-Track resource usage in existing workflow engines
-Display structured workflow provenance in a human-digestible form
-Integrate further with other FAIR standards, tools and repositories
-Minimum number of people to succeed:
+**Timeline for long and short-term goals**:
+* Long-term: Common approach for interoperable FAIR workflow execution data by any workflow engine
+* Short-term: Richer description of workflow executions, increased community participation
+
+**Focus during the BioHackathon**:
+* Establishing of FAIR Workflow Execution community
+* Sharing workflow definitions and execution in WorkflowHub
+* Track resource usage in existing workflow engines
+* Display structured workflow provenance in a human-digestible form
+* Integrate further with other FAIR standards, tools and repositories
+
+**Minimum number of people to succeed**:
 3-5
-Required level of expertise/skills to participate (one or more):
-Python (ideal) or other high-level language
-JSON-LD (ideal) or Linked Data in general
-Web development with JSON (schema.org ideal)
-Workflow system development
-Brief experience with writing and executing workflows
-Methodology used:
-Pair programming, walk-throughs, brainstorming, Slack chat, Google Docs
+
+**Required level of expertise/skills to participate (one or more)**:
+* Python (ideal) or other high-level language
+* JSON-LD (ideal) or Linked Data in general
+* Web development with JSON (schema.org ideal)
+* Workflow system development
+* Brief experience with writing and executing workflows
+
+**Methodology used**: Pair programming, walk-throughs, brainstorming, Slack chat, Google Docs
 
 
 ## Lead(s)
