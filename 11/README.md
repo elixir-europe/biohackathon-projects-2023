@@ -32,4 +32,6 @@ All contributors from and beyond ELIXIR are invited to bring in their expertise,
 
 Stephan Nylinder, Martijn Kersloot, Mijke Jetten
 
+## Document
 
+[Project document](https://docs.google.com/document/d/1mSSSlz-4u9bBZPokeN_Ymx5Q266CN_c7NXbD3SHympA/edit?usp=sharing) with all info (work in progress)
