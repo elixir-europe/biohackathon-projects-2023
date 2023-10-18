@@ -110,3 +110,6 @@ Ongoing notes are in Google Docs: <https://docs.google.com/document/d/1OIm81bicL
 
 Join channel `#15_enabling-fair-digital-objects` on the Biohackathon Slack. Most of the participants are in person, virtual participants will be involved on ad-hoc basis coordinated on Slack.
 
+## BioHackrXiv
+
+In drafting at <https://github.com/ResearchObject/bh2023-enabling-fair-digital-objects/>
