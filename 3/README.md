@@ -10,7 +10,7 @@ During this hackathon, we aim to develop a virtual reference collection that can
 
 ## More information
 
-By the end of the hackathon, we want to present a demo of an accessible and useful virtual reference collection. This mock-up will then feed into the TETTRIs project that aims to build a virtual pollinator reference collection for all European pollinators.
+By the end of the hackathon, we want to present a demo of an accessible and useful virtual reference collection. This mock-up will then feed into the [TETTRIs](https://TETTRIs.eu) project that aims to build a virtual pollinator reference collection for all European pollinators.
 
 Our main focus will be on the types of data that are needed for insect identification mentioned above. We will focus on finding and storing links between different open databases (e.g. [GBIF](https://GBIF.org), [BOLD](https://www.boldsystems.org/), [ENA](https://www.ebi.ac.uk/ena/browser/home), [GloBI](https://www.globalbioticinteractions.org/)) into a Wikibase for, for example, bees. These links will then be leveraged into new or improved Wikipedia articles that could help citizen scientists with their identifications.
 
