@@ -15,6 +15,16 @@ While Bioschemas has been adapted by many repositories, the methods for its cons
 Finally, FAIR outreach practitioners showcase uses of FAIR Signposting to navigate and consume RO-Crates making FAIR closer to the community. This project will continue the effort started as part of FDO2022 and FAIR-IMPACT to enable FAIR Signposting and RO-Crate for content/metadata discovery and consumption.
 
 
+## Technologies
+
+* [RO-Crate](https://www.researchobject.org/ro-crate/) is a research output packaging that embeds metadata using JSON-LD
+* [Bioschemas](https://bioschemas.org/) is a way to mark up biomedical resources on the Web (e.g. in a registry) that feed both knowledge graphs and search engines 
+* [FAIR Signposting](https://signposting.org/FAIR/) makes machine-actionable HTTP navigation to persistent identifiers and metadata  without needing content-negotiation tricks 
+* [FAIR Digital Object (FDO)](https://fairdo.org/) is a concept to formalise how to build an ecosystem of machine-actionable digital objects using persistent identifiers and strong types 
+
+
+
+
 ## Related hackathon projects
 
 * [#7 Bioschemas resource index for chem and plants](../7/)
