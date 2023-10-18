@@ -33,6 +33,8 @@ Finally, FAIR outreach practitioners showcase uses of FAIR Signposting to naviga
 * Improve at least one Signposting client
 * Prototype a knowledge graph from pages using any of the technologies
 * Improve Bioschemas/RO-Crate validation for at least one profile
+* Prototype FAIR Digital Object (FDO) implementation using RO-Crate, Signposting and PIDs
+* Draft FDO profile for Signposting-based FDO implementation
 
 #### Minimum number of people to succeed
 
@@ -49,6 +51,13 @@ Finally, FAIR outreach practitioners showcase uses of FAIR Signposting to naviga
 
 ## Lead(s)
 
-Stian Soiland-Reyes, Herbert Van de Sompel, Leyla Jael Castro
+Stian Soiland-Reyes, Leyla Jael Castro
 
+## Hackathon Notes
+
+Ongoing notes are in Google Docs: <https://docs.google.com/document/d/1OIm81bicLYih-pKKjlnppX-LV2hBFxKnSVggCuvscrc/edit>
+
+## Slack
+
+Join channel `#15_enabling-fair-digital-objects` on the Biohackathon Slack.
 
