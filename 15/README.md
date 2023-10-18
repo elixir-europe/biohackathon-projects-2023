@@ -45,6 +45,7 @@ Finally, FAIR outreach practitioners showcase uses of FAIR Signposting to naviga
 * Improve Bioschemas/RO-Crate validation for at least one profile (working with [#7](../17/))
 * Prototype FAIR Digital Object (FDO) implementation using Signposting, PIDs and RO-Crate
 * Conceptualise and draft FDO "configuration type" profile for Signposting-based FDO implementation
+* Write up a BioHackrXiv preprint!
 * Other ideas
   -  Prototype a knowledge graph from pages using any of the technologies (working with [#7](../17/))
   -  Build a validator for FAIR Signposting level 1, then level 2 - may be based on https://github.com/stain/signposting/ 
