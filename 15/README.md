@@ -1,4 +1,4 @@
-# Project 15: Enabling FAIR Digital Objects with RO-Crates, Signposting and Bioschemas
+# Project 15: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas
 
 ## Abstract
 
