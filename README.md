@@ -3,15 +3,15 @@ This repository is meant for the participants of the [BioHackathon](https://bioh
 
 ## Projects
 
-* [Project 1](1): A “batteries-included” open reference resource for human genomic copy number variants (CNV)
-* [Project 2](2): Assessing quality and privacy metrics of synthetic health data for benchmarking: the variant callers use case.
-* [Project 3](3): Automating the building of a virtual, distributed pollinator reference collection.
-* [Project 4](4): Benchmarks for Bioinformatics Workflow Bake Offs
-* [Project 5](5): BioHackrXiv and publications
-* [Project 6](6): BioModelsML: Building a FAIR and reproducible collection of machine learning models in life science and medicine for easy reuse
-* [Project 7](7): Bioschemas resource index for chem and plants
-* [Project 8](8): Building towards a machine-actionable Software Management Plan
-* [Project 9](9): Cell type-specific and druggable pathway models and maps
+* [Project 1](01): A “batteries-included” open reference resource for human genomic copy number variants (CNV)
+* [Project 2](02): Assessing quality and privacy metrics of synthetic health data for benchmarking: the variant callers use case.
+* [Project 3](03): Automating the building of a virtual, distributed pollinator reference collection.
+* [Project 4](04): Benchmarks for Bioinformatics Workflow Bake Offs
+* [Project 5](05): BioHackrXiv and publications
+* [Project 6](06): BioModelsML: Building a FAIR and reproducible collection of machine learning models in life science and medicine for easy reuse
+* [Project 7](07): Bioschemas resource index for chem and plants
+* [Project 8](08): Building towards a machine-actionable Software Management Plan
+* [Project 9](09): Cell type-specific and druggable pathway models and maps
 * [Project 10](10): FAIR Workflow Execution with WfExS and Workflow Run Crate
 * [Project 11](11): Creating lesson plans to advance (life sciences) data steward & researcher FAIR skills
 * [Project 12](12): Creating the ELIXIR Data Stewardship/Management (DS/DM) Handbook - a guide for DS/DM to manage their life sciences RDM efforts
