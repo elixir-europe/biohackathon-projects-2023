@@ -12,7 +12,7 @@ Previous publications are [here](https://biohackrxiv.org/discover?q=biohackrxiv)
 
  * Arun Isaac
  * Tazro Ohta
- * Egon Willighagen
+ * Egon Willighagen ([@egonw](https://github.com/egonw))
  * Toshiaki Katayama
  * Gianluca Della Vedova (remote)
  * Pjotr Prins
