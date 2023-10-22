@@ -18,6 +18,6 @@ Our methodology involves integrating data from diverse sources and repurposing e
 
 ## Lead(s)
 
-Tooba Abbassi-Daloii, Yojana Gadiya, Egon Willighagen
+Tooba Abbassi-Daloii, Yojana Gadiya, Egon Willighagen ([@egonw](https://github.com/egonw))
 
 
