@@ -1,21 +1,55 @@
 # Project 33: The BioHackathon Cloud
 
-## Abstract
+Welcome to the [**BioHackCloud**](https://biohack.cloud/) project, a continuous effort to help BioHackers access cloud computing resources for their projects. The BioHackCloud was kicked off during the 2023 edition of the DBCLS BioHackathon in Japan and will try to provide cloud resources for this and future BioHackathons.
 
-We would like to propose the establishment of a "BioHackCloud" (BHC) - a cloud-based infrastructure for the federated analysis of biological/biomedical data based on Global Alliance for Genomics and Health (GA4GH) standards and other relevant open community standards. The ELIXIR Cloud & AAI GA4GH Driver Project-run “ELIXIR Cloud” infrastructure would serve as the initial BHC. It is now at a level of maturity that it can be used experimentally for executing CWL and Snakemake workflows, as well as running individual data-intensive tasks on a network of compute centers within ELIXIR.
+The BioHackCloud is not a cloud infrastructure in itself. Rather, it will provide a convenient entry point for BioHackers to make use of available cloud infrastructures/solutions, such as the [ELIXIR Cloud](https://elixir-cloud.dcc.sib.swiss/), [Sapporo](https://github.com/sapporo-wes/sapporo), [Galaxy](https://usegalaxy.org/), [Microsoft Azure](https://azure.microsoft.com/) or the [Nuvolos Cloud](https://nuvolos.cloud/).
 
-The BHC will be offered to interested BioHackathon participants, with BHC project participants providing training and support for the realization of individual use cases (e.g., construction of API calls, modification of workflows, addition of features and integrations to the individual services). Feasibility will be evaluated on a case-by-case basis, but where use cases cannot be realized with the current infrastructure, future support of these use cases will be considered for the BHC roadmap.
+**A use-case driven cloud**
 
-Next to providing support for other participants, another main goal for the BHC project is the integration with other relevant services on the basis of open community standards. In particular, for this hackathon we will focus on furthering the interoperability with Microsoft’s native TES on Azure implementation (https://github.com/microsoft/ga4gh-tes). But integration of other community standards (e.g., RO-Crate) and implementations (e.g., WorkflowHub, Dockstore, BioContainers) is also possible, depending on participants' interests.
+The BioHackCloud focuses on supporting use cases that BioHackers typically face, e.g., executing non-trivial containerized compute jobs, sharing big data with team mates, collaboratively accessing Jupyter notebooks. Use cases can be [submitted] by the BioHackathon community and are then evaluated by the team for support. If we _can_ support a use case right away, we will prepare the necessary documentation both for ourselves to set up any necessary deployments and for end users to access the recources. The end user documentation will then be published on the [BioHackCloud website](https://biohack.cloud/) for future use. Deployment instructions will be instead be stored in the [BioHackCloud GitHub organization](https://github.com/biohackcloud/).
 
-## More information
+> Please note that currently, there are no use cases supported yet!
 
-We will reach out to the leads of other project leads early (at least a month in advance) to get an understanding of possible use cases that we could support with the BHC and to prepare accordingly. For the integration goals, a project board with detailed issues will be prepared, and based on available participants and current needs, a common development theme with realistic milestones for the event will be set on Day 1.
+**A standardized, FAIR cloud**
 
-Requirements for use cases which we can currently not support will be used to draft a BHC roadmap on Day 5, to be addressed at or in preparation of future events. To support use cases and drive development, we estimate that we would need at least 6 contributors (the more, the better) with different skill sets (e.g., coding in Python, Javascript/Typescript; devops/Kubernetes; workflows; containers; data analysis) and varying degrees of experience.
+Apart from just linking out to available cloud computing solutions and documenting their use for particular use cases, we are also interested in advancing the FAIRification and integration of different cloud solutions. To achieve this, we will preferentially consider cloud solutions that adopt community standards for interoperability, such as the [GA4GH Cloud](https://www.ga4gh.org/work_stream/cloud/) APIs or relevant [RO-Crate](https://www.researchobject.org/ro-crate/profiles.html) profiles.
 
-## Lead(s)
+## Hacking goals
 
-Alexander Kanitz, Anurag Gupta, Matt McLoughlin
+The following table lists the main (in bold) and side goals for the 2023 ELIXIR BioHackathon, as well as skills that will be useful in achieving these:
 
+> **As you can see, we can make use of many different backgrounds, skills and interest. So please consider joining the team and making the BioHackCloud a useful asset for the BioHackathon community** :rocket:
+
+| Goal | Description | Useful skills |
+| --- | --- | --- |
+| **Understand cloud needs of BioHackathon community** | Set up, share and promote a use case survey among BioHackathon participants | Any |
+| **Evaluate use cases** | Evaluate, understand and prioritize use cases | Bioinformaticians, data analysts |
+| **Plan use case support** | Plan support for use cases during this and future BioHackathon events; create roadmap | Bioinformaticians, data analysis, cloud specialists |
+| **Implement use case support** | Select one or more use cases to implement support for | Cloud, workflow and container specialists |
+| Improve website | Improve features and usability of BioHackCloud landing page | Frontend programmers |
+| Integrate cloud solutions | Work packages towards the better integration of cloud solutions via community standards | Cloud specialists, backend programmers |
+
+## How we work
+
+The following bullet points will give you a basic idea of what working on the team will look like:
+
+- To get to know the team, set more narrow goals, distribute work packages across team members, and discuss administrative issues, we will have a kick-off call at 4:30pm CET in [Zoom](https://elixir-europe-org.zoom.us/j/87108266423?pwd=SVRNeEtsY1ArZ2ZjM3htTTN4TTBhQT09). Make sure to join the project's breakout room. If you would like to participate, but can't make the meeting, please drop a message in the [Slack channel](https://biohackeu.slack.com/archives/C03HQPMEN81), where you briefly introduce yourself and list any relevant skills and interests.
+- Our [Slack channel](https://biohackeu.slack.com/archives/C03HQPMEN81) will be the primary focus point for communication with the entire team.
+- Depending on the team's makeup (number of participants, F2F vs. virtual participation, time zones), we may decide for daily stand-up meetings.
+- End-user and admin documentation for supported use cases will be published/stored on the [BioHackCloud website](https://biohack.cloud/) and a dedicated repository in the [BioHackCloud GitHub organization](https://github.com/biohackcloud), respectively; where to store any other outputs (roadmap, demos/tutorials etc.) will be decided on the go and broadcast in the Slack channel
+
+## Resources
+
+- [Slack channel](https://biohackeu.slack.com/archives/C03HQPMEN81)
+- [Zoom link](https://elixir-europe-org.zoom.us/j/87108266423?pwd=SVRNeEtsY1ArZ2ZjM3htTTN4TTBhQT09) (choose the appropriate breakout room)
+- [BioHackCloud website](https://biohack.cloud/)
+- [BioHackCloud GitHub organization](https://github.com/biohackcloud)
+
+## Leads
+
+| Name | Affiliation | GitHub | LinkedIn |
+| --- | --- | --- | --- |
+| **Alex Kanitz** | Swiss Institute of Bioinformatics, Switzerland | [URL](https://github.com/uniqueg) | [URL](www.linkedin.com/in/alexanderkanitz/) |
+| **Anurag Gupta** | Farmako, India | [URL](https://github.com/git-anurag-hub) | [URL](https://www.linkedin.com/in/anurag-gupta-1201/) |
+| **Matt McLoughlin** | Microsoft Research, United States | [URL](https://github.com/MattMcL4475) | [URL](https://www.linkedin.com/in/mattmcl44/) |
 
