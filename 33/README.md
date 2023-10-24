@@ -1,6 +1,8 @@
 # Project 33: The BioHackathon Cloud
 
-![overview slide](./project_overview.png)
+[![overview slide](./project_overview.png)](https://drive.google.com/file/d/1bhqqnuGcq4Y0MZ982ErH9ZBvx1z53oP4/view?usp=drive_link)
+
+> _**Click on slide to listen to a 2-min introduction_**
 
 ## Overview
 
