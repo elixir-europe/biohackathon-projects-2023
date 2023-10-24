@@ -14,6 +14,8 @@ The BioHackCloud focuses on supporting use cases that BioHackers typically face,
 
 Apart from just linking out to available cloud computing solutions and documenting their use for particular use cases, we are also interested in advancing the FAIRification and integration of different cloud solutions. To achieve this, we will preferentially consider cloud solutions that adopt community standards for interoperability, such as the [GA4GH Cloud](https://www.ga4gh.org/work_stream/cloud/) APIs or relevant [RO-Crate](https://www.researchobject.org/ro-crate/profiles.html) profiles.
 
+![overview slide](./project_overview.png)
+
 ## Hacking goals
 
 The following table lists the main (in bold) and side goals for the 2023 ELIXIR BioHackathon, as well as skills that will be useful in achieving these:
