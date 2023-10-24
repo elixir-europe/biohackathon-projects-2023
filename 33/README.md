@@ -1,5 +1,9 @@
 # Project 33: The BioHackathon Cloud
 
+![overview slide](./project_overview.png)
+
+## Overview
+
 Welcome to the [**BioHackCloud**](https://biohack.cloud/) project, a continuous effort to help BioHackers access cloud computing resources for their projects. The BioHackCloud was kicked off during the 2023 edition of the DBCLS BioHackathon in Japan and will try to provide cloud resources for this and future BioHackathons.
 
 The BioHackCloud is not a cloud infrastructure in itself. Rather, it will provide a convenient entry point for BioHackers to make use of available cloud infrastructures/solutions, such as the [ELIXIR Cloud](https://elixir-cloud.dcc.sib.swiss/), [Sapporo](https://github.com/sapporo-wes/sapporo), [Galaxy](https://usegalaxy.org/), [Microsoft Azure](https://azure.microsoft.com/) or the [Nuvolos Cloud](https://nuvolos.cloud/).
@@ -13,8 +17,6 @@ The BioHackCloud focuses on supporting use cases that BioHackers typically face,
 **A standardized, FAIR cloud**
 
 Apart from just linking out to available cloud computing solutions and documenting their use for particular use cases, we are also interested in advancing the FAIRification and integration of different cloud solutions. To achieve this, we will preferentially consider cloud solutions that adopt community standards for interoperability, such as the [GA4GH Cloud](https://www.ga4gh.org/work_stream/cloud/) APIs or relevant [RO-Crate](https://www.researchobject.org/ro-crate/profiles.html) profiles.
-
-![overview slide](./project_overview.png)
 
 ## Hacking goals
 
