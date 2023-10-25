@@ -22,7 +22,4 @@ For the project to succeed, we need a diverse team of around 7 people who will c
 - Andra Waagmeester, , , online
 - Jere Kahanpää, , , on-site
 - Laura Abraham, Meise Botanic Garden, https://orcid.org/0000-0003-4070-2982, on-site
-
-
-
-
+- William Morris, Finnish Museum of Natural History, https://orcid.org/0000-0002-8686-4154, online 
