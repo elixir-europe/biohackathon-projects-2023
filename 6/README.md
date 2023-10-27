@@ -20,8 +20,12 @@ We will engage with the BioCuration, BioSchemas, EDAM, DOME, APICURON and the ML
 
 The team consists of eight on-site and remote members, including leads. We will try to recruit at least three additional ML/domain experts.
 
+## Communication & Contact
+
+Please join the 06_fair-ml-biomodels channel in the BioHackEU Slack channel. We will coordinate meetings and activities via Slack to help us keep our on-site and remote participants in sync. If you have any questions, please contact one of the project leads below.
+
 ## Lead(s)
 
-Rahuman Sheriff, Nils Hoffmann, Sumukh Deshpande
+[Rahuman Sheriff](https://github.com/rsmsheriff), [Nils Hoffmann](https://github.com/nilshoffmann), Sumukh Deshpande
 
 
