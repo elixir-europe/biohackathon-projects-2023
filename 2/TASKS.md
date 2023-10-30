@@ -35,3 +35,17 @@ samtools view -T GRCh38_full_analysis_set_plus_decoy_hla.fa  -b -o HG01504.alt_b
 ```
 samtools view -b HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam 17:7565097-7590856 > TP53.bam
 ```
+
+## Synthetic data
+
+![](https://github.com/zstephens/neat-genreads/raw/master/docs/NEATNEAT.png)
+
+- [ ] Using NEAT: https://github.com/zstephens/neat-genreads
+  - [ ] https://github.com/zstephens/neat-genreads#targeted-region-simulation
+  - [ ] 
+
+## Benchmarking genomic variant calling
+
+![](https://www.ghga.de/fileadmin/_processed_/f/0/csm_NCBench_figure_aa9d066ede.png)
+
+- [ ] https://www.ghga.de/news/detail/benchmarking-genomic-variant-calling
