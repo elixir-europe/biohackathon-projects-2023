@@ -23,6 +23,8 @@ This project will provide a platform to discuss and develop a streamlined workfl
 
 Please join the 18_fairification-mass-spectral-libraries channel in the BioHackEU Slack channel. We will coordinate meetings and activities via Slack to help us keep our on-site and remote participants in sync. If you have any questions, please contact one of the project leads below.
 
+[Our main GitHub used for active development during the BioHackathon is over at the mzmine organization](https://github.com/mzmine/biohack23_p15)
+
 ## Lead(s)
 
 [Tomáš Pluskal](https://github.com/tomas-pluskal), [Nils Hoffmann](https://github.com/nilshoffmann), [Justin van der Hooft](https://github.com/justinjjvanderhooft)
