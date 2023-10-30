@@ -12,13 +12,13 @@ Importantly, the project will for the first time combine recent standard develop
 
 Last year, hCNV community members started prototyping such a resource, designing the database structure and collecting CNV from the 1KGP Dragen reanalysis initiative. Tasks for this project will be to:
 
-- Adapt the prototype, to make it generic
-- identify new datasets to include
-- Create API connections to other public data resources for CNV (Progenetix, Decipher, EBI EVA, GnomAD)
-- develop uploaders/exporters to facilitate and automate data import/export from VCF (new specifications for CNV/SV), and others ELIXIR and GA4GH data format and exchange formalism (BED)
-- Make the datasets discoverable through Beacon v2
-- Create data connector with Galaxy instances for data exploration
-- Project outputs (data code) will be made available under the maximally permissive licence in a git repository to encourage contribution and sustainability and communicated through the cnvar.org website and additional channels.
+* Adapt the prototype, to make it generic
+* identify new datasets to include
+* Create API connections to other public data resources for CNV (Progenetix, Decipher, EBI EVA, GnomAD)
+* develop uploaders/exporters to facilitate and automate data import/export from VCF (new specifications for CNV/SV), and others ELIXIR and GA4GH data format and exchange formalism (BED)
+* Create data connector with Galaxy instances for data exploration
+* Make the datasets discoverable through Beacon v2 (e.g. as a dedicated resource on the Progenetix platform and as Galaxy hosted data utilizing the Galaxy Beacon adaptor)
+* Project outputs (data code) will be made available under the maximally permissive licence in a git repository to encourage contribution and sustainability and communicated through the cnvar.org website and additional channels.
 
 Any person with interest in one or more of the fields above is welcome to contribute to
 the project!
@@ -29,9 +29,7 @@ David Salgado[^1], Krzysztof Poterlowicz, Michael Baudis
 
 ## Additional Information
 
-* project documentation site [[link]](https://cnvar.org/cnv-reference-resources/)
-  and [[source repo]](https://github.com/hCNV/cnv-reference-resources)
+Please see the project's emerging **[website](https://cnvar.org/cnv-reference-resources/)** and **[repository](https://github.com/hCNV/cnv-reference-resources)**.
 
 [^1]: Involved in the project's design but won't participate at the Biohackaton...
-
 
