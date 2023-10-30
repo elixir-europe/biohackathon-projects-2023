@@ -27,3 +27,4 @@ For the project to succeed, we need a diverse team of around 7 people who will c
 ## Plans/ideas for the Biohackathon
 - Shaping and extending the linked open data model for virtual reference collections
 - Investigating the coverage of bumblebee species by wikipedia and creating wikipedia pages (or stubs) using a workflow that allows for incorporation of researchgrade species pictures with the correct license from [iNaturalist](https://inaturalist.org) into Wikipedia.
+- Mobilization of ecological data to specialized (open!) repositories including interaction data (plant-pollinator/parasitic) to [GloBI](https://globalbioticinteractions.org)
