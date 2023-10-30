@@ -40,8 +40,8 @@ samtools view -b HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam 17:75
 
 ![](https://github.com/zstephens/neat-genreads/raw/master/docs/NEATNEAT.png)
 
-- [ ] Using NEAT: https://github.com/zstephens/neat-genreads
-  - [ ] https://github.com/zstephens/neat-genreads#targeted-region-simulation
+- [ ] https://github.com/ncsa/NEAT
+  - [ ] https://github.com/ncsa/NEAT#targeted-region-simulation
 
 ## Benchmarking genomic variant calling
 
