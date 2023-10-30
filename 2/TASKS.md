@@ -48,4 +48,4 @@ samtools view -b HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam 17:75
 
 ![](https://www.ghga.de/fileadmin/_processed_/f/0/csm_NCBench_figure_aa9d066ede.png)
 
-- [ ] https://www.ghga.de/news/detail/benchmarking-genomic-variant-calling
+- [ ] Check proposed workflow for benchmarking https://www.ghga.de/news/detail/benchmarking-genomic-variant-calling I guess the code to run it is this one:  https://github.com/snakemake-workflows/dna-seq-benchmark/
