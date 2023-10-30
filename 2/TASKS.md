@@ -41,7 +41,7 @@ samtools view -b HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam 17:75
 ![](https://github.com/zstephens/neat-genreads/raw/master/docs/NEATNEAT.png)
 
 - [ ] https://github.com/ncsa/NEAT
-- [ ] https://github.com/4MedBox/Synthetic_DNA_Simulato
+- [ ] https://github.com/4MedBox/Synthetic_DNA_Simulator [Documentation](https://docs.google.com/document/d/1ELpjAqmxfPtjS1Jc2MgVjlHq6_4AaNBm/edit)
       
 ## Benchmarking genomic variant calling
 
