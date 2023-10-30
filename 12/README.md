@@ -29,6 +29,8 @@ All DS/DM from and beyond ELIXIR are invited to bring in their expertise, regard
 
 ## Lead(s)
 
-Mijke Jetten, Nazeefa Fatima, Xenia Perez Sitja
+Mijke Jetten, Nazeefa Fatima, Xenia Perez Sitja & Katarzyna Kamieniecka
 
+## Document
 
+[Project document](https://docs.google.com/document/d/1hFUBRh6jKBlE0Ahxqjv1oLXvuvJEoYAd3tXOb8F_gEc/edit) with all info
