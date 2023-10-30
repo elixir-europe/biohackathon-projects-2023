@@ -56,3 +56,6 @@ Our methodology involves integrating data from diverse sources and repurposing e
 
 ## Members
 * Ammar Ammar ([Google scholar](https://scholar.google.com/citations?user=8ZmXyZcAAAAJ&hl=en))
+* [Dominik Martinat](https://github.com/dominikmartinat)
+* [Ana Claudia Sima](https://github.com/dssib)
+* [Hasan Balci](https://github.com/)
