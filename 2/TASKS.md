@@ -13,7 +13,7 @@ wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_referen
 
 ```
 
-- Get human sequence from  https://www.internationalgenome.org/data-portal/sample
+- Get human sequence from  https://www.internationalgenome.org/data-portal/sample for example [HG01504](https://www.internationalgenome.org/data-portal/sample/HG01504)
 
 ```
 wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/IBS/HG01504/alignment/HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.cram
