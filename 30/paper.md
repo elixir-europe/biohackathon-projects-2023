@@ -100,5 +100,13 @@ While minimal standards are important, they are only part of the solution. The u
 ## Acknowledgements
 We would like to thank...
 
+@Hannah ... XYZ from the [cellXgene](https://cellxgene.cziscience.com/) initiative for presenting something...
+
+@Sara ... XYZ from the BeeGee project for presenting ...
+
+@Naveed ... members of the ELIXIR Single Cell Omics Community workshop who made the prototype  min single cell metadata sheet
+
+ELIXIR BioHackathon organisers and Chateuform Campus Belloch...
+
 ## References
 
