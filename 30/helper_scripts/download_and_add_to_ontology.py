@@ -12,6 +12,7 @@ import zipfile
 from csv import reader, DictWriter, writer
 import shutil
 import os
+from bs4 import BeautifulSoup
 
 def response_status(r, url, function_name="response_status"):
     if (r.status_code >= 100 and r.status_code <200):
@@ -71,13 +72,34 @@ def make_paths(input_scEA):
         
     return path, temp, log, input_scEA
 
-
+def get_basics():
+    # download basic info: title, publication, organism, number of cells, pubmed link
+    url = "http://ftp.ebi.ac.uk/pub/databases/microarray/data/atlas/sc_experiments/"
+    r = requests.get(url, allow_redirects=True)
+    response_stat = response_status(r, url, get_basics.__name__)
+    if response_stat >= 200 and response_stat < 300:
+        r_text = r.text
+        soup = BeautifulSoup(r_text, "html.parser")
+        anchor_tags = soup.find_all("a")
+        directory_names = []
+        for tag in anchor_tags:
+            href = tag.get("href")
+            if href.endswith("/"):
+                directory_name = href[:-1]
+                directory_names.append(directory_name)
+        return directory_names[1:-1]
+        print("[INFO] download of basic information done")
+    else:
+        print("[WARNING] no basic information could be downloaded")
 
 
 # main run
-scEA_investigations = ["E-MTAB-11006", "E-GEOD-152766"]#, "E-CURD-83", "E-GEOD-141730", "E-ENAD-50", "E-ENAD-49", "E-GEOD-158761", 
+scEA_investigations = get_basics()
+
+# scEA_investigations = ["E-MTAB-11006"]#, "E-GEOD-152766"]#, "E-CURD-83", "E-GEOD-141730", "E-ENAD-50", "E-ENAD-49", "E-GEOD-158761", 
                         # "E-GEOD-161332", "E-GEOD-123013", "E-GEOD-121619", "E-CURD-5", "E-CURD-4", "E-ENAD-30"]
 
+# scEA_investigations = "E-MTAB-11006"
 for accession in scEA_investigations:
     path, temp, log, user_input_scEA = make_paths(input_scEA=accession)
     get_experiment(path, user_input_scEA, experiment_metadata=True)
