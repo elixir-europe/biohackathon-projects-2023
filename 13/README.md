@@ -26,4 +26,10 @@ We think that we need around 4-5 people full-time to work on the project. We wel
 
 Eva Martin del Pico, Sergi Aguiló-Castillo
 
+## Links
+
+[Project Working Document](https://docs.google.com/document/d/1ziF29-I0ItqKAS1gbF42Pr7Uf6U-SScuomVtd6K5ROM/edit) 
+
+[Working Folder](https://drive.google.com/drive/folders/1xOj7P0nGi1Z-XfB7eK_zsXyXMTK7rvQ4?usp=drive_link)
+
 
