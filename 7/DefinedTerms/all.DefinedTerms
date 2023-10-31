@@ -1,0 +1,304 @@
+[
+  {
+    "@type": "DefinedTerm",
+    "@id": "",
+    "name": "expression profiling by array"
+  },
+  {
+    "@type": "DefinedTerm",
+    "@id": "",
+    "name": "acute myocardial infarction"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/SAMEA104493311",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/efo/EFO_0004236",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/SAMEA104493311",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/efo/EFO_0004236",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "Occurrence",
+    "inDefinedTermSet": "http://rs.gbif.org/vocabulary/gbif/dataset_type.xml"
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "Observation",
+    "inDefinedTermSet": "http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml"
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "Occurrence",
+    "inDefinedTermSet": "http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml"
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "kinase activity",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Function"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "protein serine/threonine kinase activity",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Function"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "calmodulin binding",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Function"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "identical protein binding",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Function"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "protein homodimerization activity",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Function"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "angiotensin-activated signaling pathway",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Process"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "protein phosphorylation",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Process"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "dendritic spine development",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Process"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "peptidyl-threonine autophosphorylation",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Process"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "positive regulation of NF-kappaB transcription factor activity",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Process"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "calcium- and calmodulin-dependent protein kinase complex",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Component"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "dendritic spine",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Component"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "nucleus",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Component"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "cytoplasm",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Component"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "termCode": "neuron projection",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "maintainer": {
+        "@type": "Organization",
+        "name": "Gene Ontology",
+        "url": "http://geneontology.org/"
+      },
+      "name": "GO Component"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "Mass spectrometry data",
+    "url": "http://edamontology.org/data_2536",
+    "termCode": "data_2536",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Bioinformatics operations, data types, formats, identifiers and topics",
+      "url": " http://edamontology.org"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "liquid chromatography-mass spectrometry",
+    "url": "http://purl.obolibrary.org/obo/CHMO_0000524",
+    "termCode": "CHMO_0000524",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Chemical Methods Ontology",
+      "url": "http://purl.obolibrary.org/obo/chmo.owl"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "Mass spectrometry data",
+    "url": "http://edamontology.org/data_2536",
+    "termCode": "data_2536",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Bioinformatics operations, data types, formats, identifiers and topics",
+      "url": " http://edamontology.org"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "liquid chromatography-mass spectrometry",
+    "url": "http://purl.obolibrary.org/obo/CHMO_0000524",
+    "termCode": "CHMO_0000524",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Chemical Methods Ontology",
+      "url": "http://purl.obolibrary.org/obo/chmo.owl"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "Mass spectrometry data",
+    "url": "http://edamontology.org/data_2536",
+    "termCode": "data_2536",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Bioinformatics operations, data types, formats, identifiers and topics",
+      "url": " http://edamontology.org"
+    }
+  },
+  {
+    "@type": "DefinedTerm",
+    "name": "liquid chromatography-mass spectrometry",
+    "url": "http://purl.obolibrary.org/obo/CHMO_0000524",
+    "termCode": "CHMO_0000524",
+    "inDefinedTermSet": {
+      "@type": "DefinedTermSet",
+      "name": "Chemical Methods Ontology",
+      "url": "http://purl.obolibrary.org/obo/chmo.owl"
+    }
+  }
+]
