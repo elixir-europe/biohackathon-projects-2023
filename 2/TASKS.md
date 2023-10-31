@@ -3,7 +3,7 @@
 - Install requirements
 
 ```
- sudo apt-get install pdfjam texlive-extra-utils samtools
+ sudo apt-get install pdfjam texlive-extra-utils samtools bedtools bcftools
 
 ```
 - Get reference sequence
@@ -13,7 +13,9 @@ wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_referen
 
 ```
 
-- Get human sequence from  https://www.internationalgenome.org/data-portal/sample for example [HG01504](https://www.internationalgenome.org/data-portal/sample/HG01504)
+- Get human sequence data from  https://www.internationalgenome.org/data-portal/sample for example [HG01504](https://www.internationalgenome.org/data-portal/sample/HG01504)
+
+#### BAM files
 
 ```
 wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/IBS/HG01504/alignment/HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.cram
@@ -35,6 +37,33 @@ samtools view -T GRCh38_full_analysis_set_plus_decoy_hla.fa  -b -o HG01504.alt_b
 ```
 samtools view -b HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam 17:7565097-7590856 > TP53.bam
 ```
+
+#### FASTQ files
+
+We can use bedtools to convert the BAM file to FASTQ. This command will generate two FASTQ files (TP53_R1.fastq and TP53_R2.fastq) for paired-end data. If your data is single-end, only the -fq file will be populated.
+
+```
+bedtools bamtofastq -i TP53.bam -fq TP53_R1.fastq -fq2 TP53_R2.fastq
+
+```
+
+
+#### VCF files
+
+- Download VCF
+
+```
+wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/ALL.chr7.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz
+```
+
+
+
+- Filter TP53
+  
+``` 
+bcftools view -r chr17:7661779-7687550 input.vcf > TP53.vcf
+```
+
 
 ## Synthetic data
 
