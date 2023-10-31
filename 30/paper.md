@@ -61,6 +61,24 @@ While minimal standards are important, they are only part of the solution. The u
 
 # Introduction
 
+Here we report the progress made at BioHackathon Europe 2023 for our project titled "Standards and ontologies for single cell experiments". Our project was planned around three work packages: (i) ontologies; (ii) meta-data standard convertors; and (iii) re-annotation of public single-cell datasets.
+
+In the planning phase of the project, we had identified a minSCe [pmid:33188371] and ... **(@Hannah, @Sara, @Mara, @Sami)** as key reference metadata standards to build upon. We wanted the focus to be specifically on establishing a minimal set of terms for single-cell experimentation and not upstream (e.g. organims related) or downstream (e.g. data processing) as to limit the scope of the project to something achievable. 
+
+**@Someone - something about ontologies? We never really discussed this in the planning phase**
+
+ - interactions with other projects and wider initiatiave (not prospective)
+
+In the early planning phases of the project we identified a number of other BioHackathon projects for which there would be potnetial synergies:
+ - [Cell type-specific and druggable pathway models and maps (project 09)](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/9)
+ - **@Someone ...?**
+
+To maximise interactions and reduce redundancies between projects, the co-leads met and exchanged updates and progress on prject planning. As such, we organised **a number of/one/two** guest presentations that were develivered to both projects:
+ - cellxgene
+ - BeeGees
+
+Two weeks before the BioHackathon, the ELIXIR Single Cell Omics community met at Hinxton to address [best practices for single-cell metadata](https://elixir-europe.org/events/elixir-single-cell-omics-community-f2fhybrid-meeting-0) as a part of the [ELIXIR SCONE Implementation Study](https://elixir-europe.org/internal-projects/commissioned-services/2023-SCONE). The participants worked towards establishing a "Rosetta Stone" for translation of metadata standards between major single-cell initiatives (e.g. minSCe, HCA), which methodologically inspired our own project. 
+
 # Heading 2
 
 # Heading 3
@@ -70,10 +88,11 @@ While minimal standards are important, they are only part of the solution. The u
 
 # Results
 
-## Result 1
+## Result 1 - Landscaping of existing metadata standards
+
+Trivia: did yo know that organism part is an OTPIONAL metadata term?
 
 ## Result 2
-
 
 ## Result 3
 
@@ -84,18 +103,16 @@ While minimal standards are important, they are only part of the solution. The u
 
 ... transgenes ontology?
 
-
 # Future Tasks: Addressing Shortcomings and Expanding Functionality (old title, but could be used)
 
-.. interaxction with ontologist at other instututes e.g. EBI
-.. interaction with platn comunities (e.g. )
+.. interaction with ontologists at other institutions e.g. EBI
+.. interaction with plant communities (e.g. GRAMENE)
 
 # Jupyter notebooks, GitHub repositories and data repositories
 
 * Please add a list here
 * Make sure you let us know which of these correspond to Jupyter notebooks. Although not supported yet, we plan to add features for them
 * And remember, software and data need a license for them to be used by others, no license means no clear rules so nobody could legally use a non-licensed research object, whatever that object is
-
 
 ## Acknowledgements
 We would like to thank...
