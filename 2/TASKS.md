@@ -63,6 +63,11 @@ wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_proj
 ``` 
 bcftools view -r chr17:7661779-7687550 input.vcf > TP53.vcf
 ```
+#### TP53.bed file
+
+``` 
+chr17   7661779   7687550   TP53
+```
 
 
 ## Synthetic data
