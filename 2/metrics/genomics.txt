@@ -1,0 +1,28 @@
+# Quality and privacy metrics for synthetic genomic data
+## Quality metrics
+### Curated metrics from the literature
+    - Proportion of reads on each chromosome 
+    - Coverage 
+    - Paired-end fragment length
+    - Alignment quality
+    - Rates of sequencing error
+    - Substitution, insertion, and deletion rates
+    - Quality scores for reads
+    - GC-coverage bias 
+    - Computational Cost
+    - mapping sensitivity of bases in reads
+    - mapping precision of mapped bases in reads
+    - Loss function L(S), Badness function
+    - Sequence data quality and characteristics across samples
+
+  #### Statistical metrics
+    - basic statistics (e.g., mean, median, standard deviation) 
+    - graphical representations (e.g., box plots, histograms, violin plots)
+    -  ML efficacy
+    -  Fidelity (α-Precision)
+    -  Diversity (β-Recall)
+    - Generalization
+    - GAN-train & GAN-test
+    - Mean, the dispersion parameter of the NB, and the signal to noise ratio
+
+## Privacy metrics
