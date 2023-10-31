@@ -23,6 +23,8 @@ For the project to succeed, we need a diverse team of around 7 people who will c
 - Jere Kahanpää, Finnish Museum of Natural History, https://orcid.org/0000-0003-1485-5272, on-site
 - Laura Abraham, Meise Botanic Garden, https://orcid.org/0000-0003-4070-2982, on-site
 - William Morris, Finnish Museum of Natural History, https://orcid.org/0000-0002-8686-4154, online
+- Tom Dijkema, Naturalis Biodiversity Center, https://orcid.org/0000-0001-9790-9277, on-site
+- Teemu Kataja, CSC - IT Center for Science, https://orcid.org/0009-0001-1434-0415, on-site
 
 ## Plans/ideas for the Biohackathon
 - Shaping and extending the linked open data model for virtual reference collections
