@@ -1,0 +1,1763 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#"
+     xml:base="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ARC="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000007 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000007">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:07:24Z</dc:date>
+        <rdfs:label xml:lang="en">has ontology source reference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000009 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000009">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:09:12Z</dc:date>
+        <rdfs:label xml:lang="en">has publication</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000011 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000011">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:09:51Z</dc:date>
+        <rdfs:label xml:lang="en">has contact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000013 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000013">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000000"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:10:14Z</dc:date>
+        <rdfs:label xml:lang="en">has study</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000016 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000016">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000044"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000050"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000063"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000065"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000071"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000076"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:13:50Z</dc:date>
+        <rdfs:label xml:lang="en">has comment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000024 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000024">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000025"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:39:56Z</dc:date>
+        <rdfs:label xml:lang="en">has status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000034 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000034">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000035"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:46:25Z</dc:date>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000037 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000037">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000038"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:52:35Z</dc:date>
+        <rdfs:label xml:lang="en">has study design descriptor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000039 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000039">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:55:08Z</dc:date>
+        <rdfs:label xml:lang="en">has protocol</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000041 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000041">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000000"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:55:35Z</dc:date>
+        <rdfs:label xml:lang="en">has assay</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000043 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000043">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:56:23Z</dc:date>
+        <rdfs:label xml:lang="en">has factor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000045 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000045">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000110"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:56:43Z</dc:date>
+        <rdfs:label xml:lang="en">has study material</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000047 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000047">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:57:24Z</dc:date>
+        <rdfs:label xml:lang="en">has process sequence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000049 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000049">
+        <rdfs:label xml:lang="en">DEPRECATED has characteristic category</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000051 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000051">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000052"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:59:11Z</dc:date>
+        <rdfs:label xml:lang="en">has unit catergory</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000055 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000055">
+        <rdfs:label xml:lang="en">has dummy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000059 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000059">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000060"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:40:39Z</dc:date>
+        <rdfs:label xml:lang="en">has protocol type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000062 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000062">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000063"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:42:49Z</dc:date>
+        <rdfs:label xml:lang="en">has parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000064 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000064">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000065"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:43:20Z</dc:date>
+        <rdfs:label xml:lang="en">has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000066 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000066">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000067"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:44:41Z</dc:date>
+        <rdfs:label xml:lang="en">has measurement type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000072 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000072">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000068"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:46:12Z</dc:date>
+        <rdfs:label xml:lang="en">has technology type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000074 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000074">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000109"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:47:32Z</dc:date>
+        <rdfs:label xml:lang="en">has assay material</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000075 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000075">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000076"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T07:28:13Z</dc:date>
+        <rdfs:label xml:lang="en">has data file</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000077 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000077">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000078"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T07:31:54Z</dc:date>
+        <rdfs:label xml:lang="en">has factor type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000080 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000080">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000071"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:01:25Z</dc:date>
+        <rdfs:label xml:lang="en">has characteristic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000082 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000082">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000071"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:04:26Z</dc:date>
+        <rdfs:label xml:lang="en">derives from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000083 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000083">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:08:13Z</dc:date>
+        <rdfs:label xml:lang="en">has factor value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000086 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000086">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:13:12Z</dc:date>
+        <rdfs:label xml:lang="en">executes protocol</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000087 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000087">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:15:04Z</dc:date>
+        <rdfs:label xml:lang="en">has parameter value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000091 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000091">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:17:04Z</dc:date>
+        <rdfs:label xml:lang="en">has previous process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000092 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000092">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:17:20Z</dc:date>
+        <rdfs:label xml:lang="en">has next process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000095 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000095">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000093"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:19:40Z</dc:date>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000096 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000096">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000094"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:19:58Z</dc:date>
+        <rdfs:label xml:lang="en">has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000098 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000098">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000097"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:21:29Z</dc:date>
+        <rdfs:label xml:lang="en">has characteristic type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000100 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000100">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000063"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000099"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:23:09Z</dc:date>
+        <rdfs:label xml:lang="en">has parameter name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000102 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000102">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000065"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000101"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:25:20Z</dc:date>
+        <rdfs:label xml:lang="en">has component type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000103 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000103">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000104"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:28:14Z</dc:date>
+        <rdfs:label xml:lang="en">has value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000106 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000106">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000105"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:29:41Z</dc:date>
+        <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000112 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000112">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000081"/>
+        <rdfs:label xml:lang="en">has performer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000143 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000143">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000142"/>
+        <rdfs:label xml:lang="en">has material type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000148 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000148">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000147"/>
+        <rdfs:label xml:lang="en">has extract name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000197 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000197">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000196"/>
+        <rdfs:label xml:lang="en">has assay name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000206 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000206">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000054"/>
+        <rdfs:label xml:lang="en">has scan name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000002 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000002">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:03:54Z</dc:date>
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000003 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000003">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:04:53Z</dc:date>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000004 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000004">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:05:24Z</dc:date>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000005 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000005">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:05:40Z</dc:date>
+        <rdfs:label xml:lang="en">submission date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000006 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000006">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:06:21Z</dc:date>
+        <rdfs:label xml:lang="en">public resease date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000015 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000015">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:12:36Z</dc:date>
+        <rdfs:label xml:lang="en">file name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000018 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000018">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:28:04Z</dc:date>
+        <rdfs:label xml:lang="en">file</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000019 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000019">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000044"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000065"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000071"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000076"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:28:39Z</dc:date>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000020 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000020">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:29:01Z</dc:date>
+        <rdfs:label xml:lang="en">version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000021 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000021">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:30:59Z</dc:date>
+        <rdfs:label xml:lang="en">PubMed ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000022 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000022">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:31:29Z</dc:date>
+        <rdfs:label xml:lang="en">DOI</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000023 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000023">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:39:01Z</dc:date>
+        <rdfs:label xml:lang="en">author list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000026 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000026">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:41:26Z</dc:date>
+        <rdfs:label xml:lang="en">last name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000027 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000027">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:41:47Z</dc:date>
+        <rdfs:label xml:lang="en">first name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000028 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000028">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:42:05Z</dc:date>
+        <rdfs:label xml:lang="en">mid initials</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000029 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000029">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:42:35Z</dc:date>
+        <rdfs:label xml:lang="en">email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000030 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000030">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:42:51Z</dc:date>
+        <rdfs:label xml:lang="en">phone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000031 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000031">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:43:00Z</dc:date>
+        <rdfs:label xml:lang="en">fax</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000032 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000032">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:43:20Z</dc:date>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000033 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000033">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:45:43Z</dc:date>
+        <rdfs:label xml:lang="en">affiliation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000036 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000036">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000119"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#long"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#short"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:47:56Z</dc:date>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000056 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000056">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#double"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#long"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#short"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:24:38Z</dc:date>
+        <rdfs:label xml:lang="en">annotation value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000057 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000057">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:25:39Z</dc:date>
+        <rdfs:label xml:lang="en">term source REF</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000058 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000058">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:27:14Z</dc:date>
+        <rdfs:label xml:lang="en">term accession</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000061 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000061">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:41:34Z</dc:date>
+        <rdfs:label xml:lang="en">URI</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000069 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000069">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="en">quality plot file</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000073 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000073">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">quality score</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000085 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000085">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Extract Name</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Labeled Extract Name</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:10:13Z</dc:date>
+        <rdfs:label xml:lang="en">material type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000089 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000089">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:16:09Z</dc:date>
+        <rdfs:label xml:lang="en">performer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000090 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000090">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:16:40Z</dc:date>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000107 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000107">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000076"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Derived Data File</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Image File</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Raw Data File</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:36:38Z</dc:date>
+        <rdfs:label xml:lang="en">data type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000111 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000111">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T12:50:09Z</dc:date>
+        <rdfs:label xml:lang="en">technology platform</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000000">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000063"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000065"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000093"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000094"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T12:49:59Z</dc:date>
+        <rdfs:label xml:lang="en">ARC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000001">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T12:50:47Z</dc:date>
+        <rdfs:label xml:lang="en">investigation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000008">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:08:31Z</dc:date>
+        <rdfs:label xml:lang="en">ontology source reference</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000010">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:09:17Z</dc:date>
+        <rdfs:label xml:lang="en">publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000012">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:10:00Z</dc:date>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000014">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:10:22Z</dc:date>
+        <rdfs:label xml:lang="en">study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000017">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:14:00Z</dc:date>
+        <rdfs:label xml:lang="en">comment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000025 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000025">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:40:11Z</dc:date>
+        <rdfs:label xml:lang="en">status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000035 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000035">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:46:39Z</dc:date>
+        <rdfs:label xml:lang="en">role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000038 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000038">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:54:53Z</dc:date>
+        <rdfs:label xml:lang="en">study design descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000040">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:55:19Z</dc:date>
+        <rdfs:label xml:lang="en">protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000042">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:55:48Z</dc:date>
+        <rdfs:label xml:lang="en">assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000044 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000044">
+        <rdfs:label>DEPRECATED category (from factor falue)</rdfs:label>
+        <rdfs:label xml:lang="en">DEPRECATED factor</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000046">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000093"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000094"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000109"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000110"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:57:03Z</dc:date>
+        <rdfs:label xml:lang="en">other material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000048">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:57:32Z</dc:date>
+        <rdfs:label xml:lang="en">process sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000050 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000050">
+        <rdfs:label xml:lang="en">DEPRECATED characteristic category</rdfs:label>
+        <rdfs:label>DEPRECATED material attribute</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000052 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000052">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T13:59:25Z</dc:date>
+        <rdfs:label xml:lang="en">unit category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:00:07Z</dc:date>
+        <rdfs:label xml:lang="en">ontology annotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000054 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000054">
+        <rdfs:label xml:lang="en">Scan Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000060 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000060">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:40:59Z</dc:date>
+        <rdfs:label xml:lang="en">protocol type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000063 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000063">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:43:05Z</dc:date>
+        <rdfs:label>category (from parameter value from process sequence)</rdfs:label>
+        <rdfs:label xml:lang="en">protocol parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000065 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000065">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:43:29Z</dc:date>
+        <rdfs:label xml:lang="en">component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000067 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000067">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:44:55Z</dc:date>
+        <rdfs:label xml:lang="en">measurement type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000068 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000068">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:45:00Z</dc:date>
+        <rdfs:label xml:lang="en">technology type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000070">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000093"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000094"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000109"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000110"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:45:44Z</dc:date>
+        <rdfs:label xml:lang="en">sample</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000071 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000071">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000093"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000110"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-15T14:45:49Z</dc:date>
+        <rdfs:label xml:lang="en">source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000076 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000076">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000093"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000094"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T07:28:29Z</dc:date>
+        <rdfs:label xml:lang="en">data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000078 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000078">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T07:32:10Z</dc:date>
+        <rdfs:label xml:lang="en">factor type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000079">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:01:11Z</dc:date>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:label>material attribute value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000081 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000081">
+        <rdfs:label xml:lang="en">Performer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000084">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:08:26Z</dc:date>
+        <rdfs:label xml:lang="en">factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000088">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:15:21Z</dc:date>
+        <rdfs:label xml:lang="en">parameter value</rdfs:label>
+        <rdfs:label>process parameter values</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000093 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000093">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:17:46Z</dc:date>
+        <rdfs:label xml:lang="en">input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000094 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000094">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:17:50Z</dc:date>
+        <rdfs:label xml:lang="en">output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000097 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000097">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:21:18Z</dc:date>
+        <rdfs:label xml:lang="en">characteristic type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000099 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000099">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:22:58Z</dc:date>
+        <rdfs:label xml:lang="en">parameter name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000101 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000101">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:24:56Z</dc:date>
+        <rdfs:label xml:lang="en">component type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000104 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000104">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:28:48Z</dc:date>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000105 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000105">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000053"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T08:28:53Z</dc:date>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000108 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000108">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T11:48:08Z</dc:date>
+        <rdfs:label xml:lang="en">material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000109 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000109">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000108"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T11:52:53Z</dc:date>
+        <rdfs:label xml:lang="en">assay material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000110 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000110">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000108"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hannah Doerpholz</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-16T11:53:16Z</dc:date>
+        <rdfs:label xml:lang="en">study material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000118 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000118">
+        <rdfs:label xml:lang="en">run</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000119 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000119">
+        <rdfs:label xml:lang="en">quality score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000142 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000142">
+        <rdfs:label xml:lang="en">Material Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000147 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000147">
+        <rdfs:label xml:lang="en">Extract Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000196 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hannah/ontologies/2022/8/ARC#ARC_00000196">
+        <rdfs:label xml:lang="en">Assay Name</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
