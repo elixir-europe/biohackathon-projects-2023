@@ -1,0 +1,351 @@
+- accession: ERC000011
+  dataType: CHECKLIST
+  description: Minimum information required for the sample
+  name: ENA default sample checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000012
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS air
+  status: 4
+  statusDescription: public
+- accession: ERC000013
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS host associated
+  status: 4
+  statusDescription: public
+- accession: ERC000014
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS human associated
+  status: 4
+  statusDescription: public
+- accession: ERC000015
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS human gut
+  status: 4
+  statusDescription: public
+- accession: ERC000016
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS human oral
+  status: 4
+  statusDescription: public
+- accession: ERC000017
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS human skin
+  status: 4
+  statusDescription: public
+- accession: ERC000018
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS human vaginal
+  status: 4
+  statusDescription: public
+- accession: ERC000019
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS microbial mat biolfilm
+  status: 4
+  statusDescription: public
+- accession: ERC000020
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS plant associated
+  status: 4
+  statusDescription: public
+- accession: ERC000021
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS sediment
+  status: 4
+  statusDescription: public
+- accession: ERC000022
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS soil
+  status: 4
+  statusDescription: public
+- accession: ERC000023
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS wastewater sludge
+  status: 4
+  statusDescription: public
+- accession: ERC000024
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS water
+  status: 4
+  statusDescription: public
+- accession: ERC000025
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS miscellaneous natural or artificial environment
+  status: 4
+  statusDescription: public
+- accession: ERC000027
+  dataType: CHECKLIST
+  description: 'Minimum information about a Micro B3 sample. A checklist for reporting
+    metadata of marine microbial samples associated with genomics data. NOTE: Non-genomics
+    data, i.e. oceanographic environmental data and morphology-based biodiversity
+    data, should be submitted to the appropriate National Oceanographic Data Centre
+    according to established reporting practices maintained by oceanographic community
+    experts. Major National Oceanographic Data Centres from countries bordering the
+    North-East Atlantic, and its adjacent seas: the Mediterranean, the Black Sea,
+    the Baltic, the North Sea and the Arctic are listed at http://www.seadatanet.org/Overview/Partners.
+    For the Ocean Sampling Day campaign, non-genomics data shall be reported to the
+    PANGAEA (http://www.pangaea.de/submit/).'
+  name: ENA Micro B3
+  status: 4
+  statusDescription: public
+- accession: ERC000028
+  dataType: CHECKLIST
+  description: Minimum information required for a prokaryotic pathogen sample
+  name: ENA prokaryotic pathogen minimal sample checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000029
+  dataType: CHECKLIST
+  description: Minimum Data for Matching (MDM). A checklist for reporting metadata
+    of pathogen samples for the Global Microbial Identifier (GMI) reporting system.
+    More about GMI can be found here http://www.g-m-i.org/
+  name: ENA Global Microbial Identifier reporting standard checklist GMI_MDM:1.1
+  status: 4
+  statusDescription: public
+- accession: ERC000030
+  dataType: CHECKLIST
+  description: Minimum information about a Tara Oceans sample. A checklist for reporting
+    metadata of oceanic plankton samples associated with genomics data from the Tara
+    Oceans Expedition.
+  name: ENA Tara Oceans
+  status: 4
+  statusDescription: public
+- accession: ERC000031
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIxS built environment
+  status: 4
+  statusDescription: public
+- accession: ERC000032
+  dataType: CHECKLIST
+  description: Minimum information about an Influenza virus sample. A checklist for
+    reporting metadata of Influenza virus samples associated with genomic data. This
+    minimum metadata standard supports submission of avian, human and mammalian surveillance
+    data as well as serology and viruse isolate information (where available). The
+    ENA Influenza sample checklist is based on standards in use at the Influenza Research
+    Database.
+  name: ENA Influenza virus reporting standard checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000033
+  dataType: CHECKLIST
+  description: Minimum information about a virus pathogen. A checklist for reporting
+    metadata of virus pathogen samples associated with genomic data. This minimum
+    metadata standard was developed by the COMPARE platform for submission of virus
+    surveillance and outbreak data (such as Ebola) as well as virus isolate information.
+  name: ENA virus pathogen reporting standard checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000034
+  dataType: CHECKLIST
+  description: Minimum Information required for reporting samples associated with
+    genomic data, derived from carcinogen induced animal tumours. This minimum metadata
+    standard was developed in collaboration with Duncan Odom lab for the Mouse Liver
+    Cancer Evolution Project.
+  name: ENA mutagenesis by carcinogen treatment checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000035
+  dataType: CHECKLIST
+  description: The ENA Crop sample enhanced checklist has been developed in collaboration
+    with a number of EMBL-EBI teams to capture enriched annotation of published crop
+    plant samples that lack sufficient reported metadata and are typically associated
+    with systematic transcriptomic realignment-based analyses.
+  name: ENA Crop Plant sample enhanced annotation checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000036
+  dataType: CHECKLIST
+  description: Minimum information about sewage samples. A checklist for reporting
+    of sewage surveillance samples associated with sequence data from metagenomic
+    sequencing projects. This minimum metadata standard was developed by the COMPARE
+    platform.
+  name: ENA sewage checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000037
+  dataType: CHECKLIST
+  description: ENA implementation of plant specimen contextual information associated
+    with molecular data. The checklist has been developed in collaboration with the
+    NCBI-GenBank and iPlant data resources under the umbrella of the Genomic Standards
+    Consortium.
+  name: ENA Plant Sample Checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000038
+  dataType: CHECKLIST
+  description: Shellfish contextual information associated with molecular data. The
+    checklist has been developed in collaboration with EMBRIC Project partners.
+  name: ENA Shellfish Checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000039
+  dataType: CHECKLIST
+  description: Minimum information about parasite samples. A checklist for reporting
+    metadata of parasite samples associated with molecular data. This standard was
+    developed by the COMPARE platform and can be used for submission of sample metadata
+    derived from protozoan parasites (e.g. Cryptosporidium) and also multicellular
+    eukaryotic parasites (e.g. Platyhelminthes and Nematoda).
+  name: ENA parasite sample checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000040
+  dataType: CHECKLIST
+  description: Minimum information required for reporting samples associated with
+    the UniEuk EukBank initiative. This checklist aims to capture contextual metadata
+    associated with V4 18S SSU rRNA molecular data.
+  name: ENA UniEuk_EukBank Checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000041
+  dataType: CHECKLIST
+  description: Minimum information to standardise metadata related to samples used
+    in GMI PT (Global Microbial Identifier Proficiency Test). A checklist for reporting
+    metadata of GMI PT samples associated with molecular data. This minimum metadata
+    standard was developed by the COMPARE platform and can be used for submission
+    of sample metadata derived from Campylobacter coli, Campylobacter jejuni, Listeria
+    monocytogenes, Klebsiella pneumoniae, Salmonella enterica, Escherichia coli and
+    Staphylococcus aureus.
+  name: ENA Global Microbial Identifier Proficiency Test (GMI PT) checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000043
+  dataType: CHECKLIST
+  description: Marine microalgae contextual information. The checklist has been developed
+    in collaboration with EMBRIC Project partners and is suitable for reporting metadata
+    related to environmental samples and those in culture collections.
+  name: ENA Marine Microalgae Checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000044
+  dataType: CHECKLIST
+  description: A checklist for reporting metadata of human-associated pathogen samples
+    for the COMPARE-ECDC-EFSA reporting system.
+  name: COMPARE-ECDC-EFSA pilot human-associated reporting standard
+  status: 4
+  statusDescription: public
+- accession: ERC000045
+  dataType: CHECKLIST
+  description: A checklist for reporting metadata of food-borne pathogen samples for
+    the COMPARE-ECDC-EFSA reporting system.
+  name: COMPARE-ECDC-EFSA pilot food-associated reporting standard
+  status: 4
+  statusDescription: public
+- accession: ERC000047
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIMAGS
+  status: 4
+  statusDescription: public
+- accession: ERC000048
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MISAGS
+  status: 4
+  statusDescription: public
+- accession: ERC000049
+  dataType: CHECKLIST
+  description: Genomic Standards Consortium package extension for reporting of measurements
+    and observations obtained from the environment where the sample was obtained.
+    By choosing the environmental package, a selection of fields can be made from
+    a relevant subsets of the GSC terms.
+  name: GSC MIUVIGS
+  status: 4
+  statusDescription: public
+- accession: ERC000050
+  dataType: CHECKLIST
+  description: Minimum information to standardise metadata of binned metagenome samples.
+    Ensures binned and MAG metagenome assembly metadata is compatible.
+  name: ENA binned metagenome
+  status: 4
+  statusDescription: public
+- accession: ERC000051
+  dataType: CHECKLIST
+  description: Minimum information required for reporting samples associated with
+    patient-derived xenograft (PDX) models or patient samples
+  name: PDX Checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000052
+  dataType: CHECKLIST
+  description: Minimum information required for reporting HoloFood samples. HoloFood
+    is a 'hologenomic' approach that will improve the efficiency of food production
+    systems by understanding the biomolecular and physiological processes affected
+    by incorporating feed additives and novel sustainable feeds in farmed animals
+    (https://www.holofood.eu/).
+  name: HoloFood Checklist
+  status: 4
+  statusDescription: public
+- accession: ERC000053
+  dataType: CHECKLIST
+  description: Minimum information required for reporting samples associated with
+    the Tree of Life Programme (https://www.sanger.ac.uk/programme/tree-of-life/).
+  name: Tree of Life Checklist
+  status: 4
+  statusDescription: public

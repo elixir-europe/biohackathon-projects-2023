@@ -1,0 +1,7 @@
+Flask
+Flask-Cors
+Flask-WTF
+WTForms-JSON
+requests
+pyyaml
+pytest

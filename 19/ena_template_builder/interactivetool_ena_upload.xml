@@ -1,0 +1,25 @@
+<tool id="interactive_tool_ena_upload_templates" name="ENA upload template builder" tool_type="interactive" version="0.1.0+galaxy0" profile="22.5">
+    <requirements>
+        <container type="docker">neoformit/ena-upload:v1.0</container>
+    </requirements>
+    <entry_points>
+        <entry_point name="ENA upload table builder" requires_domain="True">
+            <port>5000</port>
+        </entry_point>
+    </entry_points>
+    <command detect_errors="exit_code"><![CDATA[
+
+ENA_OUTPUT_FILE='${output}' /app/run.sh
+
+    ]]></command>
+    <outputs>
+        <data name="output" format="csv" />
+    </outputs>
+    <help>
+<![CDATA[
+
+TODO: Fill in help.
+
+]]>
+    </help>
+</tool>
