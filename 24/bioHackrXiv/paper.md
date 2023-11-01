@@ -13,7 +13,7 @@ authors:
   - name: Carles Hernandez-Ferrer
     orcid: 0000-0002-8029-7160
     affiliation: 1
-  - name:  Ana Belén Redondo
+  - name:  Anna Redondo
     orcid: 0000-0003-0020-759X
     affiliation: 1
   - name: Adel Bouhraoua
