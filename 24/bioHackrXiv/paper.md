@@ -19,7 +19,7 @@ authors:
   - name: Adel Bouhraoua
     orcid: 0000-0001-9531-6339
     affiliation: 2
- affiliations:
+affiliations:
   - name: Barcelona Supercomputing Center (BSC), ELIXIR Spain
     index: 1
   - name: University of Padova
