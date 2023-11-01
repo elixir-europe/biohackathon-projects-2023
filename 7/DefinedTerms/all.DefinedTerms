@@ -1,46 +1,5 @@
 [
   {
-    "@type": "DefinedTerm",
-    "@id": "",
-    "name": "expression profiling by array"
-  },
-  {
-    "@type": "DefinedTerm",
-    "@id": "",
-    "name": "acute myocardial infarction"
-  },
-  {
-    "@id": "http://www.ebi.ac.uk/SAMEA104493311",
-    "@type": "DefinedTerm"
-  },
-  {
-    "@id": "http://www.ebi.ac.uk/efo/EFO_0004236",
-    "@type": "DefinedTerm"
-  },
-  {
-    "@id": "http://www.ebi.ac.uk/SAMEA104493311",
-    "@type": "DefinedTerm"
-  },
-  {
-    "@id": "http://www.ebi.ac.uk/efo/EFO_0004236",
-    "@type": "DefinedTerm"
-  },
-  {
-    "@type": "DefinedTerm",
-    "name": "Occurrence",
-    "inDefinedTermSet": "http://rs.gbif.org/vocabulary/gbif/dataset_type.xml"
-  },
-  {
-    "@type": "DefinedTerm",
-    "name": "Observation",
-    "inDefinedTermSet": "http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml"
-  },
-  {
-    "@type": "DefinedTerm",
-    "name": "Occurrence",
-    "inDefinedTermSet": "http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml"
-  },
-  {
     "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002673",
     "@type": "DefinedTerm"
   },
@@ -535,27 +494,5 @@
   {
     "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044464",
     "@type": "DefinedTerm"
-  },
-  {
-    "@type": "DefinedTerm",
-    "name": "Mass spectrometry data",
-    "url": "http://edamontology.org/data_2536",
-    "termCode": "data_2536",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "name": "Bioinformatics operations, data types, formats, identifiers and topics",
-      "url": " http://edamontology.org"
-    }
-  },
-  {
-    "@type": "DefinedTerm",
-    "name": "liquid chromatography-mass spectrometry",
-    "url": "http://purl.obolibrary.org/obo/CHMO_0000524",
-    "termCode": "CHMO_0000524",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "name": "Chemical Methods Ontology",
-      "url": "http://purl.obolibrary.org/obo/chmo.owl"
-    }
   }
 ]
