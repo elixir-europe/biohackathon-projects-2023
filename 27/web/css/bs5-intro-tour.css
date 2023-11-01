@@ -1,0 +1,104 @@
+.tour-active-element {
+  position: relative;
+  background: white;
+  color:green;
+  border: 3px solid black;
+  border-radius: 5px;
+  z-index: 1051 !important; 
+}
+
+body.tour-active-element {
+  border: none;
+}
+
+.popover-tour {
+  padding: 5px 10px;
+  min-width: 200px;
+  width: 33vw;
+  max-width: 50%;
+  font-size: 14px;
+  z-index: 1051;
+  text-align: justify;
+}
+
+.popover-tour.popover-tour-center {
+  inset: 50% auto auto 50% !important;
+  position: fixed !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+}
+
+.popover-tour .hidden {
+  display: none;
+}
+
+.popover-tour .tour-exit:before {
+  font-family: "Arial";
+  content: "Close X";
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px;
+  top: 0px;
+  right: 10px;
+  padding: 3px;
+}
+
+.popover-tour .popover-header {
+  background: none;
+  padding: 5px 80px 5px 0px;
+  margin: 0;
+  font-size: 14pt;
+}
+
+.popover-tour .popover-body {
+  padding: 30px 20px 30px 10px;
+}
+
+.popover-tour .popover-body .tour-tabs > div {
+  display: none;
+}
+
+.popover-tour .popover-body .tour-tabs > div.active {
+  display: block;
+}
+
+.popover-tour .popover-body .tour-tab-links {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.popover-tour .popover-body .tour-tab-links li {
+  display: inline-block;
+}
+
+.popover-tour .popover-body .tour-tab-links li a {
+  padding: 4px;
+  margin: 0px 2px;
+  background: #ced4da;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.popover-tour .popover-body .tour-tab-links li a.active {
+  padding: 4px 10px;
+  color:black;
+  background: #adb5bd;
+}
+
+.popover-tour .popover-footer {
+  background: none;
+}
+
+.popover-tour .popover-footer .btn {
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.popover-tour .popover-footer .tour-finish,
+.popover-tour .popover-footer .tour-next {
+  float: right;
+  font-size: 14px;
+}
+/*# sourceMappingURL=bs5-intro-tour.css.map */
+

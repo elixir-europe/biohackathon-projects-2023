@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+    <meta http-equiv="Content-Type" charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Converter, validator and updater regarding SWATE template, ARC.JSON and Endpoint repositories">
+	<meta name="keywords" content="converter, updater, validator">
+    <style>
+        .center {
+            position:relative;
+            text-align: center;
+        }
+        </style>
+    
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="css/custom.css" rel="stylesheet"/>
+    <link href="css/bs5-intro-tour.css" rel="stylesheet" />	
+    <script src="js/bs5-intro-tour.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="col-12" style="background: rgb(45, 62, 80); height: 3.25rem; margin: 0 0 0 0px; padding: 0 0 0 0; ">
+        <a class="" href="https://nfdi4plants.org/" style="">
+            <img src="images/logo.png" alt="Logo" width="32" height="32" style="position: absolute; margin: 8px 12px 8px 12px; left: 0px; padding-top: 4px;" />
+        </a>
+
+
+
+          
+          
+        <div class="justify-content-center row d-flex align-items-center" style="margin: 0 0 0 0; ; padding: 0 0 0 0; height: 3.25rem;  ">
+            
+            
+            <div class="btn-group d-md-none g-0 dropdown col-auto d-flex align-items-center" style="">
+                <button type="button" class="btn rounded-0 border-0 g-0 btn-nav " data-bs-toggle="dropdown" aria-expanded="false" id="menu">
+                    Menu &nbsp;
+                    <a style="display: inline-block; color: rgb(79, 179, 217); letter-spacing: 2px; font-size: 1em; transform: scaleX(2); transform-origin: 1 0;"> ∨ </a>
+                </button>
+                <ul class="dropdown-menu">
+                <li>
+                        <button id="converter_menu" class="dropdown-item" onclick=''>Converter</button>
+                    </li>
+                    <li>
+                        <button id="updater_menu" class="dropdown-item" onclick=''>Updater</button>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="btn-group d-none g-0 d-md-block dropdown col-auto"  >
+                <button type="button" class="btn border-0 rounded-0 g-0 btn-nav" data-bs-toggle="dropdown" aria-expanded="false" id="conversion_tools" >
+                    conversion Tools &nbsp;
+
+                    <a style="display: inline-block; color: rgb(79, 179, 217); letter-spacing: 2px; font-size: 1em; transform: scaleX(2); transform-origin: 1 0;"> ∨ </a>
+                </button>
+                <ul class="dropdown-menu" >
+                    <li>
+                        <button id="converter_long" class="dropdown-item" onclick=''>Converter</button>
+                    </li>
+                    <li>
+                        <button id="validator_long" class="dropdown-item" onclick=''>Validator</button>
+                    </li>
+                    <li>
+                        <button id="updater_long" class="dropdown-item" onclick=''>Updater</button>
+                    </li>
+                    
+                </ul>
+            </div>
+
+           
+           
+
+        </div>
+    </div>
+
+</div>
+    <h1 class="center">ARC.JSON to SAMPLE.XML </h1>
+
+            
+    <div class="center">
+    
+    example JSON input can be downloaded <a href="https://raw.githubusercontent.com/nfdi4plants/arc2repo/main/inv.json">here</a> 
+    <br>
+        <input class="btn btn-primary d-inline"  type="file" id="input_json" name="json" multiple/>
+    <input style="display:none" type="file" id="input_xlsx" name="xlsx" multiple/>
+    <button class="btn btn-primary" style="display:inline" id="converter" onclick="main(input_json);"> Converter </button>
+    <button class="btn btn-primary" style="display:inline" id="mapping_validator" onclick='validate("mapping_ERC000037.csv");'>ENA-Mapping Validator </button>
+    <button class="btn btn-primary" style="display:inline" id="metadata_validator" onclick='validate_metadata(input_json);'>Metadata-Mapping Validator </button>
+    <div class="d-flex justify-content-center d-none" id="waiting">
+        <div class="spinner-grow btn-primary" style="width: 3rem; height: 3rem;" role="status">
+            <br>
+            <span class="sr-only d-none">Loading...</span>
+          </div>
+        </div>
+    <div style="margin:auto;" id="xml_output">
+    </div>
+    </div>
+    <script type="text/javascript">
+    var v_list, csv_content;
+    var input_json , input_xlsx;
+    var log_backup = console.log;
+    var log_messages = [];
+    var steps = [{
+			        title: "Converter and validators",
+			        content: '<p> Welcome! Our converter can convert an ARC.JSON file to a SAMPLE.XML file, The ARC.JSON file is an output from the ARCcommander, which is developed by the <a href="https://nfdi4plants.org/">DataPLANT</a> team. The SAMPLE.XML can be directly uploaded to the European Nucleotide Archive (ENA)'
+			        //
+			    }, {
+			        id: "input_json",
+			        content: 'Here we can import an ARC.JSON. An example JSON input can be downloaded <a href="https://raw.githubusercontent.com/nfdi4plants/arc2repo/main/inv.json">here</a>'
+			    }, {
+			        id: "converter",
+			        content: 'After importing the ARC.JSON file, we can click this button to convert the file based on the mapping file. At this step, no validation or checking will be made. The term name will be changed to the ENA term name automatically.'
+			    }, {id: "mapping_validator",
+                content:"To validate the mapping file we used for conversion, we can click this button. A comparison between the ENA sample.xml and the mapping file will be made. The terms that is in ENA but not in the mapping file will be shown in a table after the validation"
+
+                }, {id:"metadata_validator",
+                content:"To validate the ARC.JSON metadata file we imported for conversion, we can click this button. A comparison between the ENA sample.xml and the metadata file will be made. The terms that is in the ENA sample.xml but not in the imported ARC.JSON file will be shown in a table after the validation"
+
+
+                }
+			];
+
+	var tour = new Tour(steps); // initialize the guided tour
+    tour.show();
+    let output_div = document.getElementById("xml_output");
+        
+    console.log = function() {
+        //log_messages.push.apply(log_messages, arguments);
+        log_backup.apply(console, arguments);
+        output_div.innerText= log_messages.join('\r\n');
+    };
+    const input1 = document.getElementById("input_json");
+    input1.addEventListener("change", handleFiles1, false);
+    function handleFiles1() {
+
+        if (this.files.length > 0) 
+      {
+        var reader = new FileReader(); // File reader to read the file 
+        
+        // This event listener will happen when the reader has read the file
+        reader.addEventListener('load', function() {
+          var result = JSON.stringify(JSON.parse(reader.result)); // Parse the result into an object 
+          //console.log("reader.result is : "+reader.result);
+          input_json = result;
+          //console.log("result is : "+result);
+
+        });
+        
+        reader.readAsText(this.files[0]); // Read the uploaded file
+        //main(input_json);
+    
+    
+    
+    
+    }else{
+
+window.alert("no file is selected to import");
+
+};
+    }
+    
+    const input2 = document.getElementById("input_xlsx");
+    input2.addEventListener("change", handleFiles2, false);
+    function handleFiles2() {
+      input_xlsx = this.files; 
+    };
+    let pyodide;
+    
+    async function main(input_json) {
+    
+    if ( input_json ===undefined||input_json.length <0 ) {
+        window.alert("please select an ARC.JSON file to be imported")
+    } else { 
+
+    document.getElementById("waiting").classList.remove("d-none");
+    pyodide = await loadPyodide();
+    await pyodide.loadPackage(["pandas"]);
+    //let namespace = pyodide.globals.get("dict")();
+    let namespace = pyodide.toPy({ input_json:input_json });
+    pyodide.runPython(`
+import time
+import sys, getopt
+import xml.etree.ElementTree as et 
+import json
+import pandas as pd
+import subprocess
+import numpy as np
+from pyodide.http import pyfetch
+from js import XMLHttpRequest
+# print(input_json)
+start = time.time()
+print("start")
+def append_table_protocol(element, json_rows):
+
+    for parameter in element:
+
+        p=parameter.get('parameterName') if parameter.get('parameterName') is not None else None
+#         #  print(p)
+        term_name = p.get('annotationValue') if p.get('annotationValue') is not None else None
+        #  print('name is: '+ term_name )
+        term_source = p.get('termSource') if p.get('termSource')  is not None else None
+        #  print( term_source)
+        term_accession = p.get('termAccession') if p.get('termAccession')  is not None else None
+        #  print( term_accession)                          
+        index_value= p.get('comments')[0].get("value")
+        json_rows.append( [file_id,
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+        
+
+
+def append_table_assays(element, json_rows, option= 1):
+    
+    for parameter in element:
+
+        c= parameter.get("category")
+        p=c.get('parameterName') if c.get('parameterName') is not None else None
+#         print(p)
+        value = parameter.get('value') if parameter.get('value') is not None else None
+        term_name = p.get('annotationValue') if p.get('annotationValue') is not None else None
+#         print('name is: '+ term_name )
+        term_source = p.get('termSource') if (p.get('termSource') ) is not None else None
+#         print( term_source)
+        term_accession = p.get('termAccession') if (p.get('termAccession') ) is not None else None
+#         print( term_accession)
+        term_type = "parameter"
+        index_value= p.get('comments')[0].get("value")
+        
+        json_rows.append( [file_id, 
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+        
+def append_c_input(element, json_rows):
+    
+    for parameter in element:
+
+        b = parameter.get("category")
+        factor = b.get("characteristicType") if b.get("characteristicType") is not None else None
+#         print(p)
+        value = parameter.get('value') if parameter.get('value') is not None else None
+        term_name = factor.get('annotationValue') if factor.get('annotationValue') is not None else None
+#         print('name is: '+ term_name )
+        term_source = factor.get('termSource') if (factor.get('termSource') ) is not None else None
+#         print( term_source)
+        term_accession = factor.get('termAccession') if (factor.get('termAccession') ) is not None else None
+#         print( term_accession)
+        term_type = "parameter"
+        index_value= factor.get('comments')[0].get("value")
+        json_rows.append( [file_id, 
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+
+def append_input(element, json_rows):
+    
+    for parameter in element:
+
+        b = parameter.get("category")
+        factor = b.get("factorType") if b.get("factorType") is not None else None
+#         print(p)
+
+        value = parameter.get('value') if parameter.get('value') is not None else None
+        term_name = factor.get('annotationValue') if factor.get('annotationValue') is not None else None
+#         print('name is: '+ term_name )
+        term_source = factor.get('termSource') if (factor.get('termSource') ) is not None else None
+#         print( term_source)
+        term_accession = factor.get('termAccession') if (factor.get('termAccession') ) is not None else None
+#         print( term_accession)
+        term_type = "factor"
+        index_value= factor.get('comments')[0].get("value")
+        json_rows.append( [file_id, 
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+
+def append_output(element, json_rows):
+    
+    for parameter in element:
+        
+        b = parameter.get("category")
+        factor = b.get("factorType") if b.get("factorType") is not None else None
+#         print(p)
+
+        value = parameter.get('value') if parameter.get('value') is not None else None
+        term_name = factor.get('annotationValue') if factor.get('annotationValue') is not None else None
+#         print('name is: '+ term_name )
+        term_source = factor.get('termSource') if (factor.get('termSource') ) is not None else None
+#         print( term_source)
+        term_accession = factor.get('termAccession') if (factor.get('termAccession') ) is not None else None
+#         print( term_accession)
+        term_type = 'factor'
+        index_value= factor.get('comments')[0].get("value")
+        json_rows.append( [file_id, 
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+
+# todo factorValues, derived from
+
+def init_none():
+    global input_id 
+    global input_name 
+    global output_id
+    global output_name 
+    global derived_from 
+    global value 
+    global index_value
+    global term_type
+    global term_name
+    global term_source 
+    global term_accession 
+    input_id = None
+    input_name = None
+    output_id = None
+    output_name = None
+    derived_from = None
+    value = None
+    index_value = None
+    term_type = None
+    term_name = None
+    term_source = None
+    term_accession = None
+    
+def write_sample_xml(xml_input):
+#     input_ = xml_input[xml_input["subsection_id"].str.match(r'1SPL01_plants_')==True ]
+    xml_input = pd.read_csv("json_table_new.csv")
+    # input_ = xml_input[xml_input["subsection_id"].str.match(r'1SPL01_plants_')==True ]
+    sample= xml_input
+    input_list = sample[sample["subsection_id"]=="sources"]
+    output_list = sample[sample["output_name"].notna()]
+
+    a = et.Element('SAMPLE_SET')
+    for index1,input_name in enumerate(input_list["input_name"].unique()):
+        one_sample = sample[sample['input_name'] == input_name]
+
+        b = et.SubElement(a, 'SAMPLE')
+
+        b.attrib = {'alias': input_name , 'center_name':''}
+        c = et.SubElement(b, 'TITLE')
+        json_string = list(one_sample[one_sample['term_name']== 'organism']['value'])[0]
+    #         print(str(json_string))
+        c.text = json.loads(str(json_string).replace("'", '"')).get('annotationValue')
+
+        d = et.SubElement(b, 'SAMPLE_NAME')
+        #d.text = input_name
+
+        e = et.SubElement(d, 'TAXON_ID')
+        e.text = '110664'
+        f = et.SubElement(d, 'SCIENTIFIC_NAME')
+        json_string = list(one_sample[one_sample['term_name']== 'organism']['value'])[0]
+    #         print(str(json_string))
+
+        f.text = json.loads(str(json_string).replace("'", '"')).get('annotationValue')
+
+        g = et.SubElement(d, 'COMMON_NAME')
+        g.text = input_name
+
+
+        h = et.SubElement(b, 'SAMPLE_ATTRIBUTES')
+        for index3, row in one_sample.iterrows():
+            m = et.SubElement(h,'SAMPLE_ATTRIBUTE' )
+            j = et.SubElement(m, 'TAG')
+            j.text = str(row['term_name'])
+
+            k = et.SubElement(m, 'VALUE')
+            k.text = str(row['value']) 
+
+            l = et.SubElement(m, 'TERM_ACCESSION')
+            l.text = '"' +str(row['term_accession']) +'"'
+
+
+    tree = et.ElementTree(a)
+    et.indent(tree, space=" ", level=0)
+    #et.dump(a)
+    tree.write("SAMPLE.xml", encoding="utf-8")
+    return tree
+        
+
+def convert_json(arc_json_file, mapping_file):
+    with open(arc_json_file, "r") as read_file:
+#     print("Converting JSON encoded data into Python dictionary")
+        arc_json = json.load(read_file)
+    
+    
+
+    global xml_output
+    global xmloutput
+    global file_id
+    global arc_id
+    global subsection_id
+    global input_id 
+    global input_name 
+    global output_id
+    global output_name 
+    global derived_from 
+    global value 
+    global index_value
+    global term_type
+    global term_name
+    global term_source 
+    global term_accessio
+    json_table= []
+    json_cols = ["file_id", 
+                 "arc_id" , 
+                 "subsection_id", 
+                 "input_id", 
+                 "input_name", 
+
+                 "output_id", 
+                 "output_name",
+                 "derived_from",
+                 "term_type",
+                 "term_name", 
+                 "term_source", 
+                 "term_accession", 
+                 "index_value", 
+                 "value", ]
+    json_rows = []
+    init_none()
+    file_id = arc_json.get("identifier")
+    section = "studies"
+    studies = arc_json.get("studies")
+    arc_id = studies[0].get("identifier")
+
+    # new code for new materials structure   
+    materials = arc_json.get("studies")[0].get("materials")
+    subsection_id = "sources"
+    for i,input_ in enumerate(materials.get("sources")):
+
+
+        input_name = input_.get("name")
+        input_id = i
+
+        derived_from = input_.get("derivesFrom")[0].get("name") if input_.get("derivesFrom") is not None else None
+        #  print(input_name + " derivesFrom is ", derived_from)
+        characteristics = input_.get("characteristics") 
+        if characteristics != None:
+            print("find chara")
+            append_c_input(characteristics,json_rows)
+        factorvalues = input_.get("factorValues") 
+        if factorvalues != None:
+                append_input(factorvalues,json_rows)
+
+    processSequences = arc_json.get("studies")[0].get('assays')[0].get("processSequence")
+
+    for process_seq in processSequences:
+
+        subsection_id = process_seq.get("name")
+        #  print(subsection_id)
+
+        parameter_values = process_seq.get("parameterValues")
+        append_table_assays(parameter_values, json_rows)
+        init_none() 
+        input_section = process_seq.get("inputs")
+        if input_section != None:
+    #     print(input_section)
+            for i,input_ in enumerate(input_section):
+                input_name = input_.get("name")
+                input_id = i
+
+                derived_from = input_.get("derivesFrom")[0].get("name") if input_.get("derivesFrom") is not None else None
+                #  print(input_name + " derivesFrom is ", derived_from)
+                characteristics = input_.get("characteristics") 
+                if characteristics != None:
+                    append_c_input(characteristics,json_rows)
+                factorvalues = input_.get("factorValues") 
+                if factorvalues != None:
+                        append_input(factorvalues,json_rows)
+
+
+
+            
+        output_section = process_seq.get("outputs")
+
+    #     print(output_section)
+        for i, output_ in enumerate(output_section):
+            output_name = output_.get("name")
+            output_id = i
+            derived_from = output_.get("derivesFrom")[0].get("name") if output_.get("derivesFrom") is not None else None
+            #  print(output_name + " and derived from is ", derived_from)
+
+            term_type = output_.get('type') if output_.get('type') is not None else None
+
+            factorvalues = output_.get("factorValues") 
+            if factorvalues != None:
+                append_output(factorvalues,json_rows)
+            else:
+                json_rows.append( [file_id, 
+                               arc_id, 
+                               subsection_id,
+                               input_id, 
+                               input_name,
+
+                               output_id, 
+                               output_name,
+                               derived_from,
+                                   term_type,
+                               term_name, 
+                               term_source, 
+                               term_accession, 
+                               index_value, 
+                               value])
+
+
+
+    json_table = pd.DataFrame(json_rows, columns= json_cols)
+    mapping = pd.read_csv(mapping_file)
+    term_id = mapping.iloc[:,2]
+    mapping.iloc[:,3] = term_id.map( lambda x: "http://purl.obolibrary.org/obo/{}".format( str(x).replace(":", "_") )  )
+
+    
+    json_table["ena_id"] = json_table["term_name"]
+    a = json_table.loc[:, "ena_id"]
+    # a = json_table.loc[:, "term_accession"]
+    term_mapping = mapping.iloc[:,3]
+    for i, term in enumerate(term_mapping):
+         cond = json_table["term_accession"] == term
+    #     print(term)
+    #     print(filter_)
+         a.mask(cond , mapping.loc[:, "Field Name"][i], inplace= True)
+    json_table.to_csv('json_table_new.csv')
+    
+    
+    a = et.Element('PROJECT_SET')
+    for i,project in enumerate(arc_json.get("studies")):
+        b = et.SubElement(a, 'PROJECT')
+
+        b.attrib = {'alias': project.get('identifier')}
+        c = et.SubElement(b, 'TITLE')
+        c.text = project.get('title')
+        d = et.SubElement(b, 'DESCRIPTION')
+        d.text = str(arc_json.get("publications"))
+        f = et.SubElement(b, "SUBMISSION_PROJECT")
+        g = et.SubElement(f, "SEQUENCING_PROJECT")
+    tree = et.ElementTree(a)
+    et.indent(tree, space=" ", level=0)
+
+    tree.write("STUDY.xml", encoding="utf-8")
+
+    # sample xml
+    xml_input = pd.read_csv("json_table_new.csv")
+    xml_output = et.tostring(write_sample_xml(xml_input).getroot(), encoding='utf8', method='xml')
+    xmloutput = xml_output.decode("utf-8")
+    with open("SAMPLE.XML", "wb") as fh:
+        fh.write(xml_output )
+    
+#req1 = XMLHttpRequest.new()
+#req1.open("GET", "./inv.json", False)
+#req1.send(None)
+#arc_json_file = str(req1.response)
+with open("inv.json", "w") as fh:
+      fh.write(input_json)
+
+req2 = XMLHttpRequest.new()
+req2.open("GET", "./mapping_ERC000037.csv", False)
+req2.send(None)
+mapping_file = str(req2.response)
+with open("mapping_ERC000037.csv", "w") as fh:
+      fh.write(mapping_file)
+
+
+#req3 = XMLHttpRequest.new()
+#req3.open("GET", "./json_table_new.csv", False)
+#req3.send(None)
+#json_table_new = str(req3.response)
+#with open("json_table_new.csv", "w") as fh:
+#      fh.write(json_table_new)
+
+convert_json("inv.json", "mapping_ERC000037.csv")
+end = time.time()
+used_time = end - start
+print("Time used for conversion is: {} seconds".format(round(used_time, 2)) )
+ `,{ globals: namespace });
+ let xmloutput = namespace.get("xmloutput");
+var saveData = (function () {
+    var a = document.createElement("a");
+    document.body.appendChild(a);
+    a.style = "display: none";
+    return function (data, fileName) {
+            blob = new Blob([data], {type: "octet/stream"}),
+            url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = fileName;
+        a.click();
+        window.URL.revokeObjectURL(url);
+    };
+}());
+
+
+
+
+var data = xmloutput,
+    fileName = "SAMPLE.XML";
+
+saveData(data, fileName);
+//let file = pyodide.FS.readFile("SAMPLE.XML", { encoding: "utf8" });
+//output_div.innerText = file;
+document.getElementById("waiting").classList.add("d-none");
+return namespace;
+
+
+}
+
+};
+    
+async function validate(name) {
+    document.getElementById("waiting").classList.remove("d-none");
+    pyodide = await loadPyodide();
+    await pyodide.loadPackage(["pandas"]);
+    //let namespace = pyodide.globals.get("dict")();
+    let namespace = pyodide.toPy({ name:name });
+    pyodide.runPython(`
+import time
+import sys, getopt
+import xml.etree.ElementTree as et 
+import json
+import pandas as pd
+import subprocess
+import numpy as np
+from pyodide.http import pyfetch
+from js import XMLHttpRequest
+
+start = time.time()
+print("start")
+
+
+req2 = XMLHttpRequest.new()
+req2.open("GET", "./"+name, False)
+req2.send(None)
+mapping_file = str(req2.response)
+with open(name, "w") as fh:
+      fh.write(mapping_file)
+
+df1 = pd.read_csv("./"+name)
+
+df_null = df1[df1["name"].isnull()]
+df_ma = df1[df1["name"].isnull()][df1["Requirement"]=="mandatory"]
+df_re = df1[df1["name"].isnull()][df1["Requirement"]=="recommended"]
+df_op = df1[df1["name"].isnull()][df1["Requirement"]=="optional"]
+
+df_all= [list(df_null["Field Name"]),list(df_ma["Field Name"]), list(df_re["Field Name"]), list(df_op["Field Name"])]
+#req3 = XMLHttpRequest.new()
+#req3.open("GET", "./json_table_new.csv", False)
+#req3.send(None)
+#json_table_new = str(req3.response)
+#with open("json_table_new.csv", "w") as fh:
+#      fh.write(json_table_new)
+
+end = time.time()
+used_time = end - start
+print("Time used for conversion is: {} seconds".format(round(used_time,2)) )
+`,{ globals: namespace });
+v_list = namespace.get("df_all");
+document.getElementById('m_v_modal').click();
+document.getElementById('init_word').innerText = "The following terms are missing in the mapping file";
+document.getElementById('mandatory_n').innerText = v_list.get(1).length;
+document.getElementById('recommended_n').innerText = v_list.get(2).length;
+document.getElementById('optional_n').innerText = v_list.get(3).length;
+var v_list1 =[[...v_list.get(1)], [...v_list.get(2)], [...v_list.get(3)]];
+const max_v = Math.max(v_list1[0].length,v_list1[1].length,v_list1[2].length );
+v_list1.forEach(e => {e.length = max_v;});
+csv_content = "data:text/csv;charset=utf-8,";
+csv_content += "mandatory, recommended, optional \r\n";
+let table = document.getElementById("validate_table");
+table.innerHTML = '<tr><th scope="col">mandatory</th><th scope="col">recommended</th><th scope="col">optional</th></tr> ';
+for (let i = 0; i < max_v+1; i++) {
+
+    let row= table.insertRow(-1); 
+    let cell1= row.insertCell(0);
+    let cell2= row.insertCell(1);
+    let cell3= row.insertCell(2);
+    let val1, val2,val3;
+    v_list1[0][i]=== undefined ? val1 = " ": val1 = v_list1[0][i] ; 
+    v_list1[1][i]=== undefined ? val2 = " ": val2 = v_list1[1][i]; 
+    v_list1[2][i]=== undefined ? val3 = " ": val3 = v_list1[2][i]; 
+    cell1.innerHTML = val1;
+    cell2.innerHTML = val2;
+    cell3.innerHTML = val3;
+
+    csv_content += val1+"," +val2+","+val3+ "\r\n";
+
+};
+v_list1.forEach(function(row_array) {
+    let row = row_array.join(",");
+    
+});
+
+document.getElementById("waiting").classList.add("d-none");
+return namespace;
+};
+
+async function validate_metadata(input_json) {
+    if ( input_json ===undefined||input_json.length <0 ) {
+        window.alert("please select an ARC.JSON file to be imported")
+    } else { 
+    document.getElementById("waiting").classList.remove("d-none");
+    pyodide = await loadPyodide();
+    await pyodide.loadPackage(["pandas"]);
+    //let namespace = pyodide.globals.get("dict")();
+    let namespace = pyodide.toPy({ input_json:input_json });
+    pyodide.runPython(`
+import time
+import sys, getopt
+import xml.etree.ElementTree as et 
+import json
+import pandas as pd
+import subprocess
+import numpy as np
+from pyodide.http import pyfetch
+from js import XMLHttpRequest
+# print(input_json)
+start = time.time()
+print("start")
+def append_table_protocol(element, json_rows):
+
+    for parameter in element:
+
+        p=parameter.get('parameterName') if parameter.get('parameterName') is not None else None
+#         #  print(p)
+        term_name = p.get('annotationValue') if p.get('annotationValue') is not None else None
+        #  print('name is: '+ term_name )
+        term_source = p.get('termSource') if p.get('termSource')  is not None else None
+        #  print( term_source)
+        term_accession = p.get('termAccession') if p.get('termAccession')  is not None else None
+        #  print( term_accession)                          
+        index_value= p.get('comments')[0].get("value")
+        json_rows.append( [file_id,
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+        
+
+
+def append_table_assays(element, json_rows, option= 1):
+    
+    for parameter in element:
+
+        c= parameter.get("category")
+        p=c.get('parameterName') if c.get('parameterName') is not None else None
+#         print(p)
+        value = parameter.get('value') if parameter.get('value') is not None else None
+        term_name = p.get('annotationValue') if p.get('annotationValue') is not None else None
+#         print('name is: '+ term_name )
+        term_source = p.get('termSource') if (p.get('termSource') ) is not None else None
+#         print( term_source)
+        term_accession = p.get('termAccession') if (p.get('termAccession') ) is not None else None
+#         print( term_accession)
+        term_type = "parameter"
+        index_value= p.get('comments')[0].get("value")
+        
+        json_rows.append( [file_id, 
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+        
+def append_c_input(element, json_rows):
+    
+    for parameter in element:
+
+        b = parameter.get("category")
+        factor = b.get("characteristicType") if b.get("characteristicType") is not None else None
+#         print(p)
+        value = parameter.get('value') if parameter.get('value') is not None else None
+        term_name = factor.get('annotationValue') if factor.get('annotationValue') is not None else None
+#         print('name is: '+ term_name )
+        term_source = factor.get('termSource') if (factor.get('termSource') ) is not None else None
+#         print( term_source)
+        term_accession = factor.get('termAccession') if (factor.get('termAccession') ) is not None else None
+#         print( term_accession)
+        term_type = "parameter"
+        index_value= factor.get('comments')[0].get("value")
+        json_rows.append( [file_id, 
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+
+def append_input(element, json_rows):
+    
+    for parameter in element:
+
+        b = parameter.get("category")
+        factor = b.get("factorType") if b.get("factorType") is not None else None
+#         print(p)
+
+        value = parameter.get('value') if parameter.get('value') is not None else None
+        term_name = factor.get('annotationValue') if factor.get('annotationValue') is not None else None
+#         print('name is: '+ term_name )
+        term_source = factor.get('termSource') if (factor.get('termSource') ) is not None else None
+#         print( term_source)
+        term_accession = factor.get('termAccession') if (factor.get('termAccession') ) is not None else None
+#         print( term_accession)
+        term_type = "factor"
+        index_value= factor.get('comments')[0].get("value")
+        json_rows.append( [file_id, 
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+
+def append_output(element, json_rows):
+    
+    for parameter in element:
+        
+        b = parameter.get("category")
+        factor = b.get("factorType") if b.get("factorType") is not None else None
+#         print(p)
+
+        value = parameter.get('value') if parameter.get('value') is not None else None
+        term_name = factor.get('annotationValue') if factor.get('annotationValue') is not None else None
+#         print('name is: '+ term_name )
+        term_source = factor.get('termSource') if (factor.get('termSource') ) is not None else None
+#         print( term_source)
+        term_accession = factor.get('termAccession') if (factor.get('termAccession') ) is not None else None
+#         print( term_accession)
+        term_type = 'factor'
+        index_value= factor.get('comments')[0].get("value")
+        json_rows.append( [file_id, 
+                           arc_id, 
+                           subsection_id,
+                           input_id, 
+                           input_name,
+
+                           output_id, 
+                           output_name,
+                           derived_from,
+                           term_type,
+                           term_name, 
+                           term_source, 
+                           term_accession, 
+                           index_value, 
+                           value])
+#         print('index value is: '+ term_value)
+
+# todo factorValues, derived from
+
+def init_none():
+    global input_id 
+    global input_name 
+    global output_id
+    global output_name 
+    global derived_from 
+    global value 
+    global index_value
+    global term_type
+    global term_name
+    global term_source 
+    global term_accession 
+    input_id = None
+    input_name = None
+    output_id = None
+    output_name = None
+    derived_from = None
+    value = None
+    index_value = None
+    term_type = None
+    term_name = None
+    term_source = None
+    term_accession = None
+    
+def write_sample_xml(xml_input):
+    input_ = xml_input[xml_input["subsection_id"].str.match(r'1SPL01_plants_')==True ]
+    sample= input_
+    input_list = sample[sample["input_name"].notna()]
+    output_list = sample[sample["output_name"].notna()]
+
+    a = et.Element('SAMPLE_SET')
+    for index1,input_name in enumerate(input_list["input_name"].unique()):
+        one_sample = sample[sample['input_name'] == input_name]
+        for index2, tags in enumerate(one_sample):
+            b = et.SubElement(a, 'SAMPLE')
+
+            b.attrib = {'alias': input_name , 'center_name':''}
+            c = et.SubElement(b, 'TITLE')
+            c.text = one_sample[one_sample['term_name']== 'Organism']['value'].to_string(header=False, index=False)
+
+            d = et.SubElement(b, 'SAMPLE_NAME')
+            #d.text = input_name
+
+            e = et.SubElement(d, 'TAXON_ID')
+            e.text = '110664'
+            f = et.SubElement(d, 'SCIENTIFIC_NAME')
+            f.text = c.text = one_sample[one_sample['term_name']== 'Organism']['value'].to_string(header=False, index=False)
+
+            g = et.SubElement(d, 'COMMON_NAME')
+            g.text = input_name
+
+            h = et.SubElement(b, 'SAMPLE_ATTRIBUTES')
+            for index3, row in one_sample.iterrows():
+                m = et.SubElement(h,'SAMPLE_ATTRIBUTE' )
+                j = et.SubElement(m, 'TAG')
+                j.text = str(row['term_name'])
+
+                k = et.SubElement(m, 'VALUE')
+                k.text = str(row['value']) 
+
+
+    tree = et.ElementTree(a)
+    et.indent(tree, space=" ", level=0)
+    #et.dump(a)
+    tree.write("SAMPLE.xml", encoding="utf-8")
+    return tree
+        
+
+def convert_json(arc_json_file, mapping_file):
+    with open(arc_json_file, "r") as read_file:
+#     print("Converting JSON encoded data into Python dictionary")
+        arc_json = json.load(read_file)
+    
+    
+
+    global xml_output
+    global xmloutput
+    global file_id
+    global arc_id
+    global subsection_id
+    global input_id 
+    global input_name 
+    global output_id
+    global output_name 
+    global derived_from 
+    global value 
+    global index_value
+    global term_type
+    global term_name
+    global term_source 
+    global term_accessio
+    json_table= []
+    json_cols = ["file_id", 
+                 "arc_id" , 
+                 "subsection_id", 
+                 "input_id", 
+                 "input_name", 
+
+                 "output_id", 
+                 "output_name",
+                 "derived_from",
+                 "term_type",
+                 "term_name", 
+                 "term_source", 
+                 "term_accession", 
+                 "index_value", 
+                 "value", ]
+    json_rows = []
+    init_none()
+    file_id = arc_json.get("identifier")
+    section = "studies"
+    studies = arc_json.get("studies")
+    arc_id = studies[0].get("identifier")
+    processSequences = arc_json.get("studies")[0].get('assays')[0].get("processSequence")
+
+    for process_seq in processSequences:
+
+        subsection_id = process_seq.get("name")
+        #  print(subsection_id)
+
+        parameter_values = process_seq.get("parameterValues")
+        append_table_assays(parameter_values, json_rows)
+        init_none() 
+        input_section = process_seq.get("inputs")
+        if input_section != None:
+    #     print(input_section)
+            for i,input_ in enumerate(input_section):
+                input_name = input_.get("name")
+                input_id = i
+
+                derived_from = input_.get("derivesFrom")[0].get("name") if input_.get("derivesFrom") is not None else None
+                #  print(input_name + " derivesFrom is ", derived_from)
+                characteristics = input_.get("characteristics") 
+                if characteristics != None:
+                    append_c_input(characteristics,json_rows)
+                factorvalues = input_.get("factorValues") 
+                if factorvalues != None:
+                        append_input(factorvalues,json_rows)
+
+
+
+            
+        output_section = process_seq.get("outputs")
+
+    #     print(output_section)
+        for i, output_ in enumerate(output_section):
+            output_name = output_.get("name")
+            output_id = i
+            derived_from = output_.get("derivesFrom")[0].get("name") if output_.get("derivesFrom") is not None else None
+            #  print(output_name + " and derived from is ", derived_from)
+
+            term_type = output_.get('type') if output_.get('type') is not None else None
+
+            factorvalues = output_.get("factorValues") 
+            if factorvalues != None:
+                append_output(factorvalues,json_rows)
+            else:
+                json_rows.append( [file_id, 
+                               arc_id, 
+                               subsection_id,
+                               input_id, 
+                               input_name,
+
+                               output_id, 
+                               output_name,
+                               derived_from,
+                                   term_type,
+                               term_name, 
+                               term_source, 
+                               term_accession, 
+                               index_value, 
+                               value])
+
+
+
+    json_table = pd.DataFrame(json_rows, columns= json_cols)
+    mapping = pd.read_csv(mapping_file)
+    term_id = mapping.iloc[:,2]
+    mapping.iloc[:,3] = term_id.map( lambda x: "http://purl.obolibrary.org/obo/{}".format( str(x).replace(":", "_") )  )
+
+    json_table["in_ena"] = False
+    b = json_table.loc[:, "in_ena"]
+    json_table["ena_id"] = json_table["term_name"]
+    a = json_table.loc[:, "ena_id"]
+    # a = json_table.loc[:, "term_accession"]
+    term_mapping = mapping.iloc[:,3]
+    for i, term in enumerate(term_mapping):
+         cond = json_table["term_accession"] == term
+    #     print(term)
+    #     print(filter_)
+         a.mask(cond , mapping.loc[:, "Field Name"][i], inplace= True)
+         b.mask(cond , mapping.loc[:, "Requirement"][i], inplace= True)
+    json_table.to_csv('json_table_new.csv')
+    
+    
+    a = et.Element('PROJECT_SET')
+    for i,project in enumerate(arc_json.get("studies")):
+        b = et.SubElement(a, 'PROJECT')
+
+        b.attrib = {'alias': project.get('identifier')}
+        c = et.SubElement(b, 'TITLE')
+        c.text = project.get('title')
+        d = et.SubElement(b, 'DESCRIPTION')
+        d.text = str(arc_json.get("publications"))
+        f = et.SubElement(b, "SUBMISSION_PROJECT")
+        g = et.SubElement(f, "SEQUENCING_PROJECT")
+    tree = et.ElementTree(a)
+    et.indent(tree, space=" ", level=0)
+
+    tree.write("STUDY.xml", encoding="utf-8")
+    isin = mapping["term_accession"].isin(json_table[json_table["in_ena"]!=False].groupby(['term_accession']).count().index.to_series())
+    df_all = [mapping[np.invert(isin)][mapping["Requirement"]=="mandatory"]['id'],
+            mapping[np.invert(isin)][mapping["Requirement"]=="mandatory"]['Field Name'],
+            mapping[np.invert(isin)][mapping["Requirement"]=="recommended"]['id'],
+            mapping[np.invert(isin)][mapping["Requirement"]=="recommended"]['Field Name'],
+            mapping[np.invert(isin)][mapping["Requirement"]=="optional"]['id'],
+            mapping[np.invert(isin)][mapping["Requirement"]=="optional"]['Field Name']
+            ]
+    # sample xml
+    xml_input = pd.read_csv("json_table_new.csv")
+    xml_output = et.tostring(write_sample_xml(xml_input).getroot(), encoding='utf8', method='xml')
+    xmloutput = xml_output.decode("utf-8")
+    with open("SAMPLE.XML", "wb") as fh:
+        fh.write(xml_output )
+    return df_all
+#req1 = XMLHttpRequest.new()
+#req1.open("GET", "./inv.json", False)
+#req1.send(None)
+#arc_json_file = str(req1.response)
+with open("inv.json", "w") as fh:
+      fh.write(input_json)
+
+req2 = XMLHttpRequest.new()
+req2.open("GET", "./mapping_ERC000037.csv", False)
+req2.send(None)
+mapping_file = str(req2.response)
+with open("mapping_ERC000037.csv", "w") as fh:
+      fh.write(mapping_file)
+
+
+#req3 = XMLHttpRequest.new()
+#req3.open("GET", "./json_table_new.csv", False)
+#req3.send(None)
+#json_table_new = str(req3.response)
+#with open("json_table_new.csv", "w") as fh:
+#      fh.write(json_table_new)
+
+df_all = convert_json("inv.json", "mapping_ERC000037.csv")
+end = time.time()
+used_time = end - start
+print("Time used for conversion is: {} seconds".format(round(used_time, 2)) )
+`,{ globals: namespace });
+v_list = namespace.get("df_all");
+document.getElementById('m_v_modal').click();
+document.getElementById('init_word').innerText = "The following terms are missing in the metadata of ARC.JSON";
+document.getElementById('mandatory_n').innerText = v_list.get(1).length;
+document.getElementById('recommended_n').innerText = v_list.get(3).length;
+document.getElementById('optional_n').innerText = v_list.get(5).length;
+var v_list1 =[[...v_list.get(1)], [...v_list.get(3)], [...v_list.get(5)]];
+const max_v = Math.max(v_list1[0].length,v_list1[1].length,v_list1[2].length );
+v_list1.forEach(e => {e.length = max_v;});
+csv_content = "data:text/csv;charset=utf-8,";
+csv_content += "mandatory, recommended, optional \r\n";
+let table = document.getElementById("validate_table");
+table.innerHTML = '<tr><th scope="col">mandatory</th><th scope="col">recommended</th><th scope="col">optional</th></tr> ';
+for (let i = 0; i < max_v+1; i++) {
+
+    let row= table.insertRow(-1); 
+    let cell1= row.insertCell(0);
+    let cell2= row.insertCell(1);
+    let cell3= row.insertCell(2);
+    let val1, val2,val3;
+    v_list1[0][i]=== undefined ? val1 = " ": val1 = v_list1[0][i] ; 
+    v_list1[1][i]=== undefined ? val2 = " ": val2 = v_list1[1][i]; 
+    v_list1[2][i]=== undefined ? val3 = " ": val3 = v_list1[2][i]; 
+    cell1.innerHTML = val1;
+    cell2.innerHTML = val2;
+    cell3.innerHTML = val3;
+
+    csv_content += val1+"," +val2+","+val3+ "\r\n";
+
+};
+v_list1.forEach(function(row_array) {
+    let row = row_array.join(",");
+    
+});
+
+document.getElementById("waiting").classList.add("d-none");
+return namespace;
+}};
+    </script>
+<!-- Button trigger modal -->
+<button type="button" class="d-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#map_vali_modal" id="m_v_modal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="map_vali_modal" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="map_vali_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="map_vali_modal_label">Validation report</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <span id="init_word">The following terms are missing:</span>
+            <br>
+            <span id="mandatory_n"></span> mandatory term(s),<br>
+            <span id="recommended_n"></span> recommended term(s),<br>
+            <span id="optional_n"></span> optional term(s).<br>
+            <table id ="validate_table" class="table table-bordered table-hover" >
+   
+            </table>
+    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">download terms</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
