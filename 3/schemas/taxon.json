@@ -14,10 +14,14 @@
             "title": "Taxon Valid Name Identifier",
             "description": "An identifier for the nomenclatural details of a scientific name"
         },
-        "taxonNames": {
+        "taxonName": {
+            "type": "object",
+            "$ref": "taxonName.json"
+        },
+        "organisms": {
             "type": "array",
             "items": {
-                "$ref": "taxonName.json"
+                "$ref": "organism.json"
             }
         }
     },

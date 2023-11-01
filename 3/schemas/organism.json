@@ -14,12 +14,6 @@
             "items": {
                 "$ref": "occurrence.json"
             }
-        },
-        "taxa": {
-            "type": "array",
-            "items": {
-                "$ref": "taxon.json"
-            }
         }
     },
     "required": [

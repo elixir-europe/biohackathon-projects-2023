@@ -8,10 +8,10 @@
             "type": "object",
             "$ref": "virtualReferenceCollectionMetaData.json"
         },
-        "organisms": {
+        "taxa": {
             "type": "array",
             "items": {
-                "$ref": "organism.json"
+                "$ref": "taxon.json"
             }
         }
     },
