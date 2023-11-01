@@ -10,17 +10,27 @@ const router = createRouter({
       component: LandingView
     },
     {
-      path: '/form-1',
-      name: 'form1',
+      path: '/study',
+      name: 'study',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Form1View.vue')
+      component: () => import('../views/StudyView.vue')
     },
     {
-      path: '/form-2',
-      name: 'form2',
-      component: () => import('../views/Form2View.vue')
+      path: '/experiment',
+      name: 'experiment',
+      component: () => import('../views/ExperimentView.vue')
+    },
+    {
+      path: '/run',
+      name: 'run',
+      component: () => import('../views/RunView.vue')
+    },
+    {
+      path: '/sample',
+      name: 'sample',
+      component: () => import('../views/SampleView.vue')
     },
     {
       path: '/submit',

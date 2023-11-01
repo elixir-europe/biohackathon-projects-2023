@@ -1,9 +1,9 @@
 <script setup>
-import Form2 from '../components/Form2.vue'
+import RunForm from '../components/RunForm.vue'
 </script>
 
 <template>
   <main>
-    <Form2 />
+    <RunForm />
   </main>
 </template>
