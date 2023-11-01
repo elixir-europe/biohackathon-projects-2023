@@ -6,27 +6,43 @@
             "type": "object",
             "properties": {
                 "referenceCollectionID": {
+                    "title": "Reference Collection Identifier",
+                    "description": "A numeric, textual value, or reference such as an IRI, that can be used to uniquely identify the object to which it is attached",
                     "type": "string"
                 },
                 "creator": {
+                    "title": "Creator",
+                    "description": "A role played by a Person in the context of an entity such as an ObjectGroup, OrganisationalUnit or RecordLevel",
                     "type": "string"
                 },
                 "maintainer": {
+                    "title": "Maintainer",
+                    "description": "A role played by a Person in the context of an entity such as an ObjectGroup, OrganisationalUnit or RecordLevel",
                     "type": "string"
                 },
                 "copyrightLicense": {
+                    "title": "Copyright License",
+                    "description": "Information about rights held in and over the resource",
                     "type": "string"
                 },
                 "copyrightOwner": {
+                    "title": "Copyright Owner",
+                    "description": "A person or organization owning or managing rights over the resource",
                     "type": "string"
                 },
                 "title": {
+                    "title": "Title",
+                    "description": "A name given to the resource",
                     "type": "string"
                 },
                 "description": {
+                    "title": "Description",
+                    "description": "An account of the resource",
                     "type": "string"
                 },
                 "area": {
+                    "title": "Area",
+                    "description": "The geographic location from which objects associated with the ObjectGroup were collected, or where an Event took place",
                     "type": "array",
                     "items": [
                         {
@@ -35,9 +51,13 @@
                     ]
                 },
                 "includedTaxaDescription": {
+                    "title": "Included Taxa Description",
+                    "description": "A higher taxon (e. g., a genus, family, or order) at the level of the genus or higher, that covers all taxa that are the primary subject of the resource (which may be a media item or a collection)",
                     "type": "string"
                 },
                 "taxaIncluded": {
+                    "title": "Taxa Included",
+                    "description": "A list of identifiers for the set of dwc:Taxon information. May be a global unique identifier or an identifier specific to the data set",
                     "type": "array",
                     "items": [
                         {
@@ -46,24 +66,20 @@
                     ]
                 },
                 "language": {
+                    "title": "Language",
+                    "description": "A language of the resource",
                     "type": "string"
                 },
                 "lastUpdate": {
+                    "title": "Last Update",
+                    "description": "Date on which the resource was changed",
                     "type": "string"
                 }
             },
             "required": [
                 "referenceCollectionID",
-                "creator",
-                "maintainer",
-                "copyrightLicense",
-                "copyrightOwner",
                 "title",
-                "description",
-                "area",
-                "includedTaxaDescription",
                 "taxaIncluded",
-                "language",
                 "lastUpdate"
             ]
         },
@@ -71,25 +87,34 @@
             "type": "object",
             "properties": {
                 "mediaID": {
+                    "title": "Media Identifier",
+                    "description": "An unambiguous reference to the media resource",
                     "type": "string"
                 },
                 "documentOccurrenceID": {
+                    "title": "Document Occurrence Identifier",
+                    "description": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique",
                     "type": "string"
                 },
                 "copyrightLicense": {
+                    "title": "Copyright License",
+                    "description": "Information about rights held in and over the resource",
                     "type": "string"
                 },
                 "mediaDataURL": {
+                    "title": "Media Data URL",
+                    "description": "A URI that uniquely identifies a service that provides a representation of the underlying resource",
                     "type": "string"
                 },
                 "reviewed": {
-                    "type": "boolean"
+                    "title": "Reviewed",
+                    "description": "URI for a reviewer",
+                    "type": "string"
                 }
             },
             "required": [
                 "mediaID",
                 "documentOccurrenceID",
-                "copyrightLicense",
                 "mediaDataURL",
                 "reviewed"
             ]
