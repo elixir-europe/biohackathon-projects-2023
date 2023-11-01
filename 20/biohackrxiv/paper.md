@@ -1,50 +1,30 @@
 ---
-title: 'BioHackrXiv template this is an example of a (too) long title mpla mpla mpla mpla mpla mpla mpla mpla mpla mpla mpla c wjfc wjknwjek nwjkwen jk'
-title_short: 'Logic Programming for the Biomedical Sciences'
+title: 'Genome Annotation and Other Post-Assembly Workflows for the Tree of Life'
+title_short: 'Annotating Genomes for Biodiversity'
 tags:
-  - logic programming
+  - Biodiversity Genetics Assembly Annotation
 authors:
-  - name: Chris Mungall
-    orcid: 0000-0002-8021-9162
-    affiliation: 1
-  - name: Hirokazu Chiba
+  - name: Tom Brown
+    orcid: 0000-0001-8293-4816
+    affiliation: 1 
+
+  - name: Alice B. Dennis:
+    orcid: 0000-0003-0948-9845
     affiliation: 2
-  - name: Shuichi Kawashima
-    affiliation: 2
-  - name: Yasunori Yamamoto
-    affiliation: 2
-  - name: Pjotr Prins
-    orcid: 0000-0002-8021-9162
-    affiliation: 3
-  - name: Nada Amin
-    affiliation: 4
-  - name: Deepak Unni
-    affiliation: 5
-    orcid: 0000-0002-3583-7340
-  - name: <nobr>William&nbsp;E.&nbsp;Byrd</nobr>
-    affiliation: 6
 affiliations:
-  - name: Environmental Genomics and Systems Biology, Lawrence Berkeley National Laboratory, Berkeley, CA, USA
+  - name: Leibniz-Institut für Zoo- und Wildtierforschung (IZW) im Forschungsverbund Berlin e.V. Alfred-Kowalke-Straße 17 10315 Berlin Deutschland
     index: 1
-  - name: Database Center for Life Science, Research Organization of Information and Systems, Japan
+  - name: University of Namur, URBE, Laboratory of Adaptive Evolution, Genomics, and Physiology, Namur, Belgium
     index: 2
-  - name: Department of Genetics, Genomics and Informatics, The University of Tennessee Health Science Center, Memphis, TN, USA.
-    index: 3
-  - name: Harvard University, USA
-    index: 4
-  - name: Berkeley Lab, USA
-    index: 5
-  - name: University of Alabama at Birmingham, USA
-    index: 6
-date: 3 March 2020
+date: 3 November 2023
 cito-bibliography: paper.bib
-event: Fukuoka2019
-biohackathon_name: "NBDC/DBCLS BioHackathon"
-biohackathon_url:   "http://2019.biohackathon.org/"
-biohackathon_location: "Fukuoka, Japan, 2019"
+event: 
+biohackathon_name: "Elixir BioHackathon 2023"
+biohackathon_url:   "https://biohackathon-europe.org/"
+biohackathon_location: "Barcelona, Spain, 2023"
 group: Logic programming group
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackrxiv/bhxiv-gen-pdf
+git_url: https://github.com/elixir-europe/biohackathon-projects-2023/20/biohackrxiv/
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: Chris Mungall & Hirokazu Chiba \emph{et al.}
@@ -55,7 +35,7 @@ authors_short: Chris Mungall & Hirokazu Chiba \emph{et al.}
 
 The paper.md, bibtex and figure file can be found in this repo:
 
-  https://github.com/journal-of-research-objects/Example-BioHackrXiv-Paper
+  https://github.com/elixir-europe/biohackathon-projects-2023/20/biohackrxiv/
 
 To modify, please clone the repo. You can generate PDF of the paper by
 pasting above link (or yours) in
@@ -66,244 +46,87 @@ pasting above link (or yours) in
 
 # Introduction
 
-As part of the one week Biohackathion 2019 in Fukuoka Japan, we formed
-a working group on logic programming for the biomedical sciences.
-Logic programming is understood by many bioinformaticians when it is
-presented in the form of relational SQL queries or SPARQL
-queries. More advanced logic programming, however, is underutilized in
-bioinformatics.  Prolog, for example, is a high-level programming
-language that has its roots in first-order logic or first-order
-predicate calculus.  Another example, miniKanren, is an embedded
-Domain Specific Language for logic programming. Core miniKanren is
-exceptionally simple, with only three logical operators and one
-interface operator [@uses_method_in:reasoned2nd].
+The European Reference Genome Atlas (ERGA) is an international consortium
+of over 700 researchers from across Europe who are committed to cataloguing
+eukaryotic biodiversity through the generation of high-quality reference
+genomes as a response to declines in biodiversity. Development and implementation
+of standard procedures and bioinformatic pipelines is essential for achieving ERGA’s goal.
 
-![Logic programming resolver traverses the solution space to find all matches \label{fig}](./logic-programming.png)
+Annotation of reference genomes is necessary for many downstream analyses,
+but tools and workflows for genome annotation are still neither performed
+in a consistent manner between research groups, nor prepared for scaling
+up to the thousands of genomes which are to be produced as part of ERGA’s efforts.
+As the number of sequenced genomes is rapidly increasing, there is a great need
+to develop standard, efficient and reproducible genome annotation workflows.
+In this project we will develop and implement pipelines for performing and
+evaluating genome annotations. As part of the Elixir BioHackathon 2023,
+we identified appropriate pipeline components, created environments or containers
+to facilitate their installation, and embedded them into robust pipelines using
+standard workflow managers, in this case Nextflow, Snakemake and Galaxy.
 
-![An SVG example](./test.svg)
+## Goals
 
-The introduction of logic programming is particularly relevant in the
-context of multi-model data representations where data can be accessed
-in memory as free data structures, but also on disk where data can be
-represented as tables, trees (documents), and graphs. In
-bioinformatics we can make use of all these different data sources and
-have a query engine that can mine them all efficiently.
+<b>Testing pipelines on a wide range of species</b>
+The majority of tools developed for the annotation of genetic sequences have been
+developed with model organisms in mind. We wished to determine which tools and pipelines
+were appropriate for which taxa and what limitations exist with established tools.
+<b>Testing different pipelines and workflows on a variety of compute infrastructures</b>
+A key aspect of the FAIR principles is the interoperability of metadata, data and workflows.
+Any pipeline produced by researchers should be written wherever possible in a way that can be
+deployed on a variety of compute infrastructures with minimal intervention and trouble-shooting.
+This BioHackathon gives a fantastic opportunity for researchers from a large number of institutes
+and research environments to come together and share their experiences on different compute environments.
+<b>Establish a set of criteria to evaluate the efficacy of each pipeline</b>
+The evaluation of genome annotation remains an outstanding question in the field,
+with no defined set of tools, software and criteria yet established to determine whether one
+annotation is necessarily better than another. In this project, we aimed to test a number of tools
+and establish a set of easily comparable criteria for assessing annotation quality.
+<b>Establish a "minimum criteria" for annotation quality</b>
+As ERGA and other Earth Biogenome Project-affiliated initiatives increase the number of published
+genome sequences, the compute cost required in order to evaluate and annotate these sequences
+will grow inordinately. We must keep in mind as researchers that Earth’s resources are finite
+and must be aware of our environmental impact with each computational pipeline run. It is not
+feasible to be expected to run multiple workflows for each generated sequence in order to produce
+the best annotation possible. We hope to establish when an annotation can be considered “good enough”
+to answer the biological questions researchers have for their genome to avoid over-computation in the future.
 
-Logic programming is well-suited for biological research. Essentially,
-a researcher writes a number of statements that include variables
-representing unknown information.  The logic engine then goes through
-the solution space (all data) to find possible matches (see figure
-\ref{fig}). Much more detail on the rationale and implementations of
-miniKanren and logic programming are well summarized in Byrd's book
-\emph{The Reasoned Schemer, Second Edition} [@agreesWith:reasoned2nd], PhD thesis
-[@ByrdPhD], and [online](https://www.youtube.com/watch?v=eQL48qYDwp4)
-[talks](https://www.youtube.com/watch?v=o3AHnyEf7IE).
+# Genomes for Biodiversity
 
-The `Logic Programming' working group at the 2019 edition of the
-annual Japanese BioHackathon applied logic programming to various problems.
-The working group:
-\begin{itemize}
-\item researched state-of-the-art mapping between graph stores and logic programming;
-\item created methods for bridging between SPARQL and in-memory data representations using Prolog;
-\item extended the Biolink model;
-\item and added Relational Biolink type inference for mediKanren.
-\end{itemize}
+As part of this project, we wished to test robust annotation pipelines on genomes
+representing the diversity of organisms which will be produced as part of ERGA’s goal
+to produce reference quality genomes for all eukaryotes in Europe. Included in this project
+were a mixture of previously published genomes, as well as assemblies produced as part of the
+ERGA Pilot Project (https://doi.org/10.1101/2023.09.25.559365) or by ERGA-affiliated researchers
+directly contributing to the BioHackathon. Included in our analysis were genome sequences for the
+Cauliflower Coral Pocillopora meandrina, the Violet Copper Butterfly Helleia helle, the Lesser Trefoil 
+Trifolium dubium (GCA_951804385.1), the sponge Phakellia ventilabrum, the Coffee-bean Snail Melampus jaumei,
+the Fruit Fly Drosophila melanogaster (GCA_000001215.4), and Chromosome 19 from Human Genome Release 38 (GCA_000001405.29).
 
-<!--
-# Results
--->
+# Pipeline Structure(s)
 
-## Research of state-of-the-art logic programming facilities for SPARQL
+The pipelines generated as part of this BioHackathon generally followed a consistent workflow,
+relying on a repeat-masked genome, species-specific transcript sequencing data, a database of
+protein sequences and software aimed to identify and predict de-novo gene structures based on the given evidences.
 
-The working group researched current solutions for combining logic
-programming with SPARQL.
-[ClioPatria](http://www.semantic-web-journal.net/system/files/swj1074.pdf)
-is an in-memory RDF quad-store tightly coupled with SWI-Prolog by Jan
-Wielemaker, the main author of SWI-Prolog
-[@WielemakerBHO15]. SWI-Prolog is published under a BSD license, and
-there even exist bindings for
-[ClioPatria and Python](http://wi.hwtk.de/WLP2018/Papers/WLP_2018_paper_4.pdf),
-for example, although we were unable to locate the source code. We
-think ClioPatria and SWI-Prolog are particularly useful for teaching,
-and for (in-memory) semantic web applications. SWI-Prolog comes with
-client libraries for SQL and SPARQL queries.
+Our first tested pipeline (Fig. X - hereafter referred to as UNIL pipeline, developed by SJD
+ includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the
+Swissprot database (Release 2023_04 of 13-Sep-2023). Following de-novo repeat modelling using the genome assembly
+as input, the Swissprot protein sequences and mapped RNA-seq reads are given as evidence data alongside the repeat-masked
+genome into Braker3. The resulting gff3 file is the output used for downstream evaluation and analysis.
 
-## Accessing biological databases using SPARQLProg
+Our second tested pipeline (Fig. X - hereafter referred to as CNAG pipeline, developed by JGG) includes additional
+steps where a set of de-novo transcripts are assembled from the input RNA-seq reads and multiple evidences from Augustus,
+GeneMark and GeneID are combined with RNA-seq and protein alignments using EvidenceModeler (EVM).
+Furthermore isoform information is included by running PASA after initial gene models are created from EVM.
 
-<!--
-    State the problem you worked on
-    Give the state-of-the art/plan
-    Describe what you have done/results starting with The working group created...
-    Write a conclusion
-    Write up any future work
--->
+Our third tested pipeline (Fig. X - hereafter referred to as ANNOTATO, developed by PD) incorporates a
+number of the previous steps and allows for the addition of long-read RNA reads, for example a PacBio Iso-seq
+library, and uses Funannotate to include to add further gene predictions alongside Braker3.
 
-A number of biological databases make their data available in RDF
-format, supporting SPARQL access---for example,
-[Uniprot](https://www.uniprot.org/),
-[NCBI Pubchem](https://pubchemdocs.ncbi.nlm.nih.gov/rdf) and the
-[EBI RDF platform](https://www.ebi.ac.uk/rdf/).
-SPARQL provides a subset of what logic programming can do.
-However, SPARQL queries lack the property of composability and there is no way to
-reuse modular components across queries.  For example, to execute a
-range query on a genomic region using the FALDO model [@agreesWith:Bolleman2016]
-requires authoring a complex query over many triples. If we then wish
-to reuse parts of that query in a more complex query, we have to
-manually compose them together.
+![Workflow for UNIL Pipeline](UNIL_pipeline.drawio.png)
 
-The working group added codes to
-[SPARQLProg](https://github.com/cmungall/sparqlprog) which provides a
-way to define modular query components using logic programming.
-SPARQLProg is written in
-SWI-Prolog and has a Python interface library. All code has been made
-available in the example directory of
-SPARQLProg which provides
-sophisticated mapping of logic queries to SPARQL.
+![Workflow for CNAG Pipeline](PHAVENT2A_annotation.png)
 
-For example, a 4-part predicate `feature_in_range` can be composed
-with a binary \
-`has_mouse_ortholog` predicate:
-
-```
-    feature_in_range(grch38:"X", 10000000, 20000000, HumanGene),
-    has_mouse_ortholog(HumanGene, MouseGene)
-```
-
-This will compile down to a more complex SPARQL query, and execute it against a remote endpoint.
-
-SPARQLProg now includes bindings for many common biological SPARQL
-endpoints. As part of this hackathon we developed codes to access RDF
-databases of MBGD [@Chiba2015], KEGG OC, TogoVar, JCM, Allie, EBI
- BioSamples, UniProt, and DisGeNET [@Queralt2016]. Future work includes using these
-Prolog codes as building blocks for integrative analysis.
-
-## Extending the Biolink Model
-
-<!--
-    State the problem you worked on
-    Give the state-of-the art/plan
-    Describe what you have done/results starting with The working group created...
-    Write a conclusion
-    Write up any future work
--->
-
-The [Biolink Model](https://github.com/biolink/biolink-model) (see
-above) is a data model developed for representing biological and
-biomedical knowledge. It includes a schema and generated objects for
-the data model and upper ontology. The BioLink Model was designed with
-the goal of standardizing the way information is represented in a
-graph store, regardless of the formalism used. The working group
-focused on extending this model to support representation of a wide
-variety of knowledge.
-
-The following tasks were accomplished as part of the BioHackathon:
-
-\begin{enumerate}
-\item Represent datasets and their related metadata
-\item Represent family and pedigree information to support clinical knowledge
-\item Make the provenance model more rich and descriptive
-\end{enumerate}
-
-(note the list is written in embedded LaTeX)
-
-For future work, the group will ensure that the new classes added to
-the model will have appropriate mappings to other schemas and
-ontologies.
-
-##  Relational Biolink type inference for mediKanren
-
-<!--
-    State the problem you worked on
-    Give the state-of-the art/plan
-    Describe what you have done/results starting with The working group created...
-    Write a conclusion
-    Write up any future work
-
-* Remote member Nada Amin, Chris Mungall, Deepak Unni, Will Byrd
-
--->
-
-miniKanren is an embedded Domain Specific Language for logic
-programming.  The goal was to implement a relational type inferencer
-for the [Biolink Model](https://biolink.github.io/biolink-model/) in
-miniKanren, which can be integrated into mediKanren. The working group
-added a `yaml` subdirectory to the mediKanren GitHub page, and created
-multiple files in https://github.com/webyrd/mediKanren/yaml where
-`yaml2sexp.py` generates the `biolink.scm` file which contains an
-s-expression version of the Biolink yaml file. `yaml.scm` contains
-miniKanren relations, and Chez Scheme code that generates miniKanren
-relations based on `biolink.scm`. These are giant miniKanren `conde`
-clauses that can be thought of as relational tables.  `yaml.scm` also
-contains tests for the relations.
-
-Future work includes:
-
-1. integrating this work into the Racket mediKanren code;
-2. integrating with the data categories in the KGs;
-3. and creating query editor with decent type error messages, autocompletion,
-   query synthesis, etc.
-
-# Discussion
-
-The working group concluded that there is ample scope for logic
-programming in bioinformatics. Future work includes expansion of
-accessing semantic web databases using SPARQLProg, expanding the
-BioLink model, and adding dynamic SPARQL support to miniKanren.
-
-## Acknowledgements
-
-We thank the organizers of the NBDC/DBCLS BioHackathon 2019 for
-travel support for some of the authors.
-
-## Supplemental information
-
-We use pandoc flavoured markdown, similar to Rstudio see \url{https://garrettgman.github.io/rmarkdown/authoring_pandoc_markdown.html}.
-
-## Tables and figures
-
-Tables can be added in the following way, though alternatives are possible:
-
-| Header 1 | Header 2 |
-| -------- | -------- |
-| item 1 | item 2 |
-| item 3 | item 4 |
-
-Table: Note that table caption is automatically numbered.
-
-
-| Term                | MB tools/ontologies using this term | Frequency on Biology Stack Exchange | Search Term         |
-|:-------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------:|
-| Part | iGEM | 9065 | part + parts |
-| Component           | SBOL, SBOLDesigner, SBOLCanvas      | 2163                                | component           |
-| Module              | SBOL                                | 311                                 | module              |
-| Device              |                                     | 677                                 | device              |
-| System              |                                     | 16098                               | system              |
-| RBS                 |                                     | 548                                 | rbs                 |
-| Ribosome Entry Site | SO                                  | 8                                   | ribosome entry site |
-
-LaTeX table:
-
-
-
-\begin{tabular}{|l|l|}\hline
-Age & Frequency \\ \hline
-18--25  & 15 \\
-26--35  & 33 \\
-36--45  & 22 \\ \hline
-\end{tabular}
-
-## Mermaid graphs
-
-This is an example of embedding a graph
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-Unfortunately it does not work without the mermaid plugin and that requires headless chrome(?!). If you run the command line version of `gen-pdf` it may be possible to get it to work with the right packages. Please tell us if you succeed.
+![Workflow for ANNOTATO Pipeline](annotato-workflow.drawio.svg)
 
 ## References
