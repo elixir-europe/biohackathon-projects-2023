@@ -1,0 +1,170 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "virtualReferenceCollectionMetaData": {
+            "type": "object",
+            "properties": {
+                "referenceCollectionID": {
+                    "type": "string"
+                },
+                "creator": {
+                    "type": "string"
+                },
+                "maintainer": {
+                    "type": "string"
+                },
+                "copyrightLicense": {
+                    "type": "string"
+                },
+                "copyrightOwner": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "area": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "includedTaxaDescription": {
+                    "type": "string"
+                },
+                "taxaIncluded": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "language": {
+                    "type": "string"
+                },
+                "lastUpdate": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "referenceCollectionID",
+                "creator",
+                "maintainer",
+                "copyrightLicense",
+                "copyrightOwner",
+                "title",
+                "description",
+                "area",
+                "includedTaxaDescription",
+                "taxaIncluded",
+                "language",
+                "lastUpdate"
+            ]
+        },
+        "media": {
+            "type": "object",
+            "properties": {
+                "mediaID": {
+                    "type": "string"
+                },
+                "documentOccurrenceID": {
+                    "type": "string"
+                },
+                "copyrightLicense": {
+                    "type": "string"
+                },
+                "mediaDataURL": {
+                    "type": "string"
+                },
+                "reviewed": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "mediaID",
+                "documentOccurrenceID",
+                "copyrightLicense",
+                "mediaDataURL",
+                "reviewed"
+            ]
+        },
+        "organism": {
+            "type": "object",
+            "properties": {
+                "organismID": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "organismID"
+            ]
+        },
+        "occurrence": {
+            "type": "object",
+            "properties": {
+                "occurrenceID": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "occurrenceID"
+            ]
+        },
+        "taxon": {
+            "type": "object",
+            "properties": {
+                "taxonID": {
+                    "type": "string"
+                },
+                "taxonValidNameID": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "taxonID",
+                "taxonValidNameID"
+            ]
+        },
+        "taxonName": {
+            "type": "object",
+            "properties": {
+                "taxonNameID": {
+                    "type": "string"
+                },
+                "taxonFullName": {
+                    "type": "string"
+                },
+                "taxonNameAuthor": {
+                    "type": "string"
+                },
+                "taxonNameYear": {
+                    "type": "integer"
+                },
+                "taxonNameBrackets": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "taxonNameID",
+                "taxonFullName",
+                "taxonNameAuthor",
+                "taxonNameYear",
+                "taxonNameBrackets"
+            ]
+        }
+    },
+    "required": [
+        "virtualReferenceCollectionMetaData",
+        "media",
+        "organism",
+        "occurrence",
+        "taxon",
+        "taxonName"
+    ]
+}

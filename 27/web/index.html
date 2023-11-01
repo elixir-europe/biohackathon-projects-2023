@@ -48,7 +48,7 @@
 
         .uploadarea input {
         margin: auto;
-        width: 50%;
+        width: 100%;
         height: 100%;
         
         border: none;
@@ -129,24 +129,25 @@
             
     <div class="center">
     
-    example JSON input can be downloaded <a href="">here</a> 
+    example JSON input can be downloaded <a href="#">here</a> 
     <br>
-        <input class="btn btn-primary d-inline"  type="file" id="input_json" name="json" multiple/>
+        <input class="btn btn-primary d-inline d-none"  type="file" id="input_json" name="json" multiple/>
     <input style="display:none" type="file" id="input_xlsx" name="xlsx" multiple/>
-    <button class="btn btn-primary" style="display:inline" id="converter" onclick="main(cleanend_global);"> Converter </button>
+    
     <div class=" area uploadarea " id="importArea"
     ondragenter="this.className='area uploadarea dragging'" 
-    ondrop=";DragAndDrop(event)" style="margin:auto; height:30%">
+    ondrop=";DragAndDrop(event)" style="margin:auto; height:30vh; width:50vw">
        
       
-      <input type="file"  onchange="onFiles(this.files)" id="import"   multiple>
-    </div>
+      <input type="file"  id="import"   multiple>
+    </div><br>
+    <button class="btn btn-primary" style="display:inline" data-bs-toggle="modal" data-bs-target="#cModal" id="cModalButton"> Start Submissions </button>
     <div class="d-flex justify-content-center d-none" id="waiting">
         <div class="spinner-grow btn-primary" style="width: 3rem; height: 3rem;" role="status">
             <br>
             <span class="sr-only d-none">Loading...</span>
           </div>
-        </div>
+    </div>
     <div style="margin:auto;" id="xml_output">
     </div>
     </div>
@@ -165,13 +166,16 @@
 	var tour = new Tour(steps); // initialize the guided tour
     tour.show();
     let output_div = document.getElementById("xml_output");
-        
+    function DragAndDrop(e) {
+            e.preventDefault();
+            
+            document.getElementById("import").files = e.dataTransfer.items;}
     console.log = function() {
         //log_messages.push.apply(log_messages, arguments);
         log_backup.apply(console, arguments);
         output_div.innerText= log_messages.join('\r\n');
     };
-    const input1 = document.getElementById("input_json");
+    const input1 = document.getElementById("import");
     input1.addEventListener("change", handleFiles1, false);
     function handleFiles1() {
 
@@ -183,48 +187,48 @@
             reader.addEventListener('load', function() {
             var result = JSON.parse(reader.result); // Parse the result into an object 
             //console.log("reader.result is : "+reader.result);
-            let input_json = result;
+            input_json = result;
             //console.log("result is : "+result);
             var cleaned_data= {};
             let column_n=0;
             let current_column_name;
-                for (const [index, element] of input_json.entries()) {
-                if (element[1] != "Further informations"){
-                    if (element[1] == "metadata section"){
-                        current_column_name = element[2]
-                        column_n =+1
-                        console.log(current_column_name, column_n);
-                        cleaned_data[current_column_name] ={} ;
+                // for (const [index, element] of input_json.entries()) {
+                // if (element[1] != "Further informations"){
+                //     if (element[1] == "metadata section"){
+                //         current_column_name = element[2]
+                //         column_n =+1
+                //         console.log(current_column_name, column_n);
+                //         cleaned_data[current_column_name] ={} ;
 
-                    } else{
-                        if (element[0] == ""){
+                //     } else{
+                //         if (element[0] == ""){
 
-                            let content = {};
-                            const k1 = element[1];
+                //             let content = {};
+                //             const k1 = element[1];
                                 
-                                cleaned_data[current_column_name][k1] = element[2];
-                            }else if (element[0] == "-" ){
-                                current_column_name = element[2];
-                                cleaned_data["Experiment Context"][current_column_name]=[];
+                //                 cleaned_data[current_column_name][k1] = element[2];
+                //             }else if (element[0] == "-" ){
+                //                 current_column_name = element[2];
+                //                 cleaned_data["Experiment Context"][current_column_name]=[];
 
-                            } else {
-                                let content = { "paragraph_number" :element[0] , "key": element[1], "value": element[2], "measure": element[3], "unit": element[4] }
+                //             } else {
+                //                 let content = { "paragraph_number" :element[0] , "key": element[1], "value": element[2], "measure": element[3], "unit": element[4] }
                                 
-                                cleaned_data["Experiment Context"][current_column_name].push(content);
+                //                 cleaned_data["Experiment Context"][current_column_name].push(content);
 
-                            }
+                //             }
 
 
-                        }
+                //         }
                         
 
-                    }
+                //     }
                     
 
                     
-                };
+                // };
                 
-                cleanend_global = cleaned_data;    
+                // cleanend_global = cleaned_data;    
             });
             
             reader.readAsText(this.files[0]); // Read the uploaded file
@@ -288,9 +292,81 @@
 
 
     </script>
+    <!-- Button trigger modal -->
+    <button type="button" class="d-none btn btn-primary" >
+    Launch convert modal
+    </button>
+      <!-- Modal -->
+        <div class="modal fade" id="cModal" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="cModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="cModalLabel">Validation report</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            Column
+                          </div>
+                          <div class="col">
+                            Column
+                          </div>
+                          <div class="col">
+                            Column
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              Column
+                            </div>
+                            <div class="col">
+                              Column
+                            </div>
+                            <div class="col">
+                              Column
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              Column
+                            </div>
+                            <div class="col">
+                              Column
+                            </div>
+                            <div class="col">
+                              Column
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              Column
+                            </div>
+                            <div class="col">
+                              Column
+                            </div>
+                            <div class="col">
+                              Column
+                            </div>
+                          </div>
+                      </div>
+                    <table id ="validate_table" class="table table-bordered table-hover" >
+        
+                    </table>
+            
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">download terms</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
 <!-- Button trigger modal -->
 <button type="button" class="d-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#map_vali_modal" id="m_v_modal">
-    Launch demo modal
+    Launch check modal
   </button>
   
   <!-- Modal -->
@@ -298,11 +374,11 @@
     <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="map_vali_modal_label">Validation report</h1>
+          <h1 class="modal-title fs-5" id="map_vali_modal_label">Upload to repos</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <span id="init_word">The following terms are missing:</span>
+            <span id="init_word"> </span>
             <br>
             <span id="mandatory_n"></span> mandatory term(s),<br>
             <span id="recommended_n"></span> recommended term(s),<br>
@@ -313,8 +389,8 @@
     
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">download terms</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">download updated ISA-JSON</button>
+          <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">convert</button>
         </div>
       </div>
     </div>
