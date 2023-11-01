@@ -1,6 +1,6 @@
 // Utils for interacting with API
 
-export const BASE_URL = 'http://localhost:5000';
+export const BASE_URL = '/api';
 
 export const post = (path, data) => fetch(
     `${BASE_URL}${path}`,

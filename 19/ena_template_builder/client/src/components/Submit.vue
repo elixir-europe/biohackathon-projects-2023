@@ -4,8 +4,8 @@
 </template>
 
 <script>
-import { useFormStore } from './stores/forms.js';
-import { submitForms } from './utils/api.js';
+import { useFormStore } from '@/stores/forms.js';
+import { submitForms } from '@/utils/api.js';
 
 export default {
   methods: {

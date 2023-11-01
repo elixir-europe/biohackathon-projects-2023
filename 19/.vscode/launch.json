@@ -6,6 +6,7 @@
     "configurations": [
         {
             "name": "Flask run",
+            "cwd": "${workspaceFolder}/ena_template_builder",
             "type": "python",
             "request": "launch",
             "module": "flask",
@@ -23,6 +24,7 @@
         },
         {
             "name": "Flask test",
+            "cwd": "${workspaceFolder}/ena_template_builder",
             "type": "python",
             "request": "launch",
             "module": "pytest",

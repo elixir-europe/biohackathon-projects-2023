@@ -13,14 +13,14 @@ if os.environ.get('FLASK_OUTPUT_FILE'):
     OUTFILE = Path(os.environ.get('FLASK_OUTPUT_FILE'))
 
 
-@app.route('/schema', methods=['GET'])
+@app.route('/api/schema', methods=['GET'])
 def get_schema():
     return jsonify({
         "schema": schema.fetch(),
     })
 
 
-@app.route('/submit', methods=['POST'])
+@app.route('/api/submit', methods=['POST'])
 def submit():
     """Handle request to submit form and write to CSV.
 
