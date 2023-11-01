@@ -38,7 +38,7 @@ authors_short: Laura Portell-Silva \emph{et al.}
 
 # Introduction
 
-Biohackathon project 21 " Improving functionality and usability of OpenEBench for data-driven research in Life Sciences through Community-led efforts" seeks to enhance the functionality and usability of the OpenEBench platform (https://openebench.bsc.es/), as well as foster collaboration and engagement within the ELIXIR communities that are interested in performing a benchmarking evaluation of tools and/or workflows using this framework.
+Biohackathon project 24 " Improving functionality and usability of OpenEBench for data-driven research in Life Sciences through Community-led efforts" seeks to enhance the functionality and usability of the OpenEBench platform (https://openebench.bsc.es/), as well as foster collaboration and engagement within the ELIXIR communities that are interested in performing a benchmarking evaluation of tools and/or workflows using this framework.
 
 Our objective was to promote a greater sense of community participation in benchmarking activities. To achieve this, we estalished connections between OpenEBench and APICURON, which provide users with a comprehensive overview of their contributions to their benchmarking activities. For that, APICURON gathers a rich set of metadata in the platform, based on Schema.org and Bioschemas. This enables contributors’ activities to be exposed in a more detailed view through third party systems, e.g. ORCID.
 
