@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Media",
+    "properties": {
+        "mediaID": {
+            "type": "string",
+            "title": "Media Identifier",
+            "description": "An unambiguous reference to the media resource"
+        },
+        "documentOccurrenceID": {
+            "type": "string",
+            "title": "Document Occurrence Identifier",
+            "description": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique"
+        },
+        "copyrightLicense": {
+            "type": "string",
+            "title": "Copyright License",
+            "description": "Information about rights held in and over the resource"
+        },
+        "mediaDataURL": {
+            "type": "string",
+            "title": "Media Data URL",
+            "description": "A URI that uniquely identifies a service that provides a representation of the underlying resource"
+        },
+        "reviewed": {
+            "type": "string",
+            "title": "Reviewed",
+            "description": "URI for a reviewer"
+        }
+    },
+    "required": [
+        "mediaID",
+        "documentOccurrenceID",
+        "mediaDataURL",
+        "reviewed"
+    ]
+}

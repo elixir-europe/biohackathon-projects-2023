@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Taxon",
+    "description": "Generic concept of a taxon for identification",
+    "properties": {
+        "taxonID": {
+            "type": "string",
+            "title": "Taxon Identifier",
+            "description": "A (universally) unique identifier for the taxon"
+        },
+        "taxonValidNameID": {
+            "type": "string",
+            "title": "Taxon Valid Name Identifier",
+            "description": "An identifier for the nomenclatural details of a scientific name"
+        },
+        "taxonNames": {
+            "type": "array",
+            "items": {
+                "$ref": "taxonName.json"
+            }
+        }
+    },
+    "required": [
+        "taxonID",
+        "taxonValidNameID"
+    ]
+}

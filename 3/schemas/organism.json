@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Organism",
+    "description": "A particular organism",
+    "properties": {
+        "organismID": {
+            "type": "string",
+            "title": "Organism Identifier",
+            "description": "An identifier for the organism"
+        },
+        "occurrences": {
+            "type": "array",
+            "items": {
+                "$ref": "occurrence.json"
+            }
+        },
+        "taxa": {
+            "type": "array",
+            "items": {
+                "$ref": "taxon.json"
+            }
+        }
+    },
+    "required": [
+        "organismID"
+    ]
+}
