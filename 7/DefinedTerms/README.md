@@ -14,17 +14,38 @@ jq '.resources[].profiles[].exampleURL' live_deployments.json |\
         wget -q --content-on-error --directory-prefix=./exampleURLcontent
 
 # Extract all <script type=”application/ld+json”> from HTML pages
-for F in * ; do 
+for F in exampleURLcontent/* ; do 
     xmllint --html --nowarning \
-        --xpath '//html/head/script[@type="application/ld+json"]/text()' \
+        --xpath '//html/*/script[@type="application/ld+json"]/text()' \
         "$F" 2>/dev/null |\
     sed -e 's/<!\[CDATA\[//g; s/\]\]>//g' |\
-    jq '[getpath(paths(. == "DefinedTerm")[:-1])]' >"../DefinedTermsOnly/$F.json"
+    jq '[getpath(paths(. == "DefinedTerm")[:-1])]' >"./DefinedTermsOnly/$(basename $F).json"
 done
 
 # Concatenate all JSON-LD into one array
-jq -s 'add' DefinedTermsOnly *.json >all.DefinedTerms
+jq -s 'add' DefinedTermsOnly/*.json >all.DefinedTerms
 ```
 
 ## Some Analysis:
+
+There are ~135 DefinedTerms in the example URLs:
+```
+grep -c '"DefinedTerm"' all.DefinedTerms 
+135
+```
+
+So far, only `@id, @type, termCode, name, url` are used in `DefinedTerm`s we see:
+```
+jq 'del(..|objects|.inDefinedTermSet)' <all.DefinedTerms | cut -d: -f 1 | grep -v "[]{[}]" | sort | uniq -c | sort -n 
+      2     "termCode"
+      2     "url"
+      7     "name"
+    130     "@id"
+    135     "@type"
+```
+Some entries with `"@type": "DefinedTerm"` omit `@id`, which is an error. 
+
+There was no proper analysis of the `inDefinedTermSet` yet, but it ranges from just giving a URL, to specifying `"@type": "DefinedTermSet"`, its name and url.
+
+
 

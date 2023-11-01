@@ -1,0 +1,223 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Bombus virtual reference collection schema",
+    "description": "A virtual reference collection schema for Bombus developed in the ELIXIR Biohackathon 2023",
+    "type": "object",
+    "properties": {
+        "virtualReferenceCollectionMetaData": {
+            "type": "object",
+            "properties": {
+                "referenceCollectionID": {
+                    "title": "Reference Collection Identifier",
+                    "description": "A numeric, textual value, or reference such as an IRI, that can be used to uniquely identify the object to which it is attached",
+                    "type": "string"
+                },
+                "creator": {
+                    "title": "Creator",
+                    "description": "A role played by a Person in the context of an entity such as an ObjectGroup, OrganisationalUnit or RecordLevel",
+                    "type": "string"
+                },
+                "maintainer": {
+                    "title": "Maintainer",
+                    "description": "A role played by a Person in the context of an entity such as an ObjectGroup, OrganisationalUnit or RecordLevel",
+                    "type": "string"
+                },
+                "copyrightLicense": {
+                    "title": "Copyright License",
+                    "description": "Information about rights held in and over the resource",
+                    "type": "string"
+                },
+                "copyrightOwner": {
+                    "title": "Copyright Owner",
+                    "description": "A person or organization owning or managing rights over the resource",
+                    "type": "string"
+                },
+                "title": {
+                    "title": "Title",
+                    "description": "A name given to the resource",
+                    "type": "string"
+                },
+                "description": {
+                    "title": "Description",
+                    "description": "An account of the resource",
+                    "type": "string"
+                },
+                "area": {
+                    "title": "Area",
+                    "description": "The geographic location from which objects associated with the ObjectGroup were collected, or where an Event took place",
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "includedTaxaDescription": {
+                    "title": "Included Taxa Description",
+                    "description": "A higher taxon (e. g., a genus, family, or order) at the level of the genus or higher, that covers all taxa that are the primary subject of the resource (which may be a media item or a collection)",
+                    "type": "string"
+                },
+                "taxaIncluded": {
+                    "title": "Taxa Included",
+                    "description": "A list of identifiers for the set of dwc:Taxon information. May be a global unique identifier or an identifier specific to the data set",
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "language": {
+                    "title": "Language",
+                    "description": "A language of the resource",
+                    "type": "string"
+                },
+                "lastUpdate": {
+                    "title": "Last Update",
+                    "description": "Date on which the resource was changed",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "referenceCollectionID",
+                "title",
+                "taxaIncluded",
+                "lastUpdate"
+            ]
+        },
+        "media": {
+            "type": "object",
+            "properties": {
+                "mediaID": {
+                    "title": "Media Identifier",
+                    "description": "An unambiguous reference to the media resource",
+                    "type": "string"
+                },
+                "documentOccurrenceID": {
+                    "title": "Document Occurrence Identifier",
+                    "description": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique",
+                    "type": "string"
+                },
+                "copyrightLicense": {
+                    "title": "Copyright License",
+                    "description": "Information about rights held in and over the resource",
+                    "type": "string"
+                },
+                "mediaDataURL": {
+                    "title": "Media Data URL",
+                    "description": "A URI that uniquely identifies a service that provides a representation of the underlying resource",
+                    "type": "string"
+                },
+                "reviewed": {
+                    "title": "Reviewed",
+                    "description": "URI for a reviewer",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "mediaID",
+                "documentOccurrenceID",
+                "mediaDataURL",
+                "reviewed"
+            ]
+        },
+        "organism": {
+            "title": "Organism",
+            "description": "A particular organism",
+            "type": "object",
+            "properties": {
+                "organismID": {
+                    "title": "Organism Identifier",
+                    "description": "An identifier for the organism",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "organismID"
+            ]
+        },
+        "occurrence": {
+            "title": "Occurrence",
+            "description": "An existence of an organism in a particular place at a particular time",
+            "type": "object",
+            "properties": {
+                "occurrenceID": {
+                    "title": "Occurrence Identifier",
+                    "description": "A universally unique identifier for the occurrence",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "occurrenceID"
+            ]
+        },
+        "taxon": {
+            "title": "Taxon",
+            "description": "Generic concept of a taxon for identification",
+            "type": "object",
+            "properties": {
+                "taxonID": {
+                    "title": "Taxon Identifier",
+                    "description": "A (universally) unique identifier for the taxon",
+                    "type": "string"
+                },
+                "taxonValidNameID": {
+                    "title": "Taxon Valid Name Identifier",
+                    "description": "An identifier for the nomenclatural details of a scientific name",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "taxonID",
+                "taxonValidNameID"
+            ]
+        },
+        "taxonName": {
+            "title": "Taxon Name",
+            "description": "Taxon name properties to describe the specimen, author and date",
+            "type": "object",
+            "properties": {
+                "taxonNameID": {
+                    "title": "Taxon Name Identifier",
+                    "description": "An identifier for the nomenclatural details of a scientific name",
+                    "type": "string"
+                },
+                "taxonFullName": {
+                    "title": "Taxon Full Name",
+                    "description": "Full scientific name with author and date",
+                    "type": "string"
+                },
+                "taxonNameAuthor": {
+                    "title": "Taxon Name Author",
+                    "description": "Name of author",
+                    "type": "string"
+                },
+                "taxonNameYear": {
+                    "title": "Taxon Name Year",
+                    "description": "Four digit year in which the name was published in",
+                    "type": "integer"
+                },
+                "taxonNameBrackets": {
+                    "title": "Taxon Name Brackets",
+                    "description": "Full taxon name with author and date, as it appeared in the first publication",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "taxonNameID",
+                "taxonFullName",
+                "taxonNameAuthor",
+                "taxonNameYear",
+                "taxonNameBrackets"
+            ]
+        }
+    },
+    "required": [
+        "virtualReferenceCollectionMetaData",
+        "media",
+        "organism",
+        "occurrence",
+        "taxon",
+        "taxonName"
+    ]
+}

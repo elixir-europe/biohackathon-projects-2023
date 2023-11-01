@@ -28,6 +28,8 @@ wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_proj
 ```
 samtools view -T GRCh38_full_analysis_set_plus_decoy_hla.fa  -b -o HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.cram
 
+samtools index HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam 
+
 ```
 - Find coordinates for TP53 from Ensembl https://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000141510;r=17:7661779-7687538
 
@@ -61,8 +63,9 @@ wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_proj
 - Filter TP53
   
 ``` 
-bcftools view -r chr17:7661779-7687550 input.vcf > TP53.vcf
+bcftools view -r 17:7661779-7687550 -s HG01504 ALL.chr17.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz > TP53.vcf
 ```
+
 #### TP53.bed file
 
 ``` 
