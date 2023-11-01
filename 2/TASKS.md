@@ -61,8 +61,9 @@ wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_proj
 - Filter TP53
   
 ``` 
-bcftools view -r chr17:7661779-7687550 input.vcf > TP53.vcf
+bcftools view -r 17:7661779-7687550 -s HG01504 ALL.chr17.shapeit2_integrated_snvindels_v2a_27022019.GRCh38.phased.vcf.gz > TP53.vcf
 ```
+
 #### TP53.bed file
 
 ``` 
