@@ -1,5 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Bombus virtual reference collection schema",
+    "description": "A virtual reference collection schema for Bombus developed in the ELIXIR Biohackathon 2023",
     "type": "object",
     "properties": {
         "virtualReferenceCollectionMetaData": {
@@ -120,9 +122,13 @@
             ]
         },
         "organism": {
+            "title": "Organism",
+            "description": "A particular organism",
             "type": "object",
             "properties": {
                 "organismID": {
+                    "title": "Organism Identifier",
+                    "description": "An identifier for the organism",
                     "type": "string"
                 }
             },
@@ -131,9 +137,13 @@
             ]
         },
         "occurrence": {
+            "title": "Occurrence",
+            "description": "An existence of an organism in a particular place at a particular time",
             "type": "object",
             "properties": {
                 "occurrenceID": {
+                    "title": "Occurrence Identifier",
+                    "description": "A universally unique identifier for the occurrence",
                     "type": "string"
                 }
             },
@@ -142,12 +152,18 @@
             ]
         },
         "taxon": {
+            "title": "Taxon",
+            "description": "Generic concept of a taxon for identification",
             "type": "object",
             "properties": {
                 "taxonID": {
+                    "title": "Taxon Identifier",
+                    "description": "A (universally) unique identifier for the taxon",
                     "type": "string"
                 },
                 "taxonValidNameID": {
+                    "title": "Taxon Valid Name Identifier",
+                    "description": "An identifier for the nomenclatural details of a scientific name",
                     "type": "string"
                 }
             },
@@ -157,21 +173,33 @@
             ]
         },
         "taxonName": {
+            "title": "Taxon Name",
+            "description": "Taxon name properties to describe the specimen, author and date",
             "type": "object",
             "properties": {
                 "taxonNameID": {
+                    "title": "Taxon Name Identifier",
+                    "description": "An identifier for the nomenclatural details of a scientific name",
                     "type": "string"
                 },
                 "taxonFullName": {
+                    "title": "Taxon Full Name",
+                    "description": "Full scientific name with author and date",
                     "type": "string"
                 },
                 "taxonNameAuthor": {
+                    "title": "Taxon Name Author",
+                    "description": "Name of author",
                     "type": "string"
                 },
                 "taxonNameYear": {
+                    "title": "Taxon Name Year",
+                    "description": "Four digit year in which the name was published in",
                     "type": "integer"
                 },
                 "taxonNameBrackets": {
+                    "title": "Taxon Name Brackets",
+                    "description": "Full taxon name with author and date, as it appeared in the first publication",
                     "type": "string"
                 }
             },
