@@ -1,6 +1,6 @@
 ---
-title: 'BioHackEU22 Report for Project 24: Improving functionality and usability of OpenEBench for data-driven research in Life Sciences through Community-led efforts'
-title_short: 'BioHackEU22 #24: OpenEBench and APICURON'
+title: 'BioHackEU23 Report for Project 24: Improving functionality and usability of OpenEBench for data-driven research in Life Sciences through Community-led efforts'
+title_short: 'BioHackEU23 #24: OpenEBench and APICURON'
 tags:
   - OpenEBench
   - APICURON
