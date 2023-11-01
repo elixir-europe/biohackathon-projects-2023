@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Virtual Reference Collection",
+    "description": "A virtual reference collection schema for Bombus developed in the ELIXIR Biohackathon 2023",
+    "properties": {
+        "virtualReferenceCollectionMetaData": {
+            "type": "object",
+            "$ref": "virtualReferenceCollectionMetaData.json"
+        },
+        "taxa": {
+            "type": "array",
+            "items": {
+                "$ref": "taxon.json"
+            }
+        }
+    },
+    "required": [
+        "virtualReferenceCollectionMetaData",
+        "organism"
+    ]
+}

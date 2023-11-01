@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Taxon Name",
+    "description": "Taxon name properties to describe the specimen, author and date",
+    "properties": {
+        "taxonNameID": {
+            "type": "string",
+            "title": "Taxon Name Identifier",
+            "description": "An identifier for the nomenclatural details of a scientific name"
+        },
+        "taxonFullName": {
+            "type": "string",
+            "title": "Taxon Full Name",
+            "description": "Full scientific name with author and date"
+        },
+        "taxonNameAuthor": {
+            "type": "string",
+            "title": "Taxon Name Author",
+            "description": "Name of author"
+        },
+        "taxonNameYear": {
+            "type": "integer",
+            "title": "Taxon Name Year",
+            "description": "Four digit year in which the name was published in"
+        },
+        "taxonNameBrackets": {
+            "type": "string",
+            "title": "Taxon Name Brackets",
+            "description": "Full taxon name with author and date, as it appeared in the first publication"
+        }
+    },
+    "required": [
+        "taxonNameID",
+        "taxonFullName",
+        "taxonNameAuthor",
+        "taxonNameYear",
+        "taxonNameBrackets"
+    ]
+}
