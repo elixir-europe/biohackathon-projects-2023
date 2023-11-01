@@ -111,7 +111,7 @@
                 "reviewed": {
                     "title": "Reviewed",
                     "description": "URI for a reviewer",
-                    "type": "string"
+                    "type": "boolean"
                 }
             },
             "required": [
