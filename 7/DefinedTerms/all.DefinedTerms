@@ -41,243 +41,500 @@
     "inDefinedTermSet": "http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "kinase activity",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Function"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002673",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "protein serine/threonine kinase activity",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Function"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010466",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "calmodulin binding",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Function"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0080134",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "identical protein binding",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Function"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0022411",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "protein homodimerization activity",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Function"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0065009",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "angiotensin-activated signaling pathway",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Process"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0032269",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "protein phosphorylation",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Process"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051056",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "dendritic spine development",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Process"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051248",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "peptidyl-threonine autophosphorylation",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Process"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002682",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "positive regulation of NF-kappaB transcription factor activity",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Process"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002683",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "calcium- and calmodulin-dependent protein kinase complex",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Component"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0019222",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "dendritic spine",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Component"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0072376",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "nucleus",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Component"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0080090",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "cytoplasm",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Component"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0023051",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "termCode": "neuron projection",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "maintainer": {
-        "@type": "Organization",
-        "name": "Gene Ontology",
-        "url": "http://geneontology.org/"
-      },
-      "name": "GO Component"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010468",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "name": "Mass spectrometry data",
-    "url": "http://edamontology.org/data_2536",
-    "termCode": "data_2536",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "name": "Bioinformatics operations, data types, formats, identifiers and topics",
-      "url": " http://edamontology.org"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0022617",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "name": "liquid chromatography-mass spectrometry",
-    "url": "http://purl.obolibrary.org/obo/CHMO_0000524",
-    "termCode": "CHMO_0000524",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "name": "Chemical Methods Ontology",
-      "url": "http://purl.obolibrary.org/obo/chmo.owl"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051234",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "name": "Mass spectrometry data",
-    "url": "http://edamontology.org/data_2536",
-    "termCode": "data_2536",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "name": "Bioinformatics operations, data types, formats, identifiers and topics",
-      "url": " http://edamontology.org"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002698",
+    "@type": "DefinedTerm"
   },
   {
-    "@type": "DefinedTerm",
-    "name": "liquid chromatography-mass spectrometry",
-    "url": "http://purl.obolibrary.org/obo/CHMO_0000524",
-    "termCode": "CHMO_0000524",
-    "inDefinedTermSet": {
-      "@type": "DefinedTermSet",
-      "name": "Chemical Methods Ontology",
-      "url": "http://purl.obolibrary.org/obo/chmo.owl"
-    }
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051345",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031324",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0060255",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0009987",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030154",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030162",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0050794",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051336",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0045824",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0045088",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048863",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010955",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0006810",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010629",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031323",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0006887",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044763",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043062",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002920",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0052547",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043170",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0045861",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0007597",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0050727",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0009966",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002921",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0032101",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051246",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0071840",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030198",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044092",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044765",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043547",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0016043",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0071704",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0019538",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0045055",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:1902578",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048869",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0050789",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044699",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043087",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002697",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044238",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0050777",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010605",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048583",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:1903317",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031347",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0046903",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048519",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0016192",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0032940",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0050790",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048523",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0032268",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0048585",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:1903318",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0001869",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043085",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0070613",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051179",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0030449",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031348",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0050896",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0045916",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0052548",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044093",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0002576",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:2000257",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:2000258",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0051346",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:1902531",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0008152",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010646",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043086",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0065007",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0050776",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0001868",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0009892",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0010951",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044421",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031988",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:1903561",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0072562",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0034774",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031093",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044444",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043230",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044422",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043233",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0070062",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0060205",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044424",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0005829",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031983",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044433",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031974",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0031982",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0005576",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0070013",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043227",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044446",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0005615",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0043226",
+    "@type": "DefinedTerm"
+  },
+  {
+    "@id": "http://www.ebi.ac.uk/QuickGO/GTerm?id=GO:0044464",
+    "@type": "DefinedTerm"
   },
   {
     "@type": "DefinedTerm",

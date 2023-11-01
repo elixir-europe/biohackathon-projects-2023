@@ -14,16 +14,16 @@ jq '.resources[].profiles[].exampleURL' live_deployments.json |\
         wget -q --content-on-error --directory-prefix=./exampleURLcontent
 
 # Extract all <script type=”application/ld+json”> from HTML pages
-for F in * ; do 
+for F in exampleURLcontent/* ; do 
     xmllint --html --nowarning \
-        --xpath '//html/head/script[@type="application/ld+json"]/text()' \
+        --xpath '//html/*/script[@type="application/ld+json"]/text()' \
         "$F" 2>/dev/null |\
     sed -e 's/<!\[CDATA\[//g; s/\]\]>//g' |\
-    jq '[getpath(paths(. == "DefinedTerm")[:-1])]' >"../DefinedTermsOnly/$F.json"
+    jq '[getpath(paths(. == "DefinedTerm")[:-1])]' >"./DefinedTermsOnly/$(basename $F).json"
 done
 
 # Concatenate all JSON-LD into one array
-jq -s 'add' DefinedTermsOnly *.json >all.DefinedTerms
+jq -s 'add' DefinedTermsOnly/*.json >all.DefinedTerms
 ```
 
 ## Some Analysis:
