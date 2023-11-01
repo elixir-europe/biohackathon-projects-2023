@@ -31,7 +31,7 @@ biohackathon_url:   'https://biohackathon-europe.org/index.html'
 biohackathon_location: 'Barcelona, Spain, 2023'
 group: Project 24
 <!--URL to project git repo --- should contain paper.md-->
-git_url: https://github.com/elixir-europe/biohackathon-projects-2023/blob/main/projects/24/bioHackrXiv
+git_url: https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/24/bioHackrXiv
 <!--This is the short authors description that is used at the bottom of the generated paper.-->
 authors_short: Laura Portell-Silva \emph{et al.}
 ---
