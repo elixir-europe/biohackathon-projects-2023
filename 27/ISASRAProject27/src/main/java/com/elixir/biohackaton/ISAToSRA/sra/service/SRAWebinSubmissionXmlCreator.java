@@ -1,7 +1,7 @@
 /** Elixir BioHackathon 2022 */
 package com.elixir.biohackaton.ISAToSRA.sra.service;
 
-import com.elixir.biohackaton.ISAToSRA.biosamples.service.BioSamplesSubmitter;
+import com.elixir.biohackaton.ISAToSRA.biosamples.service.BioSamplesAccessionsParser;
 import com.elixir.biohackaton.ISAToSRA.model.Investigation;
 import com.elixir.biohackaton.ISAToSRA.model.IsaJson;
 import com.elixir.biohackaton.ISAToSRA.model.Study;
@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +25,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class SRAWebinSubmissionXmlCreator {
-  @Autowired private BioSamplesSubmitter bioSamplesSubmitter;
+  @Autowired private BioSamplesAccessionsParser bioSamplesAccessionsParser;
 
   @Autowired private SRAStudyXmlCreator sraStudyXmlCreator;
 
@@ -39,14 +40,12 @@ public class SRAWebinSubmissionXmlCreator {
   @Autowired private ObjectMapper objectMapper;
 
   public void performSubmissionToBioSamplesAndEna(ApplicationArguments args) throws Exception {
-    String webinToken;
     String webinUserName;
     String webinPassword;
     String isaJsonFilePath;
 
     // Mandatory command line arguments
     if (args.getOptionNames().contains("webinJwt")) {
-      webinToken = args.getOptionValues("webinJwt").iterator().next();
     } else {
       throw new RuntimeException("Webin Authentication Token is not provided");
     }
@@ -75,7 +74,8 @@ public class SRAWebinSubmissionXmlCreator {
     final IsaJson isaJson = this.objectMapper.readValue(isaJsonString, IsaJson.class);
     final List<Study> studies = getStudies(isaJson);
     final Map<String, String> typeToBioSamplesAccessionMap =
-        this.bioSamplesSubmitter.createBioSamples(studies, webinToken);
+        this.bioSamplesAccessionsParser.parseIsaFileAndGetBioSampleAccessions(
+            studies, new HashMap<>());
 
     final Document document = DocumentHelper.createDocument();
     final Element webinElement = startPreparingWebinV2SubmissionXml(document);
