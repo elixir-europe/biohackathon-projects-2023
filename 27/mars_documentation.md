@@ -12,7 +12,7 @@ MARS serves as a common ground where data producers and diverse data repositorie
 | [Web UI access](https://xrzhou.com/mars/) | Domain hosting the Web UI and javascript module  |
 | [Web UI code](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/web)  | Code of the Web UI and javascript module  |
 | [ISA-JSON to ENA code](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISASRAProject27)  | Code of the service that consumes the BioSamples accessioned ISA-JSON, parses and submits it to ENA  |
-| [ISA-JSON to BioSamples code]([https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISASRAProject27](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISABioSamplesProject27))  | Code of the service that consumes the ISA-JSON, parses and submits it to BioSamples |
+| [ISA-JSON to BioSamples code](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISABioSamplesProject27)  | Code of the service that consumes the ISA-JSON, parses and submits it to BioSamples |
 | [BioSample external reference extender](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/biosamples-externalReferences)  | Code used to extend the existing BioSample records with the external references of the data submitted to other archives |
 
 ## Components in MARS
