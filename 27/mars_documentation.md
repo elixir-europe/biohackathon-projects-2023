@@ -151,11 +151,17 @@ Clone the [elixir-europe/biohackathon-projects-2023](https://github.com/elixir-e
 
 ### 2. Open the web interface
 Open the [web interface](https://github.com/elixir-europe/biohackathon-projects-2023/blob/main/27/web/index.html).
+
+![one](./images/1_webinterface.png)
     
 ### 3. Upload the multi-omics ISA-JSON file
 Click on upload icon and select the file [isa-bh2023-all.json](27/isa-test-data/ISA-BH2023-ALL/isa-bh2023-all.json).
 
+![two](./images/2_uploadisajson.png)
+
 Select the target archives you want to send your multi-omics (meta)data to and and click `Start Submissions`. The archives selected should correspond to the target archives indicated in the ISA-JSON file.
+
+![three](./images/3_targetrepositories.png)
 
 ### x. Validate the ISA-JSON
 Validation step to be done.
