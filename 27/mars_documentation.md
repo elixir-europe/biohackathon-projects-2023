@@ -144,3 +144,55 @@ graph TD
 
     ArchiveList -.- Archives
 ````
+## How to try out the MARS prototype
+
+### 1. Clone the repository or access the server
+Clone the [elixir-europe/biohackathon-projects-2023](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main) GitHub repository or connect to the VM?
+
+### 2. Open the web interface
+Open the [web interface](https://github.com/elixir-europe/biohackathon-projects-2023/blob/main/27/web/index.html).
+    
+### 3. Upload the multi-omics ISA-JSON file
+Click on upload icon and select the file [isa-bh2023-all.json](27/isa-test-data/ISA-BH2023-ALL/isa-bh2023-all.json).
+
+Select the target archives you want to send your multi-omics (meta)data to and and click `Start Submissions`. The archives selected should correspond to the target archives indicated in the ISA-JSON file.
+
+### x. Validate the ISA-JSON
+Validation step to be done.
+
+### 4. Start submission to BioSamples
+Data broker uses [this code](?) to make an API call to the BioSamples service "ISA-JSON to BioSamples code".
+
+### 5. Register samples in BioSamples
+The API call from the data broker triggers the running of the [ISA-JSON to BioSamples code](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISABioSamplesProject27): code of the service that consumes the ISA-JSON, parses and submits it to BioSamples. 
+
+[Example of ISA-JSON that the data broker sends to BioSamples](https://github.com/elixir-europe/biohackathon-projects-2023/blob/main/27/biosamples-input-isa.json).
+
+### 6. Update the ISA-JSON with BioSamples information
+After a succesful submission, BioSamples sends to the data broker an updated ISA-JSON containing BioSamples accession numbers for `Source` and `Sample` as `Source characteristics` and `Sample characteristics`, respectively.
+
+[Example of ISA-JSON that BioSamples sends back to data broker](https://github.com/elixir-europe/biohackathon-projects-2023/blob/main/27/biosamples-modified-isa.json).
+
+Data broker replaces or updates the original ISA-JSON.
+
+### 7. Dispatch submissions to other target archives
+Data broker uses [this code](?) to make an API call to the other target archives service "ISA-JSON to archive X code".
+
+### 8. Register linked records in other archives
+The API call from the data broker triggers the running of the
+* [ISA-JSON to ENA code](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISASRAProject27): code of the service that consumes the BioSamples accessioned ISA-JSON, parses and submits it to ENA.
+* ISA-JSON to MetaboLights code
+* ISA-JSON to eDAL-PGP code
+
+### 9. Update the ISA-JSON with other archives' information
+After a succesful submission, each archive sends to the data broker a receipt in a standard format defined for MARS (see example below). The receipt contains the path of the ojects in the ISA-JSON for wich an accession number has been generated, and the related accession number. The structure of the receipt is generic and common for all archives that joins MARS.
+
+[image]
+
+Data broker replaces or updates the original ISA-JSON.
+
+### 10. Update BioSamples External References
+Data broker uses the BioSamples accession numbers to download the submitted BioSamples JSON and extend the `External References` schema by adding the accession numbers provided by the other target archives.
+
+[image or link]
+
