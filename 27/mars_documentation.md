@@ -35,7 +35,7 @@ graph TD
         ISA-JSON
         Credentials
         Files
-        Files --> |Addition of Checksums| ISA-JSON
+        Files --> |Addition\nof Checksums| ISA-JSON
         fix(Fix error)
         style fix fill:#FF9999,stroke:#333,stroke-width:2px
         inform(Retrieve extended ISA-JSON)
@@ -45,7 +45,7 @@ graph TD
         ISA-JSON --> |Upload| isa[ISA-JSON]
         Credentials --> |Upload| credentials[Credentials]
         Files --> |??????| files[Files]
-        isa --> validation{Validate ISA-JSON}
+        isa --> validation{Validate\nISA-JSON}
         validation --> |No| fix
         validation --> |Yes| sendIsa(API call)
         style sendIsa fill:#F5F906,stroke:#333,stroke-width:2px
@@ -55,41 +55,50 @@ graph TD
         style sendIsa2 fill:#F5F906,stroke:#333,stroke-width:2px
         credentials --> sendIsa2
         files --> sendIsa2
+        responseDec2 --> |Yes: Extend\nISA-JSON|updatedIsa2
         updatedIsa2[Updated ISA-JSON]
         updatedIsa2 --> extensionBS(Download BioSamples JSON &\nExtend External References)
         extensionBS --> sendIsaBsFinal(API call)
+        responseDec1{Correct\nResponse}
+        responseDec1 --> |Yes: Extend\nISA-JSON|updatedIsa 
+        responseDec1 --> |No| fix
+        responseDec2{Correct\nResponse}
+        responseDec2 --> |No| fix
         style sendIsaBsFinal fill:#F5F906,stroke:#333,stroke-width:2px
     end
 
     subgraph BioSamples
         sendIsa --> |Send ISA-JSON| readIsa(Read and Transform ISA-JSON)
         readIsa --> registerBs(Register BioSamples)
-        registerBs --> checkBS{Correct submission}
-        checkBS -->|Yes| receipt1[BioSample accessions]
-        checkBS -->|No| fix
-        receipt1 --> |Extend| updatedIsa
+        registerBs --> checkBS{Correct\nsubmission}
+        checkBS -->|Yes| receipt1[Response with\nBioSample accessions]
+        checkBS -->|No| receipt1no[Response with\nerrors]
+        receipt1no --> |Send| responseDec1
+        style receipt1no fill:#FF9999,stroke:#333,stroke-width:2px
+        receipt1 --> |Send| responseDec1
         sendIsaBsFinal --> |Resubmission as \nModification| modifyBiosamples(Modify existing BioSamples)
         modifyBiosamples --> inform
         style BioSamples fill:#92FBA9,stroke:#333,stroke-width:2px,stroke-dasharray: 5, 5
     end
 
-    subgraph ENA
-        sendIsa2 --> readENA(Read and Transform ISA-JSON)
-        readENA --> registerEna(Register objects)
-        registerEna --> checkEna{Correct submission}
-        checkEna -->|Yes| receipt2[ENA accessions]
-        checkEna -->|No| fix
-        receipt2 --> |Extend| updatedIsa2
-        style ENA fill:#28D54D,stroke:#333,stroke-width:2px,stroke-dasharray: 5, 5
+    subgraph Archives
+        sendIsa2 --> g_read(Read and Transform ISA-JSON)
+        g_read --> g_register(Register objects)
+        g_register --> g_check{Correct\nsubmission}
+        g_check -->|Yes| g_receipt[Response with\nArchived accessions]
+        g_check -->|No| g_receiptno[Response with\nerrors]
+        g_receiptno --> |Send| responseDec2
+        style g_receiptno fill:#FF9999,stroke:#333,stroke-width:2px
+        g_receipt --> |Send| responseDec2
+        updatedIsa2
+        style Archives fill:#3BF9F9,stroke:#333,stroke-width:2px,stroke-dasharray: 5, 5
     end
 
-    subgraph MetaboLights
-        sendIsa2 --> readML(Read and Transform ISA-JSON)
-        readML --> registerML(Register objects)
-        registerML --> checkML{Correct submission}
-        checkML -->|Yes| receipt3[MetaboLights accessions]
-        checkML -->|No| fix
-        receipt3 --> |Extend| updatedIsa2
-        style MetaboLights fill:#3BF9F9,stroke:#333,stroke-width:2px,stroke-dasharray: 5, 5
+    subgraph ArchiveList
+        bs(BioSamples)
+        ENA
+        MetaboLights
     end
+
+    ArchiveList -.- Archives
 ````
