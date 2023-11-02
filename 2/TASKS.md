@@ -37,7 +37,7 @@ samtools index HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam
 - Extract region
 
 ```
-samtools view -b HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam 17:7565097-7590856 > TP53.bam
+samtools view -b HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam chr17:7661779-7687538 > TP53.bam
 ```
 
 #### FASTQ files
