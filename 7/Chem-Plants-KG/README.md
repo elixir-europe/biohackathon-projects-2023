@@ -128,3 +128,55 @@ where {
     }
 }
 ```
+### Molecular entities in pathways of plant resources
+```sparql
+PREFIX biohack23: <https://biohack2023/>
+PREFIX schema: <http://schema.org/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX taxon: <http://purl.uniprot.org/taxonomy/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?pathway ?organismName ?molecule ?resource ?property ?object
+where {
+    Graph biohack23:wikipathways {
+        ?pathway a schema:Dataset ;
+                 schema:taxonomicRange ?taxon .
+        ?molecule a schema:MolecularEntity ;
+                  schema:inChIKey ?key ;
+                  schema:includedInDataset ?pathway .
+    }
+    {
+        SELECT DISTINCT ?taxon ?organismName ?commonName ?ncbiURI
+        WHERE {
+            {
+                SELECT distinct ?taxon ?ncbiURI
+                WHERE {
+                    Graph biohack23:wikipathways {
+                        ?x schema:taxonomicRange ?taxon .
+                        BIND(STRAFTER(STR(?taxon), "_") AS ?ncbi)
+                        BIND(URI(CONCAT("http://purl.uniprot.org/taxonomy/" ,?ncbi)) AS ?ncbiURI)
+                    }
+                } 
+            }
+            SERVICE <https://sparql.uniprot.org/sparql> {
+                ?ncbiURI up:scientificName ?organismName ;
+                         up:commonName ?commonName .
+                FILTER EXISTS {
+                    ?ncbiURI rdfs:subClassOf taxon:33090 .
+                }
+            }
+        }
+    }
+    {
+        {
+            GRAPH ?resource {
+                ?x schema:inChIKey ?key ;
+                   ?property ?object .
+            }
+        } MINUS {
+            GRAPH biohack23:wikipathways {
+                ?x schema:inChIKey ?key .
+            }
+        }
+    }
+}
+```
