@@ -1,0 +1,86 @@
+{
+    "virtualReferenceCollectionMetaData": {
+        "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus1",
+        "creator": "Jere Kahanpää",
+        "maintainer": "Sofie Meeus",
+        "copyrightLicense": "CC-BY",
+        "copyrightOwner": "Luomus",
+        "title": "European Bombus virtual reference collection, test 2",
+        "description": "A second test case involving Bombus virtual reference collection data: 2 species, each with 1 organism, one with 2 media associated.",
+        "area": [
+            "Europe"
+        ],
+        "includedTaxaDescription": "Bombus"
+    },
+    "taxa": [
+        {
+            "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/241aed3e-69ea-46b9-9611-d90901183da6",
+            "taxonValidNameID": "https://www.gbif.org/species/1340387",
+            "taxonName": {
+                "taxonNameID": "https://www.gbif.org/species/1340387",
+                "taxonFullName": "Bombus veteranus (Fabricius, 1793)",
+                "taxonNameAuthor": "Fabricius",
+                "taxonNameYear": 1793,
+                "taxonNameBrackets": "true"
+            },
+            "organisms": [
+                {
+                    "organismID": "Bombus_veteranus_ex1",
+                    "occurrences": [
+                        {
+                            "occurrenceID": "http://id.luomus.fi/MY.3991280",
+                            "media": [
+                                {
+                                    "mediaID": "https://image.laji.fi/MM.154455/GL.8278_Bombus_veteranus_2.jpg",
+                                    "documentOccurrenceID": "http://id.luomus.fi/MY.3991280",
+                                    "copyrightLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+                                    "mediaDataURL": "https://image.laji.fi/MM.154455/GL.8278_Bombus_veteranus_2.jpg",
+                                    "reviewed": true
+                                },
+                                {
+                                    "mediaID": "https://image.laji.fi/MM.154454/GL.8278_Bombus_veteranus_1.jpg",
+                                    "documentOccurrenceID": "http://id.luomus.fi/MY.3991280",
+                                    "copyrightLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+                                    "mediaDataURL": "https://image.laji.fi/MM.154454/GL.8278_Bombus_veteranus_1.jpg",
+                                    "reviewed": true
+                                }
+
+
+
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },	
+        {
+            "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/8c705c57-1b2f-432f-906c-e73be11198e9",
+            "taxonValidNameID": "https://www.gbif.org/species/1340311",
+            "taxonName": {
+                "taxonNameID": "https://www.gbif.org/species/1340311",
+                "taxonFullName": "Bombus laesus Morawitz, 1875",
+                "taxonNameAuthor": "Morawitz",
+                "taxonNameYear": 1875,
+                "taxonNameBrackets": "false"
+            },
+            "organisms": [
+                {
+                    "organismID": "Bombus_laesus_ex1",
+                    "occurrences": [
+                        {
+                            "occurrenceID": "https://www.gbif.org/occurrence/3437225248",
+                            "media": [
+                                {
+                                    "mediaID": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                    "copyrightLicense": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                                    "mediaDataURL": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                    "reviewed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
