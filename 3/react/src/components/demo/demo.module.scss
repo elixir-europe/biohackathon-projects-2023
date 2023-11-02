@@ -1,0 +1,25 @@
+/* Custom styles for the Demo page */
+.scrollBlock {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.metadataBlock {
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+}
+
+.referenceCollectionsBlock {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.referenceCollectionBlock {
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    height: 250px;
+}
+
+.referenceImage {
+    border-radius: 8px;
+}
