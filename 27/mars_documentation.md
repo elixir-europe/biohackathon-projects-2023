@@ -17,7 +17,7 @@ This role includes any source of ISA-JSON files containing the metadata of multi
   * Avoid data duplication. For example, not re-submitting already existing data in the target repositories through MARS.
   * Ensure compliance of the submitted ISA-JSON with the ISA model expected by MARS.
   * Conform submitted ISA-JSON to target repositories' additional validation rules validated by MARS. This includes repositories’ checklists, controlled vocabulary lists, ontology terms, etcetera.
-  * Assert that files referenced within the ISA-JSON metadata are uploaded to the target repositories. For example, if a FASTQ file is referenced in an assay that would be submitted to ENA, this file should exist within the storage of ENA.
+  * Assert that files referenced within the ISA-JSON metadata are uploaded to the target repositories. For example, if a FASTQ file is referenced in an assay that would be submitted to ENA, this file should exist within the storage of ENA. The ISA-JSON metadata payload should contain the checksums associated to the data files (this is requirement for SRA based repositories)
   * Use credentials for submission that the target repositories accept. For example, to submit to ENA, credentials for a submission account of ENA would be required.
  
 ### Data broker
