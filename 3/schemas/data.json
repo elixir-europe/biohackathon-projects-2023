@@ -11,34 +11,39 @@
             "string"
         ],
         "includedTaxaDescription": "string",
-        "taxaIncluded": [
-            "string"
-        ],
         "language": "string",
         "lastUpdate": "string"
     },
-    "media": {
-        "mediaID": "string",
-        "documentOccurrenceID": "string",
-        "copyrightLicense": "string",
-        "mediaDataURL": "string",
-        "reviewed": true
-    },
-    "organism": {
-        "organismID": "string"
-    },
-    "occurrence": {
-        "occurrenceID": "string"
-    },
-    "taxon": {
-        "taxonID": "string",
-        "taxonValidNameID": "string"
-    },
-    "taxonName": {
-        "taxonNameID": "string",
-        "taxonFullName": "string",
-        "taxonNameAuthor": "string",
-        "taxonNameYear": 1950,
-        "taxonNameBrackets": "string"
-    }
+    "taxa": [
+        {
+            "taxonID": "string",
+            "taxonValidNameID": "string",
+            "taxonName": {
+                "taxonNameID": "string",
+                "taxonFullName": "string",
+                "taxonNameAuthor": "string",
+                "taxonNameYear": 1950,
+                "taxonNameBrackets": "string"
+            },
+            "organisms": [
+                {
+                    "organismID": "string",
+                    "occurrences": [
+                        {
+                            "occurrenceID": "string",
+                            "media": [
+                                {
+                                    "mediaID": "string",
+                                    "documentOccurrenceID": "string",
+                                    "copyrightLicense": "string",
+                                    "mediaDataURL": "string",
+                                    "reviewed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
