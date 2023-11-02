@@ -69,7 +69,7 @@ Study Assay Technology Type	mass spectrometry	NMR spectroscopy	NMR spectroscopy	
 Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo/CHMO_0000470	http://purl.obolibrary.org/obo/CHMO_0000591	http://purl.obolibrary.org/obo/CHMO_0000591		
 Study Assay Technology Type Term Source REF	MSIO	MSIO	MSIO	MSIO	MSIO
 Study Assay Technology Platform					
-Comment[target repository]	metabolights	metabolights	metabolights	ega	arrayexpress
+Comment[target repository]	metabolights	metabolights	metabolights	eva	arrayexpress
 STUDY PROTOCOLS
 Study Protocol Name	cell culture and isotopic labeling	intracellular metabolite extraction	extracellular metabolite extraction	liquid chromatography mass spectrometry	1D 13C NMR spectroscopy for isotopomer analysis	1D 13C NMR spectroscopy for metabolite profiling	MS metabolite identification	NMR metabolite identification	mRNA extraction	gDNA extraction	gDNA library preparation	mRNA library preparation	sequencing	transcription analysis	CNV analysis	13C SIRM MS and NMR integrative analysis
 Study Protocol Type	sample collection	metabolite extraction	metabolite extraction	mass spectrometry	nmr spectroscopy	nmr spectroscopy	metabolite identification	data transformation	material separation	material separation	library construction	library construction	nucleic acid sequencing	data transformation	data transformation	data transformation
