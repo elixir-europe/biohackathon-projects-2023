@@ -12,6 +12,6 @@ public class Sample {
 
   public String name;
   public ArrayList<DerivesFrom> derivesFrom;
-  public ArrayList<Object> characteristics;
+  public ArrayList<Characteristic> characteristics;
   public ArrayList<FactorValue> factorValues;
 }
