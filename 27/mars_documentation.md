@@ -5,6 +5,16 @@ MARS is a data brokering system for submitting multi-omics life sciences studies
 MARS is a versatile and modular Multi-Repository ISA Submission Framework that enables data producers and multiple data repositories to exchange information seamlessly using the same standardized ISA-JSON format. Unlike a centralized platform, MARS operates as a common framework, allowing for decentralized data submissions while ensuring consistent interpretation and validation of ISA-JSON containing metadata across various repositories.
 MARS serves as a common ground where data producers and diverse data repositories can interact cohesively, sharing scientific metadata encoded in ISA-JSON format. The framework ensures mutual understanding and accurate interpretation of the data, preserving the important links between multi-omics data generated from the same biological source.
 
+## Resources
+| URL  | Description  |
+|---|---|
+| [Documentation](https://github.com/elixir-europe/biohackathon-projects-2023/blob/main/27/mars_documentation.md)  | Documentation about the MARS tool  |
+| [Web UI access](https://xrzhou.com/mars/) | Domain hosting the Web UI and javascript module  |
+| [Web UI code](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/web)  | Code of the Web UI and javascript module  |
+| [ISA-JSON to ENA code](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISASRAProject27)  | Code of the service that consumes the BioSamples accessioned ISA-JSON, parses and submits it to ENA  |
+| [ISA-JSON to BioSamples code]([https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISASRAProject27](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/ISABioSamplesProject27))  | Code of the service that consumes the ISA-JSON, parses and submits it to BioSamples |
+| [BioSample external reference extender](https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/biosamples-externalReferences)  | Code used to extend the existing BioSample records with the external references of the data submitted to other archives |
+
 ## Components in MARS
 MARS is comprised of distinct components, each representing key roles in the data submission process. Together, they form the essential building blocks of MARS, enabling cohesive and reliable data submission to multiple repositories.
 Each role performs specific functions and carries distinct responsibilities essential for the smooth operation of the system.
@@ -129,6 +139,7 @@ graph TD
     subgraph ArchiveList
         ENA
         MetaboLights
+        edal-PGP
     end
 
     ArchiveList -.- Archives
