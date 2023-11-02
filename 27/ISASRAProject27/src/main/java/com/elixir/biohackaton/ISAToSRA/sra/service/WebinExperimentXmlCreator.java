@@ -16,19 +16,25 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class SRAExperimentXmlCreator {
+public class WebinExperimentXmlCreator {
   public static final String OTHER_MATERIAL_LIBRARY_NAME_DETERMINES_EXPERIMENT = "Library Name";
 
   public Map<Integer, String> createENAExperimentSetElement(
       final Map<String, String> typeToBioSamplesAccessionMap,
       final Element webinElement,
-      final List<Study> studies) {
+      final List<Study> studies,
+      final String randomSubmissionIdentifier) {
     try {
       final Element root = webinElement.addElement("EXPERIMENT_SET");
       final Map<String, List<Parameter>> protocolToParameterMap =
           populateProtocolToParameterMap(studies).get();
 
-      return mapExperiments(studies, root, protocolToParameterMap, typeToBioSamplesAccessionMap);
+      return mapExperiments(
+          studies,
+          root,
+          protocolToParameterMap,
+          typeToBioSamplesAccessionMap,
+          randomSubmissionIdentifier);
     } catch (final Exception e) {
       log.info("Failed to parse experiments from ISA Json file and create ENA Experiments");
     }
@@ -111,7 +117,8 @@ public class SRAExperimentXmlCreator {
       final List<Study> studies,
       final Element root,
       final Map<String, List<Parameter>> protocolToParameterMap,
-      final Map<String, String> bioSampleAccessions) {
+      final Map<String, String> bioSampleAccessions,
+      final String randomSubmissionIdentifier) {
     final Map<String, List<ParameterValue>> protocolToParameterValuesMap = new HashMap<>();
     final Map<Integer, String> experimentSequence = new HashMap<>();
     final AtomicInteger sequenceCounter = new AtomicInteger(0);
@@ -132,7 +139,8 @@ public class SRAExperimentXmlCreator {
 
                                   experimentSequence.put(
                                       sequenceCounter.incrementAndGet(), otherMaterialId);
-                                  experimentElement.addAttribute("alias", otherMaterialId);
+                                  experimentElement.addAttribute(
+                                      "alias", otherMaterialId + "-" + randomSubmissionIdentifier);
                                   experimentElement
                                       .addElement("TITLE")
                                       .addText(otherMaterial.getName());

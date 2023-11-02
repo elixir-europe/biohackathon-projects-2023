@@ -12,11 +12,12 @@ import org.dom4j.Element;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SRARunXmlCreator {
+public class WebinRunXmlCreator {
   public void createENARunSetElement(
       final Element webinElement,
       final List<Study> studies,
-      final Map<Integer, String> experimentSequenceMap) {
+      final Map<Integer, String> experimentSequenceMap,
+      final String randomSubmissionIdentifier) {
     final String lastExperimentId =
         experimentSequenceMap.get(
             Collections.max(experimentSequenceMap.entrySet(), Map.Entry.comparingByValue())
@@ -31,7 +32,9 @@ public class SRARunXmlCreator {
                     assay -> {
                       final String assayId = assay.getId();
                       final Element runElement =
-                          runSetElement.addElement("RUN").addAttribute("alias", assayId);
+                          runSetElement
+                              .addElement("RUN")
+                              .addAttribute("alias", assayId + "-" + randomSubmissionIdentifier);
 
                       runElement.addElement("TITLE").addText(assayId);
                       runElement

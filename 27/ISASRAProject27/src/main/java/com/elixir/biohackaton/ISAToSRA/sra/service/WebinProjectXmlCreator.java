@@ -6,13 +6,16 @@ import org.dom4j.Element;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SRAProjectXmlCreator {
+public class WebinProjectXmlCreator {
   public void createENAProjectSetElement(
-      final Element webinElement, final Investigation investigation) {
+      final Element webinElement,
+      final Investigation investigation,
+      final String randomSubmissionIdentifier) {
     final Element projectSetElement = webinElement.addElement("PROJECT_SET");
     final Element projectElement = projectSetElement.addElement("PROJECT");
 
-    projectElement.addAttribute("alias", investigation.getTitle());
+    projectElement.addAttribute(
+        "alias", investigation.getTitle() + "-" + randomSubmissionIdentifier);
     projectElement.addElement("TITLE").addText(investigation.getTitle());
     projectElement.addElement("DESCRIPTION").addText(investigation.getDescription());
 

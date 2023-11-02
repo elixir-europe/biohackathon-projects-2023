@@ -13,7 +13,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class WebinSubmitter {
+public class WebinHttpSubmissionService {
   final RestTemplate restTemplate = new RestTemplate();
   private static final String webinSubmissionUrl =
       "https://wwwdev.ebi.ac.uk/ena/dev/submit/webin-v2/submit";
