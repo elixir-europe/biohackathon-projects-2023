@@ -2,7 +2,7 @@
 title: 'Benchmarks for Bioinformatics Workflow Bake Offs'
 tags:
   - workflow benchmarks
-  - at least 3 is recommended
+  - bioinformatics data analysis
 authors:
   - name: Vedran Kasalica
     orcid: 0000-0002-0097-1056
@@ -13,17 +13,17 @@ authors:
     orcid: 0000-0003-1953-5606
     affiliation: 3
   - name: Magnus Palmblad
-    orchid: 0000-0002-5865-8994
+    orcid: 0000-0002-5865-8994
     affiliation: 4
 
 affiliations:
- - name: Netherlands eScience Center
+ - name: Netherlands eScience Center, Science Park 402, 1098 XH, Amsterdam, Netherlands
    index: 1
-- name: University of Potsdam
-   index: 3
-- name: Institution 1, address, city, country
+ - name: CSC – IT Center for Science, Keilaranta 14, Espoo, Finland
    index: 2
-- name: Leiden University Medical Center, 
+ - name: University of Potsdam, Am Neuen Palais 10, 14469, Potsdam, Germany
+   index: 3
+ - name: Leiden University Medical Center, Albinusdreef 2, 2333 ZA, Leiden, Netherlands
    index: 4
 date: 02 November 2023
 bibliography: paper.bib
