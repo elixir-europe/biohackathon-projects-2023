@@ -18,7 +18,31 @@ ENA_OUTPUT_FILE='${output}' /app/run.sh
     <help>
 <![CDATA[
 
-TODO: Fill in help.
+.. class:: infomark
+
+**What it does**
+
+*This interactive tool has been designed to allow user to efficiently produce the metadata tables you need to support a submission to ENA*
+
+**Requirement**
+
+- Submission to ENA requires an existing account at EBI/ENA and have saved those account details into your Galaxy User Preferences. Help on this process is here `ENA account registration <https://ena-docs.readthedocs.io/en/latest/submit/general-guide/registration.html>`_ and `Galaxy User Preference <https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.html>`_.
+
+**Tool usage**
+
+- It allows users to create and edit the Study, Samples, Experiments and Run metadata table. The metadata tables will be exported to the Galaxy history.
+
+- After use of this tool, submission to ENA is best handled inside Galaxy through the ENA Upload tool `Github repository <https://github.com/usegalaxy-eu/ena-upload-cli>`_.
+
+- This tool provides for New Submission or Edit/Updating existing submission
+
+1) New Submission - blank templates can be found `here <https://github.com/ELIXIR-Belgium/ENA-metadata-templates/tree/main/templates>`_.
+
+2) The detail of each templates can found found `here <https://www.ebi.ac.uk/ena/browser/checklists>`_.
+
+**Notes:**
+
+Edit/Updating - pick single or multiple files from current History. These files are HIGHLY recommended to have been generated from a previous session of New Submission. However the tool will accept template files you have prepared elsewhere
 
 ]]>
     </help>
