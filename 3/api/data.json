@@ -1,0 +1,53 @@
+{
+    "ids": [
+        "bombus1"
+    ],
+    "data": {
+        "bombus1": {
+            "virtualReferenceCollectionMetaData": {
+                "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus1",
+                "creator": "Jere Kahanpää",
+                "maintainer": "Sofie Meeus",
+                "copyrightLicense": "CC-BY",
+                "copyrightOwner": "Luomus",
+                "title": "European Bombus virtual reference collection, test1",
+                "description": "A test case involving Bombus virtual reference collection data.",
+                "area": [
+                    "Europe"
+                ],
+                "includedTaxaDescription": "Bombus"
+            },
+            "taxa": [
+                {
+                    "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/8c705c57-1b2f-432f-906c-e73be11198e9",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340311",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340311",
+                        "taxonFullName": "Bombus laesus Morawitz, 1875",
+                        "taxonNameAuthor": "Morawitz",
+                        "taxonNameYear": 1875,
+                        "taxonNameBrackets": "False"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus_laesus_ex1",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://www.gbif.org/occurrence/3437225248",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                                            "mediaDataURL": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                            "reviewed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

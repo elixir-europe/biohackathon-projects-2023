@@ -4,22 +4,30 @@
       <div class="wrapper">
         <nav>
           <RouterLink to="/">Intro</RouterLink>
-          <RouterLink to="/form-1">Form 1</RouterLink>
-          <RouterLink to="/form-2">Form 2</RouterLink>
+          <RouterLink to="/study">Study</RouterLink>
+          <RouterLink to="/experiment">Experiment</RouterLink>
+          <RouterLink to="/run">Run</RouterLink>
+          <RouterLink to="/sample">Sample</RouterLink>
           <RouterLink to="/submit">Submit</RouterLink>
         </nav>
       </div>
     </header>
 
     <RouterView />
+
   </main>
 </template>
 
-<script setup>
+<script>
 import { RouterLink, RouterView } from 'vue-router';
 
-// TODO: Fetch forms schema from backend and save to store
-
+export default {
+  name: 'App',
+  components: {
+    RouterLink,
+    RouterView,
+  },
+};
 </script>
 
 <style scoped>
@@ -31,6 +39,7 @@ main {
 nav {
   padding: 1rem 0;
   border-bottom: 1px solid grey;
+  margin-bottom: 1rem;
 }
 nav > a {
   margin: .25rem .5rem;

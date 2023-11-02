@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "expose": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -12,6 +13,7 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
+    "tabulator-tables": "^5.5.2",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },

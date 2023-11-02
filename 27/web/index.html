@@ -10,6 +10,55 @@
             position:relative;
             text-align: center;
         }
+        .area {
+        border-left: 1px solid #dee2e6;
+        # position: absolute;
+
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+
+        text-align: center;
+        }
+
+        .uploadarea {
+        border: 4px dashed rgb(45, 62, 80);
+        filter: alpha(opacity=50);
+        -khtml-opacity: 0.5;
+        -moz-opacity: 0.5;
+        opacity: 0.5;
+        height: 20vh;
+        background-image: url("./images/download.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 64px 64px;
+
+        }
+
+        .uploadarea:hover,
+        .uploadarea.dragging,
+        .uploadarea.uploading {
+        filter: alpha(opacity=100);
+        -khtml-opacity: 1;
+        -moz-opacity: 1;
+        opacity: 1;
+        }
+
+        .uploadarea input {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        
+        border: none;
+        cursor: pointer;
+        opacity: 0;
+        }
+
+        .uploadarea input:focus {
+        outline: none;
+        }
         </style>
     
     <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
@@ -75,23 +124,30 @@
     </div>
 
 </div>
-    <h1 class="center">LISTER JSON to ARC(ISA) JSON </h1>
+    <h1 class="center"> ISA-JSON submission to multi-repository</h1>
 
             
     <div class="center">
     
     example JSON input can be downloaded <a href="#">here</a> 
     <br>
-        <input class="btn btn-primary d-inline"  type="file" id="input_json" name="json" multiple/>
+        <input class="btn btn-primary d-inline d-none"  type="file" id="input_json" name="json" multiple/>
     <input style="display:none" type="file" id="input_xlsx" name="xlsx" multiple/>
-    <button class="btn btn-primary" style="display:inline" id="converter" onclick="main(cleanend_global);"> Converter </button>
-   
+    
+    <div class=" area uploadarea " id="importArea"
+    ondragenter="this.className='area uploadarea dragging'" 
+    ondrop=";DragAndDrop(event)" style="margin:auto; height:30vh; width:50vw">
+       
+      
+      <input type="file"  id="import"   multiple>
+    </div><br>
+    <button class="btn btn-primary" style="display:inline" data-bs-toggle="modal" data-bs-target="#cModal" id="cModalButton"> Start Submissions </button>
     <div class="d-flex justify-content-center d-none" id="waiting">
         <div class="spinner-grow btn-primary" style="width: 3rem; height: 3rem;" role="status">
             <br>
             <span class="sr-only d-none">Loading...</span>
           </div>
-        </div>
+    </div>
     <div style="margin:auto;" id="xml_output">
     </div>
     </div>
@@ -102,7 +158,7 @@
     var log_messages = [];
     var steps = [{
 			        title: "Converter and validators",
-			        content: '<p> Welcome! Our converter can convert an ARC.JSON file to a SAMPLE.XML file, The ARC.JSON file is an output from the ARCcommander, which is developed by the <a href="https://nfdi4plants.org/">DataPLANT</a> team. The SAMPLE.XML can be directly uploaded to the European Nucleotide Archive (ENA)'
+			        content: '<p> Welcome! Our converter can convert an ISA-JSON file to multiple endpoint repositories such as ENA, Metabolites, EGA, EVA'
 			        //
 			    }
 			];
@@ -110,13 +166,33 @@
 	var tour = new Tour(steps); // initialize the guided tour
     tour.show();
     let output_div = document.getElementById("xml_output");
-        
+    function DragAndDrop(e) {
+            e.preventDefault();
+            let ele = document.getElementById("import");
+            
+            ele.files =e.dataTransfer.files ;
+            var reader = new FileReader(); // File reader to read the file 
+            
+            // This event listener will happen when the reader has read the file
+            reader.addEventListener('load', function() {
+            var result = JSON.parse(reader.result); // Parse the result into an object 
+            //console.log("reader.result is : "+reader.result);
+            input_json = result;
+            //console.log("result is : "+result);
+            var cleaned_data= {};
+            let column_n=0;
+            let current_column_name;
+      
+            });
+            
+            reader.readAsText(ele.files[0]); // Read the uploaded file
+          }
     console.log = function() {
         //log_messages.push.apply(log_messages, arguments);
         log_backup.apply(console, arguments);
         output_div.innerText= log_messages.join('\r\n');
     };
-    const input1 = document.getElementById("input_json");
+    const input1 = document.getElementById("import");
     input1.addEventListener("change", handleFiles1, false);
     function handleFiles1() {
 
@@ -128,48 +204,12 @@
             reader.addEventListener('load', function() {
             var result = JSON.parse(reader.result); // Parse the result into an object 
             //console.log("reader.result is : "+reader.result);
-            let input_json = result;
+            input_json = result;
             //console.log("result is : "+result);
             var cleaned_data= {};
             let column_n=0;
             let current_column_name;
-                for (const [index, element] of input_json.entries()) {
-                if (element[1] != "Further informations"){
-                    if (element[1] == "metadata section"){
-                        current_column_name = element[2]
-                        column_n =+1
-                        console.log(current_column_name, column_n);
-                        cleaned_data[current_column_name] ={} ;
-
-                    } else{
-                        if (element[0] == ""){
-
-                            let content = {};
-                            const k1 = element[1];
-                                
-                                cleaned_data[current_column_name][k1] = element[2];
-                            }else if (element[0] == "-" ){
-                                current_column_name = element[2];
-                                cleaned_data["Experiment Context"][current_column_name]=[];
-
-                            } else {
-                                let content = { "paragraph_number" :element[0] , "key": element[1], "value": element[2], "measure": element[3], "unit": element[4] }
-                                
-                                cleaned_data["Experiment Context"][current_column_name].push(content);
-
-                            }
-
-
-                        }
-                        
-
-                    }
-                    
-
-                    
-                };
-                
-                cleanend_global = cleaned_data;    
+      
             });
             
             reader.readAsText(this.files[0]); // Read the uploaded file
@@ -233,9 +273,99 @@
 
 
     </script>
+    <!-- Button trigger modal -->
+    <button type="button" class="d-none btn btn-primary" >
+    Launch convert modal
+    </button>
+      <!-- Modal -->
+        <div class="modal fade" id="cModal" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="cModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="cModalLabel">Upload to Endpoint Repositories</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="row">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="biosamples">
+                              <label class="form-check-label" for="biosamples">
+                                BioSamples
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="ENA">
+                              <label class="form-check-label" for="ENA">
+                                ENA
+                              </label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="Metabolites">
+                              <label class="form-check-label" for="Metabolites">
+                                Metabolites
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                            <div class="row" id="biosample_status">
+                                
+                            </div>
+                            <div class="row">
+                               
+                            </div>
+                            <div class="row">
+                              
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="row">
+                              BioSamples
+                            </div>
+                            <div class="row">
+                              ENA
+                            </div>
+                            <div class="row">
+                             Metabolites
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="row">
+                              Column
+                            </div>
+                            <div class="row">
+                              BioSamples
+                            </div>
+                            <div class="row">
+                              Column
+                            </div>
+                          </div>
+                          
+                        </div> 
+                      </div>
+                    <table id ="validate_table" class="table table-bordered table-hover" >
+        
+                    </table>
+            
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">download updated JSON</button>
+                <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
 <!-- Button trigger modal -->
 <button type="button" class="d-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#map_vali_modal" id="m_v_modal">
-    Launch demo modal
+    Launch check modal
   </button>
   
   <!-- Modal -->
@@ -243,11 +373,11 @@
     <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="map_vali_modal_label">Validation report</h1>
+          <h1 class="modal-title fs-5" id="map_vali_modal_label">Upload to repos</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <span id="init_word">The following terms are missing:</span>
+            <span id="init_word"> </span>
             <br>
             <span id="mandatory_n"></span> mandatory term(s),<br>
             <span id="recommended_n"></span> recommended term(s),<br>
@@ -258,8 +388,8 @@
     
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">download terms</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">download updated ISA-JSON</button>
+          <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">convert</button>
         </div>
       </div>
     </div>

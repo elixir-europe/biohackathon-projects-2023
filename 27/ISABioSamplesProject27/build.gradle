@@ -1,0 +1,39 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.13'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id "com.diffplug.spotless" version "5.12.5"
+    id 'java'
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+group = 'com.elixir.biohackaton'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+    implementation(group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.11')
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.14.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.0'
+    implementation group: 'com.google.errorprone', name: 'error_prone_annotations', version: '2.16'
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
+    implementation group: 'dom4j', name: 'dom4j', version: '1.6.1'
+
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
