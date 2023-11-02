@@ -1,0 +1,100 @@
+{
+    "1": {
+        "virtualReferenceCollectionMetaData": {
+            "referenceCollectionID": "string",
+            "creator": "string",
+            "maintainer": "string",
+            "copyrightLicense": "string",
+            "copyrightOwner": "string",
+            "title": "string",
+            "description": "string",
+            "area": [
+                "string"
+            ],
+            "includedTaxaDescription": "string",
+            "language": "string",
+            "lastUpdate": "string"
+        },
+        "taxa": [
+            {
+                "taxonID": "string",
+                "taxonValidNameID": "string",
+                "taxonName": {
+                    "taxonNameID": "string",
+                    "taxonFullName": "string",
+                    "taxonNameAuthor": "string",
+                    "taxonNameYear": 1950,
+                    "taxonNameBrackets": "string"
+                },
+                "organisms": [
+                    {
+                        "organismID": "string",
+                        "occurrences": [
+                            {
+                                "occurrenceID": "string",
+                                "media": [
+                                    {
+                                        "mediaID": "string",
+                                        "documentOccurrenceID": "string",
+                                        "copyrightLicense": "string",
+                                        "mediaDataURL": "string",
+                                        "reviewed": true
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "2": {
+        "virtualReferenceCollectionMetaData": {
+            "referenceCollectionID": "string",
+            "creator": "string",
+            "maintainer": "string",
+            "copyrightLicense": "string",
+            "copyrightOwner": "string",
+            "title": "string",
+            "description": "string",
+            "area": [
+                "string"
+            ],
+            "includedTaxaDescription": "string",
+            "language": "string",
+            "lastUpdate": "string"
+        },
+        "taxa": [
+            {
+                "taxonID": "string",
+                "taxonValidNameID": "string",
+                "taxonName": {
+                    "taxonNameID": "string",
+                    "taxonFullName": "string",
+                    "taxonNameAuthor": "string",
+                    "taxonNameYear": 1950,
+                    "taxonNameBrackets": "string"
+                },
+                "organisms": [
+                    {
+                        "organismID": "string",
+                        "occurrences": [
+                            {
+                                "occurrenceID": "string",
+                                "media": [
+                                    {
+                                        "mediaID": "string",
+                                        "documentOccurrenceID": "string",
+                                        "copyrightLicense": "string",
+                                        "mediaDataURL": "string",
+                                        "reviewed": true
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
