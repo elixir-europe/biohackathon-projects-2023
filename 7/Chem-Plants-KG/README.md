@@ -24,15 +24,106 @@ A public instance of GraphDB with the Chem and Plants KG is available at knowled
 
 Example SPARQL queries for Chem and Plants KG:
 
-- Which resources mention the compound caffeine?
+### Which resources mention the compound caffeine?
 ```sparql
-
+PREFIX schema: <http://schema.org/>
+select ?resource where {
+    GRAPH ?resource {
+		?entry schema:inChIKey ?key .
+    }
+    BIND("RYYVLZVUVIJVGH-UHFFFAOYSA-N" as ?caffeineChIKey)
+    FILTER (?key = ?caffeineChIKey)
+} 
+limit 100 
 ```
-- Which pathways contain the compound caffeine?
+### Count the number of entries per resource talking about caffeine:
 ```sparql
-
+PREFIX schema: <http://schema.org/>
+select ?resource (COUNT(?entry) as ?entriesAboutCoffe) where {
+    GRAPH ?resource {
+		?entry schema:inChIKey ?key .
+    }
+    BIND("RYYVLZVUVIJVGH-UHFFFAOYSA-N" as ?caffeineChIKey)
+    FILTER (?key = ?caffeineChIKey)
+} 
+group by ?resource
+limit 100
 ```
-- Which plant species mention the compound caffeine?
+### List chemical pathways in plants:
 ```sparql
-
+PREFIX biohack23: <https://biohack2023/>
+PREFIX schema: <http://schema.org/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX taxon: <http://purl.uniprot.org/taxonomy/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?pathway ?organismName 
+where {
+    Graph biohack23:wikipathways {
+        ?pathway a schema:Dataset ;
+                 schema:taxonomicRange ?taxon .
+    }
+    {
+        SELECT DISTINCT ?taxon ?organismName ?commonName ?ncbiURI
+        WHERE {
+            {
+                SELECT distinct ?taxon ?ncbiURI
+                WHERE {
+                    Graph biohack23:wikipathways {
+                        ?x schema:taxonomicRange ?taxon .
+                        BIND(STRAFTER(STR(?taxon), "_") AS ?ncbi)
+                        BIND(URI(CONCAT("http://purl.uniprot.org/taxonomy/" ,?ncbi)) AS ?ncbiURI)
+                    }
+                } 
+            }
+            SERVICE <https://sparql.uniprot.org/sparql> {
+                ?ncbiURI up:scientificName ?organismName ;
+                         up:commonName ?commonName .
+                # Taxon subclasses are materialized, do not use rdfs:subClassOf+
+                FILTER EXISTS {
+                    ?ncbiURI rdfs:subClassOf taxon:33090 .
+                }
+            }
+        }
+    }
+}
+```
+### List compounds per plant pathway:
+```sparql
+PREFIX biohack23: <https://biohack2023/>
+PREFIX schema: <http://schema.org/>
+PREFIX up: <http://purl.uniprot.org/core/>
+PREFIX taxon: <http://purl.uniprot.org/taxonomy/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?pathway ?organismName ?molecule 
+where {
+    Graph biohack23:wikipathways {
+        ?pathway a schema:Dataset ;
+                 schema:taxonomicRange ?taxon .
+        ?molecule a schema:MolecularEntity ;
+                  schema:includedInDataset ?pathway .
+    }
+    {
+        SELECT DISTINCT ?taxon ?organismName ?commonName ?ncbiURI
+        WHERE {
+            {
+                SELECT distinct ?taxon ?ncbiURI
+                WHERE {
+                    Graph biohack23:wikipathways {
+                        ?x schema:taxonomicRange ?taxon .
+                        BIND(STRAFTER(STR(?taxon), "_") AS ?ncbi)
+                        BIND(URI(CONCAT("http://purl.uniprot.org/taxonomy/" ,?ncbi)) AS ?ncbiURI)
+                    }
+                } 
+            }
+            SERVICE <https://sparql.uniprot.org/sparql> {
+                ?ncbiURI up:scientificName ?organismName ;
+                         up:commonName ?commonName .
+                # Taxon subclasses are materialized, do not use rdfs:subClassOf+
+                FILTER EXISTS {
+                    ?ncbiURI rdfs:subClassOf taxon:33090 .
+                }
+            }
+        }
+    }
+}
 ```
