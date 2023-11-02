@@ -8,18 +8,18 @@ MARS serves as a common ground where data producers and diverse data repositorie
 ## Components in MARS
 MARS is comprised of distinct components, each representing key roles in the data submission process. Together, they form the essential building blocks of MARS, enabling cohesive and reliable data submission to multiple repositories.
 Each role performs specific functions and carries distinct responsibilities essential for the smooth operation of the system.
+
 ### End-User
 This individual is the user who inputs experimental metadata and location of related data files into ISA-JSON Producer platforms. End-User provides essential experimental details that are encoded into ISA-JSON format.
 
 End-User could be also direct user of the Data Broker platform, particularly in scenarios where the broker platform is only accessible as a web service within the institute's intranet.
+* Main function: 
+  * Input experimental metadata into ISA-JSON Producer platforms following the specific rules, structures, and requirements of the respective platform. 
+  * Use the ISA-JSON producer platfom to expor experimental metadata in ISA-JSON files and uploading them to the Data Broker platform.
+* Responsibilities:
+  * End-User ensures the accuracy and completeness of metadata.
+  * End-User must refrain from uploading identical ISA-JSON files to the Data Broker platform, unless it is to initiate a distinct action such as update or release.
 
-Main function: 
-* Input experimental metadata into ISA-JSON Producer platforms following the specific rules, structures, and requirements of the respective platform. 
-* Use the ISA-JSON producer platfom to expor experimental metadata in ISA-JSON files and uploading them to the Data Broker platform.
-
-Responsibilities:
-* End-User ensures the accuracy and completeness of metadata.
-* End-User must refrain from uploading identical ISA-JSON files to the Data Broker platform, unless it is to initiate a distinct action such as update or release.
 ### ISA-JSON producers
 This role includes any source of ISA-JSON files containing the metadata of multi-omics research. For example, research infrastructure or service facilities that operate platforms such as ARC, FAIRDOM-SEEK, ISA Creators. 
 
