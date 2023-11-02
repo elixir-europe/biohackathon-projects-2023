@@ -3,5 +3,9 @@
     "url": "http://localhost:8042/isaena/submit",
     "username": "",
     "password": ""
+  },
+  "biosample": {
+    "url": "http://localhost:8032/isabiosamples/submit",
+    "token": ""
   }
 }
