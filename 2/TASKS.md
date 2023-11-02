@@ -99,7 +99,7 @@ chr17   7661779   7687550   TP53
 ```
 python gen_mut_model.py               \
         -r ./data/reference/GRCh38_full_analysis_set_plus_decoy_hla.fa                  \
-        -m ./data/HG01504/genes/TP53/TP53.vcf        \
+        -m ./data/HG01504/genes/TP53/TP53_ref.vcf        \
         -o ./models/mut_model
 
 python genSeqErrorModel.py                \
