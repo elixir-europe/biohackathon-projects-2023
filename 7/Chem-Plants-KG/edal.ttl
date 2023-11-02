@@ -162,7 +162,7 @@ _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b3 a schema:PostalAddress;
   schema:postalCode "06466";
   schema:streetAddress "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3" .
 
-<https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=info&id=4565> a schema:Taxon;
+<https://identifiers.org/taxonomy:4565> a schema:Taxon;
   dcterms:conformsTo "https://bioschemas.org/profiles/Taxon/0.6-RELEASE";
   schema:includedInDataset <https://doi.ipk-gatersleben.de:443/DOI/005cf59f-a628-416d-a0d5-69dd708201c3/757b83b3-dc23-42fd-a053-82890150b9c1/2>,
     <https://doi.ipk-gatersleben.de:443/DOI/bf84cc9a-fbd5-415e-8da9-dbad84aa7758/ca6637e0-8b28-4c38-a3be-fcf4aca24d44/2>,
@@ -475,7 +475,7 @@ _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b52 a schema:PostalAddress;
   schema:postalCode "06120";
   schema:streetAddress "Institute of Agricultural and Nutritional Sciences, Martin Luther University Halle-Wittenberg, Betty-Heimann-Str. 3, Halle (Saale)" .
 
-<https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=info&id=4513> a schema:Taxon;
+<https://identifiers.org/taxonomy:4513> a schema:Taxon;
   dcterms:conformsTo "https://bioschemas.org/profiles/Taxon/0.6-RELEASE";
   schema:includedInDataset <https://doi.ipk-gatersleben.de:443/DOI/cbc59f64-232c-4702-9483-636250aa387f/061392a5-9b1c-4a5a-8c21-d101821fd24d/2>,
     <https://doi.ipk-gatersleben.de:443/DOI/5d0e28db-2344-41c8-9afd-1840164f7d6f/8dfc8b9a-6b52-4086-b558-2f410abb9c70/2>;
