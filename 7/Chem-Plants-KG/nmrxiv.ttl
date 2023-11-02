@@ -1,0 +1,3084 @@
+@prefix agg: <http://jena.apache.org/ARQ/function/aggregate#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix path: <http://www.ontotext.com/path#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix apf: <http://jena.apache.org/ARQ/property#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rep: <http://www.openrdf.org/config/repository#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix list: <http://jena.apache.org/ARQ/list#> .
+@prefix geoext: <http://rdf.useekm.com/ext#> .
+@prefix idpregistry: <https://idpregistry.org/> .
+@prefix math: <http://www.w3.org/2005/xpath-functions/math> .
+@prefix schema: <http://schema.org/> .
+@prefix sail: <http://www.openrdf.org/config/sail#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix disprot: <https://disprot.org/> .
+@prefix array: <http://www.w3.org/2005/xpath-functions/array> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix map: <http://www.w3.org/2005/xpath-functions/map> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sr: <http://www.openrdf.org/config/repository/sail#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix afn: <http://jena.apache.org/ARQ/function#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix mobidb: <https://mobidb.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix biohack23: <https://biohack2023/> .
+@prefix ofn: <http://www.ontotext.com/sparql/functions/> .
+@prefix IDPO: <https://disprot.org/IDPO/> .
+@prefix graphdb: <http://www.ontotext.com/config/graphdb#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix omgeo: <http://www.ontotext.com/owlim/geo#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix bioschemas: <https://bioschemas.org/> .
+
+<https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE> a schema:CreativeWork .
+
+<https://bioschemas.org/profiles/ChemicalSubstance/0.4-RELEASE> a schema:CreativeWork .
+
+<https://bioschemas.org/profiles/Dataset/1.0-RELEASE> a schema:CreativeWork .
+
+<http://localhost> a schema:DataCatalog;
+  dcterms:conformsTo <https://schema.org/DataCatalog>;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+<https://schema.org/DataCatalog> a schema:CreativeWork .
+
+<file:/uploaded/generated/0000-0002-2542-0867> a schema:Person .
+
+<file:/uploaded/generated/0000-0001-6966-0814> a schema:Person .
+
+<file:/uploaded/generated/0000-0003-1022-4326> a schema:Person .
+
+<file:/uploaded/generated/0000-0003-2060-842X> a schema:Person .
+
+<file:/uploaded/generated/0000-0002-3416-2572> a schema:Person .
+
+<file:/uploaded/generated/0000-0003-1066-7792> a schema:Person .
+
+<file:/uploaded/generated/0000-0002-4943-2643> a schema:Person .
+
+<file:/uploaded/generated/0000-0002-5870-8496> a schema:Person .
+
+<file:/uploaded/generated/0000-0002-0990-9582> a schema:Person .
+
+<file:/uploaded/generated/0009-0006-4755-1039> a schema:Person .
+
+<file:/uploaded/generated/0009-0001-5998-5030> a schema:Person .
+
+<file:/uploaded/generated/0000-0002-5990-4157> a schema:Person .
+
+<file:/uploaded/generated/0000-0002-7899-7192> a schema:Person .
+
+<file:/uploaded/generated/0000-0003-4480-8661> a schema:Person .
+
+<file:/uploaded/generated/0000-0002-2564-3243> a schema:Person .
+
+<CHMO:0000591> a schema:DefinedTerm;
+  schema:name "nuclear magnetic resonance spectroscopy";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b5;
+  schema:url <http://purl.obolibrary.org/obo/CHMO_0000591> .
+
+<CHMO:0000613> a schema:DefinedTerm;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b6;
+  schema:url <https://ontobee.org/ontology/CHMO?iri=http://purl.obolibrary.org/obo/CHMO_0000613> .
+
+<CHMO:0000592> a schema:DefinedTerm;
+  schema:name "one-dimensional nuclear magnetic resonance spectroscopy";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b7;
+  schema:url <http://purl.obolibrary.org/obo/CHMO_0000592> .
+
+<CHMO:0000598> a schema:DefinedTerm;
+  schema:name "two-dimensional nuclear magnetic resonance spectroscopy";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b8;
+  schema:url <http://purl.obolibrary.org/obo/CHMO_0000598> .
+
+<CHMO:0002450> a schema:DefinedTerm;
+  schema:name "correlation spectroscopy spectrum";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b9;
+  schema:url <http://purl.obolibrary.org/obo/CHMO_0002450> .
+
+<CHMO:0000604> a schema:DefinedTerm;
+  schema:name "heteronuclear single quantum coherence";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b10;
+  schema:url <http://purl.obolibrary.org/obo/CHMO_0000604> .
+
+<CHMO:0000601> a schema:DefinedTerm;
+  schema:name "heteronuclear multiple bond coherence";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b11;
+  schema:url <http://purl.obolibrary.org/obo/CHMO_0000601> .
+
+<CHMO:0001171> a schema:DefinedTerm;
+  schema:name "two-dimensional nuclear Overhauser enhancement spectrum";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b12;
+  schema:url <http://purl.obolibrary.org/obo/CHMO_0001171> .
+
+<NMR:1400256> a schema:DefinedTerm;
+  schema:name "Bruker";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b13;
+  schema:url <http://nmrML.org/nmrCV#NMR:1400256> .
+
+<NMR:1400258> a schema:DefinedTerm;
+  schema:name "JEOL";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b14;
+  schema:url <http://nmrML.org/nmrCV#NMR:1400258> .
+
+<format:3906> a schema:DefinedTerm;
+  schema:name "NMReDATA";
+  schema:inDefinedTermSet _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b15;
+  schema:url <http://edamontology.org/format_3906> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1> a schema:Study;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Study/0.3-DRAFT>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#investigation>;
+  schema:name "Cocaine";
+  schema:url <http://localhost/P1> .
+
+<https://bioschemas.org/profiles/Study/0.3-DRAFT> a schema:CreativeWork .
+
+<https://isa-specs.readthedocs.io/en/latest/isamodel.html#investigation> a schema:CreativeWork .
+
+<https://orcid.org/0000-0002-8128-9613> a schema:Person .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1> a schema:ChemicalSubstance, schema:Study;
+  dcterms:conformsTo <https://bioschemas.org/profiles/ChemicalSubstance/0.4-RELEASE>,
+    <https://bioschemas.org/profiles/Study/0.3-DRAFT>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#study>;
+  schema:name "Cocaine.50-36-2_sample", "Cocaine:50-36-2";
+  schema:url <http://localhost/S1> .
+
+<https://isa-specs.readthedocs.io/en/latest/isamodel.html#study> a schema:CreativeWork .
+
+<file:/uploaded/generated/ZPUCINDJVBIVPJ-UHFFFAOYSA-N> a schema:MolecularEntity;
+  dcterms:conformsTo <https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE>;
+  schema:url <https://pubchem.ncbi.nlm.nih.gov/compound/2826> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d2> a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay>;
+  schema:name "Cocaine:50-36-2.noesy";
+  schema:url <http://localhost/D2> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d1> a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay>;
+  schema:name "Cocaine:50-36-2.proton";
+  schema:url <http://localhost/D1> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d8> a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay>;
+  schema:name "Cocaine:50-36-2.cosy";
+  schema:url <http://localhost/D8> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d7> a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay>;
+  schema:name "Cocaine:50-36-2.apt";
+  schema:url <http://localhost/D7> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d6> a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay>;
+  schema:name "Cocaine:50-36-2.apt";
+  schema:url <http://localhost/D6> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d5> a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay>;
+  schema:name "Cocaine:50-36-2.noesy";
+  schema:url <http://localhost/D5> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d4> a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay>;
+  schema:name "Cocaine:50-36-2.cosy";
+  schema:url <http://localhost/D4> .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d3> a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>, <https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay>;
+  schema:name "Cocaine:50-36-2.hsqc";
+  schema:url <http://localhost/D3> .
+
+<https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay> a schema:CreativeWork .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b0 a schema:Person .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b1 a schema:Person .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b2 a schema:Person .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b3 a schema:Person .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b4 a schema:Person .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b16 a schema:Organization;
+  schema:name "NFDI4Chem";
+  schema:url <http://nfdi4chem.de> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b5 a schema:DefinedTermSet;
+  schema:name "Chemical Methods Ontology";
+  schema:url <http://purl.obolibrary.org/obo/chmo.owl> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b6 a schema:DefinedTermSet;
+  schema:name "Chemical Methods Ontology";
+  schema:url <http://purl.obolibrary.org/obo/chmo.owl> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b7 a schema:DefinedTermSet;
+  schema:name "Chemical Methods Ontology";
+  schema:url <http://purl.obolibrary.org/obo/chmo.owl> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b8 a schema:DefinedTermSet;
+  schema:name "Chemical Methods Ontology";
+  schema:url <http://purl.obolibrary.org/obo/chmo.owl> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b9 a schema:DefinedTermSet;
+  schema:name "Chemical Methods Ontology";
+  schema:url <http://purl.obolibrary.org/obo/chmo.owl> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b10 a schema:DefinedTermSet;
+  schema:name "Chemical Methods Ontology";
+  schema:url <http://purl.obolibrary.org/obo/chmo.owl> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b11 a schema:DefinedTermSet;
+  schema:name "Chemical Methods Ontology";
+  schema:url <http://purl.obolibrary.org/obo/chmo.owl> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b12 a schema:DefinedTermSet;
+  schema:name "Chemical Methods Ontology";
+  schema:url <http://purl.obolibrary.org/obo/chmo.owl> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b13 a schema:DefinedTermSet;
+  schema:name "nuclear magnetic resonance CV";
+  schema:url <http://nmrml.org/cv/> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b14 a schema:DefinedTermSet;
+  schema:name "nuclear magnetic resonance CV";
+  schema:url <http://nmrml.org/cv/> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b15 a schema:DefinedTermSet;
+  schema:name "nuclear magnetic resonance CV";
+  schema:url <http://nmrml.org/cv/> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b129 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b242 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b244 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b259 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b274 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b289 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b304 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b319 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b334 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b349 a schema:Organization;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b17 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b130 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b258 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b18 a schema:PropertyValue;
+  schema:name "NMR solvent";
+  schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b19 a schema:PropertyValue;
+  schema:name "acquisition nucleus";
+  schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b20 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b21 a schema:PropertyValue;
+  schema:name "NMR probe";
+  schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b22 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:value "noesy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b23 a schema:PropertyValue;
+  schema:name "Temperature";
+  schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b24 a schema:PropertyValue;
+  schema:name "irradiation frequency";
+  schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b25 a schema:PropertyValue;
+  schema:name "magnetic field strength";
+  schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b26 a schema:PropertyValue;
+  schema:name "number of scans";
+  schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b27 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence";
+  schema:value "noesygpph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b28 a schema:PropertyValue;
+  schema:name "Spectral Width";
+  schema:value 1.00013847981732E1, 1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b29 a schema:PropertyValue;
+  schema:name "number of data points";
+  schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b30 a schema:PropertyValue;
+  schema:name "relaxation time measurement";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b131 a schema:PropertyValue;
+  schema:name "NMR solvent";
+  schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b132 a schema:PropertyValue;
+  schema:name "acquisition nucleus";
+  schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b133 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b134 a schema:PropertyValue;
+  schema:name "NMR probe";
+  schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b135 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:value "noesy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b136 a schema:PropertyValue;
+  schema:name "Temperature";
+  schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b137 a schema:PropertyValue;
+  schema:name "irradiation frequency";
+  schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b138 a schema:PropertyValue;
+  schema:name "magnetic field strength";
+  schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b139 a schema:PropertyValue;
+  schema:name "number of scans";
+  schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b140 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence";
+  schema:value "noesygpph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b141 a schema:PropertyValue;
+  schema:name "Spectral Width";
+  schema:value 1.00013847981732E1, 1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b142 a schema:PropertyValue;
+  schema:name "number of data points";
+  schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b143 a schema:PropertyValue;
+  schema:name "relaxation time measurement";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b260 a schema:PropertyValue;
+  schema:name "NMR solvent";
+  schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b261 a schema:PropertyValue;
+  schema:name "acquisition nucleus";
+  schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b262 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b263 a schema:PropertyValue;
+  schema:name "NMR probe";
+  schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b264 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:value "noesy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b265 a schema:PropertyValue;
+  schema:name "Temperature";
+  schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b266 a schema:PropertyValue;
+  schema:name "irradiation frequency";
+  schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b267 a schema:PropertyValue;
+  schema:name "magnetic field strength";
+  schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b268 a schema:PropertyValue;
+  schema:name "number of scans";
+  schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b269 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence";
+  schema:value "noesygpph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b270 a schema:PropertyValue;
+  schema:name "Spectral Width";
+  schema:value 1.00013847981732E1, 1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b271 a schema:PropertyValue;
+  schema:name "number of data points";
+  schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b272 a schema:PropertyValue;
+  schema:name "relaxation time measurement";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b31 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b144 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b243 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b32 a schema:PropertyValue;
+  schema:name "NMR solvent";
+  schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b33 a schema:PropertyValue;
+  schema:name "acquisition nucleus";
+  schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b34 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality";
+  schema:value 1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b35 a schema:PropertyValue;
+  schema:name "NMR probe";
+  schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b36 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:value "proton" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b37 a schema:PropertyValue;
+  schema:name "Temperature";
+  schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b38 a schema:PropertyValue;
+  schema:name "irradiation frequency";
+  schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b39 a schema:PropertyValue;
+  schema:name "magnetic field strength";
+  schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b40 a schema:PropertyValue;
+  schema:name "number of scans";
+  schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b41 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence";
+  schema:value "zg" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b42 a schema:PropertyValue;
+  schema:name "Spectral Width";
+  schema:value 1.00013847981732E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b43 a schema:PropertyValue;
+  schema:name "number of data points";
+  schema:value 32768 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b44 a schema:PropertyValue;
+  schema:name "relaxation time measurement";
+  schema:value 1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b145 a schema:PropertyValue;
+  schema:name "NMR solvent";
+  schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b146 a schema:PropertyValue;
+  schema:name "acquisition nucleus";
+  schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b147 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality";
+  schema:value 1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b148 a schema:PropertyValue;
+  schema:name "NMR probe";
+  schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b149 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:value "proton" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b150 a schema:PropertyValue;
+  schema:name "Temperature";
+  schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b151 a schema:PropertyValue;
+  schema:name "irradiation frequency";
+  schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b152 a schema:PropertyValue;
+  schema:name "magnetic field strength";
+  schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b153 a schema:PropertyValue;
+  schema:name "number of scans";
+  schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b154 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence";
+  schema:value "zg" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b155 a schema:PropertyValue;
+  schema:name "Spectral Width";
+  schema:value 1.00013847981732E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b156 a schema:PropertyValue;
+  schema:name "number of data points";
+  schema:value 32768 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b157 a schema:PropertyValue;
+  schema:name "relaxation time measurement";
+  schema:value 1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b245 a schema:PropertyValue;
+  schema:name "NMR solvent";
+  schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b246 a schema:PropertyValue;
+  schema:name "acquisition nucleus";
+  schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b247 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality";
+  schema:value 1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b248 a schema:PropertyValue;
+  schema:name "NMR probe";
+  schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b249 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:value "proton" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b250 a schema:PropertyValue;
+  schema:name "Temperature";
+  schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b251 a schema:PropertyValue;
+  schema:name "irradiation frequency";
+  schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b252 a schema:PropertyValue;
+  schema:name "magnetic field strength";
+  schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b253 a schema:PropertyValue;
+  schema:name "number of scans";
+  schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b254 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence";
+  schema:value "zg" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b255 a schema:PropertyValue;
+  schema:name "Spectral Width";
+  schema:value 1.00013847981732E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b256 a schema:PropertyValue;
+  schema:name "number of data points";
+  schema:value 32768 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b257 a schema:PropertyValue;
+  schema:name "relaxation time measurement";
+  schema:value 1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b45 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b158 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b348 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b46 a schema:PropertyValue;
+  schema:name "NMR solvent";
+  schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b47 a schema:PropertyValue;
+  schema:name "acquisition nucleus";
+  schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b48 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b49 a schema:PropertyValue;
+  schema:name "NMR probe";
+  schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b50 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:value "cosy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b51 a schema:PropertyValue;
+  schema:name "Temperature";
+  schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b52 a schema:PropertyValue;
+  schema:name "irradiation frequency";
+  schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b53 a schema:PropertyValue;
+  schema:name "magnetic field strength";
+  schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b54 a schema:PropertyValue;
+  schema:name "number of scans";
+  schema:value 8 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b55 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence";
+  schema:value "cosygpmfph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b56 a schema:PropertyValue;
+  schema:name "Spectral Width";
+  schema:value 1.00013847981732E1, 1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b57 a schema:PropertyValue;
+  schema:name "number of data points";
+  schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b58 a schema:PropertyValue;
+  schema:name "relaxation time measurement";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b159 a schema:PropertyValue;
+  schema:name "NMR solvent";
+  schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b160 a schema:PropertyValue;
+  schema:name "acquisition nucleus";
+  schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b161 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality";
+  schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b162 a schema:PropertyValue;
+  schema:name "NMR probe";
+  schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b163 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy";
+  schema:value "cosy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b164 a schema:PropertyValue;
+  schema:name "Temperature";
+  schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b165 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b166 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b167 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b168 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b169 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b170 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b171 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b350 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b351 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b352 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b353 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b354 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b355 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b356 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b357 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b358 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b359 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b360 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b361 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b362 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b59 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b172 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b333 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b60 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b61 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b62 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b63 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b64 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b65 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b66 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b67 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b68 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b69 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b70 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b71 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b72 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b173 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b174 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b175 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b176 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b177 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b178 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b179 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b180 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b181 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b182 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b183 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b184 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b185 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b335 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b336 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b337 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b338 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b339 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b340 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b341 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b342 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b343 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b344 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b345 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b346 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b347 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b73 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b186 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b318 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b74 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b75 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b76 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b77 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b78 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b79 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b80 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b81 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b82 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b83 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b84 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b85 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b86 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b187 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b188 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b189 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b190 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b191 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b192 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b193 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b194 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b195 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b196 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b197 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b198 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b199 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b320 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b321 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b322 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b323 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b324 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b325 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b326 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b327 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b328 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b329 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b330 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b331 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b332 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b87 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b200 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b303 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b88 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b89 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b90 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b91 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b92 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b93 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b94 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b95 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b96 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b97 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b98 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b99 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b100 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b201 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b202 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b203 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b204 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b205 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b206 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b207 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b208 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b209 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b210 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b211 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b212 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b213 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b305 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b306 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b307 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b308 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b309 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b310 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b311 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b312 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b313 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b314 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b315 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b316 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b317 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b101 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b214 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b288 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b102 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b103 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b104 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b105 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b106 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b107 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b108 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b109 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b110 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b111 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b112 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b113 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b114 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b215 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b216 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b217 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b218 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b219 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b220 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b221 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b222 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b223 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b224 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b225 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b226 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b227 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b290 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b291 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b292 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b293 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b294 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b295 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b296 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b297 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b298 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b299 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b300 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b301 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b302 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b115 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b228 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b273 a schema:DataCatalog;
+  schema:name "nmrXiv";
+  schema:url <http://localhost> .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b116 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b117 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b118 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b119 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b120 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b121 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b122 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b123 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b124 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b125 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b126 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b127 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b128 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b229 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b230 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b231 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b232 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b233 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b234 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b235 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b236 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b237 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b238 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b239 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b240 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b241 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b275 a schema:PropertyValue;
+  schema:name "NMR solvent" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b276 a schema:PropertyValue;
+  schema:name "acquisition nucleus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b277 a schema:PropertyValue;
+  schema:name "NMR spectrum by dimensionality" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b278 a schema:PropertyValue;
+  schema:name "NMR probe" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b279 a schema:PropertyValue;
+  schema:name "pulsed nuclear magnetic resonance spectroscopy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b280 a schema:PropertyValue;
+  schema:name "Temperature" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b281 a schema:PropertyValue;
+  schema:name "irradiation frequency" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b282 a schema:PropertyValue;
+  schema:name "magnetic field strength" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b283 a schema:PropertyValue;
+  schema:name "number of scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b284 a schema:PropertyValue;
+  schema:name "nuclear magnetic resonance pulse sequence" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b285 a schema:PropertyValue;
+  schema:name "Spectral Width" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b286 a schema:PropertyValue;
+  schema:name "number of data points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b287 a schema:PropertyValue;
+  schema:name "relaxation time measurement" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b165 schema:value 7.0018E2;
+  schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b166 schema:value 1.6444844184625595E1;
+  schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b167 schema:value 8;
+  schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b168 schema:value "cosygpmfph";
+  schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b169 schema:value 1.00013847981732E1,
+    1.00018098521283E1;
+  schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b170 schema:value 2048, 256;
+  schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b171 schema:value 2;
+  schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b350 schema:value "CDCl3";
+  schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b351 schema:value "1H";
+  schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b352 schema:value 2;
+  schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b353 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006";
+  schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b354 schema:value "cosy";
+  schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b355 schema:value 300;
+  schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b356 schema:value 7.0018E2;
+  schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b357 schema:value 1.6444844184625595E1;
+  schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b358 schema:value 8;
+  schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b359 schema:value "cosygpmfph";
+  schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b360 schema:value 1.00013847981732E1,
+    1.00018098521283E1;
+  schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b361 schema:value 2048, 256;
+  schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b362 schema:value 2;
+  schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b60 schema:value "CDCl3";
+  schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b61 schema:value "13C";
+  schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b62 schema:value 1;
+  schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b63 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006";
+  schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b64 schema:value "apt";
+  schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b65 schema:value 300;
+  schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b66 schema:value 1.76060401E2;
+  schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b67 schema:value 1.6441341131547752E1;
+  schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b68 schema:value 9278;
+  schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b69 schema:value "aptsp.ber";
+  schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b70 schema:value 1.99975586987402E2;
+  schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b71 schema:value 32768;
+  schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b72 schema:value 2;
+  schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b173 schema:value "CDCl3";
+  schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b174 schema:value "13C";
+  schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b175 schema:value 1;
+  schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b176 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006";
+  schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b177 schema:value "apt";
+  schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b178 schema:value 300;
+  schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b179 schema:value 1.76060401E2;
+  schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b180 schema:value 1.6441341131547752E1;
+  schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b181 schema:value 9278;
+  schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b182 schema:value "aptsp.ber";
+  schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b183 schema:value 1.99975586987402E2;
+  schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b184 schema:value 32768;
+  schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b185 schema:value 2;
+  schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b335 schema:value "CDCl3";
+  schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b336 schema:value "13C";
+  schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b337 schema:value 1;
+  schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b338 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006";
+  schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b339 schema:value "apt";
+  schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b340 schema:value 300;
+  schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b341 schema:value 1.76060401E2;
+  schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b342 schema:value 1.6441341131547752E1;
+  schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b343 schema:value 9278;
+  schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b344 schema:value "aptsp.ber";
+  schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b345 schema:value 1.99975586987402E2;
+  schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b346 schema:value 32768;
+  schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b347 schema:value 2;
+  schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b74 schema:value "CDCl3";
+  schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b75 schema:value "13C";
+  schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b76 schema:value 1;
+  schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b77 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006";
+  schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b78 schema:value "apt";
+  schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b79 schema:value 300;
+  schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b80 schema:value 1.76060401E2;
+  schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b81 schema:value 1.6441341131547752E1;
+  schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b82 schema:value 9278;
+  schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b83 schema:value "aptsp.ber";
+  schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b84 schema:value 1.99975586987402E2;
+  schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b85 schema:value 32768;
+  schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b86 schema:value 2;
+  schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b187 schema:value "CDCl3";
+  schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b188 schema:value "13C";
+  schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b189 schema:value 1;
+  schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b190 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006";
+  schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b191 schema:value "apt";
+  schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b192 schema:value 300;
+  schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b193 schema:value 1.76060401E2;
+  schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b194 schema:value 1.6441341131547752E1;
+  schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b195 schema:value 9278;
+  schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b196 schema:value "aptsp.ber";
+  schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b197 schema:value 1.99975586987402E2;
+  schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b198 schema:value 32768;
+  schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b199 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b320 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b321 schema:value "13C" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b322 schema:value 1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b323 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b324 schema:value "apt" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b325 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b326 schema:value 1.76060401E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b327 schema:value 1.6441341131547752E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b328 schema:value 9278 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b329 schema:value "aptsp.ber" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b330 schema:value 1.99975586987402E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b331 schema:value 32768 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b332 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b88 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b89 schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b90 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b91 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b92 schema:value "noesy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b93 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b94 schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b95 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b96 schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b97 schema:value "noesygpph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b98 schema:value 1.00013847981732E1,
+    1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b99 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b100 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b201 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b202 schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b203 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b204 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b205 schema:value "noesy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b206 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b207 schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b208 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b209 schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b210 schema:value "noesygpph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b211 schema:value 1.00013847981732E1,
+    1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b212 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b213 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b305 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b306 schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b307 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b308 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b309 schema:value "noesy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b310 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b311 schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b312 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b313 schema:value 16 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b314 schema:value "noesygpph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b315 schema:value 1.00013847981732E1,
+    1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b316 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b317 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b102 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b103 schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b104 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b105 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b106 schema:value "cosy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b107 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b108 schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b109 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b110 schema:value 8 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b111 schema:value "cosygpmfph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b112 schema:value 1.00013847981732E1,
+    1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b113 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b114 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b215 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b216 schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b217 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b218 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b219 schema:value "cosy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b220 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b221 schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b222 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b223 schema:value 8 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b224 schema:value "cosygpmfph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b225 schema:value 1.00013847981732E1,
+    1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b226 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b227 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b290 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b291 schema:value "1H" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b292 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b293 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b294 schema:value "cosy" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b295 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b296 schema:value 7.0018E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b297 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b298 schema:value 8 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b299 schema:value "cosygpmfph" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b300 schema:value 1.00013847981732E1,
+    1.00018098521283E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b301 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b302 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b116 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b117 schema:value "1H", "13C" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b118 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b119 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b120 schema:value "hsqc" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b121 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b122 schema:value 7.0018E2, 1.76060401E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b123 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b124 schema:value 8 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b125 schema:value "hsqcedetgpsisp" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b126 schema:value 1.00013847981732E1,
+    1.60006540030838E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b127 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b128 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b229 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b230 schema:value "1H", "13C" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b231 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b232 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b233 schema:value "hsqc" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b234 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b235 schema:value 7.0018E2, 1.76060401E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b236 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b237 schema:value 8 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b238 schema:value "hsqcedetgpsisp" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b239 schema:value 1.00013847981732E1,
+    1.60006540030838E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b240 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b241 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b275 schema:value "CDCl3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b276 schema:value "1H", "13C" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b277 schema:value 2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b278 schema:value "5 mm CPTCI 1H-13C/15N/2H Z-GRD Z44908/0006" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b279 schema:value "hsqc" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b280 schema:value 300 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b281 schema:value 7.0018E2, 1.76060401E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b282 schema:value 1.6444844184625595E1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b283 schema:value 8 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b284 schema:value "hsqcedetgpsisp" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b285 schema:value 1.00013847981732E1,
+    1.60006540030838E2 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b286 schema:value 2048, 256 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b287 schema:value 2 .
+
+<http://localhost> schema:description "nmrXiv is currently developed as the FAIR, consensus-driven NMR data repository and computational platform. The ultimate goal is to accelerate broader coordination and data sharing among natural product (NP) researchers by enabling the storage, management, sharing and analysis of NMR data.";
+  schema:keywords <CHMO:0000591>, <CHMO:0000613>, <CHMO:0000592>, <CHMO:0000598>, <CHMO:0002450>,
+    <CHMO:0000604>, <CHMO:0000601>, <CHMO:0001171>, <NMR:1400256>, <NMR:1400258>, <format:3906>;
+  schema:license <https://mit-license.org/>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:contributor <file:/uploaded/generated/0000-0002-2542-0867>, <file:/uploaded/generated/0000-0001-6966-0814>,
+    <file:/uploaded/generated/0000-0003-1022-4326>, <file:/uploaded/generated/0000-0003-2060-842X>,
+    <file:/uploaded/generated/0000-0002-3416-2572>, <file:/uploaded/generated/0000-0003-1066-7792>,
+    <file:/uploaded/generated/0000-0002-4943-2643>, <file:/uploaded/generated/0000-0002-5870-8496>,
+    <file:/uploaded/generated/0000-0002-0990-9582>, <file:/uploaded/generated/0009-0006-4755-1039>,
+    <file:/uploaded/generated/0009-0001-5998-5030>, <file:/uploaded/generated/0000-0002-5990-4157>,
+    <file:/uploaded/generated/0000-0002-7899-7192>, <file:/uploaded/generated/0000-0003-4480-8661>,
+    <file:/uploaded/generated/0000-0002-2564-3243>, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b0,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b1, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b2,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b3, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b4;
+  schema:isAccessibleForFree true;
+  schema:provider _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b16 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1> schema:description "Cocaine is a tropane alkaloid obtained from leaves of the South American shrub Erythroxylon coca";
+  schema:datePublished "2023-10-31 09:40:56"^^schema:Date;
+  schema:keywords "Erythroxylon coca";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:author <file:/uploaded/generated/0000-0002-0990-9582>, <https://orcid.org/0000-0002-8128-9613>;
+  schema:dateCreated "2023-10-31T09:26:00+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:41:55+00:00"^^schema:Date;
+  schema:hasPart <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:publisher _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b129, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b242,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b244, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b259,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b274, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b289,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b304, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b319,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b334, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b349 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1> schema:description "It is a local anesthetic and vasoconstrictor and is clinically used for that purpose, particularly in the eye, ear, nose, and throat.";
+  schema:hasBioChemEntityPart <file:/uploaded/generated/ZPUCINDJVBIVPJ-UHFFFAOYSA-N>;
+  schema:keywords "KG";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:40:43+00:00"^^schema:Date;
+  schema:hasPart <file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d2>, <file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d1>,
+    <file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d8>, <file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d7>,
+    <file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d6>, <file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d5>,
+    <file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d4>, <file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d3>;
+  schema:about <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1>;
+  schema:studyDomain "Chemistry";
+  schema:studySubject "Small molecules" .
+
+<file:/uploaded/generated/ZPUCINDJVBIVPJ-UHFFFAOYSA-N> schema:description "Percentage composition: 100%";
+  schema:inChI "InChI=1S/C17H21NO4/c1-18-12-8-9-13(18)15(17(20)21-2)14(10-12)22-16(19)11-6-4-3-5-7-11/h3-7,12-15H,8-10H2,1-2H3";
+  schema:inChIKey "ZPUCINDJVBIVPJ-UHFFFAOYSA-N";
+  schema:iupacName "methyl 3-benzoyloxy-8-methyl-8-azabicyclo[3.2.1]octane-2-carboxylate";
+  schema:molecularFormula "C17H21NO4";
+  schema:hasRepresentation """Actelion Java MolfileCreator 1.0
+
+ 22 24  0  0  0  0  0  0  0  0999 V2000
+   12.7701   -9.8771   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.7430   -8.5804   -0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   13.9079   -7.6963   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   13.4270   -6.3152   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.9649   -6.3458   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5422   -7.7458   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   11.5005   -9.7397   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.7837  -10.5262   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.0329   -9.6868   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.8126  -11.9064   -0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   14.0941  -12.6110   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.3450  -11.8535   -0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   14.1246  -14.0731   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.4061  -14.7777   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   15.4367  -16.2398   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   14.1858  -16.9973   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.9043  -16.2927   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   12.8737  -14.8306   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.2340  -10.4710   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   10.2340  -11.9334   -0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    8.9675   -9.7397   -0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    7.7010  -10.4710   -0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  1  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  1  0  0  0  0
+  2  6  1  0  0  0  0
+  6  7  1  0  0  0  0
+  7  8  1  0  0  0  0
+  8  9  1  0  0  0  0
+  3  9  1  0  0  0  0
+  8 10  1  0  0  0  0
+ 10 11  1  0  0  0  0
+ 11 12  2  0  0  0  0
+ 11 13  1  0  0  0  0
+ 13 14  2  0  0  0  0
+ 14 15  1  0  0  0  0
+ 15 16  2  0  0  0  0
+ 16 17  1  0  0  0  0
+ 17 18  2  0  0  0  0
+ 13 18  1  0  0  0  0
+  7 19  1  0  0  0  0
+ 19 20  2  0  0  0  0
+ 19 21  1  0  0  0  0
+ 21 22  1  0  0  0  0
+M  END""" .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d2> schema:description "1h.dx";
+  schema:keywords "CDCl3", "2D", "noesy", "1H";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:isAccessibleForFree true;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:32:20+00:00"^^schema:Date;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:includedInDataCatalog _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b17,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b130, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b258;
+  schema:variableMeasured _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b18, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b19,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b20, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b21,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b22, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b23,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b24, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b25,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b26, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b27,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b28, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b29,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b30, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b131,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b132, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b133,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b134, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b135,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b136, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b137,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b138, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b139,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b140, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b141,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b142, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b143,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b260, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b261,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b262, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b263,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b264, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b265,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b266, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b267,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b268, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b269,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b270, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b271,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b272 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d1> schema:description "1h.fid.dx";
+  schema:keywords "CDCl3", "1H", "1D", "proton";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:isAccessibleForFree true;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:32:20+00:00"^^schema:Date;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:includedInDataCatalog _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b31,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b144, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b243;
+  schema:variableMeasured _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b32, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b33,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b34, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b35,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b36, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b37,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b38, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b39,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b40, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b41,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b42, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b43,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b44, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b145,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b146, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b147,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b148, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b149,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b150, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b151,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b152, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b153,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b154, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b155,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b156, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b157,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b245, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b246,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b247, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b248,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b249, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b250,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b251, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b252,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b253, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b254,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b255, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b256,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b257 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d8> schema:description "hmbc.dx";
+  schema:keywords "CDCl3", "2D", "1H", "cosy";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:isAccessibleForFree true;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:32:20+00:00"^^schema:Date;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:includedInDataCatalog _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b45,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b158, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b348;
+  schema:variableMeasured _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b46, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b47,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b48, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b49,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b50, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b51,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b52, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b53,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b54, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b55,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b56, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b57,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b58, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b159,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b160, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b161,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b162, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b163,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b164, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b165,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b166, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b167,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b168, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b169,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b170, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b171,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b350, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b351,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b352, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b353,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b354, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b355,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b356, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b357,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b358, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b359,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b360, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b361,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b362 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d7> schema:description "13c-apt.fid.dx";
+  schema:keywords "CDCl3", "1D", "apt", "13C";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:isAccessibleForFree true;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:32:20+00:00"^^schema:Date;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:includedInDataCatalog _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b59,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b172, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b333;
+  schema:variableMeasured _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b60, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b61,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b62, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b63,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b64, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b65,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b66, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b67,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b68, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b69,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b70, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b71,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b72, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b173,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b174, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b175,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b176, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b177,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b178, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b179,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b180, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b181,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b182, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b183,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b184, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b185,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b335, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b336,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b337, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b338,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b339, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b340,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b341, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b342,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b343, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b344,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b345, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b346,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b347 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d6> schema:description "13c-apt.dx";
+  schema:keywords "CDCl3", "1D", "apt", "13C";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:isAccessibleForFree true;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:32:20+00:00"^^schema:Date;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:includedInDataCatalog _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b73,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b186, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b318;
+  schema:variableMeasured _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b74, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b75,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b76, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b77,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b78, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b79,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b80, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b81,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b82, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b83,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b84, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b85,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b86, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b187,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b188, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b189,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b190, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b191,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b192, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b193,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b194, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b195,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b196, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b197,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b198, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b199,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b320, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b321,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b322, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b323,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b324, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b325,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b326, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b327,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b328, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b329,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b330, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b331,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b332 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d5> schema:description "noesy.dx";
+  schema:keywords "CDCl3", "2D", "noesy", "1H";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:isAccessibleForFree true;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:32:20+00:00"^^schema:Date;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:includedInDataCatalog _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b87,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b200, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b303;
+  schema:variableMeasured _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b88, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b89,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b90, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b91,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b92, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b93,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b94, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b95,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b96, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b97,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b98, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b99,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b100, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b201,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b202, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b203,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b204, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b205,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b206, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b207,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b208, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b209,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b210, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b211,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b212, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b213,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b305, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b306,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b307, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b308,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b309, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b310,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b311, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b312,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b313, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b314,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b315, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b316,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b317 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d4> schema:description "cosy-dqf.dx";
+  schema:keywords "CDCl3", "2D", "1H", "cosy";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:isAccessibleForFree true;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:32:20+00:00"^^schema:Date;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:includedInDataCatalog _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b101,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b214, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b288;
+  schema:variableMeasured _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b102, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b103,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b104, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b105,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b106, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b107,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b108, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b109,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b110, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b111,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b112, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b113,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b114, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b215,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b216, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b217,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b218, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b219,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b220, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b221,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b222, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b223,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b224, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b225,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b226, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b227,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b290, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b291,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b292, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b293,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b294, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b295,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b296, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b297,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b298, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b299,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b300, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b301,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b302 .
+
+<file:/uploaded/generated/10.57992/nmrxiv.p1.s1.d3> schema:description "hsqc-ed.dx";
+  schema:keywords "CDCl3", "2D", "1H", "13C", "hsqc";
+  schema:license <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>;
+  schema:measurementTechnique "https://purl.obolibrary.org/obo/CHMO_0000613";
+  schema:isAccessibleForFree true;
+  schema:dateCreated "2023-10-31T09:26:01+00:00"^^schema:Date;
+  schema:dateModified "2023-10-31T09:32:20+00:00"^^schema:Date;
+  schema:isPartOf <file:/uploaded/generated/10.57992/nmrxiv.p1.s1>;
+  schema:includedInDataCatalog _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b115,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b228, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b273;
+  schema:variableMeasured _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b116, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b117,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b118, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b119,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b120, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b121,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b122, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b123,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b124, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b125,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b126, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b127,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b128, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b229,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b230, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b231,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b232, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b233,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b234, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b235,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b236, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b237,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b238, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b239,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b240, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b241,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b275, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b276,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b277, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b278,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b279, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b280,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b281, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b282,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b283, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b284,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b285, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b286,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b287 .
+
+<CHMO:0000591> schema:alternateName "NMR", "NMR spectroscopy", "nuclear magnetic resonance (NMR) spectroscopy" .
+
+<CHMO:0000613> schema:alternateName "NMR", "NMR spectroscopy", "nuclear magnetic resonance spectroscopy" .
+
+<CHMO:0000592> schema:alternateName "1D NMR spectroscopy", "1-D NMR", "one-dimensional nuclear magnetic resonance spectroscopy",
+    "1D NMR", "1D nuclear magnetic resonance spectroscopy" .
+
+<CHMO:0000598> schema:alternateName "2-D NMR", "2D NMR", "two-dimensional nuclear magnetic resonance spectroscopy",
+    "2D NMR spectroscopy", "two-dimensional NMR", "2D nuclear magnetic resonance" .
+
+<CHMO:0002450> schema:alternateName "COSY spectra", "COSY spectrum", "COSY NMR spectrum",
+    "COSY NMR spectra" .
+
+<CHMO:0000604> schema:alternateName "HSQC" .
+
+<CHMO:0000601> schema:alternateName "HMBC NMR", "HMBC" .
+
+<CHMO:0001171> schema:alternateName "2D NOESY-NMR spectrum", "2D NOESY-NMR spectra",
+    "2D NOESY spectra", "2D NOESY spectrum" .
+
+<file:/uploaded/generated/0000-0002-2542-0867> schema:familyName "Schr\\u00f6ter";
+  schema:givenName "Annett" .
+
+<file:/uploaded/generated/0000-0001-6966-0814> schema:familyName "Steinbeck";
+  schema:givenName "Christoph" .
+
+<file:/uploaded/generated/0000-0003-1022-4326> schema:familyName "Pauli";
+  schema:givenName "Guido" .
+
+<file:/uploaded/generated/0000-0003-2060-842X> schema:familyName "Liermann";
+  schema:givenName "Johannes" .
+
+<file:/uploaded/generated/0000-0002-3416-2572> schema:familyName "Wist";
+  schema:givenName "Julien" .
+
+<file:/uploaded/generated/0000-0003-1066-7792> schema:familyName "Rajan";
+  schema:givenName "Kohulan" .
+
+<file:/uploaded/generated/0000-0002-4943-2643> schema:familyName "Patiny";
+  schema:givenName "Luc" .
+
+<file:/uploaded/generated/0000-0002-5870-8496> schema:familyName "Stefaniuk";
+  schema:givenName "Nazar" .
+
+<file:/uploaded/generated/0000-0002-0990-9582> schema:familyName "Schl\\u00f6rer";
+  schema:givenName "Nils";
+  schema:affiliation "NMR Core facility, Department of Chemistry, University of Cologne, Cologne, D-50939, Germany." .
+
+<file:/uploaded/generated/0009-0006-4755-1039> schema:familyName "Sharma";
+  schema:givenName "Nisha" .
+
+<file:/uploaded/generated/0009-0001-5998-5030> schema:familyName "Rayya";
+  schema:givenName "Noura" .
+
+<file:/uploaded/generated/0000-0002-5990-4157> schema:familyName "Kuhn";
+  schema:givenName "Stefan" .
+
+<file:/uploaded/generated/0000-0002-7899-7192> schema:familyName "Neumann";
+  schema:givenName "Steffen" .
+
+<file:/uploaded/generated/0000-0003-4480-8661> schema:familyName "Fischer";
+  schema:givenName "Tillmann" .
+
+<file:/uploaded/generated/0000-0002-2564-3243> schema:familyName "Nainala";
+  schema:givenName "Venkata Chandrasekhar" .
+
+<https://orcid.org/0000-0002-8128-9613> schema:familyName "Berger";
+  schema:givenName "Stefan";
+  schema:affiliation "Leipzig University: Leipzig, DE" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b0 schema:familyName "Popp";
+  schema:givenName "Christian" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b1 schema:familyName "Storozhuk";
+  schema:givenName "Darina" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b2 schema:familyName "Musallam";
+  schema:givenName "Hamed" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b3 schema:familyName "Lange";
+  schema:givenName "Markus" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b4 schema:familyName "Scherreiks";
+  schema:givenName "Pascal" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b18 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b19 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b20 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b21 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b22 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b23 schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b24 schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b25 schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b26 schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b27 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b28 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b29 schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b30 schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b131 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b132 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b133 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b134 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b135 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b136 schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b137 schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b138 schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b139 schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b140 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b141 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b142 schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b143 schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b260 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b261 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b262 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b263 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b264 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b265 schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b266 schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b267 schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b268 schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b269 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b270 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b271 schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b272 schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b32 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b33 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b34 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b35 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b36 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b37 schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b38 schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b39 schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b40 schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b41 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b42 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b43 schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b44 schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b145 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b146 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b147 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b148 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b149 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b150 schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b151 schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b152 schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b153 schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b154 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b155 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b156 schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b157 schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b245 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b246 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b247 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b248 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b249 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b250 schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b251 schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b252 schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b253 schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b254 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b255 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b256 schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b257 schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b46 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b47 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b48 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b49 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b50 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b51 schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b52 schema:propertyID "NMR:1400026" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b53 schema:propertyID "MR:1400253" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b54 schema:propertyID "NMR:1400087" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b55 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b56 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b57 schema:propertyID "NMR:1000176" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b58 schema:propertyID "FIX:0000202" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b159 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b160 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b161 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b162 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b163 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b164 schema:propertyID "NCIT:C25206" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b199 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b320 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b321 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b322 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b323 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b324 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b325 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b326 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b327 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b328 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b329 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b330 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b331 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b332 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b88 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b89 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b90 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b91 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b92 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b93 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b94 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b95 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b96 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b97 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b98 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b99 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b100 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b201 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b202 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b203 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b204 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b205 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b206 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b207 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b208 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b209 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b210 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b211 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b212 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b213 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b305 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b306 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b307 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b308 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b309 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b310 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b311 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b312 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b313 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b314 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b315 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b316 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b317 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b102 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b103 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b104 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b105 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b106 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b107 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b108 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b109 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b110 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b111 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b112 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b113 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b114 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b215 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b216 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b217 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b218 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b219 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b220 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b221 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b222 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b223 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b224 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b225 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b226 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b227 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b290 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b291 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b292 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b293 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b294 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b295 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b296 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b297 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b298 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b299 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b300 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b301 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b302 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b116 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b117 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b118 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b119 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b120 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b121 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b122 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b123 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b124 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b125 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b126 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b127 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b128 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b229 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b230 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b231 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b232 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b233 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b234 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b235 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b236 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b237 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b238 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b239 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b240 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b241 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b275 schema:propertyID "NMR:1000330" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b276 schema:propertyID "NMR:1400083" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b277 schema:propertyID "NMR:1000117" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b278 schema:propertyID "OBI:0000516" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b279 schema:propertyID "CHMO:0000613" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b280 schema:propertyID "NCIT:C25206";
+  schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b281 schema:propertyID "NMR:1400026";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b282 schema:propertyID "MR:1400253";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b283 schema:propertyID "NMR:1400087";
+  schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b284 schema:propertyID "CHMO:0001841" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b285 schema:propertyID "NCIT:C156496" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b286 schema:propertyID "NMR:1000176";
+  schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b287 schema:propertyID "FIX:0000202";
+  schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b23 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b24 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b25 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b26 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b29 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b30 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b136 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b137 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b138 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b139 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b142 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b143 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b265 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b266 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b267 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b268 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b271 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b272 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b37 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b38 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b39 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b40 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b43 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b44 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b150 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b151 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b152 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b153 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b156 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b157 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b250 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b251 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b252 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b253 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b256 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b257 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b51 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b52 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b53 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b54 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b57 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b58 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b164 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b165 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b166 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b167 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b170 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b171 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b355 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b356 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b357 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b358 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b361 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b362 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b65 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b66 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b67 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b68 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b71 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b72 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b178 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b179 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b180 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b181 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b184 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b185 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b340 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b341 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b342 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b343 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b346 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b347 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b79 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b80 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b81 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b82 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b85 schema:unitCode "points" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b86 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000010" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b192 schema:unitCode "https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000012" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b193 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000325" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b194 schema:unitCode "http://purl.obolibrary.org/obo/UO_0000228" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b195 schema:unitCode "scans" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2140208-b198 schema:unitCode "points" .
