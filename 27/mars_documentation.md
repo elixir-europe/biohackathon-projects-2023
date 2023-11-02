@@ -25,7 +25,7 @@ This role includes any source of ISA-JSON files containing the metadata of multi
 * Main function: Prepare research metadata in ISA-JSON format (i.e. generate and export ISA-JSON files)
 * Responsibilities:
   * Ensure compliance of the submitted ISA-JSON with the ISA model expected by MARS.
-  * Conform submitted ISA-JSON to target repositories' additional validation rules validated by MARS. This includes repositories’ checklists, controlled vocabulary lists, ontology terms, etcetera.
+  * Validate ISA-JSON structure and fields in ISA-JSON as expected by MARS (e.g. “Comment[Target repository]” at Assay level). This includes verification of the checksums associated to the data files. This step might also include validation of repositories’ checklists, controlled vocabulary lists, ontology terms etc, if validation rules are provided by each repository for MARS.
   * Assert that files referenced within the ISA-JSON metadata are uploaded to the target repositories. For example, if a FASTQ file is referenced in an assay that would be submitted to ENA, this file should exist within the storage of ENA. The ISA-JSON metadata payload should contain the checksums associated to the data files (this is requirement for SRA based repositories)
   * Use credentials for submission that the target repositories accept. For example, to submit to ENA, credentials for a submission account of ENA would be required.
  
