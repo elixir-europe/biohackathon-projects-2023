@@ -16,6 +16,7 @@ End-User could be also direct user of the Data Broker platform, particularly in 
 Main function: 
 * Input experimental metadata into ISA-JSON Producer platforms following the specific rules, structures, and requirements of the respective platform. 
 * Use the ISA-JSON producer platfom to expor experimental metadata in ISA-JSON files and uploading them to the Data Broker platform.
+
 Responsibilities:
 * End-User ensures the accuracy and completeness of metadata.
 * End-User must refrain from uploading identical ISA-JSON files to the Data Broker platform, unless it is to initiate a distinct action such as update or release.
