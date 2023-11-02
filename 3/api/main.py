@@ -37,13 +37,22 @@ async def index_endpoint():
     return PlainTextResponse("ELIXIR Biohackathon 2023")
 
 
+@app.get("/vrc")
+async def vrc_ids_endpoints():
+    """List all VRC IDs available."""
+    LOG.info("request to vrc id list")
+
+    return JSONResponse(DATA["ids"])
+
+
 @app.get("/vrc/{vrc_id}")
-async def virtual_reference_collection_endpoint(vrc_id: str):
+async def vrc_data_endpoint(vrc_id: str):
+    """Get specific VRC by ID."""
     LOG.info("request to virtual reference collection")
 
     json_response = {}
     try:
-        json_response = DATA[vrc_id]
+        json_response = DATA["data"][vrc_id]
     except KeyError as e:
         LOG.info(f"no virtual reference collections found with id={vrc_id}, reason={e}")
         raise HTTPException(404, f"no virtual reference collections found with id: {vrc_id}")
