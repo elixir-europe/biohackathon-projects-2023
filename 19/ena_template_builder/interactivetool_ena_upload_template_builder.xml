@@ -4,7 +4,7 @@
     </requirements>
     <entry_points>
         <entry_point name="ENA upload table builder" requires_domain="True">
-            <port>5000</port>
+            <port>5173</port>
         </entry_point>
     </entry_points>
     <command detect_errors="exit_code"><![CDATA[

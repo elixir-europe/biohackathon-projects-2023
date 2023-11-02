@@ -1,0 +1,2 @@
+client: cd client && npm run expose
+api: python main.py
