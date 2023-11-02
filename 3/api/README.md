@@ -27,9 +27,7 @@ docker run -p 8080:8080 elixir/group3
 ```
 
 ## Usage
-Query VRC by id
-```
-curl localhost:8080/vrc1
-```
+- get all available ids http://localhost:8080/vrc
+- get specific VRC by id http://localhost:8080/vrc/{id}
 
 Deployed to https://elixir-biohackathon-2023.rahtiapp.fi/ for the duration of the biohackathon.
