@@ -95,7 +95,6 @@ graph TD
     end
 
     subgraph ArchiveList
-        bs(BioSamples)
         ENA
         MetaboLights
     end
