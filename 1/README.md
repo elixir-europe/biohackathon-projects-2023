@@ -31,7 +31,7 @@ David Salgado[^1], Krzysztof Poterlowicz, Michael Baudis, Katarzyna Murat
 
 
 
-Please see the project's emerging **[website](https://cnvar.org/cnv-reference-resources/)** and **[repository](https://github.com/hCNV/cnv-reference-resources)**  and **[google doc](https://docs.google.com/document/d/1nXo5jtzCg5oC0k7r9Jv0QEo-1wJ0BX0iQb3CBMVLUJA/edit)** for detailed project outcomes, resources and examples.
+Please see the project's emerging **[website](https://cnvar.org/cnv-reference-resources/)** and **[repository](https://github.com/hCNV/cnv-reference-resources)**  and **[google doc](https://docs.google.com/document/d/1nXo5jtzCg5oC0k7r9Jv0QEo-1wJ0BX0iQb3CBMVLUJA/edit)** for detailed outcomes, resources and examples.
 
 [^1]: Involved in the project's design but won't participate at the Biohackaton...
 
