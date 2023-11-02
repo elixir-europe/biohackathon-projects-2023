@@ -67,6 +67,8 @@
     <link href="css/custom.css" rel="stylesheet"/>
     <link href="css/bs5-intro-tour.css" rel="stylesheet" />	
     <script src="js/bs5-intro-tour.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/example.js" type="text/javascript" charset="utf-8"></script>
+  </head>
   </head>
   <body>
     <div class="col-12" style="background: rgb(45, 62, 80); height: 3.25rem; margin: 0 0 0 0px; padding: 0 0 0 0; ">
@@ -224,7 +226,17 @@
 
         };
     }
-            
+    
+    function submit(endRepo) {
+    switch(endRepo){
+      case("metabolights"):
+      return metabolightsSubmit()
+            .then(data => console.log(data))
+            .catch(error => console.error(error))
+      
+    }
+    
+  }
 
 
             
@@ -357,7 +369,7 @@
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">download updated JSON</button>
-                <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="submit('metabolights')">Submit</button>
                 </div>
             </div>
             </div>
