@@ -13,10 +13,10 @@ if os.environ.get('FLASK_OUTPUT_FILE'):
     OUTFILE = Path(os.environ.get('FLASK_OUTPUT_FILE'))
 
 
-@app.route('/api/schema', methods=['GET'])
-def get_schema():
+@app.route('/api/schema/<identifier>', methods=['GET'])
+def get_schema(identifier):
     return jsonify({
-        "schema": schema.fetch(),
+        "schema": schema.fetch(identifier),
     })
 
 
@@ -26,6 +26,7 @@ def submit():
 
     TODO: can't use flask forms for this if the schema is dynamically
           generated. Probably better to just use client-side validation.
+          Can we make a form factory??
     """
     form = forms.MyForm.from_json(request.json)
     if form.validate():
