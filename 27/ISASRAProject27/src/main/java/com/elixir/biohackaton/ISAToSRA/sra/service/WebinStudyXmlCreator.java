@@ -3,19 +3,26 @@ package com.elixir.biohackaton.ISAToSRA.sra.service;
 
 import com.elixir.biohackaton.ISAToSRA.model.Study;
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 import org.dom4j.Element;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SRAStudyXmlCreator {
-  public void createENAStudySetElement(final Element webinElement, final List<Study> studies) {
+@Slf4j
+public class WebinStudyXmlCreator {
+  public void createENAStudySetElement(
+      final Element webinElement,
+      final List<Study> studies,
+      final String randomSubmissionIdentifier) {
     try {
       final Element studySetElement = webinElement.addElement("STUDY_SET");
 
       studies.forEach(
           study -> {
             final Element studyElement =
-                studySetElement.addElement("STUDY").addAttribute("alias", study.getTitle());
+                studySetElement
+                    .addElement("STUDY")
+                    .addAttribute("alias", study.getTitle() + "-" + randomSubmissionIdentifier);
             final Element studyDescriptorElement = studyElement.addElement("DESCRIPTOR");
 
             studyDescriptorElement.addElement("STUDY_TITLE").addText(study.getTitle());
@@ -41,7 +48,7 @@ public class SRAStudyXmlCreator {
                     });
           });
     } catch (final Exception e) {
-      e.printStackTrace();
+      log.info("Failed to parse ISA JSON and create ENA study");
     }
   }
 }
