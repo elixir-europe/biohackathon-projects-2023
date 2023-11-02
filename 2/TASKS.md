@@ -45,7 +45,7 @@ samtools view -b HG01504.alt_bwamem_GRCh38DH.20150718.IBS.low_coverage.bam chr17
 We can use bedtools to convert the BAM file to FASTQ. This command will generate two FASTQ files (TP53_R1.fastq and TP53_R2.fastq) for paired-end data. If your data is single-end, only the -fq file will be populated.
 
 ```
-bedtools bamtofastq -i TP53.bam -fq TP53_R1.fastq -fq2 TP53_R2.fastq
+samtools fastq -1 TP53_R1.fastq  -2 TP53_R2.fastq  TP53.bam 
 
 ```
 
