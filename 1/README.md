@@ -30,7 +30,7 @@ David Salgado[^1], Krzysztof Poterlowicz, Michael Baudis, Katarzyna Murat
 ## Project Outcomes
 
 * Nextflow module to import parsed VCFs into MongoDB
-  * **[MongoDB_importer.py](https://github.com/hcnv/cnv-reference-resources/blob/main/scripts/MongoDB_importer.py) created
+  * **[MongoDB_importer.py](https://github.com/hcnv/cnv-reference-resources/blob/main/scripts/MongoDB_importer.py)** created
   * **[Nextflow module](https://github.com/kkamieniecka/modules/tree/beacon2-ri-tools)** under development
 
 
