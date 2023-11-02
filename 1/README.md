@@ -25,7 +25,10 @@ the project!
 
 ## Lead(s)
 
-David Salgado[^1], Krzysztof Poterlowicz, Michael Baudis
+David Salgado[^1], Krzysztof Poterlowicz, Michael Baudis, Katarzyna Murat
+
+## Project Outcomes
+
 
 ## Additional Information
 
