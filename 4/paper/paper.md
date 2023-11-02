@@ -3,9 +3,7 @@ title: 'Benchmarks for Bioinformatics Workflow Bake Offs'
 tags:
   - workflow benchmarks
   - at least 3 is recommended
-  
 authors:
-  
   - name: Vedran Kasalica
     orcid: 0000-0002-0097-1056
     affiliation: 1
@@ -19,14 +17,14 @@ authors:
     affiliation: 4
 
 affiliations:
- - name: Leiden University Medical Center, 
-   index: 4
  - name: Netherlands eScience Center
    index: 1
 - name: University of Potsdam
    index: 3
 - name: Institution 1, address, city, country
    index: 2
+- name: Leiden University Medical Center, 
+   index: 4
 date: 02 November 2023
 bibliography: paper.bib
 authors_short: Last et al. (2021) BioHackrXiv  template
