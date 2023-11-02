@@ -44,6 +44,8 @@ public class WebinIsaToXmlSubmissionController {
 
   @Autowired private ObjectMapper objectMapper;
 
+  @Autowired private ReceiptConversionService receiptConversionService;
+
   @ApiResponses(
       value = {
         @ApiResponse(responseCode = "200", description = "Ok"),
@@ -100,7 +102,7 @@ public class WebinIsaToXmlSubmissionController {
         webinHttpSubmissionService.performWebinSubmission(
             webinUserName, document.asXML(), webinPassword);
 
-    return receiptXml;
+    return receiptConversionService.convertReceiptXmlToJson(receiptXml);
   }
 
   public List<Study> getStudies(final IsaJson isaJson) {
