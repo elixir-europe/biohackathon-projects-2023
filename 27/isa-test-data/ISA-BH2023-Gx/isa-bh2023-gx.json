@@ -1,0 +1,2502 @@
+{
+    "comments": [],
+    "description": "",
+    "identifier": "",
+    "ontologySourceReferences": [
+        {
+            "comments": [],
+            "description": "Chemical Entity of Biological Interest",
+            "file": "",
+            "name": "CHEBI",
+            "version": ""
+        },
+        {
+            "comments": [],
+            "description": "Experimental Factor Ontology",
+            "file": "",
+            "name": "EFO",
+            "version": ""
+        },
+        {
+            "comments": [],
+            "description": "Ontology for Biomedical Investigations",
+            "file": "",
+            "name": "OBI",
+            "version": ""
+        },
+        {
+            "comments": [],
+            "description": "Phenotype and Trait Ontology",
+            "file": "",
+            "name": "PATO",
+            "version": ""
+        },
+        {
+            "comments": [],
+            "description": "NCBI Taxonomy",
+            "file": "",
+            "name": "NCIBTaxon",
+            "version": ""
+        }
+    ],
+    "people": [],
+    "publicReleaseDate": "",
+    "publications": [],
+    "studies": [
+        {
+            "assays": [
+                {
+                    "characteristicCategories": [
+                        {
+                            "@id": "#characteristic_category/12e659ef-a97b-478a-a94e-4b2fbca8a5a5",
+                            "characteristicType": {
+                                "@id": "#ontology_annotation/12e659ef-a97b-478a-a94e-4b2fbca8a5a5",
+                                "annotationValue": "Label",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "comments": [],
+                    "dataFiles": [
+                        {
+                            "@id": "#data_file/a5f6f0e1-46d4-4861-9830-b20235100f44",
+                            "comments": [
+                                {
+                                    "name": "export",
+                                    "value": "yes"
+                                },
+                                {
+                                    "name": "checksum",
+                                    "value": "rtwertasgdtaqwerq3"
+                                },
+                                {
+                                    "name": "checksum type",
+                                    "value": "sha2"
+                                }
+                            ],
+                            "name": "cnv-seq-data-0.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data_file/9a02136a-d9da-44fb-8a03-a0ba8a6c6467",
+                            "comments": [],
+                            "name": "cnv-seq-data-0.vcf",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data_file/1135a81e-8fd0-4640-926d-405fd45a7aca",
+                            "comments": [
+                                {
+                                    "name": "export",
+                                    "value": "yes"
+                                },
+                                {
+                                    "name": "checksum",
+                                    "value": "rtwertasgdtaqwerq3"
+                                },
+                                {
+                                    "name": "checksum type",
+                                    "value": "sha2"
+                                }
+                            ],
+                            "name": "cnv-seq-data-1.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data_file/b1364f99-74ea-44e7-b553-ef092d97f505",
+                            "comments": [],
+                            "name": "cnv-seq-data-1.vcf",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data_file/00257182-b11f-49fc-95c0-0435e1b6c165",
+                            "comments": [
+                                {
+                                    "name": "export",
+                                    "value": "yes"
+                                },
+                                {
+                                    "name": "checksum",
+                                    "value": "rtwertasgdtaqwerq3"
+                                },
+                                {
+                                    "name": "checksum type",
+                                    "value": "sha2"
+                                }
+                            ],
+                            "name": "cnv-seq-data-2.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data_file/553aecd2-e72d-4f26-8c2b-c6d6a73ccbfb",
+                            "comments": [],
+                            "name": "cnv-seq-data-2.vcf",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data_file/b59218a8-aac2-4541-9b79-410615ac6f87",
+                            "comments": [
+                                {
+                                    "name": "export",
+                                    "value": "yes"
+                                },
+                                {
+                                    "name": "checksum",
+                                    "value": "rtwertasgdtaqwerq3"
+                                },
+                                {
+                                    "name": "checksum type",
+                                    "value": "sha2"
+                                }
+                            ],
+                            "name": "cnv-seq-data-3.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data_file/4d54ff06-221e-4d37-a07d-be805de8b10e",
+                            "comments": [],
+                            "name": "cnv-seq-data-3.vcf",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data_file/81bdc16f-da1e-4b31-a846-6498097feba9",
+                            "comments": [
+                                {
+                                    "name": "export",
+                                    "value": "yes"
+                                },
+                                {
+                                    "name": "checksum",
+                                    "value": "rtwertasgdtaqwerq3"
+                                },
+                                {
+                                    "name": "checksum type",
+                                    "value": "sha2"
+                                }
+                            ],
+                            "name": "cnv-seq-data-4.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data_file/7bf6696f-7c85-400c-b3c0-07b7b6203250",
+                            "comments": [],
+                            "name": "cnv-seq-data-4.vcf",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data_file/e1ecf575-9d30-4856-a72f-5d2f0490d33f",
+                            "comments": [
+                                {
+                                    "name": "export",
+                                    "value": "yes"
+                                },
+                                {
+                                    "name": "checksum",
+                                    "value": "rtwertasgdtaqwerq3"
+                                },
+                                {
+                                    "name": "checksum type",
+                                    "value": "sha2"
+                                }
+                            ],
+                            "name": "cnv-seq-data-5.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data_file/686bbac5-fb07-4cd9-b87f-15e3cf3c0408",
+                            "comments": [],
+                            "name": "cnv-seq-data-5.vcf",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data_file/f8634241-41f9-4864-bd63-1bd05d3ddd1c",
+                            "comments": [
+                                {
+                                    "name": "export",
+                                    "value": "yes"
+                                },
+                                {
+                                    "name": "checksum",
+                                    "value": "rtwertasgdtaqwerq3"
+                                },
+                                {
+                                    "name": "checksum type",
+                                    "value": "sha2"
+                                }
+                            ],
+                            "name": "cnv-seq-data-6.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data_file/6b9499b8-ef45-46d6-be14-b770dbe780e0",
+                            "comments": [],
+                            "name": "cnv-seq-data-6.vcf",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data_file/ac77d097-3162-4c3a-a2f4-300818aaa073",
+                            "comments": [
+                                {
+                                    "name": "export",
+                                    "value": "yes"
+                                },
+                                {
+                                    "name": "checksum",
+                                    "value": "rtwertasgdtaqwerq3"
+                                },
+                                {
+                                    "name": "checksum type",
+                                    "value": "sha2"
+                                }
+                            ],
+                            "name": "cnv-seq-data-7.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data_file/8f3ae33a-4700-40f3-821a-4d2d2497c8db",
+                            "comments": [],
+                            "name": "cnv-seq-data-7.vcf",
+                            "type": "Derived Data File"
+                        }
+                    ],
+                    "filename": "a_BH2023-cnv_seq-assay.txt",
+                    "materials": {
+                        "otherMaterials": [
+                            {
+                                "@id": "#material/45d551ef-b41b-451c-845c-f9d88e998fe9",
+                                "characteristics": [],
+                                "comments": [],
+                                "name": "extract-cnv-seq-0",
+                                "type": "Extract Name"
+                            },
+                            {
+                                "@id": "#material/f7e88c07-4edb-43a6-a202-63616f545594",
+                                "characteristics": [],
+                                "comments": [],
+                                "name": "extract-cnv-seq-1",
+                                "type": "Extract Name"
+                            },
+                            {
+                                "@id": "#material/90dfc01d-3ec4-41ec-b1ef-48d6789e5025",
+                                "characteristics": [],
+                                "comments": [],
+                                "name": "extract-cnv-seq-2",
+                                "type": "Extract Name"
+                            },
+                            {
+                                "@id": "#material/10a9969e-b67a-4eee-bcbc-d8d18b57301e",
+                                "characteristics": [],
+                                "comments": [],
+                                "name": "extract-cnv-seq-3",
+                                "type": "Extract Name"
+                            },
+                            {
+                                "@id": "#material/a2bea11e-edab-4f3a-b3bd-faaee9f16b66",
+                                "characteristics": [],
+                                "comments": [],
+                                "name": "extract-cnv-seq-4",
+                                "type": "Extract Name"
+                            },
+                            {
+                                "@id": "#material/6c2d025d-fab0-4296-9e5b-c14b8735c10c",
+                                "characteristics": [],
+                                "comments": [],
+                                "name": "extract-cnv-seq-5",
+                                "type": "Extract Name"
+                            },
+                            {
+                                "@id": "#material/1c66e0c8-f844-4b82-86aa-8c4fc9a5055d",
+                                "characteristics": [],
+                                "comments": [],
+                                "name": "extract-cnv-seq-6",
+                                "type": "Extract Name"
+                            },
+                            {
+                                "@id": "#material/208e4957-71ac-45e9-b971-a43795fb8593",
+                                "characteristics": [],
+                                "comments": [],
+                                "name": "extract-cnv-seq-7",
+                                "type": "Extract Name"
+                            }
+                        ],
+                        "samples": [
+                            {
+                                "@id": "#sample/8a4f82fa-ce3c-415c-964c-d785a34596cd"
+                            },
+                            {
+                                "@id": "#sample/eab42dbc-b862-4afd-b240-ec0fc7ef56b2"
+                            },
+                            {
+                                "@id": "#sample/1965b166-1ea7-492f-b949-5e65a0e7723f"
+                            },
+                            {
+                                "@id": "#sample/87cde31a-f0c8-4517-8fb6-a073301fa733"
+                            },
+                            {
+                                "@id": "#sample/1a2dd82e-a6af-49ad-bdcc-0a389c6cb1ee"
+                            },
+                            {
+                                "@id": "#sample/b58ad3fa-42a1-4eb5-952b-9e65c0ac8a4f"
+                            },
+                            {
+                                "@id": "#sample/1aa1eced-9a98-4364-a53d-840d3a13ae3d"
+                            },
+                            {
+                                "@id": "#sample/c86697a2-19a4-4c6c-807c-27f2a7054de7"
+                            }
+                        ]
+                    },
+                    "measurementType": {
+                        "@id": "#ontology_annotation/dbdb4c69-a92c-4bec-a721-28e52cb2455d",
+                        "annotationValue": "copy number variation profiling",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "processSequence": [
+                        {
+                            "@id": "#process/442e5e25-40e6-47ea-b68a-51190cc16dd0",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/8a4f82fa-ce3c-415c-964c-d785a34596cd"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/93740676-c287-4b9b-b7f3-58fa0d0641c4"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#material/45d551ef-b41b-451c-845c-f9d88e998fe9"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/5a5ed1da-e8e9-4b9a-a1db-ca1618d4306f",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/eab42dbc-b862-4afd-b240-ec0fc7ef56b2"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/08090f6f-edac-40a7-9212-ad58706e25ae"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#material/90dfc01d-3ec4-41ec-b1ef-48d6789e5025"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/d5bf17f7-ee53-46bf-ba09-eb0649c100cd",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/1965b166-1ea7-492f-b949-5e65a0e7723f"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/23d17167-d6eb-4c0e-9421-f9e53694425e"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#material/a2bea11e-edab-4f3a-b3bd-faaee9f16b66"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/4d84eabc-663b-4469-b80f-85a4a16e8ef7",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/87cde31a-f0c8-4517-8fb6-a073301fa733"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/46511f20-0ad6-4c14-91dd-7390a363cc15"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#material/1c66e0c8-f844-4b82-86aa-8c4fc9a5055d"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/aa857318-eec9-4073-91d1-28081f4215d2",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/1a2dd82e-a6af-49ad-bdcc-0a389c6cb1ee"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/b534c204-f40e-48b2-896d-d23dafdeb1b5"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#material/f7e88c07-4edb-43a6-a202-63616f545594"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/1c823b8f-f2ca-48e1-8ea5-b014e02728fb",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/b58ad3fa-42a1-4eb5-952b-9e65c0ac8a4f"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/06ec3290-e7dd-458c-ab60-eb188ef3abd9"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#material/10a9969e-b67a-4eee-bcbc-d8d18b57301e"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/e737f4e5-07b6-44a8-b681-9226a5fa05f0",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/1aa1eced-9a98-4364-a53d-840d3a13ae3d"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/b2226536-d019-4756-9e62-e8eb37c84848"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#material/6c2d025d-fab0-4296-9e5b-c14b8735c10c"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/1633a9aa-42aa-42b3-bc81-b3c38d8ced41",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/c86697a2-19a4-4c6c-807c-27f2a7054de7"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/085d3e95-2d8e-4dff-8882-8b43f33e6165"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#material/208e4957-71ac-45e9-b971-a43795fb8593"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/93740676-c287-4b9b-b7f3-58fa0d0641c4",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#material/45d551ef-b41b-451c-845c-f9d88e998fe9"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/0be22aaf-8328-408d-b668-e890d177f957"
+                            },
+                            "outputs": [],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005"
+                                    },
+                                    "value": "6"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442"
+                                    },
+                                    "value": "OTHER"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a"
+                                    },
+                                    "value": "GENOMICS"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6"
+                                    },
+                                    "value": "GENOMICS"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/442e5e25-40e6-47ea-b68a-51190cc16dd0"
+                            }
+                        },
+                        {
+                            "@id": "#process/08090f6f-edac-40a7-9212-ad58706e25ae",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#material/90dfc01d-3ec4-41ec-b1ef-48d6789e5025"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/dba46b00-7f51-46e6-a61b-9aae69f782ce"
+                            },
+                            "outputs": [],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005"
+                                    },
+                                    "value": "6"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442"
+                                    },
+                                    "value": "OTHER"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a"
+                                    },
+                                    "value": "GENOMICS"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6"
+                                    },
+                                    "value": "GENOMICS"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/5a5ed1da-e8e9-4b9a-a1db-ca1618d4306f"
+                            }
+                        },
+                        {
+                            "@id": "#process/23d17167-d6eb-4c0e-9421-f9e53694425e",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#material/a2bea11e-edab-4f3a-b3bd-faaee9f16b66"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/ae4573c3-205d-43fb-90da-f943c44a76a9"
+                            },
+                            "outputs": [],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005"
+                                    },
+                                    "value": "6"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442"
+                                    },
+                                    "value": "OTHER"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a"
+                                    },
+                                    "value": "GENOMICS"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6"
+                                    },
+                                    "value": "GENOMICS"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/d5bf17f7-ee53-46bf-ba09-eb0649c100cd"
+                            }
+                        },
+                        {
+                            "@id": "#process/46511f20-0ad6-4c14-91dd-7390a363cc15",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#material/1c66e0c8-f844-4b82-86aa-8c4fc9a5055d"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/1315b715-0fe9-4029-98b2-bb84b6326722"
+                            },
+                            "outputs": [],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005"
+                                    },
+                                    "value": "6"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442"
+                                    },
+                                    "value": "OTHER"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a"
+                                    },
+                                    "value": "GENOMICS"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6"
+                                    },
+                                    "value": "GENOMICS"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/4d84eabc-663b-4469-b80f-85a4a16e8ef7"
+                            }
+                        },
+                        {
+                            "@id": "#process/b534c204-f40e-48b2-896d-d23dafdeb1b5",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#material/f7e88c07-4edb-43a6-a202-63616f545594"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/0113ac65-c423-481c-a6c4-abd2c4269304"
+                            },
+                            "outputs": [],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005"
+                                    },
+                                    "value": "6"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442"
+                                    },
+                                    "value": "OTHER"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a"
+                                    },
+                                    "value": "GENOMICS"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6"
+                                    },
+                                    "value": "GENOMICS"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/aa857318-eec9-4073-91d1-28081f4215d2"
+                            }
+                        },
+                        {
+                            "@id": "#process/06ec3290-e7dd-458c-ab60-eb188ef3abd9",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#material/10a9969e-b67a-4eee-bcbc-d8d18b57301e"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/2e1bdd78-bffc-479e-97e5-60b798f30ab6"
+                            },
+                            "outputs": [],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005"
+                                    },
+                                    "value": "6"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442"
+                                    },
+                                    "value": "OTHER"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a"
+                                    },
+                                    "value": "GENOMICS"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6"
+                                    },
+                                    "value": "GENOMICS"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/1c823b8f-f2ca-48e1-8ea5-b014e02728fb"
+                            }
+                        },
+                        {
+                            "@id": "#process/b2226536-d019-4756-9e62-e8eb37c84848",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#material/6c2d025d-fab0-4296-9e5b-c14b8735c10c"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/f9816062-e4cc-4f0e-a2e8-273e802d577f"
+                            },
+                            "outputs": [],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005"
+                                    },
+                                    "value": "6"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442"
+                                    },
+                                    "value": "OTHER"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a"
+                                    },
+                                    "value": "GENOMICS"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6"
+                                    },
+                                    "value": "GENOMICS"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/e737f4e5-07b6-44a8-b681-9226a5fa05f0"
+                            }
+                        },
+                        {
+                            "@id": "#process/085d3e95-2d8e-4dff-8882-8b43f33e6165",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#material/208e4957-71ac-45e9-b971-a43795fb8593"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/24dc0d84-5faa-4380-9e24-311c99f4e57f"
+                            },
+                            "outputs": [],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005"
+                                    },
+                                    "value": "6"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442"
+                                    },
+                                    "value": "OTHER"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a"
+                                    },
+                                    "value": "GENOMICS"
+                                },
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6"
+                                    },
+                                    "value": "GENOMICS"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/1633a9aa-42aa-42b3-bc81-b3c38d8ced41"
+                            }
+                        },
+                        {
+                            "@id": "#process/0be22aaf-8328-408d-b668-e890d177f957",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9"
+                            },
+                            "inputs": [],
+                            "name": "assay-name-cnv-seq-0",
+                            "nextProcess": {
+                                "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/a5f6f0e1-46d4-4861-9830-b20235100f44"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017"
+                                    },
+                                    "value": "Minion"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/93740676-c287-4b9b-b7f3-58fa0d0641c4"
+                            }
+                        },
+                        {
+                            "@id": "#process/dba46b00-7f51-46e6-a61b-9aae69f782ce",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9"
+                            },
+                            "inputs": [],
+                            "name": "assay-name-cnv-seq-2",
+                            "nextProcess": {
+                                "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/00257182-b11f-49fc-95c0-0435e1b6c165"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017"
+                                    },
+                                    "value": "Minion"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/08090f6f-edac-40a7-9212-ad58706e25ae"
+                            }
+                        },
+                        {
+                            "@id": "#process/ae4573c3-205d-43fb-90da-f943c44a76a9",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9"
+                            },
+                            "inputs": [],
+                            "name": "assay-name-cnv-seq-4",
+                            "nextProcess": {
+                                "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/81bdc16f-da1e-4b31-a846-6498097feba9"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017"
+                                    },
+                                    "value": "Minion"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/23d17167-d6eb-4c0e-9421-f9e53694425e"
+                            }
+                        },
+                        {
+                            "@id": "#process/1315b715-0fe9-4029-98b2-bb84b6326722",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9"
+                            },
+                            "inputs": [],
+                            "name": "assay-name-cnv-seq-6",
+                            "nextProcess": {
+                                "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/f8634241-41f9-4864-bd63-1bd05d3ddd1c"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017"
+                                    },
+                                    "value": "Minion"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/46511f20-0ad6-4c14-91dd-7390a363cc15"
+                            }
+                        },
+                        {
+                            "@id": "#process/0113ac65-c423-481c-a6c4-abd2c4269304",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9"
+                            },
+                            "inputs": [],
+                            "name": "assay-name-cnv-seq-1",
+                            "nextProcess": {
+                                "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/1135a81e-8fd0-4640-926d-405fd45a7aca"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017"
+                                    },
+                                    "value": "Minion"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/b534c204-f40e-48b2-896d-d23dafdeb1b5"
+                            }
+                        },
+                        {
+                            "@id": "#process/2e1bdd78-bffc-479e-97e5-60b798f30ab6",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9"
+                            },
+                            "inputs": [],
+                            "name": "assay-name-cnv-seq-3",
+                            "nextProcess": {
+                                "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/b59218a8-aac2-4541-9b79-410615ac6f87"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017"
+                                    },
+                                    "value": "Minion"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/06ec3290-e7dd-458c-ab60-eb188ef3abd9"
+                            }
+                        },
+                        {
+                            "@id": "#process/f9816062-e4cc-4f0e-a2e8-273e802d577f",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9"
+                            },
+                            "inputs": [],
+                            "name": "assay-name-cnv-seq-5",
+                            "nextProcess": {
+                                "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/e1ecf575-9d30-4856-a72f-5d2f0490d33f"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017"
+                                    },
+                                    "value": "Minion"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/b2226536-d019-4756-9e62-e8eb37c84848"
+                            }
+                        },
+                        {
+                            "@id": "#process/24dc0d84-5faa-4380-9e24-311c99f4e57f",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9"
+                            },
+                            "inputs": [],
+                            "name": "assay-name-cnv-seq-7",
+                            "nextProcess": {
+                                "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/ac77d097-3162-4c3a-a2f4-300818aaa073"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017"
+                                    },
+                                    "value": "Minion"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/085d3e95-2d8e-4dff-8882-8b43f33e6165"
+                            }
+                        },
+                        {
+                            "@id": "#process/112c3fb1-d7af-4a65-bf91-c8374b581439",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#protocol/f1f358a9-b3df-4f20-9d6c-af4a729ac366"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data_file/a5f6f0e1-46d4-4861-9830-b20235100f44"
+                                },
+                                {
+                                    "@id": "#data_file/00257182-b11f-49fc-95c0-0435e1b6c165"
+                                },
+                                {
+                                    "@id": "#data_file/81bdc16f-da1e-4b31-a846-6498097feba9"
+                                },
+                                {
+                                    "@id": "#data_file/f8634241-41f9-4864-bd63-1bd05d3ddd1c"
+                                },
+                                {
+                                    "@id": "#data_file/1135a81e-8fd0-4640-926d-405fd45a7aca"
+                                },
+                                {
+                                    "@id": "#data_file/b59218a8-aac2-4541-9b79-410615ac6f87"
+                                },
+                                {
+                                    "@id": "#data_file/e1ecf575-9d30-4856-a72f-5d2f0490d33f"
+                                },
+                                {
+                                    "@id": "#data_file/ac77d097-3162-4c3a-a2f4-300818aaa073"
+                                }
+                            ],
+                            "name": "VCF-DT",
+                            "outputs": [
+                                {
+                                    "@id": "#data_file/9a02136a-d9da-44fb-8a03-a0ba8a6c6467"
+                                },
+                                {
+                                    "@id": "#data_file/553aecd2-e72d-4f26-8c2b-c6d6a73ccbfb"
+                                },
+                                {
+                                    "@id": "#data_file/7bf6696f-7c85-400c-b3c0-07b7b6203250"
+                                },
+                                {
+                                    "@id": "#data_file/6b9499b8-ef45-46d6-be14-b770dbe780e0"
+                                },
+                                {
+                                    "@id": "#data_file/b1364f99-74ea-44e7-b553-ef092d97f505"
+                                },
+                                {
+                                    "@id": "#data_file/4d54ff06-221e-4d37-a07d-be805de8b10e"
+                                },
+                                {
+                                    "@id": "#data_file/686bbac5-fb07-4cd9-b87f-15e3cf3c0408"
+                                },
+                                {
+                                    "@id": "#data_file/8f3ae33a-4700-40f3-821a-4d2d2497c8db"
+                                }
+                            ],
+                            "parameterValues": [
+                                {
+                                    "category": {
+                                        "@id": "#protocol_parameter/c37d100a-dbbc-4d7d-b3f2-7b3e25952ab8"
+                                    },
+                                    "value": "VCF caller"
+                                }
+                            ],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/24dc0d84-5faa-4380-9e24-311c99f4e57f"
+                            }
+                        }
+                    ],
+                    "technologyPlatform": "",
+                    "technologyType": {
+                        "@id": "#ontology_annotation/60c342da-fab8-4dc0-9558-33eefeb07c3e",
+                        "annotationValue": "nucleic acid sequencing",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "unitCategories": []
+                }
+            ],
+            "characteristicCategories": [
+                {
+                    "@id": "#characteristic_category/0224fe71-8216-46b0-a2d0-89e593361fde",
+                    "characteristicType": {
+                        "@id": "#ontology_annotation/0224fe71-8216-46b0-a2d0-89e593361fde",
+                        "annotationValue": "Organism",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                },
+                {
+                    "@id": "#characteristic_category/0d07a828-150f-42e9-a50d-5afd0ac3706f",
+                    "characteristicType": {
+                        "@id": "#ontology_annotation/0d07a828-150f-42e9-a50d-5afd0ac3706f",
+                        "annotationValue": "cell line",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                },
+                {
+                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c",
+                    "characteristicType": {
+                        "@id": "#ontology_annotation/cb677576-bdbb-498d-bb9b-2ab08b74143c",
+                        "annotationValue": "namespace:biosample",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                }
+            ],
+            "comments": [
+                {
+                    "name": "EMBL Broker Name",
+                    "value": "OXFORD"
+                },
+                {
+                    "name": "EMBL Center Name",
+                    "value": "OXFORD"
+                },
+                {
+                    "name": "EMBL Center Project Name",
+                    "value": "OXFORD"
+                },
+                {
+                    "name": "EMBL Lab Name",
+                    "value": "Oxford e-Research Centre"
+                },
+                {
+                    "name": "EMBL Submission Action",
+                    "value": "ADD"
+                },
+                {
+                    "name": "Study Funding Agency",
+                    "value": ""
+                },
+                {
+                    "name": "Study Grant Number",
+                    "value": ""
+                }
+            ],
+            "description": "Probing cancer pathways of MCF7 cell line using 13C stable isotope resolved metabolomics study using isotopologue distribution analysis with mass spectrometry and isotopomer analysis by 1D 1H NMR.",
+            "factors": [
+                {
+                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b",
+                    "comments": [],
+                    "factorName": "compound",
+                    "factorType": {
+                        "@id": "#ontology_annotation/b5008e38-d699-4d98-8dfc-c7b0cbd76a6f",
+                        "annotationValue": "chemical substance",
+                        "comments": [],
+                        "termAccession": "http://purl.obolibrary.org/obo/CHEBI_59999",
+                        "termSource": "CHEBI"
+                    }
+                },
+                {
+                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb",
+                    "comments": [],
+                    "factorName": "dose",
+                    "factorType": {
+                        "@id": "#ontology_annotation/bcda583d-8cba-4d8c-960d-73922a42546e",
+                        "annotationValue": "dose",
+                        "comments": [],
+                        "termAccession": "http://www.ebi.ac.uk/efo/EFO_0000428",
+                        "termSource": "EFO"
+                    }
+                },
+                {
+                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69",
+                    "comments": [],
+                    "factorName": "duration",
+                    "factorType": {
+                        "@id": "#ontology_annotation/fe989d2a-7ab6-46a6-ba6f-84b949aeea10",
+                        "annotationValue": "time",
+                        "comments": [],
+                        "termAccession": "http://purl.obolibrary.org/obo/PATO_0000165",
+                        "termSource": "PATO"
+                    }
+                }
+            ],
+            "filename": "s_BH2023-study.txt",
+            "identifier": "BH2023",
+            "materials": {
+                "otherMaterials": [],
+                "samples": [
+                    {
+                        "@id": "#sample/8a4f82fa-ce3c-415c-964c-d785a34596cd",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            }
+                        ],
+                        "comments": [],
+                        "derivesFrom": [
+                            {
+                                "@id": "#source/a12dd6bd-b627-465b-9611-60ed1f680a9e"
+                            }
+                        ],
+                        "factorValues": [
+                            {
+                                "category": {
+                                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb"
+                                },
+                                "value": "high"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b"
+                                },
+                                "value": "dioxygen"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69"
+                                },
+                                "value": "hour"
+                            }
+                        ],
+                        "name": "culture-1-sample-0"
+                    },
+                    {
+                        "@id": "#sample/eab42dbc-b862-4afd-b240-ec0fc7ef56b2",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            }
+                        ],
+                        "comments": [],
+                        "derivesFrom": [
+                            {
+                                "@id": "#source/a12dd6bd-b627-465b-9611-60ed1f680a9e"
+                            }
+                        ],
+                        "factorValues": [
+                            {
+                                "category": {
+                                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb"
+                                },
+                                "value": "high"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b"
+                                },
+                                "value": "dioxygen"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69"
+                                },
+                                "value": "hour"
+                            }
+                        ],
+                        "name": "culture-1-sample-1"
+                    },
+                    {
+                        "@id": "#sample/1965b166-1ea7-492f-b949-5e65a0e7723f",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            }
+                        ],
+                        "comments": [],
+                        "derivesFrom": [
+                            {
+                                "@id": "#source/a12dd6bd-b627-465b-9611-60ed1f680a9e"
+                            }
+                        ],
+                        "factorValues": [
+                            {
+                                "category": {
+                                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb"
+                                },
+                                "value": "high"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b"
+                                },
+                                "value": "dioxygen"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69"
+                                },
+                                "value": "hour"
+                            }
+                        ],
+                        "name": "culture-1-sample-2"
+                    },
+                    {
+                        "@id": "#sample/87cde31a-f0c8-4517-8fb6-a073301fa733",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            }
+                        ],
+                        "comments": [],
+                        "derivesFrom": [
+                            {
+                                "@id": "#source/a12dd6bd-b627-465b-9611-60ed1f680a9e"
+                            }
+                        ],
+                        "factorValues": [
+                            {
+                                "category": {
+                                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb"
+                                },
+                                "value": "high"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b"
+                                },
+                                "value": "dioxygen"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69"
+                                },
+                                "value": "hour"
+                            }
+                        ],
+                        "name": "culture-1-sample-3"
+                    },
+                    {
+                        "@id": "#sample/1a2dd82e-a6af-49ad-bdcc-0a389c6cb1ee",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            }
+                        ],
+                        "comments": [],
+                        "derivesFrom": [
+                            {
+                                "@id": "#source/bd67baf5-6edd-48cc-82e2-a1591080a8fc"
+                            }
+                        ],
+                        "factorValues": [
+                            {
+                                "category": {
+                                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b"
+                                },
+                                "value": "dioxygen"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb"
+                                },
+                                "value": "normal"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69"
+                                },
+                                "value": "hour"
+                            }
+                        ],
+                        "name": "culture-2-sample-0"
+                    },
+                    {
+                        "@id": "#sample/b58ad3fa-42a1-4eb5-952b-9e65c0ac8a4f",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            }
+                        ],
+                        "comments": [],
+                        "derivesFrom": [
+                            {
+                                "@id": "#source/bd67baf5-6edd-48cc-82e2-a1591080a8fc"
+                            }
+                        ],
+                        "factorValues": [
+                            {
+                                "category": {
+                                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b"
+                                },
+                                "value": "dioxygen"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb"
+                                },
+                                "value": "normal"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69"
+                                },
+                                "value": "hour"
+                            }
+                        ],
+                        "name": "culture-2-sample-1"
+                    },
+                    {
+                        "@id": "#sample/1aa1eced-9a98-4364-a53d-840d3a13ae3d",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            }
+                        ],
+                        "comments": [],
+                        "derivesFrom": [
+                            {
+                                "@id": "#source/bd67baf5-6edd-48cc-82e2-a1591080a8fc"
+                            }
+                        ],
+                        "factorValues": [
+                            {
+                                "category": {
+                                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b"
+                                },
+                                "value": "dioxygen"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb"
+                                },
+                                "value": "normal"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69"
+                                },
+                                "value": "hour"
+                            }
+                        ],
+                        "name": "culture-2-sample-2"
+                    },
+                    {
+                        "@id": "#sample/c86697a2-19a4-4c6c-807c-27f2a7054de7",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            }
+                        ],
+                        "comments": [],
+                        "derivesFrom": [
+                            {
+                                "@id": "#source/bd67baf5-6edd-48cc-82e2-a1591080a8fc"
+                            }
+                        ],
+                        "factorValues": [
+                            {
+                                "category": {
+                                    "@id": "#study_factor/b209ef6b-18ae-4a24-a91b-4b51ca92434b"
+                                },
+                                "value": "dioxygen"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/ab0e6ccd-5a82-4b21-823d-9c7c485f81eb"
+                                },
+                                "value": "normal"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#study_factor/eae17694-2710-4d19-8fef-679cf3b3bd69"
+                                },
+                                "value": "hour"
+                            }
+                        ],
+                        "name": "culture-2-sample-3"
+                    }
+                ],
+                "sources": [
+                    {
+                        "@id": "#source/a12dd6bd-b627-465b-9611-60ed1f680a9e",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/0224fe71-8216-46b0-a2d0-89e593361fde"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#ontology_annotation/9aa90807-c7d9-4890-9d4f-18cfd18c6fe2",
+                                    "annotationValue": "Homo sapiens",
+                                    "comments": [],
+                                    "termAccession": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+                                    "termSource": "NCIBTaxon"
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/0d07a828-150f-42e9-a50d-5afd0ac3706f"
+                                },
+                                "comments": [],
+                                "value": "MCF-7"
+                            }
+                        ],
+                        "comments": [],
+                        "name": "culture-1"
+                    },
+                    {
+                        "@id": "#source/bd67baf5-6edd-48cc-82e2-a1591080a8fc",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/cb677576-bdbb-498d-bb9b-2ab08b74143c"
+                                },
+                                "comments": [],
+                                "value": "SAME\\d+"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/0224fe71-8216-46b0-a2d0-89e593361fde"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#ontology_annotation/c653386d-098b-4f4a-bae2-33610826bd34",
+                                    "annotationValue": "Homo sapiens",
+                                    "comments": [],
+                                    "termAccession": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+                                    "termSource": "NCIBTaxon"
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#characteristic_category/0d07a828-150f-42e9-a50d-5afd0ac3706f"
+                                },
+                                "comments": [],
+                                "value": "MCF-7"
+                            }
+                        ],
+                        "comments": [],
+                        "name": "culture-2"
+                    }
+                ]
+            },
+            "people": [
+                {
+                    "address": "Prospect Street, Beijing, People's Republic of China",
+                    "affiliation": "Beijing Institute of Metabolism",
+                    "comments": [
+                        {
+                            "name": "Study Person REF",
+                            "value": ""
+                        }
+                    ],
+                    "email": "weng.min@bim.edu.cn",
+                    "fax": "",
+                    "firstName": "Weng",
+                    "lastName": "Min",
+                    "midInitials": "",
+                    "phone": "",
+                    "roles": [
+                        {
+                            "@id": "#ontology_annotation/0283ec44-bf65-485c-b62f-7ebc0d9ba4dc",
+                            "annotationValue": "principal investigator role",
+                            "comments": [],
+                            "termAccession": "",
+                            "termSource": ""
+                        },
+                        {
+                            "@id": "#ontology_annotation/da74bef4-1c4c-422f-8e84-4409591b568f",
+                            "annotationValue": "SRA Inform On Status",
+                            "comments": [],
+                            "termAccession": "",
+                            "termSource": ""
+                        },
+                        {
+                            "@id": "#ontology_annotation/8421be9c-da3d-4dbc-a1b6-997bd4d37ab7",
+                            "annotationValue": "SRA Inform On Error",
+                            "comments": [],
+                            "termAccession": "",
+                            "termSource": ""
+                        }
+                    ]
+                },
+                {
+                    "address": "CCM, Edinborough, United Kingdom",
+                    "affiliation": "Centre for Cell Metabolism",
+                    "comments": [
+                        {
+                            "name": "Study Person REF",
+                            "value": ""
+                        }
+                    ],
+                    "email": "",
+                    "fax": "",
+                    "firstName": "Hillary",
+                    "lastName": "Everest",
+                    "midInitials": "",
+                    "phone": "",
+                    "roles": [
+                        {
+                            "@id": "#ontology_annotation/09fbfcdc-f581-4af7-a722-552dd80d0939",
+                            "annotationValue": "principal investigator role",
+                            "comments": [],
+                            "termAccession": "",
+                            "termSource": ""
+                        }
+                    ]
+                }
+            ],
+            "processSequence": [
+                {
+                    "@id": "#process/cc63d84e-8901-405b-998f-7fa1e1911009",
+                    "comments": [],
+                    "date": "",
+                    "executesProtocol": {
+                        "@id": "#protocol/140da6de-db16-4c53-9b2b-c59632e842d2"
+                    },
+                    "inputs": [
+                        {
+                            "@id": "#source/a12dd6bd-b627-465b-9611-60ed1f680a9e"
+                        }
+                    ],
+                    "name": "",
+                    "outputs": [
+                        {
+                            "@id": "#sample/8a4f82fa-ce3c-415c-964c-d785a34596cd"
+                        },
+                        {
+                            "@id": "#sample/eab42dbc-b862-4afd-b240-ec0fc7ef56b2"
+                        },
+                        {
+                            "@id": "#sample/1965b166-1ea7-492f-b949-5e65a0e7723f"
+                        },
+                        {
+                            "@id": "#sample/87cde31a-f0c8-4517-8fb6-a073301fa733"
+                        }
+                    ],
+                    "parameterValues": [
+                        {
+                            "category": {
+                                "@id": "#protocol_parameter/1fea4dce-2222-43ee-b6a3-5b1967c52353"
+                            },
+                            "value": "80% [1-13C1]-D-glucose + 20% [U-13C6]-D-glucose"
+                        }
+                    ],
+                    "performer": ""
+                },
+                {
+                    "@id": "#process/f0773661-ddd7-4784-8d2e-95800183b719",
+                    "comments": [],
+                    "date": "",
+                    "executesProtocol": {
+                        "@id": "#protocol/140da6de-db16-4c53-9b2b-c59632e842d2"
+                    },
+                    "inputs": [
+                        {
+                            "@id": "#source/bd67baf5-6edd-48cc-82e2-a1591080a8fc"
+                        }
+                    ],
+                    "name": "",
+                    "outputs": [
+                        {
+                            "@id": "#sample/1a2dd82e-a6af-49ad-bdcc-0a389c6cb1ee"
+                        },
+                        {
+                            "@id": "#sample/b58ad3fa-42a1-4eb5-952b-9e65c0ac8a4f"
+                        },
+                        {
+                            "@id": "#sample/1aa1eced-9a98-4364-a53d-840d3a13ae3d"
+                        },
+                        {
+                            "@id": "#sample/c86697a2-19a4-4c6c-807c-27f2a7054de7"
+                        }
+                    ],
+                    "parameterValues": [
+                        {
+                            "category": {
+                                "@id": "#protocol_parameter/1fea4dce-2222-43ee-b6a3-5b1967c52353"
+                            },
+                            "value": "80% [1-13C1]-D-glucose + 20% [U-13C6]-D-glucose"
+                        }
+                    ],
+                    "performer": ""
+                }
+            ],
+            "protocols": [
+                {
+                    "@id": "#protocol/140da6de-db16-4c53-9b2b-c59632e842d2",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for growing MCF7 cells and incubating them with the tracer molecule",
+                    "name": "cell culture and isotopic labeling",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/1fea4dce-2222-43ee-b6a3-5b1967c52353",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/fc31fc15-9a8f-4b22-b84e-57f83aeb9af4",
+                                "annotationValue": "tracer molecule",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/52e1e868-3b31-4203-916a-dc8302cd5e38",
+                        "annotationValue": "sample collection",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/ee6fe1b1-df63-4b4a-a2f2-1cc459793717",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for extracting metabolites from harvested cells",
+                    "name": "intracellular metabolite extraction",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/7088e198-a66a-441c-ab09-7d2d58fdee2b",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/7446053e-f5e6-4512-bf4e-330f60557cd6",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/33886dc6-f011-4801-a927-b916ec1b581a",
+                        "annotationValue": "metabolite extraction",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/008ccdaa-841b-475f-994b-dbc2ff0a5e05",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for extracting metabolites from cell culture supernatant",
+                    "name": "extracellular metabolite extraction",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/57063c60-21ab-4246-9d22-0b3588ea9a4f",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/3ff179e0-6825-4b52-ba9b-4716a2f9c70d",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/5e41e885-f71b-4db7-9e4c-86d54679a743",
+                        "annotationValue": "metabolite extraction",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/aa2e32b5-6c7f-4009-b1b5-ee16165190f5",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for LC-MS data acquisition",
+                    "name": "liquid chromatography mass spectrometry",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/a29a6711-04c9-4c20-b2a6-425c55cf68b1",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/b11cb897-5239-46f7-aa2e-719cd9f69e8b",
+                                "annotationValue": "chromatography column",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/0829bae9-343c-4db0-936a-5d94797424ec",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/cf7134be-a189-4a16-ad42-0ff2ec3a361e",
+                                "annotationValue": "mass spectrometry instrument",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/b7aada76-0c4d-4c80-8ce7-a952441cbafb",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/0bf4cb49-421e-4e4d-aef1-0ee7ba8b6528",
+                                "annotationValue": "mass analyzer",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/8d27fffb-9ec6-47e1-b02d-5b410d844023",
+                        "annotationValue": "mass spectrometry",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/482447a0-b086-41f4-9925-8807ada31912",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for 1D 13C NMR data acquisition for isotopomer analysis",
+                    "name": "1D 13C NMR spectroscopy for isotopomer analysis",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/b39c00aa-e23c-4ae1-8da2-23872de1ae9e",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/070c478a-b1fa-4cde-8d08-1ed3730f2f74",
+                                "annotationValue": "magnetic field strength",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/1d4ab4b3-6cb4-4745-be86-554bd649dee0",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/181a04e3-a18b-42b0-903f-9204a003e7e3",
+                                "annotationValue": "nmr tube",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/30e13a15-1201-4181-bd2b-692a4038eb93",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/3b69d0b6-65fb-47c4-b47d-d501572b73c8",
+                                "annotationValue": "pulse sequence",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/c8d573a7-af98-4bd1-8edf-666a06fe9675",
+                        "annotationValue": "nmr spectroscopy",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/09ded41a-7b9f-43e4-8f0e-6c57dba78e58",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for 1D 13C NMR data acquisition for metabolite profiling",
+                    "name": "1D 13C NMR spectroscopy for metabolite profiling",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/e70d847a-c7d7-4e2c-bb2a-cc6199c9f71f",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/2553f777-4eaa-47c8-af4d-7f5cb2cb8c4b",
+                                "annotationValue": "magnetic field strength",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/321233a9-ba77-4aaf-a471-b6138b011184",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/1c82ed15-2a84-4306-a5e9-1853188cb287",
+                                "annotationValue": "nmr tube",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/cbb71403-19a2-45d6-a087-79eaf841ff92",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/9cfc839a-8c9a-4af9-afbc-020c00d9a44d",
+                                "annotationValue": "pulse sequence",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/bbf2263a-3dea-47a7-ac41-39301622bdbb",
+                        "annotationValue": "nmr spectroscopy",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/40e306ac-11bd-4ceb-b0f4-86a3179ee493",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for MS signal processing and metabolite and isotopologue identification",
+                    "name": "MS metabolite identification",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/e6ba78c9-4ea1-4cb4-bf6e-5fb57db5721d",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/577fa812-ae01-409d-b81d-0fdde578d8eb",
+                                "annotationValue": "ms software",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/80c490d4-d51f-442c-9426-d2ccdb35ece7",
+                        "annotationValue": "metabolite identification",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/ecc8ed7d-0c60-4285-9e8f-2d1572ae2cb8",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for NMR signal processing and metabolite and isotopomer identification",
+                    "name": "NMR metabolite identification",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/63c8f18a-8f8d-4d5f-b932-384632b226e5",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/01366b04-887e-43ba-b16b-d08adfe3ce89",
+                                "annotationValue": "nmr software",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/fa24e54a-fb21-4409-b341-6f356eddc788",
+                        "annotationValue": "data transformation",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "https://doi.org/10.1021/acs.analchem.1c01064",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/ac2eb990-da1e-4c7c-a3ca-e007f58d5236",
+                    "comments": [],
+                    "components": [],
+                    "description": "procedure for isolating messenger RNA for transcriptomics analysis",
+                    "name": "mRNA extraction",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/44c3929d-c716-4f4c-bc41-b6c864b5bb3e",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/16640162-09c8-41df-a08b-c3d6a1389ccf",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/2ee1ab4f-3571-463c-8c5d-eeea0bf9317f",
+                        "annotationValue": "material separation",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/9349f8d1-ec96-4581-9711-3981e0fe36c3",
+                    "comments": [],
+                    "components": [],
+                    "description": "procedure for isolating genoic DNA for copy number variation analysis",
+                    "name": "gDNA extraction",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/b4c36d7b-e395-4001-b20c-30112c6dda2b",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/5366b2cf-867b-4133-9e2a-7fc0ab3d060e",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/29b5251a-53d9-4b8a-9b87-3881183c984c",
+                        "annotationValue": "material separation",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/66ebbafe-5191-4d56-a0cc-babf57cbac26",
+                    "comments": [],
+                    "components": [],
+                    "description": "procedure for isolating genoic DNA for copy number variation analysis",
+                    "name": "gDNA library preparation",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/5ebffeaa-6bd5-4829-a255-bb452f78d005",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/49662643-3c27-412b-8728-2efbbd5d5324",
+                                "annotationValue": "library strategy",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/354435b9-0985-43a8-93db-2e47ecec3442",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/584e6799-1643-4a93-adcc-406d64b48b2c",
+                                "annotationValue": "library selection",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/6adc80f5-a010-47d7-b850-51602005573a",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/6e3480f9-8cb2-4c2e-bedc-e6c99894f6d8",
+                                "annotationValue": "library source",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/781b7bf0-def0-4fbd-944c-6a51e6c658d6",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/8cc9ea0c-c8e4-4d2a-b80d-5cdcee7b7034",
+                                "annotationValue": "library orientation",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/0f911394-d1fa-4eac-9e30-41d44a11c94e",
+                        "annotationValue": "library construction",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/4920091e-d089-4f72-aff3-c5c0c09380ca",
+                    "comments": [],
+                    "components": [],
+                    "description": "procedure for isolating genoic DNA for gene expression analysis",
+                    "name": "mRNA library preparation",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/78ea11e7-6511-480f-b4c7-c010b99ed39f",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/73bca2e8-6441-46cf-827c-48b1671464d2",
+                                "annotationValue": "library strategy",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/110fc97b-3559-41f2-9da7-aed718b16f4e",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/f26d3ba1-86f1-48d0-be01-eb46ddf70289",
+                                "annotationValue": "library selection",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/12016e17-64e6-4f23-8408-86234989eb24",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/1df2b4ec-2460-40a8-a7b3-1385b5b1a756",
+                                "annotationValue": "library source",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        },
+                        {
+                            "@id": "#protocol_parameter/65ab32c2-5e0e-4483-b3c3-113811220e4b",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/a4606872-bcbc-4348-b00b-4a93a727b797",
+                                "annotationValue": "library orientation",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/54afe41b-a12d-4c64-8956-baf349f2882a",
+                        "annotationValue": "library construction",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/912c1159-804e-41a7-9e5c-79a9dab23df9",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for nucleic acid sequencing",
+                    "name": "sequencing",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/c13ad7e7-46b2-4edd-9342-dfc348c34017",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/68f4165e-76ba-4f92-adf4-179f576d016d",
+                                "annotationValue": "sequencing instrument",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/392593ed-eb42-4eee-ab5f-24eab0ee5845",
+                        "annotationValue": "nucleic acid sequencing",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/488835f5-dd2b-4129-aab8-d7c6cbdcb995",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for transcriptomics analysis",
+                    "name": "transcription analysis",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/7c8c4615-6abe-4179-9de5-abdba8025755",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/e5047ef3-901f-4dd5-9bf5-f00dd54bf136",
+                                "annotationValue": "sequence analysis software",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/0d68438a-733e-42b1-968e-0feff349ffba",
+                        "annotationValue": "data transformation",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/f1f358a9-b3df-4f20-9d6c-af4a729ac366",
+                    "comments": [],
+                    "components": [],
+                    "description": "SOP for CNV ",
+                    "name": "CNV analysis",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/c37d100a-dbbc-4d7d-b3f2-7b3e25952ab8",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/bba55317-2b09-4383-8c0e-e6223ad4d0db",
+                                "annotationValue": "variant calling software",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/219d43b1-8c6e-4b4f-9d41-eac36bc84fd8",
+                        "annotationValue": "data transformation",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#protocol/20e54e9f-9e72-46ed-9367-56fd8e46bb34",
+                    "comments": [],
+                    "components": [],
+                    "description": "a workflow for integrating data from NMR and MS acquisition into a consolidated result",
+                    "name": "13C SIRM MS and NMR integrative analysis",
+                    "parameters": [
+                        {
+                            "@id": "#protocol_parameter/88ee12be-94bf-4fa2-af6b-c88072f0b78e",
+                            "parameterName": {
+                                "@id": "#ontology_annotation/dde2c5db-87d6-42d7-bb30-2a96fa53b5e9",
+                                "annotationValue": "software",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#ontology_annotation/04772282-f34b-4814-9685-b8df9f53bf04",
+                        "annotationValue": "data transformation",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "https://doi.org/10.1021/acs.analchem.1c01064",
+                    "version": ""
+                }
+            ],
+            "publicReleaseDate": "15/08/2021",
+            "publications": [
+                {
+                    "authorList": "Min,W. and Everest H",
+                    "comments": [],
+                    "doi": "10.1371/journal.pone.0000000",
+                    "pubMedID": "",
+                    "status": {
+                        "@id": "#ontology_annotation/161ed20d-e279-49f4-b0fd-7262130b6f37",
+                        "annotationValue": "indexed in PubMed",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "title": "Decyphering new cancer pathways with stable isotope resolved metabolomics in MCF7 cell lines"
+                }
+            ],
+            "studyDesignDescriptors": [
+                {
+                    "@id": "#ontology_annotation/d52fb919-0cdd-4220-96f3-ccd4ab27c64b",
+                    "annotationValue": "intervention design",
+                    "comments": [],
+                    "termAccession": "http://purl.obolibrary.org/obo/OBI_0000115",
+                    "termSource": "OBI"
+                },
+                {
+                    "@id": "#ontology_annotation/31153a86-be79-49e4-9331-6867caef6796",
+                    "annotationValue": "stable isotope resolved metabolomics study",
+                    "comments": [],
+                    "termAccession": "http://purl.obolibrary.org/obo/MSIO_0000096",
+                    "termSource": ""
+                }
+            ],
+            "submissionDate": "15/08/2021",
+            "title": "[U-13C6]-D-glucose labeling experiment in MCF7 cancer cell line",
+            "unitCategories": []
+        }
+    ],
+    "submissionDate": "",
+    "title": ""
+}
