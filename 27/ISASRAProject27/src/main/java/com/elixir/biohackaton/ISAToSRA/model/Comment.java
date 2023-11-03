@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class Comment {
   public String name;
-  public Object value;
+  public String value;
 
   @JsonProperty("@id")
   public String id;
