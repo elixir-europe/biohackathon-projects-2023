@@ -227,13 +227,33 @@
         };
     }
     
+
     function submit(endRepo) {
     switch(endRepo){
-      case("metabolights"):
-      return metabolightsSubmit()
+      case("biosamples"):
+      return  document.getElementById(endRepo+"loading").className="spinner-border text-primary", metabolightsSubmit()
             .then(data => console.log(data))
-            .catch(error => console.error(error))
-      
+            .catch(error => console.error(error));
+            
+          break;
+      case("ENA"):
+      return document.getElementById(endRepo+"loading").className="spinner-border text-primary", metabolightsSubmit()
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+            break;
+      case("metabolights"):
+      return document.getElementById(endRepo+"loading").className="spinner-border text-primary", metabolightsSubmit()
+            .then(data => console.log(data) )
+            .catch(error => console.error(error));
+            break;     
+    }
+    document.getElementById(endRepo+"loading").className="spinner-border text-primary d-none";
+  }
+
+    function submitAll(endRepo) {
+    for (const [index,element] of endRepo.entries()){
+      console.log(element.id);
+      submit(element.id)
     }
     
   }
@@ -302,28 +322,50 @@
                       <div class="row">
                         <div class="col">
                           <div class="row">
+                            <div class="col">
                             <div class="form-check" id="submitRepos">
-                              <input class="form-check-input" type="checkbox" value="" id="biosamples">
+                              <input class="form-check-input" type="checkbox" value="" id="biosamples" name="repo" checked>
                               <label class="form-check-label" for="biosamples">
                                 BioSamples
+                                
                               </label>
-                              
+                            
+                            </div>
+                          </div>
+                            <div class="col">
+                              <div class="spinner-border text-primary d-none" id="biosamplesloading" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
                             </div>
                           </div>
                           <div class="row">
+                            <div class="col">
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="ENA">
+                              <input class="form-check-input" type="checkbox" value="" id="ENA" name="repo">
                               <label class="form-check-label" for="ENA">
                                 ENA
                               </label>
                             </div>
                           </div>
+                            <div class="col">
+                              <div class="spinner-border text-primary d-none" id="ENAloading"role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                            </div>
+                          </div>
                           <div class="row">
+                            <div class="col">
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="Metabolites">
-                              <label class="form-check-label" for="Metabolites">
+                              <input class="form-check-input" type="checkbox" value="" id="metabolights" name="repo">
+                              <label class="form-check-label" for="metabolights">
                                 Metabolites
                               </label>
+                            </div>
+                          </div>
+                            <div class="col">
+                              <div class="spinner-border text-primary d-none" id="metabolightsloading" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -338,7 +380,7 @@
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">download updated JSON</button>
-                <button type="button" class="btn btn-primary" onclick="submit('metabolights')">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="var checkedBoxes = document.querySelectorAll('input[name=repo]:checked');submitAll(checkedBoxes)">Submit</button>
                 </div>
             </div>
             </div>
