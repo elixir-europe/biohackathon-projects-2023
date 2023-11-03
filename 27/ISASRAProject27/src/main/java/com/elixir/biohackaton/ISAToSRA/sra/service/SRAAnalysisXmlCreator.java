@@ -42,7 +42,7 @@ public class SRAAnalysisXmlCreator {
         .forEach(
             sample -> {} // TODO
             );
-    //add_element(analysis_elemt, 'SAMPLE_REF',
+    // add_element(analysis_elemt, 'SAMPLE_REF',
     //                        accession=sample_row.get('Sample Accession'),
     //                        label=sample_row.get('Sample ID'))
 
