@@ -1,4 +1,4 @@
-import { biosample as Config } from "./config.json";
+import Config from "./config.json" assert { type: "json" };
 
 export class BiosampleBroker {
   constructor(isaJson) {
@@ -6,9 +6,12 @@ export class BiosampleBroker {
   }
 
   async updateIsaJson() {
-    return fetch(`${Config.url}?webinjwt=${Config.token}`, {
+    return fetch(`${Config.biosample.url}?webinjwt=${Config.biosample.token}`, {
       method: "POST",
-      body: this.isaJson,
+      body: JSON.stringify(this.isaJson),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
   }
 }
