@@ -7,5 +7,10 @@
   "biosample": {
     "url": "http://localhost:8032/isabiosamples/submit",
     "token": ""
+  },
+  "metabolights": {
+    "url": "https://wwwdev.ebi.ac.uk/metabolights/",
+    "username": "",
+    "password": ""
   }
 }

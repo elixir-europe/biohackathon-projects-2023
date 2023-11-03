@@ -12,3 +12,7 @@ export class BiosampleBroker {
     });
   }
 }
+
+export function updateExternalLinks(){
+
+}
