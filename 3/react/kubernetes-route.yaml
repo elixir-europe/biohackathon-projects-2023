@@ -18,9 +18,9 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`dev.dissco.tech`)
+    - match: Host(`biohackathon.dissco.tech`)
       kind: Rule
       services:
-        - name: bbiohackathon-virtual-reference-collection
+        - name: biohackathon-virtual-reference-collection
           namespace: default
           port: 3000
