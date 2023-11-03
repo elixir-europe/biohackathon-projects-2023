@@ -83,6 +83,7 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
+    <script src="js/example.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
     <div
@@ -419,103 +420,114 @@
                   <div class="row">BioSamples</div>
                   <div class="row">ENA</div>
                   <div class="row">Metabolites</div>
-                </div>
-                <div class="col">
-                  <div class="row">Column</div>
-                  <div class="row">BioSamples</div>
-                  <div class="row">Column</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      download updated JSON
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      onclick="submit('metabolights')"
+                    >
+                      Submit
+                    </button>
+                  </div>
                 </div>
               </div>
+              <table
+                id="validate_table"
+                class="table table-bordered table-hover"
+              ></table>
             </div>
-            <table
-              id="validate_table"
-              class="table table-bordered table-hover"
-            ></table>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              download updated JSON
-            </button>
-            <button type="button" class="btn btn-primary" id="submit">
-              Submit
-            </button>
-            <script type="module">
-              import { Broker } from "./js/broker/main.js";
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                download updated JSON
+              </button>
+              <button type="button" class="btn btn-primary" id="submit">
+                Submit
+              </button>
+              <script type="module">
+                import { Broker } from "./js/broker/main.js";
 
-              const broker = new Broker();
-              const submit = document.querySelector("#submit");
-              submit.addEventListener("click", () => {
-                broker.submit(input_json);
-              });
-            </script>
+                const broker = new Broker();
+                const submit = document.querySelector("#submit");
+                submit.addEventListener("click", () => {
+                  broker.submit(input_json);
+                });
+              </script>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="d-none btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#map_vali_modal"
-      id="m_v_modal"
-    >
-      Launch check modal
-    </button>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="d-none btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#map_vali_modal"
+        id="m_v_modal"
+      >
+        Launch check modal
+      </button>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="map_vali_modal"
-      tabindex="-1"
-      data-bs-backdrop="static"
-      aria-labelledby="map_vali_modal_label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="map_vali_modal_label">
-              Upload to repos
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <span id="init_word"> </span>
-            <br />
-            <span id="mandatory_n"></span> mandatory term(s),<br />
-            <span id="recommended_n"></span> recommended term(s),<br />
-            <span id="optional_n"></span> optional term(s).<br />
-            <table
-              id="validate_table"
-              class="table table-bordered table-hover"
-            ></table>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              download updated ISA-JSON
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);"
-            >
-              convert
-            </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="map_vali_modal"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        aria-labelledby="map_vali_modal_label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="map_vali_modal_label">
+                Upload to repos
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <span id="init_word"> </span>
+              <br />
+              <span id="mandatory_n"></span> mandatory term(s),<br />
+              <span id="recommended_n"></span> recommended term(s),<br />
+              <span id="optional_n"></span> optional term(s).<br />
+              <table
+                id="validate_table"
+                class="table table-bordered table-hover"
+              ></table>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                download updated ISA-JSON
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);"
+              >
+                convert
+              </button>
+            </div>
           </div>
         </div>
       </div>
