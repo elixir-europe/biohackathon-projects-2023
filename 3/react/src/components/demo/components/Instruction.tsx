@@ -10,7 +10,7 @@ const Instruction = () => {
                     <p className="fs-4">
                         <span className="fw-lightBold">The demo:</span> select a reference collecton from the list.
                         It will display the metadata and all of the occurrences, with attached media, that can
-                        be used for refferencing.
+                        be used for referencing.
                     </p>
                 </div>
             </Col>
