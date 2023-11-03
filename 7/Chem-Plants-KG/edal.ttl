@@ -1,0 +1,513 @@
+@prefix agg: <http://jena.apache.org/ARQ/function/aggregate#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix path: <http://www.ontotext.com/path#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix apf: <http://jena.apache.org/ARQ/property#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rep: <http://www.openrdf.org/config/repository#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix list: <http://jena.apache.org/ARQ/list#> .
+@prefix geoext: <http://rdf.useekm.com/ext#> .
+@prefix idpregistry: <https://idpregistry.org/> .
+@prefix math: <http://www.w3.org/2005/xpath-functions/math> .
+@prefix schema: <http://schema.org/> .
+@prefix sail: <http://www.openrdf.org/config/sail#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix disprot: <https://disprot.org/> .
+@prefix array: <http://www.w3.org/2005/xpath-functions/array> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix map: <http://www.w3.org/2005/xpath-functions/map> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sr: <http://www.openrdf.org/config/repository/sail#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix afn: <http://jena.apache.org/ARQ/function#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix mobidb: <https://mobidb.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix biohack23: <https://biohack2023/> .
+@prefix ofn: <http://www.ontotext.com/sparql/functions/> .
+@prefix IDPO: <https://disprot.org/IDPO/> .
+@prefix graphdb: <http://www.ontotext.com/config/graphdb#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix omgeo: <http://www.ontotext.com/owlim/geo#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix bioschemas: <https://bioschemas.org/> .
+
+<https://bioschemas.org/profiles/Dataset/1.0-RELEASE> a schema:CreativeWork .
+
+<https://doi.ipk-gatersleben.de:443/DOI/005cf59f-a628-416d-a0d5-69dd708201c3/757b83b3-dc23-42fd-a053-82890150b9c1/2>
+  a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>;
+  schema:name "Genomic and phylogenetic data for the identification of ancient and recurrent hybridizations in wheat taxa";
+  schema:description "Genomic data from 244 loci for 69 accessions representing the diploid Aegilops and Triticum species, as well as some diploid Hordeum species as outgroup (Dataset_S1). The associated 244 maximum likelihood gene trees in Newick format are rooted with the outgroup and branches with bootstrap values below 10 were collapsed (Dataset_S2). Raw GBS data for 57 accessions representing all diploid species from the genera Aegilops, Triticum, as well as Dasypyrum villosum and Taeniatherum caput-medusae as outgroup species (Dataset_S3).";
+  schema:datePublished "Wed Nov 13 14:50:03 CET 2019"^^schema:Date;
+  schema:keywords "Aegilops, Amblyopyrum, crop wild relatives, evolution, genotyping-by-sequencing, hybridization, nuclear single-copy genes, target-enrichment, phylogeny, Triticum, wheat";
+  schema:license <https://creativecommons.org/licenses/by/4.0/legalcode>;
+  schema:contributor _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b9, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b10,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b11, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b12,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b13;
+  schema:author _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b0, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b2,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b4, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b5,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b6, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b7,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b8;
+  schema:publisher _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b16;
+  schema:creator _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b14, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b15;
+  schema:inLanguage "en" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b0 a schema:Person;
+  schema:name "Nadine Bernhardt";
+  schema:familyName "Bernhardt";
+  schema:givenName "Nadine";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b1 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b2 a schema:Person;
+  schema:name "Jonathan Brassac";
+  schema:familyName "Brassac";
+  schema:givenName "Jonathan";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b3 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b4 a schema:Person;
+  schema:name "Xue Dong";
+  schema:familyName "Dong";
+  schema:givenName "Xue";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b5 a schema:Person;
+  schema:name "Eva-Maria Willing";
+  schema:familyName "Willing";
+  schema:givenName "Eva-Maria";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b6 a schema:Person;
+  schema:name "C. Hart Poskar";
+  schema:familyName "Poskar";
+  schema:givenName "C. Hart";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b7 a schema:Person;
+  schema:name "Benjamin Kilian";
+  schema:familyName "Kilian";
+  schema:givenName "Benjamin";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b8 a schema:Person;
+  schema:name "Frank Blattner";
+  schema:familyName "Blattner";
+  schema:givenName "Frank";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b9 a schema:Person;
+  schema:familyName "Dong";
+  schema:givenName "Xue";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b10 a schema:Person;
+  schema:familyName "Willing";
+  schema:givenName "Eva-Maria";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b11 a schema:Person;
+  schema:familyName "Poskar";
+  schema:givenName "C. Hart";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b12 a schema:Person;
+  schema:familyName "Kilian";
+  schema:givenName "Benjamin";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b13 a schema:Person;
+  schema:familyName "Blattner";
+  schema:givenName "Frank";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b14 a schema:Person;
+  schema:name "Nadine Bernhardt";
+  schema:familyName "Bernhardt";
+  schema:givenName "Nadine";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b15 a schema:Person;
+  schema:name "Jonathan Brassac";
+  schema:familyName "Brassac";
+  schema:givenName "Jonathan";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b16 a schema:Organization;
+  schema:name "e!DAL - Plant Genomics and Phenomics Research Data Repository (PGP), IPK Gatersleben, Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b1 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06466";
+  schema:streetAddress "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b3 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06466";
+  schema:streetAddress "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3" .
+
+<https://identifiers.org/taxonomy:4565> a schema:Taxon;
+  dcterms:conformsTo "https://bioschemas.org/profiles/Taxon/0.6-RELEASE";
+  schema:includedInDataset <https://doi.ipk-gatersleben.de:443/DOI/005cf59f-a628-416d-a0d5-69dd708201c3/757b83b3-dc23-42fd-a053-82890150b9c1/2>,
+    <https://doi.ipk-gatersleben.de:443/DOI/bf84cc9a-fbd5-415e-8da9-dbad84aa7758/ca6637e0-8b28-4c38-a3be-fcf4aca24d44/2>,
+    <https://doi.ipk-gatersleben.de:443/DOI/68efdbae-4edd-463a-898c-5a1e06fb71db/9ef74189-dfea-46a2-8b45-a1114736b97c/2>;
+  schema:name "Triticum vulgare";
+  <dwc:vernacularName> "wheat";
+  schema:parentTaxon "Triticum";
+  schema:taxonRank "species" .
+
+<https://doi.ipk-gatersleben.de:443/DOI/bf84cc9a-fbd5-415e-8da9-dbad84aa7758/ca6637e0-8b28-4c38-a3be-fcf4aca24d44/2>
+  a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>;
+  schema:name "Annotated resistance gene enrichment sequencing (RenSeq) assemblies of a winter wheat diversity panel";
+  schema:description "RenSeq assemblies of 907 diverse T. aestivum genotypes and two control genotypes. The assemblies were generated using CLC assembler (https://digitalinsights.qiagen.com/products-overview/discovery-insights-portfolio/analysis-and-visualization/qiagen-clc-assembly-cell/). The contigs from each accession were annotated with AUGUSTUS v3.3.1 using wheat gene models as training datasets and contigs with complete genes were identified. Amino acid (AA), coding sequence (CDS) and transcript sequence for each complete gene was extracted using getAnnoFasta.pl script from AUGUSTUS package. The files ending with “_updated_fasta” is the direct output of CLC assembler and contains contigs from each accession.  The files ending with “_updated_complete.gff”, “_updated_complete.mrna”, “_updated_complete.aa” and  “_updated_complete.codingseq” contain gene information in GFF3 format, transcript sequences, amino acid sequences and coding sequences respectively from each accession. Passport data and/or pedigree information and BioSamples IDs of RenSeq raw data are provided in the sample information file.";
+  schema:datePublished "Mon Apr 04 17:17:34 CEST 2022"^^schema:Date;
+  schema:keywords "Triticum aestivum, wheat, resistance gene, sequence assembly, RenSeq, annotation, diversity panel";
+  schema:license <https://creativecommons.org/licenses/by/4.0/legalcode>;
+  schema:contributor _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b23, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b24,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b25, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b26;
+  schema:author _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b17, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b19,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b20, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b21,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b22;
+  schema:publisher _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b28;
+  schema:creator _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b27;
+  schema:inLanguage "en" .
+
+<https://doi.ipk-gatersleben.de:443/DOI/68efdbae-4edd-463a-898c-5a1e06fb71db/9ef74189-dfea-46a2-8b45-a1114736b97c/2>
+  a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>;
+  schema:name "Bread Wheat Exome Capture Sequencing SNP matrix of 77 diverse european genotypes from the ZUCHTWERT project";
+  schema:description "Set of ~93k SNPs for 77 genotypes based of Exome Capture sequencing data called against reference genotype Chinese Spring. This set of SNPs was derived from a larger population of 93 genotypes. Markers were exluded if they either were monomorphic, had missing genotype calls for more than 5% of the initial population or had minor allele frequencies less than 5%.Format specifications: Column1 : SNP ID, Column2: Chromosome, Column3: Position, Column4: Reference Allele, Column5: Alternative Allele, Colmn6ff: Genotype-specific alleles observed in regards to the reference (0 = homozygous REF allele, 1 = heterozygous, 2 = homozygous ALT allele).";
+  schema:datePublished "Tue May 19 10:14:11 CEST 2020"^^schema:Date;
+  schema:keywords "bread wheat, single nucleotide polymorphism, triticum aestivum, exome capture, SNP";
+  schema:license <https://creativecommons.org/licenses/by/4.0/legalcode>;
+  schema:contributor _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b32;
+  schema:author _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b29, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b31;
+  schema:publisher _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b34;
+  schema:creator _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b33;
+  schema:inLanguage "en" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b17 a schema:Person;
+  schema:name "Sandip Kale";
+  schema:familyName "Kale";
+  schema:givenName "Sandip";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b18 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b19 a schema:Person;
+  schema:name "Martin Mascher";
+  schema:familyName "Mascher";
+  schema:givenName "Martin";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b20 a schema:Person;
+  schema:name "Nils Stein";
+  schema:familyName "Stein";
+  schema:givenName "Nils";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b21 a schema:Person;
+  schema:name "Jochen Reif";
+  schema:familyName "Reif";
+  schema:givenName "Jochen";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b22 a schema:Person;
+  schema:name "Albert Wilhelm Schulthess Börgel";
+  schema:familyName "Schulthess Börgel";
+  schema:givenName "Albert Wilhelm";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b23 a schema:Person;
+  schema:familyName "Mascher";
+  schema:givenName "Martin";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b24 a schema:Person;
+  schema:familyName "Stein";
+  schema:givenName "Nils";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b25 a schema:Person;
+  schema:familyName "Reif";
+  schema:givenName "Jochen";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b26 a schema:Person;
+  schema:familyName "Schulthess Börgel";
+  schema:givenName "Albert Wilhelm";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b27 a schema:Person;
+  schema:name "Sandip Kale";
+  schema:familyName "Kale";
+  schema:givenName "Sandip";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b28 a schema:Organization;
+  schema:name "e!DAL - Plant Genomics and Phenomics Research Data Repository (PGP), IPK Gatersleben, Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b18 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06466";
+  schema:streetAddress "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b29 a schema:Person;
+  schema:name "Jochen Reif";
+  schema:familyName "Reif";
+  schema:givenName "Jochen";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b30 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b31 a schema:Person;
+  schema:name "Sebastian Beier";
+  schema:familyName "Beier";
+  schema:givenName "Sebastian";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b32 a schema:Person;
+  schema:familyName "Beier";
+  schema:givenName "Sebastian";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b33 a schema:Person;
+  schema:name "Jochen Reif";
+  schema:familyName "Reif";
+  schema:givenName "Jochen";
+  schema:address "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b34 a schema:Organization;
+  schema:name "e!DAL - Plant Genomics and Phenomics Research Data Repository (PGP), IPK Gatersleben, Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b30 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06466";
+  schema:streetAddress "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3" .
+
+<https://doi.ipk-gatersleben.de:443/DOI/cbc59f64-232c-4702-9483-636250aa387f/061392a5-9b1c-4a5a-8c21-d101821fd24d/2>
+  a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>;
+  schema:name "Phenotype data of eight evaluated traits in a wild barley nested association mapping population at two locations in Dundee, Scotland and Halle, Germany.";
+  schema:description "This dataset contains phenotypic characteristics of 1,420 lines of the wild barley nested association mapping population HEB-25 (Maurer et al. 2015, DOI: 10.1186/s12864-015-1459-7). All phenotypic values were evaluated visually according to published methods (Lancashire et al. 1991, DOI:10.1111/j.1744-7348.1991.tb04895.x). Field trials were conducted in 2014 and 2015 in Dundee, UK, and Halle, Germany, under two nitrogen (N) fertilisation treatments, N0 and N1.";
+  schema:datePublished "Tue Jul 11 17:48:02 CEST 2017"^^schema:Date;
+  schema:keywords "Cultivated barley (Hordeum vulgare ssp. vulgare), wild barley (Hordeum vulgare ssp. spontaneum), developmental traits, Barley NAM project";
+  schema:license <https://creativecommons.org/publicdomain/zero/1.0/legalcode>;
+  schema:author _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b35, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b37,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b39, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b41,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b43, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b45,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b47, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b49,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b51;
+  schema:publisher _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b62;
+  schema:creator _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b53, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b54,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b55, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b56,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b57, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b58,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b59, _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b60,
+    _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b61;
+  schema:inLanguage "de" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b35 a schema:Person;
+  schema:name "Paul Herzig";
+  schema:familyName "Herzig";
+  schema:givenName "Paul";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b36 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b37 a schema:Person;
+  schema:name "Andreas Maurer";
+  schema:familyName "Maurer";
+  schema:givenName "Andreas";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b38 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b39 a schema:Person;
+  schema:name "Vera Draba";
+  schema:familyName "Draba";
+  schema:givenName "Vera";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b40 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b41 a schema:Person;
+  schema:name "Rajiv Sharma";
+  schema:familyName "Sharma";
+  schema:givenName "Rajiv";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b42 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b43 a schema:Person;
+  schema:name "Fulvia Draicchio";
+  schema:familyName "Draicchio";
+  schema:givenName "Fulvia";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b44 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b45 a schema:Person;
+  schema:name "Hazel Bull";
+  schema:familyName "Bull";
+  schema:givenName "Hazel";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b46 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b47 a schema:Person;
+  schema:name "William Thomas";
+  schema:familyName "Thomas";
+  schema:givenName "William";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b48 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b49 a schema:Person;
+  schema:name "Andrew Flavell";
+  schema:familyName "Flavell";
+  schema:givenName "Andrew";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b50 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b51 a schema:Person;
+  schema:name "Klaus Pillen";
+  schema:familyName "Pillen";
+  schema:givenName "Klaus";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b52 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b53 a schema:Person;
+  schema:name "Paul Herzig";
+  schema:familyName "Herzig";
+  schema:givenName "Paul";
+  schema:address "Institute of Agricultural and Nutritional Sciences, Martin Luther University Halle-Wittenberg, Betty-Heimann-Str. 3, Halle (Saale), 06120, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b54 a schema:Person;
+  schema:name "Andreas Maurer";
+  schema:familyName "Maurer";
+  schema:givenName "Andreas";
+  schema:address "Institute of Agricultural and Nutritional Sciences, Martin Luther University Halle-Wittenberg, Betty-Heimann-Str. 3, Halle (Saale), 06120, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b55 a schema:Person;
+  schema:name "Vera Draba";
+  schema:familyName "Draba";
+  schema:givenName "Vera";
+  schema:address "Interdisciplinary Center of Crop Plant Research (IZN), Betty-Heimann-Str. 3, Halle, 06120, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b56 a schema:Person;
+  schema:name "Rajiv Sharma";
+  schema:familyName "Sharma";
+  schema:givenName "Rajiv";
+  schema:address "Division of Plant Sciences, University of Dundee at JHI, Invergowrie, Dundee, DD2 5DA, Scotland, UK" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b57 a schema:Person;
+  schema:name "Fulvia Draicchio";
+  schema:familyName "Draicchio";
+  schema:givenName "Fulvia";
+  schema:address "Division of Plant Sciences, University of Dundee at JHI, Invergowrie, Dundee, DD2 5DA, Scotland, UK" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b58 a schema:Person;
+  schema:name "Hazel Bull";
+  schema:familyName "Bull";
+  schema:givenName "Hazel";
+  schema:address "The James Hutton Institute (JHI), Invergowrie DD2 5DA, Dundee, Scotland, DD2 5DA, Scotland, UK" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b59 a schema:Person;
+  schema:name "William Thomas";
+  schema:familyName "Thomas";
+  schema:givenName "William";
+  schema:address "The James Hutton Institute (JHI), Invergowrie DD2 5DA, Dundee, Scotland, DD2 5DA, Scotland, UK" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b60 a schema:Person;
+  schema:name "Andrew Flavell";
+  schema:familyName "Flavell";
+  schema:givenName "Andrew";
+  schema:address "Division of Plant Sciences, University of Dundee at JHI, Invergowrie, DD2 5DA, Dundee, DD2 5DA, Scotland, UK" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b61 a schema:Person;
+  schema:name "Klaus Pillen";
+  schema:familyName "Pillen";
+  schema:givenName "Klaus";
+  schema:address "Institute of Agricultural and Nutritional Sciences, Martin Luther University Halle-Wittenberg, Betty-Heimann-Str. 3, Halle (Saale), 06120, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b62 a schema:Organization;
+  schema:name "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK) Gatersleben, Stadt Seeland, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b36 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06120";
+  schema:streetAddress "Institute of Agricultural and Nutritional Sciences, Martin Luther University Halle-Wittenberg, Betty-Heimann-Str. 3, Halle (Saale)" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b38 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06120";
+  schema:streetAddress "Institute of Agricultural and Nutritional Sciences, Martin Luther University Halle-Wittenberg, Betty-Heimann-Str. 3, Halle (Saale)" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b40 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06120";
+  schema:streetAddress "Interdisciplinary Center of Crop Plant Research (IZN), Betty-Heimann-Str. 3, Halle" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b42 a schema:PostalAddress;
+  schema:addressCountry "Scotland, UK";
+  schema:postalCode "DD2 5DA";
+  schema:streetAddress "Division of Plant Sciences, University of Dundee at JHI, Invergowrie, Dundee" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b44 a schema:PostalAddress;
+  schema:addressCountry "Scotland, UK";
+  schema:postalCode "DD2 5DA";
+  schema:streetAddress "Division of Plant Sciences, University of Dundee at JHI, Invergowrie, Dundee" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b46 a schema:PostalAddress;
+  schema:addressCountry "Scotland, UK";
+  schema:postalCode "DD2 5DA";
+  schema:streetAddress "The James Hutton Institute (JHI), Invergowrie DD2 5DA, Dundee, Scotland" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b48 a schema:PostalAddress;
+  schema:addressCountry "Scotland, UK";
+  schema:postalCode "DD2 5DA";
+  schema:streetAddress "The James Hutton Institute (JHI), Invergowrie DD2 5DA, Dundee, Scotland" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b50 a schema:PostalAddress;
+  schema:addressCountry "Scotland, UK";
+  schema:postalCode "DD2 5DA";
+  schema:streetAddress "Division of Plant Sciences, University of Dundee at JHI, Invergowrie, DD2 5DA, Dundee" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b52 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06120";
+  schema:streetAddress "Institute of Agricultural and Nutritional Sciences, Martin Luther University Halle-Wittenberg, Betty-Heimann-Str. 3, Halle (Saale)" .
+
+<https://identifiers.org/taxonomy:4513> a schema:Taxon;
+  dcterms:conformsTo "https://bioschemas.org/profiles/Taxon/0.6-RELEASE";
+  schema:includedInDataset <https://doi.ipk-gatersleben.de:443/DOI/cbc59f64-232c-4702-9483-636250aa387f/061392a5-9b1c-4a5a-8c21-d101821fd24d/2>,
+    <https://doi.ipk-gatersleben.de:443/DOI/5d0e28db-2344-41c8-9afd-1840164f7d6f/8dfc8b9a-6b52-4086-b558-2f410abb9c70/2>;
+  schema:name "Hordeum spontaneum";
+  <dwc:vernacularName> "barley";
+  schema:parentTaxon "Hordeum";
+  schema:taxonRank "species" .
+
+<https://doi.ipk-gatersleben.de:443/DOI/5d0e28db-2344-41c8-9afd-1840164f7d6f/8dfc8b9a-6b52-4086-b558-2f410abb9c70/2>
+  a schema:Dataset;
+  dcterms:conformsTo <https://bioschemas.org/profiles/Dataset/1.0-RELEASE>;
+  schema:name "Boundaries of the split pseudomolecules of barley cv. Morex";
+  schema:description "A BED file that defines the boundaries at which pseudomolecules were split to make the parts smaller than 512 Mb.";
+  schema:datePublished "Thu Aug 25 10:39:21 CEST 2016"^^schema:Date;
+  schema:keywords "barley, Hordeum vulgare, genome assembly, genome annotation, sequence resource, next-generation sequencing";
+  schema:license <https://creativecommons.org/licenses/by/4.0/legalcode>;
+  schema:author _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b63;
+  schema:publisher _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b66;
+  schema:creator _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b65;
+  schema:inLanguage "en" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b63 a schema:Organization;
+  schema:name "IBSC";
+  schema:address _:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b64 .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b65 a schema:Organization;
+  schema:name "IBSC" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b66 a schema:Organization;
+  schema:name "e!DAL - Plant Genomics and Phenomics Research Data Repository (PGP), IPK Gatersleben, Seeland OT Gatersleben, Corrensstraße 3, 06466, Germany" .
+
+_:genid-4f74acebcbc8437f84f6e60c5a13a37e2172939-b64 a schema:PostalAddress;
+  schema:addressCountry "Germany";
+  schema:postalCode "06466";
+  schema:streetAddress "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland OT Gatersleben, Corrensstraße 3" .
