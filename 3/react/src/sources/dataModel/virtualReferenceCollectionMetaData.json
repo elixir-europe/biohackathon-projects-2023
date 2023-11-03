@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Virtual Reference Collection Meta Data",
+    "properties": {
+        "referenceCollectionID": {
+            "type": "string",
+            "title": "Reference Collection Identifier",
+            "description": "A numeric, textual value, or reference such as an IRI, that can be used to uniquely identify the object to which it is attached"
+        },
+        "creator": {
+            "type": "string",
+            "title": "Creator",
+            "description": "A role played by a Person in the context of an entity such as an ObjectGroup, OrganisationalUnit or RecordLevel"
+        },
+        "maintainer": {
+            "type": "string",
+            "title": "Maintainer",
+            "description": "A role played by a Person in the context of an entity such as an ObjectGroup, OrganisationalUnit or RecordLevel"
+        },
+        "copyrightLicense": {
+            "type": "string",
+            "title": "Copyright License",
+            "description": "Information about rights held in and over the resource"
+        },
+        "copyrightOwner": {
+            "type": "string",
+            "title": "Copyright Owner",
+            "description": "A person or organization owning or managing rights over the resource"
+        },
+        "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "A name given to the resource"
+        },
+        "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "An account of the resource"
+        },
+        "area": {
+            "type": "array",
+            "title": "Area",
+            "description": "The geographic location from which objects associated with the ObjectGroup were collected, or where an Event took place",
+            "items": {
+                "type": "string"
+            }
+        },
+        "includedTaxaDescription": {
+            "type": "string",
+            "title": "Included Taxa Description",
+            "description": "A higher taxon (e. g., a genus, family, or order) at the level of the genus or higher, that covers all taxa that are the primary subject of the resource (which may be a media item or a collection)"
+        },
+        "language": {
+            "type": "string",
+            "title": "Language",
+            "description": "A language of the resource"
+        },
+        "lastUpdate": {
+            "type": "string",
+            "title": "Last Update",
+            "description": "Date on which the resource was changed"
+        }
+    },
+    "required": [
+        "referenceCollectionID",
+        "title",
+        "lastUpdate"
+    ]
+}

@@ -1,19 +1,25 @@
-import React from 'react';
+/* Import Dependencies */
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import axios from 'axios';
+
+/* Import Styles */
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Import Components */
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
+
+axios.defaults.baseURL = 'https://elixir-biohackathon-2023.rahtiapp.fi';
+
+
+const RenderRoot = () => {
+  const root = ReactDOM.createRoot(
+    document.getElementById('root') as HTMLElement
+  );
+
+  root.render(
     <App />
-  </React.StrictMode>
-);
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+RenderRoot();
