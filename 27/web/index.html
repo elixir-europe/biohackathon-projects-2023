@@ -9,9 +9,9 @@
     />
     <meta
       name="description"
-      content="Converter, validator and updater regarding SWATE template, ARC.JSON and Endpoint repositories"
+      content="MARS: Multi-omics Adapter for Repository Submissions"
     />
-    <meta name="keywords" content="converter, updater, validator" />
+    <meta name="keywords" content="MARS," />
     <style>
       .center {
         position: relative;
@@ -85,6 +85,7 @@
     ></script>
     <script src="js/example.js" type="text/javascript" charset="utf-8"></script>
   </head>
+
   <body>
     <div
       class="col-12"
@@ -313,6 +314,31 @@
         }
       }
 
+      function submit(endRepo) {
+        switch (endRepo) {
+          case "biosamples":
+            return metabolightsSubmit()
+              .then((data) => console.log(data))
+              .catch((error) => console.error(error));
+
+          case "ENA":
+            return metabolightsSubmit()
+              .then((data) => console.log(data))
+              .catch((error) => console.error(error));
+
+          case "metabolights":
+            return metabolightsSubmit()
+              .then((data) => console.log(data))
+              .catch((error) => console.error(error));
+        }
+      }
+
+      function submitAll(endRepo) {
+        for (const [element, index] of endRepo.entries()) {
+          submit(element.id);
+        }
+      }
+
       async function main(input_json) {
         if (input_json === undefined || input_json.length < 0) {
           window.alert("please select an lister json file to be imported");
@@ -374,12 +400,14 @@
               <div class="row">
                 <div class="col">
                   <div class="row">
-                    <div class="form-check">
+                    <div class="form-check" id="submitRepos">
                       <input
                         class="form-check-input"
                         type="checkbox"
                         value=""
                         id="biosamples"
+                        name="repo"
+                        checked
                       />
                       <label class="form-check-label" for="biosamples">
                         BioSamples
@@ -393,6 +421,7 @@
                         type="checkbox"
                         value=""
                         id="ENA"
+                        name="repo"
                       />
                       <label class="form-check-label" for="ENA"> ENA </label>
                     </div>
@@ -403,7 +432,8 @@
                         class="form-check-input"
                         type="checkbox"
                         value=""
-                        id="Metabolites"
+                        id="metabolites"
+                        name="repo"
                       />
                       <label class="form-check-label" for="Metabolites">
                         Metabolites
@@ -411,123 +441,104 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row" id="biosample_status"></div>
-                  <div class="row"></div>
-                  <div class="row"></div>
-                </div>
-                <div class="col">
-                  <div class="row">BioSamples</div>
-                  <div class="row">ENA</div>
-                  <div class="row">Metabolites</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      download updated JSON
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      onclick="submit('metabolights')"
-                    >
-                      Submit
-                    </button>
-                  </div>
-                </div>
               </div>
-              <table
-                id="validate_table"
-                class="table table-bordered table-hover"
-              ></table>
             </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                download updated JSON
-              </button>
-              <button type="button" class="btn btn-primary" id="submit">
-                Submit
-              </button>
-              <script type="module">
-                import { Broker } from "./js/broker/main.js";
+            <table
+              id="validate_table"
+              class="table table-bordered table-hover"
+            ></table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              download updated JSON
+            </button>
+            <!-- <button
+              type="button"
+              class="btn btn-primary"
+              onclick="var checkedBoxes = document.querySelectorAll('input[name=repo]:checked');submitAll(checkedBoxes)"
+            >
+              Submit
+            </button> -->
+            <button type="button" class="btn btn-primary" id="submit">
+              Submit
+            </button>
+            <script type="module">
+              import { Broker } from "./js/broker/main.js";
 
-                const broker = new Broker();
-                const submit = document.querySelector("#submit");
-                submit.addEventListener("click", () => {
-                  broker.submit(input_json);
-                });
-              </script>
-            </div>
+              const broker = new Broker();
+              const submit = document.querySelector("#submit");
+              submit.addEventListener("click", () => {
+                broker.submit(input_json);
+              });
+            </script>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Button trigger modal -->
-      <button
-        type="button"
-        class="d-none btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#map_vali_modal"
-        id="m_v_modal"
-      >
-        Launch check modal
-      </button>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="d-none btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#map_vali_modal"
+      id="m_v_modal"
+    >
+      Launch check modal
+    </button>
 
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="map_vali_modal"
-        tabindex="-1"
-        data-bs-backdrop="static"
-        aria-labelledby="map_vali_modal_label"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="map_vali_modal_label">
-                Upload to repos
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <span id="init_word"> </span>
-              <br />
-              <span id="mandatory_n"></span> mandatory term(s),<br />
-              <span id="recommended_n"></span> recommended term(s),<br />
-              <span id="optional_n"></span> optional term(s).<br />
-              <table
-                id="validate_table"
-                class="table table-bordered table-hover"
-              ></table>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                download updated ISA-JSON
-              </button>
-              <button
-                type="button"
-                class="btn btn-primary"
-                onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);"
-              >
-                convert
-              </button>
-            </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="map_vali_modal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+      aria-labelledby="map_vali_modal_label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="map_vali_modal_label">
+              Upload to repos
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span id="init_word"> </span>
+            <br />
+            <span id="mandatory_n"></span> mandatory term(s),<br />
+            <span id="recommended_n"></span> recommended term(s),<br />
+            <span id="optional_n"></span> optional term(s).<br />
+            <table
+              id="validate_table"
+              class="table table-bordered table-hover"
+            ></table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              download updated ISA-JSON
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);"
+            >
+              convert
+            </button>
           </div>
         </div>
       </div>
