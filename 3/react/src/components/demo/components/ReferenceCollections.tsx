@@ -36,8 +36,6 @@ const ReferenceCollections = (props: Props) => {
                                                 return (
                                                     <Row className="h-100">
                                                         <Col className="h-100 d-flex flex-column">
-                                                            <p className="fs-3"> {organism.organismID} </p>
-
                                                             {/* Render the different occurrences with their media */}
                                                             <div className="flex-grow-1 overflow-hidden">
                                                                 {organism.occurrences?.map((occurrence) => {

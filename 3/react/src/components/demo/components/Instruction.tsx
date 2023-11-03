@@ -4,14 +4,13 @@ import { Row, Col } from 'react-bootstrap';
 
 const Instruction = () => {
     return (
-        <Row>
-            <Col>
-                <div className="bgc-secondary px-4 py-3">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <Row className="h-100">
+            <Col className="h-100">
+                <div className="bgc-secondary px-4 py-3 h-100">
+                    <p className="fs-4">
+                        <span className="fw-lightBold">The demo:</span> select a reference collecton from the list.
+                        It will display the metadata and all of the occurrences, with attached media, that can
+                        be used for referencing.
                     </p>
                 </div>
             </Col>
