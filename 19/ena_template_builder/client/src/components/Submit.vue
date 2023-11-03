@@ -1,6 +1,11 @@
 <template>
   <h1>Review and submit</h1>
-  <button @click="submitForm">Submit</button>
+  <p>
+    After submission, your submitted metadata will be written to tabular output
+    files which will be available in your Galaxy history after the tool
+    terminates (this may take up to 10 seconds).
+  </p>
+  <button class="btn btn-primary" @click="submitForm">Submit</button>
 </template>
 
 <script>
