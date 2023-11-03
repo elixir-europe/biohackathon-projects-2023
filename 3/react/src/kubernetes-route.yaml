@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: biohackathonVirtualReferenceCollection
+  name: biohackathon_virtual_reference_collection
 spec:
   selector:
-    app: biohackathonVirtualReferenceCollection
+    app: biohackathon_virtual_reference_collection
   ports:
     - protocol: TCP
       port: 3000
@@ -12,7 +12,7 @@ spec:
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: biohackathonVirtualReferenceCollection-route
+  name: biohackathon_virtual_reference_collection-route
   namespace: default
 spec:
   entryPoints:
@@ -21,6 +21,6 @@ spec:
     - match: Host(`dev.dissco.tech`)
       kind: Rule
       services:
-        - name: biohackathonVirtualReferenceCollection
+        - name: biohackathon_virtual_reference_collection
           namespace: default
           port: 3000

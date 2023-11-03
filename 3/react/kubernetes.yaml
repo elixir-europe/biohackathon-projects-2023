@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: biohackathonVirtualReferenceCollection
+  name: biohackathon_virtual_reference_collection
   labels:
-    app: biohackathonVirtualReferenceCollection
+    app: biohackathon_virtual_reference_collection
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: biohackathonVirtualReferenceCollection
+      app: biohackathon_virtual_reference_collection
   template:
     metadata:
       labels:
-        app: biohackathonVirtualReferenceCollection
+        app: biohackathon_virtual_reference_collection
     spec:
       containers:
-        - name: biohackathonVirtualReferenceCollection
-          image: public.ecr.aws/dissco/biohackathonVirtualReferenceCollection:latest
+        - name: biohackathon_virtual_reference_collection
+          image: public.ecr.aws/dissco/biohackathon_virtual_reference_collection:latest
           ports:
             - containerPort: 3000
       restartPolicy: Always
