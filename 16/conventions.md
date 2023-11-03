@@ -1,4 +1,6 @@
-# Naming and Annotation Conventions for Tools in the Galaxy Imaging Community
+# Naming and Annotation Conventions for Tools in the Image Community in Galaxy*
+
+*) formerly known as the Galaxy Imaging Community
 
 We acknowledge the existence of the [IUC recommendations for tool names](https://galaxy-iuc-standards.readthedocs.io/en/latest/best_practices/tool_xml.html#tool-names) but decide for a somewhat different pattern, *(i)* to avoid too long tool names due to the inclusion of tool suits, *(ii)* to comply with the fact that many Galaxy tools in our community are thin tool wrappers around established tools (e.g., tool suites or other Conda packages), while *(iii)* many others implement their main functionality directly within the wrapper.
 
