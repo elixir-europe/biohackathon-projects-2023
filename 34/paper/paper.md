@@ -1,30 +1,101 @@
 ---
-title: 'BioHackEU23 report: Template for the very long title'
-title_short: 'BioHackEU23 #26: unknown chemical substances'
+title: 'BioHackEU23 report: SPLASH - Pushing the boundaries of training development'
+title_short: 'BioHackEU23 #34: SPLASH training development'
 tags:
-  - cheminformatics
-  - PubChem
-  - unknown chemical substances
+  - training
+  - life cycle
+  - development resources
 authors:
-  - name: First Author
+  - name: Alexia Cardona
+    orcid: 0000-0000-0000-0000
     affiliation: 1
-  - name: Last Author
+  - name: Alexander Botzki
     orcid: 0000-0000-0000-0000
     affiliation: 2
+  - name: Mihail Anton
+    orcid: 0000-0000-0000-0000
+    affiliation: 3
+  - name: Jan Slifka
+    orcid: 0000-0000-0000-0000
+    affiliation: 4
+  - name: Loredana La Pera
+    orcid: 0000-0000-0000-0000
+    affiliation: 5
+  - name: Olivier Sand
+    orcid: 0000-0000-0000-0000
+    affiliation: 6
+  - name: Maria Doyle
+    orcid: 0000-0000-0000-0000
+    affiliation: 7
+  - name: Patricia Palagi
+    orcid: 0000-0000-0000-0000
+    affiliation: 8
+  - name: Helena Schnitzer
+    orcid: 0000-0000-0000-0000
+    affiliation: 9
+  - name: Eva Alloza
+    orcid: 0000-0000-0000-0000
+    affiliation: 10
+  - name: Albert Hornos
+    orcid: 0000-0000-0000-0000
+    affiliation: 10
+  - name: Bruna Piereck
+    orcid: 0000-0000-0000-0000
+    affiliation: 2
+  - name: Christof De Bo
+    orcid: 0000-0000-0000-0000
+    affiliation: 2
+  - name: Allegra Via
+    orcid: 0000-0000-0000-0000
+    affiliation: 11
+  - name: Nina Norgren
+    orcid: 0000-0000-0000-0000
+    affiliation: 12
+  - name: Nadja Zlender
+    orcid: 0000-0000-0000-0000
+    affiliation: 13
+  - name: Geert van Geest
+    orcid: 0000-0000-0000-0000
+    affiliation: 8
+  - name: Daniel Wibberg
+    orcid: 0000-0000-0000-0000
+    affiliation: 9
 affiliations:
-  - name: First Affiliation
+  - name: ELIXIR-UK, University of Cambridge
     index: 1
-  - name: Second Affiliation
+  - name: VIB, ELIXIR-BE
     index: 2
+  - name: ELIXIR-SE, Chalmers 
+    index: 3
+  - name: ELIXIR CZ, CTU 
+    index: 4
+  - name: ELIXIR IT, ISS 
+    index: 5
+  - name: ELIXIR-FR 
+    index: 6
+  - name: ELIXIR-IE 
+    index: 7
+  - name: ELIXIR-CH 
+    index: 8
+  - name: ELIXIR-DE, FZJ 
+    index: 9
+  - name: ELIXIR-ES 
+    index: 10
+  - name: ELIXIR-SI 
+    index: 11
+  - name: ELIXIR-DE, FZJ
+    index: 12
+  - name: ELIXIR-SE, Chalmers 
+    index: 13
 date: 8 November 2023
 cito-bibliography: paper.bib
 event: BH23EU
 biohackathon_name: "BioHackathon Europe 2023"
 biohackathon_url:   "https://biohackathon-europe.org/"
 biohackathon_location: "Barcelona, Spain, 2023"
-group: Project 26
+group: Project 34
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackrxiv/publication-template
+git_url: https://github.com/elixir-europe/biohackathon-projects-2023/edit/main/34/paper
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: First Author \emph{et al.}
