@@ -7,7 +7,7 @@ export class EnaBroker {
 
   async submit() {
     return fetch(
-      `${ena.url}?webinUserName=${Config.ena.username}&webinPassword=${Config.ena.password}`,
+      `${Config.ena.url}?webinUserName=${Config.ena.username}&webinPassword=${Config.ena.password}`,
       {
         method: "POST",
         body: this.isaJson,
