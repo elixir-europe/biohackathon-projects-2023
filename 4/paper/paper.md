@@ -44,7 +44,7 @@ Short-term, the Project aimed to deliver a draft of defined workflow-level bench
 
 ## Task 1
 
-Vedran to write..
+Vedran (and Felipe) to write..
 
 ### Subsection level 3
 
@@ -72,7 +72,7 @@ The level 1 benchmarks are usually straightforward, such as checking that Format
 
 The level 2 benchmarks range from the straightforward, such as Format detection determining the correct format or Aggregation output identical to a file provided by the user, to the hard, such as data anonymization [operation:3283], the benchmarking of which has itself been the topic of several recent publications [@Prasser:2014][@Pilan:2022].
 
-To inform discussions, all subclasses Spectral analysis [operation:2945] and Genetic variation analysis [operation:3197], both subclasses of Analysis [operation:2945], and Data handling [operation:2409], in total 28 specific operations in mass spectrometry/proteomics, genomics and general data handling. While some operations, such as Spectrum calculation [operation:3860] and Mass spectra calibration [operation:3627] have unique benchmarks (residual mass measurement error and spectral accuracy respectively), several benchmarks are shared across many operations. Any operation that is expected to output an identifier of a format, gene or protein sequence, or ontology class have the same generic benchmarks, namely whether the output contains an identifier of the correct type (level 1) or the correct identifier (level 2). Similarly, accuracy (fraction correct calls) is a generic benchmark for any operation identifying natural products or peptides from mass spectra, or any type of genomic variants from sequence reads. In situations where the positives and negatives are highly imbalanced, metrics such as the Matthew's correlation coefficient [REF], can be computed from the same information (true and false positives and negatives).
+To inform discussions, all subclasses Spectral analysis [operation:2945] and Genetic variation analysis [operation:3197], both subclasses of Analysis [operation:2945], and Data handling [operation:2409], in total 28 specific operations in mass spectrometry/proteomics, genomics and general data handling. While some operations, such as Spectrum calculation [operation:3860] and Mass spectra calibration [operation:3627] have unique benchmarks (residual mass measurement error and spectral accuracy respectively), several benchmarks are shared across many operations. Any operation that is expected to output an identifier of a format, gene or protein sequence, or ontology class have the same generic benchmarks, namely whether the output contains an identifier of the correct type (level 1) or the correct identifier (level 2). Similarly, accuracy (fraction correct calls) is a generic benchmark for any operation identifying natural products or peptides from mass spectra, or any type of genomic variants from sequence reads. In situations where the positives and negatives are highly imbalanced, metrics such as the Matthew's correlation coefficient [@Matthews:1975], can be computed from the same information (true and false positives and negatives).
 
 Though preliminary, these results allow us to hypothesize (Figure 2) that the number of generic benchmarks at these levels of the EDAM ontology is an order of magnitude smaller than the number of operations. For the Workflomics project, such mappings between EDAM operations and computable benchmarks are directly useful in benchmarking of automatically generated workflows.
 
@@ -101,9 +101,9 @@ Feel free to use numbered lists or bullet points as you need.
 * Item 2
 
 
-# Discussion and/or Conclusion
+# Conclusion
 
-We recommend to include some discussion or conclusion about your work. Feel free to modify the section title as it fits better to your manuscript.
+Some conclusions here, as the discussion is embedded in the results above.
 
 
 # Future work
