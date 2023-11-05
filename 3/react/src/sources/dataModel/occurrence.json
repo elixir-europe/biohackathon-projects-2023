@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Occurrence",
+    "description": "An existence of an organism in a particular place at a particular time",
+    "properties": {
+        "occurrenceID": {
+            "type": "string",
+            "title": "Occurrence Identifier",
+            "description": "A universally unique identifier for the occurrence"
+        },
+        "media": {
+            "type": "array",
+            "items": {
+                "$ref": "media.json"
+            }
+        }
+    },
+    "required": [
+        "occurrenceID"
+    ]
+}

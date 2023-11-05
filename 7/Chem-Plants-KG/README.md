@@ -17,7 +17,7 @@ Available data dumps:
 | MetaNetX     | Platform for genome annotation and large-scale metabolic network analysis | https://biohack2023/metanetx     | [metanetx.ttl](metanetx.ttl)         |
 | nmrXiv       | NMR spectroscopy data repository                                          | https://biohack2023/nmrxiv       | [nmrxiv.ttl](nmrxiv.ttl)             |
 | WikiPathways | Platform for biological pathways                                          | https://biohack2023/wikipathways | [wikipathways.ttl](wikipathways.ttl) |
-| Sabio-RK | TBA                                         | https://biohack2023/sabio-rk | [sabio-rk.ttl](sabio-rk.ttl) |
+| Sabio-RK | Biochemical Reaction Kinetics Database | https://biohack2023/sabio-rk | [sabio-rk.ttl](sabio-rk.ttl) |
 
 A public instance of GraphDB with the Chem and Plants KG is available at knowledge.ipk-gatersleben.de (demo/demo).
 

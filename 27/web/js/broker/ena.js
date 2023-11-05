@@ -1,4 +1,4 @@
-import { ena as Config } from "./config.json";
+import Config from "./config.json" assert { type: "json" };
 
 export class EnaBroker {
   constructor(isaJson) {
@@ -7,13 +7,19 @@ export class EnaBroker {
 
   async submit() {
     return fetch(
-      `${Config.url}?webinUserName=${Config.username}&webinPassword=${Config.password}`,
+      `${Config.ena.url}?webinUserName=${Config.ena.username}&webinPassword=${Config.ena.password}`,
       {
         method: "POST",
         body: this.isaJson,
+        headers: {
+          "Content-Type": "application/json",
+        },
       }
     );
   }
 
-  mapToPathIsaJson(reciept) {}
+  mapToPathIsaJson(reciept) {
+    // todo: map the reciept to the json linked here: https://gist.github.com/apriltuesday/f31df010acbeaa695dd0af4a8b8fe608#response
+    return reciept;
+  }
 }

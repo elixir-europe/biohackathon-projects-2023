@@ -1,0 +1,105 @@
+ONTOLOGY SOURCE REFERENCE												
+Term Source Name	EFO											
+Term Source File	http://www.ebi.ac.uk/efo/											
+Term Source Version												
+Term Source Description												
+INVESTIGATION												
+Investigation Identifier	i_E-MTAB-11006											
+Investigation Title	Single-Cell Transcriptomics Sheds Light on the Identity and Metabolism of Developing Arabidopsis Leaf Cells											
+Investigation Description	Being the main photosynthetic instrument of vascular plants, leaves are crucial and complex plant organs. To establish the single-cell transcriptomic landscape of these different leaf tissues, we performed high-throughput transcriptome sequencing of individual cells isolated from young leaves of Arabidopsis seedlings grown in two different environmental conditions. The detection of ~19,000 different transcripts in over 1,800 high-quality leaf cells revealed 14 cell populations composing the young, differentiating leaf.											
+Investigation Submission Date												
+Investigation Public Release Date	2021-10-15											
+INVESTIGATION PUBLICATIONS												
+Investigation PubMed ID	34687312											
+Investigation Publication DOI	10.1093/plphys/kiab489											
+Investigation Publication Author List	Rubén Tenorio Berrío, Kevin Verstaen, Niels Vandamme, Julie Pevernagie, Ignacio Achon, Julie Van Duyse, Gert Van Isterdael, Yvan Saeys, Lieven De Veylder, Dirk Inzé and Marieke Dubois											
+Investigation Publication Title	Single-Cell Transcriptomics Sheds Light on the Identity and Metabolism of Developing Arabidopsis Leaf Cells											
+Investigation Publication Status	published											
+Investigation Publication Status Term Accession Number	EFO:0001796											
+Investigation Publication Status Term Source REF	EFO											
+INVESTIGATION CONTACTS												
+Investigation Person Last Name	submission	Tenorio Berrío	Verstaen	Vandamme	Pevernagie	Achon	Van Duyse	Van Isterdael	Saeys	De Veylder	Inzé	Dubois
+Investigation Person First Name	Plant Systems Biology data	Rubén 	Kevin	Niels 	Julie	Ignacio 	Julie	Gert 	Yvan 	Lieven 	Dirk 	Marieke
+Investigation Person Mid Initials												
+Investigation Person Email	datasub@psb.ugent.be	ruten@psb.ugent.be	kevin.verstaen@irc.vib-ugent.be	Niels.vandamme@irc.vib-ugent.be	juper@psb.ugent.be	igach@psb.ugent.be	julie.vanduyse@irc.vib-ugent.be	gert.vanisterdael@irc.vib-ugent.be	Yvan.saeys@irc.vib-ugent.be	livey@psb.ugent.be	diinz@psb.ugent.be	madub@psb.ugent.be
+Investigation Person Phone												
+Investigation Person Fax												
+Investigation Person Address	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium
+Investigation Person Affiliation	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium
+Investigation Person Roles	submitter	data analyst;experiment performer	data analyst;data coder	data analyst	data coder	experiment performer	experiment performer	experiment performer	investigator	investigator	funder;investigator	data analyst;experiment performer
+Investigation Person Roles Term Accession Number												
+Investigation Person Roles Term Source REF												
+Comment[MAGE-TAB Version]	1.1											
+STUDY												
+Study Identifier	s_E-MTAB-11006											
+Study Title	Single-Cell Transcriptomics Sheds Light on the Identity and Metabolism of Developing Arabidopsis Leaf Cells											
+Study Description	Being the main photosynthetic instrument of vascular plants, leaves are crucial and complex plant organs. To establish the single-cell transcriptomic landscape of these different leaf tissues, we performed high-throughput transcriptome sequencing of individual cells isolated from young leaves of Arabidopsis seedlings grown in two different environmental conditions. The detection of ~19,000 different transcripts in over 1,800 high-quality leaf cells revealed 14 cell populations composing the young, differentiating leaf.											
+Study Submission Date												
+Study Public Release Date	2021-10-15											
+Study File Name	studies/s_E-MTAB-11006/isa.study.xlsx											
+Study Design Type	growth condition design											
+Study Design Type Term Accession Number	EFO:0001759											
+Study Design Type Term Source REF	EFO											
+STUDY PUBLICATIONS												
+Study PubMed ID	34687312											
+Study Publication DOI	10.1093/plphys/kiab489											
+Study Publication Author List	Rubén Tenorio Berrío, Kevin Verstaen, Niels Vandamme, Julie Pevernagie, Ignacio Achon, Julie Van Duyse, Gert Van Isterdael, Yvan Saeys, Lieven De Veylder, Dirk Inzé and Marieke Dubois											
+Study Publication Title	Single-Cell Transcriptomics Sheds Light on the Identity and Metabolism of Developing Arabidopsis Leaf Cells											
+Study Publication Status	published											
+Study Publication Status Term Accession Number	EFO:0001796											
+Study Publication Status Term Source REF	EFO											
+STUDY FACTORS												
+Study Factor Name	environmental stress											
+Study Factor Type	environmental stress											
+Study Factor Type Term Accession Number												
+Study Factor Type Term Source REF												
+STUDY ASSAYS												
+Study Assay Measurement Type												
+Study Assay Measurement Type Term Accession Number												
+Study Assay Measurement Type Term Source REF												
+Study Assay Technology Type												
+Study Assay Technology Type Term Accession Number												
+Study Assay Technology Type Term Source REF												
+Study Assay Technology Platform					Illumina NovaSeq 6000							
+Study Assay File Name												
+STUDY PROTOCOLS												
+Study Protocol Name	P-MTAB-114903	P-MTAB-114904	P-MTAB-114905	P-MTAB-114906	P-MTAB-114907	P-MTAB-114908	P-MTAB-114909					
+Study Protocol Type	sample collection protocol	growth protocol	nucleic acid extraction protocol	nucleic acid library construction protocol	nucleic acid sequencing protocol	normalization data transformation protocol	high throughput sequence alignment protocol					
+Study Protocol Type Term Accession Number	EFO_0005518	EFO_0003789	EFO_0002944	EFO_0004184	EFO_0004170	EFO_0003816	EFO_0004917					
+Study Protocol Type Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO	EFO					
+Study Protocol Description	Protoplasting protocol was adapted from (Ryu et al., 2019). Briefly, the third leaf of 40 plants per sample was harvested, chopped and incubated in 2 ml enzyme solution (0.4 M mannitol, 10 mM CaCl2, 20 mM MES, 20 mM KCl, 2% (wt/vol) cellulase and 0.5% (wt/vol) macero enzyme) constantly shaking for 30 min at room temperature. After a 7-min centrifugation at 100 g, the pellet was resuspended in 1 ml washing solution (0.4 M mannitol, 10 mM CaCl2, 20 mM MES and 20 mM KCl). Resuspended cells were filtered through a 50-μm cell strainer, which was washed with 0.5 ml of washing solution. Cells were sorted on the Melody FACS, where gates to sort out debris of dead cells were pre-defined via a test sample that was DAPI-stained (viable cell ratio 31%, prior to sorting). Subsequently, 100,000 cells per sample were sorted in less than 10 minutes.	Arabidopsis Col-0 was grown under a long-day regime (16h-light and 8h-dark, intensity 110–120 μmol m−2s−1) at 21 °C on the WIWAM platform (http://www.wiwam.be). Five seedlings were grown per pot in order to obtain 40 seedlings per sample. The seeds were sown in 85±1 g of Saniflor compost (Van Isreal N.V., Geraardsbergen, Belgium) with an average absolute water content of 70%. Plants were watered daily until 8 days after stratification (DAS) with a well‐watered regime of soil relative water content (RWC) 69% (2.2 gwater/gsoil). At 9 DAS, half of the pots (randomized) were not watered until harvest (14 DAS) while the other half kept the well-watered regime.	Single-cell suspensions were loaded on a GemCode Chromium Instrument (10X Genomics) to generate single-cell gel beads-in-emulsion (GEMs) using the Chromium Single Cell 3’ Gel Bead and Library Kit, version 3 (10X Genomics, Cat. 1000075) and the Chromium i7 Multiplex Kit (10x Genomics, Cat. 120262) according to the manufacturer’s instructions. In brief, reverse-transcription was performed in a 96-deep-well reaction module at 53°C for 45 min, 85°C for 5 min and ending at 4°C. Next, GEMs were broken and cDNA was cleaned up with DynaBeads MyOne Silane Beads (Thermo Fisher Scientific, Cat. 37002D) and SPRIselect Reagent Kit (Beckman Coulter, No. B23318). Full-length, barcoded cDNA was amplified at 98°C for 3 min, 12 cycles at 98°C for 15 s, 67°C for 20 s and 72°C for 1 min, 1 cycle at 72°C for 1 min and ending at 4°C. 	Illumina-ready sequencing libraries were prepared after clean-up with the SPRIselect Reagent Kit and enzymatic fragmentation via end-repair, A-tailing, adapter ligation, post-ligation SPRIselect clean-up and sample index PCR using the Chromium Single Cell 3’ Library Kit (10X Genomics, Cat 1000078). The cDNA content of pre-fragmentation and post-sample index PCR samples was analyzed using the 2100 BioAnalyzer (Agilent). 	Sequencing libraries were loaded on an Illumina NovaSeq flow cell performed at the VIB Nucleomics Core (VIB, Leuven, Belgium) with sequencing settings according to the recommendations of 10x Genomics for 3’ gene expression. The read lengths were the 10X recommendations for v3 chemistry: I1 = 8; R1 = 28; R2 = 91	Normalization, detection of high variable genes, scaling, clustering and dimensionality reduction were performed using Seurat (top 30 principal components). The absence of a strong doublet-effect on the clustering was verified. After validating the biological meaning of the clusters (i.e. marker genes expression did not indicate any overclustering), a final cluster resolution to assess the high diversity of cell types was set at 0.9. The vascular tissue, composed of multiple small populations, required subsequent manual subdivision based on marker gene expression. 	The Cell Ranger suite (10x Genomics, version 3.0.2) was used to perform sample demultiplexing and to generate FASTQ files for read 1, read 2 and the i7 sample index for the libraries. Read 2 of the gene expression libraries was mapped to the Arabidopsis thaliana reference genome (TAIR10.40) using STAR. Cell calling and removal of empty droplets was performed by applying the CB2 algorithm (Ni et al., 2020) to the raw feature cell barcode matrices generated by Cellranger count software. This results in the filtered digital gene expression matrices that were subsequently processed and filtered using Seurat (version 3.2.3 with R version 3.6.0) (Stuart et al., 2019). Low-abundance genes were removed by removing all genes that were not expressed in at least three cells and only protoplasts in which at least 200 genes were detected were retained. Finally, cells with a UMI count lower than 500 counts were removed.					
+Study Protocol URI												
+Study Protocol Version												
+Study Protocol Parameters Name												
+Study Protocol Parameters Term Accession Number												
+Study Protocol Parameters Term Source REF												
+Study Protocol Components Name												
+Study Protocol Components Term Accession Number												
+Study Protocol Componente Term Source REF												
+STUDY CONTACTS												
+Study Person Last Name	submission	Tenorio Berrío	Verstaen	Vandamme	Pevernagie	Achon	Van Duyse	Van Isterdael	Saeys	De Veylder	Inzé	Dubois
+Study Person First Name	Plant Systems Biology data	Rubén 	Kevin	Niels 	Julie	Ignacio 	Julie	Gert 	Yvan 	Lieven 	Dirk 	Marieke
+Study Person Mid Initials												
+Study Person Email	datasub@psb.ugent.be	ruten@psb.ugent.be	kevin.verstaen@irc.vib-ugent.be	Niels.vandamme@irc.vib-ugent.be	juper@psb.ugent.be	igach@psb.ugent.be	julie.vanduyse@irc.vib-ugent.be	gert.vanisterdael@irc.vib-ugent.be	Yvan.saeys@irc.vib-ugent.be	livey@psb.ugent.be	diinz@psb.ugent.be	madub@psb.ugent.be
+Study Person Phone												
+Study Person Fax												
+Study Person Address	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium	Technologiepark 71, 9052 Gent Belgium
+Study Person Affiliation	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Applied Mathematics, Computer Science and Statistics, Ghent University, Gent, Belgium VIB Center for Inflammation Research, VIB, Gent, Belgium	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium 	Department of Plant Biotechnology and Bioinformatics, Ghent University, Gent, Belgium  VIB Center for Plant Systems Biology, VIB, Gent, Belgium
+Study Person Roles	submitter	data analyst;experiment performer	data analyst;data coder	data analyst	data coder	experiment performer	experiment performer	experiment performer	investigator	investigator	funder;investigator	data analyst;experiment performer
+Study Person Roles Term Accession Number												
+Study Person Roles Term Source REF												
+Comment[Submitted Name]	Single-Cell Transcriptomics Sheds Light on the Identity and Metabolism of Developing Arabidopsis Leaf Cells											
+Comment[Date of Experiment]	2020-01-14											
+Comment[Protocol Software]												
+Comment[AEExperimentType]	RNA-seq of coding RNA from single cells											
+Comment[TemplateType]	Plant - Single-cell sequencing											
+Comment[ArrayExpressAccession]	E-MTAB-11006											
+Comment[SecondaryAccession]	ERP132245											
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR6908266-ERR6908267											
+Comment[SDRF File]	E-MTAB-11006.sdrf.txt											
+Comment[EAExpectedClusters]	11											
+Comment[EAExperimentType]	differential											
+Comment[EAAdditionalAttributes]	ecotype	developmental stage										
+Comment[EACurator]	Natassja Bush											
+Comment[organism]	Arabidopsis thaliana											
+Comment[number of cells]	634											
