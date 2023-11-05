@@ -25,11 +25,18 @@ the project!
 
 ## Lead(s)
 
-David Salgado[^1], Krzysztof Poterlowicz, Michael Baudis
+David Salgado[^1], Krzysztof Poterlowicz, Michael Baudis, Katarzyna Murat
 
-## Additional Information
+## Project Outcomes
 
-Please see the project's emerging **[website](https://cnvar.org/cnv-reference-resources/)** and **[repository](https://github.com/hCNV/cnv-reference-resources)**.
+* Nextflow module to import parsed VCFs into MongoDB
+  * **[MongoDB_importer.py](https://github.com/poterlowicz-lab/BH2023/blob/main/beacon2phenopackets.py)** created
+  * **[Nextflow module](https://github.com/kkamieniecka/modules/tree/beacon2-ri-tools)** under development
+
+
+https://github.com/kkamieniecka/modules/tree/beacon2-ri-tools
+
+Please see the project's emerging **[website](https://cnvar.org/cnv-reference-resources/)** and **[repository](https://github.com/hCNV/cnv-reference-resources)**  and **[google doc](https://docs.google.com/document/d/1nXo5jtzCg5oC0k7r9Jv0QEo-1wJ0BX0iQb3CBMVLUJA/edit)** for detailed outcomes, resources and examples.
 
 [^1]: Involved in the project's design but won't participate at the Biohackaton...
 

@@ -16,6 +16,10 @@ We will focus on selecting use cases where we can validate the results (and trai
 
 ## Lead(s)
 
-Tim Beck, Venkata Satagopam
+Tim Beck, University of Nottingham
+
+Venkata Satagopam, University of Luxembourg
+
+## Participants
 
 

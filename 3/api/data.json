@@ -1,100 +1,1622 @@
 {
-    "1": {
-        "virtualReferenceCollectionMetaData": {
-            "referenceCollectionID": "string",
-            "creator": "string",
-            "maintainer": "string",
-            "copyrightLicense": "string",
-            "copyrightOwner": "string",
-            "title": "string",
-            "description": "string",
-            "area": [
-                "string"
-            ],
-            "includedTaxaDescription": "string",
-            "language": "string",
-            "lastUpdate": "string"
+    "ids": [
+        "bombus1",
+        "bombus212",
+        "bombus312",
+        "bombus2000",
+        "bombus3000",
+        "bombus4000",
+        "bombus5000"
+    ],
+    "data": {
+        "bombus1": {
+            "virtualReferenceCollectionMetaData": {
+                "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus1",
+                "creator": "Jere Kahanpää",
+                "maintainer": "Sofie Meeus",
+                "copyrightLicense": "CC-BY",
+                "copyrightOwner": "Luomus",
+                "title": "European Bombus virtual reference collection, test1",
+                "description": "A test case involving Bombus virtual reference collection data.",
+                "area": [
+                    "Europe"
+                ],
+                "includedTaxaDescription": "Bombus"
+            },
+            "taxa": [
+                {
+                    "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/8c705c57-1b2f-432f-906c-e73be11198e9",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340311",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340311",
+                        "taxonFullName": "Bombus laesus Morawitz, 1875",
+                        "taxonNameAuthor": "Morawitz",
+                        "taxonNameYear": 1875,
+                        "taxonNameBrackets": "False"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus_laesus_ex1",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://www.gbif.org/occurrence/3437225248",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                                            "mediaDataURL": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                            "reviewed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
-        "taxa": [
-            {
-                "taxonID": "string",
-                "taxonValidNameID": "string",
-                "taxonName": {
-                    "taxonNameID": "string",
-                    "taxonFullName": "string",
-                    "taxonNameAuthor": "string",
-                    "taxonNameYear": 1950,
-                    "taxonNameBrackets": "string"
+        "bombus212": {
+            "virtualReferenceCollectionMetaData": {
+                "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus212",
+                "creator": "Jere Kahanpää",
+                "maintainer": "Sofie Meeus",
+                "copyrightLicense": "CC-BY",
+                "copyrightOwner": "Luomus",
+                "title": "European Bombus virtual reference collection, test 2",
+                "description": "A second test case involving Bombus virtual reference collection data: 2 species, each with 1 organism, one with 2 media associated.",
+                "area": [
+                    "Europe"
+                ],
+                "includedTaxaDescription": "Bombus"
+            },
+            "taxa": [
+                {
+                    "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/241aed3e-69ea-46b9-9611-d90901183da6",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340387",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340387",
+                        "taxonFullName": "Bombus veteranus (Fabricius, 1793)",
+                        "taxonNameAuthor": "Fabricius",
+                        "taxonNameYear": 1793,
+                        "taxonNameBrackets": "true"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus_veteranus_ex1",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "http://id.luomus.fi/MY.3991280",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://image.laji.fi/MM.154455/GL.8278_Bombus_veteranus_2.jpg",
+                                            "documentOccurrenceID": "http://id.luomus.fi/MY.3991280",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+                                            "mediaDataURL": "https://image.laji.fi/MM.154455/GL.8278_Bombus_veteranus_2.jpg",
+                                            "reviewed": true
+                                        },
+                                        {
+                                            "mediaID": "https://image.laji.fi/MM.154454/GL.8278_Bombus_veteranus_1.jpg",
+                                            "documentOccurrenceID": "http://id.luomus.fi/MY.3991280",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+                                            "mediaDataURL": "https://image.laji.fi/MM.154454/GL.8278_Bombus_veteranus_1.jpg",
+                                            "reviewed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
-                "organisms": [
-                    {
-                        "organismID": "string",
-                        "occurrences": [
-                            {
-                                "occurrenceID": "string",
-                                "media": [
-                                    {
-                                        "mediaID": "string",
-                                        "documentOccurrenceID": "string",
-                                        "copyrightLicense": "string",
-                                        "mediaDataURL": "string",
-                                        "reviewed": true
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    "2": {
-        "virtualReferenceCollectionMetaData": {
-            "referenceCollectionID": "string",
-            "creator": "string",
-            "maintainer": "string",
-            "copyrightLicense": "string",
-            "copyrightOwner": "string",
-            "title": "string",
-            "description": "string",
-            "area": [
-                "string"
-            ],
-            "includedTaxaDescription": "string",
-            "language": "string",
-            "lastUpdate": "string"
+                {
+                    "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/8c705c57-1b2f-432f-906c-e73be11198e9",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340311",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340311",
+                        "taxonFullName": "Bombus laesus Morawitz, 1875",
+                        "taxonNameAuthor": "Morawitz",
+                        "taxonNameYear": 1875,
+                        "taxonNameBrackets": "false"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus_laesus_ex1",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://www.gbif.org/occurrence/3437225248",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                                            "mediaDataURL": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                            "reviewed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
-        "taxa": [
-            {
-                "taxonID": "string",
-                "taxonValidNameID": "string",
-                "taxonName": {
-                    "taxonNameID": "string",
-                    "taxonFullName": "string",
-                    "taxonNameAuthor": "string",
-                    "taxonNameYear": 1950,
-                    "taxonNameBrackets": "string"
+        "bombus312": {
+            "virtualReferenceCollectionMetaData": {
+                "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus312",
+                "creator": "Jere Kahanpää",
+                "maintainer": "Sofie Meeus",
+                "copyrightLicense": "CC-BY",
+                "copyrightOwner": "Luomus",
+                "title": "European Bombus virtual reference collection, test 312",
+                "description": "A third test case involving Bombus virtual reference collection data. Handling some special case: 1st Taxon has no organisms, 2nd has 2 organisms, one with an occurrence with no media.",
+                "area": [
+                    "Europe"
+                ],
+                "includedTaxaDescription": "Bombus"
+            },
+            "taxa": [
+                {
+                    "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/35f45551-09c1-4711-b747-99a72c8c4814",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340545",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340545",
+                        "taxonFullName": "Bombus niveatus Kriechbaumer, 1870",
+                        "taxonNameAuthor": "Kriechbaumer",
+                        "taxonNameYear": 1870,
+                        "taxonNameBrackets": "false"
+                    },
+                    "organisms": []
                 },
-                "organisms": [
-                    {
-                        "organismID": "string",
-                        "occurrences": [
-                            {
-                                "occurrenceID": "string",
-                                "media": [
-                                    {
-                                        "mediaID": "string",
-                                        "documentOccurrenceID": "string",
-                                        "copyrightLicense": "string",
-                                        "mediaDataURL": "string",
-                                        "reviewed": true
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+                {
+                    "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/20ea3211-9fad-4132-a71b-f98226e71757",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340358",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340358",
+                        "taxonFullName": "Bombus wurflenii Radoszkowski, 1859",
+                        "taxonNameAuthor": "Radoszkowski",
+                        "taxonNameYear": 1859,
+                        "taxonNameBrackets": "false"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "test_organism_with_an_occurrence_with_media",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://www.gbif.org/occurrence/1264847616",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://iiif.mcz.harvard.edu/iiif/3/3780060/full/max/0/default.jpg",
+                                            "documentOccurrenceID": "https://www.gbif.org/occurrence/1264847616",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+                                            "mediaDataURL": "https://iiif.mcz.harvard.edu/iiif/3/3780060/full/max/0/default.jpg",
+                                            "reviewed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "test_organism_with_an_occurrence_without_media",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "dummy_occurrence_id"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/241aed3e-69ea-46b9-9611-d90901183da6",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340387",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340387",
+                        "taxonFullName": "Bombus veteranus (Fabricius, 1793)",
+                        "taxonNameAuthor": "Fabricius",
+                        "taxonNameYear": 1793,
+                        "taxonNameBrackets": "true"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus_veteranus_ex1",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "http://id.luomus.fi/MY.3991280",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://image.laji.fi/MM.154455/GL.8278_Bombus_veteranus_2.jpg",
+                                            "documentOccurrenceID": "http://id.luomus.fi/MY.3991280",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+                                            "mediaDataURL": "https://image.laji.fi/MM.154455/GL.8278_Bombus_veteranus_2.jpg",
+                                            "reviewed": true
+                                        },
+                                        {
+                                            "mediaID": "https://image.laji.fi/MM.154454/GL.8278_Bombus_veteranus_1.jpg",
+                                            "documentOccurrenceID": "http://id.luomus.fi/MY.3991280",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+                                            "mediaDataURL": "https://image.laji.fi/MM.154454/GL.8278_Bombus_veteranus_1.jpg",
+                                            "reviewed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "https://fauna-eu.org/cdm_dataportal/taxon/8c705c57-1b2f-432f-906c-e73be11198e9",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340311",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340311",
+                        "taxonFullName": "Bombus laesus Morawitz, 1875",
+                        "taxonNameAuthor": "Morawitz",
+                        "taxonNameYear": 1875,
+                        "taxonNameBrackets": "false"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus_laesus_ex1",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://www.gbif.org/occurrence/3437225248",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                            "copyrightLicense": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                                            "mediaDataURL": "https://image.laji.fi/MM.249027/GL.8984_Bombus_laesus_f_cotype_1.jpg",
+                                            "reviewed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "bombus2000": {
+            "virtualReferenceCollectionMetaData": {
+                "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus2000",
+                "creator": "Elixir Robot",
+                "maintainer": "Elixir Robot",
+                "copyrightLicense": "CC-BY",
+                "copyrightOwner": "ELIXIR",
+                "title": "European Bombus virtual reference collection, test 2000",
+                "description": "A test case involving Bombus virtual reference collection data",
+                "area": [
+                    "Europe"
+                ],
+                "includedTaxaDescription": "Bombus"
+            },
+            "taxa": [
+                {
+                    "taxonID": "gbif:1340470",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340470",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340470",
+                        "taxonFullName": "Bombus appositus Cresson, 1879",
+                        "taxonNameAuthor": "Cresson, 1879",
+                        "taxonNameYear": 1879,
+                        "taxonNameBrackets": "Bombus appositus Cresson, 1879"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus appositus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4133654525",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/274505975/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/274505975/original.jpg",
+                                            "owner": "mpchady",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4121061641",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/275512632/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/275512632/original.jpeg",
+                                            "owner": "Daryl Nolan",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/275512756/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/275512756/original.jpeg",
+                                            "owner": "Daryl Nolan",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus appositus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4133654525",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/274505975/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/274505975/original.jpg",
+                                            "owner": "mpchady",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4121061641",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/275512632/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/275512632/original.jpeg",
+                                            "owner": "Daryl Nolan",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/275512756/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/275512756/original.jpeg",
+                                            "owner": "Daryl Nolan",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340541",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340541",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340541",
+                        "taxonFullName": "Bombus ardens Smith, 1879",
+                        "taxonNameAuthor": "Smith, 1879",
+                        "taxonNameYear": 1879,
+                        "taxonNameBrackets": "Bombus ardens Smith, 1879"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus ardens",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4096572248",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/269742438/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/269742438/original.jpg",
+                                            "owner": "eggseries",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4111909319",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/276089667/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/276089667/original.jpg",
+                                            "owner": "Kirill Kryukov",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/276089717/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/276089717/original.jpg",
+                                            "owner": "Kirill Kryukov",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus ardens",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4096572248",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/269742438/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/269742438/original.jpg",
+                                            "owner": "eggseries",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4111909319",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/276089667/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/276089667/original.jpg",
+                                            "owner": "Kirill Kryukov",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/276089717/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/276089717/original.jpg",
+                                            "owner": "Kirill Kryukov",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340531",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340531",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340531",
+                        "taxonFullName": "Bombus argillaceus (Scopoli, 1763)",
+                        "taxonNameAuthor": "(Scopoli, 1763) ",
+                        "taxonNameYear": 1763,
+                        "taxonNameBrackets": "Bombus argillaceus (Scopoli, 1763)"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus argillaceus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4062743847",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/259979390/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/259979390/original.jpeg",
+                                            "owner": "Lynette",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/259979375/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/259979375/original.jpeg",
+                                            "owner": "Lynette",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4075675926",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/260348757/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/260348757/original.jpeg",
+                                            "owner": "Anton Gjeldum",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/260372324/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/260372324/original.jpeg",
+                                            "owner": "Anton Gjeldum",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus argillaceus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4062743847",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/259979390/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/259979390/original.jpeg",
+                                            "owner": "Lynette",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/259979375/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/259979375/original.jpeg",
+                                            "owner": "Lynette",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4075675926",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/260348757/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/260348757/original.jpeg",
+                                            "owner": "Anton Gjeldum",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/260372324/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/260372324/original.jpeg",
+                                            "owner": "Anton Gjeldum",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340522",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340522",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340522",
+                        "taxonFullName": "Bombus armeniacus Radoszkowski, 1877",
+                        "taxonNameAuthor": "Radoszkowski, 1877",
+                        "taxonNameYear": 1877,
+                        "taxonNameBrackets": "Bombus armeniacus Radoszkowski, 1877"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus armeniacus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4126796996",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/284025774/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/284025774/original.jpeg",
+                                            "owner": "verona111",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/284025746/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/284025746/original.jpeg",
+                                            "owner": "verona111",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4127012576",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/284057277/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/284057277/original.jpg",
+                                            "owner": "Roman",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus armeniacus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4126796996",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/284025774/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/284025774/original.jpeg",
+                                            "owner": "verona111",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/284025746/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/284025746/original.jpeg",
+                                            "owner": "verona111",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4127012576",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/284057277/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/284057277/original.jpg",
+                                            "owner": "Roman",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340457",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340457",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340457",
+                        "taxonFullName": "Bombus ashtoni (Cresson, 1864)",
+                        "taxonNameAuthor": "(Cresson, 1864) ",
+                        "taxonNameYear": 1864,
+                        "taxonNameBrackets": "Bombus ashtoni (Cresson, 1864)"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus ashtoni",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4413618798",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/278859056/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/278859056/original.jpg",
+                                            "owner": "JMuzz",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/278859082/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/278859082/original.jpg",
+                                            "owner": "JMuzz",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4133887584",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/279362990/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/279362990/original.jpg",
+                                            "owner": "galliumsphinx",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/279362949/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/279362949/original.jpg",
+                                            "owner": "galliumsphinx",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus ashtoni",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4413618798",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/278859056/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/278859056/original.jpg",
+                                            "owner": "JMuzz",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/278859082/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/278859082/original.jpg",
+                                            "owner": "JMuzz",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4133887584",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/279362990/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/279362990/original.jpg",
+                                            "owner": "galliumsphinx",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/279362949/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/279362949/original.jpg",
+                                            "owner": "galliumsphinx",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "bombus3000": {
+            "virtualReferenceCollectionMetaData": {
+                "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus3000",
+                "creator": "Elixir Robot",
+                "maintainer": "Elixir Robot",
+                "copyrightLicense": "CC-BY",
+                "copyrightOwner": "ELIXIR",
+                "title": "European Bombus virtual reference collection, test 3000",
+                "description": "A test case involving Bombus virtual reference collection data",
+                "area": [
+                    "Europe"
+                ],
+                "includedTaxaDescription": "Bombus"
+            },
+            "taxa": [
+                {
+                    "taxonID": "gbif:1340512",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340512",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340512",
+                        "taxonFullName": "Bombus asiaticus Morawitz, 1875",
+                        "taxonNameAuthor": "Morawitz, 1875",
+                        "taxonNameYear": 1875,
+                        "taxonNameBrackets": "Bombus asiaticus Morawitz, 1875"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus asiaticus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4405050953",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/313961941/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/313961941/original.jpg",
+                                            "owner": "\u0418\u043b\u044c\u044f \u0421\u0443\u0445\u043e\u0432",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/313961929/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/313961929/original.jpg",
+                                            "owner": "\u0418\u043b\u044c\u044f \u0421\u0443\u0445\u043e\u0432",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4405161146",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/313962006/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/313962006/original.jpg",
+                                            "owner": "\u0418\u043b\u044c\u044f \u0421\u0443\u0445\u043e\u0432",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/313962039/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/313962039/original.jpg",
+                                            "owner": "\u0418\u043b\u044c\u044f \u0421\u0443\u0445\u043e\u0432",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus asiaticus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4405050953",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/313961941/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/313961941/original.jpg",
+                                            "owner": "\u0418\u043b\u044c\u044f \u0421\u0443\u0445\u043e\u0432",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/313961929/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/313961929/original.jpg",
+                                            "owner": "\u0418\u043b\u044c\u044f \u0421\u0443\u0445\u043e\u0432",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4405161146",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/313962006/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/313962006/original.jpg",
+                                            "owner": "\u0418\u043b\u044c\u044f \u0421\u0443\u0445\u043e\u0432",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/313962039/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/313962039/original.jpg",
+                                            "owner": "\u0418\u043b\u044c\u044f \u0421\u0443\u0445\u043e\u0432",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340490",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340490",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340490",
+                        "taxonFullName": "Bombus atripes Smith, 1852",
+                        "taxonNameAuthor": "Smith, 1852",
+                        "taxonNameYear": 1852,
+                        "taxonNameBrackets": "Bombus atripes Smith, 1852"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus atripes",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4075783559",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/262971143/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/262971143/original.jpeg",
+                                            "owner": "\u6768\u6cfd\u67f3",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/262971106/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/262971106/original.jpeg",
+                                            "owner": "\u6768\u6cfd\u67f3",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4405003460",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/264782740/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/264782740/original.jpg",
+                                            "owner": "\u866b\u866b",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus atripes",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4075783559",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/262971143/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/262971143/original.jpeg",
+                                            "owner": "\u6768\u6cfd\u67f3",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/262971106/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/262971106/original.jpeg",
+                                            "owner": "\u6768\u6cfd\u67f3",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4405003460",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/264782740/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/264782740/original.jpg",
+                                            "owner": "\u866b\u866b",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340446",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340446",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340446",
+                        "taxonFullName": "Bombus auricomus (Robertson, 1903)",
+                        "taxonNameAuthor": "(Robertson, 1903) ",
+                        "taxonNameYear": 1903,
+                        "taxonNameBrackets": "Bombus auricomus (Robertson, 1903)"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus auricomus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4076340308",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/262478427/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/262478427/original.jpeg",
+                                            "owner": "beezneez",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/262478404/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/262478404/original.jpeg",
+                                            "owner": "beezneez",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4075988839",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/263416563/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/263416563/original.jpg",
+                                            "owner": "her_sinking_sun",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus auricomus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4076340308",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/262478427/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/262478427/original.jpeg",
+                                            "owner": "beezneez",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/262478404/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/262478404/original.jpeg",
+                                            "owner": "beezneez",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4075988839",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/263416563/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/263416563/original.jpg",
+                                            "owner": "her_sinking_sun",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "bombus4000": {
+            "virtualReferenceCollectionMetaData": {
+                "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus4000",
+                "creator": "Elixir Robot",
+                "maintainer": "Elixir Robot",
+                "copyrightLicense": "CC-BY",
+                "copyrightOwner": "ELIXIR",
+                "title": "European Bombus virtual reference collection, test 4000",
+                "description": "A test case involving Bombus virtual reference collection data",
+                "area": [
+                    "Europe"
+                ],
+                "includedTaxaDescription": "Bombus"
+            },
+            "taxa": [
+                {
+                    "taxonID": "gbif:1340445",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340445",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340445",
+                        "taxonFullName": "Bombus baeri Vachal, 1904",
+                        "taxonNameAuthor": "Vachal, 1904",
+                        "taxonNameYear": 1904,
+                        "taxonNameBrackets": "Bombus baeri Vachal, 1904"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus baeri",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/3468678372",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/126037896/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/126037896/original.jpeg",
+                                            "owner": "Cristhian Apaza Mamani",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/2850938340",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927532/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927532/original.jpeg",
+                                            "owner": "Leonel Roget",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927539/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927539/original.jpeg",
+                                            "owner": "Leonel Roget",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus baeri",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/3468678372",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/126037896/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/126037896/original.jpeg",
+                                            "owner": "Cristhian Apaza Mamani",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/2850938340",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927532/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927532/original.jpeg",
+                                            "owner": "Leonel Roget",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927539/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/22927539/original.jpeg",
+                                            "owner": "Leonel Roget",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340403",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340403",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340403",
+                        "taxonFullName": "Bombus balteatus Dahlbom, 1832",
+                        "taxonNameAuthor": "Dahlbom, 1832",
+                        "taxonNameYear": 1832,
+                        "taxonNameBrackets": "Bombus balteatus Dahlbom, 1832"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus balteatus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4131877920",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://www.artsobservasjoner.no/MediaLibrary/2023/5/6f8eae2f-a9a6-43f4-8cb7-09ff053d378f_image.jpg",
+                                            "copyrightLicense": "\u00a9 All rights reserved",
+                                            "mediaDataURL": "https://www.artsobservasjoner.no/MediaLibrary/2023/5/6f8eae2f-a9a6-43f4-8cb7-09ff053d378f_image.jpg",
+                                            "owner": "Jeff Blincow",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340434",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340434",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340434",
+                        "taxonFullName": "Bombus barbutellus (Kirby, 1802)",
+                        "taxonNameAuthor": "(Kirby, 1802) ",
+                        "taxonNameYear": 1802,
+                        "taxonNameBrackets": "Bombus barbutellus (Kirby, 1802)"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus barbutellus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4096588396",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/270093735/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/270093735/original.jpeg",
+                                            "owner": "dieterb",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/270093756/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/270093756/original.jpeg",
+                                            "owner": "dieterb",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4121155529",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/281054144/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/281054144/original.jpeg",
+                                            "owner": "Jenna Marvin",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus barbutellus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4096588396",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/270093735/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/270093735/original.jpeg",
+                                            "owner": "dieterb",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/270093756/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/270093756/original.jpeg",
+                                            "owner": "dieterb",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4121155529",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/281054144/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/281054144/original.jpeg",
+                                            "owner": "Jenna Marvin",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "bombus5000": {
+            "virtualReferenceCollectionMetaData": {
+                "referenceCollectionID": "http://dummydomain.referencecollections.org/bombus5000",
+                "creator": "Elixir Robot",
+                "maintainer": "Elixir Robot",
+                "copyrightLicense": "CC-BY",
+                "copyrightOwner": "ELIXIR",
+                "title": "European Bombus virtual reference collection, test 5000",
+                "description": "A test case involving Bombus virtual reference collection data",
+                "area": [
+                    "Europe"
+                ],
+                "includedTaxaDescription": "Bombus"
+            },
+            "taxa": [
+                {
+                    "taxonID": "gbif:1340401",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340401",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340401",
+                        "taxonFullName": "Bombus bellardii (Gribodo, 1892)",
+                        "taxonNameAuthor": "(Gribodo, 1892) ",
+                        "taxonNameYear": 1892,
+                        "taxonNameBrackets": "Bombus bellardii (Gribodo, 1892)"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus bellardii",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/3026674739",
+                                    "media": [
+                                        {
+                                            "mediaID": "http://61.91.64.2:8050/img/Box-43/BSRU%20AA-9639/BSRU-AA-9639-Lateral.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "http://61.91.64.2:8050/img/Box-43/BSRU%20AA-9639/BSRU-AA-9639-Lateral.jpg",
+                                            "owner": "CUNHM",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "http://61.91.64.2:8050/img/Box-43/BSRU%20AA-9639/BSRU-AA-9639-Dorsal.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "http://61.91.64.2:8050/img/Box-43/BSRU%20AA-9639/BSRU-AA-9639-Dorsal.jpg",
+                                            "owner": "CUNHM",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340391",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340391",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340391",
+                        "taxonFullName": "Bombus bellicosus Smith, 1879",
+                        "taxonNameAuthor": "Smith, 1879",
+                        "taxonNameYear": 1879,
+                        "taxonNameBrackets": "Bombus bellicosus Smith, 1879"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus bellicosus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4018403323",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/252124627/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/252124627/original.jpeg",
+                                            "owner": "aacocucci",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/252124638/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/252124638/original.jpeg",
+                                            "owner": "aacocucci",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4028666008",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/252651323/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/252651323/original.jpeg",
+                                            "owner": "Eduardo Alfredo",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus bellicosus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4018403323",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/252124627/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/252124627/original.jpeg",
+                                            "owner": "aacocucci",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/252124638/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/252124638/original.jpeg",
+                                            "owner": "aacocucci",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4028666008",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/252651323/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/252651323/original.jpeg",
+                                            "owner": "Eduardo Alfredo",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:10850566",
+                    "taxonValidNameID": "https://www.gbif.org/species/10850566",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/10850566",
+                        "taxonFullName": "Bombus beskonakensis (Nel & Petrulevicius, 2003) Nel & Petrulevicius, 2003",
+                        "taxonNameAuthor": "(Nel & Petrulevicius, 2003) Nel & Petrulevicius, 2003",
+                        "taxonNameYear": 2003,
+                        "taxonNameBrackets": "Bombus beskonakensis (Nel & Petrulevicius, 2003) Nel & Petrulevicius, 2003"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus beskonakensis",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/418980570",
+                                    "media": [
+                                        {
+                                            "mediaID": "http://mediaphoto.mnhn.fr/media/1505814183092ccKZIMJ6k68L4SbU",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "http://mediaphoto.mnhn.fr/media/1505814183092ccKZIMJ6k68L4SbU",
+                                            "owner": "Ga\u00eblle DOITTEAU",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "http://mediaphoto.mnhn.fr/media/1505814179013n5ZhudMFwTaWRLQV",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by/4.0/",
+                                            "mediaDataURL": "http://mediaphoto.mnhn.fr/media/1505814179013n5ZhudMFwTaWRLQV",
+                                            "owner": "Ga\u00eblle DOITTEAU",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340380",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340380",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340380",
+                        "taxonFullName": "Bombus bicoloratus Smith, 1879",
+                        "taxonNameAuthor": "Smith, 1879",
+                        "taxonNameYear": 1879,
+                        "taxonNameBrackets": "Bombus bicoloratus Smith, 1879"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus bicoloratus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4046589309",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/258195671/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/258195671/original.jpg",
+                                            "owner": "howardpeng",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/258195637/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/258195637/original.jpg",
+                                            "owner": "howardpeng",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4067631826",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/260857488/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/260857488/original.jpeg",
+                                            "owner": "Lijin Huang (\u7d2b\u695d)",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/260857484/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/260857484/original.jpeg",
+                                            "owner": "Lijin Huang (\u7d2b\u695d)",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus bicoloratus",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4046589309",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/258195671/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/258195671/original.jpg",
+                                            "owner": "howardpeng",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/258195637/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/258195637/original.jpg",
+                                            "owner": "howardpeng",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4067631826",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/260857488/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/260857488/original.jpeg",
+                                            "owner": "Lijin Huang (\u7d2b\u695d)",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/260857484/original.jpeg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/260857484/original.jpeg",
+                                            "owner": "Lijin Huang (\u7d2b\u695d)",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "taxonID": "gbif:1340393",
+                    "taxonValidNameID": "https://www.gbif.org/species/1340393",
+                    "taxonName": {
+                        "taxonNameID": "https://www.gbif.org/species/1340393",
+                        "taxonFullName": "Bombus bifarius Cresson, 1879",
+                        "taxonNameAuthor": "Cresson, 1879",
+                        "taxonNameYear": 1879,
+                        "taxonNameBrackets": "Bombus bifarius Cresson, 1879"
+                    },
+                    "organisms": [
+                        {
+                            "organismID": "Bombus bifarius",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4129981553",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/283388941/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/283388941/original.jpg",
+                                            "owner": "stinglessbee",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/283388969/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/283388969/original.jpg",
+                                            "owner": "stinglessbee",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4127117486",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/283507648/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/283507648/original.jpg",
+                                            "owner": "Amanda Carlson",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/283507597/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/283507597/original.jpg",
+                                            "owner": "Amanda Carlson",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "organismID": "Bombus bifarius",
+                            "occurrences": [
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4129981553",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/283388941/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/283388941/original.jpg",
+                                            "owner": "stinglessbee",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/283388969/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/283388969/original.jpg",
+                                            "owner": "stinglessbee",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "occurrenceID": "https://api.gbif.org/v1/occurrence/4127117486",
+                                    "media": [
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/283507648/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/283507648/original.jpg",
+                                            "owner": "Amanda Carlson",
+                                            "reviewed": false
+                                        },
+                                        {
+                                            "mediaID": "https://inaturalist-open-data.s3.amazonaws.com/photos/283507597/original.jpg",
+                                            "copyrightLicense": "http://creativecommons.org/licenses/by-nc/4.0/",
+                                            "mediaDataURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/283507597/original.jpg",
+                                            "owner": "Amanda Carlson",
+                                            "reviewed": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }

@@ -1,3 +1,4 @@
+### THIS README IS OUTDATED ### WATCH THIS SPACE FOR A NEW README ### LIBRARY TRANSFORMED TO SERVICE IN BH 2023 ###
 ## ISA Json to BioSample and ENA SRA converter and submitter command line tool
 
 ### Run locally

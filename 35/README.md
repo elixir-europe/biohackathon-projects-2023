@@ -26,3 +26,11 @@ We will use a public git repository to collaborate and publish the code. We plan
 
 Vincent Emonet, Shashank Chakravarthy
 
+## Results
+
+The library and BioRxiv paper that came out of this project can be found in another git repository: **[github.com/vemonet/nanopub-rs](https://github.com/vemonet/nanopub-rs)**
+
+We achieved our main goal: a simplified version of the nanopublication signing protocol has been implemented in Rust. It can compile to a `pip` package and wasm binary (which itself can be used through a regular `npm` package)
+
+We will continue the development of this library after the Biohackathon to complete the implementation of the nanopublication signing protocol. 
+

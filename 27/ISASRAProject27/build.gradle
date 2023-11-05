@@ -15,8 +15,11 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation(group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.11')
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.14.0'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.0'
+    implementation(group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.11.2')
     implementation group: 'com.google.errorprone', name: 'error_prone_annotations', version: '2.16'
     implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
     implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5'
@@ -24,8 +27,6 @@ dependencies {
 
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
-
-    implementation group: 'org.springframework.hateoas', name: 'spring-hateoas', version: '1.1.5.RELEASE'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

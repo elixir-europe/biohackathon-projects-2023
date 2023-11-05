@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+/* Root Variables */
+:root {
+  --primary: #7CC6FE;
+  --secondary: #CCD5FF;
+  --accent: #E7BBE3;
+  --greyXLight: #F4F4F1;
+  --greyLight: #E9E8E3;
+  --grey: #D9D9DF;
+  --greyMedium: #B4B4BF;
+  --greyDark: #868696;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Global Styling */
+html {
+  height: 100vh;
+  font-size: 0.85vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  height: 100%;
+  margin: 0;
+  color: #333333;
+  background-color: #F9FAFC;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.root {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+
+/* Scroll Bars */
+
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* Custom classes */
+
+/* Width */
+.w-0 {
+  width: 0px;
+}
+
+
+/* Font sizes, default is 16px */
+.fs-1 {
+  font-size: 2.5rem !important;
+}
+
+.fs-2 {
+  font-size: 1.5rem !important;
+}
+
+.fs-3 {
+  font-size: 1.125rem !important;
+}
+
+.fs-4 {
+  font-size: 0.875rem !important;
+}
+
+.fs-5 {
+  font-size: 0.75rem !important;
+}
+
+/* Color */
+.c-default {
+  color: #333333;
+}
+
+.c-primary {
+  color: var(--primary);
+}
+
+.c-secondary {
+  color: var(--secondary);
+}
+
+.c-accent {
+  color: var(--accent);
+}
+
+.c-white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Font Weight */
+.fw-lightBold {
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Background */
+.bgc-main {
+  background-color: #F9FAFC;
+}
+
+.bgc-primary {
+  background-color: var(--primary) !important;
+}
+
+.bgc-secondary {
+  background-color: var(--secondary);
+}
+
+.bgc-accent {
+  background-color: var(--accent);
+}
+
+.bgc-white {
+  background-color: white;
+}
+
+.bgc-grey {
+  background-color: var(--grey);
 }
