@@ -17,19 +17,19 @@ authors:
     affiliation: 4
 
 affiliations:
- - name: Netherlands eScience Center, Science Park 402, 1098 XH, Amsterdam, Netherlands
+ - name: Netherlands eScience Center, Science Park 402, 1098 XH, Amsterdam, The Netherlands
    index: 1
  - name: CSC – IT Center for Science, Keilaranta 14, Espoo, Finland
    index: 2
  - name: University of Potsdam, Am Neuen Palais 10, 14469, Potsdam, Germany
    index: 3
- - name: Leiden University Medical Center, Albinusdreef 2, 2333 ZA, Leiden, Netherlands
+ - name: Leiden University Medical Center, Albinusdreef 2, 2333 ZA, Leiden, The Netherlands
    index: 4
-date: 02 November 2023
+date: 05 November 2023
 bibliography: paper.bib
-authors_short: Last et al. (2021) BioHackrXiv  template
+authors_short: Kasalica et al. (2023)
 group: BioHackrXiv
-event: BioHackathon Europe 2021
+event: BioHackathon Europe 2023
 ---
 
 # Background
@@ -108,24 +108,20 @@ We recommend to include some discussion or conclusion about your work. Feel free
 
 # Future work
 
-And maybe you want to add a sentence or two on how you plan to continue. Please keep reading to learn about citations and references.
-
-For citations of references, we prefer the use of parenthesis, last name and year. If you use a citation manager, Elsevier – Harvard or American Psychological Association (APA) will work. If you are referencing web pages, software or so, please do so in the same way. Whenever possible, add authors and year. We have included a couple of citations along this document for you to get the idea. Please remember to always add DOI whenever available, if not possible, please provide alternative URLs. You will end up with an alphabetical order list by authors’ last name.
+Given the progress acheived in this BioHackathon, we expect that the Workflomics front-end UI will soon reach a level of maturity where all must-have, major, features are implemented. The work will then focus on defining, annotating, aggregating, implmenting and visualizing additional workflow-level benchmarks, as well as extend Workflomics support for additional domains covered by EDAM and bio.tools. The mapping of benchmarks to EDAM operation will provide guidance and structure to these efforts.
 
 
 # GitHub repositories
 
-* Please add a list here
-* Make sure you let us know which of these correspond to Jupyter notebooks. Although not supported yet, we plan to add features for them
-* And remember, software and data need a license for them to be used by others, no license means no clear rules so nobody could legally use a non-licensed research object, whatever that object is
+* github.com/Workflomics
+* github.com/restape
 
 
 # Acknowledgements
+
 A major attraction of a BioHackathon is the opportunity to ask experts in other domains and developers of the resources our project builds on. We are extremely grateful to the BioHackathon organising committee for the opportunity to work on our project in such a stimulating environment. Special thanks to Anna Redondo (BSC, ELIXIR-ES) for liaising between our project, Project #24, the OpenEBench team lead Salvador Capella-Gutierrez and members José Mª Fernández, Eva Martin del Pico, Sergi Aguiló Castillo (on-site) and Dmitry Repchevski (remote) across BioHackathon projects. Thanks to Michael R. Crusoe (VU, ELIXIR-NL/DE) for expert input on CWL and workflow checking, and Hervé Menager (Pasteur, ELIXIR-FR) and Matúš Kalaš (UiB, ELIXIR-NO) for discussions on EDAM and Bioschemas. Thanks also to Project #2 leads Stella Fragkouli (INAB, CERTH GR) and Núria Queralt Rosinach (LUMC, ELIXIR-NL) for expert advice on benchmarking genomic variant calling and discussions on (synthetic) data anonymization with Marcos Casado Barbero (EBI). Finally, thanks to Peter Kok  (eScience Center, NL) for remotely supporting the front-end development.
 
 This work was supported by ELIXIR, the research infrastructure for life-science data.
 
 
 # References
-
-Leave thise section blank, create a paper.bib with all your references.
