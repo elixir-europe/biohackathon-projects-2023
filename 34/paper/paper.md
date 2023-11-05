@@ -10,7 +10,7 @@ authors:
     orcid: 0000-0000-0000-0000
     affiliation: 1
   - name: Alexander Botzki
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0001-6691-4233
     affiliation: 2
   - name: Mihail Anton
     orcid: 0000-0000-0000-0000
@@ -95,16 +95,23 @@ biohackathon_url:   "https://biohackathon-europe.org/"
 biohackathon_location: "Barcelona, Spain, 2023"
 group: Project 34
 # URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/elixir-europe/biohackathon-projects-2023/edit/main/34/paper
+git_url: https://github.com/elixir-europe/biohackathon-projects-2023/main/34/paper
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: First Author \emph{et al.}
 ---
 
-
 # Introduction
 
-As part of the BioHackathon Europe 2023, we here report...
+As part of the BioHackathon Europe 2023, we here report the creation of SPLASH, the one-stop-shop of the ELIXIR Training Platform (ETrP), pushing the boundaries of training development. ETrP services will be promoted on the SPLASH website in order to increase their visibility, accessibility and usage. We also strive to enable more participation within and outside the ELIXIR community.
+
+SPLASH adopts a user-centric approach to present the information sought in a ready-to-use format that will enable the packaging and visibility of the different training resources using the successful model of the RDMkit. 
+
+The ETrP has several successful training products, such as TeSS, the Train-the-Trainer programme, the FAIR training project, relevant papers, a training operational handbook containing guidelines etc. For each of these resources, a single entry point for trainers, training developers,  and training providers has be created.
+
+Furthermore, using the results of brainstorm session preceeding the BioHackathon, a training life cycle with the five stages Plan, Design, Develop, Deliver and Evaluate has been created and the various stages will be linked to the ETrP resources.
+
+SPLASH is based on the ELIXIR Toolkit theme and a beta version is now [available](https://elixir-europe-training.github.io/ELIXIR-Training-SPLASH/). The created digital environment will be connected with the ELIXIR website and TeSS with the possibility to connect to other services in the future. After the BioHackathon, we will also continue to assemble more information for funders of training and the other ELIXIR Platforms and Communities.
 
 # Formatting
 
@@ -180,6 +187,8 @@ Possible CiTO typing annotation include:
 
 ## Acknowledgements
 
-...
+Some of the authors were funded by ELIXIR, the research infrastructure for life-science data, to join the ELIXIR BioHackathon Europe.
 
 ## References
+
+
