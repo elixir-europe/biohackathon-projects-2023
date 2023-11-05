@@ -6,11 +6,12 @@
   <div v-else>
     <p>{{ schema.description }}</p>
 
-    <EditableTable v-if="schema" :schema="schema" storeKey="experiment" />
+    <EditableTable v-if="schema && show" :schema="schema" :formStoreKey="this.formName" />
 
     <br>
     <hr>
     <br>
+
     <p><em>Rendered from the following spec:</em></p>
     <pre style="color: grey;">{{ this.schema }}</pre>
   </div>
@@ -32,13 +33,16 @@
     data() {
       return {
         schema: null,
+        formName: 'experiment',
+        show: true,
       }
     },
     mounted() {
-      schemaStore.getSchema('experiment')
+      schemaStore.getSchema(this.formName)
         .then( data => {
           this.schema = data
         })
     },
+    methods: {},
   }
 </script>

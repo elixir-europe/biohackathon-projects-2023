@@ -1,16 +1,19 @@
-import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
 
-export const useFormStore = defineStore('formData', () => {
-  const formState = ref({
+export const useFormStore = defineStore('formData', {
+  state: () => ({
     'study': [],
     'experiment': [],
     'run': [],
     'sample': [],
-  })
-  const setFormData = async (name, data) => {
-    formState.value[name] = data
+  }),
+  actions: {
+    getFormData(formName) {
+      return this[formName]
+    },
+    setFormData(formName, data) {
+      this[formName] = data
+    },
   }
-  return { formState, setFormData }
 })

@@ -1,63 +1,91 @@
 <template>
-  <div ref="table"></div>
-  <button class="btn btn-primary" @click="() => this.addRows(1)">Add row</button>
+  <div class="editableTable">
+    <table v-if="schema">
+      <thead>
+        <tr>
+          <th v-for="field in schema.fields" :key="field.name">
+            <div class="d-flex">
+              <div class="col p-0">
+                {{ idToTitle(field.name) }}
+              </div>
+              <div class="col-auto p-0 ml-2">
+                <span class="info">
+                  i
+                  <v-tooltip
+                    activator="parent"
+                    location="top"
+                    max-width="300"
+                  >{{ field.description }}</v-tooltip>
+                </span>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(row, rowIx) in data" :key="rowIx">
+          <td v-for="field in schema.fields" :key="field.name + rowIx">
+            <input
+              class="form-control"
+              type="text"
+              :ref="getInputRef(rowIx, field.name)"
+              @input="updateCell(rowIx, field.name, $event.target.value)"
+              @keydown.exact="inputKeydown($event, rowIx, field.name)"
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button class="btn btn-primary m-2" @click="this.addRows(1)">Add row</button>
+  <button class="btn btn-secondary m-2" disabled>Copy to clipboard</button>
 </template>
 
 <script>
-import { TabulatorFull as Tabulator } from 'tabulator-tables'
+
+// Functionality to clone:
+// - clipboard paste from XLSX
+// - copy all to clipboard
+
 import { useFormStore } from '@/stores/forms'
 
-const START_ROWS = 5
-const { formState, setFormData } = useFormStore()
+const INIT_ROWS = 5;
+const formStore = useFormStore()
 
 export default {
   name: 'EditableTable',
   props: {
     schema: Object,
-    storeKey: String,
+    formStoreKey: String,
   },
   data() {
     return {
-      tabulator: null
+
     }
   },
   computed: {
     data() {
-      return formState[this.storeKey]
+      return formStore.getFormData(this.formStoreKey)
     },
   },
   mounted() {
-    if (Object.keys(this.schema).length) {
-      if (!this.data.length) {
-        this.addRows(START_ROWS)
-      }
-      // This is not listening to changes in data...
-      // TODO: trying with store accessed directly instead of through prop...
-      this.tabulator = new Tabulator(this.$refs.table, {
-        data: this.data,
-        reactiveData: true,
-        columns: this.columnsFromSchema(this.schema),
-        clipboard: true,
-        keybindings: {
-          navLeft: '37',
-          navRight: '39'
-        }
-      })
+    if (!this.data.length) {
+      this.initRows()
     }
   },
   methods: {
-    setData(data) {
-      setFormData(this.storeKey, data)
+    updateCell(rowIx, field_name, value) {
+      console.log('updateCell', rowIx, field_name, value)
+      formStore.$patch( (state) => {
+        state[this.formStoreKey][rowIx][field_name] = value
+        state.hasChanged = true
+      })
     },
-    columnsFromSchema(schema) {
-      return schema.fields.map((field) => {
-        return {
-          title: this.idToTitle(field.name),
-          field: field.name,
-          sorter: 'string',
-          tooltip: field.description,
-          editor: 'input'
-        }
+    setData(data) {
+      formStore.$patch( (state) => {
+        state[this.formStoreKey] = data
+        state.hasChanged = true
       })
     },
     idToTitle(id) {
@@ -66,19 +94,97 @@ export default {
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ')
     },
-    addRows(n) {
-      const rows = []
-      for (let i = 0; i < n; i++) {
-        rows.push(
-          this.schema.fields.reduce((acc, field) => {
-            acc[field.name] = ''
-            return acc
-          }, {})
-        )
+    initRows() {
+      this.addRows(INIT_ROWS)
+    },
+    addRows(num_rows) {
+      const blankRows = []
+      this.blankRow = this.schema.fields.reduce( (obj, field) => {
+        obj[field.name] = ''
+        return obj
+      }, {})
+      for (let i = 0; i < num_rows; i++) {
+        blankRows.push({...this.blankRow})
       }
-      const newData = this.data.concat(rows)
+      const newData = [...this.data, ...blankRows]
       this.setData(newData)
-    }
-  }
+    },
+    getInputRef(rowIx, fieldName) {
+      return `input_row${rowIx}_${fieldName}`
+    },
+    inputKeydown(event, rowIx, fieldName) {
+      let newRowIx
+      let newFieldName
+      switch (event.key) {
+        case 'Enter':
+          // navigate cell down
+          newRowIx = Math.min(rowIx + 1, this.data.length - 1)
+          newFieldName = fieldName
+          break
+        case 'ArrowUp':
+          // navigate cell up
+          newRowIx = Math.max(rowIx - 1, 0)
+          newFieldName = fieldName
+          break
+        case 'ArrowDown':
+          // navigate cell down
+          newRowIx = Math.min(rowIx + 1, this.data.length - 1)
+          newFieldName = fieldName
+          break
+        case 'ArrowLeft':
+          // navigate cell left
+          newRowIx = rowIx
+          newFieldName = this.schema.fields[Math.max(
+            this.schema.fields.findIndex((val) => val.name === fieldName) - 1,
+            0)].name
+          break
+        case 'ArrowRight':
+          // navigate cell right
+          newRowIx = rowIx
+          newFieldName = this.schema.fields[Math.min(
+            this.schema.fields.findIndex((val) => val.name === fieldName) + 1,
+            this.schema.fields.length - 1)].name
+          break
+        default:
+          return
+      }
+      this.$refs[this.getInputRef(newRowIx, newFieldName)][0].focus()
+    },
+  },
 }
 </script>
+
+<style scoped>
+  .editableTable {
+    max-width: 100%;
+    overflow-x: auto;
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+  .editableTable th {
+    padding: 0.5rem;
+    background: #eee;
+  }
+  .editableTable th, .editableTable td {
+    border: 1px solid #dee2e6;
+    min-width: 150px;
+    width: fit-content;
+  }
+  .editableTable td {
+    padding: 2px;
+  }
+  .editableTable .form-control {
+    font-size: inherit;
+    border: none;
+    padding: 0.35rem;
+  }
+  span.info {
+    color: #aaa;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    line-height: 1.1;
+    padding: 0 .4rem;
+    cursor: default;
+  }
+</style>
