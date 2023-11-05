@@ -1,8 +1,8 @@
 <template>
   <div class="form-group">
-    <label :for="field.name">{{ this.capitalize(field.name) }} <span v-if="field.required">*</span></label>
-    <SelectInput v-if="field.cv" :field="field"/>
-    <input v-else :class="getInputClass(field.type)" :id="field.name" :name="field.name" :type="mapFieldType(field.type)" :placeholder="field.placeholder" />
+    <label :for="field.name">{{ this.capitalize(field.name) }} <span v-if="requiredField">*</span></label>
+    <SelectInput v-if="field.field_type === 'TEXT_CHOICE_FIELD'" :field="field"/>
+    <input v-else :class="getInputClass(field.field_type)" :id="field.name" :name="field.name" type="text" :placeholder="field.placeholder" />
     <small>{{ field.description }}</small>
   </div>
 </template>
@@ -19,11 +19,17 @@ export default {
   components: {
     SelectInput: SelectInput,
   },
+  computed: {
+    requiredField() {
+      return this.field.cardinality === 'mandatory'
+    }
+  },
   methods: {
     capitalize(text) {
       return capitalize(text)
     },
     mapFieldType(type) {
+      // Not currently used as all field.field_type values resolve to "text"
       switch (type) {
         case 'string':
           return 'text'
@@ -37,7 +43,7 @@ export default {
     },
     getInputClass(type) {
       switch (type) {
-        case 'boolean':
+        case 'BOOLEAN_FIELD':
           return 'form-check-input'
         default:
           return 'form-control'
