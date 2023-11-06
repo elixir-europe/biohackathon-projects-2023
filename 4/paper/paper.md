@@ -78,7 +78,7 @@ Though preliminary, these results allow us to hypothesize (Figure 2) that the nu
 
 
 ![Figure 2](./figure2.png)
-Figure 2. Mapping of level 2 benchmarks to EDAM operations in subsets of the proteomics (Spectral analysis), genomics (Genetic variation analysis) and data wrangling (Data handling) domains, suggesting a high degree of reusability of benchmarks across domains. This should be taken into account when computing and visualizing the benchmarks.
+Figure 2. Mapping of level 2 benchmarks (pink ellipses) to EDAM operations in subsets of the proteomics (Spectral analysis, blue), genomics (Genetic variation analysis, green) and data wrangling (Data handling, orange) domains, suggesting a high degree of reusability of benchmarks across domains. This should be taken into account when computing and visualizing the benchmarks.
 
 ## Tables, figures and so on
 
