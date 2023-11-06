@@ -9,11 +9,8 @@
     <EditableTable v-if="schema" :schema="schema" :formStoreKey="this.formName" />
 
     <br>
-    <hr>
     <br>
-
-    <p><em>Rendered from the following spec:</em></p>
-    <pre style="color: grey;">{{ this.schema }}</pre>
+    <a class="btn btn-primary" href="/run">Next</a>
   </div>
 
 </template>

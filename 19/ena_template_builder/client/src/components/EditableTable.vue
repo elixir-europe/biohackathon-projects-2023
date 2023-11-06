@@ -42,13 +42,13 @@
     </table>
   </div>
 
-  <button class="btn btn-primary m-2" @click="this.addRows(1)">Add row</button>
-  <button class="btn btn-secondary m-2" disabled>Copy to clipboard</button>
+  <button class="btn btn-secondary mr-2 my-2" @click="this.addRows(1)">Add row</button>
+  <button class="btn btn-secondary mr-2 my-2" disabled>Copy to clipboard</button>
 
-  <div>
+  <!-- <div>
     <p>Row 1 data:</p>
     <pre>{{ data[0] }}</pre>
-  </div>
+  </div> -->
 </template>
 
 <script>

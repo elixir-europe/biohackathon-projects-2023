@@ -1,5 +1,5 @@
 <template>
-  <h1>Review and submit</h1>
+  <h1>Submit and create tables</h1>
   <p>
     After submission, your submitted metadata will be written to tabular output
     files which will be available in your Galaxy history after the tool
@@ -13,6 +13,7 @@ import { useFormStore } from '@/stores/forms.js';
 import { submitForms } from '@/utils/api.js';
 
 export default {
+  name: 'SubmitPage',
   methods: {
     submitForm() {
       const { formStore } = useFormStore();

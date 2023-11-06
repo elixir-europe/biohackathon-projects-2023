@@ -18,6 +18,7 @@
   <SelectInput
     v-if="display === 'table' && field.field_type === 'TEXT_CHOICE_FIELD'"
     ref="input"
+    class="noborder"
     :field="field"
     @input="$emit('blur', $event)"
   />
@@ -25,7 +26,7 @@
     v-if="display === 'table' && field.field_type === 'TEXT_FIELD'"
     ref="input"
     type="text"
-    :class="getInputClass(field.field_type)"
+    :class="getInputClass(field.field_type) + ' noborder'"
     :id="field.name"
     :name="field.name"
     :placeholder="field.placeholder"
@@ -97,7 +98,6 @@ export default {
 
 <style scoped>
   .form-control {
-    border: none;
     padding: 0.35rem;
     font-size: .8rem;
   }

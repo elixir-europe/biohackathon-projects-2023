@@ -10,11 +10,9 @@
 
     <a class="btn btn-primary" href="/experiment">Next</a>
 
-    <br>
-    <hr>
-    <br>
-    <p><em>Rendered from the following spec:</em></p>
-    <pre style="color: grey;">{{ this.schema }}</pre>
+    <!-- <p><em>Rendered from the following spec:</em></p>
+    <pre style="color: grey;">{{ this.schema }}</pre> -->
+
   </div>
 </template>
 

@@ -1,9 +1,9 @@
 <script setup>
-import Submit from '../components/Submit.vue'
+import SubmitPage from '../components/SubmitPage.vue'
 </script>
 
 <template>
   <main>
-    <Submit />
+    <SubmitPage />
   </main>
 </template>

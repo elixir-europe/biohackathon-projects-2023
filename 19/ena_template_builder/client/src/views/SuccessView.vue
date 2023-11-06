@@ -1,9 +1,9 @@
 <script setup>
-import Success from '../components/Success.vue'
+import SuccessPage from '../components/SuccessPage.vue'
 </script>
 
 <template>
   <main>
-    <Success />
+    <SuccessPage />
   </main>
 </template>
