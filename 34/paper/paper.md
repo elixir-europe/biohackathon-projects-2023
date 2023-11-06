@@ -27,8 +27,8 @@ authors:
   - name: Maria Doyle
     orcid: 0000-0000-0000-0000
     affiliation: 7
-  - name: Patricia Palagi
-    orcid: 0000-0000-0000-0000
+  - name: Patricia M. Palagi
+    orcid: 0000-0001-9062-6303
     affiliation: 8
   - name: Helena Schnitzer
     orcid: 0000-0000-0000-0000
@@ -75,7 +75,7 @@ affiliations:
     index: 6
   - name: ELIXIR-IE 
     index: 7
-  - name: ELIXIR-CH 
+  - name: ELIXIR-CH, SIB Swiss Institute of Bioinformatics 
     index: 8
   - name: ELIXIR-DE, FZJ 
     index: 9
