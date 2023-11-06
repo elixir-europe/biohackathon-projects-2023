@@ -6,7 +6,7 @@
   <div v-else>
     <p>{{ schema.description }}</p>
 
-    <EditableTable v-if="schema && show" :schema="schema" :formStoreKey="this.formName" />
+    <EditableTable v-if="schema" :schema="schema" :formStoreKey="this.formName" />
 
     <br>
     <hr>
@@ -34,7 +34,6 @@
       return {
         schema: null,
         formName: 'experiment',
-        show: true,
       }
     },
     mounted() {

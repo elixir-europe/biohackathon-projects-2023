@@ -6,7 +6,7 @@
           <th v-for="field in schema.fields" :key="field.name">
             <div class="d-flex">
               <div class="col p-0">
-                {{ idToTitle(field.name) }}
+                {{ idToTitle(field.name) }} <span v-if="field.cardinality === 'mandatory'" class="ml-1">*</span>
               </div>
               <div class="col-auto p-0 ml-2">
                 <span class="info">
@@ -15,7 +15,11 @@
                     activator="parent"
                     location="top"
                     max-width="300"
-                  >{{ field.description }}</v-tooltip>
+                  >
+                    <span v-if="field.cardinality === 'mandatory'">[required]</span>
+                    <span v-if="field.cardinality === 'optional'">[optional]</span>
+                    {{ field.description }}
+                  </v-tooltip>
                 </span>
               </div>
             </div>
@@ -25,13 +29,13 @@
       <tbody>
         <tr v-for="(row, rowIx) in data" :key="rowIx">
           <td v-for="field in schema.fields" :key="field.name + rowIx">
-            <input
-              class="form-control"
-              type="text"
+            <FormField
+              display="table"
+              :field="field"
               :ref="getInputRef(rowIx, field.name)"
-              @input="updateCell(rowIx, field.name, $event.target.value)"
+              @blur="updateCell(rowIx, field.name, $event.target.value)"
               @keydown.exact="inputKeydown($event, rowIx, field.name)"
-            >
+            />
           </td>
         </tr>
       </tbody>
@@ -40,6 +44,11 @@
 
   <button class="btn btn-primary m-2" @click="this.addRows(1)">Add row</button>
   <button class="btn btn-secondary m-2" disabled>Copy to clipboard</button>
+
+  <div>
+    <p>Row 1 data:</p>
+    <pre>{{ data[0] }}</pre>
+  </div>
 </template>
 
 <script>
@@ -48,6 +57,7 @@
 // - clipboard paste from XLSX
 // - copy all to clipboard
 
+import FormField from './fields/FormField.vue'
 import { useFormStore } from '@/stores/forms'
 
 const INIT_ROWS = 5;
@@ -55,14 +65,12 @@ const formStore = useFormStore()
 
 export default {
   name: 'EditableTable',
+  components: {
+    FormField: FormField,
+  },
   props: {
     schema: Object,
     formStoreKey: String,
-  },
-  data() {
-    return {
-
-    }
   },
   computed: {
     data() {
@@ -76,7 +84,7 @@ export default {
   },
   methods: {
     updateCell(rowIx, field_name, value) {
-      console.log('updateCell', rowIx, field_name, value)
+      // console.log('updateCell', rowIx, field_name, value)
       formStore.$patch( (state) => {
         state[this.formStoreKey][rowIx][field_name] = value
         state.hasChanged = true
@@ -161,6 +169,9 @@ export default {
     font-size: .8rem;
     white-space: nowrap;
   }
+  .editableTable table {
+    width: 100%;
+  }
   .editableTable th {
     padding: 0.5rem;
     background: #eee;
@@ -171,12 +182,7 @@ export default {
     width: fit-content;
   }
   .editableTable td {
-    padding: 2px;
-  }
-  .editableTable .form-control {
-    font-size: inherit;
-    border: none;
-    padding: 0.35rem;
+    padding: 0 2px;
   }
   span.info {
     color: #aaa;
@@ -186,5 +192,6 @@ export default {
     line-height: 1.1;
     padding: 0 .4rem;
     cursor: default;
+    user-select: none;
   }
 </style>

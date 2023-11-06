@@ -1,6 +1,7 @@
 <template>
-    <select class="custom-select">
-        <option v-for="option in field.cv" :key="option" :value="option">{{ this.capitalize(option) }}</option>
+    <select class="custom-select noborder">
+        <option value=""></option>
+        <option v-for="option in field.cv" :key="option" :value="option">{{ option }}</option>
     </select>
 </template>
 
