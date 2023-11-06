@@ -76,6 +76,7 @@ To inform discussions, all subclasses Spectral analysis [operation:2945] and Gen
 
 Though preliminary, these results allow us to hypothesize (Figure 2) that the number of generic benchmarks at these levels of the EDAM ontology is an order of magnitude smaller than the number of operations. For the Workflomics project, such mappings between EDAM operations and computable benchmarks are directly useful in benchmarking of automatically generated workflows.
 
+
 ![Figure 2](./figure2.png)
 Figure 2. Mapping of level 2 benchmarks to EDAM operations in subsets of the proteomics (Spectral analysis), genomics (Genetic variation analysis) and data wrangling (Data handling) domains, suggesting a high degree of reusability of benchmarks across domains. This should be taken into account when computing and visualizing the benchmarks.
 
@@ -105,7 +106,7 @@ Feel free to use numbered lists or bullet points as you need.
 
 # Conclusion
 
-Some conclusions here, as the discussion is embedded in the results above.
+During the BioHackathon, we made significant progress on the retrieval and aggregation of tool-level benchmarks from OpenEBench, matured the visualization and user interaction with these aggregate benchmarks in the Workflomics user interface, and discussed the feasibility of defining and mapping benchmarks to EDAM operations in different domains. These efforts continue, now in a larger community of stakeholders and collaborators, and will be published separately and in far greater detail elsewhere.
 
 
 # Future work
