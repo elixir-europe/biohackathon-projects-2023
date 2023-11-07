@@ -37,7 +37,7 @@ authors:
     orcid: 0000-0000-0000-0000
     affiliation: 10
   - name: Albert Hornos
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-7330-668X
     affiliation: 10
   - name: Bruna Piereck
     orcid: 0000-0000-0000-0000
