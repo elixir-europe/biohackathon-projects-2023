@@ -58,7 +58,7 @@ authors:
     orcid: 0000-0002-1561-078X
     affiliation: 8
   - name: Daniel Wibberg
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-1331-4311
     affiliation: 9
 affiliations:
   - name: ELIXIR-UK, University of Cambridge
