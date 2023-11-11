@@ -25,7 +25,9 @@ authors:
     affiliation: 4
   - name: Stian Soiland-Reyes
     orcid: 0000-0001-9842-9718
-    affiliation: 5
+    affiliation:
+      - 5
+      - 6
 
 affiliations:
   - name: Barcelona Supercomputing Center (BSC), ELIXIR Spain, Barcelona, Spain
@@ -36,8 +38,11 @@ affiliations:
     index: 3
   - name: ELIXIR@PSB, VIB-UGent Center for Plant Systems Biology, Ghent, Belgium
     index: 4
-  - name: The University of Manchester, Manchester, United Kingdom
+  - name: Department of Computer Science, The University of Manchester, Manchester, UK
     index: 5
+  - name: Informatics Institute, University of Amsterdam, Amsterdam, NL
+    index: 6
+
 date: 10 November 2023
 authors_short: Fernández \emph{et al.} (2023)
 bibliography: paper.bib
