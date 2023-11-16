@@ -7,39 +7,46 @@ authors:
   - name: Tom Brown
     orcid: 0000-0001-8293-4816
     affiliation: 1 
-  - name: Alice B. Dennis
+
+  - name: Alice B. Dennis:
     orcid: 0000-0003-0948-9845
     affiliation: 2
-  - name: Jèssica Gómez-Garrido
-    orcid:
-    affiliation: 3
 affiliations:
   - name: Leibniz-Institut für Zoo- und Wildtierforschung (IZW) im Forschungsverbund Berlin e.V. Alfred-Kowalke-Straße 17 10315 Berlin Deutschland
     index: 1
   - name: University of Namur, URBE, Laboratory of Adaptive Evolution, Genomics, and Physiology, Namur, Belgium
     index: 2
-  - name: CNAG
-    index: 3
 date: 3 November 2023
 cito-bibliography: paper.bib
-event: 'Elixir BioHackathon'
-event_location: "Barcelona, Spain"
-event_title: "Elixir BioHackathon 2023"
-event_url: "https://github.com/elixir-europe/biohackathon-projects-2023"
+event: 
 biohackathon_name: "Elixir BioHackathon 2023"
 biohackathon_url:   "https://biohackathon-europe.org/"
 biohackathon_location: "Barcelona, Spain, 2023"
-group: ERGA Annotation Committee
+group: Logic programming group
 # URL to project git repo --- should contain the actual paper.md:
 git_url: https://github.com/elixir-europe/biohackathon-projects-2023/20/biohackrxiv/
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: Jèssica Gómez-Garrido & Alice B. Dennis  \emph{et al.}
+authors_short: Chris Mungall & Hirokazu Chiba \emph{et al.}
 ---
+
+
+<!--
+
+The paper.md, bibtex and figure file can be found in this repo:
+
+  https://github.com/elixir-europe/biohackathon-projects-2023/20/biohackrxiv/
+
+To modify, please clone the repo. You can generate PDF of the paper by
+pasting above link (or yours) in
+
+  http://biohackrxiv.genenetwork.org/
+
+-->
 
 # Introduction
 
-The European Reference Genome Atlas (ERGA [@Mazzoni2023]) is an international consortium
+The European Reference Genome Atlas (ERGA) is an international consortium
 of over 700 researchers from across Europe who are committed to cataloguing
 eukaryotic biodiversity through the generation of high-quality reference
 genomes as a response to declines in biodiversity. Development and implementation
@@ -89,7 +96,7 @@ As part of this project, we wished to test robust annotation pipelines on genome
 representing the diversity of organisms which will be produced as part of ERGA’s goal
 to produce reference quality genomes for all eukaryotes in Europe. Included in this project
 were a mixture of previously published genomes, as well as assemblies produced as part of the
-ERGA Pilot Project [@Pilot] or by ERGA-affiliated researchers
+ERGA Pilot Project (https://doi.org/10.1101/2023.09.25.559365) or by ERGA-affiliated researchers
 directly contributing to the BioHackathon. Included in our analysis were genome sequences for the
 Cauliflower Coral Pocillopora meandrina, the Violet Copper Butterfly Helleia helle, the Lesser Trefoil 
 Trifolium dubium (GCA_951804385.1), the sponge Phakellia ventilabrum, the Coffee-bean Snail Melampus jaumei,
@@ -101,42 +108,25 @@ The pipelines generated as part of this BioHackathon generally followed a consis
 relying on a repeat-masked genome, species-specific transcript sequencing data, a database of
 protein sequences and software aimed to identify and predict de-novo gene structures based on the given evidences.
 
-Our first tested pipeline (Fig. X - hereafter referred to as UNIL pipeline, developed by SJD)
-includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the
-Swissprot database (Release 2023_04 of 13-Sep-2023 [@Uniprot]). Following de-novo repeat modelling using the genome assembly
+Our first tested pipeline (Fig. X - hereafter referred to as UNIL pipeline, developed by SJD
+ includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the
+Swissprot database (Release 2023_04 of 13-Sep-2023). Following de-novo repeat modelling using the genome assembly
 as input, the Swissprot protein sequences and mapped RNA-seq reads are given as evidence data alongside the repeat-masked
-genome into Braker3 [@Braker3]. The resulting gff3 file is the output used for downstream evaluation and analysis.
+genome into Braker3. The resulting gff3 file is the output used for downstream evaluation and analysis.
 
 Our second tested pipeline (Fig. X - hereafter referred to as CNAG pipeline, developed by JGG) includes additional
-steps where a set of de-novo transcripts are assembled from the input RNA-seq reads and multiple evidences from Augustus [@Stanke2008],
-GeneMark [@Brna2020] and GeneID [@Alioto2018] are combined with RNA-seq and protein alignments using EvidenceModeler (EVM [@EVM]).
+steps where a set of de-novo transcripts are assembled from the input RNA-seq reads and multiple evidences from Augustus,
+GeneMark and GeneID are combined with RNA-seq and protein alignments using EvidenceModeler (EVM).
 Furthermore isoform information is included by running PASA after initial gene models are created from EVM.
 
 Our third tested pipeline (Fig. X - hereafter referred to as ANNOTATO, developed by PD) incorporates a
 number of the previous steps and allows for the addition of long-read RNA reads, for example a PacBio Iso-seq
-library, and uses Funannotate [@Funannotate] to include to add further gene predictions alongside Braker3.
+library, and uses Funannotate to include to add further gene predictions alongside Braker3.
 
 ![Workflow for UNIL Pipeline](UNIL_pipeline.drawio.png)
 
 ![Workflow for CNAG Pipeline](PHAVENT2A_annotation.png)
 
-![Workflow for ANNOTATO Pipeline](annotato-workflow.drawio.png)
-
-![Braker3 workflow](braker3.png)
-
-# How to Evaluate Your Genome
-
-A key outstanding question in the field of genome annotation is how to evaluate the quality of an annotation.
-Some key metrics to consider are the number of total genes annotated, which is itself taxon specific, the size of
-introns, normally correlated with the size of the genome, the number of single-exon genes, the number of distinct
-isoforms per gene and the completeness of the annotation regarding the expected content of the proteome which is encoded. 
-
-To evaluate the completeness of the annotation, we utilised BUSCO [@BUSCO] and OMArk [@OMArk]. Both of these tools are
-designed to determine what proportion of protein-coding genes expected to be present in the genome from an ancestral
-lineage are present in the annotated sequences. OMArk also gives an indication of whether annotated sequences are
-potentially from contaminated sources or inconsistent with the identified lineage. The metrics of “Gene Completeness”
-output by both BUSCO and OMArk are key to identifying whether the annotation created is a true representation of the proteome of the species.
-
-## Acknowledgements
+![Workflow for ANNOTATO Pipeline](annotato-workflow.drawio.svg)
 
 ## References

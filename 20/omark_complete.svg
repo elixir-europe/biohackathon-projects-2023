@@ -1,0 +1,2924 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="svglite"
+   width="985.00pt"
+   height="676.00pt"
+   viewBox="0 0 985.00 676.00"
+   version="1.1"
+   id="svg905"
+   sodipodi:docname="omark_complete.svg"
+   inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview907"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.4641083"
+     inkscape:cx="690.57157"
+     inkscape:cy="512.81134"
+     inkscape:window-width="1440"
+     inkscape:window-height="798"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg905" />
+  <defs
+     id="defs134">
+    <style
+       type="text/css"
+       id="style132"><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1913">
+      <g
+         id="g1917"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1915"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1919">
+      <g
+         id="g1923"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1921"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1925">
+      <g
+         id="g1929"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1927"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1931">
+      <g
+         id="g1935"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1933"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1937">
+      <g
+         id="g1941"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1939"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1943">
+      <g
+         id="g1947"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1945"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1949">
+      <g
+         id="g1953"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1951"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1955">
+      <g
+         id="g1959"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1957"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1961">
+      <g
+         id="g1965"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1963"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1967">
+      <g
+         id="g1971"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1969"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1973">
+      <g
+         id="g1977"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1975"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1979">
+      <g
+         id="g1983"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1981"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1985">
+      <g
+         id="g1989"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1987"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1991">
+      <g
+         id="g1995"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1993"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1997">
+      <g
+         id="g2001"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1999"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2003">
+      <g
+         id="g2007"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect2005"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2009">
+      <g
+         id="g2013"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect2011"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2015">
+      <g
+         id="g2019"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect2017"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2021">
+      <g
+         id="g2025"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect2023"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2027">
+      <g
+         id="g2031"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect2029"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2033">
+      <g
+         id="g2037"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect2035"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2039">
+      <g
+         id="g2043"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect2041"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1925-7">
+      <g
+         id="g1929-3"
+         style="stroke-width:1">
+        <rect
+           x="409.85999"
+           y="23.200001"
+           width="77.160004"
+           height="598.77002"
+           id="rect1927-7"
+           style="stroke-width:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2502">
+      <g
+         id="g2506"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2504"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2508">
+      <g
+         id="g2512"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2510"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2514">
+      <g
+         id="g2518"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2516"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2520">
+      <g
+         id="g2524"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2522"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2526">
+      <g
+         id="g2530"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2528"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2532">
+      <g
+         id="g2536"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2534"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2538">
+      <g
+         id="g2542"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2540"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2544">
+      <g
+         id="g2548"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2546"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2550">
+      <g
+         id="g2554"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2552"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2556">
+      <g
+         id="g2560"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2558"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2562">
+      <g
+         id="g2566"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2564"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2568">
+      <g
+         id="g2572"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2570"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2574">
+      <g
+         id="g2578"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2576"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2580">
+      <g
+         id="g2584"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2582"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2586">
+      <g
+         id="g2590"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2588"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2592">
+      <g
+         id="g2596"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2594"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2598">
+      <g
+         id="g2602"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2600"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2604">
+      <g
+         id="g2608"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2606"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2610">
+      <g
+         id="g2614"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2612"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2616">
+      <g
+         id="g2620"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2618"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2622">
+      <g
+         id="g2626"
+         style="stroke-width:0.98813"
+         transform="matrix(0.99999998,0,0,1.0241691,0,-6.538326)">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2624"
+           style="stroke-width:0.988129" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2520-3">
+      <g
+         id="g2524-2"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2522-6"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2538-9">
+      <g
+         id="g2542-4"
+         style="stroke-width:1">
+        <rect
+           x="899.91998"
+           y="29.036539"
+           width="79.599998"
+           height="570.83344"
+           id="rect2540-1"
+           style="stroke-width:0.999999" />
+      </g>
+    </clipPath>
+  </defs>
+  <defs
+     id="defs141">
+    <clipPath
+       id="cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=">
+      <rect
+         x="0.00"
+         y="0.00"
+         width="985.00"
+         height="676.00"
+         id="rect138" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g143" />
+  <defs
+     id="defs148">
+    <clipPath
+       id="cpMC4wMHwxMjMuMTJ8MC4wMHw2NzYuMDA=">
+      <rect
+         x="0.00"
+         y="0.00000000000011"
+         width="123.12"
+         height="676.00"
+         id="rect145" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMC4wMHwxMjMuMTJ8MC4wMHw2NzYuMDA=)"
+     id="g150" />
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g152" />
+  <defs
+     id="defs157">
+    <clipPath
+       id="cpMzguMDR8MTE3LjY1fDIzLjIwfDYxNC4wMA==">
+      <rect
+         x="38.04"
+         y="23.20"
+         width="79.60"
+         height="590.80"
+         id="rect154" />
+    </clipPath>
+  </defs>
+  <text
+     transform="rotate(-45,779.4383,246.65609)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.82"
+     lengthAdjust="spacingAndGlyphs"
+     id="text213">Braker3</text>
+  <text
+     transform="rotate(-45,788.9133,223.78141)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="46.490002"
+     lengthAdjust="spacingAndGlyphs"
+     id="text215">funannotate</text>
+  <text
+     transform="rotate(-45,798.3883,200.90674)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.83"
+     lengthAdjust="spacingAndGlyphs"
+     id="text217">geneidx</text>
+  <text
+     transform="rotate(-45,807.8633,178.03207)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="27.370001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text219">Helixer</text>
+  <g
+     id="g2389"
+     transform="matrix(1,0,0,0.97640123,0,0.359645)"
+     style="stroke-width:1.01201">
+    <g
+       clip-path="url(#cpMzguMDR8MTE3LjY1fDIzLjIwfDYxNC4wMA==)"
+       id="g201"
+       style="stroke-width:1.01201">
+      <polyline
+         points="38.04,520.01 117.65,520.01 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline159" />
+      <polyline
+         points="38.04,385.74 117.65,385.74 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline161" />
+      <polyline
+         points="38.04,251.46 117.65,251.46 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline163" />
+      <polyline
+         points="38.04,117.19 117.65,117.19 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline165" />
+      <polyline
+         points="38.04,587.15 117.65,587.15 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline167" />
+      <polyline
+         points="38.04,452.87 117.65,452.87 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline169" />
+      <polyline
+         points="38.04,318.60 117.65,318.60 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline171" />
+      <polyline
+         points="38.04,184.33 117.65,184.33 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline173" />
+      <polyline
+         points="38.04,50.05 117.65,50.05 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline175" />
+      <polyline
+         points="49.42,614.00 49.42,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline177" />
+      <polyline
+         points="68.37,614.00 68.37,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline179" />
+      <polyline
+         points="87.32,614.00 87.32,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline181" />
+      <polyline
+         points="106.27,614.00 106.27,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline183" />
+      <rect
+         x="97.75"
+         y="70.029999"
+         width="17.059999"
+         height="517.10999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect185" />
+      <rect
+         x="97.75"
+         y="50.049999"
+         width="17.059999"
+         height="19.98"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect187" />
+      <rect
+         x="40.889999"
+         y="77.339996"
+         width="17.059999"
+         height="509.81"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect189" />
+      <rect
+         x="40.889999"
+         y="51.34"
+         width="17.059999"
+         height="26"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect191" />
+      <rect
+         x="59.84"
+         y="82.279999"
+         width="17.059999"
+         height="504.87"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect193" />
+      <rect
+         x="59.84"
+         y="50.049999"
+         width="17.059999"
+         height="32.23"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect195" />
+      <rect
+         x="78.790001"
+         y="93.660004"
+         width="17.059999"
+         height="493.48001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect197" />
+      <rect
+         x="78.790001"
+         y="50.049999"
+         width="17.059999"
+         height="43.610001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect199" />
+    </g>
+    <text
+       x="33.110001"
+       y="590.29999"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="4.9000001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text203">0</text>
+    <text
+       x="33.110001"
+       y="456.03"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text205">25</text>
+    <text
+       x="33.110001"
+       y="321.75"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text207">50</text>
+    <text
+       x="33.110001"
+       y="187.48"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text209">75</text>
+    <text
+       x="33.110001"
+       y="53.209999"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="14.69"
+       lengthAdjust="spacingAndGlyphs"
+       id="text211">100</text>
+  </g>
+  <text
+     transform="rotate(-90,165.985,152.615)"
+     text-anchor="middle"
+     style="font-size:11px;font-family:Arial"
+     textLength="108.22"
+     lengthAdjust="spacingAndGlyphs"
+     id="text223">Percent OMA proteins</text>
+  <text
+     x="38.040001"
+     y="14.94"
+     style="font-size:13.2px;font-family:Arial"
+     textLength="116.56"
+     lengthAdjust="spacingAndGlyphs"
+     id="text225"
+     transform="translate(-27.884723)">Citrullus colocynthis</text>
+  <defs
+     id="defs232">
+    <clipPath
+       id="cpMTIzLjEyfDI0Ni4yNXwwLjAwfDY3Ni4wMA==">
+      <rect
+         x="123.12"
+         y="0.00000000000011"
+         width="123.12"
+         height="676.00"
+         id="rect229" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMTIzLjEyfDI0Ni4yNXwwLjAwfDY3Ni4wMA==)"
+     id="g234" />
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g236" />
+  <defs
+     id="defs241">
+    <clipPath
+       id="cpMTYxLjE3fDI0MC43N3wyMy4yMHw2MDguODQ=">
+      <rect
+         x="161.17"
+         y="23.20"
+         width="79.60"
+         height="585.64"
+         id="rect238" />
+    </clipPath>
+  </defs>
+  <g
+     id="g2181"
+     transform="matrix(1,0,0,0.97640123,0,5.3978642)"
+     style="stroke-width:1.01201">
+    <g
+       clip-path="url(#cpMTYxLjE3fDI0MC43N3wyMy4yMHw2MDguODQ=)"
+       id="g315"
+       style="stroke-width:1.01201">
+      <polyline
+         points="161.17,515.67 240.77,515.67 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline243" />
+      <polyline
+         points="161.17,382.57 240.77,382.57 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline245" />
+      <polyline
+         points="161.17,249.47 240.77,249.47 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline247" />
+      <polyline
+         points="161.17,116.37 240.77,116.37 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline249" />
+      <polyline
+         points="161.17,582.22 240.77,582.22 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline251" />
+      <polyline
+         points="161.17,449.12 240.77,449.12 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline253" />
+      <polyline
+         points="161.17,316.02 240.77,316.02 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline255" />
+      <polyline
+         points="161.17,182.92 240.77,182.92 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline257" />
+      <polyline
+         points="161.17,49.82 240.77,49.82 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline259" />
+      <polyline
+         points="166.36,608.84 166.36,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline261" />
+      <polyline
+         points="175.01,608.84 175.01,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline263" />
+      <polyline
+         points="183.67,608.84 183.67,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline265" />
+      <polyline
+         points="192.32,608.84 192.32,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline267" />
+      <polyline
+         points="200.97,608.84 200.97,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline269" />
+      <polyline
+         points="209.62,608.84 209.62,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline271" />
+      <polyline
+         points="218.27,608.84 218.27,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline273" />
+      <polyline
+         points="226.93,608.84 226.93,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline275" />
+      <polyline
+         points="235.58,608.84 235.58,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline277" />
+      <rect
+         x="179.77"
+         y="69.889999"
+         width="7.79"
+         height="512.33002"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect279" />
+      <rect
+         x="179.77"
+         y="49.82"
+         width="7.79"
+         height="20.07"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect281" />
+      <rect
+         x="171.12"
+         y="164.23"
+         width="7.79"
+         height="417.98999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect283" />
+      <rect
+         x="171.12"
+         y="49.82"
+         width="7.79"
+         height="114.41"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect285" />
+      <rect
+         x="188.42"
+         y="182.75999"
+         width="7.79"
+         height="399.45999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect287" />
+      <rect
+         x="188.42"
+         y="49.82"
+         width="7.79"
+         height="132.94"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect289" />
+      <rect
+         x="231.69"
+         y="117.59"
+         width="7.79"
+         height="464.63"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect291" />
+      <rect
+         x="231.69"
+         y="49.82"
+         width="7.79"
+         height="67.769997"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect293" />
+      <rect
+         x="197.08"
+         y="81.760002"
+         width="7.79"
+         height="500.45999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect295" />
+      <rect
+         x="197.08"
+         y="49.82"
+         width="7.79"
+         height="31.940001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect297" />
+      <rect
+         x="214.38"
+         y="314.26001"
+         width="7.79"
+         height="267.95999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect299" />
+      <rect
+         x="214.38"
+         y="49.82"
+         width="7.79"
+         height="264.44"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect301" />
+      <rect
+         x="223.03"
+         y="113.71"
+         width="7.79"
+         height="468.51001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect303" />
+      <rect
+         x="223.03"
+         y="49.82"
+         width="7.79"
+         height="63.889999"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect305" />
+      <rect
+         x="162.47"
+         y="101.03"
+         width="7.79"
+         height="481.17999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect307" />
+      <rect
+         x="162.47"
+         y="49.82"
+         width="7.79"
+         height="51.220001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect309" />
+      <rect
+         x="205.73"
+         y="346.84"
+         width="7.79"
+         height="235.37"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect311" />
+      <rect
+         x="205.73"
+         y="49.82"
+         width="7.79"
+         height="297.03"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect313" />
+    </g>
+    <text
+       x="156.24001"
+       y="585.37"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="4.9000001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text317">0</text>
+    <text
+       x="156.24001"
+       y="452.26999"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text319">25</text>
+    <text
+       x="156.24001"
+       y="319.17001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text321">50</text>
+    <text
+       x="156.24001"
+       y="186.07001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text323">75</text>
+    <text
+       x="156.24001"
+       y="52.970001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="14.69"
+       lengthAdjust="spacingAndGlyphs"
+       id="text325">100</text>
+  </g>
+  <text
+     transform="rotate(-45,831.67963,102.91702)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="35.23"
+     lengthAdjust="spacingAndGlyphs"
+     id="text327">Annotato</text>
+  <text
+     transform="rotate(-45,836.00463,92.475546)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.82"
+     lengthAdjust="spacingAndGlyphs"
+     id="text329">Braker3</text>
+  <text
+     transform="rotate(-45,840.33463,82.022001)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="31.780001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text331">FlyBase</text>
+  <text
+     transform="rotate(-45,844.65963,71.580528)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.83"
+     lengthAdjust="spacingAndGlyphs"
+     id="text333">geneidx</text>
+  <text
+     transform="rotate(-45,848.98463,61.139054)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="27.370001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text335">Helixer</text>
+  <text
+     transform="rotate(-45,853.30963,50.69758)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="24.450001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text337">Maker</text>
+  <text
+     transform="rotate(-45,857.63463,40.256107)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="53.790001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text339">maker 1 Pass</text>
+  <text
+     transform="rotate(-45,861.96463,29.802562)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="53.790001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text341">maker 2 Pass</text>
+  <text
+     transform="rotate(-45,866.28963,19.361088)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="14.18"
+     lengthAdjust="spacingAndGlyphs"
+     id="text343">SIB</text>
+  <text
+     x="161.17"
+     y="14.94"
+     style="font-size:13.2px;font-family:Arial"
+     textLength="146.64999"
+     lengthAdjust="spacingAndGlyphs"
+     id="text349"
+     transform="translate(-43.45466,-36)">Drosophila melanogaster</text>
+  <defs
+     id="defs356">
+    <clipPath
+       id="cpMjQ2LjI1fDM2OS4zOHwwLjAwfDY3Ni4wMA==">
+      <rect
+         x="246.25"
+         y="0.00000000000011"
+         width="123.12"
+         height="676.00"
+         id="rect353" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMjQ2LjI1fDM2OS4zOHwwLjAwfDY3Ni4wMA==)"
+     id="g358" />
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g360" />
+  <defs
+     id="defs365">
+    <clipPath
+       id="cpMjg0LjI5fDM2My45MHwyMy4yMHw2MDguODQ=">
+      <rect
+         x="284.29"
+         y="23.20"
+         width="79.60"
+         height="585.64"
+         id="rect362" />
+    </clipPath>
+  </defs>
+  <g
+     id="g2213"
+     transform="matrix(1,0,0,0.97640123,0,5.3978642)"
+     style="stroke-width:1.01201">
+    <g
+       clip-path="url(#cpMjg0LjI5fDM2My45MHwyMy4yMHw2MDguODQ=)"
+       id="g415"
+       style="stroke-width:1.01201">
+      <polyline
+         points="284.29,515.67 363.90,515.67 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline367" />
+      <polyline
+         points="284.29,382.57 363.90,382.57 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline369" />
+      <polyline
+         points="284.29,249.47 363.90,249.47 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline371" />
+      <polyline
+         points="284.29,116.37 363.90,116.37 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline373" />
+      <polyline
+         points="284.29,582.22 363.90,582.22 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline375" />
+      <polyline
+         points="284.29,449.12 363.90,449.12 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline377" />
+      <polyline
+         points="284.29,316.02 363.90,316.02 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline379" />
+      <polyline
+         points="284.29,182.92 363.90,182.92 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline381" />
+      <polyline
+         points="284.29,49.82 363.90,49.82 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline383" />
+      <polyline
+         points="293.48,608.84 293.48,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline385" />
+      <polyline
+         points="308.79,608.84 308.79,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline387" />
+      <polyline
+         points="324.10,608.84 324.10,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline389" />
+      <polyline
+         points="339.40,608.84 339.40,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline391" />
+      <polyline
+         points="354.71,608.84 354.71,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline393" />
+      <rect
+         x="301.89999"
+         y="77.769997"
+         width="13.78"
+         height="504.45001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect395" />
+      <rect
+         x="301.89999"
+         y="49.82"
+         width="13.78"
+         height="27.950001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect397" />
+      <rect
+         x="286.59"
+         y="110.51"
+         width="13.78"
+         height="471.70999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect399" />
+      <rect
+         x="286.59"
+         y="49.82"
+         width="13.78"
+         height="60.689999"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect401" />
+      <rect
+         x="317.20999"
+         y="161.67"
+         width="13.78"
+         height="420.54001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect403" />
+      <rect
+         x="317.20999"
+         y="49.82"
+         width="13.78"
+         height="111.86"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect405" />
+      <rect
+         x="347.82001"
+         y="348.70999"
+         width="13.78"
+         height="233.50999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect407" />
+      <rect
+         x="347.82001"
+         y="49.82"
+         width="13.78"
+         height="298.89001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect409" />
+      <rect
+         x="332.51001"
+         y="83.839996"
+         width="13.78"
+         height="498.38"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect411" />
+      <rect
+         x="332.51001"
+         y="49.82"
+         width="13.78"
+         height="34.02"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect413" />
+    </g>
+    <text
+       x="279.35999"
+       y="585.37"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="4.9000001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text417">0</text>
+    <text
+       x="279.35999"
+       y="452.26999"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text419">25</text>
+    <text
+       x="279.35999"
+       y="319.17001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text421">50</text>
+    <text
+       x="279.35999"
+       y="186.07001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text423">75</text>
+    <text
+       x="279.35999"
+       y="52.970001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="14.69"
+       lengthAdjust="spacingAndGlyphs"
+       id="text425">100</text>
+  </g>
+  <text
+     transform="rotate(-45,895.23963,-50.530394)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="35.23"
+     lengthAdjust="spacingAndGlyphs"
+     id="text427">Annotato</text>
+  <text
+     transform="rotate(-45,902.89463,-69.011199)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="25.41"
+     lengthAdjust="spacingAndGlyphs"
+     id="text429">CNAG</text>
+  <text
+     transform="rotate(-45,910.54963,-87.492004)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.83"
+     lengthAdjust="spacingAndGlyphs"
+     id="text431">geneidx</text>
+  <text
+     transform="rotate(-45,918.19963,-105.96074)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="27.370001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text433">Helixer</text>
+  <text
+     transform="rotate(-45,925.85463,-124.44154)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="53.790001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text435">maker 1 Pass</text>
+  <text
+     x="284.29001"
+     y="14.94"
+     style="font-size:13.2px;font-family:Arial"
+     textLength="71.860001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text441"
+     transform="translate(-5.7150768)">Helleia helle</text>
+  <defs
+     id="defs448">
+    <clipPath
+       id="cpMzY5LjM4fDQ5Mi41MHwwLjAwfDY3Ni4wMA==">
+      <rect
+         x="369.38"
+         y="0.00000000000011"
+         width="123.12"
+         height="676.00"
+         id="rect445" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpMzY5LjM4fDQ5Mi41MHwwLjAwfDY3Ni4wMA==)"
+     id="g450" />
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g452" />
+  <defs
+     id="defs457" />
+  <g
+     id="g2107"
+     transform="matrix(1,0,0,0.97640123,0,-7.4125199)"
+     style="stroke-width:1.01201">
+    <polyline
+       points="409.86,526.70 487.02,526.70 "
+       style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+       id="polyline459"
+       clip-path="url(#clipPath2039)" />
+    <polyline
+       points="409.86,390.62 487.02,390.62 "
+       style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+       id="polyline461"
+       clip-path="url(#clipPath2033)" />
+    <polyline
+       points="409.86,254.54 487.02,254.54 "
+       style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+       id="polyline463"
+       clip-path="url(#clipPath2027)" />
+    <polyline
+       points="409.86,118.46 487.02,118.46 "
+       style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+       id="polyline465"
+       clip-path="url(#clipPath2021)" />
+    <polyline
+       points="409.86,594.75 487.02,594.75 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline467"
+       clip-path="url(#clipPath2015)" />
+    <polyline
+       points="409.86,458.66 487.02,458.66 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline469"
+       clip-path="url(#clipPath2009)" />
+    <polyline
+       points="409.86,322.58 487.02,322.58 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline471"
+       clip-path="url(#clipPath2003)" />
+    <polyline
+       points="409.86,186.50 487.02,186.50 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline473"
+       clip-path="url(#clipPath1997)" />
+    <polyline
+       points="409.86,50.41 487.02,50.41 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline475"
+       clip-path="url(#clipPath1991)" />
+    <polyline
+       points="416.29,621.96 416.29,23.20 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline477"
+       clip-path="url(#clipPath1985)" />
+    <polyline
+       points="427.01,621.96 427.01,23.20 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline479"
+       clip-path="url(#clipPath1979)" />
+    <polyline
+       points="437.72,621.96 437.72,23.20 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline481"
+       clip-path="url(#clipPath1973)" />
+    <polyline
+       points="448.44,621.96 448.44,23.20 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline483"
+       clip-path="url(#clipPath1967)" />
+    <polyline
+       points="459.16,621.96 459.16,23.20 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline485"
+       clip-path="url(#clipPath1961)" />
+    <polyline
+       points="469.87,621.96 469.87,23.20 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline487"
+       clip-path="url(#clipPath1955)" />
+    <polyline
+       points="480.59,621.96 480.59,23.20 "
+       style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+       id="polyline489"
+       clip-path="url(#clipPath1949)" />
+    <rect
+       x="443.62"
+       y="211.53999"
+       width="9.6400003"
+       height="383.20999"
+       style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect491"
+       clip-path="url(#clipPath1943)" />
+    <rect
+       x="432.89999"
+       y="151.12"
+       width="9.6400003"
+       height="443.63"
+       style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect493"
+       clip-path="url(#clipPath1937)" />
+    <rect
+       x="475.76999"
+       y="167.45"
+       width="9.6400003"
+       height="427.29999"
+       style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect495"
+       clip-path="url(#clipPath1931)" />
+    <rect
+       x="465.04999"
+       y="117.37"
+       width="9.6400003"
+       height="477.38"
+       style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect497"
+       clip-path="url(#clipPath1925)" />
+    <rect
+       x="465.04999"
+       y="117.37"
+       width="9.6400003"
+       height="477.38"
+       style="fill:#5f9ea0;stroke:none;stroke-width:0.995556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10"
+       id="rect497-9"
+       clip-path="url(#clipPath1925-7)"
+       transform="matrix(1,0,0,1.1830641,-10.714996,-108.87738)" />
+    <rect
+       x="411.47"
+       y="128.25"
+       width="9.6400003"
+       height="466.48999"
+       style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect499"
+       clip-path="url(#clipPath1919)" />
+    <rect
+       x="422.17999"
+       y="228.41"
+       width="9.6400003"
+       height="366.34"
+       style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+       id="rect501"
+       clip-path="url(#clipPath1913)" />
+    <text
+       x="404.92999"
+       y="597.90002"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="12.23"
+       lengthAdjust="spacingAndGlyphs"
+       id="text505">0.0</text>
+    <text
+       x="404.92999"
+       y="461.82001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="12.23"
+       lengthAdjust="spacingAndGlyphs"
+       id="text507">2.5</text>
+    <text
+       x="404.92999"
+       y="325.73001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="12.23"
+       lengthAdjust="spacingAndGlyphs"
+       id="text509">5.0</text>
+    <text
+       x="404.92999"
+       y="189.64999"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="12.23"
+       lengthAdjust="spacingAndGlyphs"
+       id="text511">7.5</text>
+    <text
+       x="404.92999"
+       y="53.57"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="17.129999"
+       lengthAdjust="spacingAndGlyphs"
+       id="text513">10.0</text>
+  </g>
+  <text
+     transform="rotate(-45,972.48187,-192.21518)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="35.23"
+     lengthAdjust="spacingAndGlyphs"
+     id="text515">Annotato</text>
+  <text
+     transform="rotate(-45,977.84187,-205.15536)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.82"
+     lengthAdjust="spacingAndGlyphs"
+     id="text517">Braker3</text>
+  <text
+     transform="rotate(-45,983.19687,-218.08348)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="25.41"
+     lengthAdjust="spacingAndGlyphs"
+     id="text519">CNAG</text>
+  <text
+     transform="rotate(-45,988.55687,-231.02366)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="34.240002"
+     lengthAdjust="spacingAndGlyphs"
+     id="text521">Ensembl</text>
+  <text
+     transform="rotate(-45,993.91687,-243.96385)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.83"
+     lengthAdjust="spacingAndGlyphs"
+     id="text523">geneidx</text>
+  <text
+     transform="rotate(-45,999.27187,-256.89196)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="27.370001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text525">Helixer</text>
+  <text
+     transform="rotate(-45,1004.6319,-269.83214)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="14.18"
+     lengthAdjust="spacingAndGlyphs"
+     id="text527">SIB</text>
+  <text
+     x="448.44"
+     y="668.21002"
+     text-anchor="middle"
+     style="font-size:11px;font-family:Arial"
+     textLength="39.139999"
+     lengthAdjust="spacingAndGlyphs"
+     id="text529"
+     transform="translate(60.753939)">Pipeline</text>
+  <text
+     x="409.85999"
+     y="14.94"
+     style="font-size:13.2px;font-family:Arial"
+     textLength="142.97"
+     lengthAdjust="spacingAndGlyphs"
+     id="text533"
+     transform="translate(-43.694132,-36)">Homo sapiens chrom 19</text>
+  <defs
+     id="defs540">
+    <clipPath
+       id="cpNDkyLjUwfDYxNS42MnwwLjAwfDY3Ni4wMA==">
+      <rect
+         x="492.50"
+         y="0.00000000000011"
+         width="123.12"
+         height="676.00"
+         id="rect537" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpNDkyLjUwfDYxNS42MnwwLjAwfDY3Ni4wMA==)"
+     id="g542" />
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g544" />
+  <defs
+     id="defs549">
+    <clipPath
+       id="cpNTMwLjU0fDYxMC4xNXwyMy4yMHw2MDguODQ=">
+      <rect
+         x="530.54"
+         y="23.20"
+         width="79.60"
+         height="585.64"
+         id="rect546" />
+    </clipPath>
+  </defs>
+  <g
+     id="g2242"
+     transform="matrix(1,0,0,0.97640123,0,5.3978642)"
+     style="stroke-width:1.01201">
+    <g
+       clip-path="url(#cpNTMwLjU0fDYxMC4xNXwyMy4yMHw2MDguODQ=)"
+       id="g593"
+       style="stroke-width:1.01201">
+      <polyline
+         points="530.54,515.67 610.15,515.67 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline551" />
+      <polyline
+         points="530.54,382.57 610.15,382.57 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline553" />
+      <polyline
+         points="530.54,249.47 610.15,249.47 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline555" />
+      <polyline
+         points="530.54,116.37 610.15,116.37 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline557" />
+      <polyline
+         points="530.54,582.22 610.15,582.22 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline559" />
+      <polyline
+         points="530.54,449.12 610.15,449.12 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline561" />
+      <polyline
+         points="530.54,316.02 610.15,316.02 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline563" />
+      <polyline
+         points="530.54,182.92 610.15,182.92 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline565" />
+      <polyline
+         points="530.54,49.82 610.15,49.82 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline567" />
+      <polyline
+         points="541.92,608.84 541.92,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline569" />
+      <polyline
+         points="560.87,608.84 560.87,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline571" />
+      <polyline
+         points="579.82,608.84 579.82,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline573" />
+      <polyline
+         points="598.77,608.84 598.77,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline575" />
+      <rect
+         x="590.25"
+         y="243.45"
+         width="17.059999"
+         height="338.76999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect577" />
+      <rect
+         x="590.25"
+         y="49.82"
+         width="17.059999"
+         height="193.63"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect579" />
+      <rect
+         x="533.39001"
+         y="89.75"
+         width="17.059999"
+         height="492.47"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect581" />
+      <rect
+         x="533.39001"
+         y="49.82"
+         width="17.059999"
+         height="39.93"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect583" />
+      <rect
+         x="571.28998"
+         y="86.82"
+         width="17.059999"
+         height="495.39999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect585" />
+      <rect
+         x="571.28998"
+         y="49.82"
+         width="17.059999"
+         height="37"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect587" />
+      <rect
+         x="552.34003"
+         y="473.60999"
+         width="17.059999"
+         height="108.61"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect589" />
+      <rect
+         x="552.34003"
+         y="49.82"
+         width="17.059999"
+         height="423.79001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect591" />
+    </g>
+    <text
+       x="525.60999"
+       y="585.37"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="4.9000001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text595">0</text>
+    <text
+       x="525.60999"
+       y="452.26999"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text597">25</text>
+    <text
+       x="525.60999"
+       y="319.17001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text599">50</text>
+    <text
+       x="525.60999"
+       y="186.07001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text601">75</text>
+    <text
+       x="525.60999"
+       y="52.970001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="14.69"
+       lengthAdjust="spacingAndGlyphs"
+       id="text603">100</text>
+  </g>
+  <text
+     transform="rotate(-45,1019.4596,-350.424)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="35.23"
+     lengthAdjust="spacingAndGlyphs"
+     id="text605">Annotato</text>
+  <text
+     transform="rotate(-45,1028.9346,-373.29868)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.82"
+     lengthAdjust="spacingAndGlyphs"
+     id="text607">Braker3</text>
+  <text
+     transform="rotate(-45,1038.4096,-396.17335)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="27.370001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text609">Helixer</text>
+  <text
+     transform="rotate(-45,1047.8846,-419.04802)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="53.790001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text611">maker 1 Pass</text>
+  <text
+     x="530.53998"
+     y="14.94"
+     style="font-size:13.2px;font-family:Arial"
+     textLength="103.37"
+     lengthAdjust="spacingAndGlyphs"
+     id="text617"
+     transform="translate(-21.257514)">Melampus jaumei</text>
+  <defs
+     id="defs624">
+    <clipPath
+       id="cpNjE1LjYyfDczOC43NXwwLjAwfDY3Ni4wMA==">
+      <rect
+         x="615.62"
+         y="0.00000000000011"
+         width="123.12"
+         height="676.00"
+         id="rect621" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpNjE1LjYyfDczOC43NXwwLjAwfDY3Ni4wMA==)"
+     id="g626" />
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g628" />
+  <defs
+     id="defs633">
+    <clipPath
+       id="cpNjUzLjY3fDczMy4yN3wyMy4yMHw2MDcuODM=">
+      <rect
+         x="653.67"
+         y="23.20"
+         width="79.60"
+         height="584.63"
+         id="rect630" />
+    </clipPath>
+  </defs>
+  <g
+     id="g2280"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     style="stroke-width:1.01201">
+    <g
+       clip-path="url(#cpNjUzLjY3fDczMy4yN3wyMy4yMHw2MDcuODM=)"
+       id="g695"
+       style="stroke-width:1.01201">
+      <polyline
+         points="653.67,514.82 733.27,514.82 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline635" />
+      <polyline
+         points="653.67,381.95 733.27,381.95 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline637" />
+      <polyline
+         points="653.67,249.08 733.27,249.08 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline639" />
+      <polyline
+         points="653.67,116.21 733.27,116.21 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline641" />
+      <polyline
+         points="653.67,581.26 733.27,581.26 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline643" />
+      <polyline
+         points="653.67,448.38 733.27,448.38 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline645" />
+      <polyline
+         points="653.67,315.51 733.27,315.51 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline647" />
+      <polyline
+         points="653.67,182.64 733.27,182.64 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline649" />
+      <polyline
+         points="653.67,49.77 733.27,49.77 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline651" />
+      <polyline
+         points="660.30,607.83 660.30,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline653" />
+      <polyline
+         points="671.36,607.83 671.36,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline655" />
+      <polyline
+         points="682.41,607.83 682.41,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline657" />
+      <polyline
+         points="693.47,607.83 693.47,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline659" />
+      <polyline
+         points="704.53,607.83 704.53,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline661" />
+      <polyline
+         points="715.58,607.83 715.58,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline663" />
+      <polyline
+         points="726.64,607.83 726.64,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline665" />
+      <rect
+         x="666.38"
+         y="100.1"
+         width="9.9499998"
+         height="481.14999"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect667" />
+      <rect
+         x="666.38"
+         y="49.77"
+         width="9.9499998"
+         height="50.330002"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect669" />
+      <rect
+         x="688.5"
+         y="142.83"
+         width="9.9499998"
+         height="438.42001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect671" />
+      <rect
+         x="688.5"
+         y="49.77"
+         width="9.9499998"
+         height="93.059998"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect673" />
+      <rect
+         x="655.33002"
+         y="122.05"
+         width="9.9499998"
+         height="459.20001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect675" />
+      <rect
+         x="655.33002"
+         y="49.77"
+         width="9.9499998"
+         height="72.279999"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect677" />
+      <rect
+         x="721.65997"
+         y="121.36"
+         width="9.9499998"
+         height="459.89001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect679" />
+      <rect
+         x="721.65997"
+         y="49.77"
+         width="9.9499998"
+         height="71.589996"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect681" />
+      <rect
+         x="699.54999"
+         y="129.81"
+         width="9.9499998"
+         height="451.44"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect683" />
+      <rect
+         x="699.54999"
+         y="49.77"
+         width="9.9499998"
+         height="80.040001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect685" />
+      <rect
+         x="710.60999"
+         y="96.120003"
+         width="9.9499998"
+         height="485.14001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect687" />
+      <rect
+         x="710.60999"
+         y="49.82"
+         width="9.9499998"
+         height="46.290001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect689" />
+      <rect
+         x="677.44"
+         y="125.61"
+         width="9.9499998"
+         height="455.64001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect691" />
+      <rect
+         x="677.44"
+         y="49.77"
+         width="9.9499998"
+         height="75.839996"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect693" />
+    </g>
+    <text
+       x="648.73999"
+       y="584.40997"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="4.9000001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text697">0</text>
+    <text
+       x="648.73999"
+       y="451.54001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text699">25</text>
+    <text
+       x="648.73999"
+       y="318.67001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text701">50</text>
+    <text
+       x="648.73999"
+       y="185.8"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text703">75</text>
+    <text
+       x="648.73999"
+       y="52.93"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="14.69"
+       lengthAdjust="spacingAndGlyphs"
+       id="text705">100</text>
+  </g>
+  <text
+     transform="rotate(-45,1077.4304,-493.8263)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="35.23"
+     lengthAdjust="spacingAndGlyphs"
+     id="text707">Annotato</text>
+  <text
+     transform="rotate(-45,1082.9604,-507.1769)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="25.41"
+     lengthAdjust="spacingAndGlyphs"
+     id="text709">CNAG</text>
+  <text
+     transform="rotate(-45,1088.4854,-520.51543)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="46.490002"
+     lengthAdjust="spacingAndGlyphs"
+     id="text711">funannotate</text>
+  <text
+     transform="rotate(-45,1094.0154,-533.86604)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="27.370001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text713">Helixer</text>
+  <text
+     transform="rotate(-45,1099.5454,-547.21664)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="53.790001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text715">maker 1 Pass</text>
+  <text
+     transform="rotate(-45,1105.0704,-560.55517)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="55.220001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text717">REAT-MINOS</text>
+  <text
+     transform="rotate(-45,1110.6004,-573.90577)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="14.18"
+     lengthAdjust="spacingAndGlyphs"
+     id="text719">SIB</text>
+  <text
+     x="653.66998"
+     y="14.94"
+     style="font-size:13.2px;font-family:Arial"
+     textLength="125.38"
+     lengthAdjust="spacingAndGlyphs"
+     id="text725"
+     transform="translate(-32.304386,-36)">Phakellia ventilabrum</text>
+  <defs
+     id="defs732">
+    <clipPath
+       id="cpNzM4Ljc1fDg2MS44OHwwLjAwfDY3Ni4wMA==">
+      <rect
+         x="738.75"
+         y="0.00000000000011"
+         width="123.12"
+         height="676.00"
+         id="rect729" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpNzM4Ljc1fDg2MS44OHwwLjAwfDY3Ni4wMA==)"
+     id="g734" />
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g736" />
+  <defs
+     id="defs741">
+    <clipPath
+       id="cpNzc2Ljc5fDg1Ni40MHwyMy4yMHw2MDguODQ=">
+      <rect
+         x="776.79"
+         y="23.20"
+         width="79.60"
+         height="585.64"
+         id="rect738" />
+    </clipPath>
+  </defs>
+  <g
+     id="g2421"
+     transform="matrix(1,0,0,0.97640123,0,5.3978642)"
+     style="stroke-width:1.01201">
+    <g
+       clip-path="url(#cpNzc2Ljc5fDg1Ni40MHwyMy4yMHw2MDguODQ=)"
+       id="g791"
+       style="stroke-width:1.01201">
+      <polyline
+         points="776.79,515.67 856.40,515.67 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline743" />
+      <polyline
+         points="776.79,382.57 856.40,382.57 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline745" />
+      <polyline
+         points="776.79,249.47 856.40,249.47 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline747" />
+      <polyline
+         points="776.79,116.37 856.40,116.37 "
+         style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+         id="polyline749" />
+      <polyline
+         points="776.79,582.22 856.40,582.22 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline751" />
+      <polyline
+         points="776.79,449.12 856.40,449.12 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline753" />
+      <polyline
+         points="776.79,316.02 856.40,316.02 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline755" />
+      <polyline
+         points="776.79,182.92 856.40,182.92 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline757" />
+      <polyline
+         points="776.79,49.82 856.40,49.82 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline759" />
+      <polyline
+         points="785.98,608.84 785.98,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline761" />
+      <polyline
+         points="801.29,608.84 801.29,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline763" />
+      <polyline
+         points="816.60,608.84 816.60,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline765" />
+      <polyline
+         points="831.90,608.84 831.90,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline767" />
+      <polyline
+         points="847.21,608.84 847.21,23.20 "
+         style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+         id="polyline769" />
+      <rect
+         x="809.71002"
+         y="78.089996"
+         width="13.78"
+         height="504.13"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect771" />
+      <rect
+         x="809.71002"
+         y="49.82"
+         width="13.78"
+         height="28.27"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect773" />
+      <rect
+         x="779.09003"
+         y="80.910004"
+         width="13.78"
+         height="501.31"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect775" />
+      <rect
+         x="779.09003"
+         y="49.82"
+         width="13.78"
+         height="31.09"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect777" />
+      <rect
+         x="825.01001"
+         y="74.68"
+         width="13.78"
+         height="507.54001"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect779" />
+      <rect
+         x="825.01001"
+         y="49.82"
+         width="13.78"
+         height="24.860001"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect781" />
+      <rect
+         x="840.32001"
+         y="82.029999"
+         width="13.78"
+         height="500.19"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect783" />
+      <rect
+         x="840.32001"
+         y="49.82"
+         width="13.78"
+         height="32.209999"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect785" />
+      <rect
+         x="794.40002"
+         y="105.77"
+         width="13.78"
+         height="476.44"
+         style="fill:#5f9ea0;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect787" />
+      <rect
+         x="794.40002"
+         y="49.82"
+         width="13.78"
+         height="55.959999"
+         style="fill:#ff0000;stroke:none;stroke-width:1.08285;stroke-linecap:butt;stroke-linejoin:miter"
+         id="rect789" />
+    </g>
+    <text
+       x="771.85999"
+       y="585.37"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="4.9000001"
+       lengthAdjust="spacingAndGlyphs"
+       id="text793">0</text>
+    <text
+       x="771.85999"
+       y="452.26999"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text795">25</text>
+    <text
+       x="771.85999"
+       y="319.17001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text797">50</text>
+    <text
+       x="771.85999"
+       y="186.07001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="9.79"
+       lengthAdjust="spacingAndGlyphs"
+       id="text799">75</text>
+    <text
+       x="771.85999"
+       y="52.970001"
+       text-anchor="end"
+       style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+       textLength="14.69"
+       lengthAdjust="spacingAndGlyphs"
+       id="text801">100</text>
+  </g>
+  <text
+     transform="rotate(-45,1141.4896,-645.03048)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="35.23"
+     lengthAdjust="spacingAndGlyphs"
+     id="text803">Annotato</text>
+  <text
+     transform="rotate(-45,1149.1446,-663.51129)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.82"
+     lengthAdjust="spacingAndGlyphs"
+     id="text805">Braker3</text>
+  <text
+     transform="rotate(-45,1156.7996,-681.99209)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="45.009998"
+     lengthAdjust="spacingAndGlyphs"
+     id="text807">Genoscope</text>
+  <text
+     transform="rotate(-45,1164.4496,-700.46083)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="27.370001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text809">Helixer</text>
+  <text
+     transform="rotate(-45,1172.1046,-718.94163)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="53.790001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text811">maker 1 Pass</text>
+  <text
+     x="776.78998"
+     y="14.94"
+     style="font-size:13.2px;font-family:Arial"
+     textLength="131.25999"
+     lengthAdjust="spacingAndGlyphs"
+     id="text817"
+     transform="translate(-35.38931)">Pocillopora meandrina</text>
+  <defs
+     id="defs824">
+    <clipPath
+       id="cpODYxLjg3fDk4NS4wMHwwLjAwfDY3Ni4wMA==">
+      <rect
+         x="861.87"
+         y="0.00000000000011"
+         width="123.12"
+         height="676.00"
+         id="rect821" />
+    </clipPath>
+  </defs>
+  <g
+     clip-path="url(#cpODYxLjg3fDk4NS4wMHwwLjAwfDY3Ni4wMA==)"
+     id="g826" />
+  <g
+     clip-path="url(#cpMC4wMHw5ODUuMDB8MC4wMHw2NzYuMDA=)"
+     id="g828" />
+  <defs
+     id="defs833" />
+  <polyline
+     points="899.92,514.82 979.52,514.82 "
+     style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+     id="polyline835"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2622)" />
+  <polyline
+     points="899.92,381.95 979.52,381.95 "
+     style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+     id="polyline837"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2616)" />
+  <polyline
+     points="899.92,249.08 979.52,249.08 "
+     style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+     id="polyline839"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2610)" />
+  <polyline
+     points="899.92,116.21 979.52,116.21 "
+     style="stroke:#ebebeb;stroke-width:0.536367;stroke-linecap:butt"
+     id="polyline841"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2604)" />
+  <polyline
+     points="899.92,581.26 979.52,581.26 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline843"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2598)" />
+  <polyline
+     points="899.92,448.38 979.52,448.38 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline845"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2592)" />
+  <polyline
+     points="899.92,315.51 979.52,315.51 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline847"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2586)" />
+  <polyline
+     points="899.92,182.64 979.52,182.64 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline849"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2580)" />
+  <polyline
+     points="899.92,49.77 979.52,49.77 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline851"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2574)" />
+  <polyline
+     points="911.29,607.83 911.29,23.20 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline853"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2568)" />
+  <polyline
+     points="930.24,607.83 930.24,23.20 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline855"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2562)" />
+  <polyline
+     points="949.20,607.83 949.20,23.20 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline857"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2556)" />
+  <polyline
+     points="968.15,607.83 968.15,23.20 "
+     style="stroke:#ebebeb;stroke-width:1.08285;stroke-linecap:butt"
+     id="polyline859"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)"
+     clip-path="url(#clipPath2550)" />
+  <rect
+     x="902.76001"
+     y="83.109642"
+     width="17.059999"
+     height="490.81735"
+     style="fill:#5f9ea0;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect861"
+     clip-path="url(#clipPath2544)" />
+  <rect
+     x="902.76001"
+     y="54.979519"
+     width="17.059999"
+     height="28.130119"
+     style="fill:#ff0000;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect863"
+     clip-path="url(#clipPath2538)" />
+  <rect
+     x="940.66998"
+     y="76.313889"
+     width="17.059999"
+     height="497.61313"
+     style="fill:#5f9ea0;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect865"
+     clip-path="url(#clipPath2532)" />
+  <rect
+     x="940.66998"
+     y="54.979519"
+     width="17.059999"
+     height="21.324602"
+     style="fill:#ff0000;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect867"
+     clip-path="url(#clipPath2526)" />
+  <rect
+     x="921.71997"
+     y="79.789871"
+     width="17.059999"
+     height="494.13712"
+     style="fill:#5f9ea0;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect869"
+     clip-path="url(#clipPath2520)" />
+  <rect
+     x="921.71997"
+     y="54.979519"
+     width="17.059999"
+     height="24.800591"
+     style="fill:#ff0000;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect871"
+     clip-path="url(#clipPath2514)" />
+  <rect
+     x="959.62"
+     y="81.186127"
+     width="17.059999"
+     height="492.73114"
+     style="fill:#5f9ea0;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect873"
+     clip-path="url(#clipPath2508)" />
+  <rect
+     x="959.62"
+     y="54.979519"
+     width="17.059999"
+     height="26.20661"
+     style="fill:#ff0000;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter"
+     id="rect875"
+     clip-path="url(#clipPath2502)" />
+  <text
+     x="894.98999"
+     y="584.40997"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+     textLength="4.9000001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text879"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)">0</text>
+  <text
+     x="894.98999"
+     y="451.54001"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+     textLength="9.79"
+     lengthAdjust="spacingAndGlyphs"
+     id="text881"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)">25</text>
+  <text
+     x="894.98999"
+     y="318.67001"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+     textLength="9.79"
+     lengthAdjust="spacingAndGlyphs"
+     id="text883"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)">50</text>
+  <text
+     x="894.98999"
+     y="185.8"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d;stroke-width:1.02417"
+     textLength="9.79"
+     lengthAdjust="spacingAndGlyphs"
+     id="text885"
+     transform="matrix(1,0,0,0.97640123,0,6.3840295)">75</text>
+  <text
+     x="894.98999"
+     y="52.93"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="14.69"
+     lengthAdjust="spacingAndGlyphs"
+     id="text887">100</text>
+  <text
+     transform="rotate(-45,1202.9254,-796.79803)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="35.23"
+     lengthAdjust="spacingAndGlyphs"
+     id="text889">Annotato</text>
+  <text
+     transform="rotate(-45,1212.4004,-819.67271)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="30.82"
+     lengthAdjust="spacingAndGlyphs"
+     id="text891">Braker3</text>
+  <text
+     transform="rotate(-45,1221.8804,-842.55945)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="27.370001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text893">Helixer</text>
+  <text
+     transform="rotate(-45,1231.3554,-865.43413)"
+     text-anchor="end"
+     style="font-size:8.8px;font-family:Arial;fill:#4d4d4d"
+     textLength="55.220001"
+     lengthAdjust="spacingAndGlyphs"
+     id="text895">REAT-MINOS</text>
+  <text
+     x="899.91998"
+     y="14.94"
+     style="font-size:13.2px;font-family:Arial"
+     textLength="97.5"
+     lengthAdjust="spacingAndGlyphs"
+     id="text901"
+     transform="translate(-15.905218,-36)">Trifolium dubium</text>
+  <rect
+     x="902.76001"
+     y="54.979519"
+     width="17.059999"
+     height="28.130119"
+     style="fill:#ff0000;stroke:none;stroke-width:1.07;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10"
+     id="rect863-3"
+     clip-path="url(#clipPath2538-9)"
+     transform="rotate(90,894.68963,199.23676)" />
+  <rect
+     x="921.71997"
+     y="79.789871"
+     width="17.059999"
+     height="494.13712"
+     style="fill:#5f9ea0;stroke:none;stroke-width:4.48459;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10"
+     id="rect869-7"
+     clip-path="url(#clipPath2520-3)"
+     transform="matrix(0,1,-0.05692752,0,1043.489,-687.06883)" />
+  <text
+     xml:space="preserve"
+     style="font-size:14px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';fill:#000005;stroke-width:0.419;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6;paint-order:markers fill stroke"
+     x="1058.4698"
+     y="219.37473"
+     id="text2733"><tspan
+       sodipodi:role="line"
+       id="tspan2731"
+       style="stroke-width:0.419"
+       x="1058.4698"
+       y="219.37473">Missing</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:14px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';white-space:pre;fill:#000005;stroke-width:0.419;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:3.6;paint-order:markers fill stroke"
+     x="1058.8116"
+     y="246.88622"
+     id="text2733-3"
+     inkscape:export-filename="omark_complete.png"
+     inkscape:export-xdpi="200"
+     inkscape:export-ydpi="200"><tspan
+       sodipodi:role="line"
+       id="tspan2731-5"
+       style="stroke-width:0.419"
+       x="1058.8116"
+       y="246.88622">Complete</tspan></text>
+</svg>
