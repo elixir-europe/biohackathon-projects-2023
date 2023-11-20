@@ -13,7 +13,10 @@ export const useSchemaStore = defineStore('schemaData', () => {
       data.value = await get(`/schema/${HARD_CODED_ID}`).then( data => this.schema = data.schema )
       fetched.value = true
     }
-    return data.value[key]
+    if (key) {
+      return data.value[key]
+    }
+    return data.value
   }
 
   return { getSchema }

@@ -33,6 +33,7 @@
               display="table"
               :field="field"
               :ref="getInputRef(rowIx, field.name)"
+              :inputValue="row[field.name]"
               @blur="updateCell(rowIx, field.name, $event.target.value)"
               @keydown.exact="inputKeydown($event, rowIx, field.name)"
             />
@@ -43,12 +44,12 @@
   </div>
 
   <button class="btn btn-secondary mr-2 my-2" @click="this.addRows(1)">Add row</button>
-  <button class="btn btn-secondary mr-2 my-2" disabled>Copy to clipboard</button>
+  <button class="btn btn-secondary mr-2 my-2" disabled>Copy table to clipboard</button>
 
-  <!-- <div>
-    <p>Row 1 data:</p>
-    <pre>{{ data[0] }}</pre>
-  </div> -->
+
+  <!-- For debugging state: -->
+  <!-- <div><p>Row 1 data:</p><pre>{{ data[0] }}</pre></div> -->
+
 </template>
 
 <script>
@@ -156,6 +157,8 @@ export default {
         default:
           return
       }
+      // const field = this.$refs[this.getInputRef(newRowIx, newFieldName)][0]
+      // field && field.focus()
       this.$refs[this.getInputRef(newRowIx, newFieldName)][0].focus()
     },
   },

@@ -20,5 +20,3 @@ export const post = (path, data) =>
       }
       return data
     })
-
-export const submitForms = (formData) => post('/submit', formData)
