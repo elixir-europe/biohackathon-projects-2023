@@ -76,6 +76,11 @@ export default {
     schema: Object,
     formStoreKey: String,
   },
+  data() {
+    return {
+      undoData: [],
+    }
+  },
   computed: {
     data() {
       return formStore.getFormData(this.formStoreKey)
@@ -85,6 +90,12 @@ export default {
     if (!this.data.length) {
       this.initRows()
     }
+    document.addEventListener('keydown', (event) => {
+      // Bind ctrl+z to setDataUndo
+      if (event.ctrlKey && event.key === 'z') {
+        this.setDataUndo()
+      }
+    })
   },
   methods: {
     updateCell(rowIx, field_name, value) {
@@ -95,10 +106,15 @@ export default {
       })
     },
     setData(data) {
+      this.undoData.unshift(this.data)
       formStore.$patch( (state) => {
         state[this.formStoreKey] = data
         state.hasChanged = true
       })
+    },
+    setDataUndo() {
+      this.setData(this.undoData.shift())
+      this.undoData.shift()
     },
     idToTitle(id) {
       return id
