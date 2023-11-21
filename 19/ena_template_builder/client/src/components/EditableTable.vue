@@ -16,10 +16,11 @@
                   <v-tooltip
                     activator="parent"
                     location="top"
-                    max-width="300"
+                    :max-width="field.description.length < 200 ? 300 : 600"
+                    style="overflow-wrap: break-word;"
                   >
-                    <span v-if="field.cardinality === 'mandatory'">[required]</span>
-                    <span v-if="field.cardinality === 'optional'">[optional]</span>
+                    <span v-if="field.cardinality === 'mandatory'" class="tip required">Required</span>
+                    <span v-if="field.cardinality === 'optional'" class="tip optional">Optional</span>
                     {{ field.description }}
                   </v-tooltip>
                 </span>
@@ -198,5 +199,19 @@ export default {
     padding: 0 .4rem;
     cursor: default;
     user-select: none;
+  }
+  .tip {
+    color: white;
+    padding: .1rem .5rem;
+    border-radius: .5rem;
+    line-height: 1.1;
+    cursor: default;
+    user-select: none;
+  }
+  .tip.required {
+    background: #e35027;
+  }
+  .tip.optional {
+    background: #888;
   }
 </style>
