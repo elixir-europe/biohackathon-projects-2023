@@ -1,14 +1,14 @@
 <template>
-  <h1>Submit and create tables</h1>
+  <h1>Generate tables</h1>
   <p>
-    After submission, your submitted metadata will be written to tabular output
+    After submission, your metadata will be written to tabular output
     files which will be available in your Galaxy history after the tool
-    terminates (this may take up to 10 seconds).
+    terminates (&lt; 10 seconds).
   </p>
-  <button class="btn btn-primary" @click="submitForm">Submit</button>
+  <button class="btn btn-primary" @click="submitForm">Generate</button>
 
-  <p class="my-5">Data:</p>
-  <pre>{{ data }}</pre>
+  <!-- For debugging state: -->
+  <!-- <p class="my-5">Data:</p><pre>{{ data }}</pre> -->
 
 </template>
 

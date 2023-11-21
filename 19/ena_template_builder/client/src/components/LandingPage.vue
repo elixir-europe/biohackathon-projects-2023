@@ -4,5 +4,8 @@
   <p>This is how the app works. Delete this page if it's unneccesary!</p>
 </template>
 
-<style scoped>
-</style>
+<script>
+export default {
+  name: 'LandingPage',
+}
+</script>
