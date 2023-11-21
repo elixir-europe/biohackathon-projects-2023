@@ -52,7 +52,7 @@
       </table>
     </div>
 
-    <div class="table-controls" :style="tableControlCssProps">
+    <div class="table-row-controls" :style="tableControlCssProps">
       <button class="btn btn-primary" @click="this.addRows(1)">
         +
       </button>
@@ -68,15 +68,44 @@
     </div>
   </div>
 
-  <button class="btn btn-secondary mr-2 my-2 p-1" style="line-height: 1" @click="copyToClipboard">
-    <span class="material-symbols-outlined">content_copy</span>
-    <v-tooltip
-      activator="parent"
-      location="left"
-    >
-      Copy table content to clipboard
-    </v-tooltip>
-  </button>
+  <div class="table-toolbar">
+    <button class="btn btn-tool" @click="copyToClipboard">
+      <span class="material-symbols-outlined">content_copy</span>
+      <v-tooltip
+        activator="parent"
+        location="bottom"
+      >
+        Copy table content to clipboard
+      </v-tooltip>
+    </button>
+
+    <div class="clear-buttons">
+      <button class="btn btn-tool">
+        <span class="material-symbols-outlined">block</span>
+      </button>
+      <div class="options">
+        <button class="btn btn-tool" @click="clearAll">
+          Clear all
+        </button>
+        <button class="btn btn-tool" @click="clearRow">
+          Clear selected row
+        </button>
+        <button class="btn btn-tool" @click="clearColumn">
+          Clear selected column
+        </button>
+      </div>
+    </div>
+
+    <button class="btn btn-tool" @click="columnFill">
+      <span class="material-symbols-outlined">arrow_downward</span>
+      <v-tooltip
+        activator="parent"
+        location="bottom"
+      >
+        Fill selected cell down
+      </v-tooltip>
+    </button>
+  </div>
 
   <!-- For debugging state: -->
   <!-- <div><p>Row 1 data:</p><pre>{{ data[0] }}</pre></div> -->
@@ -103,6 +132,10 @@ export default {
     return {
       undoData: [],
       tableOverflow: false,
+      lastFocused: {
+        row: null,
+        field: null,
+      },
     }
   },
   computed: {
@@ -130,9 +163,13 @@ export default {
     })
   },
   methods: {
-    updateCell(rowIx, field_name, value) {
+    updateCell(rowIx, fieldName, value) {
+      this.lastFocused = {
+        row: rowIx,
+        field: fieldName,
+      }
       formStore.$patch( (state) => {
-        state[this.formStoreKey][rowIx][field_name] = value
+        state[this.formStoreKey][rowIx][fieldName] = value
         state.hasChanged = true
       })
     },
@@ -173,6 +210,54 @@ export default {
         const newData = this.data.slice(0, this.data.length - 1)
         this.setData(newData)
       }
+    },
+    clearAll() {
+      const newData = this.data.map( () => {
+        return this.schema.fields.reduce( (obj, field) => {
+          obj[field.name] = ''
+          return obj
+        }, {})
+      })
+      this.setData(newData)
+    },
+    clearRow() {
+      const newData = this.data.map( (row, rowIx) => {
+        return this.schema.fields.reduce( (obj, field) => {
+          if (rowIx === this.lastFocused.row) {
+            obj[field.name] = ''
+            return obj
+          }
+          obj[field.name] = row[field.name]
+          return obj
+        }, {})
+      })
+      this.setData(newData)
+    },
+    clearColumn() {
+      const newData = this.data.map( (row) => {
+        return this.schema.fields.reduce( (obj, field) => {
+          if (field.name === this.lastFocused.field) {
+            obj[field.name] = ''
+            return obj
+          }
+          obj[field.name] = row[field.name]
+          return obj
+        }, {})
+      })
+      this.setData(newData)
+    },
+    columnFill() {
+      const newData = this.data.map( (row, rowIx) => {
+        return this.schema.fields.reduce( (obj, field) => {
+          if (rowIx >= this.lastFocused.row && field.name === this.lastFocused.field) {
+            obj[field.name] = this.data[this.lastFocused.row][field.name]
+            return obj
+          }
+          obj[field.name] = row[field.name]
+          return obj
+        }, {})
+      })
+      this.setData(newData)
     },
     getInputRef(rowIx, fieldName) {
       return `input_row${rowIx}_${fieldName}`
@@ -320,16 +405,52 @@ export default {
   .tip.optional {
     background: #888;
   }
-  .table-controls {
+  .table-row-controls {
     position: absolute;
     left: -70px;
     /* bottom set with computed */
   }
-  .table-controls .btn {
+  .table-row-controls .btn {
     width: 1.5rem;
     margin: .2rem;
     padding: .2rem;
     line-height: 1;
     text-align: center;
+  }
+  .table-toolbar {
+    display: flex;
+    flex-direction: row;
+    margin-top: .5rem;
+  }
+  .btn-tool {
+    color: white;
+    background: var(--secondary);
+    margin: .2rem;
+    padding: .2rem;
+    line-height: 1;
+  }
+  .clear-buttons {
+    position: relative;
+  }
+  .clear-buttons .options {
+    display: none;
+    position: absolute;
+    top: 2.3rem;
+    left: 4px;
+    transform: translateY(3px);
+    background: #424242;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+  }
+  .clear-buttons:hover .options {
+    display: flex;
+    flex-direction: column;
+  }
+  .clear-buttons .options .btn {
+    color: white;
+    background-color: #424242;
+  }
+  .clear-buttons .options .btn:hover {
+    background: var(--secondary);
   }
   </style>
