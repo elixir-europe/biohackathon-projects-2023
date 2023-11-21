@@ -13,31 +13,31 @@ authors:
     orcid: 0000-0001-6691-4233
     affiliation: 2
   - name: Mihail Anton
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-7753-9042
     affiliation: 3
   - name: Jan Slifka
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-4941-0575
     affiliation: 4
   - name: Loredana La Pera
     orcid: 0000-0000-0000-0000
     affiliation: 5
   - name: Olivier Sand
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0003-1465-1640
     affiliation: 6
   - name: Maria Doyle
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0003-4847-8436
     affiliation: 7
-  - name: Patricia Palagi
-    orcid: 0000-0000-0000-0000
+  - name: Patricia M. Palagi
+    orcid: 0000-0001-9062-6303
     affiliation: 8
   - name: Helena Schnitzer
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-6382-9452
     affiliation: 9
   - name: Eva Alloza
     orcid: 0000-0000-0000-0000
     affiliation: 10
   - name: Albert Hornos
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-7330-668X
     affiliation: 10
   - name: Bruna Piereck
     orcid: 0000-0000-0000-0000
@@ -55,10 +55,10 @@ authors:
     orcid: 0000-0000-0000-0000
     affiliation: 13
   - name: Geert van Geest
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-1561-078X
     affiliation: 8
   - name: Daniel Wibberg
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-1331-4311
     affiliation: 9
 affiliations:
   - name: ELIXIR-UK, University of Cambridge
@@ -75,7 +75,7 @@ affiliations:
     index: 6
   - name: ELIXIR-IE 
     index: 7
-  - name: ELIXIR-CH 
+  - name: ELIXIR-CH, SIB Swiss Institute of Bioinformatics 
     index: 8
   - name: ELIXIR-DE, FZJ 
     index: 9
