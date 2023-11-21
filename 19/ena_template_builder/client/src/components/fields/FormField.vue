@@ -28,7 +28,10 @@
       :value="inputValue"
       @blur="$emit('blur', $event)"
     ></textarea>
-    <small>{{ field.description }}</small>
+    <small>
+      <span v-if="field.units">({{ field.units }})</span>
+      {{ field.description }}
+    </small>
   </div>
 
   <!-- Table view: -->
