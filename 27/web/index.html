@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
+    
   <head>
-    <meta
-      http-equiv="Content-Type"
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <meta
-      name="description"
-      content="MARS: Multi-omics Adapter for Repository Submissions"
-    />
-    <meta name="keywords" content="MARS," />
+    <meta http-equiv="Content-Type" charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="MARS: Multi-omics Adapter for Repository Submissions">
+	<meta name="keywords" content="MARS,">
     <style>
-      .center {
-        position: relative;
-        text-align: center;
-      }
-      .area {
+        .center {
+            position:relative;
+            text-align: center;
+        }
+        .area {
         border-left: 1px solid #dee2e6;
+        # position: absolute;
+
 
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
 
-        text-align: center;
-      }
 
-      .uploadarea {
+        text-align: center;
+        }
+
+        .uploadarea {
         border: 4px dashed rgb(45, 62, 80);
         filter: alpha(opacity=50);
         -khtml-opacity: 0.5;
@@ -38,80 +34,48 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 64px 64px;
-      }
 
-      .uploadarea:hover,
-      .uploadarea.dragging,
-      .uploadarea.uploading {
+        }
+
+        .uploadarea:hover,
+        .uploadarea.dragging,
+        .uploadarea.uploading {
         filter: alpha(opacity=100);
         -khtml-opacity: 1;
         -moz-opacity: 1;
         opacity: 1;
-      }
+        }
 
-      .uploadarea input {
+        .uploadarea input {
         margin: auto;
         width: 100%;
         height: 100%;
-
+        
         border: none;
         cursor: pointer;
         opacity: 0;
-      }
+        }
 
-      .uploadarea input:focus {
+        .uploadarea input:focus {
         outline: none;
-      }
-    </style>
-
+        }
+        </style>
+    
     <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <link href="css/custom.css" rel="stylesheet" />
-    <link href="css/bs5-intro-tour.css" rel="stylesheet" />
-    <script
-      src="js/bs5-intro-tour.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="css/custom.css" rel="stylesheet"/>
+    <link href="css/bs5-intro-tour.css" rel="stylesheet" />	
+    <script src="js/bs5-intro-tour.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/example.js" type="text/javascript" charset="utf-8"></script>
   </head>
-
+  </head>
   <body>
-    <div
-      class="col-12"
-      style="
-        background: rgb(45, 62, 80);
-        height: 3.25rem;
-        margin: 0 0 0 0px;
-        padding: 0 0 0 0;
-      "
-    >
-      <a class="" href="https://nfdi4plants.org/" style="">
-        <img
-          src="images/logo.png"
-          alt="Logo"
-          width="32"
-          height="32"
-          style="
-            position: absolute;
-            margin: 8px 12px 8px 12px;
-            left: 0px;
-            padding-top: 4px;
-          "
-        />
-      </a>
+    <div class="col-12" style="background: rgb(45, 62, 80); height: 3.25rem; margin: 0 0 0 0px; padding: 0 0 0 0; ">
+        <a class="" href="https://nfdi4plants.org/" style="">
+            <img src="images/logo.png" alt="Logo" width="32" height="32" style="position: absolute; margin: 8px 12px 8px 12px; left: 0px; padding-top: 4px;" />
+        </a>
 
-<<<<<<< HEAD
 
 
           
@@ -420,439 +384,38 @@
                 </div>
             </div>
             </div>
-=======
-      <div
-        class="justify-content-center row d-flex align-items-center"
-        style="margin: 0 0 0 0; padding: 0 0 0 0; height: 3.25rem"
-      >
-        <div
-          class="btn-group d-md-none g-0 dropdown col-auto d-flex align-items-center"
-          style=""
-        >
-          <button
-            type="button"
-            class="btn rounded-0 border-0 g-0 btn-nav"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            id="menu"
-          >
-            Menu &nbsp;
-            <a
-              style="
-                display: inline-block;
-                color: rgb(79, 179, 217);
-                letter-spacing: 2px;
-                font-size: 1em;
-                transform: scaleX(2);
-                transform-origin: 1 0;
-              "
-            >
-              ∨
-            </a>
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <button id="converter_menu" class="dropdown-item" onclick="">
-                Converter
-              </button>
-            </li>
-            <li>
-              <button id="updater_menu" class="dropdown-item" onclick="">
-                Updater
-              </button>
-            </li>
-          </ul>
->>>>>>> 2ad05e5f24d48af9658e6e670914582d297541b5
         </div>
 
-        <div class="btn-group d-none g-0 d-md-block dropdown col-auto">
-          <button
-            type="button"
-            class="btn border-0 rounded-0 g-0 btn-nav"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            id="conversion_tools"
-          >
-            conversion Tools &nbsp;
-
-            <a
-              style="
-                display: inline-block;
-                color: rgb(79, 179, 217);
-                letter-spacing: 2px;
-                font-size: 1em;
-                transform: scaleX(2);
-                transform-origin: 1 0;
-              "
-            >
-              ∨
-            </a>
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <button id="converter_long" class="dropdown-item" onclick="">
-                Converter
-              </button>
-            </li>
-            <li>
-              <button id="validator_long" class="dropdown-item" onclick="">
-                Validator
-              </button>
-            </li>
-            <li>
-              <button id="updater_long" class="dropdown-item" onclick="">
-                Updater
-              </button>
-            </li>
-          </ul>
+<!-- Button trigger modal -->
+<button type="button" class="d-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#map_vali_modal" id="m_v_modal">
+    Launch check modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="map_vali_modal" tabindex="-1"  data-bs-backdrop="static" aria-labelledby="map_vali_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="map_vali_modal_label">Upload to repos</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </div>
-    </div>
-
-    <h1 class="center">ISA-JSON submission to multi-repository</h1>
-
-    <div class="center">
-      example JSON input can be downloaded <a href="#">here</a>
-      <br />
-      <input
-        class="btn btn-primary d-inline d-none"
-        type="file"
-        id="input_json"
-        name="json"
-        multiple
-      />
-      <input
-        style="display: none"
-        type="file"
-        id="input_xlsx"
-        name="xlsx"
-        multiple
-      />
-
-      <div
-        class="area uploadarea"
-        id="importArea"
-        ondragenter="this.className='area uploadarea dragging'"
-        ondrop=";DragAndDrop(event)"
-        style="margin: auto; height: 30vh; width: 50vw"
-      >
-        <input type="file" id="import" multiple />
-      </div>
-      <br />
-      <button
-        class="btn btn-primary"
-        style="display: inline"
-        data-bs-toggle="modal"
-        data-bs-target="#cModal"
-        id="cModalButton"
-      >
-        Start Submissions
-      </button>
-      <div class="d-flex justify-content-center d-none" id="waiting">
-        <div
-          class="spinner-grow btn-primary"
-          style="width: 3rem; height: 3rem"
-          role="status"
-        >
-          <br />
-          <span class="sr-only d-none">Loading...</span>
-        </div>
-      </div>
-      <div style="margin: auto" id="xml_output"></div>
-    </div>
-    <script type="text/javascript">
-      var v_list, csv_content, cleanend_global;
-      var input_json, input_xlsx;
-      var log_backup = console.log;
-      var log_messages = [];
-      var steps = [
-        {
-          title: "Converter and validators",
-          content:
-            "<p> Welcome! Our converter can convert an ISA-JSON file to multiple endpoint repositories such as ENA, Metabolites, EGA, EVA",
-          //
-        },
-      ];
-
-      var tour = new Tour(steps); // initialize the guided tour
-      tour.show();
-      let output_div = document.getElementById("xml_output");
-      function DragAndDrop(e) {
-        e.preventDefault();
-        let ele = document.getElementById("import");
-
-        ele.files = e.dataTransfer.files;
-        var reader = new FileReader(); // File reader to read the file
-
-        // This event listener will happen when the reader has read the file
-        reader.addEventListener("load", function () {
-          var result = JSON.parse(reader.result); // Parse the result into an object
-          //console.log("reader.result is : "+reader.result);
-          input_json = result;
-          //console.log("result is : "+result);
-          var cleaned_data = {};
-          let column_n = 0;
-          let current_column_name;
-        });
-
-        reader.readAsText(ele.files[0]); // Read the uploaded file
-      }
-      console.log = function () {
-        //log_messages.push.apply(log_messages, arguments);
-        log_backup.apply(console, arguments);
-        output_div.innerText = log_messages.join("\r\n");
-      };
-      const input1 = document.getElementById("import");
-      input1.addEventListener("change", handleFiles1, false);
-      function handleFiles1() {
-        if (this.files.length > 0) {
-          var reader = new FileReader(); // File reader to read the file
-
-          // This event listener will happen when the reader has read the file
-          reader.addEventListener("load", function () {
-            var result = JSON.parse(reader.result); // Parse the result into an object
-            //console.log("reader.result is : "+reader.result);
-            input_json = result;
-            //console.log("result is : "+result);
-            var cleaned_data = {};
-            let column_n = 0;
-            let current_column_name;
-          });
-
-          reader.readAsText(this.files[0]); // Read the uploaded file
-        } else {
-          window.alert("no file is selected to import");
-        }
-      }
-
-      function submit(endRepo) {
-        switch (endRepo) {
-          case "biosamples":
-            return metabolightsSubmit()
-              .then((data) => console.log(data))
-              .catch((error) => console.error(error));
-
-          case "ENA":
-            return metabolightsSubmit()
-              .then((data) => console.log(data))
-              .catch((error) => console.error(error));
-
-          case "metabolights":
-            return metabolightsSubmit()
-              .then((data) => console.log(data))
-              .catch((error) => console.error(error));
-        }
-      }
-
-      function submitAll(endRepo) {
-        for (const [element, index] of endRepo.entries()) {
-          submit(element.id);
-        }
-      }
-
-      async function main(input_json) {
-        if (input_json === undefined || input_json.length < 0) {
-          window.alert("please select an lister json file to be imported");
-        } else {
-          document.getElementById("waiting").classList.remove("d-none");
-
-          var saveData = (function () {
-            var a = document.createElement("a");
-            document.body.appendChild(a);
-            a.style = "display: none";
-            return function (data, fileName) {
-              (blob = new Blob([data], { type: "octet/stream" })),
-                (url = window.URL.createObjectURL(blob));
-              a.href = url;
-              a.download = fileName;
-              a.click();
-              window.URL.revokeObjectURL(url);
-            };
-          })();
-
-          var data = JSON.stringify(input_json),
-            fileName = "inv.json";
-
-          saveData(data, fileName);
-          //let file = pyodide.FS.readFile("SAMPLE.XML", { encoding: "utf8" });
-          //output_div.innerText = file;
-          document.getElementById("waiting").classList.add("d-none");
-        }
-      }
-    </script>
-    <!-- Button trigger modal -->
-    <button type="button" class="d-none btn btn-primary">
-      Launch convert modal
-    </button>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="cModal"
-      tabindex="-1"
-      data-bs-backdrop="static"
-      aria-labelledby="cModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="cModalLabel">
-              Upload to Endpoint Repositories
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="form-check" id="submitRepos">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="biosamples"
-                        name="repo"
-                        checked
-                      />
-                      <label class="form-check-label" for="biosamples">
-                        BioSamples
-                      </label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="ENA"
-                        name="repo"
-                      />
-                      <label class="form-check-label" for="ENA"> ENA </label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="metabolites"
-                        name="repo"
-                      />
-                      <label class="form-check-label" for="Metabolites">
-                        Metabolites
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <table
-              id="validate_table"
-              class="table table-bordered table-hover"
-            ></table>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              download updated JSON
-            </button>
-            <!-- <button
-              type="button"
-              class="btn btn-primary"
-              onclick="var checkedBoxes = document.querySelectorAll('input[name=repo]:checked');submitAll(checkedBoxes)"
-            >
-              Submit
-            </button> -->
-            <button type="button" class="btn btn-primary" id="submit">
-              Submit
-            </button>
-            <script type="module">
-              import { Broker } from "./js/broker/main.js";
-
-              const broker = new Broker();
-              const submit = document.querySelector("#submit");
-              submit.addEventListener("click", () => {
-                broker.submit(input_json);
-              });
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="d-none btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#map_vali_modal"
-      id="m_v_modal"
-    >
-      Launch check modal
-    </button>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="map_vali_modal"
-      tabindex="-1"
-      data-bs-backdrop="static"
-      aria-labelledby="map_vali_modal_label"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="map_vali_modal_label">
-              Upload to repos
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
+        <div class="modal-body">
             <span id="init_word"> </span>
-            <br />
-            <span id="mandatory_n"></span> mandatory term(s),<br />
-            <span id="recommended_n"></span> recommended term(s),<br />
-            <span id="optional_n"></span> optional term(s).<br />
-            <table
-              id="validate_table"
-              class="table table-bordered table-hover"
-            ></table>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              download updated ISA-JSON
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-              onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);"
-            >
-              convert
-            </button>
-          </div>
+            <br>
+            <span id="mandatory_n"></span> mandatory term(s),<br>
+            <span id="recommended_n"></span> recommended term(s),<br>
+            <span id="optional_n"></span> optional term(s).<br>
+            <table id ="validate_table" class="table table-bordered table-hover" >
+   
+            </table>
+    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">download updated ISA-JSON</button>
+          <button type="button" class="btn btn-primary" onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">convert</button>
         </div>
       </div>
     </div>
+  </div>
   </body>
 </html>
