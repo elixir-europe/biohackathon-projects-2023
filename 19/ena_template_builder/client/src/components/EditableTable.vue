@@ -39,6 +39,7 @@
               :inputValue="row[field.name]"
               @blur="updateCell(rowIx, field.name, $event.target.value)"
               @keydown.exact="inputKeydown($event, rowIx, field.name)"
+              @paste="pasteTable($event, rowIx, field.name)"
             />
           </td>
         </tr>
@@ -47,20 +48,13 @@
   </div>
 
   <button class="btn btn-secondary mr-2 my-2" @click="this.addRows(1)">Add row</button>
-  <button class="btn btn-secondary mr-2 my-2" disabled>Copy table to clipboard</button>
-
+  <button class="btn btn-secondary mr-2 my-2" @click="copyToClipboard">Copy table to clipboard</button>
 
   <!-- For debugging state: -->
-  <!-- <div><p>Row 1 data:</p><pre>{{ data[0] }}</pre></div> -->
-
+  <div><p>Row 1 data:</p><pre>{{ data[0] }}</pre></div>
 </template>
 
 <script>
-
-// Functionality to clone:
-// - clipboard paste from XLSX
-// - copy all to clipboard
-
 import FormField from './fields/FormField.vue'
 import { useFormStore } from '@/stores/forms'
 
@@ -99,7 +93,6 @@ export default {
   },
   methods: {
     updateCell(rowIx, field_name, value) {
-      // console.log('updateCell', rowIx, field_name, value)
       formStore.$patch( (state) => {
         state[this.formStoreKey][rowIx][field_name] = value
         state.hasChanged = true
@@ -176,10 +169,96 @@ export default {
         default:
           return
       }
-      // const field = this.$refs[this.getInputRef(newRowIx, newFieldName)][0]
-      // field && field.focus()
       this.$refs[this.getInputRef(newRowIx, newFieldName)][0].focus()
     },
+    copyToClipboard() {
+      const clipboardString = this.data.map(
+        (row) => this.schema.fields.map(
+          (field) => row[field.name]
+        ).join('\t')
+      ).join('\n')
+      navigator.clipboard.writeText(clipboardString)
+    },
+    pasteTable(event, cursorRowIx, cursorFieldName) {
+      const clipboardData = event.clipboardData.getData('text/plain')
+      if (clipboardData.includes('\t') || clipboardData.includes('\n')) {
+        event.preventDefault();
+
+        // Collect field name arrays that the data can be mapped to
+        const numPastedCols = clipboardData.split('\n')[0].split('\t').length
+        const fieldNames = this.schema.fields.map((field) => field.name)
+        const cursorFieldIx = fieldNames.indexOf(cursorFieldName)
+        const prevFieldNames = fieldNames.slice(0, cursorFieldIx)
+        const pastedFieldNames = fieldNames.slice(cursorFieldIx, cursorFieldIx + numPastedCols)
+        const afterFieldNames = fieldNames.slice(cursorFieldIx + numPastedCols, fieldNames.length)
+
+        // Log all above values
+        // console.log("numPastedCols:", numPastedCols)
+        // console.log("cursorFieldIx:", cursorFieldIx)
+        // console.log("fieldNames:")
+        // console.log(fieldNames)
+        // console.log("prevFieldNames:")
+        // console.log(prevFieldNames)
+        // console.log("pastedFieldNames:")
+        // console.log(pastedFieldNames)
+        // console.log("afterFieldNames:")
+        // console.log(afterFieldNames)
+
+        const pastedRows = clipboardData.split('\n')
+          .filter( (row) => row.length )
+          .map((row) => row.split('\t'))
+
+        const newData = this.data.map((row, ix) => {
+          if (ix < cursorRowIx || ix > cursorRowIx + pastedRows.length - 1) {
+            return row
+          }
+          const pastedColsData = pastedFieldNames.reduce((obj, fieldName, fieldIx) => {
+            obj[fieldName] = pastedRows[ix - cursorRowIx][fieldIx]
+            return obj
+          }, {})
+          const prevColsData = prevFieldNames.reduce((obj, fieldName) => {
+            obj[fieldName] = row[fieldName]
+            return obj
+          }, {})
+          const afterColsData = afterFieldNames.reduce((obj, fieldName) => {
+            obj[fieldName] = row[fieldName]
+            return obj
+          }, {})
+
+          // console.log("pastedColsData:")
+          // console.log(pastedColsData)
+          // console.log("prevColsData:")
+          // console.log(prevColsData)
+          // console.log("afterColsData:")
+          // console.log(afterColsData)
+
+          return {
+            ...pastedColsData,
+            ...prevColsData,
+            ...afterColsData,
+          }
+        })
+
+        this.setData(newData)
+      }
+    },
+    // Better to leave this to the FormField level. See SelectInput.vue:watch()
+    // validateData(data) {
+    //   // Ensure that data rows are valid against schema
+    //   // Select fields not matching an option will be set to empty string
+    //   return data.map((row) => {
+    //     return this.schema.fields.reduce((obj, field) => {
+    //       if (field.cv.length && !field.cv.includes(row[field.name])) {
+    //         console.log("Rejecting field:", field.name, row[field.name])
+    //         obj[field.name] = ''
+    //       } else {
+    //         console.log("Accepting field:", field.name, row[field.name])
+    //         obj[field.name] = row[field.name]
+    //       }
+    //       return obj
+    //     }, {})
+    //   })
+    // },
   },
 }
 </script>
@@ -230,4 +309,4 @@ export default {
   .tip.optional {
     background: #888;
   }
-</style>
+  </style>

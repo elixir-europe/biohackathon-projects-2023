@@ -1,7 +1,10 @@
 <template>
   <!-- Form view: -->
   <div v-if="display === 'form'" class="form-group">
-    <label :for="field.name">{{ this.capitalize(field.name) }} <span v-if="requiredField">*</span></label>
+    <label :for="field.name">
+      {{ this.capitalize(field.name) }}
+      <span v-if="requiredField">*</span>
+    </label>
     <SelectInput
       v-if="field.field_type === 'TEXT_CHOICE_FIELD'"
       :field="field"
@@ -43,6 +46,7 @@
     :selectedValue="inputValue"
     @input="$emit('blur', $event)"
     @keydown.exact="$emit('keydown', $event)"
+    @paste="$emit('paste', $event)"
   />
   <input
     v-if="display === 'table' && ['TEXT_FIELD', 'TEXT_AREA_FIELD'].includes(field.field_type)"
@@ -55,9 +59,10 @@
     :placeholder="field.placeholder"
     @blur="$emit('blur', $event)"
     @keydown.exact="$emit('keydown', $event)"
+    @paste="$emit('paste', $event)"
   />
 
-  <!-- TODO: need a special input field for textarea -->
+  <!-- TODO: another input field for textarea -->
 
 </template>
 
@@ -72,6 +77,7 @@ export default {
   emits: [
     'blur',
     'keydown',
+    'paste',
   ],
   props: {
     inputValue: String,
