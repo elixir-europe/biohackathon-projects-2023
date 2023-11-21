@@ -8,7 +8,21 @@
           <RouterLink to="/experiment">Experiment</RouterLink>
           <RouterLink to="/run">Run</RouterLink>
           <RouterLink to="/sample">Sample</RouterLink>
-          <RouterLink to="/submit">Submit</RouterLink>
+          <RouterLink to="/submit">Finish</RouterLink>
+          <span v-if="this.schema" class="template-details">
+            Template {{ this.schema.identifier }}
+            <v-tooltip
+              activator="parent"
+              location="bottom"
+              :max-width="this.schema.description.length < 200 ? 300 : 600"
+              style="overflow-wrap: break-word;"
+            >
+              <p class="lead">
+                {{ this.schema.title }}
+              </p>
+              {{ this.schema.description }}
+            </v-tooltip>
+          </span>
         </nav>
       </div>
     </header>
@@ -26,6 +40,19 @@ export default {
   components: {
     RouterLink,
     RouterView,
+  },
+  data() {
+    return {
+      schema: null,
+    }
+  },
+  mounted() {
+    import('@/stores/schema.js')
+      .then( m => {
+        const { useSchemaStore } = m;
+        const schemaStore = useSchemaStore();
+        schemaStore.getSchema().then( data => this.schema = data )
+      })
   },
 };
 </script>
@@ -49,5 +76,14 @@ nav > a {
 nav > a.router-link-active {
   color: white;
   background-color: cornflowerblue;
+}
+.template-details {
+  float: right;
+  background: #ddddea;
+  padding: .5rem 1rem;
+  margin-top: -.5rem;
+  border-radius: .5rem;
+  user-select: none;
+  cursor: default;
 }
 </style>
