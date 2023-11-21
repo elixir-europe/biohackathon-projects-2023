@@ -6,7 +6,9 @@
           <th v-for="field in schema.fields" :key="field.name">
             <div class="d-flex">
               <div class="col p-0">
-                {{ idToTitle(field.name) }} <span v-if="field.cardinality === 'mandatory'" class="ml-1">*</span>
+                {{ idToTitle(field.name) }}
+                <span v-if="field.units">({{ field.units }})</span>
+                <span v-if="field.cardinality === 'mandatory'" class="ml-1" style="user-select: none;">*</span>
               </div>
               <div class="col-auto p-0 ml-2">
                 <span class="info">
