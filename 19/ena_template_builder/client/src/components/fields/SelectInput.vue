@@ -2,6 +2,7 @@
   <select
     class="custom-select"
     ref="select"
+    @input="validateInput($event)"
     @keydown.exact="$event.preventDefault() && $emit('keydown', $event)"
   >
     <option value=""></option>
@@ -18,13 +19,20 @@ export default {
     field: Object,
     selectedValue: String,
   },
+  watch: {
+    selectedValue() {
+      if (!this.field.cv.includes(this.selectedValue)) {
+        this.$emit('input', { target: { value: '' } })
+      }
+    }
+  },
   methods: {
     capitalize(text) {
       return capitalize(text)
     },
     focus() {
       this.$refs.select.focus()
-    }
+    },
   }
 }
 </script>
