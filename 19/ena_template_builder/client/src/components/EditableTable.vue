@@ -1,57 +1,82 @@
 <template>
   <div class="editableTable">
-    <table v-if="schema">
-      <thead>
-        <tr>
-          <th v-for="field in schema.fields" :key="field.name">
-            <div class="d-flex">
-              <div class="col p-0">
-                {{ idToTitle(field.name) }}
-                <span v-if="field.units">({{ field.units }})</span>
-                <span v-if="field.cardinality === 'mandatory'" class="ml-1" style="user-select: none;">*</span>
-              </div>
-              <div class="col-auto p-0 ml-2">
-                <span class="info">
-                  i
-                  <v-tooltip
-                    activator="parent"
-                    location="top"
-                    :max-width="field.description.length < 200 ? 300 : 600"
+    <div class="table-wrapper" ref="tableWrapper">
+      <table v-if="schema">
+        <thead>
+          <tr>
+            <th v-for="field in schema.fields" :key="field.name">
+              <div class="d-flex">
+                <div class="col p-0">
+                  {{ idToTitle(field.name) }}
+                  <span v-if="field.units">({{ field.units }})</span>
+                  <span v-if="field.cardinality === 'mandatory'" class="ml-1" style="user-select: none;">*</span>
+                </div>
+                <div class="col-auto p-0 ml-2">
+                  <span class="info">
+                    i
+                    <v-tooltip
+                      activator="parent"
+                      location="top"
+                      :max-width="field.description.length < 200 ? 300 : 600"
                     style="overflow-wrap: break-word;"
-                  >
-                    <span v-if="field.cardinality === 'mandatory'" class="tip required">Required</span>
-                    <span v-if="field.cardinality === 'optional'" class="tip optional">Optional</span>
-                    {{ field.description }}
-                  </v-tooltip>
-                </span>
+                    >
+                        <span v-if="field.cardinality === 'mandatory'" class="tip required">Required</span>
+                        <span v-if="field.cardinality === 'optional'" class="tip optional">Optional</span>
+                        {{ field.description }}
+                    </v-tooltip>
+                  </span>
+                </div>
               </div>
-            </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(row, rowIx) in data" :key="rowIx">
-          <td v-for="field in schema.fields" :key="field.name + rowIx">
-            <FormField
-              display="table"
-              :field="field"
-              :ref="getInputRef(rowIx, field.name)"
-              :inputValue="row[field.name]"
-              @blur="updateCell(rowIx, field.name, $event.target.value)"
-              @keydown.exact="inputKeydown($event, rowIx, field.name)"
-              @paste="pasteTable($event, rowIx, field.name)"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(row, rowIx) in data" :key="rowIx">
+            <td v-for="field in schema.fields" :key="field.name + rowIx">
+              <FormField
+                display="table"
+                :field="field"
+                :ref="getInputRef(rowIx, field.name)"
+                :inputValue="row[field.name]"
+                @blur="updateCell(rowIx, field.name, $event.target.value)"
+                @keydown.exact="inputKeydown($event, rowIx, field.name)"
+                @paste="pasteTable($event, rowIx, field.name)"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-controls" :style="tableControlCssProps">
+      <button class="btn btn-primary" @click="this.addRows(1)">
+        +
+      </button>
+      <button class="btn btn-danger" @click="this.deleteRow()">
+        -
+      </button>
+      <v-tooltip
+        activator="parent"
+        location="left"
+      >
+        Add/delete row
+      </v-tooltip>
+    </div>
   </div>
 
-  <button class="btn btn-secondary mr-2 my-2" @click="this.addRows(1)">Add row</button>
-  <button class="btn btn-secondary mr-2 my-2" @click="copyToClipboard">Copy table to clipboard</button>
+  <button class="btn btn-secondary mr-2 my-2 p-1" style="line-height: 1" @click="copyToClipboard">
+    <span class="material-symbols-outlined">content_copy</span>
+    <v-tooltip
+      activator="parent"
+      location="left"
+    >
+      Copy table content to clipboard
+    </v-tooltip>
+  </button>
 
   <!-- For debugging state: -->
-  <div><p>Row 1 data:</p><pre>{{ data[0] }}</pre></div>
+  <!-- <div><p>Row 1 data:</p><pre>{{ data[0] }}</pre></div> -->
+
 </template>
 
 <script>
@@ -73,17 +98,26 @@ export default {
   data() {
     return {
       undoData: [],
+      tableOverflow: false,
     }
   },
   computed: {
     data() {
       return formStore.getFormData(this.formStoreKey)
     },
+    tableControlCssProps() {
+      return {
+        'bottom': this.tableOverflow ? '1.3rem' : '0.3rem',
+      }
+    }
   },
   mounted() {
     if (!this.data.length) {
       this.initRows()
     }
+    this.$nextTick(() => {
+      this.tableOverflow = this.$refs.tableWrapper.scrollWidth > this.$refs.tableWrapper.clientWidth
+    })
     document.addEventListener('keydown', (event) => {
       // Bind ctrl+z to setDataUndo
       if (event.ctrlKey && event.key === 'z') {
@@ -129,6 +163,12 @@ export default {
       }
       const newData = [...this.data, ...blankRows]
       this.setData(newData)
+    },
+    deleteRow() {
+      if (this.data.length > 1) {
+        const newData = this.data.slice(0, this.data.length - 1)
+        this.setData(newData)
+      }
     },
     getInputRef(rowIx, fieldName) {
       return `input_row${rowIx}_${fieldName}`
@@ -192,18 +232,6 @@ export default {
         const pastedFieldNames = fieldNames.slice(cursorFieldIx, cursorFieldIx + numPastedCols)
         const afterFieldNames = fieldNames.slice(cursorFieldIx + numPastedCols, fieldNames.length)
 
-        // Log all above values
-        // console.log("numPastedCols:", numPastedCols)
-        // console.log("cursorFieldIx:", cursorFieldIx)
-        // console.log("fieldNames:")
-        // console.log(fieldNames)
-        // console.log("prevFieldNames:")
-        // console.log(prevFieldNames)
-        // console.log("pastedFieldNames:")
-        // console.log(pastedFieldNames)
-        // console.log("afterFieldNames:")
-        // console.log(afterFieldNames)
-
         const pastedRows = clipboardData.split('\n')
           .filter( (row) => row.length )
           .map((row) => row.split('\t'))
@@ -224,47 +252,25 @@ export default {
             obj[fieldName] = row[fieldName]
             return obj
           }, {})
-
-          // console.log("pastedColsData:")
-          // console.log(pastedColsData)
-          // console.log("prevColsData:")
-          // console.log(prevColsData)
-          // console.log("afterColsData:")
-          // console.log(afterColsData)
-
           return {
             ...pastedColsData,
             ...prevColsData,
             ...afterColsData,
           }
         })
-
         this.setData(newData)
       }
     },
-    // Better to leave this to the FormField level. See SelectInput.vue:watch()
-    // validateData(data) {
-    //   // Ensure that data rows are valid against schema
-    //   // Select fields not matching an option will be set to empty string
-    //   return data.map((row) => {
-    //     return this.schema.fields.reduce((obj, field) => {
-    //       if (field.cv.length && !field.cv.includes(row[field.name])) {
-    //         console.log("Rejecting field:", field.name, row[field.name])
-    //         obj[field.name] = ''
-    //       } else {
-    //         console.log("Accepting field:", field.name, row[field.name])
-    //         obj[field.name] = row[field.name]
-    //       }
-    //       return obj
-    //     }, {})
-    //   })
-    // },
   },
 }
 </script>
 
 <style scoped>
   .editableTable {
+    position: relative;
+    overflow-x: visible;
+  }
+  .editableTable .table-wrapper {
     max-width: 100%;
     overflow-x: auto;
     font-size: .8rem;
@@ -308,5 +314,17 @@ export default {
   }
   .tip.optional {
     background: #888;
+  }
+  .table-controls {
+    position: absolute;
+    left: -70px;
+    /* bottom set with computed */
+  }
+  .table-controls .btn {
+    width: 1.5rem;
+    margin: .2rem;
+    padding: .2rem;
+    line-height: 1;
+    text-align: center;
   }
   </style>
