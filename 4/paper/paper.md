@@ -7,7 +7,8 @@ authors:
   - name: Vedran Kasalica
     orcid: 0000-0002-0097-1056
     affiliation: 1
-  - name: Felipe Morato 
+  - name: Felipe Morato
+    orcid: 0009-0008-1501-4073
     affiliation: 2
   - name: Anna-Lena Lamrecht
     orcid: 0000-0003-1953-5606
@@ -37,18 +38,27 @@ event: BioHackathon Europe 2023
 Benchmarks - standardized tests comparing performance, accuracy, and efficiency - are key for evaluating individual tools and composite workflows. In a “Bake Off” setting, they allow for comparisons of candidate tools and workflows for a particular computational task in order to determine the best-performing one [@Lamprecht:2021]. In this BioHackathon Project, we worked toward a “Great Bake Off of Bioinformatics Workflows” to develop workflow-level benchmarks and further ideas. We invited BioHackathon participants to share tools and workflows and collected their feedback and further ideas for benchmarks. Initially, the benchmarks was tested in the proteomics domain due to mature domain annotations and project lead expertise [@Palmblad:2019]. The participants' areas of expertise guided the exploration of additional domains, such as genomics. The same approach was recently applied in metabolomics [@Du:2023].
 
 
-In recent and ongoing work in ELIXIR Implementation Studies and spin-off projects, we have already developed several rudimentary workflow-level benchmarks for bioinformatics data analysis pipelines, including those automatically composed by the APE (Automatic Pipeline Explorer) framework [@Kasalica:2021]. Before deploying these benchmarks for production use, however, their definitions must be aligned with benchmarks at the tool-level and formalized. This process should prioritize benchmarks that are most relevant for users when selecting, comparing, and deploying workflows for daily use. During the BioHackathon Europe 2023 project, we attempted to consolidate these efforts by bringing together people with complementary expertise and bridging ongoing ELIXIR efforts to produce a minimum fit-for-purpose set of workflow-specific benchmarks by aggregating tool benchmarks (Task 1) and assess the feasibility of annotating and mapping tool- and workflow-level benchmarks to EDAM operations to explore the reusability of benchmarks across domains (Task 2).
+In recent and ongoing work in ELIXIR Implementation Studies and spin-off projects, we have already developed several rudimentary workflow-level benchmarks for bioinformatics data analysis pipelines, including those automatically composed by the APE (Automatic Pipeline Explorer) framework [@Kasalica:2021]. Before deploying these benchmarks for production use, however, their definitions must be aligned with benchmarks at the tool-level and formalized. This process should prioritize benchmarks that are most relevant for users when selecting, comparing, and deploying workflows for daily use. During the BioHackathon Europe 2023 project, we attempted to consolidate these efforts by bringing together people with complementary expertise and bridging ongoing ELIXIR efforts. We aim to produce a minimum fit-for-purpose set of workflow-specific benchmarks by aggregating tool benchmarks (Task 1) and assess the feasibility of annotating and mapping tool- and workflow-level benchmarks to EDAM operations to explore the reusability of benchmarks across domains (Task 2).
 
 
-Short-term, the Project aimed to deliver a draft of defined workflow-level benchmarks, each with examples and defined relationships to existing tool-level benchmarks and standards. We set out to systematically discuss the different types of workflow-level benchmarks, including both design-time (related to algorithmic complexity, licences and workflow deployability) and run-time (performance metrics). Long-term, these benchmarks will be implemented in the Workflomics project and ongoing Proteomics Community ELIXIR Implementation Studies. These workflow-level benchmarks will be carefully documented, demonstrated and shared with the research community in relevant fora and beyond this preprint.
+Short-term, the Project aimed to deliver a draft of defined workflow-level benchmarks, each with examples and defined relationships to existing tool-level benchmarks and standards. We set out to systematically discuss the different types of workflow-level benchmarks, including both design-time (related to algorithmic complexity, licenses and workflow deployability) and run-time (performance metrics). Long-term, these benchmarks will be implemented in the Workflomics project [@Kasalica:2023a] and ongoing Proteomics Community ELIXIR Implementation Studies. These workflow-level benchmarks will be carefully documented, demonstrated and shared with the research community in relevant fora and beyond this preprint.
 
 ## Task 1
 
-Vedran (and Felipe) to write..
+In our effort to enhance the benchmarking framework for bioinformatics data analysis pipelines, we initially concentrated on consolidating benchmarks at the tool level. To achieve this, we utilized the capabilities of bio.tools [@ison:2016] and OpenEBench [@Capella-Gutierrez:2017] APIs, allowing us to access a wealth of valuable data concerning individual bioinformatics tools.
 
-### Subsection level 3
+Our primary goal was to extract key metrics for each tool, such as operating system support and licensing information. This data was then brought together to provide a comprehensive overview of the tool landscape within bioinformatics workflows. This aggregation process is an important step in understanding the practical applicability and compatibility of these tools within the broader context of data analysis pipelines.
 
-As needed...
+Through seamless integration with the Workflomics interface, we made it easy for users to access and understand these aggregated statistics. Users now have the capability to toggle effortlessly between viewing the graphical representation of the workflow (see Figure 1a) and examining the relevant statistics associated with the individual tools (see Figure 1b). 
+
+
+![GUI](./figures/gui.png)
+Figure 1. Workflomics interface, visualization of (a) a workflow structure, (b) aggregated workflow-level benchmarks.
+
+
+Our ongoing and future work centers on refining some more intricate aggregation functions. Illustrating deeper insights into tool relationships, we aim to showcase co-citations among tools comprising the given workflows. This can be implemented using accessible tools like InSoLiTo (see https://insolito.openebench.bsc.es/). Moreover, categorizing tool licenses by openness assists users in grasping legal frameworks, aiding decision-making in bioinformatics workflows. 
+
+In conclusion, **Task 1** efforts empower users to make informed decisions when selecting and deploying workflows for their specific needs.
 
 
 ## Task 2
@@ -77,8 +87,10 @@ To inform discussions, all subclasses Spectral analysis [operation:2945] and Gen
 Though preliminary, these results allow us to hypothesize (Figure 2) that the number of generic benchmarks at these levels of the EDAM ontology is an order of magnitude smaller than the number of operations. For the Workflomics project, such mappings between EDAM operations and computable benchmarks are directly useful in benchmarking of automatically generated workflows.
 
 
-![Figure 2](./figure2.png)
+![Figure 2](./figures/edam-benchmarks.png)
 Figure 2. Mapping of level 2 benchmarks (pink ellipses) to EDAM operations in subsets of the proteomics (Spectral analysis, blue), genomics (Genetic variation analysis, green) and data wrangling (Data handling, orange) domains, suggesting a high degree of reusability of benchmarks across domains. This should be taken into account when computing and visualizing the benchmarks.
+
+<!--- 
 
 ## Tables, figures and so on
 
@@ -103,6 +115,7 @@ Feel free to use numbered lists or bullet points as you need.
 * Item 1
 * Item 2
 
+--->
 
 # Conclusion
 
@@ -128,3 +141,4 @@ This work was supported by ELIXIR, the research infrastructure for life-science 
 
 
 # References
+
