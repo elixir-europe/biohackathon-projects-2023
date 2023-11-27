@@ -45,17 +45,21 @@ Short-term, the Project aimed to deliver a draft of defined workflow-level bench
 
 ## Task 1
 
-In our pursuit to refine the benchmarking framework for bioinformatics data analysis pipelines, our initial focus is on consolidating tool-level benchmarks. To achieve this, we utilize the capabilities of bio.tools [@ison:2016] and OpenEBench [@Capella-Gutierrez:2017] APIs, allowing us to access a wealth of valuable data about individual bioinformatics tools.
+In our effort to enhance the benchmarking framework for bioinformatics data analysis pipelines, we initially concentrated on consolidating benchmarks at the tool level. To achieve this, we utilized the capabilities of bio.tools [@ison:2016] and OpenEBench [@Capella-Gutierrez:2017] APIs, allowing us to access a wealth of valuable data concerning individual bioinformatics tools.
 
-Our primary goal is to extract key metrics for each tool, such as operating system support and licensing information. This critical data was then brought together to provide a comprehensive overview of the tool landscape within bioinformatics workflows. This aggregation process is a crucial step in understanding the practical applicability and compatibility of these tools within the broader context of data analysis pipelines.
+Our primary goal was to extract key metrics for each tool, such as operating system support and licensing information. This data was then brought together to provide a comprehensive overview of the tool landscape within bioinformatics workflows. This aggregation process is an important step in understanding the practical applicability and compatibility of these tools within the broader context of data analysis pipelines.
 
-Through seamless integration with the Workflomics interface, we made it easy for users to access and understand these aggregated statistics. Users now have the capability to toggle effortlessly between viewing the graphical representation of the workflow (see Figure 1a) and examining the relevant statistics associated with the individual tools (see Figure 1b). This functionality empowers users to make informed decisions when selecting and deploying workflows for their specific needs.
+Through seamless integration with the Workflomics interface, we made it easy for users to access and understand these aggregated statistics. Users now have the capability to toggle effortlessly between viewing the graphical representation of the workflow (see Figure 1a) and examining the relevant statistics associated with the individual tools (see Figure 1b). 
+
 
 ![GUI](./figures/gui.png)
 Figure 1. Workflomics interface, visualization of (a) a workflow structure, (b) aggregated workflow-level benchmarks.
 
 
-As we refine our benchmarking framework, we're delving into more intricate tasks. Our focus now includes categorizing tool licenses based on 'openness' and enhancing visualization with tools like InSoLiTo [^1]. This categorization helps users understand the legal frameworks of tools, aiding decision-making in bioinformatics workflows. Additionally, InSoLiTo enables us to visualize co-citations, offering a deeper understanding of tool relationships. These efforts underscore our commitment to providing a sophisticated benchmarking framework, empowering users with actionable insights for optimizing their workflows.
+Our ongoing and future work centers on refining some more intricate aggregation functions. Illustrating deeper insights into tool relationships, we aim to showcase co-citations among tools comprising the given workflows. This can be implemented using accessible tools like InSoLiTo (see https://insolito.openebench.bsc.es/). Moreover, categorizing tool licenses by openness assists users in grasping legal frameworks, aiding decision-making in bioinformatics workflows. 
+
+In conclusion, **Task 1** efforts empower users to make informed decisions when selecting and deploying workflows for their specific needs.
+
 
 ## Task 2
 
@@ -134,6 +138,3 @@ This work was supported by ELIXIR, the research infrastructure for life-science 
 
 
 # References
-
-<!-- Footnotes -->
-[^1] [https://insolito.openebench.bsc.es/](https://insolito.openebench.bsc.es/)
