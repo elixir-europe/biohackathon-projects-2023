@@ -90,6 +90,8 @@ Though preliminary, these results allow us to hypothesize (Figure 2) that the nu
 ![Figure 2](./figures/edam-benchmarks.png)
 Figure 2. Mapping of level 2 benchmarks (pink ellipses) to EDAM operations in subsets of the proteomics (Spectral analysis, blue), genomics (Genetic variation analysis, green) and data wrangling (Data handling, orange) domains, suggesting a high degree of reusability of benchmarks across domains. This should be taken into account when computing and visualizing the benchmarks.
 
+<!--- 
+
 ## Tables, figures and so on
 
 Please remember to introduce tables (see Table 1) before they appear on the document. We recommend to center tables, formulas and figure but not the corresponding captions. Feel free to modify the table style as it better suits to your data.
@@ -113,6 +115,7 @@ Feel free to use numbered lists or bullet points as you need.
 * Item 1
 * Item 2
 
+--->
 
 # Conclusion
 
@@ -138,3 +141,4 @@ This work was supported by ELIXIR, the research infrastructure for life-science 
 
 
 # References
+
