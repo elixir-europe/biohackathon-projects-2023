@@ -56,9 +56,9 @@ Through seamless integration with the Workflomics interface, we made it easy for
 Figure 1. Workflomics interface, visualization of (a) a workflow structure, (b) aggregated workflow-level benchmarks.
 
 
-Our ongoing and future work centers on refining some more intricate aggregation functions. Illustrating deeper insights into tool relationships, we aim to showcase co-citations among tools comprising the given workflows. This can be implemented using accessible tools like InSoLiTo (see https://insolito.openebench.bsc.es/). Moreover, categorizing tool licenses by openness assists users in grasping legal frameworks, aiding decision-making in bioinformatics workflows. 
+Our ongoing and future work centers on refining some more intricate aggregation functions. Illustrating deeper insights into tool relationships, we aim to showcase co-citations among tools comprising the given workflows. This can be implemented using accessible tools like InSoLiTo (see https://insolito.openebench.bsc.es/) and graph theoretical measures to describe the connectedness of the tools in the workflows. Moreover, categorizing tool licenses by openness assists users in grasping legal frameworks, aiding decision-making in bioinformatics workflows and complying with open science policies. 
 
-In conclusion, **Task 1** efforts empower users to make informed decisions when selecting and deploying workflows for their specific needs.
+In conclusion, **Task 1** efforts empower users to make informed decisions when selecting, developing and deploying workflows for their specific needs.
 
 
 ## Task 2
@@ -84,11 +84,11 @@ The level 2 benchmarks range from the straightforward, such as Format detection 
 
 To inform discussions, all subclasses Spectral analysis [operation:2945] and Genetic variation analysis [operation:3197], both subclasses of Analysis [operation:2945], and Data handling [operation:2409], in total 28 specific operations in mass spectrometry/proteomics, genomics and general data handling. While some operations, such as Spectrum calculation [operation:3860] and Mass spectra calibration [operation:3627] have unique benchmarks (residual mass measurement error and spectral accuracy respectively), several benchmarks are shared across many operations. Any operation that is expected to output an identifier of a format, gene or protein sequence, or ontology class have the same generic benchmarks, namely whether the output contains an identifier of the correct type (level 1) or the correct identifier (level 2). Similarly, accuracy (fraction correct calls) is a generic benchmark for any operation identifying natural products or peptides from mass spectra, or any type of genomic variants from sequence reads. In situations where the positives and negatives are highly imbalanced, metrics such as the Matthew's correlation coefficient [@Matthews:1975], can be computed from the same information (true and false positives and negatives).
 
-Though preliminary, these results allow us to hypothesize (Figure 2) that the number of generic benchmarks at these levels of the EDAM ontology is an order of magnitude smaller than the number of operations. For the Workflomics project, such mappings between EDAM operations and computable benchmarks are directly useful in benchmarking of automatically generated workflows.
-
-
 ![Figure 2](./figures/edam-benchmarks.png)
 Figure 2. Mapping of level 2 benchmarks (pink ellipses) to EDAM operations in subsets of the proteomics (Spectral analysis, blue), genomics (Genetic variation analysis, green) and data wrangling (Data handling, orange) domains, suggesting a high degree of reusability of benchmarks across domains. This should be taken into account when computing and visualizing the benchmarks.
+
+In summary, **Task 2** results, though preliminary, allow us to hypothesize (Figure 2) that the number of generic benchmarks at these levels of the EDAM ontology is an order of magnitude smaller than the number of operations. For the Workflomics project, such mappings between EDAM operations and computable benchmarks are directly useful in benchmarking of automatically generated workflows.
+
 
 <!--- 
 
@@ -119,7 +119,7 @@ Feel free to use numbered lists or bullet points as you need.
 
 # Conclusion
 
-During the BioHackathon, we made significant progress on the retrieval and aggregation of tool-level benchmarks from OpenEBench, matured the visualization and user interaction with these aggregate benchmarks in the Workflomics user interface, and discussed the feasibility of defining and mapping benchmarks to EDAM operations in different domains. These efforts continue, now in a larger community of stakeholders and collaborators, and will be published separately and in far greater detail elsewhere.
+During the BioHackathon, we made significant progress on the retrieval and aggregation of tool-level benchmarks from OpenEBench, matured the visualization and user interaction with these aggregate benchmarks in the Workflomics user interface, and discussed the feasibility of defining and mapping benchmarks to EDAM operations in different domains. Less tangible but equally important, we strengthened the embedding in the ELIXIR tools ecosystem through extensive technical discussions with experts involved with OpenEBench, EDAM, bio.tools and CWL. The efforts now continue in this larger community of stakeholders and collaborators, and will be published separately and in greater detail elsewhere.
 
 
 # Future work
