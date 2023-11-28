@@ -45,7 +45,7 @@ Short-term, the Project aimed to deliver a draft of defined workflow-level bench
 
 ## Task 1
 
-In our effort to enhance the benchmarking framework for bioinformatics data analysis pipelines, we initially concentrated on consolidating benchmarks at the tool level. To achieve this, we utilized the capabilities of bio.tools [@ison:2016] and OpenEBench [@Capella-Gutierrez:2017] APIs, allowing us to access a wealth of valuable data concerning individual bioinformatics tools.
+In our effort to enhance the benchmarking framework for bioinformatics data analysis pipelines, we initially concentrated on consolidating benchmarks at the tool level. To achieve this, we utilized the capabilities of bio.tools [@Ison:2016] and OpenEBench [@Capella-Gutierrez:2017] APIs, allowing us to access a wealth of valuable data concerning individual bioinformatics tools.
 
 Our primary goal was to extract key metrics for each tool, such as operating system support and licensing information. This data was then brought together to provide a comprehensive overview of the tool landscape within bioinformatics workflows. This aggregation process is an important step in understanding the practical applicability and compatibility of these tools within the broader context of data analysis pipelines.
 
