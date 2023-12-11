@@ -1,0 +1,26 @@
+{
+    "biosampleExternalReferences": [
+        {
+            "biosampleAccession": "SAMEA112654119",
+            "externalReferences": [
+                {
+                    "url": "https://ega-archive.org/datasets/EGAD00010002458"
+                },
+                {
+                    "url": "https://ega-archive.org/metadata/v2/samples/EGAN00004248937"
+                },
+                {
+                    "url": "https://www.ebi.ac.uk/ena/browser/view/SAMEA112654119"
+                }
+            ]
+        },
+        {
+            "biosampleAccession": "SAMEA419425",
+            "externalReferences": [
+                {
+                    "url": "https://ega-archive.org/datasets/EGAD00010002458"
+                }
+            ]
+        }
+    ]
+}
