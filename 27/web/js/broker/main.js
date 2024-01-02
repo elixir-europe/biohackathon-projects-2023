@@ -1,15 +1,18 @@
-import { EnaBroker } from "./ena.js";
-import { BiosampleBroker } from "./biosample.js";
+import { EnaBroker } from "./ena/ena.broker.js";
+import { BrokerType } from "./broker.type.js";
 
 export class Broker {
-  async submit(isaJson) {
-    const biosampleBroker = new BiosampleBroker(isaJson);
-    const updatedIsaJson = await biosampleBroker.updateIsaJson();
+  async submit(isaJson, type) {
+    switch (type) {
+      case BrokerType.Ena:
+        const enaBroker = new EnaBroker(isaJson);
+        const reciept = await enaBroker.submit();
+        const pathIsaJson = enaBroker.mapToPathIsaJson(reciept);
 
-    const enaBroker = new EnaBroker(updatedIsaJson);
-    const reciept = await enaBroker.submit();
-    const pathIsaJson = enaBroker.mapToPathIsaJson(reciept);
-
-    console.log(pathIsaJson);
+        console.log(pathIsaJson);
+        break;
+      case BrokerType.Metabolights:
+        break;
+    }
   }
 }

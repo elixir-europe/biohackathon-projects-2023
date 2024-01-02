@@ -1,4 +1,5 @@
 import Config from "./config.json" assert { type: "json" };
+import { BiosampleService } from "./biosample.service.js";
 
 export class EnaBroker {
   constructor(isaJson) {
@@ -6,11 +7,12 @@ export class EnaBroker {
   }
 
   async submit() {
+    const updatedIsaJson = await new BiosampleService(isaJson).updateIsaJson();
     return fetch(
       `${Config.ena.url}?webinUserName=${Config.ena.username}&webinPassword=${Config.ena.password}`,
       {
         method: "POST",
-        body: this.isaJson,
+        body: updatedIsaJson,
         headers: {
           "Content-Type": "application/json",
         },

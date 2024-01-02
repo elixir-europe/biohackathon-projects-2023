@@ -1,6 +1,6 @@
 import Config from "./config.json" assert { type: "json" };
 
-export class BiosampleBroker {
+export class BiosampleService {
   constructor(isaJson) {
     this.isaJson = isaJson;
   }
