@@ -1,4 +1,5 @@
 export const BrokerType = {
-    Ena: 1,
-    Metabolights: 2
+    BioSamples: 1,
+    Ena: 2,
+    Metabolights: 3
 }

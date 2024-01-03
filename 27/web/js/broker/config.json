@@ -4,8 +4,9 @@
     "username": "",
     "password": ""
   },
-  "biosample": {
+  "biosamples": {
     "url": "http://localhost:8032/isabiosamples/submit",
     "token": ""
-  }
+  },
+  "metabolights": {}
 }
