@@ -1,0 +1,632 @@
+LABEL	counts	Grouping
+collection date	43	collection date
+geographic location (country and/or sea)	43	Place
+geographic location (region and locality)	33	Place
+geographic location (latitude)	31	Place
+geographic location (longitude)	31	Place
+amount or size of sample collected	28	sample size
+broad-scale environmental context	26	Description
+local environmental context	26	Description
+project name	25	--
+nucleic acid extraction	25	sample process
+environmental medium	25	
+sample material processing	23	sample process
+adapters	23	
+nucleic acid amplification	23	sample process
+source material identifiers	23	identifiers
+multiplex identifiers	22	identifiers
+reference for biomaterial	22	identifiers/citation
+experimental factor	22	
+relevant electronic resources	22	reference/citation
+relevant standard operating procedures	22	reference/citation
+library screening strategy	22	
+library vector	22	
+library size	22	
+library reads sequenced	22	
+sample storage temperature	21	sample storage
+relationship to oxygen	21	
+sequencing method	21	sample processing
+annotation source	21	
+isolation and growth condition	20	sample processing
+sample storage duration	20	sample storage
+pcr primers	19	
+sample storage location	19	sample storage
+host scientific name	19	organism info
+estimated size	19	
+ploidy	19	
+sample volume or weight for DNA extraction	19	
+known pathogenicity	19	
+target gene	18	
+target subfragment	18	
+sample collection device	18	sample collection
+sample collection method	18	sample collection
+propagation	18	
+observed biotic relationship	18	organism
+extrachromosomal elements	18	
+host disease status	18	organism
+number of replicons	18	
+library construction method	18	
+perturbation	18	
+trophic level	17	
+sequence quality check	17	
+chimera check software	17	
+encoded traits	17	
+pcr conditions	17	
+subspecific genetic lineage	17	
+depth	17	Place
+chemical administration	16	
+altitude	16	Place
+organism count	16	
+negative control type	15	
+positive control type	15	
+elevation	15	Place
+oxygenation status of sample	15	
+temperature	14	
+salinity	13	
+host sex	11	organism
+host subject id	11	organism
+host age	11	organism
+collected_by	10	collection
+isolation_source	10	
+strain	10	
+pH	9	
+isolate	8	
+sample collection device or method	8	collection
+host total mass	8	
+organic matter	7	
+total nitrogen	7	
+host diet	7	organism
+phosphate	7	
+sodium	7	
+host genotype	7	organism
+host height	7	organism
+nitrate	7	
+host phenotype	7	organism
+host body site	7	organism
+nitrogen	6	
+chloride	6	
+dissolved oxygen	6	
+host body product	6	organism
+chlorophyll	6	
+dissolved inorganic carbon	6	
+dissolved organic nitrogen	6	
+alkalinity	6	
+nitrite	6	
+Depth	6	
+dissolved hydrogen	6	
+dissolved carbon dioxide	6	
+diether lipids	6	
+Further Details	6	
+host body temperature	6	organism
+sample storage conditions	6	sample storage
+organic nitrogen	6	
+host last meal	6	
+sulfate	6	
+organic carbon	6	
+calcium	6	
+bromide	6	
+ammonium	6	
+silicate	6	
+host common name	6	organism
+phospholipid fatty acid	6	
+sulfide	6	
+biomass	6	
+potassium	6	
+host family relationship	6	organism
+sample derived from	6	
+phaeopigments	5	
+medical history performed	5	
+ethnicity	5	
+pressure	5	
+Salinity	5	
+Temperature	5	
+taxonomic classification	5	
+tRNA extraction software	5	
+magnesium	5	
+light intensity	5	
+metagenomic source	5	
+density	5	
+Longitude Start	5	
+IHMC medication code	5	
+receipt date	5	
+dissolved organic carbon	5	
+Latitude Start	5	
+redox potential	5	
+petroleum hydrocarbon	5	
+subject exposure	5	
+glucosidase activity	5	
+host occupation	5	
+host health state	5	
+bacterial carbon production	5	
+bishomohopanol	5	
+host body-mass index	5	
+aminopeptidase activity	5	
+carbon/nitrogen ratio	5	
+number of standard tRNAs extracted	5	
+assembly software	5	
+alkyl diethers	5	
+particulate organic carbon	5	
+identified_by	5	
+host disease outcome	5	
+completeness approach	5	
+completeness score	5	
+completeness software	5	
+subject exposure duration	5	
+isolation source host-associated	5	
+size fraction selected	5	
+host pulse	5	
+culture_collection	5	
+n-alkanes	5	
+taxonomic identity marker	5	
+host taxid	4	
+16S recovery software	4	
+sub_species	4	
+MAG coverage software	4	
+feature prediction	4	
+Latitude End	4	
+Longitude End	4	
+similarity search method	4	
+specimen_voucher	4	
+genotype	4	
+sex	4	
+serovar	4	
+water current	4	
+isolation source non-host-associated	4	
+reassembly post binning	4	
+lab_host	4	
+sampling time point	4	
+16S recovered	4	
+Marine Region	4	
+Sampling Platform	4	
+contamination screening parameters	4	
+collecting institution	4	
+decontamination software	4	
+bio_material	4	
+binning software	4	
+binning parameters	4	
+contamination screening input	4	
+mean peak friction velocity	4	
+mean friction velocity	4	
+contamination score	4	
+Sampling Campaign	4	
+reference database(s)	4	
+environmental_sample	4	
+assembly quality	4	
+Protocol Label	4	
+atmospheric data	3	
+total dissolved nitrogen	3	
+soluble reactive phosphorus	3	
+conductivity	3	
+collector name	3	
+sample capture status	3	
+clinical setting	3	
+particulate organic nitrogen	3	
+total depth of water column	3	
+travel-relation	3	
+total inorganic nitrogen	3	
+host description	3	
+bacterial production	3	
+total organic carbon	3	
+total particulate carbon	3	
+host life stage	3	
+total phosphorus	3	
+bacterial respiration	3	
+host length	3	
+turbidity	3	
+mating_type	3	
+photon flux	3	
+environmental package	3	
+dissolved inorganic nitrogen	3	
+dissolved inorganic phosphorus	3	
+gravidity	3	
+water content	3	
+suspended particulate matter	3	
+growth condition	3	
+downward PAR	3	
+methane	3	
+fluorescence	3	
+dev_stage	3	
+tidal stage	3	
+sub_strain	3	
+country of travel	3	
+primary production	3	
+sample transportation time	2	
+sample transportation temperature	2	
+host subspecific genetic lineage	2	
+mechanical damage	2	
+single cell or viral particle lysis kit protocol	2	
+organism part	2	
+sample disease status	2	
+sample transportation date	2	
+protocol	2	
+investigation type	2	
+sample health state	2	
+single cell or viral particle lysis approach	2	
+mineral nutrient regimen	2	
+links to additional analysis	2	
+serotype	2	
+serotype (required for a seropositive sample)	2	
+personal protective equipment	2	
+sewage type	2	
+pesticide regimen	2	
+illness symptoms	2	
+illness duration	2	
+salt regimen	2	
+non-mineral nutrient regimen	2	
+miscellaneous parameter	2	
+pH regimen	2	
+lat_lon	2	
+humidity regimen	2	
+seasonal environment	2	
+rainfall regimen	2	
+radiation regimen	2	
+gaseous environment	2	
+genetic modification	2	
+sub_type	2	
+fertilizer regimen	2	
+Size Fraction Upper Threshold	2	
+finishing strategy	2	
+fungicide regimen	2	
+storage conditions (fresh/frozen/other)	2	
+standing water regimen	2	
+WGA amplification kit	2	
+gravity	2	
+Size Fraction Lower Threshold	2	
+specific host	2	
+growth hormone regimen	2	
+Sampling Station	2	
+Sampling Site	2	
+WGA amplification approach	2	
+ecotype	2	
+herbicide regimen	2	
+climate environment	2	
+carbon dioxide	2	
+cell_line	2	
+cell_type	2	
+tissue_type	2	
+chemical compound	2	
+chemical mutagen	2	
+treatment agent	2	
+drainage classification	2	
+cultivar	2	
+antibiotic regimen	2	
+definition for seropositive sample	2	
+air temperature regimen	2	
+type exposure	2	
+age	2	
+health or disease status of specific host	2	
+total carbon	2	
+soil_taxonomic/FAO classification	2	
+soil_taxonomic/local classification method	2	
+soil type method	2	
+soil type	2	
+soil texture method	2	
+virus identifier	2	
+soil texture measurement	2	
+ventilation type	2	
+soil_taxonomic/local classification	2	
+host dry mass	2	
+water temperature regimen	2	
+hospitalisation	2	
+host behaviour	2	
+host habitat	2	
+watering regimen	2	
+sorting technology	2	
+Sample Collection Device	2	
+treatment date	1	
+twin sibling presence	1	
+wind direction	1	
+tumor grading (OBI_0600002)	1	
+trial timepoint	1	
+trial length	1	
+sample dry mass	1	
+treatment dose	1	
+sample coordinator affiliation	1	
+sample coordinator	1	
+travel outside the country in last six months	1	
+total phosphate	1	
+toxin burden	1	
+water content method	1	
+reactor type	1	
+read quality filter	1	
+sample disease stage	1	
+weight loss in last three months	1	
+wastewater type	1	
+replicate	1	
+salinity method	1	
+urogenital disorder	1	
+rooting conditions	1	
+rooting medium carbon	1	
+relative air humidity	1	
+vaccine lot number	1	
+vaccine manufacturer	1	
+relationship	1	
+reference host genome for decontamination	1	
+variety	1	
+total organic C method	1	
+ventilation rate	1	
+rooting medium macronutrients	1	
+viral identification software	1	
+volatile organic compounds	1	
+virus enrichment approach	1	
+urine/urogenital tract disorder	1	
+urine/kidney disorder	1	
+urine/collection method	1	
+rooting medium micronutrients	1	
+rooting medium organic supplements	1	
+rooting medium pH	1	
+rooting medium regulators	1	
+rooting medium solidifier	1	
+vaccine dosage	1	
+typical occupant density	1	
+slope gradient	1	
+time since last toothbrushing	1	
+total nitrogen method	1	
+solar irradiance	1	
+specimen_id	1	
+special diet	1	
+space typical state	1	
+source of vaccination information	1	
+proxy voucher	1	
+sample weight for DNA extraction	1	
+sample wet mass	1	
+sampled age	1	
+source material description	1	
+seabed habitat	1	
+secondary treatment	1	
+soluble organic material	1	
+soluble inorganic material	1	
+serovar_in-silico	1	
+study completion status	1	
+sexual activity	1	
+shell length	1	
+shell markings	1	
+shell width	1	
+shellfish soft tissue weight	1	
+soil water content	1	
+shellfish total weight	1	
+soil pH	1	
+soil horizon method	1	
+soil horizon	1	
+smoker	1	
+sludge retention time	1	
+size of the catchment area	1	
+sample unique ID	1	
+sub_group	1	
+sample height	1	
+suspended solids	1	
+sample length	1	
+tolid	1	
+sample material	1	
+tissue_lib	1	
+tissue culture growth media	1	
+time since last wash	1	
+sample origin	1	
+slope aspect	1	
+time	1	
+tertiary treatment	1	
+sample phenotype	1	
+sample same as	1	
+symbiont	1	
+sample size sorting method	1	
+subspecific genetic lineage name	1	
+sample storage buffer	1	
+surveillance target	1	
+surface temperature	1	
+surface moisture pH	1	
+sample storage container	1	
+surface moisture	1	
+surface material	1	
+surface humidity	1	
+surface air contaminant	1	
+substructure type	1	
+sample symbiont of	1	
+subspecific genetic lineage rank	1	
+sample taxon name	1	
+source of UViGs	1	
+light type	1	
+proxy biomaterial	1	
+diagnostic method	1	
+engraftment host strain name	1	
+engrafted tumor sample passage	1	
+engrafted tumor collection site	1	
+emulsions	1	
+efficiency percent	1	
+drug usage	1	
+douche	1	
+dose	1	
+dominant hand	1	
+disease staging	1	
+diagnosis	1	
+environmental stress	1	
+dew point	1	
+detection type	1	
+dermatology disorder	1	
+date of death	1	
+date of birth	1	
+current vegetation method	1	
+current vegetation	1	
+current land use	1	
+culture_or_strain_id	1	
+culture rooting medium	1	
+environmental history	1	
+experimental factor 1	1	
+history/previous land use	1	
+gonad weight	1	
+history/fire	1	
+history/extreme events	1	
+history/crop rotation	1	
+history/agrochemical additions	1	
+heating and cooling system type	1	
+habitat	1	
+gynecological disorder	1	
+growth media	1	
+growth habit	1	
+growth facility	1	
+germline	1	
+experimental factor 2	1	
+gastrointestinal tract disorder	1	
+gaseous substances	1	
+filter type	1	
+extreme_unusual_properties/heavy metals method	1	
+extreme_unusual_properties/heavy metals	1	
+extreme_unusual_properties/Al saturation method	1	
+extreme_unusual_properties/Al saturation	1	
+experimental factor 5	1	
+experimental factor 4	1	
+experimental factor 3	1	
+composite design/sieving (if any)	1	
+chemical oxygen demand	1	
+cellular component	1	
+Nitrate Sensor	1	
+absolute air humidity	1	
+Was the PDX model humanised?	1	
+WHO/OIE/FAO clade (required for HPAI H5N1 viruses)	1	
+UViG assembly quality	1	
+Sample Status	1	
+Salinity Sensor	1	
+Oxygen Sensor	1	
+OTU sequence comparison approach	1	
+OTU database	1	
+OTU classification approach	1	
+Last Update Date	1	
+carbon monoxide	1	
+Is the sequenced pathogen host associated?	1	
+HRT	1	
+GAL_sample_id	1	
+GAL	1	
+Event Label	1	
+Event Date/Time Start	1	
+Event Date/Time End	1	
+DNA concentration	1	
+Citation	1	
+Chlorophyll Sensor	1	
+adductor weight	1	
+air particulate matter concentration	1	
+air temperature	1	
+amniotic fluid/color	1	
+building setting	1	
+building occupancy type	1	
+blood/blood disorder	1	
+block	1	
+birth control	1	
+biotic relationship	1	
+biotic regimen	1	
+biological status	1	
+biochemical oxygen demand	1	
+barometric pressure	1	
+barcoding center	1	
+area of sampling site	1	
+aquaculture origin	1	
+antiviral treatment initiation	1	
+antiviral treatment duration	1	
+antiviral treatment dosage	1	
+antiviral treatment	1	
+ancestral data	1	
+amniotic fluid/maternal health status	1	
+amniotic fluid/gestation state	1	
+amniotic fluid/foetal health status	1	
+history/flooding	1	
+history/previous land use method	1	
+profile position	1	
+occupant density at sampling	1	
+oxygen	1	
+other pathogens tested	1	
+other pathogens test result	1	
+original geographic location (longitude)	1	
+original geographic location (latitude)	1	
+original geographic location	1	
+original collection date	1	
+organism phenotype	1	
+organism common name	1	
+organic particles	1	
+occupancy at sampling	1	
+passage_history	1	
+number of inoculated individuals	1	
+nose/mouth/teeth/throat disorder	1	
+name of the sampling site	1	
+microbial biomass method	1	
+microbial biomass	1	
+menopause	1	
+menarche	1	
+meaning of cut off value	1	
+mean annual and seasonal temperature	1	
+mean annual and seasonal precipitation	1	
+pH method	1	
+pathotype	1	
+history/tillage	1	
+plant structure	1	
+primary treatment	1	
+presence of pets or farm animals	1	
+pregnancy	1	
+predicted genome type	1	
+predicted genome structure	1	
+pre-treatment	1	
+population size of the catchment area	1	
+pooling of DNA extracts (if done)	1	
+pollutants	1	
+plant treatment	1	
+plant sex	1	
+patient age at collection of tumor	1	
+plant product	1	
+plant growth medium	1	
+plant developmental stage	1	
+plant body site	1	
+phenotype	1	
+patient tumor type	1	
+patient tumor site of collection	1	
+patient tumor primary site	1	
+patient tumor diagnosis at time of collection	1	
+patient sex	1	
+major diet change in last six months	1	
+lung/pulmonary disorder	1	
+lung/nose-throat disorder	1	
+host prediction approach	1	
+identifier_affiliation	1	
+hysterectomy	1	
+humidity	1	
+host wet mass	1	
+host substrate	1	
+host storage container temperature	1	
+host storage container pH	1	
+host storage container	1	
+host shape	1	
+host prediction estimated accuracy	1	
+host gutted mass	1	
+liver disorder	1	
+host growth conditions	1	
+host disease stage	1	
+host diet treatment concentration	1	
+host diet treatment	1	
+host color	1	
+host breed	1	
+host body habitat	1	
+host blood pressure systolic	1	
+host blood pressure diastolic	1	
+host HIV status	1	
+illness onset date	1	
+immunoprecipitate	1	
+individual	1	
+indoor space	1	
+link to climate information	1	
+link to classification information	1	
+lineage:swl (required for H1N1 viruses)	1	
+light regimen	1	
+lifestage	1	
+instrument for DNA concentration measurement	1	
+inorganic particles	1	
+inoculation stock availability	1	
+inoculation route	1	
+inoculation dose	1	
+initial time point	1	
+influenza-like illness at the time of sample collection	1	
+influenza virus type	1	
+influenza vaccination type	1	
+influenza vaccination date	1	
+influenza test result	1	
+influenza test method	1	
+influenza strain unique number	1	
+infect	1	
+industrial effluent percent	1	
+indoor surface	1	
+wind speed	1	
