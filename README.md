@@ -9,7 +9,7 @@ This repository is meant for the participants of the [BioHackathon](https://bioh
 * [Project 4](4): Benchmarks for Bioinformatics Workflow Bake Offs
 * [Project 5](5): BioHackrXiv and publications
 * [Project 6](6): BioModelsML: Building a FAIR and reproducible collection of machine learning models in life science and medicine for easy reuse
-* [Project 7](7): Bioschemas resource index for chem and plants
+* [Project 7](7): Bioschemas resource index for chem and plants. [BioHackRxiv Report](https://osf.io/preprints/biohackrxiv/yxunp), 2024-01-30
 * [Project 8](8): Building towards a machine-actionable Software Management Plan
 * [Project 9](9): Cell type-specific and druggable pathway models and maps
 * [Project 10](10): FAIR Workflow Execution with WfExS and Workflow Run Crate
