@@ -1,5 +1,7 @@
 # Project 7: Bioschemas resource index for chem and plants
 
+* [BioHackRxiv Report](https://osf.io/preprints/biohackrxiv/yxunp), 2024-01-30
+
 ## Abstract
 
 Bioschemas is a community-based effort providing specifications, tools and training on how to add structured markup on webpages in Life Sciences. Although Bioschemas main aim is to facilitate findability, it also provides an initial interoperability layer. To achieve this, Bioschemas recommends the use of EDAM terms and other ontologies whenever it fits. Bioschemas has been successfully implemented across different communities inside and outside ELIXIR; the plant and chemistry communities are two examples. 
