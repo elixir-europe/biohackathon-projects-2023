@@ -37,7 +37,7 @@ git_url: https://github.com/elixir-europe/biohackathon-projects-2023/20/biohackr
 authors_short: Jèssica Gómez-Garrido & Alice B. Dennis  \emph{et al.}
 ---
 
-# 1 Introduction
+# 1.1 Introduction
 
 Genome annotation is the process of identifying the functions of different pieces of a genome; which includes genes that code for proteins, their intron-exon structure, and non-coding features of the genome, such as promoters and transposable elements. Annotations are typically generated using computational methods, sometimes followed by manual curation.
 
@@ -53,33 +53,33 @@ The European Reference Genome Atlas (ERGA [@ERGA]) is an international consortiu
 As the number of sequenced genomes is rapidly increasing, there is a great need to develop standard, efficient, and reproducible genome annotation workflows. This report is the outcome of a project at the Elixir BioHackathon Europe 2023 titled “Genome annotation and other post-assembly workflows for the tree of life” with a focus on pipelines for performing and evaluating genome annotations. As part of the Elixir BioHackathon Europe 2023, we developed, tested, and benchmarked pipelines using standard workflow managers, in this case, Nextflow, Snakemake, and Galaxy, aimed at annotating protein-coding regions of reference genomes.
 
 
-## 1.1 Goals
+## 1.2 Goals
 
 The BioHackathon was a unique opportunity for researchers from across the world to come together both in-person and via tele-communications to work towards the command goals of testing and implementing robust pipelines for genome annotation in a distributed manner. With this in mind, we established a number of goals for the 4 days we spent together:
 
-**Testing pipelines on a wide range of species** The majority of tools developed for annotating genetic sequences have been developed with model organisms in mind. We wished to determine which tools and pipelines were appropriate for which taxa and what limitations exist with established tools.
+<b>Testing pipelines on a wide range of species</b> The majority of tools developed for annotating genetic sequences have been developed with model organisms in mind. We wished to determine which tools and pipelines were appropriate for which taxa and what limitations exist with established tools.
 
-**Testing different pipelines and workflows on a variety of computing infrastructures** A key aspect of the FAIR principles is the interoperability of metadata, data, and workflows. Any pipeline produced by researchers should be written wherever possible in a way that can be deployed on various computing infrastructures with minimal intervention and troubleshooting. This BioHackathon gave a fantastic opportunity for researchers from a large number of institutes and research environments to come together and share their experiences in different computer environments.
+<b>Testing different pipelines and workflows on a variety of computing infrastructures</b> A key aspect of the FAIR principles is the interoperability of metadata, data, and workflows. Any pipeline produced by researchers should be written wherever possible in a way that can be deployed on various computing infrastructures with minimal intervention and troubleshooting. This BioHackathon gave a fantastic opportunity for researchers from a large number of institutes and research environments to come together and share their experiences in different computer environments.
 
-**Establishing annotation workflows on Galaxy** Many genome annotation tools are now available in Galaxy. Our goal was to test these tools on real data with various parameter combinations and to define real-world genome annotation workflows usable on thousands of newly sequenced genomes.
+<b>Establishing annotation workflows on Galaxy</b> Many genome annotation tools are now available in Galaxy. Our goal was to test these tools on real data with various parameter combinations and to define real-world genome annotation workflows usable on thousands of newly sequenced genomes.
 
-**Explore the impact of performing annotations with and without transcript evidence** For some taxa, this is not available, and it is important to determine if accurate annotations can still be created.
+<b>Explore the impact of performing annotations with and without transcript evidence</b> For some taxa, this is not available, and it is important to determine if accurate annotations can still be created.
 
-**Establish a set of criteria to evaluate the efficacy of each pipeline** The evaluation of genome annotation remains an outstanding question in the field, with no defined set of tools, software, and criteria yet established to determine whether one annotation is necessarily better than another. In this project, we aim to test a number of tools and establish a set of easily comparable criteria for assessing annotation quality.
+<b>Establish a set of criteria to evaluate the efficacy of each pipeline</b> The evaluation of genome annotation remains an outstanding question in the field, with no defined set of tools, software, and criteria yet established to determine whether one annotation is necessarily better than another. In this project, we aim to test a number of tools and establish a set of easily comparable criteria for assessing annotation quality.
 
-**Establish a "minimum criteria" for annotation quality** As ERGA and other Earth Biogenome Project-affiliated initiatives increase the number of published genome sequences, the compute cost required to evaluate and annotate these sequences will grow inordinately. As researchers, we must keep in mind that Earth’s resources are finite and must be aware of our environmental impact with each computational pipeline run. It is not feasible to be expected to run multiple workflows for each generated sequence in order to produce the best annotation possible. We hope to establish when an annotation can be considered “good enough” to answer the biological questions researchers have for their genome to avoid over-computation in the future.
+<b>Establish a "minimum criteria" for annotation quality</b> As ERGA and other Earth Biogenome Project-affiliated initiatives increase the number of published genome sequences, the compute cost required to evaluate and annotate these sequences will grow inordinately. As researchers, we must keep in mind that Earth’s resources are finite and must be aware of our environmental impact with each computational pipeline run. It is not feasible to be expected to run multiple workflows for each generated sequence in order to produce the best annotation possible. We hope to establish when an annotation can be considered “good enough” to answer the biological questions researchers have for their genome to avoid over-computation in the future.
 
-**Annotating Single Nucleotide Variants in Protein-Coding Genes** De novo genome assemblies that also include Illumina sequencing present the opportunity to analyse genome-wide variation from the “reference” specimen. Here, we ran the nf-core/sarek Nextflow pipeline on a non-model species to identify Single Nucleotide Variants (SNVs) and annotate these variants in protein-coding genes. The genomic catalogue of SNVs produced in this manner can enrich the genome annotations, providing a “snapshot” of the standing genetic variation.
+<b>Annotating Single Nucleotide Variants in Protein-Coding Genes</b> De novo genome assemblies that also include Illumina sequencing present the opportunity to analyse genome-wide variation from the “reference” specimen. Here, we ran the nf-core/sarek Nextflow pipeline on a non-model species to identify Single Nucleotide Variants (SNVs) and annotate these variants in protein-coding genes. The genomic catalogue of SNVs produced in this manner can enrich the genome annotations, providing a “snapshot” of the standing genetic variation.
 
 # 2 Methods
 
-## 2.1 Genomes for Biodiversity
+# 2.1 Genomes for Biodiversity
 
 As part of this project, we aimed to test robust annotation pipelines on genomes representing the diversity of organisms. This effort aligns with ERGA’s goal to produce reference-quality genomes for all eukaryotes in Europe. Included in this project were a mixture of previously published genomes, as well as assemblies produced as part of the ERGA Pilot Project [@Pilot] or by ERGA-affiliated researchers directly contributing to the BioHackathon. Included in our analysis were genome sequences for the Cauliflower Coral Pocillopora cf. effusa (GCA_942486045.1 [@Noel2023]), the Violet Copper Butterfly Helleia helle (GCA_963853865.1), the Lesser Trefoil Trifolium dubium (GCA_951804385.1), the Sponge Phakellia ventilabrum (GCA_963921505.1), the Coffee-bean Snail Melampus jaumei, the Fruit Fly Drosophila melanogaster (GCA_000001215.4), and the Bitter Apple Citrullus colocynthis.
 
 ![Species used to test annotation pipelines. Clockwise from top left: Citrullus colocynthis, Drosophila melanogaster, Helleia helle, Melampus jaumei, Phakellia ventilabrum, Pocillopora cf. efusa and Trifolium dubium](fig1.png)
 
-## 2.2 Pipeline Structure(s)
+# 2.2 Pipeline Structure(s)
 
 The pipelines used in this BioHackathon generally followed a consistent workflow, including repeat-masking of the genome assembly, using species-specific transcript sequencing data to construct transcript models(where applicable), a database of protein sequences to find conserved proteins in the genomes, and software aimed to identify and predict de-novo gene structures based on the given evidence.
 
@@ -87,30 +87,30 @@ The tested pipelines fell into two broad categories:
 
 Gene prediction using pipelines that do not require transcriptomic evidence. 
 
-**Pipeline 1.1**: Using the genome assembly and the taxid of the species of interest as input, GeneidX [@GeneidX] provides a first-pass annotation of the protein-coding genes. Geneidx automatically identifies a set of proteins from closely related species used as hints for the gene annotation process. In addition, it also looks for the closest pre-trained parameter file from which it will extract the remaining parameters that cannot be automatically estimated from the protein-to-DNA alignments.
+<b>Pipeline 1.1</b>: Using the genome assembly and the taxid of the species of interest as input, GeneidX [@GeneidX] provides a first-pass annotation of the protein-coding genes. Geneidx automatically identifies a set of proteins from closely related species used as hints for the gene annotation process. In addition, it also looks for the closest pre-trained parameter file from which it will extract the remaining parameters that cannot be automatically estimated from the protein-to-DNA alignments.
 Geneidx can mask repeats using the repeats found by Ensembl in the closest species annotated so far (this option is turned off by default).
 https://github.com/guigolab/geneidx
 
-**Pipeline 1.2**: Helixer [@Helixer] is a recent ab-initio annotation software based on deep neural networks, dedicated to the annotation of large eukaryotic genomes using only the genome assembly as input.
+<b>Pipeline 1.2</b>: Helixer [@Helixer] is a recent ab-initio annotation software based on deep neural networks, dedicated to the annotation of large eukaryotic genomes using only the genome assembly as input.
 https://github.com/weberlab-hhu/Helixer 
 
 Gene prediction using pipelines that incorporate evidence from transcriptomic sequencing data or available protein sequences
 
-**Pipeline 2.1**: Our first tested pipeline (Fig. X - hereafter referred to as UNIL pipeline, developed by SJD) includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the SwissProt database (Release 2023_04 of 13-Sep-2023 [@Uniprot]). Following de-novo repeat modelling, using the genome assembly as input, the SwissProt protein sequences and mapped RNA-seq reads are given as evidence data alongside the repeat-masked genome into Braker3 [@Braker3]. The resulting gff3 file is the output used for downstream evaluation and analysis.
+<b>Pipeline 2.1</b>: Our first tested pipeline (Fig. X - hereafter referred to as UNIL pipeline, developed by SJD) includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the SwissProt database (Release 2023_04 of 13-Sep-2023 [@Uniprot]). Following de-novo repeat modelling, using the genome assembly as input, the SwissProt protein sequences and mapped RNA-seq reads are given as evidence data alongside the repeat-masked genome into Braker3 [@Braker3]. The resulting gff3 file is the output used for downstream evaluation and analysis.
 https://doi.org/10.48546/workflowhub.workflow.569.1
 
-**Pipeline 2.2**: Our second tested pipeline (Fig. X - hereafter referred to as CNAG pipeline, developed by JGG) includes additional steps where a set of de-novo transcripts are assembled from the input RNA-seq reads and multiple evidences from Augustus [@Stanke2008], GeneMark [@Brna2020] and GeneID [@Alioto2018] are combined with RNA-seq and protein alignments using EvidenceModeler (EVM [@EVM]). Furthermore, isoform information is included by running PASA [@PASA] after initial gene models are created from EVM.
+<b>Pipeline 2.2</b>: Our second tested pipeline (Fig. X - hereafter referred to as CNAG pipeline, developed by JGG) includes additional steps where a set of de-novo transcripts are assembled from the input RNA-seq reads and multiple evidences from Augustus [@Stanke2008], GeneMark [@Brna2020] and GeneID [@Alioto2018] are combined with RNA-seq and protein alignments using EvidenceModeler (EVM [@EVM]). Furthermore, isoform information is included by running PASA [@PASA] after initial gene models are created from EVM.
 https://github.com/cnag-aat/Annotation_AAT 
 
-**Pipeline 2.3**: Our third tested pipeline (Fig. X - hereafter referred to as ANNOTATO, developed by PDD in the frame of the European BGE project) incorporates a number of the previous steps and allows for the addition of long-read RNA reads, for example, a PacBio Iso-seq library, and uses Funannotate [@Funannotate] to add further gene predictions alongside Braker3.
+<b>Pipeline 2.3</b>: Our third tested pipeline (Fig. X - hereafter referred to as ANNOTATO, developed by PDD in the frame of the European BGE project) incorporates a number of the previous steps and allows for the addition of long-read RNA reads, for example, a PacBio Iso-seq library, and uses Funannotate [@Funannotate] to add further gene predictions alongside Braker3.
 https://doi.org/10.48546/workflowhub.workflow.654.2
 
-**Pipeline 2.4**: Our fourth tested pipeline (for workflow diagram see GitHub repositories) hereafter referred to as REAT-MINOS pipeline, developed by the DS group) Generates alignments and gene models by multiple methods (including: Mikado [@Venturini2018], Augustus [@Stanke2008], EvidenceModeler (EVM [@EVM]) and Helixer [@Helixer] with a final set of gene models selected based on evidence support. In addition, models are assigned a confidence classification and biotype.
+<b>Pipeline 2.4</b>: Our fourth tested pipeline (for workflow diagram see GitHub repositories) hereafter referred to as REAT-MINOS pipeline, developed by the DS group) Generates alignments and gene models by multiple methods (including: Mikado [@Venturini2018], Augustus [@Stanke2008], EvidenceModeler (EVM [@EVM]) and Helixer [@Helixer] with a final set of gene models selected based on evidence support. In addition, models are assigned a confidence classification and biotype.
 https://github.com/EI-CoreBioinformatics/reat and https://github.com/EI-CoreBioinformatics/minos
 
 ![Structure of annotation workflows tested. Shown are the input data, software and pipeline structure of the UNIL (top-left), CNAG (top-right), ANNOTATO (bottom-left) and Braker3 (bottom-right) workflows](fig2.png)
 
-## 2.3 How to Evaluate Your Genome Annotation
+# 2.3 How to Evaluate Your Genome Annotation
 
 A fundamental outstanding question in the field of genome annotation is how to evaluate the quality of an annotation. Some key metrics to consider are the number of total genes annotated, which is itself taxon-specific, the number and size of introns, the latter normally being correlated with the size of the genome, the number of single-exon genes, the number of distinct isoforms per gene, and the completeness of the annotation regarding the expected content of the proteome which is encoded. 
 
@@ -118,15 +118,15 @@ To evaluate the completeness of the annotation, we utilised BUSCO and OMArk. Bot
 
 Gene completeness metrics such as BUSCO and OMArk can be skewed by over-predicting genes. Thus, the number of genes predicted as part of an annotation pipeline is also a key metric in determining annotation quality to quantify if the gene content is overestimated. With this in mind, we aim to produce annotations with similar numbers of genes found in annotations from other genomes in the clade. The “Consistency” output of OMArk can then help identify the reason for overprediction: whether inclusion of translated non-coding regions (Overrepresentation of Unknown) or fragmentation of genes (Overrepresentation of fragmented sequences).
 
-## 2.4 Computation in Galaxy
+# 2.4 Computation in Galaxy
 
 All Galaxy analyses were performed on the European Galaxy server (https://usegalaxy.eu) using the pre-installed tools listed in Table X. In all instances, the source code used to call each tool is available in the Galaxy Toolshed URL, or can be accessed via the GitHub repositories used by the Galaxy Genome Annotation community (for further details see https://annotation.usegalaxy.eu/). The versions for each tool are defined by the conda packages and environment used. Parameters and data used for each run are available within the metadata of the Galaxy Analysis Run.
 
-**INSERT GALAXY TABLE HERE**
+<b>INSERT GALAXY TABLE HERE</b>
 
 Table 1: List of Tools Used by the Galaxy Annotation Community and Their Installation Locations in the Galaxy Toolshed.
 
-## 2.5 SNVs in protein-coding genes
+# 2.5 SNVs in protein-coding genes
 
 Single-nucleotide variants (SNVs) were annotated in the protein-coding genes that were previously annotated by the CNAG pipeline on the Helleia helle genome assembly. For this, we used 83X Illumina PE reads (available in the European Nucleotide Archive; ENA under project accession number PRJEB64646) that were first processed by Cutadapt v3.2 [@Martin2011] to remove any remaining adapter sequences and used to estimate error-rate, heterozygosity and genome size with Meryl and Genomescope2 [@RanalloBenavidez2020].
 
@@ -136,11 +136,11 @@ After examining the coverage statistics reported by Sarek’s usage of Mosdepth 
 
 # 3 Results
 
-## 3.1 Computation
+# 3.1 Computation
 
-## 3.2 Protein-Coding Genome Annotation
+# 3.2 Protein-Coding Genome Annotation
 
-## 3.3 SNV Analysis
+# 3.3 SNV Analysis
 
 The SNV calling performed for the Helleia helle genome reported a heterozygosity rate of 0.2338%, which is low and consistent with IUCN Assessment of this butterfly as Endangered in Europe [@IUCN_butterflies]. As purifying selection is acting strongly at functional sites, most of the variants were annotated to have extremely low or negligible impact with a higher proportion of synonymous changes (Missense/Silent ratio 0.85) and the vast majority being located at introns and intergenic regions (Figure SnpEff).
 
@@ -152,7 +152,7 @@ Additional analysis would be needed to shed light on the function of this region
 
 # 4 Discussion
 
-## 4.1 Overview of computational approaches
+# 4.1 Overview of computational approaches
 
 The strength of this BioHackathon project lies in the preparation performed beforehand - particularly in finding and sharing datasets from a variety of species, each collected, sequenced and processed in different locations around the world. This effort relied on the openness of each individual involved and collaboration with sites willing to assist with computational infrastructure. We are indebted to the Barcelona Supercomputing Centre (BSC) and the National Centre for Genomic Analysis (CNAG) in Barcelona for providing Nextcloud and ftp instances, respectively, to allow users to upload, share and download data required to test each annotation pipeline. We are further grateful to the Galaxy Europe team in Freiburg for assistance with computational resources and use of the installed software inside the Galaxy framework.
 
@@ -160,7 +160,7 @@ As mentioned above, the willingness of all participants to share not only their 
 
 We tested four annotation tools - Helixer, Braker3, Maker, and Funannotate, on up to 6 of the ERGA genomes. Some of the analyses did not finish within the time, but some general conclusions can be drawn. Firstly, we had great success with the tool Helixer. This required no additional input data (such as RNAseq and/or protein evidence), was much faster than other tools, and achieved comparable annotation accuracy according to BUSCO and OMArk scores. Helixer is configured to run on GPUs and uses deep learning to predict gene structures. We had success with Braker3, but it was slower than Helixer. There were some issues with Maker and Funannotate. Firstly, these tools took a lot longer to run (or did not finish), sometimes failed due to unknown reasons (or still under investigation), or required additional work on input files (such as editing contig names, which mean they are not comparable with other annotations run on the same genome). These are general conclusions but provide a useful basis for further tool refinement and prioritisation. We are now collating all these tools into a combined Galaxy workflow that will include: repeat masking, RNAseq mapping, structural annotation (multiple tool options), functional annotation, assessment, and visualisation of genome + annotation(s) on JBrowse. 
 
-## 4.2 Major issues identified
+# 4.2 Major issues identified
 
 The pipelines developed and tested as part of this BioHackathon were complex and relied on a number of tools being installed, often inside conflicting containers. There is a general movement in bioinformatics away from individually installed software and conda environments, towards singularity and docker containers encompassing entire workflows. In these cases, installation is generally simpler, more robust and more transferable between computing systems. Within a closed system such as Galaxy, each software is installed separately beforehand and can then be chained together into workflows without the need to worry about installing tools from scratch or clashing dependencies.
 
@@ -172,17 +172,17 @@ A major roadblock in the field of genome annotation is the lack of a single agre
 
 A number of pipelines and workflows have been developed for human or model-organism genome assemblies. As such, applying these pipelines to genomes outside of those robustly tested can sometimes be difficult and require a high degree of manual intervention. This will likely improve as the number of high-quality non-model reference genomes are published and the biodiversity community broadens the range of taxa represented in databases such as GenBank. For now, pipelines such as nf-core’s sarek require some individual steps to be run manually in genomes not exactly conforming to those of the human reference genome.
 
-## 4.3 Lessons learned
+# 4.3 Lessons learned
 
-**Managing expectations** Each piece of software tested or run as part of the annotation workflows used here required the use of a High Performance Computing environment and would generally run for many hours. This means that once these tools are chained together into entire workflows, tasks would run on the order of days, sometimes relying on queues in clusters not being too busy or individuals having unrestricted access to large compute nodes. Coupled with the fact that some participants were also installing and running workflows for the first time, this meant that a lot of patience was initially required for trouble-shooting and for results to arrive. While the goal of the BioHackathon was to test workflows and obtain benchmarking results, we were also mindful of the importance of this week as a training and knowledge transfer exercise. It is rare to have a group of researchers from students through to experienced professionals in close proximity sharing experience and expertise in an unrestricted way.
+<b>Managing expectations</b> Each piece of software tested or run as part of the annotation workflows used here required the use of a High Performance Computing environment and would generally run for many hours. This means that once these tools are chained together into entire workflows, tasks would run on the order of days, sometimes relying on queues in clusters not being too busy or individuals having unrestricted access to large compute nodes. Coupled with the fact that some participants were also installing and running workflows for the first time, this meant that a lot of patience was initially required for trouble-shooting and for results to arrive. While the goal of the BioHackathon was to test workflows and obtain benchmarking results, we were also mindful of the importance of this week as a training and knowledge transfer exercise. It is rare to have a group of researchers from students through to experienced professionals in close proximity sharing experience and expertise in an unrestricted way.
 
-**Organisation is key** In order to achieve our goals during the week-long BioHackathon project, a number of organisational decisions were made beforehand to allow for the smooth execution of tasks. This involved identifying complete datasets that could be shared and worked on during the week, and then establishing a common storage space where this data and resulting research outputs could be uploaded, shared, and downloaded. Finally, a subset of software, tools, and pipelines were selected, themselves determined mostly by which had been developed by members of the BioHackathon group, and then the tasks of annotating every genome with every piece of software were distributed among all members, with issues, findings and final results shared for meta-analysis at the end of the project. Having clear, short tasks distributed among individuals gave everyone a clear goal for the week of the project and increased the sense of contributing to a common goal.
+<b>Organisation is key</b> In order to achieve our goals during the week-long BioHackathon project, a number of organisational decisions were made beforehand to allow for the smooth execution of tasks. This involved identifying complete datasets that could be shared and worked on during the week, and then establishing a common storage space where this data and resulting research outputs could be uploaded, shared, and downloaded. Finally, a subset of software, tools, and pipelines were selected, themselves determined mostly by which had been developed by members of the BioHackathon group, and then the tasks of annotating every genome with every piece of software were distributed among all members, with issues, findings and final results shared for meta-analysis at the end of the project. Having clear, short tasks distributed among individuals gave everyone a clear goal for the week of the project and increased the sense of contributing to a common goal.
 
-**Consistency is still a dream** A repeated complaint among participants of the BioHackathon was how exactly to compare two workflows, or even the outputs from two tools. As mentioned above, the lack of a consistent annotation file format drives a large degree of confusion, but even within these files it was not always clear what was being produced. For example, does a tool only annotate protein-coding genes, or are non-coding genes also included? Some tools also include multiple splice variants for each gene, where others attempt to build the best model for each gene and only report this. This is further compounded by tools requiring different input files, either in the form of soft-/hard-/non-masked genomes, requiring transcript data or leaving this as optional, or using protein sequences from different databases. Such examples of inconsistency between tools are often not made explicit in documentation or in the commands at run-time. This thus relies on expertise from the user using each tool in order to fully understand what is being produced, making meta-analyses or comparisons incredibly difficult or almost impossible. 
+<b>Consistency is still a dream</b> A repeated complaint among participants of the BioHackathon was how exactly to compare two workflows, or even the outputs from two tools. As mentioned above, the lack of a consistent annotation file format drives a large degree of confusion, but even within these files it was not always clear what was being produced. For example, does a tool only annotate protein-coding genes, or are non-coding genes also included? Some tools also include multiple splice variants for each gene, where others attempt to build the best model for each gene and only report this. This is further compounded by tools requiring different input files, either in the form of soft-/hard-/non-masked genomes, requiring transcript data or leaving this as optional, or using protein sequences from different databases. Such examples of inconsistency between tools are often not made explicit in documentation or in the commands at run-time. This thus relies on expertise from the user using each tool in order to fully understand what is being produced, making meta-analyses or comparisons incredibly difficult or almost impossible. 
 
-**Less is more** Some pipelines or tools can run incredibly quickly and with often reduced input requirements and computational burden. While perhaps not perfect, tools such as Helixer and GeneIDx can be invaluable in quickly providing a functional annotation of a genome without the need for vast amounts of sequencing data or intensive computational experience and resources in order to run.
+<b>Less is more</b> Some pipelines or tools can run incredibly quickly and with often reduced input requirements and computational burden. While perhaps not perfect, tools such as Helixer and GeneIDx can be invaluable in quickly providing a functional annotation of a genome without the need for vast amounts of sequencing data or intensive computational experience and resources in order to run.
 
-## 4.4 Future needs
+# 4.4 Future needs
 
 Events such as the Elixir BioHackathon Europe offer a fantastic opportunity for researchers in a field to come together and reach consensus on a particular topic or work towards the development of a research object which will assist the wider research field. A number of issues mentioned here would be fantastic candidates for such future events, but would likely each require their own projects as the individual scopes are too large. Such topics include:
 
@@ -194,7 +194,7 @@ Events such as the Elixir BioHackathon Europe offer a fantastic opportunity for 
 
 * Define a set of quality metrics and develop tools to evaluate annotations. Already in the genome assembly field, there are generally accepted quality thresholds governing when a genome assembly can be considered “high-quality”, but this is lacking in the field of annotation.
 
-## 4.5 Distributed BioHackathon
+# 4.5 Distributed BioHackathon
 
 The Elixir BioHackathon Europe presented a rare opportunity for researchers from the Genome Annotation Community to come together and share their experiences in a free and open forum. While the foundations of the project proposed arose from work in the ERGA Annotation Committee, the participants were not necessarily involved directly in ERGA or other European projects. Researchers contributing to the project came from Australian Biocommons (an Elixir collaborative partner), the African BioGenome Project, India, and the United Arab Emirates. This not only brought together a wide variety of research experience and taxonomic diversity but also a range of computing environments and infrastructures.
 
