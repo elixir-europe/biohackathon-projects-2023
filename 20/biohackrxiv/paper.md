@@ -140,11 +140,50 @@ After examining the coverage statistics reported by Sarek’s usage of Mosdepth 
 
 ## 3.2 Protein-Coding Genome Annotation
 
+
+## 3.2.1 Number of Genes per Annotation
+
+The number of genes annotated by a pipeline is a good measure of a tool over- or under-predicting gene models. While no ground-truth is often known a priori, comparisons between workflows often provide a good basis for discarding outliers. This was our first criteria for evaluating the accuracy of an annotation (Fig. 3).
+
+In the workflows tested, ANNOTATO was found to predict many more genes than all others in a number of species, giving initial indications that the workflow is over-predicitng. Running Braker3 alone consistently resulted in a lower number of annotated genes, indicating either genes being missed in the annotation process, or being removed due to strict filtering criteria.
+
+That being said, what is notable is the overall consistency shown in the numbers of genes predicted for each species. The workflows and tools tested were often built on a range of assumptions and models, yet seem to converge towards an average in this regard.
+
+![ Number of genes annotated per genome and pipeline. Bars are coloured by workflow and grouped by species](no_genes.png)
+
+## 3.2.2 Proteome Accuracy and Completeness
+
+To evaluate the completeness of the annotated transcript- and proteome, we relied on BUSCO and OMArk to determine what proportion of the expected annotated sequences for a species in its lineage were recovered. The BUSCO scores calculated were all given for the most representative lineage for each species (Citrullus - eudicots, Drosophila - diptera, Helleia - lepidoptera, Human - primates, Melampus - mollusca, Phakellia & Pocillopora - metazoa, Trifolium - fabales) with each pipeline showing differing degrees of completeness for each species (Fig. 4). For our most represented species, Drosophila melanogaster, most methods did not achieve a level of completeness as high as the curated reference annotation, which outlines the limit of automated methods.
+
+From other species, of particular note is the necessity to run multiple rounds of MAKER in order to obtain a meaningful annotation regardless of the species used. A positive surprise was the remarkable success of most workflows run to annotate both copies of each gene expected in the tetraploid Trifolium dubium.
+
+For most species analysed, the annotations created obtained better BUSCO scores with the use of evidence, either via transcript data or protein sequences, with the exception of the de-novo program Helixer. Remarkably, Helixer is able to obtain highly complete annotations even without the use of a repeat masked genome, and only requires a choice of lineage as input parameter (choice of land plant, vertebrate, invertebrate, or fungi), meaning incredible ease-of-use and lower compute costs, however with the requirement of a GPU.
+
+![BUSCO completeness scores for each annotation performed on each species genome. For each protein sequence in the BUSCO database of the respective lineage, the sequence is marked as present in a Single-Copy (light-blue) or Duplicated (dark-blue), present but Fragmented (yellow) or Missing (Red) from the annotated protein sequences. Note: As only chromosome 19 of the human genome was used, y-scale is different.](busco_complete.png)
+
+Similar results were found when evaluating the annotations achieved with OMArk (Fig. 5). Similar to BUSCO, the completeness of each annotated proteome was evaluated against the lineage most relevant for each species (Citrullus - fabids, Drosophila - melanogaster subgroup, Helleia - Papilionoidae, Human - Hominidae, Melampus -Lophotrochozoa, Phakellia - metazoa, Pocillopora - eumetazoa, Trifolium - NPAAA clade). Most scores obtained were correlated with those obtained by BUSCO (Fig. 6), with the exception of fewer duplicated sequences detected in Trifolium dubium and many more duplicated sequences found in other species. This is expected due to the OMAmer database used not only containing single-copy orthologs, which is the case for BUSCO.
+
+![OMArk completeness scores for each annotation performed on each species genome. For each protein sequence in the OMAmer database of the respective lineage, the sequence is marked as Missing (red) or Complete either once (Single - light blue) or multiple times (Duplicated - dark blue) based on its presence in the protein sequences of the given annotation. Note: As only chromosome 19 of the human genome was used, y-scale is different.](omark_complete.png)
+
+![Correlation between completeness scores computed by BUSCO (x-axis) and OMArk (y-axis). Pearson’s correlation coefficient is shown.](busco_omark.png)
+
+Of particular interest when using OMArk to evaluate an annotation is the use of the Consistency scores to determine the accuracy of the annotation (Fig. 7). Here, the results rely heavily on the completeness of the databases used and we show here that a number of species are harmed by a high proportion of annotated sequences being detected as “Unknown” - i.e. not found in the existing OMAmer database (e.g. Phakellia and Pocillopora). Some of these genes are surely “real” genes with no detectable homologs, but the relative proportion of those in comparison to reference annotation of the same clades can help estimate which method is the most accurate. For example, the Braker3 annotation is the one with the closest number of Unknown genes to the reference RefSeq annotation of its sister species, Pocillipora meandrina. The databases themselves are reliant on the production of high-quality annotated genomes in all clades and will only improve in the future as a wider range of taxa are the focus of reference-genome production projects.
+
+The combination of Completeness (Fig. 5) and Consistency (Fig. 7) highlights the optimisation problem surrounding Completeness and Accuracy of an annotation. For example, our tested pipelines Annotato and CNAG were found to be reasonably complete in Helleia helle compared to other tested workflows, but demonstrated a large number of sequences that were not found in existing OMAmer databases, which was not the case for the other workflows. This correlated with the higher number of genes found by both of these methods, suggesting that both of these pipelines are “over-predicting” genes in this case.  Such a high proportion of “Unknown” genes is also uncommon for reference annotations for other species of the Papilionoidae superfamily,  suggesting most of these are false positives. We suggest always considering the Consistency of an annotation with respect to the existing sequences annotated for the lineage, as well as Completeness scores, such as just using BUSCO.
+
+![OMArk consistency scores for each annotation performed on each species genome. Each protein sequence annotated as part of a particular pipeline was marked by OMArk as being Consistent (light-blue) with the species lineage, Inconsistent (purple) or Unknown (grey) - i.e., not present in the OMAmer database.](omark_consistency.png)
+
+### 3.2.3 Exon and CDS Structure of Predictions
+
 ## 3.3 SNV Analysis
 
-The SNV calling performed for the Helleia helle genome reported a heterozygosity rate of 0.2338%, which is low and consistent with IUCN Assessment of this butterfly as Endangered in Europe [@IUCN_butterflies]. As purifying selection is acting strongly at functional sites, most of the variants were annotated to have extremely low or negligible impact with a higher proportion of synonymous changes (Missense/Silent ratio 0.85) and the vast majority being located at introns and intergenic regions (Figure SnpEff).
+The SNV calling performed for the Helleia helle genome reported a heterozygosity rate of 0.2338%, which is low and consistent with IUCN Assessment of this butterfly as Endangered in Europe [@IUCN_butterflies]. As purifying selection is acting strongly at functional sites, most of the variants were annotated to have extremely low or negligible impact with a higher proportion of synonymous changes (Missense/Silent ratio 0.85) and the vast majority being located at introns and intergenic regions (Fig. 9).
 
-Once all the variants have been called, interesting insights of the genome can be easily observed. In this case, when reviewing the amount of SNVs called throughout the whole genome, we could detect regions where this frequency was much lower in certain parts of a chromosomes (e.g. first 4Mb of chromosome 21, Figure ilHelHell1.1_chr21_SNVs.png).
+![SnpEff in HelHell1.1 - Number of effects annotated in the SNVs by region ](fig_9.png)
+
+Once all the variants have been called, interesting insights of the genome can be easily observed. In this case, when reviewing the amount of SNVs called throughout the whole genome, we could detect regions where this frequency was much lower in certain parts of a chromosomes (e.g. first 4Mb of chromosome 21, Fig. 10).
+
+![SNV counts across ilHelHell1.1 chromosome 21. The analysis pinpoints a terminal area poor in genetic variants compared with the rest of the chromosome](fig_10.png)
 
 The fact that the region was 99.65% callable and repeat amount was not higher than for the rest of the chromosome, indicated that this difference in SNV frequency was not due to lower mappability. In addition, 4.88% of the variants found in the first 4 Mb of chromosome 21 were located in exons while for the rest of the chromosome just 1.87% felt in exons. Hence, the lower nucleotide diversity in this region compared to the rest of the chromosome, suggests that this pattern could be the result of multiple evolutionary or demographic events.
 
