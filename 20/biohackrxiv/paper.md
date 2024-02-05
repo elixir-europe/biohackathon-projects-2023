@@ -7,7 +7,7 @@ authors:
   - name: Tom Brown
     orcid: 0000-0001-8293-4816
     affiliation: 1,a
-  - name: K. A. Collier
+  - name: Kathleen A. Collier
     orcid: 0000-0002-4057-4282
     affiliation: 2,a
   - name: Fernando Cruz
@@ -140,6 +140,12 @@ git_url: https://github.com/elixir-europe/biohackathon-projects-2023/20/biohackr
 authors_short: Brown, Gómez-Garrido, Dennis  \emph{et al.}
 ---
 
+# Abstract
+
+Rapid advances in genome sequencing technologies have resulted in an explosion of reference-quality genome assemblies across many diverse taxa in the tree of life. While these resources will be invaluable towards goals of species and biodiversity conservation, they are often not sufficient resources on their own and require comprehensive and accurate annotations of their functional elements in order to become useful. The European Reference Genome Atlas (ERGA) as the European node of the Earth Biogenome Project (EBP) is aiming to share resources and knowledge to create fully-annotated reference genomes in a distributed manner, bringing together researchers from across the world, with common goals and understandings. 
+
+In the BioHackathon Europe 2023, we came together to construct and test tools, pipelines and workflows aimed at annotating the protein-coding regions of a wide range of species. This required installing and implementing tools in a number of compute environments and infrastructures, sharing of both genomic resources and expertise between researchers from a range of institutes and the ultimate evaluation of which annotation workflows perform best on which types of genomes and what input data is required in order to achieve a high quality genome annotation. Here we present the results of over 20 researchers in 8 time-zones working towards a robust implementation of genome annotation workflows in eukaryotic organisms.
+
 # 1 Introduction
 
 Genome annotation is the process of identifying the functions of different pieces of a genome; which includes genes that code for proteins, their intron-exon structure, and non-coding features of the genome, such as promoters and transposable elements. Annotations are typically generated using computational methods, sometimes followed by manual curation.
@@ -154,7 +160,6 @@ Despite these challenges, it is important that research teams annotate their gen
 The European Reference Genome Atlas (ERGA [@ERGA]) is an international consortium of over 1,000 researchers from across Europe who are committed to cataloguing eukaryotic biodiversity through the generation of high-quality reference genomes as a response to declines in biodiversity. Development and implementation of standard procedures and bioinformatic pipelines are essential for achieving ERGA’s goal.
 
 As the number of sequenced genomes is rapidly increasing, there is a great need to develop standard, efficient, and reproducible genome annotation workflows. This report is the outcome of a project at the Elixir BioHackathon Europe 2023 titled “Genome annotation and other post-assembly workflows for the tree of life” with a focus on pipelines for performing and evaluating genome annotations. As part of the Elixir BioHackathon Europe 2023, we developed, tested, and benchmarked pipelines using standard workflow managers, in this case, Nextflow, Snakemake, and Galaxy, aimed at annotating protein-coding regions of reference genomes.
-
 
 ## 1.1 Goals
 
@@ -178,9 +183,9 @@ The BioHackathon was a unique opportunity for researchers from across the world 
 
 ## 2.1 Genomes for Biodiversity
 
-As part of this project, we aimed to test robust annotation pipelines on genomes representing the diversity of organisms. This effort aligns with ERGA’s goal to produce reference-quality genomes for all eukaryotes in Europe. Included in this project were a mixture of previously published genomes, as well as assemblies produced as part of the ERGA Pilot Project [@Pilot] or by ERGA-affiliated researchers directly contributing to the BioHackathon. Included in our analysis were genome sequences for the Cauliflower Coral Pocillopora cf. effusa (GCA_942486045.1 [@Noel2023]), the Violet Copper Butterfly Helleia helle (GCA_963853865.1), the Lesser Trefoil Trifolium dubium (GCA_951804385.1), the Sponge Phakellia ventilabrum (GCA_963921505.1), the Coffee-bean Snail Melampus jaumei, the Fruit Fly Drosophila melanogaster (GCA_000001215.4), and the Bitter Apple Citrullus colocynthis.
+As part of this project, we aimed to test robust annotation pipelines on genomes representing the diversity of organisms. This effort aligns with ERGA’s goal to produce reference-quality genomes for all eukaryotes in Europe. Included in this project were a mixture of previously published genomes, as well as assemblies produced as part of the ERGA Pilot Project [@Pilot] or by ERGA-affiliated researchers directly contributing to the BioHackathon. Included in our analysis were genome sequences for the Cauliflower Coral *Pocillopora cf. effusa* (GCA_942486045.1 [@Noel2023]), the Violet Copper Butterfly *Helleia helle* (GCA_963853865.1), the Lesser Trefoil *Trifolium dubium* (GCA_951804385.1), the Sponge *Phakellia ventilabrum* (GCA_963921505.1), the Coffee-bean Snail *Melampus jaumei*, the Fruit Fly *Drosophila melanogaster* (GCA_000001215.4), and the Bitter Apple *Citrullus colocynthis*.
 
-![Species used to test annotation pipelines. Clockwise from top left: Citrullus colocynthis, Drosophila melanogaster, Helleia helle, Melampus jaumei, Phakellia ventilabrum, Pocillopora cf. efusa and Trifolium dubium](fig1.png){ width=100% }
+![Species used to test annotation pipelines. Clockwise from top left: *Citrullus colocynthis*, *Drosophila melanogaster*, *Helleia helle*, *Melampus jaumei*, *Phakellia ventilabrum*, *Pocillopora cf. efusa* and *Trifolium dubium*](fig1.png){ width=100% }
 
 ## 2.2 Pipeline Structure(s)
 
@@ -190,26 +195,26 @@ The tested pipelines fell into two broad categories:
 
 Gene prediction using pipelines that do not require transcriptomic evidence. 
 
-**Pipeline 1.1**: Using the genome assembly and the taxid of the species of interest as input, GeneidX [GeneidX] provides a first-pass annotation of the protein-coding genes. Geneidx automatically identifies a set of proteins from closely related species used as hints for the gene annotation process. In addition, it also looks for the closest pre-trained parameter file from which it will extract the remaining parameters that cannot be automatically estimated from the protein-to-DNA alignments.
+**Pipeline 1.1**: Using the genome assembly and the taxid of the species of interest as input, GeneidX provides a first-pass annotation of the protein-coding genes. Geneidx automatically identifies a set of proteins from closely related species used as hints for the gene annotation process. In addition, it also looks for the closest pre-trained parameter file from which it will extract the remaining parameters that cannot be automatically estimated from the protein-to-DNA alignments.
 Geneidx can mask repeats using the repeats found by Ensembl in the closest species annotated so far (this option is turned off by default).
-https://github.com/guigolab/geneidx
+<https://github.com/guigolab/geneidx>
 
 **Pipeline 1.2**: Helixer [@Helixer] is a recent ab-initio annotation software based on deep neural networks, dedicated to the annotation of large eukaryotic genomes using only the genome assembly as input.
-https://github.com/weberlab-hhu/Helixer 
+<https://github.com/weberlab-hhu/Helixer>
 
 Gene prediction using pipelines that incorporate evidence from transcriptomic sequencing data or available protein sequences
 
 **Pipeline 2.1**: Our first tested pipeline (Fig. X - hereafter referred to as UNIL pipeline, developed by SJD) includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the SwissProt database (Release 2023_04 of 13-Sep-2023 [@Uniprot]). Following de-novo repeat modelling, using the genome assembly as input, the SwissProt protein sequences and mapped RNA-seq reads are given as evidence data alongside the repeat-masked genome into Braker3 [@Braker3]. The resulting gff3 file is the output used for downstream evaluation and analysis.
-https://doi.org/10.48546/workflowhub.workflow.569.1
+<https://doi.org/10.48546/workflowhub.workflow.569.1>
 
 **Pipeline 2.2**: Our second tested pipeline (Fig. X - hereafter referred to as CNAG pipeline, developed by JGG) includes additional steps where a set of de-novo transcripts are assembled from the input RNA-seq reads and multiple evidences from Augustus [@Stanke2008], GeneMark [@Brna2020] and GeneID [@Alioto2018] are combined with RNA-seq and protein alignments using EvidenceModeler (EVM [@EVM]). Furthermore, isoform information is included by running PASA [@PASA] after initial gene models are created from EVM.
-https://github.com/cnag-aat/Annotation_AAT 
+<https://github.com/cnag-aat/Annotation_AAT>
 
 **Pipeline 2.3**: Our third tested pipeline (Fig. X - hereafter referred to as ANNOTATO, developed by PDD in the frame of the European BGE project) incorporates a number of the previous steps and allows for the addition of long-read RNA reads, for example, a PacBio Iso-seq library, and uses Funannotate [@Funannotate] to add further gene predictions alongside Braker3.
-https://doi.org/10.48546/workflowhub.workflow.654.2
+<https://doi.org/10.48546/workflowhub.workflow.654.2>
 
 **Pipeline 2.4**: Our fourth tested pipeline (for workflow diagram see GitHub repositories) hereafter referred to as REAT-MINOS pipeline, developed by the DS group) Generates alignments and gene models by multiple methods (including: Mikado [@Venturini2018], Augustus [@Stanke2008], EvidenceModeler (EVM [@EVM]) and Helixer [@Helixer] with a final set of gene models selected based on evidence support. In addition, models are assigned a confidence classification and biotype.
-https://github.com/EI-CoreBioinformatics/reat and https://github.com/EI-CoreBioinformatics/minos
+<https://github.com/EI-CoreBioinformatics/reat and https://github.com/EI-CoreBioinformatics/minos>
 
 ![Structure of annotation workflows tested. Shown are the input data, software and pipeline structure of the UNIL (top-left), CNAG (top-right), ANNOTATO (bottom-left) and Braker3 (bottom-right) workflows](fig2.png){ width=100% }
 
@@ -223,28 +228,28 @@ Gene completeness metrics such as BUSCO and OMArk can be skewed by over-predicti
 
 ## 2.4 Computation in Galaxy
 
-All Galaxy analyses were performed on the European Galaxy server (https://usegalaxy.eu) using the pre-installed tools listed in Table X. In all instances, the source code used to call each tool is available in the Galaxy Toolshed URL, or can be accessed via the GitHub repositories used by the Galaxy Genome Annotation community (for further details see https://annotation.usegalaxy.eu/). The versions for each tool are defined by the conda packages and environment used. Parameters and data used for each run are available within the metadata of the Galaxy Analysis Run.
+All Galaxy analyses were performed on the European Galaxy server <https://usegalaxy.eu> using the pre-installed tools listed in Table X. In all instances, the source code used to call each tool is available in the Galaxy Toolshed URL, or can be accessed via the GitHub repositories used by the Galaxy Genome Annotation community (for further details see <https://annotation.usegalaxy.eu/>). The versions for each tool are defined by the conda packages and environment used. Parameters and data used for each run are available within the metadata of the Galaxy Analysis Run.
 
-| Tool                         | Galaxy Toolshed URL                                                                                                       |
-|------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| RepeatMasker                 | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.5|galaxy0 |
-| RepeatModeler                | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.4|galaxy1             |
-| Red                          | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/red/red/2018.09.10|galaxy1                             |
-| Helixer                      | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.2                             |
-| Braker3                      | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/genouest/braker3/braker3/3.0.3|galaxy2                     |
-| Funannotate                  | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/funannotate_predict/funannotate_predict/1.8.15|galaxy3 |
-| Maker                        | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.11|galaxy2                            |
-| Genome Annotation Statistics | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/jcvi_gff_stats/jcvi_gff_stats/0.8.4                    |
-| BUSCO                        | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.4.6|galaxy0                              |
-| GFFread                      | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/devteam/gffread/gffread/2.2.1.3|galaxy0                    |
-| JBrowse                      | https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11|galaxy1                        |
+| Tool                         | Galaxy Toolshed URL                                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| RepeatMasker                 | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.5|galaxy0> |
+| RepeatModeler                | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.4|galaxy1>             |
+| Red                          | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/red/red/2018.09.10|galaxy1>                             |
+| Helixer                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.2>                             |
+| Braker3                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/genouest/braker3/braker3/3.0.3|galaxy2>                     |
+| Funannotate                  | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/funannotate_predict/funannotate_predict/1.8.15|galaxy3> |
+| Maker                        | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.11|galaxy2>                            |
+| Genome Annotation Statistics | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/jcvi_gff_stats/jcvi_gff_stats/0.8.4>                    |
+| BUSCO                        | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.4.6|galaxy0>                              |
+| GFFread                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/devteam/gffread/gffread/2.2.1.3|galaxy0>                    |
+| JBrowse                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11|galaxy1>                        |
 Table 1: List of Tools Used by the Galaxy Annotation Community and Their Installation Locations in the Galaxy Toolshed.
 
 ## 2.5 SNVs in protein-coding genes
 
-Single-nucleotide variants (SNVs) were annotated in the protein-coding genes that were previously annotated by the CNAG pipeline on the Helleia helle genome assembly. For this, we used 83X Illumina PE reads (available in the European Nucleotide Archive; ENA under project accession number PRJEB64646) that were first processed by Cutadapt v3.2 [@Martin2011] to remove any remaining adapter sequences and used to estimate error-rate, heterozygosity and genome size with Meryl and Genomescope2 [@RanalloBenavidez2020].
+Single-nucleotide variants (SNVs) were annotated in the protein-coding genes that were previously annotated by the CNAG pipeline on the *Helleia helle* genome assembly. For this, we used 83X Illumina PE reads (available in the European Nucleotide Archive; ENA under project accession number PRJEB64646) that were first processed by Cutadapt v3.2 [@Martin2011] to remove any remaining adapter sequences and used to estimate error-rate, heterozygosity and genome size with Meryl and Genomescope2 [@RanalloBenavidez2020].
 
-The nf-core’s [@Hanssen2023] Sarek v3.2.2 [@Garcia2020] pipeline was run locally using Nextflow v23.10.0 [@Ewels2020] with Apptainer 1.1.6-1.el7 (https://apptainer.org/) to perform Germline Variant Calling following the GATK best practices to call SNVs (https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-).
+The nf-core’s [@Hanssen2023] Sarek v3.2.2 [@Garcia2020] pipeline was run locally using Nextflow v23.10.0 [@Ewels2020] with Apptainer 1.1.6-1.el7 <https://apptainer.org/> to perform Germline Variant Calling following the GATK best practices to call SNVs <https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels->.
 
 After examining the coverage statistics reported by Sarek’s usage of Mosdepth [@Pedersen2017], a total of 544,884,244 bp (99.6% of the genome) callable sites were reported. All those variants not annotated at callable sites, were then filtered out from the VCF produced after haplotype calling with Sarek. Finally, SNVs were annotated using snpEff v5.2.0 [@Cingolani2012].  
 
@@ -256,42 +261,44 @@ After examining the coverage statistics reported by Sarek’s usage of Mosdepth 
 
 The number of genes annotated by a pipeline is a good measure of a tool over- or under-predicting gene models. While no ground-truth is often known a priori, comparisons between workflows often provide a good basis for discarding outliers. This was our first criteria for evaluating the accuracy of an annotation (Fig. 3).
 
+![ Number of genes annotated per genome and pipeline. Bars are coloured by workflow and grouped by species](no_genes.png){ width=100% }
+
 In the workflows tested, ANNOTATO was found to predict many more genes than all others in a number of species, giving initial indications that the workflow is over-predicitng. Running Braker3 alone consistently resulted in a lower number of annotated genes, indicating either genes being missed in the annotation process, or being removed due to strict filtering criteria.
 
 That being said, what is notable is the overall consistency shown in the numbers of genes predicted for each species. The workflows and tools tested were often built on a range of assumptions and models, yet seem to converge towards an average in this regard.
 
-![ Number of genes annotated per genome and pipeline. Bars are coloured by workflow and grouped by species](no_genes.png){ width=100% }
+A more in-detail analysis of the number of genes and exons, the size of genes, introns and exons gives a more fine-detail overview of the differences between annotations. For *Pocillopora cf. effusa*, such statistics can be seen in Table 2. In particular, this shows Braker3 greatly under-predicting genes and Helixer over-predicting in relation to the reference genome annotation submitted by Genoscopre. High degrees of variation between the sizes of introns and the sizes of predicted genes indicate avenues for further downstream investigation, to determine which annotations are producing those closer to the "ground truth"
 
 |Metrics|Genoscope|Annotato-Funannotate|Helixer (galaxy)|Braker3 (galaxy)|
 |-|-|-|-|-|
-|# of genes (% without intron)|32095 (16.6%)|33086 (12.3%)|37258 (17.7%)|15469 (11.1%)|
-|Gene size (avg./med.) (nt.)|5865 / 3346|4594 / 2873|5577.03 / 3658|6336.47 / 4395|
-|Gene size without UTR (avg./med.) (nt.)|5325 / 2802|4594 / 2873|4600.35 / 2665|6336.47 / 4395|
-|# of exons/genes (avg./med.)|6.53 / 3|6.98 / 4|7.97 / 5|8.18 / 5|
-|# of exons from spliced genes/gene (avg./med.)|7.64 / 4|7.82 / 5|9.48 / 6|9.07 / 6|
-|CDS size (avg./med.) (nt.)|1458.40 / 993|1357 / 940|1415.23 / 999|1457.37 / 1155|
-|CDS size from spliced genes (avg./med.) (nt.)|1558 / 1164|1418 / 1059|1502.31 / 1167|1511.16 / 1281|
-|# of introns|177586|197815|259865|111025|
-|Intron size (avg./med.) (nt.)|699 / 461|541 / 422|456.66 / 313|679.80 / 479|
-Table 2: Evaluation of Pocillopora cf. effusa annotations. First column shows reference annotation submitted by Genoscope
+|# of genes (% without intron)|32,095 (16.6%)|33,086 (12.3%)|37,258 (17.7%)|15,469 (11.1%)|
+|Gene size (mean./med.) (nt.)|5,865 / 3346|4,594 / 2,873|5,577.03 / 3,658|6,336.47 / 4,395|
+|Gene size without UTR (mean./med.) (nt.)|5,325 / 2,802|4,594 / 2,873|4,600.35 / 2,665|6,336.47 / 4,395|
+|# of exons/genes (mean./med.)|6.53 / 3|6.98 / 4|7.97 / 5|8.18 / 5|
+|# of exons from spliced genes/gene (mean./med.)|7.64 / 4|7.82 / 5|9.48 / 6|9.07 / 6|
+|CDS size (mean./med.) (nt.)|1,458.40 / 993|1,357 / 940|1,415.23 / 999|1,457.37 / 1,155|
+|CDS size from spliced genes (mean./med.) (nt.)|1,558 / 1,164|1,418 / 1,059|1,502.31 / 1,167|1,511.16 / 1,281|
+|# of introns|177,586|197,815|259,865|111,025|
+|Intron size (mean./med.) (nt.)|699 / 461|541 / 422|456.66 / 313|679.80 / 479|
+Table 2: Evaluation of *Pocillopora cf. effusa* annotations. First column shows reference annotation submitted by Genoscope
 
 ## 3.1.2 Proteome Accuracy and Completeness
 
-To evaluate the completeness of the annotated transcript- and proteome, we relied on BUSCO and OMArk to determine what proportion of the expected annotated sequences for a species in its lineage were recovered. The BUSCO scores calculated were all given for the most representative lineage for each species (Citrullus - eudicots, Drosophila - diptera, Helleia - lepidoptera, Human - primates, Melampus - mollusca, Phakellia & Pocillopora - metazoa, Trifolium - fabales) with each pipeline showing differing degrees of completeness for each species (Fig. 4). For our most represented species, Drosophila melanogaster, most methods did not achieve a level of completeness as high as the curated reference annotation, which outlines the limit of automated methods.
+To evaluate the completeness of the annotated transcript- and proteome, we relied on BUSCO and OMArk to determine what proportion of the expected annotated sequences for a species in its lineage were recovered. The BUSCO scores calculated were all given for the most representative lineage for each species (*Citrullus* - eudicots, *Drosophila* - diptera, *Helleia* - lepidoptera, Human - primates, *Melampus* - mollusca, *Phakellia* & *Pocillopora* - metazoa, *Trifolium* - fabales) with each pipeline showing differing degrees of completeness for each species (Fig. 4). For our most represented species, Drosophila melanogaster, most methods did not achieve a level of completeness as high as the curated reference annotation, which outlines the limit of automated methods.
 
-From other species, of particular note is the necessity to run multiple rounds of MAKER in order to obtain a meaningful annotation regardless of the species used. A positive surprise was the remarkable success of most workflows run to annotate both copies of each gene expected in the tetraploid Trifolium dubium.
+From other species, of particular note is the necessity to run multiple rounds of MAKER in order to obtain a meaningful annotation regardless of the species used. A positive surprise was the remarkable success of most workflows run to annotate both copies of each gene expected in the tetraploid *Trifolium dubium*.
 
 For most species analysed, the annotations created obtained better BUSCO scores with the use of evidence, either via transcript data or protein sequences, with the exception of the de-novo program Helixer. Remarkably, Helixer is able to obtain highly complete annotations even without the use of a repeat masked genome, and only requires a choice of lineage as input parameter (choice of land plant, vertebrate, invertebrate, or fungi), meaning incredible ease-of-use and lower compute costs, however with the requirement of a GPU.
 
 ![BUSCO completeness scores for each annotation performed on each species genome. For each protein sequence in the BUSCO database of the respective lineage, the sequence is marked as present in a Single-Copy (light-blue) or Duplicated (dark-blue), present but Fragmented (yellow) or Missing (Red) from the annotated protein sequences. Note: As only chromosome 19 of the human genome was used, y-scale is different.](busco_complete.png){ width=70% }
 
-Similar results were found when evaluating the annotations achieved with OMArk (Fig. 5). Similar to BUSCO, the completeness of each annotated proteome was evaluated against the lineage most relevant for each species (Citrullus - fabids, Drosophila - melanogaster subgroup, Helleia - Papilionoidae, Human - Hominidae, Melampus -Lophotrochozoa, Phakellia - metazoa, Pocillopora - eumetazoa, Trifolium - NPAAA clade). Most scores obtained were correlated with those obtained by BUSCO (Fig. 6), with the exception of fewer duplicated sequences detected in Trifolium dubium and many more duplicated sequences found in other species. This is expected due to the OMAmer database used not only containing single-copy orthologs, which is the case for BUSCO.
+Similar results were found when evaluating the annotations achieved with OMArk (Fig. 5). Similar to BUSCO, the completeness of each annotated proteome was evaluated against the lineage most relevant for each species (*Citrullus* - fabids, *Drosophila* - melanogaster subgroup, *Helleia* - Papilionoidae, Human - Hominidae, *Melampus* -Lophotrochozoa, *Phakellia* - metazoa, *Pocillopora* - eumetazoa, *Trifolium* - NPAAA clade). Most scores obtained were correlated with those obtained by BUSCO (Fig. 6), with the exception of fewer duplicated sequences detected in Trifolium dubium and many more duplicated sequences found in other species. This is expected due to the OMAmer database used not only containing single-copy orthologs, which is the case for BUSCO.
 
 ![OMArk completeness scores for each annotation performed on each species genome. For each protein sequence in the OMAmer database of the respective lineage, the sequence is marked as Missing (red) or Complete either once (Single - light blue) or multiple times (Duplicated - dark blue) based on its presence in the protein sequences of the given annotation. Note: As only chromosome 19 of the human genome was used, y-scale is different.](omark_complete.png){ width=70% }
 
 ![Correlation between completeness scores computed by BUSCO (x-axis) and OMArk (y-axis). Pearson’s correlation coefficient is shown.](busco_omark.png){ width=50% }
 
-Of particular interest when using OMArk to evaluate an annotation is the use of the Consistency scores to determine the accuracy of the annotation (Fig. 7). Here, the results rely heavily on the completeness of the databases used and we show here that a number of species are harmed by a high proportion of annotated sequences being detected as “Unknown” - i.e. not found in the existing OMAmer database (e.g. Phakellia and Pocillopora). Some of these genes are surely “real” genes with no detectable homologs, but the relative proportion of those in comparison to reference annotation of the same clades can help estimate which method is the most accurate. For example, the Braker3 annotation is the one with the closest number of Unknown genes to the reference RefSeq annotation of its sister species, Pocillipora meandrina. The databases themselves are reliant on the production of high-quality annotated genomes in all clades and will only improve in the future as a wider range of taxa are the focus of reference-genome production projects.
+Of particular interest when using OMArk to evaluate an annotation is the use of the Consistency scores to determine the accuracy of the annotation (Fig. 7). Here, the results rely heavily on the completeness of the databases used and we show here that a number of species are harmed by a high proportion of annotated sequences being detected as “Unknown” - i.e. not found in the existing OMAmer database (e.g. *Phakellia* and *Pocillopora*). Some of these genes are surely “real” genes with no detectable homologs, but the relative proportion of those in comparison to reference annotation of the same clades can help estimate which method is the most accurate. For example, the Braker3 annotation is the one with the closest number of Unknown genes to the reference RefSeq annotation of its sister species, *Pocillipora meandrina*. The databases themselves are reliant on the production of high-quality annotated genomes in all clades and will only improve in the future as a wider range of taxa are the focus of reference-genome production projects.
 
 The combination of Completeness (Fig. 5) and Consistency (Fig. 7) highlights the optimisation problem surrounding Completeness and Accuracy of an annotation. For example, our tested pipelines Annotato and CNAG were found to be reasonably complete in Helleia helle compared to other tested workflows, but demonstrated a large number of sequences that were not found in existing OMAmer databases, which was not the case for the other workflows. This correlated with the higher number of genes found by both of these methods, suggesting that both of these pipelines are “over-predicting” genes in this case.  Such a high proportion of “Unknown” genes is also uncommon for reference annotations for other species of the Papilionoidae superfamily,  suggesting most of these are false positives. We suggest always considering the Consistency of an annotation with respect to the existing sequences annotated for the lineage, as well as Completeness scores, such as just using BUSCO.
 
@@ -299,7 +306,9 @@ The combination of Completeness (Fig. 5) and Consistency (Fig. 7) highlights the
 
 ### 3.1.3 Exon and CDS Structure of Predictions
 
+The analyses presented in the previous two sections rely on summary statistics based on genome-wide approaches. While it is useful to obtain statistics regarding the number and size of genes, exons, introns, CDS and other features, this does not give us any indication of the accuracy or consistency of the locations of these features in the genome. Using BUSCO and OMArk to calculate accuracy of predicted protein sequences gives us an indication of this, but does not give us any fine-grain information.
 
+Here, we calculated the Sensitivity and Specificity of CDS regions predicted by 5 workflows for the C. colocynthis genome (Table 3). As expected, there is a high degree of overlap between two independent runs of Braker3, run with and without transcript data as evidence, but there is also a reasonable degree of overlap when comparing Braker, Helixer and funannotate gene predictions. The outlier in this analysis was GeneIdx, which showed low consistency with all other tested tools.
 
 | |**Braker3-galaxy**|**Braker3**|**Helixer**|**funannotate**|**geneidx**|
 |-|-|-|-|-|-|
@@ -308,10 +317,11 @@ The combination of Completeness (Fig. 5) and Consistency (Fig. 7) highlights the
 |**Helixer**|85.3|79.9|100|79.5|32.1|
 |**funannotate**|85.6|79.8|79.5|100|31.7|
 |**geneidx**|33.7|31.7|32.1|31.7|100|
-Table 3: Accuracy score comparing the predicted CDS for each gene from gene models in C. colocynthis. Accuracy score is calculated as (Sensitivity x Specificity) / 2
+Table 3: Accuracy score comparing the predicted CDS for each gene from gene models in *C. colocynthis*. Accuracy score is calculated as (Sensitivity x Specificity) / 2
 
+Sensitivity and Specificity analyses like those presented in Table 3 give a much better indication of which tools are consistently calling the same regions of the genome protein-coding. These scores should be combined with similar metrics based on the annotated nucleotides, exons and genes to get a full picture. However, one limiting factor is the lack of a ground-truth, so we cannot therefore assign a “best” annotation using this method. More in-depth analysis is possible by inspecting annotations manually to identify whether outliers are true annotations missed by other tools, or examples of false positive predictions. Such manual curation of annotations can be performed using JBrowse or other genome browsers to view snapshots of the genome (e.g. Fig. 8)
 
-![Comparison of exon structures of genes predicted in a 15kb region of the Pocillopora cf. effusa genome.](fig_8.png){ width=100% }
+![Comparison of exon structures of genes predicted in a 15kb region of the *Pocillopora cf. effusa* genome.](fig_8.png){ width=100% }
 
 ## 3.2 SNV Analysis
 
@@ -381,19 +391,19 @@ Another obvious advantage of having many researchers working together for an int
 
 # Image licences:
 
-Helleia helle Photo taken by James K. Lindsey at Ecology of Commanster distributed under the Creative Commons Attribution and Share Alike 2.5 Generic license
+*Helleia helle* Photo taken by James K. Lindsey at Ecology of Commanster distributed under the Creative Commons Attribution and Share Alike 2.5 Generic license
 
-Melampus jaumei Photo taken by Alice B. Dennis
+*Melampus jaumei* Photo taken by Alice B. Dennis
 
-Trifolium dubium Photo taken by Kenraiz, distributed under the GNU Free Documentation License
+*Trifolium dubium* Photo taken by Kenraiz, distributed under the GNU Free Documentation License
 
-Phakellia ventilabrum (Linnaeus, 1767) observed in the United Kingdom of Great Britain and Northern Ireland by Bernard Picton (licensed under http://creativecommons.org/licenses/by/4.0/)
+*Phakellia ventilabrum* (Linnaeus, 1767) observed in the United Kingdom of Great Britain and Northern Ireland by Bernard Picton (licensed under http://creativecommons.org/licenses/by/4.0/)
 
-Drosophila melanogaster Photo taken by Sanjay Acharya, distributed under the Creative Commons Attribution-Share Alike 4.0 International license.
+*Drosophila melanogaster* Photo taken by Sanjay Acharya, distributed under the Creative Commons Attribution-Share Alike 4.0 International license.
 
-Citrullus colocynthis photo taken by Anestis Gkanogiannis
+*Citrullus colocynthis* photo taken by Anestis Gkanogiannis
 
-Pocillopora cf. effusa photo taken by L.Thiault, Fondation Tara Expéditions
+*Pocillopora cf. effusa* photo taken by L.Thiault, Fondation Tara Expéditions
 
 ## Acknowledgements
 
