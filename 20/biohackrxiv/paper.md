@@ -34,7 +34,7 @@ group: ERGA Annotation Committee
 git_url: https://github.com/elixir-europe/biohackathon-projects-2023/20/biohackrxiv/
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
-authors_short: Jèssica Gómez-Garrido & Alice B. Dennis  \emph{et al.}
+authors_short: Brown, Gómez-Garrido, Dennis  \emph{et al.}
 ---
 
 # 1 Introduction
@@ -87,7 +87,7 @@ The tested pipelines fell into two broad categories:
 
 Gene prediction using pipelines that do not require transcriptomic evidence. 
 
-**Pipeline 1.1**: Using the genome assembly and the taxid of the species of interest as input, GeneidX [@GeneidX] provides a first-pass annotation of the protein-coding genes. Geneidx automatically identifies a set of proteins from closely related species used as hints for the gene annotation process. In addition, it also looks for the closest pre-trained parameter file from which it will extract the remaining parameters that cannot be automatically estimated from the protein-to-DNA alignments.
+**Pipeline 1.1**: Using the genome assembly and the taxid of the species of interest as input, GeneidX [GeneidX] provides a first-pass annotation of the protein-coding genes. Geneidx automatically identifies a set of proteins from closely related species used as hints for the gene annotation process. In addition, it also looks for the closest pre-trained parameter file from which it will extract the remaining parameters that cannot be automatically estimated from the protein-to-DNA alignments.
 Geneidx can mask repeats using the repeats found by Ensembl in the closest species annotated so far (this option is turned off by default).
 https://github.com/guigolab/geneidx
 
@@ -136,12 +136,9 @@ After examining the coverage statistics reported by Sarek’s usage of Mosdepth 
 
 # 3 Results
 
-## 3.1 Computation
+## 3.1 Protein-Coding Genome Annotation
 
-## 3.2 Protein-Coding Genome Annotation
-
-
-## 3.2.1 Number of Genes per Annotation
+## 3.1.1 Number of Genes per Annotation
 
 The number of genes annotated by a pipeline is a good measure of a tool over- or under-predicting gene models. While no ground-truth is often known a priori, comparisons between workflows often provide a good basis for discarding outliers. This was our first criteria for evaluating the accuracy of an annotation (Fig. 3).
 
@@ -151,7 +148,7 @@ That being said, what is notable is the overall consistency shown in the numbers
 
 ![ Number of genes annotated per genome and pipeline. Bars are coloured by workflow and grouped by species](no_genes.png)
 
-## 3.2.2 Proteome Accuracy and Completeness
+## 3.1.2 Proteome Accuracy and Completeness
 
 To evaluate the completeness of the annotated transcript- and proteome, we relied on BUSCO and OMArk to determine what proportion of the expected annotated sequences for a species in its lineage were recovered. The BUSCO scores calculated were all given for the most representative lineage for each species (Citrullus - eudicots, Drosophila - diptera, Helleia - lepidoptera, Human - primates, Melampus - mollusca, Phakellia & Pocillopora - metazoa, Trifolium - fabales) with each pipeline showing differing degrees of completeness for each species (Fig. 4). For our most represented species, Drosophila melanogaster, most methods did not achieve a level of completeness as high as the curated reference annotation, which outlines the limit of automated methods.
 
@@ -173,9 +170,9 @@ The combination of Completeness (Fig. 5) and Consistency (Fig. 7) highlights the
 
 ![OMArk consistency scores for each annotation performed on each species genome. Each protein sequence annotated as part of a particular pipeline was marked by OMArk as being Consistent (light-blue) with the species lineage, Inconsistent (purple) or Unknown (grey) - i.e., not present in the OMAmer database.](omark_consistency.png)
 
-### 3.2.3 Exon and CDS Structure of Predictions
+### 3.1.3 Exon and CDS Structure of Predictions
 
-## 3.3 SNV Analysis
+## 3.2 SNV Analysis
 
 The SNV calling performed for the Helleia helle genome reported a heterozygosity rate of 0.2338%, which is low and consistent with IUCN Assessment of this butterfly as Endangered in Europe [@IUCN_butterflies]. As purifying selection is acting strongly at functional sites, most of the variants were annotated to have extremely low or negligible impact with a higher proportion of synonymous changes (Missense/Silent ratio 0.85) and the vast majority being located at introns and intergenic regions (Fig. 9).
 
