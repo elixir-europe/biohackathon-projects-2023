@@ -5,7 +5,7 @@ library(gridExtra)
 library(tidyr)
 library(cowplot)
 
-input_data<-read.csv(file = 'Annotation_summary - Sheet1.tsv',sep="\t",header = TRUE)
+input_data<-read.csv(file = 'Annotation_summary - Alice_GAG.tsv',sep="\t",header = TRUE)
 
 busco_complete<-rep(0,length(input_data$BUSCO))
 busco_single<-rep(0,length(input_data$BUSCO))
@@ -74,6 +74,7 @@ gg_nogenes <- ggplot(data = df, aes(x = species, y = nogenes, fill = pipeline)) 
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 gg_nogenes
 ggsave(filename = 'no_genes.svg',plot = gg_nogenes,device = 'svg')
+ggsave(filename = 'no_genes.png',plot = gg_nogenes,device = 'png')
 
 df_long <- pivot_longer(df, cols = c("single", "duplicated", "fragmented", "missing"), names_to = "Category", values_to = "Value")
 
