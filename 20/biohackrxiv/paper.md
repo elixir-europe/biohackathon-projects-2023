@@ -6,76 +6,76 @@ tags:
 authors:
   - name: Tom Brown
     orcid: 0000-0001-8293-4816
-    affiliation: 1,*
+    affiliation: 1,a
   - name: K. A. Collier
     orcid: 0000-0002-4057-4282
-    affiliation: 2,*
+    affiliation: 2,a
   - name: Fernando Cruz
     orcid: 0000-0003-4098-8829
-    affiliation: 3,4,*
+    affiliation: 3,4,a
   - name: Anestis Gkanogiannis
     orcid: 0000-0002-6441-0688
-    affiliation: 5,*
+    affiliation: 5,a
   - name: Sagane Joye-Dind
     orcid: 0000-0003-4771-6113
-    affiliation: 6,*
+    affiliation: 6,a
   - name: Yannis Nevers
     orcid: 0000-0002-8604-2943
-    affiliation: 6,*
+    affiliation: 6,a
   - name: Stepan Saenko
     orcid: 0000-0002-4925-1308
-    affiliation: 7,*
+    affiliation: 7,a
   - name: Tyler Alioto
     orcid: 0000-0002-2960-5420
-    affiliation: 3,4,+
+    affiliation: 3,4,b
   - name: Michael Charleston
     orcid: 0000-0001-8385-341X
-    affiliation: 8,+
+    affiliation: 8,b
   - name: Phuong Duy Doan
     orcid: 0000-0002-6621-9908
-    affiliation: 9,+
+    affiliation: 9,b
   - name: Christoph Hahn
     orcid: 0000-0003-4265-4793
-    affiliation: 10,+
+    affiliation: 10,b
   - name: Thomas W. R. Harrop
     orcid: 0000-0001-6557-0440
-    affiliation: 11,+
+    affiliation: 11,b
   - name: Katie E Herron
     orcid: 0009-0004-0021-5113
-    affiliation: 12,+
+    affiliation: 12,b
   - name: Fredrick Kebaso
     orcid: 0000-0001-8226-9633
-    affiliation: 13,+
+    affiliation: 13,b
   - name: Shivakumara Manu
     orcid: 0000-0002-9114-8793
-    affiliation: 14,+
+    affiliation: 14,b
   - name: Locedie Mansueto
     orcid: 0000-0003-2798-5519
-    affiliation: 15,+
-  - name: Asime Oba,+
+    affiliation: 15,b
+  - name: Asime Oba
     orcid: 0000-0002-1769-8383
-    affiliation: 16,+
+    affiliation: 16,b
   - name: David Swarbreck
     orcid: 0000-0002-5453-1013
-    affiliation: 17,+
+    affiliation: 17,b
   - name: Anna Syme
     orcid: 0000-0002-9906-0673
-    affiliation: 11,+
+    affiliation: 11,b
   - name: Anthony Bretaudeau
     orcid: 0000-0003-0914-2470
-    affiliation: 18,++
+    affiliation: 18,c
   - name: Romane Libouban
     orcid: 0009-0001-4920-9951
-    affiliation: 19,++
+    affiliation: 19,c
   - name: Jean-Marc Aury
     orcid: 0000-0003-1718-3010
-    affiliation: 9,++
+    affiliation: 9,c
   - name: Jèssica Gómez-Garrido
     orcid: 0000-0001-6409-8009
-    affiliation: 3,4,*
+    affiliation: 3,4,a
   - name: Alice B. Dennis
     orcid: 0000-0003-0948-9845
-    affiliation: 20,*
+    affiliation: 20,a
 affiliations:
   - name: Leibniz-Institut für Zoo- und Wildtierforschung (IZW) im Forschungsverbund Berlin e.V. Alfred-Kowalke-Straße 17 10315 Berlin Deutschland
     index: 1
@@ -118,11 +118,11 @@ affiliations:
   - name: University of Namur, URBE, Laboratory of Adaptive Evolution, Genomics, and Physiology, Namur, Belgium
     index: 20
   - name: These authors attended the BioHackathon in person
-    index: *
+    index: a
   - name: These authors attended the BioHackathon remotely
-    index: +
+    index: b
   - name: These authors contributed to the analysis and manuscript after the BioHackathon
-    index: ++
+    index: c
 date: 3 November 2023
 cito-bibliography: paper.bib
 event: 'Elixir BioHackathon'
