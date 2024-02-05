@@ -262,6 +262,19 @@ That being said, what is notable is the overall consistency shown in the numbers
 
 ![ Number of genes annotated per genome and pipeline. Bars are coloured by workflow and grouped by species](no_genes.png){ width=100% }
 
+|Metrics|Genoscope|Annotato-Funannotate|Helixer (galaxy)|Braker3 (galaxy)|
+|-|-|-|-|-|
+|# of genes (% without intron)|32095 (16.6%)|33086 (12.3%)|37258 (17.7%)|15469 (11.1%)|
+|Gene size (avg./med.) (nt.)|5865 / 3346|4594 / 2873|5577.03 / 3658|6336.47 / 4395|
+|Gene size without UTR (avg./med.) (nt.)|5325 / 2802|4594 / 2873|4600.35 / 2665|6336.47 / 4395|
+|# of exons/genes (avg./med.)|6.53 / 3|6.98 / 4|7.97 / 5|8.18 / 5|
+|# of exons from spliced genes/gene (avg./med.)|7.64 / 4|7.82 / 5|9.48 / 6|9.07 / 6|
+|CDS size (avg./med.) (nt.)|1458.40 / 993|1357 / 940|1415.23 / 999|1457.37 / 1155|
+|CDS size from spliced genes (avg./med.) (nt.)|1558 / 1164|1418 / 1059|1502.31 / 1167|1511.16 / 1281|
+|# of introns|177586|197815|259865|111025|
+|Intron size (avg./med.) (nt.)|699 / 461|541 / 422|456.66 / 313|679.80 / 479|
+Table 2: Evaluation of Pocillopora cf. effusa annotations. First column shows reference annotation submitted by Genoscope
+
 ## 3.1.2 Proteome Accuracy and Completeness
 
 To evaluate the completeness of the annotated transcript- and proteome, we relied on BUSCO and OMArk to determine what proportion of the expected annotated sequences for a species in its lineage were recovered. The BUSCO scores calculated were all given for the most representative lineage for each species (Citrullus - eudicots, Drosophila - diptera, Helleia - lepidoptera, Human - primates, Melampus - mollusca, Phakellia & Pocillopora - metazoa, Trifolium - fabales) with each pipeline showing differing degrees of completeness for each species (Fig. 4). For our most represented species, Drosophila melanogaster, most methods did not achieve a level of completeness as high as the curated reference annotation, which outlines the limit of automated methods.
@@ -285,6 +298,18 @@ The combination of Completeness (Fig. 5) and Consistency (Fig. 7) highlights the
 ![OMArk consistency scores for each annotation performed on each species genome. Each protein sequence annotated as part of a particular pipeline was marked by OMArk as being Consistent (light-blue) with the species lineage, Inconsistent (purple) or Unknown (grey) - i.e., not present in the OMAmer database.](omark_consistency.png){ width=70% }
 
 ### 3.1.3 Exon and CDS Structure of Predictions
+
+
+
+| |**Braker3-galaxy**|**Braker3**|**Helixer**|**funannotate**|**geneidx**|
+|-|-|-|-|-|-|
+|**Braker3-galaxy**|100|91.5|85.3|85.6|33.7|
+|**Braker3**|91.5|100|79.9|79.8|31.7|
+|**Helixer**|85.3|79.9|100|79.5|32.1|
+|**funannotate**|85.6|79.8|79.5|100|31.7|
+|**geneidx**|33.7|31.7|32.1|31.7|100|
+Table 3: Accuracy score comparing the predicted CDS for each gene from gene models in C. colocynthis. Accuracy score is calculated as (Sensitivity x Specificity) / 2
+
 
 ![Comparison of exon structures of genes predicted in a 15kb region of the Pocillopora cf. effusa genome.](fig_8.png){ width=100% }
 
