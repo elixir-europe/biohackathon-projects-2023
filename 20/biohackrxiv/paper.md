@@ -6,76 +6,76 @@ tags:
 authors:
   - name: Tom Brown
     orcid: 0000-0001-8293-4816
-    affiliation: 1 
+    affiliation: 1,*
   - name: K. A. Collier
     orcid: 0000-0002-4057-4282
-    affiliation: 2
+    affiliation: 2,*
   - name: Fernando Cruz
     orcid: 0000-0003-4098-8829
-    affiliation: 3,4
+    affiliation: 3,4,*
   - name: Anestis Gkanogiannis
     orcid: 0000-0002-6441-0688
-    affiliation: 5
+    affiliation: 5,*
   - name: Sagane Joye-Dind
     orcid: 0000-0003-4771-6113
-    affiliation: 6
+    affiliation: 6,*
   - name: Yannis Nevers
     orcid: 0000-0002-8604-2943
-    affiliation: 6
+    affiliation: 6,*
   - name: Stepan Saenko
     orcid: 0000-0002-4925-1308
-    affiliation: 7
+    affiliation: 7,*
   - name: Tyler Alioto
     orcid: 0000-0002-2960-5420
-    affiliation: 3,4
+    affiliation: 3,4,+
   - name: Michael Charleston
     orcid: 0000-0001-8385-341X
-    affiliation: 8
+    affiliation: 8,+
   - name: Phuong Duy Doan
     orcid: 0000-0002-6621-9908
-    affiliation: 9
+    affiliation: 9,+
   - name: Christoph Hahn
     orcid: 0000-0003-4265-4793
-    affiliation: 10
+    affiliation: 10,+
   - name: Thomas W. R. Harrop
     orcid: 0000-0001-6557-0440
-    affiliation: 11
+    affiliation: 11,+
   - name: Katie E Herron
     orcid: 0009-0004-0021-5113
-    affiliation: 12
+    affiliation: 12,+
   - name: Fredrick Kebaso
     orcid: 0000-0001-8226-9633
-    affiliation: 13
+    affiliation: 13,+
   - name: Shivakumara Manu
     orcid: 0000-0002-9114-8793
-    affiliation: 14
-  - name: Asime Oba
-    orcid: 0000-0002-1769-8383
-    affiliation: 15
-  - name: David Swarbreck
-    orcid: 0000-0002-5453-1013
-    affiliation: 16
-  - name: Anna Syme
-    orcid: 0000-0002-9906-0673
-    affiliation: 11
-  - name: Anthony Bretaudeau
-    orcid: 0000-0003-0914-2470
-    affiliation: 17
-  - name: Romane Libouban
-    orcid: 0009-0001-4920-9951
-    affiliation: 18
+    affiliation: 14,+
   - name: Locedie Mansueto
     orcid: 0000-0003-2798-5519
-    affiliation: 19
+    affiliation: 15,+
+  - name: Asime Oba,+
+    orcid: 0000-0002-1769-8383
+    affiliation: 16,+
+  - name: David Swarbreck
+    orcid: 0000-0002-5453-1013
+    affiliation: 17,+
+  - name: Anna Syme
+    orcid: 0000-0002-9906-0673
+    affiliation: 11,+
+  - name: Anthony Bretaudeau
+    orcid: 0000-0003-0914-2470
+    affiliation: 18,++
+  - name: Romane Libouban
+    orcid: 0009-0001-4920-9951
+    affiliation: 19,++
   - name: Jean-Marc Aury
     orcid: 0000-0003-1718-3010
-    affiliation: 9
+    affiliation: 9,++
   - name: Jèssica Gómez-Garrido
     orcid: 0000-0001-6409-8009
-    affiliation: 3,4
+    affiliation: 3,4,*
   - name: Alice B. Dennis
     orcid: 0000-0003-0948-9845
-    affiliation: 20
+    affiliation: 20,*
 affiliations:
   - name: Leibniz-Institut für Zoo- und Wildtierforschung (IZW) im Forschungsverbund Berlin e.V. Alfred-Kowalke-Straße 17 10315 Berlin Deutschland
     index: 1
@@ -105,18 +105,24 @@ affiliations:
     index: 13
   - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
     index: 14
-  - name: Department of Microbiology, Faculty of Science, University of Maiduguri, Nigeria
-    index: 15
-  - name: Earlham Institute, Norwich Research Park, Norwich, United Kingdom
-    index: 16
-  - name: BIPAA, IGEPP, INRAE, Institut Agro, University of Rennes, Rennes, France
-    index: 17
-  - name: CNRS, Rennes, France
-    index: 18
   - name: Southern Cross University, Lismore, Australia
+    index: 15
+  - name: Department of Microbiology, Faculty of Science, University of Maiduguri, Nigeria
+    index: 16
+  - name: Earlham Institute, Norwich Research Park, Norwich, United Kingdom
+    index: 17
+  - name: BIPAA, IGEPP, INRAE, Institut Agro, University of Rennes, Rennes, France
+    index: 18
+  - name: CNRS, Rennes, France
     index: 19
   - name: University of Namur, URBE, Laboratory of Adaptive Evolution, Genomics, and Physiology, Namur, Belgium
     index: 20
+  - name: These authors attended the BioHackathon in person
+    index: *
+  - name: These authors attended the BioHackathon remotely
+    index: +
+  - name: These authors contributed to the analysis and manuscript after the BioHackathon
+    index: ++
 date: 3 November 2023
 cito-bibliography: paper.bib
 event: 'Elixir BioHackathon'
