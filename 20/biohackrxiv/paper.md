@@ -36,7 +36,7 @@ authors:
     affiliation: 9
   - name: Christoph Hahn
     orcid: 0000-0003-4265-4793
-    affiliation:10
+    affiliation: 10
   - name: Thomas W. R. Harrop
     orcid: 0000-0001-6557-0440
     affiliation: 11
