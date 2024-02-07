@@ -25,57 +25,60 @@ authors:
   - name: Stepan Saenko
     orcid: 0000-0002-4925-1308
     affiliation: 7,a
+  - name: Fabio Zanarello
+    orcid: 0000-0001-9580-6215
+    affiliation: 8,9,b
   - name: Tyler Alioto
     orcid: 0000-0002-2960-5420
     affiliation: 3,4,b
   - name: Anthony Bretaudeau
     orcid: 0000-0003-0914-2470
-    affiliation: 8,c
+    affiliation: 10,c
   - name: Michael Charleston
     orcid: 0000-0001-8385-341X
-    affiliation: 9,b
+    affiliation: 11,b
   - name: Phuong Duy Doan
     orcid: 0000-0002-6621-9908
-    affiliation: 10,b
+    affiliation: 12,b
   - name: Christoph Hahn
     orcid: 0000-0003-4265-4793
-    affiliation: 11,b
+    affiliation: 13,b
   - name: Thomas W. R. Harrop
     orcid: 0000-0001-6557-0440
-    affiliation: 12,b
+    affiliation: 14,b
   - name: Katie E Herron
     orcid: 0009-0004-0021-5113
-    affiliation: 13,b
+    affiliation: 15,b
   - name: Fredrick Kebaso
     orcid: 0000-0001-8226-9633
-    affiliation: 14,b
+    affiliation: 16,b
   - name: Romane Libouban
     orcid: 0009-0001-4920-9951
-    affiliation: 15,c
+    affiliation: 17,c
   - name: Shivakumara Manu
     orcid: 0000-0002-9114-8793
-    affiliation: 16,b
+    affiliation: 18,b
   - name: Locedie Mansueto
     orcid: 0000-0003-2798-5519
-    affiliation: 17,b
+    affiliation: 19,b
   - name: Asime Oba
     orcid: 0000-0002-1769-8383
-    affiliation: 18,b
+    affiliation: 20,b
   - name: David Swarbreck
     orcid: 0000-0002-5453-1013
-    affiliation: 19,b
+    affiliation: 21,b
   - name: Anna Syme
     orcid: 0000-0002-9906-0673
-    affiliation: 12,b
+    affiliation: 14,b
   - name: Jean-Marc Aury
     orcid: 0000-0003-1718-3010
-    affiliation: 9,c
+    affiliation: 12,c
   - name: Jèssica Gómez-Garrido
     orcid: 0000-0001-6409-8009
     affiliation: 3,4,a
   - name: Alice B. Dennis
     orcid: 0000-0003-0948-9845
-    affiliation: 20,a
+    affiliation: 22,a
 affiliations:
   - name: Leibniz-Institut für Zoo- und Wildtierforschung (IZW) im Forschungsverbund Berlin e.V. Alfred-Kowalke-Straße 17 10315 Berlin Deutschland
     index: 1
@@ -91,32 +94,36 @@ affiliations:
     index: 6
   - name: University of Greifswald, Greifswald, Germany
     index: 7
-  - name: BIPAA, IGEPP, INRAE, Institut Agro, University of Rennes, Rennes, France
+  - name: Centre for Genomic Regulation, Barcelona, Spain
     index: 8
-  - name: University of Tasmania, Hobart, Tasmania, Australia
+  - name: Universitat Pompeu Fabra, Barcelona, Spain
     index: 9
-  - name: Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay, Evry, 91057, France
+  - name: BIPAA, IGEPP, INRAE, Institut Agro, University of Rennes, Rennes, France
     index: 10
-  - name: Institute of Biology, University of Graz, Austria
+  - name: University of Tasmania, Hobart, Tasmania, Australia
     index: 11
-  - name: Melbourne Bioinformatics, University of Melbourne, Australia
+  - name: Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay, Evry, 91057, France
     index: 12
-  - name: School of Biology and Environmental Science, University College Dublin, Belfield, Dublin 4, Ireland
+  - name: Institute of Biology, University of Graz, Austria
     index: 13
-  - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
+  - name: Melbourne Bioinformatics, University of Melbourne, Australia
     index: 14
-  - name: CNRS, Rennes, France
+  - name: School of Biology and Environmental Science, University College Dublin, Belfield, Dublin 4, Ireland
     index: 15
-  - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
+  - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
     index: 16
-  - name: Southern Cross University, Lismore, Australia
+  - name: CNRS, Rennes, France
     index: 17
-  - name: Department of Microbiology, Faculty of Science, University of Maiduguri, Nigeria
+  - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
     index: 18
-  - name: Earlham Institute, Norwich Research Park, Norwich, United Kingdom
+  - name: Southern Cross University, Lismore, Australia
     index: 19
-  - name: URBE, Laboratory of Adaptive Evolution & Genomics, Institute of Life, Earth and Environment (ILEE)  University of Namur, Namur, Belgium 
+  - name: Department of Microbiology, Faculty of Science, University of Maiduguri, Nigeria
     index: 20
+  - name: Earlham Institute, Norwich Research Park, Norwich, United Kingdom
+    index: 21
+  - name: URBE, Laboratory of Adaptive Evolution & Genomics, Institute of Life, Earth and Environment (ILEE)  University of Namur, Namur, Belgium 
+    index: 22
   - name: These authors attended the BioHackathon in person
     index: a
   - name: These authors attended the BioHackathon remotely
@@ -189,6 +196,24 @@ As part of this project, we aimed to test robust annotation pipelines on genomes
 ![Species used to test annotation pipelines. Clockwise from top left: *Citrullus colocynthis*, *Drosophila melanogaster*, *Helleia helle*, *Melampus jaumei*, *Phakellia ventilabrum*, *Pocillopora cf. efusa* and *Trifolium dubium*](fig1.png){ width=100% }
 
 ## 2.2 Pipeline Structures
+
+The pipelines used in this BioHackathon generally followed a consistent workflow, including repeat-masking of the genome assembly, using species-specific transcript sequencing data to construct transcript models (where applicable), a database of protein sequences to find conserved proteins in the genomes, and software aimed to identify and predict de-novo gene structures based on the given evidence.
+
+The tested pipelines fell into two broad categories:
+
+### Gene prediction using pipelines that do not require transcriptomic evidence. 
+
+**Pipeline 1.1:** Using the genome assembly and the taxid of the species of interest as input, GeneidX [@GeneidX] provides a first-pass annotation of the protein-coding genes. Geneidx automatically identifies a set of proteins from closely related species used as hints for the gene annotation process. In addition, it also looks for the closest pre-trained parameter file from which it will extract the remaining parameters that cannot be automatically estimated from the protein-to-DNA alignments.
+
+Geneidx can mask repeats using the repeats found by Ensembl in the closest species annotated so far (this option is turned off by default).
+
+<https://github.com/guigolab/geneidx>
+
+**Pipeline 1.2:** Helixer [@Helixer] is a recent ab-initio annotation software based on deep neural networks, dedicated to the annotation of large eukaryotic genomes using only the genome assembly as input.
+
+<https://github.com/weberlab-hhu/Helixer>
+
+### Gene prediction using pipelines that incorporate evidence from transcriptomic sequencing data or available protein sequences
 
 **Pipeline 2.1: UNIL pipeline** developed by SJD from University of Lausanne (Fig. 2) includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the SwissProt database (Release 2023_04 of 13-Sep-2023 [@Uniprot]). Following de-novo repeat modelling, using the genome assembly as input, the SwissProt protein sequences and mapped RNA-seq reads are given as evidence data alongside the repeat-masked genome into Braker3 [@Braker3]. The resulting gff3 file is the output used for downstream evaluation and analysis.
 
@@ -394,6 +419,7 @@ Another obvious advantage of having many researchers working together for an int
 ## Acknowledgements
 
 We acknowledge access to the storage resources at Barcelona Supercomputing Center, which is partially funded by the European Union H2020-INFRAEOSC-2018-2020 program through the DICE project (Grant Agreement no. 101017207), RES (Spanish Supercomputing Network), INB (Spanish National Bioinformatics Institute). 
+We thank the CNAG for providing an ftp instance to store and share the data used during this project.
 We would like to thank Maxime Garcia for his help troubleshooting the nf-core/sarek runs in the slack.
 Some authors were funded by ELIXIR, the research infrastructure for life-science data, to join the BioHackathon Europe.
 
