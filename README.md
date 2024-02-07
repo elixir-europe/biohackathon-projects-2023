@@ -6,7 +6,7 @@ This repository is meant for the participants of the [BioHackathon](https://bioh
 * [Project 1](1): A “batteries-included” open reference resource for human genomic copy number variants (CNV)
 * [Project 2](2): Assessing quality and privacy metrics of synthetic health data for benchmarking: the variant callers use case.
 * [Project 3](3): Automating the building of a virtual, distributed pollinator reference collection.
-* [Project 4](4): Benchmarks for Bioinformatics Workflow Bake Offs
+* [Project 4](4): Benchmarks for Bioinformatics Workflow Bake Offs. [BioHackRxiv Report](https://osf.io/rq2da) (2023-12-18)
 * [Project 5](5): BioHackrXiv and publications
 * [Project 6](6): BioModelsML: Building a FAIR and reproducible collection of machine learning models in life science and medicine for easy reuse
 * [Project 7](7): Bioschemas resource index for chem and plants. [BioHackRxiv Report](https://osf.io/preprints/biohackrxiv/yxunp) (2024-01-30)
