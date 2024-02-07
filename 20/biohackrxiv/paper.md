@@ -245,19 +245,19 @@ Gene completeness metrics such as BUSCO and OMArk can be skewed by over-predicti
 
 All Galaxy analyses were performed on the European Galaxy server <https://usegalaxy.eu> using the pre-installed tools listed in Table 1. In all instances, the source code used to call each tool is available in the Galaxy Toolshed URL, or can be accessed via the GitHub repositories used by the Galaxy Genome Annotation community (for further details see <https://annotation.usegalaxy.eu/>). The versions for each tool are defined by the conda packages and environment used. Parameters and data used for each run are available within the metadata of the Galaxy Analysis Run.
 
-| Tool                         | Galaxy Toolshed URL                                                                                                          |
-|------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| RepeatMasker                 | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.5\|galaxy0> |
-| RepeatModeler                | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.4\|galaxy1>             |
-| Red                          | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/red/red/2018.09.10\|galaxy1>                             |
-| Helixer                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.2>                              |
-| Braker3                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/genouest/braker3/braker3/3.0.3\|galaxy2>                     |
-| Funannotate                  | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/funannotate_predict/funannotate_predict/1.8.15\|galaxy3> |
-| Maker                        | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.11\|galaxy2>                            |
-| Genome Annotation Statistics | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/jcvi_gff_stats/jcvi_gff_stats/0.8.4>                     |
-| BUSCO                        | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.4.6\|galaxy0>                              |
-| GFFread                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/devteam/gffread/gffread/2.2.1.3\|galaxy0>                    |
-| JBrowse                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11\|galaxy1>                        |
+| Tool                         | Galaxy Toolshed URL                                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| RepeatMasker                 | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/bgruening/repeat_masker/repeatmasker_wrapper/4.1.5+galaxy0> |
+| RepeatModeler                | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/csbl/repeatmodeler/repeatmodeler/2.0.4+galaxy1>             |
+| Red                          | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/red/red/2018.09.10+galaxy1>                             |
+| Helixer                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/genouest/helixer/helixer/0.3.2>                             |
+| Braker3                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/genouest/braker3/braker3/3.0.3+galaxy2>                     |
+| Funannotate                  | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/funannotate_predict/funannotate_predict/1.8.15+galaxy3> |
+| Maker                        | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/maker/maker/2.31.11+galaxy2>                            |
+| Genome Annotation Statistics | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/jcvi_gff_stats/jcvi_gff_stats/0.8.4>                    |
+| BUSCO                        | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/busco/busco/5.4.6+galaxy0>                              |
+| GFFread                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/devteam/gffread/gffread/2.2.1.3+galaxy0>                    |
+| JBrowse                      | <https://usegalaxy.eu/root?tool_id=toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+galaxy1>                        |
 Table 1: List of Tools Used by the Galaxy Annotation Community and Their Installation Locations in the Galaxy Toolshed.
 
 ## 2.5 SNVs in protein-coding genes
