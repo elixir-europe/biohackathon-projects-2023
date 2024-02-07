@@ -229,7 +229,7 @@ Geneidx can mask repeats using the repeats found by Ensembl in the closest speci
 
 **Pipeline 2.4: REAT-MINOS** developed by the DS group generates alignments and gene models by multiple methods (including: Mikado [@Venturini2018], Augustus [@Stanke2008], EvidenceModeler (EVM [@EVM]) and Helixer [@Helixer] with a final set of gene models selected based on evidence support. In addition, models are assigned a confidence classification and biotype.
 
-<https://github.com/EI-CoreBioinformatics/reat and https://github.com/EI-CoreBioinformatics/minos>
+<https://github.com/EI-CoreBioinformatics/reat> and <https://github.com/EI-CoreBioinformatics/minos>
 
 ![Structure of annotation workflows tested. Shown are the input data, software and pipeline structure of the UNIL (top-left), CNAG (top-right), ANNOTATO (bottom-left) and Braker3 (bottom-right) workflows](fig2.png){ width=100% }
 
