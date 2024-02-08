@@ -29,3 +29,42 @@ export class EnaBroker {
     return reciept;
   }
 }
+
+export function enaSubmit(name, password, json){
+
+// Assuming you have the file data in a variable named jsonData
+// Replace 'jsonData' with your actual variable holding the JSON data
+
+
+
+fetch('http://173.44.139.131/isaena/submit?webinUserName='+name+'&webinPassword='+password, {
+  method: 'POST',
+  //mode: 'cors',
+  headers: {
+    
+    'Content-Type': 'application/json',
+    'accept': '*/*'
+  },
+  body: JSON.stringify(json)
+})
+.then((response) => response.text())
+  // if (!response.ok) {
+  //   throw new Error('Network response was not ok');
+  // }
+ 
+
+.then(data => {
+  console.log('Success: ', data);
+  enaReturn = data;
+  document.getElementById("enaStatus").innerText="Returned";
+  document.getElementById("enaText").innerText=enaReturn;
+      document.getElementById("status_modal_button").click();
+  // Handle the response data here
+})
+.catch(error => {
+  console.error('Error:', error);
+  // Handle errors here
+});
+
+}
+window.enaSubmit = enaSubmit;

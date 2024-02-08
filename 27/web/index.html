@@ -61,7 +61,7 @@
     }
   </style>
 
-  <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -70,7 +70,8 @@
   <link href="css/custom.css" rel="stylesheet" />
   <link href="css/bs5-intro-tour.css" rel="stylesheet" />
   <script src="js/bs5-intro-tour.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/example.js" type="text/javascript" charset="utf-8"></script>
+  <!--script src="js/example.js" type="text/javascript" charset="utf-8"></script-->
+  <script src="js/test_json.js"></script>
 </head>
 </head>
 
@@ -111,7 +112,7 @@
       <div class="btn-group d-none g-0 d-md-block dropdown col-auto">
         <button type="button" class="btn border-0 rounded-0 g-0 btn-nav" data-bs-toggle="dropdown" aria-expanded="false"
           id="conversion_tools">
-          conversion Tools &nbsp;
+          Menu &nbsp;
 
           <a
             style="display: inline-block; color: rgb(79, 179, 217); letter-spacing: 2px; font-size: 1em; transform: scaleX(2); transform-origin: 1 0;">
@@ -122,10 +123,10 @@
             <button id="converter_long" class="dropdown-item" onclick=''>Converter</button>
           </li>
           <li>
-            <button id="validator_long" class="dropdown-item" onclick=''>Validator</button>
+            <button id="validator_long" class="dropdown-item" onclick=''>GitHub</button>
           </li>
           <li>
-            <button id="updater_long" class="dropdown-item" onclick=''>Updater</button>
+            <button id="updater_long" class="dropdown-item" onclick=''>About Us</button>
           </li>
 
         </ul>
@@ -137,13 +138,36 @@
     </div>
   </div>
 
+ 
+  <h1 class="center"> MARS: Multiple Adatpers of Repository Submissions </h1>
+  <div class="">
+    
+    <form id="authForm" class="row justify-content-center">
+      <div class="mb-3 col-2">
+        <label for="username" class="form-label">ENA Username</label>
+        <input type="text" class="form-control" id="username" aria-describedby="usernameHelp">
+        <div id="usernameHelp" class="form-text d-none">The user name and password are used for token generation.</div>
+      </div>
+      <div class="mb-3 col-2">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+      <div class="mb-3 form-check d-none">
+        <input type="checkbox" class="form-check-input " id="passwordCheck">
+        <label class="form-check-label" for="passwordCheck">Check me out</label>
+      </div>
+      <div class="mb-3 col-2">
+        <label id="tokenHelp" class="form-text">Only collect token if you need.</label>
+        <br>
+      <button type="submit " class="btn btn-primary" aria-describedby="tokenHelp">Collect Token</button>
+      
+    </div>
+    </form>
   </div>
-  <h1 class="center"> ISA-JSON submission to multi-repository</h1>
-
-
+</div>
   <div class="center">
 
-    example JSON input can be downloaded <a href="#">here</a>
+    If you want to quick try ENA submission using prepared ISA JSON, click <a href="#" onclick="test()">here</a>
     <br>
     <input class="btn btn-primary d-inline d-none" type="file" id="input_json" name="json" multiple />
     <input style="display:none" type="file" id="input_xlsx" name="xlsx" multiple />
@@ -166,7 +190,7 @@
     </div>
   </div>
   <script type="text/javascript">
-    var v_list, csv_content, cleanend_global;
+    var v_list, csv_content, cleanend_global, token , enaReturn;
     var input_json, input_xlsx;
     var log_backup = console.log;
     var log_messages = [];
@@ -238,6 +262,46 @@
       };
     }
 
+    function getToken(){
+
+      document.getElementById('authForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      
+      // Get the username and password from the input fields
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      // Construct the request body
+      var requestBody = {
+        authRealms: ['ENA'],
+        password: password,
+        username: username
+      };
+      
+      // Send the POST request using Fetch API
+      fetch('https://www.ebi.ac.uk/ena/submit/webin/auth/token', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestBody)
+      })
+      .then((response) => response.text())
+      .then(text => {
+        console.log('Response:', text);
+        token = text;
+        document.getElementById("tokenText").innerText=token;
+        document.getElementById("tokenStatus").innerText="Returned";
+        document.getElementById("status_modal_button").click();
+        // Handle the response here
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        // Handle errors here
+      });
+    });
+  }
+
 
     async function main(input_json) {
 
@@ -280,9 +344,19 @@
       }
 
     };
+    window.onload = (event) =>{
 
+      getToken();
 
+    }
 
+    function test(){
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      enaSubmit(username, password, testJSON)
+
+    }
   </script>
   <script type="module">
     import { EnaBroker } from "./js/broker/ena/ena.broker.js";
@@ -332,12 +406,14 @@
       }
     }
     window.submitAll = submitAll;
+
+
   </script>
   <!-- Button trigger modal -->
   <button type="button" class="d-none btn btn-primary">
     Launch convert modal
   </button>
-  <!-- Modal -->
+  <!--Modal for submission-->
   <div class="modal fade" id="cModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="cModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
@@ -417,35 +493,62 @@
   </div>
 
   <!-- Button trigger modal -->
-  <button type="button" class="d-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#map_vali_modal"
-    id="m_v_modal">
-    Launch check modal
+  <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#status_modal"
+    id="status_modal_button">
+    Show Status
   </button>
 
   <!-- Modal -->
-  <div class="modal fade" id="map_vali_modal" tabindex="-1" data-bs-backdrop="static"
-    aria-labelledby="map_vali_modal_label" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+  <div class="modal modal-xl fade" id="status_modal" tabindex="-1" data-bs-backdrop="static"
+    aria-labelledby="status_modal_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="map_vali_modal_label">Upload to repos</h1>
+          <h1 class="modal-title fs-5" id="status_modal_label">Status Table</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <span id="init_word"> </span>
           <br>
-          <span id="mandatory_n"></span> mandatory term(s),<br>
-          <span id="recommended_n"></span> recommended term(s),<br>
-          <span id="optional_n"></span> optional term(s).<br>
-          <table id="validate_table" class="table table-bordered table-hover">
-
+          <span ></span> mandatory term(s),<br>
+          
+          <table id="infoTable" class="table table-bordered table-hover" style="width: 100%;">
+            <thead>
+              <tr>
+                <th scope="col">Repositories</th>
+                <th scope="col">Status</th>
+                <th scope="col">Returned</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Token</th>
+                <td id="tokenStatus">not asked</td>
+                <td > <div style="overflow-wrap: break-all;
+                  word-wrap: break-all;" id="tokenText"></div></td>
+                <td >...</td>
+              </tr>
+              <tr>
+                <th scope="row">ENA</th>
+                <td id="enaStatus">not asked</td>
+                <td ><div style="overflow-wrap: break-all;
+                  word-wrap: break-all;" id="enaText"></div></td>
+                <td >...</td>
+              </tr>
+              <tr>
+                <th scope="row">BioSamples</th>
+                <td >not asked</td>
+                <td >...</td>
+                <td >...</td>
+              </tr>
+            </tbody>
           </table>
-
         </div>
+        
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">download updated ISA-JSON</button>
-          <button type="button" class="btn btn-primary"
-            onclick="var encodedUri1 = encodeURI(csv_content);window.open(encodedUri1);">convert</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">download files</button>
+          
         </div>
       </div>
     </div>
