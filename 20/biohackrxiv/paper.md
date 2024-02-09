@@ -33,7 +33,7 @@ authors:
     affiliation: 3,4,b
   - name: Anthony Bretaudeau
     orcid: 0000-0003-0914-2470
-    affiliation: 10,c
+    affiliation: 10,17,c
   - name: Michael Charleston
     orcid: 0000-0001-8385-341X
     affiliation: 11,b
@@ -112,7 +112,7 @@ affiliations:
     index: 15
   - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
     index: 16
-  - name: CNRS, Rennes, France
+  - name: GenOuest Core Facility, Univ Rennes, Inria, CNRS, IRISA, Rennes, France
     index: 17
   - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
     index: 18
@@ -321,7 +321,7 @@ The combination of Completeness (Fig. 5) and Consistency (Fig. 7) highlights the
 
 The analyses presented in the previous two sections rely on summary statistics based on genome-wide approaches. While it is useful to obtain statistics regarding the number and size of genes, exons, introns, CDS and other features, this does not give us any indication of the accuracy or consistency of the locations of these features in the genome. Using BUSCO and OMArk to calculate accuracy of predicted protein sequences gives us an indication of this, but does not give us any fine-grain information.
 
-Thus, to further compare completeness and compare annotations within species, we calculated the Sensitivity and Specificity of CDS regions predicted by 5 workflows for the C. colocynthis genome (Table 3). As expected, there is a high degree of overlap between two independent runs of Braker3, run with and without transcript data as evidence, but there is also a reasonable degree of overlap when comparing Braker, Helixer and funannotate gene predictions. The outlier in this analysis was GeneIdx, which showed low consistency with all other tested tools.
+Thus, to further compare completeness and compare annotations within species, we calculated the Sensitivity and Specificity of CDS regions predicted by 5 workflows for the C. colocynthis genome (Table 3). As expected, there is a high degree of overlap between two independent runs of Braker3, run with and without transcript data as evidence, but there is also a reasonable degree of overlap when comparing Braker, Helixer and funannotate gene predictions. The outlier in this analysis was GeneIdx, which showed low consistency with all other tested tools. However, it should be noted that GeneIdx is still under development and was not tested on plant genomes during the development stages. By contrast, Helixer was developed by researchers from a plant research institute, so the developers have a vested interest that this tool performs well on plant genomes.
 
 | |**Braker3-galaxy**|**Braker3**|**Helixer**|**funannotate**|**geneidx**|
 |-|-|-|-|-|-|
@@ -356,7 +356,7 @@ The strength of this BioHackathon project lies in the preparation performed befo
 
 As mentioned above, the willingness of all participants to share not only their biological data, but also their experiences and expertise resulted in a fruitful experience. This allowed researchers at all career stages to have direct communication and feedback with individuals responsible for developing tools in the field of genome annotation and in applying these tools to all branches of the tree of life. With this in mind, our first recommendation would be for researchers with common goals to engage in such efforts in the future, because open exchange of ideas and experiences can clearly lead to more productive outcomes in these group settings.
 
-We tested four annotation tools - Helixer, Braker3, Maker, and Funannotate, on up to 6 of the ERGA genomes. Some of the analyses did not finish within the time, but some general conclusions can be drawn. Firstly, we had great success with the tool Helixer. This required no additional input data (such as RNAseq and/or protein evidence), was much faster than other tools, and achieved comparable annotation accuracy according to BUSCO and OMArk scores. Helixer is configured to run on GPUs and uses deep learning to predict gene structures. We had success with Braker3, but it was slower than Helixer. There were some issues with Maker and Funannotate. Firstly, these tools took a lot longer to run (or did not finish), sometimes failed due to unknown reasons (or still under investigation), or required additional work on input files (such as editing contig names, which mean they are not comparable with other annotations run on the same genome). These are general conclusions but provide a useful basis for further tool refinement and prioritisation. We are now collating all these tools into a combined Galaxy workflow that will include: repeat masking, RNAseq mapping, structural annotation (multiple tool options), functional annotation, assessment, and visualisation of genome + annotation(s) on JBrowse. 
+In Galaxy, we tested four annotation tools - Helixer, Braker3, Maker, and Funannotate, on up to 6 of the ERGA genomes. Some of the analyses did not finish within the time, but some general conclusions can be drawn. Firstly, we had great success with the tool Helixer. This required no additional input data (such as RNAseq and/or protein evidence), was much faster than other tools, and achieved comparable annotation accuracy according to BUSCO and OMArk scores. Helixer is configured to run on GPUs and uses deep learning to predict gene structures. We had success with Braker3, but it was slower than Helixer. There were some issues with Maker and Funannotate. Firstly, these tools took a lot longer to run (or did not finish), sometimes failed due to unknown reasons (or still under investigation), or required additional work on input files (such as editing contig names, which mean they are not comparable with other annotations run on the same genome). These are general conclusions but provide a useful basis for further tool refinement and prioritisation. We are now collating all these tools into a combined Galaxy workflow that will include: repeat masking, RNAseq mapping, structural annotation (multiple tool options), functional annotation, assessment, and visualisation of genome + annotation(s) on JBrowse. 
 
 ## 4.2 Major issues identified
 
@@ -418,10 +418,11 @@ Another obvious advantage of having many researchers working together for an int
 
 ## Acknowledgements
 
-We acknowledge access to the storage resources at Barcelona Supercomputing Center, which is partially funded by the European Union H2020-INFRAEOSC-2018-2020 program through the DICE project (Grant Agreement no. 101017207), RES (Spanish Supercomputing Network), INB (Spanish National Bioinformatics Institute). 
+We acknowledge access to the storage resources at Barcelona Supercomputing Center, which is partially funded by the European Union H2020-INFRAEOSC-2018-2020 program through the DICE project (Grant Agreement no. 101017207), RES (Spanish Supercomputing Network), INB (Spanish National Bioinformatics Institute).
+We acknowledge access to the Galaxy Europe server which is funded by the German Federal Ministry of Education and Research BMBF grant 031 A538A de.NBI-RBC and the Ministry of Science, Research and the Arts Baden-Württemberg (MWK) within the framework of LIBIS/de.NBI Freiburg.
 We thank the CNAG for providing an ftp instance to store and share the data used during this project.
 We would like to thank Maxime Garcia for his help troubleshooting the nf-core/sarek runs in the slack.
+Australian participants working remotely were funded by the Australian BioCommons (an ELIXIR collaborative partner), funded through Australian Government NCRIS investments from Bioplatforms Australia and the Australian Research Data Commons.
 Some authors were funded by ELIXIR, the research infrastructure for life-science data, to join the BioHackathon Europe.
-
 
 ## References
