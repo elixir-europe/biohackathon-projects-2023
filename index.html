@@ -178,7 +178,7 @@
 
       <input type="file" id="import" multiple>
     </div><br>
-    <button class="btn btn-primary" style="display:inline" data-bs-toggle="modal" data-bs-target="#cModal"
+    <button class="btn btn-primary" onclick="checkInput()" style="display:inline" data-bs-toggle="modal" data-bs-target="#cModal"
       id="cModalButton"> Start Submissions </button>
     <div class="d-flex justify-content-center d-none" id="waiting">
       <div class="spinner-grow btn-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -225,6 +225,22 @@
 
       reader.readAsText(ele.files[0]); // Read the uploaded file
     }
+
+    function checkInput(){
+      try{
+        const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      if ( document.getElementById("import").files.length == 0 ){alert("There is no input file, the submission will use test file");
+      enaSubmit(username, password, testJSON);}else{
+        enaSubmit(username, password, input_json)
+
+
+      }}catch(e){
+        alert("Error, submission not successful, error is" + e)
+      }
+      
+    }
+    
     console.log = function () {
       //log_messages.push.apply(log_messages, arguments);
       log_backup.apply(console, arguments);
@@ -354,7 +370,7 @@
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
 
-      enaSubmit(username, password, testJSON)
+      enaSubmit(username, password, testJSON);
 
     }
   </script>
