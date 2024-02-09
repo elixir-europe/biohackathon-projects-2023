@@ -62,6 +62,7 @@ fetch('http://173.44.139.131/isaena/submit?webinUserName='+name+'&webinPassword=
   // Handle the response data here
 })
 .catch(error => {
+  alert("ENA submission failed, error is " + error+". Please check your username and password");
   console.error('Error:', error);
   // Handle errors here
 });
