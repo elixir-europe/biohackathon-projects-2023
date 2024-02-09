@@ -33,28 +33,28 @@ authors:
     affiliation: 3,4,b
   - name: Anthony Bretaudeau
     orcid: 0000-0003-0914-2470
-    affiliation: 10,17,c
+    affiliation: 10,11,c
   - name: Michael Charleston
     orcid: 0000-0001-8385-341X
-    affiliation: 11,b
+    affiliation: 12,b
   - name: Phuong Duy Doan
     orcid: 0000-0002-6621-9908
-    affiliation: 12,b
+    affiliation: 13,b
   - name: Christoph Hahn
     orcid: 0000-0003-4265-4793
-    affiliation: 13,b
+    affiliation: 14,b
   - name: Thomas W. R. Harrop
     orcid: 0000-0001-6557-0440
-    affiliation: 14,b
+    affiliation: 15,b
   - name: Katie E Herron
     orcid: 0009-0004-0021-5113
-    affiliation: 15,b
+    affiliation: 16,b
   - name: Fredrick Kebaso
     orcid: 0000-0001-8226-9633
-    affiliation: 16,b
+    affiliation: 17,b
   - name: Romane Libouban
     orcid: 0009-0001-4920-9951
-    affiliation: 17,c
+    affiliation: 11,c
   - name: Shivakumara Manu
     orcid: 0000-0002-9114-8793
     affiliation: 18,b
@@ -69,10 +69,10 @@ authors:
     affiliation: 21,b
   - name: Anna Syme
     orcid: 0000-0002-9906-0673
-    affiliation: 14,b
+    affiliation: 15,b
   - name: Jean-Marc Aury
     orcid: 0000-0003-1718-3010
-    affiliation: 12,c
+    affiliation: 13,c
   - name: Jèssica Gómez-Garrido
     orcid: 0000-0001-6409-8009
     affiliation: 3,4,a
@@ -100,19 +100,19 @@ affiliations:
     index: 9
   - name: BIPAA, IGEPP, INRAE, Institut Agro, University of Rennes, Rennes, France
     index: 10
-  - name: University of Tasmania, Hobart, Tasmania, Australia
-    index: 11
-  - name: Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay, Evry, 91057, France
-    index: 12
-  - name: Institute of Biology, University of Graz, Austria
-    index: 13
-  - name: Melbourne Bioinformatics, University of Melbourne, Australia
-    index: 14
-  - name: School of Biology and Environmental Science, University College Dublin, Belfield, Dublin 4, Ireland
-    index: 15
-  - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
-    index: 16
   - name: GenOuest Core Facility, Univ Rennes, Inria, CNRS, IRISA, Rennes, France
+    index: 11
+  - name: University of Tasmania, Hobart, Tasmania, Australia
+    index: 12
+  - name: Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay, Evry, 91057, France
+    index: 13
+  - name: Institute of Biology, University of Graz, Austria
+    index: 14
+  - name: Melbourne Bioinformatics, University of Melbourne, Australia
+    index: 15
+  - name: School of Biology and Environmental Science, University College Dublin, Belfield, Dublin 4, Ireland
+    index: 16
+  - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
     index: 17
   - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
     index: 18
