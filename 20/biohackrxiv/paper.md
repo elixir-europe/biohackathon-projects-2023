@@ -25,51 +25,51 @@ authors:
   - name: Stepan Saenko
     orcid: 0000-0002-4925-1308
     affiliation: 8,a
-  - name: Fabio Zanarello
-    orcid: 0000-0001-9580-6215
-    affiliation: 9,10,b
   - name: Tyler Alioto
     orcid: 0000-0002-2960-5420
     affiliation: 3,4,b
   - name: Anthony Bretaudeau
     orcid: 0000-0003-0914-2470
-    affiliation: 11,12,c
+    affiliation: 9,10,c
   - name: Michael Charleston
     orcid: 0000-0001-8385-341X
-    affiliation: 13,b
+    affiliation: 11,b
   - name: Phuong Duy Doan
     orcid: 0000-0002-6621-9908
-    affiliation: 14,b
+    affiliation: 12,b
   - name: Christoph Hahn
     orcid: 0000-0003-4265-4793
-    affiliation: 15,b
+    affiliation: 13,b
   - name: Thomas W. R. Harrop
     orcid: 0000-0001-6557-0440
-    affiliation: 16,b
+    affiliation: 14,b
   - name: Katie E Herron
     orcid: 0009-0004-0021-5113
-    affiliation: 17,b
+    affiliation: 15,b
   - name: Fredrick Kebaso
     orcid: 0000-0001-8226-9633
-    affiliation: 18,b
+    affiliation: 16,b
   - name: Romane Libouban
     orcid: 0009-0001-4920-9951
-    affiliation: 12,c
+    affiliation: 10,c
   - name: Shivakumara Manu
     orcid: 0000-0002-9114-8793
-    affiliation: 19,b
+    affiliation: 17,b
   - name: Locedie Mansueto
     orcid: 0000-0003-2798-5519
-    affiliation: 20,b
+    affiliation: 18,b
   - name: Asime Oba
     orcid: 0000-0002-1769-8383
-    affiliation: 21,b
+    affiliation: 19,b
   - name: David Swarbreck
     orcid: 0000-0002-5453-1013
-    affiliation: 22,b
+    affiliation: 20,b
   - name: Anna Syme
     orcid: 0000-0002-9906-0673
-    affiliation: 16,b
+    affiliation: 14,b
+  - name: Fabio Zanarello
+    orcid: 0000-0001-9580-6215
+    affiliation: 21,22,b
   - name: Jean-Marc Aury
     orcid: 0000-0003-1718-3010
     affiliation: 14,c
@@ -96,33 +96,33 @@ affiliations:
     index: 7
   - name: University of Greifswald, Greifswald, Germany
     index: 8
-  - name: Centre for Genomic Regulation, Barcelona, Spain
-    index: 9
-  - name: Universitat Pompeu Fabra, Barcelona, Spain
-    index: 10
   - name: BIPAA, IGEPP, INRAE, Institut Agro, University of Rennes, Rennes, France
-    index: 11
+    index: 9
   - name: GenOuest Core Facility, Univ Rennes, Inria, CNRS, IRISA, Rennes, France
-    index: 12
+    index: 10
   - name: University of Tasmania, Hobart, Tasmania, Australia
-    index: 13
+    index: 11
   - name: Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay, Evry, 91057, France
-    index: 14
+    index: 12
   - name: Institute of Biology, University of Graz, Austria
-    index: 15
+    index: 13
   - name: Melbourne Bioinformatics, University of Melbourne, Australia
-    index: 16
+    index: 14
   - name: School of Biology and Environmental Science, University College Dublin, Belfield, Dublin 4, Ireland
-    index: 17
+    index: 15
   - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
-    index: 18
+    index: 16
   - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
-    index: 19
+    index: 17
   - name: Southern Cross University, Lismore, Australia
-    index: 20
+    index: 18
   - name: Department of Microbiology, Faculty of Science, University of Maiduguri, Nigeria
-    index: 21
+    index: 19
   - name: Earlham Institute, Norwich Research Park, Norwich, United Kingdom
+    index: 20
+  - name: Centre for Genomic Regulation, Barcelona, Spain
+    index: 21
+  - name: Universitat Pompeu Fabra, Barcelona, Spain
     index: 22
   - name: URBE, Laboratory of Adaptive Evolution & Genomics, Institute of Life, Earth and Environment (ILEE)  University of Namur, Namur, Belgium 
     index: 23
