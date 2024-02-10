@@ -52,11 +52,11 @@ authors:
   - name: Romane Libouban
     orcid: 0009-0001-4920-9951
     affiliation: 10,c
-  - name: Shivakumara Manu
-    orcid: 0000-0002-9114-8793
-    affiliation: 17,b
   - name: Locedie Mansueto
     orcid: 0000-0003-2798-5519
+    affiliation: 17,b
+  - name: Shivakumara Manu
+    orcid: 0000-0002-9114-8793
     affiliation: 18,b
   - name: Asime Oba
     orcid: 0000-0002-1769-8383
@@ -112,9 +112,9 @@ affiliations:
     index: 15
   - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
     index: 16
-  - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
-    index: 17
   - name: Southern Cross University, Lismore, Australia
+    index: 17
+  - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
     index: 18
   - name: Department of Microbiology, Faculty of Science, University of Maiduguri, Nigeria
     index: 19
