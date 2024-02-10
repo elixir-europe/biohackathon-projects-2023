@@ -220,6 +220,7 @@ Geneidx can mask repeats using the repeats found by Ensembl in the closest speci
 **Pipeline 2.1: UNIL pipeline** developed by SJD from University of Lausanne (Fig. 2) includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the SwissProt database (Release 2023_04 of 13-Sep-2023 [@Uniprot]). Following de-novo repeat modelling, using the genome assembly as input, the SwissProt protein sequences and mapped RNA-seq reads are given as evidence data alongside the repeat-masked genome into Braker3 [@Braker3]. The resulting gff3 file is the output used for downstream evaluation and analysis.
 
 <https://github.com/sdind/genome_annotation_workflow>
+
 <https://doi.org/10.48546/workflowhub.workflow.569.1>
 
 **Pipeline 2.2: CNAG Pipeline** developed by JGG from CNAG  (Fig. 2) includes initial steps where a set of de-novo transcripts are assembled from the input RNA-seq reads and multiple evidences from Augustus [@Stanke2008], GeneMark [@Brna2020] and GeneID [@Alioto2018] are combined with RNA-seq and protein alignments using EvidenceModeler (EVM [@EVM]). Furthermore, isoform information is included by running PASA [@PASA] after initial gene models are created from EVM.
