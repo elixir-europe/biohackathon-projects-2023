@@ -18,67 +18,67 @@ authors:
     affiliation: 5,a
   - name: Sagane Joye-Dind
     orcid: 0000-0003-4771-6113
-    affiliation: 6,a
+    affiliation: 6,7,a
   - name: Yannis Nevers
     orcid: 0000-0002-8604-2943
-    affiliation: 6,a
+    affiliation: 6,7,a
   - name: Stepan Saenko
     orcid: 0000-0002-4925-1308
-    affiliation: 7,a
+    affiliation: 8,a
   - name: Fabio Zanarello
     orcid: 0000-0001-9580-6215
-    affiliation: 8,9,b
+    affiliation: 9,10,b
   - name: Tyler Alioto
     orcid: 0000-0002-2960-5420
     affiliation: 3,4,b
   - name: Anthony Bretaudeau
     orcid: 0000-0003-0914-2470
-    affiliation: 10,11,c
+    affiliation: 11,12,c
   - name: Michael Charleston
     orcid: 0000-0001-8385-341X
-    affiliation: 12,b
+    affiliation: 13,b
   - name: Phuong Duy Doan
     orcid: 0000-0002-6621-9908
-    affiliation: 13,b
+    affiliation: 14,b
   - name: Christoph Hahn
     orcid: 0000-0003-4265-4793
-    affiliation: 14,b
+    affiliation: 15,b
   - name: Thomas W. R. Harrop
     orcid: 0000-0001-6557-0440
-    affiliation: 15,b
+    affiliation: 16,b
   - name: Katie E Herron
     orcid: 0009-0004-0021-5113
-    affiliation: 16,b
+    affiliation: 17,b
   - name: Fredrick Kebaso
     orcid: 0000-0001-8226-9633
-    affiliation: 17,b
+    affiliation: 18,b
   - name: Romane Libouban
     orcid: 0009-0001-4920-9951
-    affiliation: 11,c
+    affiliation: 12,c
   - name: Shivakumara Manu
     orcid: 0000-0002-9114-8793
-    affiliation: 18,b
+    affiliation: 19,b
   - name: Locedie Mansueto
     orcid: 0000-0003-2798-5519
-    affiliation: 19,b
+    affiliation: 20,b
   - name: Asime Oba
     orcid: 0000-0002-1769-8383
-    affiliation: 20,b
+    affiliation: 21,b
   - name: David Swarbreck
     orcid: 0000-0002-5453-1013
-    affiliation: 21,b
+    affiliation: 22,b
   - name: Anna Syme
     orcid: 0000-0002-9906-0673
-    affiliation: 15,b
+    affiliation: 16,b
   - name: Jean-Marc Aury
     orcid: 0000-0003-1718-3010
-    affiliation: 13,c
+    affiliation: 14,c
   - name: Jèssica Gómez-Garrido
     orcid: 0000-0001-6409-8009
     affiliation: 3,4,a
   - name: Alice B. Dennis
     orcid: 0000-0003-0948-9845
-    affiliation: 22,a
+    affiliation: 23,a
 affiliations:
   - name: Leibniz-Institut für Zoo- und Wildtierforschung (IZW) im Forschungsverbund Berlin e.V. Alfred-Kowalke-Straße 17 10315 Berlin Deutschland
     index: 1
@@ -90,40 +90,42 @@ affiliations:
     index: 4
   - name: International Center for Biosaline Agriculture (ICBA), Dubai, UAE
     index: 5
-  - name: Université de Lausanne; Swiss Institute of Bioinformatics, Lausanne, Switzerland
+  - name: Université de Lausanne, Lausanne, Switzerland
     index: 6
-  - name: University of Greifswald, Greifswald, Germany
+  - name: Swiss Institute of Bioinformatics, Lausanne, Switzerland
     index: 7
-  - name: Centre for Genomic Regulation, Barcelona, Spain
+  - name: University of Greifswald, Greifswald, Germany
     index: 8
-  - name: Universitat Pompeu Fabra, Barcelona, Spain
+  - name: Centre for Genomic Regulation, Barcelona, Spain
     index: 9
-  - name: BIPAA, IGEPP, INRAE, Institut Agro, University of Rennes, Rennes, France
+  - name: Universitat Pompeu Fabra, Barcelona, Spain
     index: 10
-  - name: GenOuest Core Facility, Univ Rennes, Inria, CNRS, IRISA, Rennes, France
+  - name: BIPAA, IGEPP, INRAE, Institut Agro, University of Rennes, Rennes, France
     index: 11
-  - name: University of Tasmania, Hobart, Tasmania, Australia
+  - name: GenOuest Core Facility, Univ Rennes, Inria, CNRS, IRISA, Rennes, France
     index: 12
-  - name: Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay, Evry, 91057, France
+  - name: University of Tasmania, Hobart, Tasmania, Australia
     index: 13
-  - name: Institute of Biology, University of Graz, Austria
+  - name: Génomique Métabolique, Genoscope, Institut François Jacob, CEA, CNRS, Univ Evry, Université Paris-Saclay, Evry, 91057, France
     index: 14
-  - name: Melbourne Bioinformatics, University of Melbourne, Australia
+  - name: Institute of Biology, University of Graz, Austria
     index: 15
-  - name: School of Biology and Environmental Science, University College Dublin, Belfield, Dublin 4, Ireland
+  - name: Melbourne Bioinformatics, University of Melbourne, Australia
     index: 16
-  - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
+  - name: School of Biology and Environmental Science, University College Dublin, Belfield, Dublin 4, Ireland
     index: 17
-  - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
+  - name: International Centre of Insect Physiology and Ecology (ICIPE), Kenya
     index: 18
-  - name: Southern Cross University, Lismore, Australia
+  - name: CSIR-Centre for Cellular and Molecular Biology, Hyderabad, India 
     index: 19
-  - name: Department of Microbiology, Faculty of Science, University of Maiduguri, Nigeria
+  - name: Southern Cross University, Lismore, Australia
     index: 20
-  - name: Earlham Institute, Norwich Research Park, Norwich, United Kingdom
+  - name: Department of Microbiology, Faculty of Science, University of Maiduguri, Nigeria
     index: 21
-  - name: URBE, Laboratory of Adaptive Evolution & Genomics, Institute of Life, Earth and Environment (ILEE)  University of Namur, Namur, Belgium 
+  - name: Earlham Institute, Norwich Research Park, Norwich, United Kingdom
     index: 22
+  - name: URBE, Laboratory of Adaptive Evolution & Genomics, Institute of Life, Earth and Environment (ILEE)  University of Namur, Namur, Belgium 
+    index: 23
   - name: These authors attended the BioHackathon in person
     index: a
   - name: These authors attended the BioHackathon remotely
@@ -217,6 +219,7 @@ Geneidx can mask repeats using the repeats found by Ensembl in the closest speci
 
 **Pipeline 2.1: UNIL pipeline** developed by SJD from University of Lausanne (Fig. 2) includes mappings from paired-end RNA-seq data specific to the species of interest and proteins from the SwissProt database (Release 2023_04 of 13-Sep-2023 [@Uniprot]). Following de-novo repeat modelling, using the genome assembly as input, the SwissProt protein sequences and mapped RNA-seq reads are given as evidence data alongside the repeat-masked genome into Braker3 [@Braker3]. The resulting gff3 file is the output used for downstream evaluation and analysis.
 
+<https://github.com/sdind/genome_annotation_workflow>
 <https://doi.org/10.48546/workflowhub.workflow.569.1>
 
 **Pipeline 2.2: CNAG Pipeline** developed by JGG from CNAG  (Fig. 2) includes initial steps where a set of de-novo transcripts are assembled from the input RNA-seq reads and multiple evidences from Augustus [@Stanke2008], GeneMark [@Brna2020] and GeneID [@Alioto2018] are combined with RNA-seq and protein alignments using EvidenceModeler (EVM [@EVM]). Furthermore, isoform information is included by running PASA [@PASA] after initial gene models are created from EVM.
