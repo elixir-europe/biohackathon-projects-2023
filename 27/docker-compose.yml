@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  isa_biosamples:
+      build: ./ISABioSamplesProject27
+      ports:
+        - "8032:8032"
+
+  isa_sra:
+      build: ./ISASRAProject27
+      ports:
+        - "8042:8042"
