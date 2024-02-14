@@ -1,0 +1,14 @@
+{
+  "ena": {
+    "url": "http://:8042/isaena/submit",
+    "username": "",
+    "password": ""
+  },
+  "biosamples": {
+    "url": "http://localhost:8032/isabiosamples/submit",
+    "token": ""
+  },
+  "metabolights": {}
+}
+
+
