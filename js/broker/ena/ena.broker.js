@@ -30,42 +30,40 @@ export class EnaBroker {
   }
 }
 
-export function enaSubmit(name, password, json){
+function enaSubmit(name, password, json){
 
 // Assuming you have the file data in a variable named jsonData
 // Replace 'jsonData' with your actual variable holding the JSON data
 
+  fetch('https://a.cplantbox.com/isaena/submit?webinUserName='+name+'&webinPassword='+password, {
+    method: 'POST',
+    //mode: 'cors',
+    headers: {
+      
+      'Content-Type': 'application/json',
+      'accept': '*/*'
+    },
+    body: JSON.stringify(json)
+  })
+  .then((response) => response.text())
+    // if (!response.ok) {
+    //   throw new Error('Network response was not ok');
+    // }
+  
 
+  .then(data => {
+    console.log('Success: ', data);
+    enaReturn = data;
+    document.getElementById("enaStatus").innerText="Returned";
+    document.getElementById("enaText").innerText=enaReturn;
+        document.getElementById("status_modal_button").click();
+    // Handle the response data here
+  })
+  .catch(error => {
+    alert("ENA submission failed, error is " + error+". Please check your username and password");
+    console.error('Error:', error);
+    // Handle errors here
+  });
 
-fetch('https://a.cplantbox.com/isaena/submit?webinUserName='+name+'&webinPassword='+password, {
-  method: 'POST',
-  //mode: 'cors',
-  headers: {
-    
-    'Content-Type': 'application/json',
-    'accept': '*/*'
-  },
-  body: JSON.stringify(json)
-})
-.then((response) => response.text())
-  // if (!response.ok) {
-  //   throw new Error('Network response was not ok');
-  // }
- 
-
-.then(data => {
-  console.log('Success: ', data);
-  enaReturn = data;
-  document.getElementById("enaStatus").innerText="Returned";
-  document.getElementById("enaText").innerText=enaReturn;
-      document.getElementById("status_modal_button").click();
-  // Handle the response data here
-})
-.catch(error => {
-  alert("ENA submission failed, error is " + error+". Please check your username and password");
-  console.error('Error:', error);
-  // Handle errors here
-});
-
-}
+};
 window.enaSubmit = enaSubmit;
