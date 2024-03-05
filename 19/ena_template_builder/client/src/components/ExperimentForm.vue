@@ -12,7 +12,6 @@
     <br>
     <a class="btn btn-primary" href="/run">Next</a>
   </div>
-
 </template>
 
 

@@ -1,53 +1,92 @@
 <template>
+  <!-- Form view: -->
   <div v-if="display === 'form'" class="form-group">
-    <label :for="field.name">{{ this.capitalize(field.name) }} <span v-if="requiredField">*</span></label>
-    <SelectInput v-if="field.field_type === 'TEXT_CHOICE_FIELD'" :field="field"/>
+    <label :for="field.name">
+      {{ this.capitalize(field.name) }}
+      <span v-if="requiredField">*</span>
+    </label>
+    <SelectInput
+      v-if="field.field_type === 'TEXT_CHOICE_FIELD'"
+      :field="field"
+      :selectedValue="inputValue"
+      @input="$emit('blur', $event)"
+    />
     <input
-      v-else
+      v-if="field.field_type === 'TEXT_FIELD'"
       type="text"
       :class="getInputClass(field.field_type)"
       :id="field.name"
       :name="field.name"
       :placeholder="field.placeholder"
-      @input="$emit('input', $event)"
-      @keydown.exact="$emit('keydown.exact', $event)"
+      :value="inputValue"
+      @blur="$emit('blur', $event)"
     />
-    <small>{{ field.description }}</small>
+    <textarea
+      v-if="field.field_type === 'TEXT_AREA_FIELD'"
+      class="form-control"
+      :id="field.name"
+      :name="field.name"
+      :placeholder="field.placeholder"
+      rows="5"
+      :value="inputValue"
+      @blur="$emit('blur', $event)"
+    ></textarea>
+    <small>
+      <span v-if="field.units">({{ field.units }})</span>
+      {{ field.description }}
+    </small>
   </div>
 
+  <!-- Table view: -->
   <SelectInput
     v-if="display === 'table' && field.field_type === 'TEXT_CHOICE_FIELD'"
     ref="input"
     class="noborder"
     :field="field"
+    :selectedValue="inputValue"
     @input="$emit('blur', $event)"
+    @keydown.exact="$emit('keydown', $event)"
+    @paste="$emit('paste', $event)"
   />
   <input
-    v-if="display === 'table' && field.field_type === 'TEXT_FIELD'"
+    v-if="display === 'table' && ['TEXT_FIELD', 'TEXT_AREA_FIELD'].includes(field.field_type)"
     ref="input"
     type="text"
     :class="getInputClass(field.field_type) + ' noborder'"
     :id="field.name"
     :name="field.name"
+    :value="inputValue"
     :placeholder="field.placeholder"
     @blur="$emit('blur', $event)"
     @keydown.exact="$emit('keydown', $event)"
+    @paste="$emit('paste', $event)"
   />
+
+  <!-- TODO: another input field for textarea -->
+
 </template>
 
 <script>
 import { capitalize } from '@/utils/text'
 import SelectInput from './SelectInput.vue'
 
+const VALID_FIELD_TYPES = ['TEXT_FIELD', 'TEXT_AREA_FIELD', 'TEXT_CHOICE_FIELD']
+
 export default {
   name: 'FormField',
   emits: [
     'blur',
     'keydown',
+    'paste',
   ],
   props: {
-    // 'onKeydown.exact': Function,
-    field: Object,
+    inputValue: String,
+    field: {
+      type: Object,
+      validator(value) {
+        return VALID_FIELD_TYPES.includes(value.field_type)
+      }
+    },
     display: {
       type: String,
       default: 'form',
@@ -90,7 +129,8 @@ export default {
       }
     },
     focus() {
-      this.$refs.input.focus()
+      const input = this.$refs.input
+      input && input.focus()
     },
   }
 }

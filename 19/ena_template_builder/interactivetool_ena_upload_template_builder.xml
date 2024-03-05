@@ -9,11 +9,22 @@
     </entry_points>
     <command detect_errors="exit_code"><![CDATA[
 
-ENA_OUTPUT_FILE='${output}' /app/run.sh
+ENA_OUTPUT_STUDY='${study_table}'
+ENA_OUTPUT_EXPERIMENT='${experiment_table}'
+ENA_OUTPUT_RUN='${run_table}'
+ENA_OUTPUT_SAMPLE='${sample_table}'
+ENA_TEMPLATE_ID='${template_id}'
+/app/run.sh
 
     ]]></command>
+    <inputs>
+        <input name="template_id" />
+    </inputs>
     <outputs>
-        <data name="output" format="csv" />
+        <data name="study_table" label="Study table" format="csv" />
+        <data name="experiment_table" label="Experiment table" format="csv" />
+        <data name="run_table" label="Run table" format="csv" />
+        <data name="sample_table" label="Sample table" format="csv" />
     </outputs>
     <help>
 <![CDATA[

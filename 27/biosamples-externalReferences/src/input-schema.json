@@ -1,0 +1,64 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/biosamples-externalReferences/src/input-schema.json",
+    "type": "object",
+    "title": "Schema for input of externalReferences",
+    "description": "Schema used to validate the input containing externalReferences. See further details at 'https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/27/biosamples-externalReferences/README.md'",
+    "required": ["biosampleExternalReferences"],
+    "additionalProperties": false,
+    "properties": {
+        "biosampleExternalReferences": {
+            "type": "array",
+            "title": "BioSample externalReferences",
+            "description": "An array of BioSample externalReferences linked to a BioSample Accession",
+            "minItems": 1,
+            "uniqueItems": true,
+            "additionalProperties": false,
+            "items": {
+                "type": "object",
+                "title": "Item of BioSample externalReferences with accession",
+                "additionalProperties": false,
+                "required": ["biosampleAccession", "externalReferences"],
+                "properties": {
+                    "biosampleAccession": {
+                        "type": "string",
+                        "title": "BioSample accession",
+                        "description": "A single valid BioSample accession. See more at: https://registry.identifiers.org/registry/biosample",
+                        "minLength": 1,
+                        "pattern": "^SAM[NED](\\w)?\\d+$",
+                        "examples": [ "SAMEA112654119" ]
+                    },
+                    "externalReferences": {
+                        "type": "array",
+                        "title": "externalReferences",
+                        "description": "Array of references to external resources, for example a link to ENA data, EGA data, etc. Corresponds to BioSample's definition at 'https://github.com/EBIBioSamples/biosamples-v4/blob/db290bb9ae437d6dd548a9ff0a64431c8a73dcdf/webapps/core/src/main/resources/schemas/core/sample.json#L233-L239'",
+                        "minItems": 1,
+                        "uniqueItems": true,
+                        "additionalProperties": false,
+                        "items": {
+                            "type": "object",
+                            "title": "BioSamples external reference",
+                            "description": "Object representing a link to a repository or page associated with the sample itself, e.g. a link to an ENA record. Corresponds to BioSample's definition at 'https://github.com/EBIBioSamples/biosamples-v4/blob/db290bb9ae437d6dd548a9ff0a64431c8a73dcdf/webapps/core/src/main/resources/schemas/core/sample.json#L45-L65'",
+                            "additionalProperties": false,
+                            "required": ["url"],
+                            "properties": {
+                                "url": {
+                                    "type": "string"
+                                },
+                                "duo": {
+                                    "description": "Data use ontology terms ",
+                                    "type": "array",
+                                    "items": {
+                                        "description": "Data use condition https://ega-archive.org/data-use-conditions",
+                                        "type": "string",
+                                        "pattern": "^DUO:[0-9]{7}$"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
