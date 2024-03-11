@@ -170,7 +170,8 @@
 </div>
   <div class="center">
 
-    If you want to quick try ENA submission using prepared ISA JSON, click <a href="#" onclick="test()">here</a>
+    Test BioSamples submission, click <a href="#" onclick="bstest()">here</a> <br>
+    Test ENA submission, click <a href="#" onclick="enatest()">here</a>
     <br>
     <input class="btn btn-primary d-inline d-none" type="file" id="input_json" name="json" multiple />
     <input style="display:none" type="file" id="input_xlsx" name="xlsx" multiple />
@@ -193,7 +194,7 @@
     </div>
   </div>
   <script type="text/javascript">
-    var v_list, csv_content, cleanend_global, token , enaReturn;
+    var v_list, csv_content, cleanend_global, token , enaReturn, biosamples;
     var input_json, input_xlsx;
     var log_backup = console.log;
     var log_messages = [];
@@ -298,7 +299,7 @@
       };
       
       // Send the POST request using Fetch API
-      fetch('https://www.ebi.ac.uk/ena/submit/webin/auth/token', {
+      fetch('https://wwwdev.ebi.ac.uk/ena/submit/webin/auth/token', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -369,7 +370,15 @@
 
     }
 
-    function test(){
+    function bstest(){
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      bsSubmit(username, password, testJSON);
+
+    }
+
+    function enatest(){
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
 
@@ -413,13 +422,52 @@
   });
 
 };
+
+
+function bsSubmit(name, password, json){
+
+// Assuming you have the file data in a variable named jsonData
+// Replace 'jsonData' with your actual variable holding the JSON data
+
+  fetch('https://ai.cplantbox.com/isabiosamples/submit?webinjwt='+ token , {
+    method: 'POST',
+    //mode: 'no-cors',
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type',
+      'Content-Type': 'application/json',
+      'accept': '*/*'
+    },
+    body: JSON.stringify(json)
+  })
+  .then((response) => response.text())
+    // if (!response.ok) {
+    //   throw new Error('Network response was not ok');
+    // }
+  
+
+  .then(data => {
+    console.log('Success: ', data);
+    biosamplesReturn = data;
+    document.getElementById("biosamplesStatus").innerText="Returned";
+    document.getElementById("biosamplesText").innerText=biosamplesReturn;
+        document.getElementById("status_modal_button").click();
+    // Handle the response data here
+  })
+  .catch(error => {
+    alert("BioSamples submission failed, error is " + error+". Please check your jwt token");
+    console.error('Error:', error);
+    // Handle errors here
+  });
+
+};
   </script>
   <script type="module">
-    import { EnaBroker } from "./js/broker/ena/ena.broker.js";
-    import { MetabolightsBroker } from "./js/broker/metabolights/metabolights.broker.js";
-    import { BiosamplesService } from "./js/broker/biosamples/biosamples.service.js";
-    import { BrokerType } from "./js/broker/broker.type.js";
-    import { BrokerStatus } from "./js/broker/status.type.js";
+    //import { EnaBroker } from "./js/broker/ena/ena.broker.js";
+    //import { MetabolightsBroker } from "./js/broker/metabolights/metabolights.broker.js";
+    //import { BiosamplesService } from "./js/broker/biosamples/biosamples.service.js";
+    //import { BrokerType } from "./js/broker/broker.type.js";
+    //import { BrokerStatus } from "./js/broker/status.type.js";
 
     function submit(repository, isaJson) {
       switch (repository) {
@@ -594,8 +642,8 @@
               </tr>
               <tr>
                 <th scope="row">BioSamples</th>
-                <td >not asked</td>
-                <td >...</td>
+                <td id="biosamplesStatus">not asked</td>
+                <td id="biosamplesText">...</td>
                 <td >...</td>
               </tr>
             </tbody>
