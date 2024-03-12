@@ -103,10 +103,13 @@
         </button>
         <ul class="dropdown-menu">
           <li>
-            <button id="converter_menu" class="dropdown-item" onclick=''>Converter</button>
+            <button id="converter_short" class="dropdown-item d-none" onclick=''>Converter</button>
           </li>
           <li>
-            <button id="updater_menu" class="dropdown-item" onclick=''>Updater</button>
+            <a id="ghlink_short" class="dropdown-item" href="https://github.com/elixir-europe/MARS">GitHub</a>
+          </li>
+          <li>
+            <a id="us_short" class="dropdown-item" onclick=''>About Us</a>
           </li>
 
         </ul>
@@ -123,13 +126,13 @@
         </button>
         <ul class="dropdown-menu">
           <li>
-            <button id="converter_long" class="dropdown-item" onclick=''>Converter</button>
+            <button id="converter_long" class="dropdown-item d-none" onclick=''>Converter</button>
           </li>
           <li>
-            <button id="validator_long" class="dropdown-item" onclick=''>GitHub</button>
+            <a id="ghlink_long" class="dropdown-item" href="https://github.com/elixir-europe/MARS">GitHub</a>
           </li>
           <li>
-            <button id="updater_long" class="dropdown-item" onclick=''>About Us</button>
+            <a id="us_long" class="dropdown-item" href=''>About Us</a>
           </li>
 
         </ul>
@@ -159,10 +162,10 @@
         <input type="checkbox" class="form-check-input " id="passwordCheck">
         <label class="form-check-label" for="passwordCheck">Check me out</label>
       </div>
-      <div class="mb-3 col-2">
+      <div class="mb-3 col-2 d-none">
         <label id="tokenHelp" class="form-text">Only collect token if you need.</label>
         <br>
-      <button type="submit " class="btn btn-primary" aria-describedby="tokenHelp">Collect Token</button>
+      <button type="submit" id="formSubmit" class="btn btn-primary" aria-describedby="tokenHelp">Collect Token</button>
       
     </div>
     </form>
@@ -182,7 +185,7 @@
 
       <input type="file" id="import" multiple>
     </div><br>
-    <button class="btn btn-primary" onclick="checkInput()" style="display:inline" data-bs-toggle="modal" data-bs-target="#cModal"
+    <button class="btn btn-primary" onclick='document.getElementById("formSubmit").click();checkInput()' style="display:inline" data-bs-toggle="modal" data-bs-target="#cModal"
       id="cModalButton"> Start Submissions </button>
     <div class="d-flex justify-content-center d-none" id="waiting">
       <div class="spinner-grow btn-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -206,7 +209,7 @@
     ];
 
     var tour = new Tour(steps); // initialize the guided tour
-    tour.show();
+    //tour.show();
     let output_div = document.getElementById("xml_output");
     function DragAndDrop(e) {
       e.preventDefault();
@@ -220,6 +223,7 @@
         var result = JSON.parse(reader.result); // Parse the result into an object 
         //console.log("reader.result is : "+reader.result);
         input_json = result;
+        testJSON = result;
         //console.log("result is : " + result);
         var cleaned_data = {};
         let column_n = 0;
@@ -235,7 +239,7 @@
         const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
       if ( document.getElementById("import").files.length == 0 ){alert("There is no input file, the submission will use test file");
-      enaSubmit(username, password, testJSON);}else{
+      bstest();enaSubmit(username, password, testJSON);}else{bstest();
         enaSubmit(username, password, input_json)
 
 
@@ -282,12 +286,9 @@
       };
     }
 
+
     function getToken(){
 
-      document.getElementById('authForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-      
-      // Get the username and password from the input fields
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
       
@@ -312,69 +313,42 @@
         token = text;
         document.getElementById("tokenText").innerText=token;
         document.getElementById("tokenStatus").innerText="Returned";
-        document.getElementById("status_modal_button").click();
+        bsSubmit(testJSON);
+        //document.getElementById("status_modal_button").click();
         // Handle the response here
       })
       .catch(error => {
         console.error('Error:', error);
         // Handle errors here
       });
+
+    }
+
+    function tokenButton(){
+
+      document.getElementById('authForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      
+      // Get the username and password from the input fields
+
     });
   }
 
 
-    async function main(input_json) {
-
-      if (input_json === undefined || input_json.length < 0) {
-        window.alert("please select an lister json file to be imported")
-      } else {
-
-        document.getElementById("waiting").classList.remove("d-none");
-
-
-
-        var saveData = (function () {
-          var a = document.createElement("a");
-          document.body.appendChild(a);
-          a.style = "display: none";
-          return function (data, fileName) {
-            blob = new Blob([data], { type: "octet/stream" }),
-              url = window.URL.createObjectURL(blob);
-            a.href = url;
-            a.download = fileName;
-            a.click();
-            window.URL.revokeObjectURL(url);
-          };
-        }()
-        );
-
-
-
-
-        var data = JSON.stringify(input_json),
-          fileName = "inv.json";
-
-        saveData(data, fileName);
-        //let file = pyodide.FS.readFile("SAMPLE.XML", { encoding: "utf8" });
-        //output_div.innerText = file;
-        document.getElementById("waiting").classList.add("d-none");
-
-
-
-      }
-
-    };
+   
     window.onload = (event) =>{
 
-      getToken();
+      tokenButton();
 
     }
 
     function bstest(){
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
-
-      bsSubmit(username, password, testJSON);
+      document.getElementById("formSubmit").click();
+      getToken();
+      
+      
 
     }
 
@@ -416,8 +390,8 @@
 };
 
 
-function bsSubmit(name, password, json){
-
+function bsSubmit( json){
+      
       const fulltoken = "https://ai.cplantbox.com/isabiosamples/submit?webinjwt="+ token;
       fetch( fulltoken , {
         method: 'POST',
@@ -491,7 +465,7 @@ function bsSubmit(name, password, json){
         submit(repository, input_json);
       }
     }
-    window.submitAll = submitAll;
+    
 
 
   </script>
