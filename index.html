@@ -388,79 +388,61 @@
 
     function enaSubmit(name, password, json){
 
-// Assuming you have the file data in a variable named jsonData
-// Replace 'jsonData' with your actual variable holding the JSON data
+        fetch('https://a.cplantbox.com/isaena/submit?webinUserName='+name+'&webinPassword='+password, {
+          method: 'POST',
+          //mode: 'cors',
+          headers: {
+            
+            'Content-Type': 'application/json',
+            'accept': '*/*'
+          },
+          body: JSON.stringify(json)
+        })
+        .then((response) => response.text())
+        .then(data => {
+          console.log('Success: ', data);
+          enaReturn = data;
+          document.getElementById("enaStatus").innerText="Returned";
+          document.getElementById("enaText").innerText=enaReturn;
+              document.getElementById("status_modal_button").click();
 
-  fetch('https://a.cplantbox.com/isaena/submit?webinUserName='+name+'&webinPassword='+password, {
-    method: 'POST',
-    //mode: 'cors',
-    headers: {
-      
-      'Content-Type': 'application/json',
-      'accept': '*/*'
-    },
-    body: JSON.stringify(json)
-  })
-  .then((response) => response.text())
-    // if (!response.ok) {
-    //   throw new Error('Network response was not ok');
-    // }
-  
+        })
+        .catch(error => {
+          alert("ENA submission failed, error is " + error+". Please check your username and password");
+          console.error('Error:', error);
 
-  .then(data => {
-    console.log('Success: ', data);
-    enaReturn = data;
-    document.getElementById("enaStatus").innerText="Returned";
-    document.getElementById("enaText").innerText=enaReturn;
-        document.getElementById("status_modal_button").click();
-    // Handle the response data here
-  })
-  .catch(error => {
-    alert("ENA submission failed, error is " + error+". Please check your username and password");
-    console.error('Error:', error);
-    // Handle errors here
-  });
+        });
 
 };
 
 
 function bsSubmit(name, password, json){
 
-// Assuming you have the file data in a variable named jsonData
-// Replace 'jsonData' with your actual variable holding the JSON data
+      const fulltoken = "https://ai.cplantbox.com/isabiosamples/submit?webinjwt="+ token;
+      fetch( fulltoken , {
+        method: 'POST',
+        //mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+          'accept': '*/*'
+        },
+        body: JSON.stringify(json)
+      })
+      .then((response) => response.text())
+      .then(data => {
+        console.log('Success: ', data);
+        biosamplesReturn = data;
+        document.getElementById("biosamplesStatus").innerText="Returned";
+        document.getElementById("biosamplesText").innerText=biosamplesReturn;
+            document.getElementById("status_modal_button").click();
 
-  fetch('https://ai.cplantbox.com/isabiosamples/submit?webinjwt='+ token , {
-    method: 'POST',
-    //mode: 'no-cors',
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type',
-      'Content-Type': 'application/json',
-      'accept': '*/*'
-    },
-    body: JSON.stringify(json)
-  })
-  .then((response) => response.text())
-    // if (!response.ok) {
-    //   throw new Error('Network response was not ok');
-    // }
-  
+      })
+      .catch(error => {
+        alert("BioSamples submission failed, error is " + error+". Please check your jwt token");
+        console.error('Error:', error);
+      });
 
-  .then(data => {
-    console.log('Success: ', data);
-    biosamplesReturn = data;
-    document.getElementById("biosamplesStatus").innerText="Returned";
-    document.getElementById("biosamplesText").innerText=biosamplesReturn;
-        document.getElementById("status_modal_button").click();
-    // Handle the response data here
-  })
-  .catch(error => {
-    alert("BioSamples submission failed, error is " + error+". Please check your jwt token");
-    console.error('Error:', error);
-    // Handle errors here
-  });
-
-};
+    };
   </script>
   <script type="module">
     //import { EnaBroker } from "./js/broker/ena/ena.broker.js";
