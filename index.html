@@ -361,7 +361,7 @@
     }
 
     function enaSubmit(name, password, json){
-
+        json = 
         fetch('https://a.cplantbox.com/isaena/submit?webinUserName='+name+'&webinPassword='+password, {
           method: 'POST',
           //mode: 'cors',
@@ -370,7 +370,7 @@
             'Content-Type': 'application/json',
             'accept': '*/*'
           },
-          body: JSON.stringify(json)
+          body: biosamplesReturn || JSON.stringify(json)
         })
         .then((response) => response.text())
         .then(data => {
