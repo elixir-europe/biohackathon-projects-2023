@@ -197,8 +197,8 @@
     </div>
   </div>
   <script type="text/javascript">
-    var v_list, csv_content, cleanend_global, token , enaReturn, biosamples;
-    var input_json, input_xlsx;
+    var v_list, csv_content, cleanend_global, token , enaReturn = 0, biosamplesReturn= 0;
+    var input_json = 0, input_xlsx;
     var log_backup = console.log;
     var log_messages = [];
     var steps = [{
@@ -222,12 +222,9 @@
       reader.addEventListener('load', function () {
         var result = JSON.parse(reader.result); // Parse the result into an object 
         //console.log("reader.result is : "+reader.result);
-        input_json = result;
-        testJSON = result;
+        input_json = {"investigation": result};
+        testJSON = {"investigation": result};
         //console.log("result is : " + result);
-        var cleaned_data = {};
-        let column_n = 0;
-        let current_column_name;
 
       });
 
@@ -265,11 +262,10 @@
         reader.addEventListener('load', function () {
           var result = JSON.parse(reader.result); // Parse the result into an object 
           //console.log("reader.result is : "+reader.result);
-          input_json = result;
+          input_json = {"investigation": result};
+        testJSON = {"investigation": result};
           //console.log("result is : " + result);
-          var cleaned_data = {};
-          let column_n = 0;
-          let current_column_name;
+
 
         });
 
