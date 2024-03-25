@@ -1,0 +1,53 @@
+  
+   <WEBIN>                                                                                                                                                                                                              <SUBMISSION>                                                                                                                                                                                                         <ACTIONS>                                                                                                                                                                                                            <ACTION>                                                                                                                                                                                                             <ADD/>                                                                                                                                                                                                           </ACTION>                                                                                                                                                                                                        </ACTIONS>                                                                                                                                                                                                       </SUBMISSION>                                                                                                                                                                                                      <STUDY_SET>                                                                                                                                                                                                          <STUDY alias="Arabidopsis thaliana-0.13664355574046827">                                                                                                                                                             <DESCRIPTOR>                                                                                                                                                                                                         <STUDY_TITLE>Arabidopsis thaliana</STUDY_TITLE>                                                                                                                                                                    <STUDY_DESCRIPTION>Nucleic acid sequencing and metabolomics and proteomics of Arabidopsis thaliana in specific experimental conditions to test a specific hypothesis.</STUDY_DESCRIPTION>                          <STUDY_ABSTRACT>Nucleic acid sequencing and metabolomics and proteomics of Arabidopsis thaliana in specific experimental conditions to test a specific hypothesis.</STUDY_ABSTRACT>                                <STUDY_TYPE existing_study_type="Other"/>                                                                                                                                                                        </DESCRIPTOR>                                                                                                                                                                                                      <STUDY_ATTRIBUTES>                                                                                                                                                                                                   <STUDY_ATTRIBUTE>                                                                                                                                                                                                    <TAG>SEEK Study ID</TAG>                                                                                                                                                                                           <VALUE>10</VALUE>                                                                                                                                                                                                </STUDY_ATTRIBUTE>                                                                                                                                                                                                 <STUDY_ATTRIBUTE>                                                                                                                                                                                                    <TAG>SEEK creation date</TAG>                                                                                                                                                                                      <VALUE>2022-11-03T16:20:49Z</VALUE>                                                                                                                                                                              </STUDY_ATTRIBUTE>                                                                                                                                                                                               </STUDY_ATTRIBUTES>                                                                                                                                                                                              </STUDY>                                                                                                                                                                                                         </STUDY_SET>                                                                                                                                                                                                       <EXPERIMENT_SET>                                                                                                                                                                                                     <EXPERIMENT alias="#other_material/332-0.13664355574046827">                                                                                                                                                         <TITLE>extract 1</TITLE>                                                                                                                                                                                           <STUDY_REF refname="Arabidopsis thaliana"/>                                                                                                                                                                        <DESIGN>                                                                                                                                                                                                             <DESIGN_DESCRIPTION>ISA-Test</DESIGN_DESCRIPTION>                                                                                                                                                                  <SAMPLE_DESCRIPTOR accession="SAMEA130783526"/>                                                                                                                                                                    <LIBRARY_DESCRIPTOR>                                                                                                                                                                                                 <LIBRARY_STRATEGY>OTHER</LIBRARY_STRATEGY>                                                                                                                                                                         <LIBRARY_SOURCE>OTHER</LIBRARY_SOURCE>                                                                                                                                                                             <LIBRARY_SELECTION>RT-PCR</LIBRARY_SELECTION>                                                                                                                                                                      <LIBRARY_LAYOUT>                                                                                                                                                                                                     <SINGLE/>                                                                                                                                                                             [0/1910]            <SINGLE/>
+          </LIBRARY_LAYOUT>
+        </LIBRARY_DESCRIPTOR>
+      </DESIGN>
+      <PLATFORM>
+        <OXFORD_NANOPORE>
+          <INSTRUMENT_MODEL>MinION</INSTRUMENT_MODEL>
+        </OXFORD_NANOPORE>
+      </PLATFORM>
+    </EXPERIMENT>
+    <EXPERIMENT alias="#other_material/333-0.13664355574046827">                                                                                                                                                         <TITLE>library 1</TITLE>
+      <STUDY_REF refname="Arabidopsis thaliana"/>
+      <DESIGN>
+        <DESIGN_DESCRIPTION>ISA-Test</DESIGN_DESCRIPTION>
+        <SAMPLE_DESCRIPTOR accession="SAMEA130783526"/>
+        <LIBRARY_DESCRIPTOR>
+          <LIBRARY_STRATEGY>OTHER</LIBRARY_STRATEGY>
+          <LIBRARY_SOURCE>OTHER</LIBRARY_SOURCE>
+          <LIBRARY_SELECTION>RT-PCR</LIBRARY_SELECTION>
+          <LIBRARY_LAYOUT>
+            <SINGLE/>
+          </LIBRARY_LAYOUT>
+        </LIBRARY_DESCRIPTOR>
+      </DESIGN>
+      <PLATFORM>
+        <OXFORD_NANOPORE>
+          <INSTRUMENT_MODEL>MinION</INSTRUMENT_MODEL>
+        </OXFORD_NANOPORE>
+      </PLATFORM>
+    </EXPERIMENT>
+  </EXPERIMENT_SET>
+  <RUN_SET>
+    <RUN alias="#assay/18_20_21-0.13664355574046827">
+      <TITLE>#assay/18_20_21</TITLE>
+      <EXPERIMENT_REF refname="#other_material/333"/>
+      <DATA_BLOCK>
+        <FILES>
+          <FILE filename="fake2.bam" filetype="bam" checksum_method="MD5" checksum="9840f585055afc37de353706fd31a377"/>
+        </FILES>
+      </DATA_BLOCK>
+    </RUN>
+  </RUN_SET>
+  <PROJECT_SET>
+    <PROJECT alias="Bob's investigation-0.13664355574046827">
+      <TITLE>Bob's investigation</TITLE>
+      <DESCRIPTION></DESCRIPTION>
+      <SUBMISSION_PROJECT>
+        <SEQUENCING_PROJECT/>
+      </SUBMISSION_PROJECT>
+    </PROJECT>
+  </PROJECT_SET>
+</WEBIN>

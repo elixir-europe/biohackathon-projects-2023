@@ -1,0 +1,839 @@
+{
+    "investigation" : {
+      "identifier" : "",
+      "title" : "Facultative CAM in Talinum triangulare",
+      "submissionDate" : "July 07, 2015",
+      "publicReleaseDate" : "Nov 05, 2015",
+      "ontologySourceReferences" : [ {
+        "description" : "Plant Experimental Conditions Ontology",
+        "file" : "http://purl.obolibrary.org/obo/peco.owl",
+        "name" : "PECO",
+        "version" : "releases/2020-08-21"
+      }, {
+        "description" : "Unit ontology",
+        "file" : "http://purl.obolibrary.org/obo/uo.owl",
+        "name" : "UO",
+        "version" : "releases/2020-03-10"
+      }, {
+        "description" : "NFDI for Plant Science Ontology",
+        "file" : "https://github.com/nfdi4plants/nfdi4plants_ontology/blob/main/nfdi4plants_ontology.obo",
+        "name" : "NFDI4PSO"
+      } ],
+      "filename" : "ARC.txt",
+      "publications" : [ {
+        "pubMedID" : "26530316",
+        "doi" : "10.1104/pp.15.01076",
+        "authorList" : "Brilhaus, Dominik; Bräutigam, Andrea; Mettler-Altmann, Tabea; Winter, Klaus; Weber, Andreas P M",
+        "title" : "Reversible Burst of Transcriptional Changes during Induction of Crassulacean Acid Metabolism in Talinum triangulare.",
+        "status" : {
+          "annotationValue" : "Published"
+        }
+      } ],
+      "people" : [ {
+        "lastName" : "Brilhaus",
+        "firstName" : "Dominik",
+        "email" : "dominik.brilhaus@hhu.de",
+        "phone" : "0211-8115523",
+        "address" : "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+        "affiliation" : "Institute of Plant Biochemistry, HHU Düsseldorf",
+        "roles" : [ {
+          "termAccession" : "http://purl.org/spar/scoro/research-assistant",
+          "termSource" : "scoro",
+          "annotationValue" : "research assistant"
+        } ],
+        "comments" : [ {
+          "name" : "Investigation Person ORCID",
+          "value" : "http://orcid.org/0000-0001-9021-3197"
+        } ]
+      }, {
+        "lastName" : "Bräutigam",
+        "firstName" : "Andrea",
+        "address" : "Universitätsstr. 1, 40225 Düsseldorf",
+        "affiliation" : "Institute of Plant Biochemistry, HHU Düsseldorf",
+        "roles" : [ {
+          "termAccession" : "http://purl.org/spar/scoro/research-assistant",
+          "termSource" : "scoro",
+          "annotationValue" : "research assistant"
+        } ],
+        "comments" : [ {
+          "name" : "Investigation Person ORCID",
+          "value" : "http://orcid.org/0000-0002-5309-0527"
+        } ]
+      }, {
+        "lastName" : "Mettler-Altmann",
+        "firstName" : "Tabea",
+        "address" : "Universitätsstr. 1, 40225 Düsseldorf",
+        "affiliation" : "Institute of Plant Biochemistry, HHU Düsseldorf",
+        "roles" : [ {
+          "termAccession" : "http://purl.org/spar/scoro/research-assistant",
+          "termSource" : "scoro",
+          "annotationValue" : "research assistant"
+        } ],
+        "comments" : [ {
+          "name" : "Investigation Person ORCID",
+          "value" : "http://orcid.org/0000-0002-9161-4889"
+        } ]
+      }, {
+        "lastName" : "Winter",
+        "firstName" : "Klaus",
+        "address" : "Balboa, Ancón, Republic of Panama",
+        "affiliation" : "Smithsonian Tropical Research Institute, Panama",
+        "roles" : [ {
+          "termAccession" : "http://purl.org/spar/scoro/co-investigator",
+          "termSource" : "scoro",
+          "annotationValue" : "co-investigator"
+        } ],
+        "comments" : [ {
+          "name" : "Investigation Person ORCID"
+        } ]
+      }, {
+        "lastName" : "Weber",
+        "firstName" : "Andreas",
+        "midInitials" : "P M",
+        "address" : "Universitätsstr. 1, 40225 Düsseldorf",
+        "affiliation" : "Institute of Plant Biochemistry, HHU Düsseldorf",
+        "roles" : [ {
+          "termAccession" : "http://purl.org/spar/scoro/principal-investigator",
+          "termSource" : "scoro",
+          "annotationValue" : "principal investigator"
+        } ],
+        "comments" : [ {
+          "name" : "Investigation Person ORCID",
+          "value" : "http://orcid.org/0000-0003-0970-4672"
+        } ]
+      } ],
+      "studies" : [ {
+        "identifier" : "TalinumFacultativeCAM",
+        "filename" : "TalinumFacultativeCAM/isa.study.xlsx",
+        "people" : [ {
+          "lastName" : "Brilhaus",
+          "firstName" : "Dominik",
+          "email" : "dominik.brilhaus@hhu.de",
+          "phone" : "0211-8115523",
+          "address" : "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+          "affiliation" : "Institute of Plant Biochemistry, HHU Düsseldorf",
+          "roles" : [ {
+            "termAccession" : "http://purl.org/spar/scoro/research-assistant",
+            "termSource" : "scoro",
+            "annotationValue" : "research assistant"
+          } ],
+          "comments" : [ {
+            "name" : "Worksheet"
+          } ]
+        }, {
+          "lastName" : "Winter",
+          "firstName" : "Klaus",
+          "address" : "Balboa, Ancón, Republic of Panama",
+          "affiliation" : "Smithsonian Tropical Research Institute, Panama",
+          "roles" : [ {
+            "termAccession" : "http://purl.org/spar/scoro/co-investigator",
+            "termSource" : "scoro",
+            "annotationValue" : "co-investigator"
+          } ],
+          "comments" : [ {
+            "name" : "Worksheet"
+          } ]
+        }, {
+          "lastName" : "Kurz",
+          "firstName" : "Samantha",
+          "address" : "Universitätsstr. 1, 40225 Düsseldorf",
+          "affiliation" : "Institute of Plant Biochemistry, HHU Düsseldorf",
+          "roles" : [ {
+            "termAccession" : "http://purl.org/spar/scoro/technician",
+            "termSource" : "scoro",
+            "annotationValue" : "technician"
+          } ],
+          "comments" : [ {
+            "name" : "Worksheet"
+          } ]
+        }, {
+          "lastName" : "Wachtmeister",
+          "firstName" : "Thorsten",
+          "address" : "Universitätsstr. 1, 40225 Düsseldorf",
+          "affiliation" : "Biological Medical Research Centre, HHU Düsseldorf",
+          "roles" : [ {
+            "termAccession" : "http://purl.org/spar/scoro/technician",
+            "termSource" : "scoro",
+            "annotationValue" : "technician"
+          } ],
+          "comments" : [ {
+            "name" : "Worksheet"
+          } ]
+        }, {
+          "comments" : [ {
+            "name" : "Worksheet"
+          } ]
+        }, {
+          "lastName" : "Brilhaus",
+          "firstName" : "Dominik",
+          "email" : "dominik.brilhaus@hhu.de",
+          "phone" : "0211-8115523",
+          "address" : "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+          "affiliation" : "Institute of Plant Biochemistry, HHU Düsseldorf",
+          "roles" : [ {
+            "termAccession" : "http://purl.org/spar/scoro/research-assistant",
+            "termSource" : "scoro",
+            "annotationValue" : "research assistant"
+          } ],
+          "comments" : [ {
+            "name" : "Study Person ORCID",
+            "value" : "http://orcid.org/0000-0001-9021-3197"
+          } ]
+        }, {
+          "lastName" : "Winter",
+          "firstName" : "Klaus",
+          "address" : "Balboa, Ancón, Republic of Panama",
+          "affiliation" : "Smithsonian Tropical Research Institute, Panama",
+          "roles" : [ {
+            "termAccession" : "http://purl.org/spar/scoro/co-investigator",
+            "termSource" : "scoro",
+            "annotationValue" : "co-investigator"
+          } ],
+          "comments" : [ {
+            "name" : "Study Person ORCID"
+          } ]
+        } ],
+        "studyDesignDescriptors" : [ ],
+        "characteristicCategories" : [ {
+          "characteristicType" : {
+            "annotationValue" : "organism",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/organism_1"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "Title",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/Title_317"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "Description",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/Description_318"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "tax_id",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/tax_id_319"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "organism",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/organism_320"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "cell_type",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/cell_type_321"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "dev_stage",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/dev_stage_322"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "collection_date",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/collection_date_323"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "isolation_source",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/isolation_source_324"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "collected_by",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/collected_by_325"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "geographic location (country and/or sea)",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/geographic_location_(country_and/or_sea)_326"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "submission date",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/submission_date_327"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "status",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/status_328"
+        }, {
+          "characteristicType" : {
+            "annotationValue" : "accession",
+            "termAccession" : "",
+            "termSource" : ""
+          },
+          "@id" : "#characteristic_category/accession_329"
+        } ],
+        "materials" : {
+          "sources" : [ {
+            "name" : "DB_097",
+            "characteristics" : [ {
+              "category" : {
+                "@id" : "#characteristic_category/organism_1"
+              },
+              "value" : {
+                "annotationValue" : "Talinum fruticosum",
+                "termSource" : "NCBITaxon",
+                "termAccession" : "http://purl.obolibrary.org/obo/NCBITaxon_110664"
+              }
+            }, {
+              "category" : {
+                "@id" : "#characteristic_category/accession"
+              },
+              "value" : {
+                "annotationValue" : "SAMEA130897579"
+              }
+            } ],
+            "@id" : "#source/330"
+          } ],
+          "samples" : [ {
+            "name" : "CAM_01",
+            "derivesFrom" : [ {
+              "@id" : "#source/330"
+            } ],
+            "characteristics" : [ {
+              "category" : {
+                "@id" : "#characteristic_category/accession"
+              },
+              "value" : {
+                "annotationValue" : "SAMEA130897580"
+              }
+            } ],
+            "factorValues" : [ {
+              "category" : { }
+            }, {
+              "category" : { },
+              "value" : {
+                "annotationValue" : "MD",
+                "termSource" : "",
+                "termAccession" : ""
+              }
+            }, {
+              "category" : { },
+              "value" : {
+                "annotationValue" : "6",
+                "termSource" : "",
+                "termAccession" : ""
+              }
+            }, {
+              "category" : { },
+              "value" : {
+                "annotationValue" : "CAM",
+                "termSource" : "",
+                "termAccession" : ""
+              }
+            } ],
+            "@id" : "#sample/331"
+          } ]
+        },
+        "protocols" : [ {
+          "name" : "rna_extraction",
+          "parameters" : [ {
+            "parameterName" : {
+              "annotationValue" : "biosource amount",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000013",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "extraction method",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000054",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "extraction buffer",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000050",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "extraction buffer volume",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000051",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "RNA quality check",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000062",
+              "termSource" : "DPBO"
+            }
+          } ]
+        }, {
+          "name" : "illumina",
+          "parameters" : [ {
+            "parameterName" : {
+              "annotationValue" : "library strategy",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000035",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "library selection",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000036",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "library layout",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000015",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "library preparation kit",
+              "termAccession" : "http://purl.obolibrary.org/obo/GENEPIO_0000085",
+              "termSource" : "GENEPIO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "library preparation kit version",
+              "termAccession" : "http://purl.obolibrary.org/obo/GENEPIO_0000149",
+              "termSource" : "GENEPIO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "adapter sequence",
+              "termAccession" : "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+              "termSource" : "GENEPIO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "next generation sequencing instrument model",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000040",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "base-calling software",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000017",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "base-calling software version",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000018",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "Raw data file format",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000021",
+              "termSource" : "DPBO"
+            }
+          } ]
+        }, {
+          "name" : "plant_material.md",
+          "protocolType" : {
+            "annotationValue" : "plant growth protocol",
+            "termAccession" : "http://purl.obolibrary.org/obo/DPBO_1000164",
+            "termSource" : "DPBO"
+          },
+          "parameters" : [ {
+            "parameterName" : {
+              "annotationValue" : "growth day length",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000041",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "light intensity exposure",
+              "termAccession" : "http://purl.obolibrary.org/obo/PECO_0007224",
+              "termSource" : "PECO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "humidity day",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000005",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "temperature day",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000007",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "temperature night",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000008",
+              "termSource" : "DPBO"
+            }
+          } ]
+        }, {
+          "name" : "rna_extraction.md",
+          "protocolType" : {
+            "annotationValue" : "RNA extraction protocol",
+            "termAccession" : "http://purl.obolibrary.org/obo/DPBO_1000173",
+            "termSource" : "DPBO"
+          },
+          "parameters" : [ {
+            "parameterName" : {
+              "annotationValue" : "biosource amount",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000013",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "extraction method",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000054",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "extraction buffer",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000050",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "extraction buffer volume",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000051",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "RNA quality check",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000062",
+              "termSource" : "DPBO"
+            }
+          } ]
+        }, {
+          "name" : "illumina.md",
+          "protocolType" : {
+            "annotationValue" : "assay protocol",
+            "termAccession" : "http://purl.obolibrary.org/obo/DPBO_1000177",
+            "termSource" : "DPBO"
+          },
+          "parameters" : [ {
+            "parameterName" : {
+              "annotationValue" : "library strategy",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000035",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "library selection",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000036",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "library layout",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000015",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "library preparation kit",
+              "termAccession" : "http://purl.obolibrary.org/obo/GENEPIO_0000085",
+              "termSource" : "GENEPIO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "library preparation kit version",
+              "termAccession" : "http://purl.obolibrary.org/obo/GENEPIO_0000149",
+              "termSource" : "GENEPIO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "adapter sequence",
+              "termAccession" : "http://purl.obolibrary.org/obo/GENEPIO_0000083",
+              "termSource" : "GENEPIO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "next generation sequencing instrument model",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000040",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "base-calling software",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000017",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "base-calling software version",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000018",
+              "termSource" : "DPBO"
+            }
+          }, {
+            "parameterName" : {
+              "annotationValue" : "Raw data file format",
+              "termAccession" : "http://purl.obolibrary.org/obo/DPBO_0000021",
+              "termSource" : "DPBO"
+            }
+          } ]
+        } ],
+        "processSequence" : [ {
+          "name" : "plant_material_0",
+          "executesProtocol" : { },
+          "parameterValues" : [ {
+            "category" : { },
+            "value" : {
+              "annotationValue" : "12 hr light / 12 hr dark",
+              "termSource" : "",
+              "termAccession" : ""
+            }
+          }, {
+            "category" : { },
+            "value" : {
+              "annotationValue" : "425",
+              "termSource" : "",
+              "termAccession" : ""
+            },
+            "unit" : {
+              "termSource" : "UO",
+              "termAccession" : "http://purl.obolibrary.org/obo/UO_0000160"
+            }
+          }, {
+            "category" : { },
+            "value" : {
+              "annotationValue" : "37",
+              "termSource" : "",
+              "termAccession" : ""
+            },
+            "unit" : {
+              "termSource" : "UO",
+              "termAccession" : "http://purl.obolibrary.org/obo/UO_0000187"
+            }
+          }, {
+            "category" : { },
+            "value" : {
+              "annotationValue" : "30",
+              "termSource" : "",
+              "termAccession" : ""
+            },
+            "unit" : {
+              "termSource" : "UO",
+              "termAccession" : "http://purl.obolibrary.org/obo/UO_0000027"
+            }
+          }, {
+            "category" : { },
+            "value" : {
+              "annotationValue" : "22",
+              "termSource" : "",
+              "termAccession" : ""
+            },
+            "unit" : {
+              "termSource" : "UO",
+              "termAccession" : "http://purl.obolibrary.org/obo/UO_0000027"
+            }
+          } ],
+          "inputs" : [ {
+            "@id" : "#source/330"
+          } ],
+          "outputs" : [ {
+            "@id" : "#sample/331"
+          } ],
+          "@id" : "#process/sample_collection/331"
+        } ],
+        "assays" : [ {
+          "filename" : "Talinum_RNASeq_minimal/isa.assay.xlsx",
+          "measurementType" : {
+            "annotationValue" : "mRNA Sequencing",
+            "termSource" : "NCIT",
+            "termAccession" : "http://purl.obolibrary.org/obo/NCIT_C129432"
+          },
+          "technologyType" : {
+            "annotationValue" : "Next Generation Sequencing",
+            "termSource" : "NCIT",
+            "termAccession" : "http://purl.obolibrary.org/obo/NCIT_C101293"
+          },
+          "technologyPlatform" : "Illumina HiSeq 2500",
+          "materials" : {
+            "samples" : [ {
+              "name" : "CAM_01",
+              "derivesFrom" : [ {
+                "@id" : "#source/330"
+              } ],
+              "factorValues" : [ {
+                "category" : { },
+                "value" : {
+                  "annotationValue" : "12 days drought",
+                  "termSource" : "",
+                  "termAccession" : ""
+                }
+              }, {
+                "category" : { },
+                "value" : {
+                  "annotationValue" : "MD",
+                  "termSource" : "",
+                  "termAccession" : ""
+                }
+              }, {
+                "category" : { },
+                "value" : {
+                  "annotationValue" : "6",
+                  "termSource" : "",
+                  "termAccession" : ""
+                }
+              }, {
+                "category" : { },
+                "value" : {
+                  "annotationValue" : "CAM",
+                  "termSource" : "",
+                  "termAccession" : ""
+                }
+              } ],
+              "@id" : "#sample/331"
+            } ]
+          },
+          "processSequence" : [ {
+            "name" : "rna_extraction_0",
+            "executesProtocol" : { },
+            "parameterValues" : [ {
+              "category" : { },
+              "value" : {
+                "annotationValue" : "80",
+                "termSource" : "",
+                "termAccession" : ""
+              },
+              "unit" : {
+                "termSource" : "UO",
+                "termAccession" : "http://purl.obolibrary.org/obo/UO_0000022"
+              }
+            }, {
+              "category" : { },
+              "value" : {
+                "annotationValue" : "Roboklon EURx GeneMATRIX Universal RNA Purification version 2.3 September 2011",
+                "termSource" : "",
+                "termAccession" : ""
+              }
+            }, {
+              "category" : { },
+              "value" : {
+                "annotationValue" : "Roboklon commercial buffers",
+                "termSource" : "",
+                "termAccession" : ""
+              }
+            }, {
+              "category" : { },
+              "value" : {
+                "annotationValue" : "300",
+                "termSource" : "",
+                "termAccession" : ""
+              },
+              "unit" : {
+                "termSource" : "UO",
+                "termAccession" : "http://purl.obolibrary.org/obo/UO_0000101"
+              }
+            }, {
+              "category" : { },
+              "value" : {
+                "annotationValue" : "RIN 7.6 (Agilent Bioanalyzer 2100 expert_Plant RNA Nano)",
+                "termSource" : "",
+                "termAccession" : ""
+              }
+            } ],
+            "inputs" : [ {
+              "@id" : "#sample/331"
+            } ],
+            "outputs" : [ { } ]
+          } ],
+          "unitCategories" : [ {
+            "annotationValue" : "milligram",
+            "termSource" : "UO",
+            "termAccession" : "http://purl.obolibrary.org/obo/UO_0000022"
+          }, {
+            "annotationValue" : "microliter",
+            "termSource" : "UO",
+            "termAccession" : "http://purl.obolibrary.org/obo/UO_0000101"
+          } ]
+        } ],
+        "factors" : [ {
+          "factorName" : "watering exposure",
+          "factorType" : {
+            "annotationValue" : "watering exposure",
+            "termSource" : "PECO",
+            "termAccession" : "http://purl.obolibrary.org/obo/PECO_0007383",
+            "comments" : [ {
+              "name" : "ValueIndex",
+              "value" : "10"
+            } ]
+          }
+        }, {
+          "factorName" : "Timepoint",
+          "factorType" : {
+            "annotationValue" : "Timepoint",
+            "termSource" : "NCIT",
+            "termAccession" : "http://purl.obolibrary.org/obo/NCIT_C68568",
+            "comments" : [ {
+              "name" : "ValueIndex",
+              "value" : "11"
+            } ]
+          }
+        }, {
+          "factorName" : "timepoint-ZT",
+          "factorType" : {
+            "annotationValue" : "timepoint-ZT",
+            "comments" : [ {
+              "name" : "ValueIndex",
+              "value" : "12"
+            } ]
+          }
+        }, {
+          "factorName" : "Photosynthesis mode",
+          "factorType" : {
+            "annotationValue" : "Photosynthesis mode",
+            "comments" : [ {
+              "name" : "ValueIndex",
+              "value" : "13"
+            } ]
+          }
+        } ],
+        "unitCategories" : [ {
+          "annotationValue" : "microeinstein per square meter per second",
+          "termSource" : "UO",
+          "termAccession" : "http://purl.obolibrary.org/obo/UO_0000160"
+        }, {
+          "annotationValue" : "percent",
+          "termSource" : "UO",
+          "termAccession" : "http://purl.obolibrary.org/obo/UO_0000187"
+        }, {
+          "annotationValue" : "degree celsius",
+          "termSource" : "UO",
+          "termAccession" : "http://purl.obolibrary.org/obo/UO_0000027"
+        }, {
+          "annotationValue" : "milligram",
+          "termSource" : "UO",
+          "termAccession" : "http://purl.obolibrary.org/obo/UO_0000022"
+        }, {
+          "annotationValue" : "microliter",
+          "termSource" : "UO",
+          "termAccession" : "http://purl.obolibrary.org/obo/UO_0000101"
+        } ]
+      } ]
+    }
+  }
