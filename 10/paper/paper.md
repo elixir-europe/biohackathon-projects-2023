@@ -69,11 +69,11 @@ WfExS-backend is a workflow orchestrator designed for reproducible and secure wo
 
 ## What is a scientific computational workflow?
 
-A scientific computational workflow is a set of computational procedures which are run either sequentially or in parallel over scientific data, like primary data (e.g. raw reads from a sequencer, X-ray or CT-scan images), secondary data (e.g. electronic health records, manuscripts, genomic assemblies, structures, variant databases) or a mix of them. The purpose of an organized execution of this set of computational procedures is providing answers to scientific questions or hypothesis (e.g. is there some mutation related to this disease?).
+A scientific computational workflow is a set of computational procedures which are run either sequentially or in parallel over scientific datasets, composed by either primary data (e.g. raw reads from a sequencer, X-ray or CT-scan images), secondary data (e.g. electronic health records, manuscripts, genomic assemblies, structures, variant databases) or a mix of them. The purpose of an organized execution of this set of computational procedures is providing answers to scientific questions or hypothesis (e.g. is there some mutation related to this disease?).
 
 Although a scientific computational workflow could be a researcher sequentially running the different programs, we are interested on those ones which are represented as a program or a script written in some general purpose computer language, like bash, R or python. A subset of these computational workflows are the ones written using workflow representation languages, which rely on specialized workflow execution engines, usually known as workflow management systems (WMS).
 
-> The complexity of computational workflows, combined with the analysis of ~~biological~~ data being highly dependent on a wide range of software tools, and issues such as variation in operating systems and computational resources, as well as challenges with tool versioning and documentation, resulted in reproducibility becoming a critical concern in computational analysis ~~biology~~. To address these challenges, computational workflow manager systems (WMS) have been developed to streamline and automate the process of data analysis chaining multiple steps together, simplifying the development, execution, and reproduction of complex analyses. We are interested in these subset of FAIR computational workflows that are written using workflow representation languages, which rely on specialized workflow execution engines.
+Reproducibility becomes a critical concern in scientific computational analysis. Concerns arise from the complexity of scientific computational workflows, combined with the analysis of datasets being highly dependent on a wide range of software tools, and issues such as variation in operating systems and computational resources, as well as challenges with tool versioning and documentation. WMS have been developed to streamline and automate the process of data analysis chaining multiple steps together, simplifying the development, execution, and reproduction of complex analyses. Thus, we are interested in the subset of scientific computational workflows featuring FAIR characteristics which rely on specialized workflow execution engines.
 
 
 ## Roles in a Scientific Workflow Ecosystem
@@ -84,10 +84,10 @@ Although a scientific computational workflow could be a researcher sequentially 
   *  They are the authoritative sources of specialized scientific knowledge under the shape of datasets. So, they are data catalogs.
   *  These datasets have attached both permanent identifiers, scientific and technical metadata.
   *  A data provider can also provide some search services, based on the previously mentioned metadata.
-  *  When the datasets are under controlled accesss, they act as proxies between the researcher which needs to use a dataset and the data controller who can grant access to it.
+  *  When the datasets are under controlled access, they act as proxies between the researcher which needs to use a dataset and the data controller who can grant access to it.
 * **Software provider**: The different steps of scientific analyses depend on different software bundles. In case of WMS, depending on the implemented computational language used to represent workflows, usable software bundles can be something like a conda package, a software container, or a module in one or another computer language. 
 * **Data deposition facility**: sustained platforms for storing and publishing research data results from scientific analyses. These facilities can be either public or private registries with controlled access. All of them must provide permanent identifiers, which can be used to request access or fetch associated metadata. 
-* **Workflow execution deposition**: comprehensive joint metadata catalogue of workflow execution for a data colletion. Registry entries can contain either sucessful or failed executions, containing an associated permanent identifier and additional metadata. 
+* **Workflow execution deposition**: comprehensive joint metadata catalogue of workflow execution for a data collection. Registry entries can contain either sucessful or failed executions, containing an associated permanent identifier and additional metadata. 
 
 ## Requirements for a FAIR Workflow Execution Ecosystem
 
@@ -125,7 +125,7 @@ As all the B2SHARE entries have to be associated to a community, their managers 
 
 Among all the existing indexation services, we were researching about B2FIND and DataCite services during the BioHackathon 2023 duration.
 
-B2FIND is an aggregated metadata domain of EUDAT. Based on comprehensive joint metadata catalogue of research data colletions stored in EUDAT data centes and others. Stores metadata through other EUDAT services (like B2SHARE). B2FIND uses various protocols to aggregate metadata from different data repositories. It can harvest metadata using protocols like OAI-PMH.
+B2FIND is an aggregated metadata domain of EUDAT. Based on comprehensive joint metadata catalogue of research data collections stored in EUDAT data centres and others. Stores metadata through other EUDAT services (like B2SHARE). B2FIND uses various protocols to aggregate metadata from different data repositories. It can harvest metadata using protocols like OAI-PMH.
 
 [DataCite](https://datacite.org/what-we-do/) is global community aimed to ensure that research outputs and resources are openly available and connected. As a community, they promote a more effective research through the metadata that connects research outputs and resources–from samples and images to data and preprints. One of their main functionalities is the creation and management of persistent identifiers (PIDs), integrate services to improve research workflows, and facilitate the discovery and reuse of research outputs and resources.
 
@@ -145,7 +145,7 @@ There is a work in progress in WfExS, in order to be able to interleave the gene
 
 Also, another scheduled development in WfExS is the capability to consume already generated WRROC crates by WfExS in order to reproduce the computational analysis, allowing the automation of scientific analysis reproducibility.
 
-Last, but not the least important, a community page should be established similar to the ([RO-Crate communit page](https://www.researchobject.org/ro-crate/community.html)). Similarly, a slack channel on the Seek workspace could be created.
+Last, but not the least important, a community page should be established similar to the ([RO-Crate community page](https://www.researchobject.org/ro-crate/community.html)). Similarly, a slack channel on the Seek workspace could be created.
 
 # Materials and methods
 
