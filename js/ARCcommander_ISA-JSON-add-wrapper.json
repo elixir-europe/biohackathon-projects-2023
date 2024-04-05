@@ -1,3 +1,4 @@
+{"investigation":
 {
     "identifier": "samplearc_rnaseq",
     "title": "Facultative CAM in Talinum triangulare",
@@ -8195,4 +8196,5 @@
             ]
         }
     ]
+}
 }

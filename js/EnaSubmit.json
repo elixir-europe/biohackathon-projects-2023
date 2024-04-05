@@ -1234,6 +1234,7 @@
                 ],
                 "assays": [
                     {
+                        "@id":"#assay/18_20_21",
                         "filename": "Talinum_RNASeq_minimal/isa.assay.xlsx",
                         "measurementType": {
                             "annotationValue": "mRNA Sequencing",

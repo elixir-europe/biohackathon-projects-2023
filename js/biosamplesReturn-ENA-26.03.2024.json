@@ -1,102 +1,265 @@
 {
     "investigation": {
         "identifier": "",
-        "title": "Bob's investigation",
-        "description": "",
-        "submissionDate": "",
-        "publicReleaseDate": "",
-        "ontologySourceReferences": [],
-        "filename": "Bob's investigation.txt",
-        "comments": [
+        "title": "Facultative CAM in Talinum triangulare",
+        "description": "Facultative CAM in Talinum triangulare",
+        "submissionDate": "July 07, 2015",
+        "publicReleaseDate": "Nov 05, 2015",
+        "ontologySourceReferences": [
             {
-                "name": "ISAjson export time",
-                "value": "2022-11-07T08:09:59Z"
+                "description": "Plant Experimental Conditions Ontology",
+                "file": "http://purl.obolibrary.org/obo/peco.owl",
+                "name": "PECO",
+                "version": "releases/2020-08-21"
             },
             {
-                "name": "SEEK Project name",
-                "value": "Bob's PhD project"
+                "description": "Unit ontology",
+                "file": "http://purl.obolibrary.org/obo/uo.owl",
+                "name": "UO",
+                "version": "releases/2020-03-10"
             },
             {
-                "name": "SEEK Project ID",
-                "value": "http://localhost:3000/single_pages/2"
-            },
-            {
-                "name": "SEEK Investigation ID",
-                "value": "19"
+                "description": "NFDI for Plant Science Ontology",
+                "file": "https://github.com/nfdi4plants/nfdi4plants_ontology/blob/main/nfdi4plants_ontology.obo",
+                "name": "NFDI4PSO"
             }
         ],
-        "publications": [],
+        "filename": "ARC.txt",
+        "publications": [
+            {
+                "pubMedID": "26530316",
+                "doi": "10.1104/pp.15.01076",
+                "authorList": "Brilhaus, Dominik; Bräutigam, Andrea; Mettler-Altmann, Tabea; Winter, Klaus; Weber, Andreas P M",
+                "title": "Reversible Burst of Transcriptional Changes during Induction of Crassulacean Acid Metabolism in Talinum triangulare.",
+                "status": {
+                    "annotationValue": "Published"
+                }
+            }
+        ],
         "people": [
             {
-                "lastName": "Bob",
-                "firstName": "Bob",
-                "midInitials": "",
-                "email": "bob@testing.com",
-                "phone": "",
-                "fax": "",
-                "address": "",
-                "affiliation": "",
+                "lastName": "Brilhaus",
+                "firstName": "Dominik",
+                "email": "dominik.brilhaus@hhu.de",
+                "phone": "0211-8115523",
+                "address": "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+                "affiliation": "Institute of Plant Biochemistry, HHU Düsseldorf",
                 "roles": [
                     {
-                        "termAccession": "",
-                        "termSource": "",
-                        "annotationValue": ""
+                        "termAccession": "http://purl.org/spar/scoro/research-assistant",
+                        "termSource": "scoro",
+                        "annotationValue": "research assistant"
                     }
                 ],
                 "comments": [
                     {
-                        "name": "",
-                        "value": "",
-                        "@id": ""
+                        "name": "Investigation Person ORCID",
+                        "value": "http://orcid.org/0000-0001-9021-3197"
+                    }
+                ]
+            },
+            {
+                "lastName": "Bräutigam",
+                "firstName": "Andrea",
+                "address": "Universitätsstr. 1, 40225 Düsseldorf",
+                "affiliation": "Institute of Plant Biochemistry, HHU Düsseldorf",
+                "roles": [
+                    {
+                        "termAccession": "http://purl.org/spar/scoro/research-assistant",
+                        "termSource": "scoro",
+                        "annotationValue": "research assistant"
                     }
                 ],
-                "@id": "#people/5"
+                "comments": [
+                    {
+                        "name": "Investigation Person ORCID",
+                        "value": "http://orcid.org/0000-0002-5309-0527"
+                    }
+                ]
+            },
+            {
+                "lastName": "Mettler-Altmann",
+                "firstName": "Tabea",
+                "address": "Universitätsstr. 1, 40225 Düsseldorf",
+                "affiliation": "Institute of Plant Biochemistry, HHU Düsseldorf",
+                "roles": [
+                    {
+                        "termAccession": "http://purl.org/spar/scoro/research-assistant",
+                        "termSource": "scoro",
+                        "annotationValue": "research assistant"
+                    }
+                ],
+                "comments": [
+                    {
+                        "name": "Investigation Person ORCID",
+                        "value": "http://orcid.org/0000-0002-9161-4889"
+                    }
+                ]
+            },
+            {
+                "lastName": "Winter",
+                "firstName": "Klaus",
+                "address": "Balboa, Ancón, Republic of Panama",
+                "affiliation": "Smithsonian Tropical Research Institute, Panama",
+                "roles": [
+                    {
+                        "termAccession": "http://purl.org/spar/scoro/co-investigator",
+                        "termSource": "scoro",
+                        "annotationValue": "co-investigator"
+                    }
+                ],
+                "comments": [
+                    {
+                        "name": "Investigation Person ORCID"
+                    }
+                ]
+            },
+            {
+                "lastName": "Weber",
+                "firstName": "Andreas",
+                "midInitials": "P M",
+                "address": "Universitätsstr. 1, 40225 Düsseldorf",
+                "affiliation": "Institute of Plant Biochemistry, HHU Düsseldorf",
+                "roles": [
+                    {
+                        "termAccession": "http://purl.org/spar/scoro/principal-investigator",
+                        "termSource": "scoro",
+                        "annotationValue": "principal investigator"
+                    }
+                ],
+                "comments": [
+                    {
+                        "name": "Investigation Person ORCID",
+                        "value": "http://orcid.org/0000-0003-0970-4672"
+                    }
+                ]
             }
         ],
         "studies": [
             {
-                "identifier": "",
-                "title": "Arabidopsis thaliana",
-                "description": "Nucleic acid sequencing and metabolomics and proteomics of Arabidopsis thaliana in specific experimental conditions to test a specific hypothesis.\r\n",
-                "submissionDate": "",
-                "publicReleaseDate": "",
-                "filename": "Arabidopsis thaliana.txt",
-                "comments": [
-                    {
-                        "name": "SEEK Study ID",
-                        "value": "10"
-                    },
-                    {
-                        "name": "SEEK creation date",
-                        "value": "2022-11-03T16:20:49Z"
-                    }
-                ],
-                "publications": [],
+                "identifier": "TalinumFacultativeCAM",
+                "title": "TalinumFacultativeCAM",
+                "filename": "TalinumFacultativeCAM/isa.study.xlsx",
                 "people": [
                     {
-                        "lastName": "Bob",
-                        "firstName": "Bob",
-                        "midInitials": "",
-                        "email": "bob@testing.com",
-                        "phone": "",
-                        "fax": "",
-                        "address": "",
-                        "affiliation": "",
+                        "lastName": "Brilhaus",
+                        "firstName": "Dominik",
+                        "email": "dominik.brilhaus@hhu.de",
+                        "phone": "0211-8115523",
+                        "address": "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+                        "affiliation": "Institute of Plant Biochemistry, HHU Düsseldorf",
                         "roles": [
                             {
-                                "termAccession": "",
-                                "termSource": "",
-                                "annotationValue": ""
+                                "termAccession": "http://purl.org/spar/scoro/research-assistant",
+                                "termSource": "scoro",
+                                "annotationValue": "research assistant"
                             }
                         ],
                         "comments": [
                             {
-                                "name": "",
-                                "value": "",
-                                "@id": ""
+                                "name": "Worksheet"
+                            }
+                        ]
+                    },
+                    {
+                        "lastName": "Winter",
+                        "firstName": "Klaus",
+                        "address": "Balboa, Ancón, Republic of Panama",
+                        "affiliation": "Smithsonian Tropical Research Institute, Panama",
+                        "roles": [
+                            {
+                                "termAccession": "http://purl.org/spar/scoro/co-investigator",
+                                "termSource": "scoro",
+                                "annotationValue": "co-investigator"
                             }
                         ],
-                        "@id": "#people/5"
+                        "comments": [
+                            {
+                                "name": "Worksheet"
+                            }
+                        ]
+                    },
+                    {
+                        "lastName": "Kurz",
+                        "firstName": "Samantha",
+                        "address": "Universitätsstr. 1, 40225 Düsseldorf",
+                        "affiliation": "Institute of Plant Biochemistry, HHU Düsseldorf",
+                        "roles": [
+                            {
+                                "termAccession": "http://purl.org/spar/scoro/technician",
+                                "termSource": "scoro",
+                                "annotationValue": "technician"
+                            }
+                        ],
+                        "comments": [
+                            {
+                                "name": "Worksheet"
+                            }
+                        ]
+                    },
+                    {
+                        "lastName": "Wachtmeister",
+                        "firstName": "Thorsten",
+                        "address": "Universitätsstr. 1, 40225 Düsseldorf",
+                        "affiliation": "Biological Medical Research Centre, HHU Düsseldorf",
+                        "roles": [
+                            {
+                                "termAccession": "http://purl.org/spar/scoro/technician",
+                                "termSource": "scoro",
+                                "annotationValue": "technician"
+                            }
+                        ],
+                        "comments": [
+                            {
+                                "name": "Worksheet"
+                            }
+                        ]
+                    },
+                    {
+                        "comments": [
+                            {
+                                "name": "Worksheet"
+                            }
+                        ]
+                    },
+                    {
+                        "lastName": "Brilhaus",
+                        "firstName": "Dominik",
+                        "email": "dominik.brilhaus@hhu.de",
+                        "phone": "0211-8115523",
+                        "address": "HHU Düsseldorf, 22.07.U1.43, Universitätsstr. 1, 40225 Düsseldorf",
+                        "affiliation": "Institute of Plant Biochemistry, HHU Düsseldorf",
+                        "roles": [
+                            {
+                                "termAccession": "http://purl.org/spar/scoro/research-assistant",
+                                "termSource": "scoro",
+                                "annotationValue": "research assistant"
+                            }
+                        ],
+                        "comments": [
+                            {
+                                "name": "Study Person ORCID",
+                                "value": "http://orcid.org/0000-0001-9021-3197"
+                            }
+                        ]
+                    },
+                    {
+                        "lastName": "Winter",
+                        "firstName": "Klaus",
+                        "address": "Balboa, Ancón, Republic of Panama",
+                        "affiliation": "Smithsonian Tropical Research Institute, Panama",
+                        "roles": [
+                            {
+                                "termAccession": "http://purl.org/spar/scoro/co-investigator",
+                                "termSource": "scoro",
+                                "annotationValue": "co-investigator"
+                            }
+                        ],
+                        "comments": [
+                            {
+                                "name": "Study Person ORCID"
+                            }
+                        ]
                     }
                 ],
                 "studyDesignDescriptors": [],
@@ -411,7 +574,7 @@
                                         "@id": "#characteristic_category/accession"
                                     },
                                     "value": {
-                                        "annotationValue": "SAMEA130905216"
+                                        "annotationValue": "SAMEA130901060"
                                     }
                                 }
                             ],
@@ -432,7 +595,7 @@
                                         "@id": "#characteristic_category/accession"
                                     },
                                     "value": {
-                                        "annotationValue": "SAMEA130905217"
+                                        "annotationValue": "SAMEA130901061"
                                     }
                                 }
                             ],
@@ -621,24 +784,200 @@
                     {
                         "name": "",
                         "executesProtocol": {
-                            "@id": "#protocol/18_10"
+                            "@id": "#protocol/19_18"
                         },
                         "parameterValues": [],
                         "performer": "",
                         "date": "",
-                        "previousProcess": {},
-                        "nextProcess": {},
+                        "previousProcess": {
+                            "@id": "#process/sample_collection/332"
+                        },
+                        "nextProcess": {
+                            "@id": "#process/library_construction/332"
+                        },
                         "inputs": [
-                            {
-                                "@id": "#source/330"
-                            }
-                        ],
-                        "outputs": [
                             {
                                 "@id": "#sample/331"
                             }
                         ],
-                        "@id": "#process/sample_collection/331"
+                        "outputs": [
+                            {
+                                "@id": "#other_material/332"
+                            }
+                        ],
+                        "@id": "#process/nucleic_acid_extraction/332"
+                    },
+                    {
+                        "name": "",
+                        "executesProtocol": {
+                            "@id": "#protocol/20_20"
+                        },
+                        "parameterValues": [
+                            {
+                                "category": {
+                                    "@id": "#parameter/349"
+                                },
+                                "value": {
+                                    "annotationValue": "lib prep",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                },
+                                "unit": {
+                                    "termSource": "",
+                                    "termAccession": "",
+                                    "comments": []
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#parameter/351"
+                                },
+                                "value": {
+                                    "annotationValue": "Test",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                },
+                                "unit": {
+                                    "termSource": "",
+                                    "termAccession": "",
+                                    "comments": []
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#parameter/352"
+                                },
+                                "value": {
+                                    "annotationValue": "OTHER",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                },
+                                "unit": {
+                                    "termSource": "",
+                                    "termAccession": "",
+                                    "comments": []
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#parameter/353"
+                                },
+                                "value": {
+                                    "annotationValue": "OTHER",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                },
+                                "unit": {
+                                    "termSource": "",
+                                    "termAccession": "",
+                                    "comments": []
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#parameter/354"
+                                },
+                                "value": {
+                                    "annotationValue": "RT-PCR",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                },
+                                "unit": {
+                                    "termSource": "",
+                                    "termAccession": "",
+                                    "comments": []
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#parameter/355"
+                                },
+                                "value": {
+                                    "annotationValue": "SINGLE",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                },
+                                "unit": {
+                                    "termSource": "",
+                                    "termAccession": "",
+                                    "comments": []
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#parameter/356"
+                                },
+                                "value": {
+                                    "annotationValue": "100",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                },
+                                "unit": {
+                                    "termSource": "",
+                                    "termAccession": "",
+                                    "comments": []
+                                }
+                            }
+                        ],
+                        "performer": "",
+                        "date": "",
+                        "previousProcess": {
+                            "@id": "#process/nucleic_acid_extraction/333"
+                        },
+                        "nextProcess": {
+                            "@id": "#process/nucleic_acid_sequencing/333"
+                        },
+                        "inputs": [
+                            {
+                                "@id": "#other_material/332"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "@id": "#other_material/333"
+                            }
+                        ],
+                        "@id": "#process/library_construction/333"
+                    },
+                    {
+                        "name": "",
+                        "executesProtocol": {
+                            "@id": "#protocol/21_21"
+                        },
+                        "parameterValues": [
+                            {
+                                "category": {
+                                    "@id": "#parameter/363"
+                                },
+                                "value": {
+                                    "annotationValue": " MinION",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                },
+                                "unit": {
+                                    "termSource": "",
+                                    "termAccession": "",
+                                    "comments": []
+                                }
+                            }
+                        ],
+                        "performer": "",
+                        "date": "",
+                        "previousProcess": {
+                            "@id": "#process/library_construction/334"
+                        },
+                        "nextProcess": {},
+                        "inputs": [
+                            {
+                                "@id": "#other_material/333"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "@id": "#data_file/334"
+                            }
+                        ],
+                        "@id": "#process/nucleic_acid_sequencing/334"
                     }
                 ],
                 "assays": [
@@ -1014,8 +1353,87 @@
                         "@id": "#assay/18_20_21"
                     }
                 ],
-                "factors": [],
-                "unitCategories": []
+                "factors": [
+                    {
+                        "factorName": "watering exposure",
+                        "factorType": {
+                            "annotationValue": "watering exposure",
+                            "termSource": "PECO",
+                            "termAccession": "http://purl.obolibrary.org/obo/PECO_0007383",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "10"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "factorName": "Timepoint",
+                        "factorType": {
+                            "annotationValue": "Timepoint",
+                            "termSource": "NCIT",
+                            "termAccession": "http://purl.obolibrary.org/obo/NCIT_C68568",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "11"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "factorName": "timepoint-ZT",
+                        "factorType": {
+                            "annotationValue": "timepoint-ZT",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "12"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "factorName": "Photosynthesis mode",
+                        "factorType": {
+                            "annotationValue": "Photosynthesis mode",
+                            "comments": [
+                                {
+                                    "name": "ValueIndex",
+                                    "value": "13"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "unitCategories": [
+                    {
+                        "annotationValue": "microeinstein per square meter per second",
+                        "termSource": "UO",
+                        "termAccession": "http://purl.obolibrary.org/obo/UO_0000160"
+                    },
+                    {
+                        "annotationValue": "percent",
+                        "termSource": "UO",
+                        "termAccession": "http://purl.obolibrary.org/obo/UO_0000187"
+                    },
+                    {
+                        "annotationValue": "degree celsius",
+                        "termSource": "UO",
+                        "termAccession": "http://purl.obolibrary.org/obo/UO_0000027"
+                    },
+                    {
+                        "annotationValue": "milligram",
+                        "termSource": "UO",
+                        "termAccession": "http://purl.obolibrary.org/obo/UO_0000022"
+                    },
+                    {
+                        "annotationValue": "microliter",
+                        "termSource": "UO",
+                        "termAccession": "http://purl.obolibrary.org/obo/UO_0000101"
+                    }
+                ]
             }
         ]
     }

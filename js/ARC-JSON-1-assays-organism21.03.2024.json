@@ -4,6 +4,7 @@
         "title": "Facultative CAM in Talinum triangulare",
         "submissionDate": "July 07, 2015",
         "publicReleaseDate": "Nov 05, 2015",
+        "description": "Facultative CAM in Talinum triangulare",
         "ontologySourceReferences": [
             {
                 "description": "Plant Experimental Conditions Ontology",
@@ -135,7 +136,8 @@
             }
         ],
         "studies": [
-            {
+            {   
+                "title":"TalinumFacultativeCAM",
                 "filename": "TalinumFacultativeCAM/isa.study.xlsx",
                 "identifier": "TalinumFacultativeCAM",
                 "people": [
@@ -261,6 +263,38 @@
                     }
                 ],
                 "protocols": [
+                    {
+                        "@id":"#protocol/21_21",
+                        "name":"nucleic acid sequencing",
+                        "protocolType":{
+                           "annotationValue":"nucleic acid sequencing",
+                           "termAccession":"",
+                           "termSource":""
+                        },
+                        "description":"",
+                        "uri":"",
+                        "version":"",
+                        "parameters":[
+                           {
+                              "@id":"#parameter/363",
+                              "parameterName":{
+                                 "annotationValue":"sequencing instrument",
+                                 "termAccession":"",
+                                 "termSource":""
+                              }
+                           }
+                        ],
+                        "components":[
+                           {
+                              "componentName":"",
+                              "componentType":{
+                                 "annotationValue":"",
+                                 "termSource":"",
+                                 "termAccession":""
+                              }
+                           }
+                        ]
+                     },
                     {
                         "name": "rna_extraction",
                         "parameters": [
@@ -1232,7 +1266,7 @@
                     }
                 ],
                 "assays": [
-                    {
+                    {   "@id":"#assay/Talinum_RNASeq",
                         "filename": "Talinum_RNASeq_minimal/isa.assay.xlsx",
                         "measurementType": {
                             "annotationValue": "mRNA Sequencing",
@@ -1248,7 +1282,7 @@
                         "materials": {
                             "samples": [
                                 {
-                                                                    "@id":"#sample/331",
+                                "@id":"#sample/331",
                                 "name": "CAM_01",
                                     "factorValues": [
                                         {
@@ -1384,6 +1418,101 @@
                                         }
                                     ]
                                 }
+                            ],
+                            "otherMaterials":[
+                               {
+                                  "@id":"#other_material/332",
+                                  "name":"extract 1",
+                                  "type":"Extract Name",
+                                  "characteristics":[
+                                     
+                                  ],
+                                  "derivesFrom":[
+                                     {
+                                        "@id":"#sample/331"
+                                     }
+                                  ]
+                               },
+                               {
+                                  "@id":"#other_material/333",
+                                  "name":"library 1",
+                                  "type":"library name",
+                                  "characteristics":[
+                                     {
+                                        "category":{
+                                           "@id":"#characteristic_category/Title_350"
+                                        },
+                                        "value":{
+                                           "annotationValue":"library 1",
+                                           "termSource":"",
+                                           "termAccession":""
+                                        },
+                                        "unit":{
+                                           "termSource":"",
+                                           "termAccession":"",
+                                           "comments":[
+                                              
+                                           ]
+                                        }
+                                     },
+                                     {
+                                        "category":{
+                                           "@id":"#characteristic_category/submission_date_358"
+                                        },
+                                        "value":{
+                                           "annotationValue":"",
+                                           "termSource":"",
+                                           "termAccession":""
+                                        },
+                                        "unit":{
+                                           "termSource":"",
+                                           "termAccession":"",
+                                           "comments":[
+                                              
+                                           ]
+                                        }
+                                     },
+                                     {
+                                        "category":{
+                                           "@id":"#characteristic_category/status_359"
+                                        },
+                                        "value":{
+                                           "annotationValue":"",
+                                           "termSource":"",
+                                           "termAccession":""
+                                        },
+                                        "unit":{
+                                           "termSource":"",
+                                           "termAccession":"",
+                                           "comments":[
+                                              
+                                           ]
+                                        }
+                                     },
+                                     {
+                                        "category":{
+                                           "@id":"#characteristic_category/accession_360"
+                                        },
+                                        "value":{
+                                           "annotationValue":"",
+                                           "termSource":"",
+                                           "termAccession":""
+                                        },
+                                        "unit":{
+                                           "termSource":"",
+                                           "termAccession":"",
+                                           "comments":[
+                                              
+                                           ]
+                                        }
+                                     }
+                                  ],
+                                  "derivesFrom":[
+                                     {
+                                        "@id":"#other_material/332"
+                                     }
+                                  ]
+                               }
                             ]
                         },
                         "unitCategories": [
@@ -1400,8 +1529,10 @@
                         ],
                         "processSequence": [
                             {
+                                "@id":"#process/nucleic_acid_sequencing/334",
                                 "name": "rna_extraction_0",
                                 "executesProtocol": {
+                                    "@id":"#protocol/21_21",
                                     "name": "rna_extraction.md",
                                     "protocolType": {
                                         "annotationValue": "RNA extraction protocol",
@@ -1602,151 +1733,12 @@
                                 ],
                                 "inputs": [
                                     {
-                                                                        "@id":"#sample/331",
-                                "name": "CAM_01",
-                                        "factorValues": [
-                                            {
-                                                "category": {
-                                                    "factorName": "watering exposure",
-                                                    "factorType": {
-                                                        "annotationValue": "watering exposure",
-                                                        "termSource": "PECO",
-                                                        "termAccession": "http://purl.obolibrary.org/obo/PECO_0007383",
-                                                        "comments": [
-                                                            {
-                                                                "name": "ValueIndex",
-                                                                "value": "10"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                "value": {
-                                                    "annotationValue": "12 days drought",
-                                                    "termAccession": "",
-                                                    "termSource": ""
-                                                }
-                                            },
-                                            {
-                                                "category": {
-                                                    "factorName": "Timepoint",
-                                                    "factorType": {
-                                                        "annotationValue": "Timepoint",
-                                                        "termSource": "NCIT",
-                                                        "termAccession": "http://purl.obolibrary.org/obo/NCIT_C68568",
-                                                        "comments": [
-                                                            {
-                                                                "name": "ValueIndex",
-                                                                "value": "11"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                "value": {
-                                                    "annotationValue": "MD",
-                                                    "termAccession": "",
-                                                    "termSource": ""
-                                                }
-                                            },
-                                            {
-                                                "category": {
-                                                    "factorName": "timepoint-ZT",
-                                                    "factorType": {
-                                                        "annotationValue": "timepoint-ZT",
-                                                        "comments": [
-                                                            {
-                                                                "name": "ValueIndex",
-                                                                "value": "12"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                "value": {
-                                                    "annotationValue": 6,
-                                                    "termAccession": "",
-                                                    "termSource": ""
-                                                }
-                                            },
-                                            {
-                                                "category": {
-                                                    "factorName": "Photosynthesis mode",
-                                                    "factorType": {
-                                                        "annotationValue": "Photosynthesis mode",
-                                                        "comments": [
-                                                            {
-                                                                "name": "ValueIndex",
-                                                                "value": "13"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                "value": {
-                                                    "annotationValue": "CAM",
-                                                    "termAccession": "",
-                                                    "termSource": ""
-                                                }
-                                            }
-                                        ],
-                                        "derivesFrom": [
-                                            {
-                                             "@id":"#source/330",
-                                                "name": "DB_097",
-                                                "characteristics": [
-                                                    {
-                                                        "category": {
-                                                         "@id":"#characteristic_category/organism_1",
-                                                            "characteristicType": {
-                                                                
-                                                        "annotationValue": "organism",
-                                                                "termSource": "OBI",
-                                                                "termAccession": "http://purl.obolibrary.org/obo/OBI_0100026",
-                                                                "comments": [
-                                                                    {
-                                                                        "name": "ValueIndex",
-                                                                        "value": "2"
-                                                                    }
-                                                                ]
-                                                            }
-                                                        },
-                                                        "value": {
-                                                            "annotationValue": "Talinum fruticosum",
-                                                            "termSource": "NCBITaxon",
-                                                            "termAccession": "http://purl.obolibrary.org/obo/NCBITaxon_110664"
-                                                        }
-                                                    },
-
-                                                    {
-                                                        "category": {
-                                                            "characteristicType": {
-                                                                "annotationValue": "plant age",
-                                                                "termSource": "DPBO",
-                                                                "termAccession": "http://purl.obolibrary.org/obo/DPBO_0000033",
-                                                                "comments": [
-                                                                    {
-                                                                        "name": "ValueIndex",
-                                                                        "value": "4"
-                                                                    }
-                                                                ]
-                                                            }
-                                                        },
-                                                        "value": {
-                                                            "annotationValue": "28 days after germination",
-                                                            "termAccession": "",
-                                                            "termSource": ""
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        ]
+                                        "@id":"#data_file/001"
                                     }
                                 ],
                                 "outputs": [
-                                    {
-                                        "name": "CAM_01_ext",
-                                        "derivesFrom": [
-                                            {
-                                                "name": "CAM_01"
-                                            }
-                                        ]
+                                    {   
+                                        "@id":"#other_material/333"
                                     }
                                 ]
                             }

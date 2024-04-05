@@ -2,6 +2,7 @@
     "investigation": {
         "identifier": "",
         "title": "Facultative CAM in Talinum triangulare",
+        "description": "Facultative CAM in Talinum triangulare",
         "submissionDate": "July 07, 2015",
         "publicReleaseDate": "Nov 05, 2015",
         "ontologySourceReferences": [
@@ -260,7 +261,6 @@
                         ]
                     }
                 ],
-                "description":"Talinum Facultative experiment",
                 "studyDesignDescriptors": [],
                 "characteristicCategories": [
                     {
@@ -396,7 +396,7 @@
                                         "@id": "#characteristic_category/accession"
                                     },
                                     "value": {
-                                        "annotationValue": "SAMEA130897631"
+                                        "annotationValue": "SAMEA130901066"
                                     }
                                 }
                             ],
@@ -417,7 +417,7 @@
                                         "@id": "#characteristic_category/accession"
                                     },
                                     "value": {
-                                        "annotationValue": "SAMEA130897632"
+                                        "annotationValue": "SAMEA130901067"
                                     }
                                 }
                             ],
@@ -455,6 +455,38 @@
                     ]
                 },
                 "protocols": [
+                    {
+                        "name": "nucleic acid sequencing",
+                        "protocolType": {
+                            "annotationValue": "nucleic acid sequencing",
+                            "termAccession": "",
+                            "termSource": ""
+                        },
+                        "description": "",
+                        "uri": "",
+                        "version": "",
+                        "parameters": [
+                            {
+                                "parameterName": {
+                                    "annotationValue": "sequencing instrument",
+                                    "termAccession": "",
+                                    "termSource": ""
+                                },
+                                "@id": "#parameter/363"
+                            }
+                        ],
+                        "components": [
+                            {
+                                "componentName": "",
+                                "componentType": {
+                                    "annotationValue": "",
+                                    "termSource": "",
+                                    "termAccession": ""
+                                }
+                            }
+                        ],
+                        "@id": "#protocol/21_21"
+                    },
                     {
                         "name": "rna_extraction",
                         "parameters": [
@@ -743,11 +775,8 @@
                 ],
                 "processSequence": [
                     {
-                        
                         "name": "plant_material_0",
-                        "executesProtocol": {
-                            "@id": "#protocol/18_10"
-                        },
+                        "executesProtocol": {},
                         "parameterValues": [
                             {
                                 "category": {},
@@ -878,12 +907,99 @@
                                     ],
                                     "@id": "#sample/331"
                                 }
+                            ],
+                            "otherMaterials": [
+                                {
+                                    "name": "extract 1",
+                                    "type": "Extract Name",
+                                    "characteristics": [],
+                                    "derivesFrom": [
+                                        {
+                                            "@id": "#sample/331"
+                                        }
+                                    ],
+                                    "@id": "#other_material/332"
+                                },
+                                {
+                                    "name": "library 1",
+                                    "type": "library name",
+                                    "characteristics": [
+                                        {
+                                            "category": {
+                                                "@id": "#characteristic_category/Title_350"
+                                            },
+                                            "value": {
+                                                "annotationValue": "library 1",
+                                                "termSource": "",
+                                                "termAccession": ""
+                                            },
+                                            "unit": {
+                                                "termSource": "",
+                                                "termAccession": "",
+                                                "comments": []
+                                            }
+                                        },
+                                        {
+                                            "category": {
+                                                "@id": "#characteristic_category/submission_date_358"
+                                            },
+                                            "value": {
+                                                "annotationValue": "",
+                                                "termSource": "",
+                                                "termAccession": ""
+                                            },
+                                            "unit": {
+                                                "termSource": "",
+                                                "termAccession": "",
+                                                "comments": []
+                                            }
+                                        },
+                                        {
+                                            "category": {
+                                                "@id": "#characteristic_category/status_359"
+                                            },
+                                            "value": {
+                                                "annotationValue": "",
+                                                "termSource": "",
+                                                "termAccession": ""
+                                            },
+                                            "unit": {
+                                                "termSource": "",
+                                                "termAccession": "",
+                                                "comments": []
+                                            }
+                                        },
+                                        {
+                                            "category": {
+                                                "@id": "#characteristic_category/accession_360"
+                                            },
+                                            "value": {
+                                                "annotationValue": "",
+                                                "termSource": "",
+                                                "termAccession": ""
+                                            },
+                                            "unit": {
+                                                "termSource": "",
+                                                "termAccession": "",
+                                                "comments": []
+                                            }
+                                        }
+                                    ],
+                                    "derivesFrom": [
+                                        {
+                                            "@id": "#other_material/332"
+                                        }
+                                    ],
+                                    "@id": "#other_material/333"
+                                }
                             ]
                         },
                         "processSequence": [
                             {
                                 "name": "rna_extraction_0",
-                                "executesProtocol": {},
+                                "executesProtocol": {
+                                    "@id": "#protocol/21_21"
+                                },
                                 "parameterValues": [
                                     {
                                         "category": {},
@@ -936,14 +1052,15 @@
                                 ],
                                 "inputs": [
                                     {
-                                        "@id": "#sample/331"
+                                        "@id": "#other_material/333"
                                     }
                                 ],
                                 "outputs": [
                                     {
-                                        "@id": "#sample/332"
+                                        "@id": "#data_file/001"
                                     }
-                                ]
+                                ],
+                                "@id": "#process/nucleic_acid_sequencing/334"
                             }
                         ],
                         "unitCategories": [
@@ -1040,17 +1157,7 @@
                         "termSource": "UO",
                         "termAccession": "http://purl.obolibrary.org/obo/UO_0000101"
                     }
-                ],
-                "comments":[
-                    {
-                       "name":"study 1",
-                       "value":"10"
-                    },
-                    {
-                       "name":"creation data",
-                       "value":"2022-11-03T16:20:49Z"
-                    }
-                 ]
+                ]
             }
         ]
     }
