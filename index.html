@@ -399,7 +399,7 @@
 
     function enaSubmit(name, password, json){
         json = 
-        fetch('https://a.cplantbox.com/isaena/submit?webinUserName='+name+'&webinPassword='+password, {
+        fetch('https://ena.cplantbox.com/isaena/submit?webinUserName='+name+'&webinPassword='+password, {
           method: 'POST',
           //mode: 'cors',
           headers: {
@@ -429,7 +429,7 @@
 
 function bsSubmit( json){
       
-      const fulltoken = "https://ai.cplantbox.com/isabiosamples/submit?webinjwt="+ token;
+      const fulltoken = "https://biosamples.cplantbox.com/isabiosamples/submit?webinjwt="+ token;
       fetch( fulltoken , {
         method: 'POST',
         //mode: 'no-cors',
